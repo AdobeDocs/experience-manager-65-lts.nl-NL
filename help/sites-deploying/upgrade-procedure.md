@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 ![ mongo-secundair ](assets/mongo-secondaries.jpg)
 
-1. Maak nieuwe 6.5 Auteur-instanties die zijn verbonden met de geüpgrade Mongo-instantie.
+1. Maak nieuwe auteur-instanties van 6.5.2025 die zijn verbonden met de geüpgrade Mongo-instantie.
 
 1. Maak de MongoDB-knooppunten die uit de cluster zijn verwijderd, opnieuw.
 

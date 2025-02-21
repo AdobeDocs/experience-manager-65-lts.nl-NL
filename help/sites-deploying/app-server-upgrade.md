@@ -4,117 +4,97 @@ description: Leer hoe u instanties van AEM die via toepassingsservers zijn geïm
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 28701105452c347c5470fdb582d783e7aef1adb0
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# Upgradestappen voor installatie van toepassingsservers{#upgrade-steps-for-application-server-installations}
+# Upgradestappen voor installatie van toepassingsservers {#upgrade-steps-for-application-server-installations}
 
-In deze sectie wordt de procedure beschreven die moet worden gevolgd om AEM for Application Server-installaties bij te werken.
+>[!NOTE]
+>
+>Deze pagina schetst de verbeteringsprocedure voor de AEM 6.5 LTS oorlog op WLP (WebSphere Liberty).
 
-Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure wordt bedoeld om verbeteringen te documenteren die van **versie 6.4 van AEM aan 6.5** worden uitgevoerd.
+## Stappen voor upgrade {#pre-upgrade-steps}
 
-1. Start eerst TomCat. In de meeste gevallen kunt u dit doen door het `./catalina.sh` startmanuscript in werking te stellen, door dit bevel van de terminal in werking te stellen:
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Zorg er bovendien voor dat uw systeem voldoet aan de vereisten voor AEM 6.5 LTS. Zie hoe de Analysator u kan helpen de ingewikkeldheid van uw verbetering schatten en ook een plan voor de verbetering zien (zie [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) voor meer informatie).
 
-   ```shell
-   $CATALINA_HOME/bin/catalina.sh start
-   ```
+### Migratievereisten {#migration-prerequisites}
 
-1. Als AEM 6.4 al is geïmplementeerd, controleert u of de bundels correct werken door toegang te krijgen tot:
+* **Minimaal Vereiste versie van Java**: Zorg ervoor u IBM Sumeru JRE 17 op uw server WLP hebt geïnstalleerd.
 
-   ```shell
-   https://<serveraddress:port>/cq/system/console/bundles
-   ```
+### De upgrade uitvoeren {#performing-the-upgrade}
 
-1. Verwijder vervolgens AEM 6.4. Dit kan worden gedaan vanuit de TomCat App Manager (`http://serveraddress:serverport/manager/html`)
-
-1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma. Om dat te doen, download de recentste versie van crx2oak van [ deze plaats ](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Maak een back-up van de instantie voordat u een upgrade uitvoert.
+1. Identificeer als u op zijn plaats verbetering of sidegrade afhankelijk van de versie van de server van WLP nodig hebt die u gebruikt. Als uw huidige server WLP Servlet 6 steunt, dan kunt u op zijn plaats verbetering uitvoeren en met deze documentatie verdergaan. Anders, moet u sidegrade uitvoeren. Voor sidegrade, gelieve te volgen de Migratie van de Inhoud met Oak-Upgrade documentatie - [ toe te voegen verbinding TBD ]
+1. Stop de AEM-instantie. Dit kan normaal gesproken worden gedaan met deze opdracht:
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
+   <path-to-wlp-directory>/bin/server stop server_name
    ```
-
-1. Verwijder de benodigde eigenschappen in het bestand sling.properties door het volgende te doen:
-
-   1. Open het bestand op de locatie `crx-quickstart/launchpad/sling.properties`
-   1. Staptekst Verwijder de volgende eigenschappen en sla het bestand op:
-
-      1. `sling.installer.dir`
-
-      1. `felix.cm.dir`
-
-      1. `granite.product.version`
-
-      1. `org.osgi.framework.system.packages`
-
-      1. `osgi-core-packages`
-
-      1. `osgi-compendium-services`
-
-      1. `jre-*`
-
-      1. `sling.run.mode.install.options`
 
 1. Verwijder de bestanden en mappen die u niet meer nodig hebt. De items die u specifiek moet verwijderen zijn:
 
-   * De **lanceerpad/startomslag**. U kunt het verwijderen door de volgende opdracht in de terminal uit te voeren: `rm -rf crx-quickstart/launchpad/startup`
+   * De map `cq-quickstart-65.war` in de map `dropins` en de uitgevouwen map bevindt zich gewoonlijk in respectievelijk `<path-to-aem-server>/dropins/cq-quickstart-65.war` en `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war` .
+   * De map `launchpad/startup` . U kunt het schrappen door het volgende bevel in de terminal in werking te stellen veronderstelt u in de serveromslag bent:
 
-   * Het {**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`**
-
-   * Het **dossier BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
-
-   * Verwijder **sling.options.file** door te lopen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
-
-1. Maak nu de winkel van knooppunten en de gegevensopslag die wordt gebruikt met AEM 6.5. U kunt dit doen door twee bestanden te maken met de volgende namen onder `crx-quickstart\install` :
-
-   * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
-   * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-
-   Deze twee dossiers zullen AEM vormen om een TarMK knoopopslag en een opslag van de gegevensopslag van het Dossier te gebruiken.
-
-1. Bewerk de configuratiebestanden om deze gebruiksklaar te maken. Meer specifiek:
-
-   * Voeg de volgende regel toe aan `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` :
-
-     `customBlobStore=true`
-
-   * Voeg vervolgens de volgende regels toe aan `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` :
-
-     ```
-     path=./crx-quickstart/repository/datastore
-     minRecordLength=4096
+     ```shell
+     rm -rf crx-quickstart/launchpad/startup
      ```
 
-1. U moet nu de uitvoeringsmodi wijzigen in het AEM 6.5-oorlogsbestand. Hiertoe maakt u eerst een tijdelijke map met de AEM 6.5-oorlog. De naam van de map in dit voorbeeld is `temp` . Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
+   * Het `base.jar` -bestand. U kunt dit doen door de volgende bevelen in werking te stellen:
 
+     ```shell
+     find crx-quickstart/launchpad -type f -name 
+     "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \;
+     ```
+
+   * Het `BootstrapCommandFile_timestamp.txt` -bestand:
+
+     ```shell
+     rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt
+     ```
+
+   * Verwijder het `sling.options` -bestand door het uit te voeren:
+
+     ```shell
+     find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \; 
+     ```
+
+   * Verwijder het `sling.bootstrap.txt` -bestand:
+
+     ```shell
+     rm -rf crx-quickstart/launchpad/sling_bootstrap.txt
+     ```
+
+1. Maak een back-up van het `sling.properties` -bestand (gewoonlijk aanwezig in `crx-quickstart/conf/` ) en verwijder deze
+1. Verander de versie van servlet in **6.0** in het `server.xml` dossier
+1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat u de parameters bijwerkt volgens uw systeemvereisten. Zie [ Standalone Installatie van de Douane ](/help/sites-deploying/custom-standalone-install.md) voor meer informatie
+1. Installeer Java 17 en zorg ervoor dat het correct geïnstalleerd door te lopen is:
+
+   ```shell
+   java -version
    ```
-   jar xvf aem-quickstart-6.5.0.war
+
+1. Download de nieuwe war 6.5 LTS van de distributie van de Software en kopieer het aan dropins omslag die bij wordt gevestigd: `/<path-to-aem-server>/dropins/`
+1. AEM-instantie starten: dit kan doorgaans gebeuren met de volgende opdracht:
+
+   ```shell
+   <path-to-wlp-directory>/bin/server start server_name
    ```
 
-1. Zodra de inhoud is gehaald, ga naar **WEB-INF** omslag en geef het web.xml- dossier uit om de looppaswijzen te veranderen. Als u de locatie wilt zoeken waar ze in de XML zijn ingesteld, zoekt u de `sling.run.modes` -tekenreeks. Als u deze eenmaal hebt gevonden, wijzigt u de uitvoeringsmodi in de volgende coderegel, die standaard is ingesteld op auteur:
+1. Volg onderstaande instructies voor het geval u aangepaste wijzigingen in `sling.properties` hebt:
 
-   ```bash
-   <param-value >author</param-value>
-   ```
+   1. De AEM-instantie stoppen door `<path-to-wlp-directory>/bin/server stop server_name` uit te voeren
+   1. Pas uw aangepaste `sling.properties` wijzigingen toe op het nieuwe `sling.properties` -bestand (door naar het back-upbestand te verwijzen dat bij stap 6 is gemaakt)
+   1. Start de AEM-instantie. Dit kan doorgaans worden gedaan door: `<path-to-wlp-directory>/bin/server start server_name`
 
-1. Wijzig de bovenstaande auteurwaarde en stel de uitvoeringsmodi in op: `author,crx3,crx3tar` . Het laatste codeblok moet er als volgt uitzien:
+## Bijgewerkte Codebase implementeren {#deploy-upgraded-codebase}
 
-   ```
-   <init-param>
-   <param-name>sling.run.modes</param-name>
-   <param-value>author,crx3,crx3tar</param-value>
-   </init-param>
-   <load-on-startup>100</load-on-startup>
-   </servlet>
-   ```
+Zodra het op zijn plaats verbeteringsproces is voltooid, zou de bijgewerkte codebasis moeten worden opgesteld. De stappen voor het bijwerken van de codebasis om in de doelversie van AEM te werken kunnen in de [ pagina van de Code en van de Aanpassingen van de Verbetering van de Verbetering ](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
 
-1. De pot opnieuw maken met de gewijzigde inhoud:
+## Naupgrade-controles en probleemoplossing uitvoeren {#perform-post-upgrade-checks-and-troubleshooting}
 
-   ```bash
-   jar cvf aem65.war
-   ```
-
-1. Ten slotte, zet het nieuwe oorlogsdossier in TomCat op.
+Zie [ Controle van de Verbetering van het Post en het Oplossen van problemen ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) voor meer informatie.

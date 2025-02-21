@@ -5,9 +5,9 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 055e99ec1c202acacae1be55b48e828f2634b0f4
 workflow-type: tm+mt
-source-wordcount: '3641'
+source-wordcount: '3291'
 ht-degree: 0%
 
 ---
@@ -81,31 +81,21 @@ Adobe raadt deze configuraties aan en biedt volledige ondersteuning als onderdee
 
 De toepassing vereist dat een Java™ Virtual Machine wordt uitgevoerd, die wordt geleverd door de JDK-distributie (Java™ Development Kit).
 
-Adobe Experience Manager werkt met de volgende versies van Java™ Virtual Machines:
+Adobe Experience Manager werkt met de volgende versies van de Java™ Virtual Machines:
 
 >[!CAUTION]
 >
->Volg de beveiligingsbulletins van de Java™-leverancier. Dit garandeert de veiligheid en beveiliging van productieomgevingen. Installeer ook altijd de nieuwste Java™-updates.
+>Volg de beveiligingsbulletins van de Java-leverancier™. Dit zorgt voor de veiligheid en beveiliging van productieomgevingen. Installeer ook altijd de nieuwste Java-updates™.
 
-| **Platform** | **Niveau van de Steun** | **Verbinding** |
+| **Perron** | **Ondersteuningsniveau** | **Verbinding** |
 |---|---|---|
-| Oracle Java™ SE 17 JDK | Z: Niet ondersteund `[1]` |
-| Oracle Java™ SE 11 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
-| Oracle Java™ SE 10 JDK | Z: Niet ondersteund `[1]` |
-| Oracle Java™ SE 9 JDK | Z: Niet ondersteund `[1]` |
-| Oracle Java™ SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
-| IBM® J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[2]` |
-| IBM® J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[2]` |
-| Azul Zulu OpenJDK 11 - 64-bits | A: Ondersteund `[3]` | |
-| Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[3]` | |
+| Oracle Java™ SE 17 JDK | A: Ondersteund `[1]` |
+| IBM® Semeru J9 VM - build 17.0.13.0 | A: Ondersteund `[2]` |
 
-1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java™ SE-producten. Java™ 9, Java™ 10, en Java™ 12 zijn niet-LTS versies door Oracle (zie [ Oracle Java™ SE steunroadmap ](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in een productieomgeving te implementeren, biedt Adobe alleen ondersteuning voor de LTS-versies van Java™. De ondersteuning en distributie van de Oracle Java™ SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt rechtstreeks door Adobe ondersteund voor alle AEM-klanten die de Oracle Java™ SE-technologie gebruiken. Zie het [ Java™ steunbeleid voor Adobe Experience Manager ](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Belangrijk: Oracle Java™ 11 wordt gesteund tot minstens september 2026. Ondersteuning voor Oracle Java™ 17 is in voorbereiding.**
+1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java™ SE-producten. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 zijn niet-LTS versies door Oracle (zie [ Oracle Java™ SE support roadmap ](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in een productieomgeving te implementeren, biedt Adobe alleen ondersteuning voor de LTS-versies van Java™. De ondersteuning en distributie van de Oracle Java™ SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt rechtstreeks door Adobe ondersteund voor alle AEM-klanten die de Oracle Java™ SE-technologie gebruiken. Zie het [ Java™ steunbeleid voor Adobe Experience Manager ](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **deze versie steunt Oracle Java™ 17.**
 
 1. IBM® JRE wordt alleen ondersteund in combinatie met WebSphere® Application Server.
-
-1. Azul Zulu OpenJDK LTS-versies worden ondersteund voor AEM-implementaties op locatie vanaf versie 6.5 SP9. Voor de ondersteuning en distributie van de Azul Zulu JDK LTS-versies moet een licentie worden verleend door Adobe-klanten.
-
 
 ### Opslag en duurzaamheid {#storage-persistence}
 
@@ -118,28 +108,12 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 | Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `[1]` | Binden | Z: Niet ondersteund voor productie |
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft® Azure Blob Storage | Binden | A: Ondersteund |
-| MongoDB Enterprise 6.0 | Bewaarplaats | A: Ondersteund `[3, 4]` |
-| MongoDB Enterprise 5.0 | Bewaarplaats | A: Ondersteund `[3, 4]` |
-| MongoDB Enterprise 4.4 | Bewaarplaats | A: Ondersteund `[2, 3, 4, 7]` |
-| MongoDB Enterprise 4.2 | Bewaarplaats | A: Ondersteund `[2, 3, 4, 7]` |
-| MongoDB Enterprise 4.0 | Bewaarplaats | Z: Niet ondersteund |
-| MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |
-| MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
-| IBM® DB2® 10.5 | Opslagplaats en Forms-database | R: Beperkte ondersteuning `[5]` |
-| Oracle Database 12c (12.1.x) | Opslagplaats en Forms-database | R: Beperkte ondersteuning |
-| Microsoft® SQL Server 2016 | Forms-database | A: Ondersteund |
+| MongoDB Enterprise 6.0 en 7.0 | Bewaarplaats | A: Ondersteund `[3, 4]` |
 | **Apache Lucene (ingebouwde QuickStart)** | Zoekservice | A: Ondersteund |
-| Apache Solr | Zoekservice | A: Ondersteund |
 
 1. &#39;Bestandssysteem&#39; omvat blokopslag die voldoet aan POSIX. Omvat de technologie van de netwerkopslag. Houd er rekening mee dat de prestaties van het bestandssysteem kunnen variëren en van invloed zijn op de algehele prestaties. Laad test AEM met het netwerk/externe bestandssysteem.
-1. Voor MongoDB Enterprise versie 4.2 en 4.4 is minimaal AEM 6.5 SP9 vereist.
 1. Delen via MongoDB wordt niet ondersteund in AEM.
 1. MongoDB Storage Engine WiredTiger wordt alleen ondersteund.
-1. Ondersteund voor AEM Forms-upgradeklanten. Niet ondersteund voor nieuwe installaties.
-1. Alleen van toepassing op AEM Forms:
-   * Verwijderde ondersteuning voor Oracle Database 12c en extra ondersteuning voor Oracle Database 19c.
-   * Verwijderde ondersteuning voor Microsoft® SQL Server 2016 en toegevoegde ondersteuning voor Microsoft® SQL Server 2019.
-1. Niet ondersteund voor AEM Forms.
 
 >[!NOTE]
 >
@@ -157,9 +131,9 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 >[!NOTE]
 >
->Ondersteunde relationele databases, zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM licentiepakket.
+>Ondersteunde relationele databases zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM-licentiepakket.
 >
->Als u AEM 6.5 wilt uitvoeren met een ondersteunde relationele database, hebt u een afzonderlijk ondersteuningscontract met een databaseleverancier nodig. De klantenservice van Adobe helpt kwalificerende problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
+>Als u AEM 6.5 wilt uitvoeren met een ondersteunde relationele database, hebt u een afzonderlijk ondersteuningscontract met een databaseleverancier nodig. Adobe Customer Care helpt bij het kwalificeren van problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
 >
 >**de meeste relationele gegevensbestanden worden momenteel gesteund binnen niveau-R op AEM 6.5, die met steuncriteria en een steunprogramma zoals die in de hierboven beschrijving van niveau-R wordt verklaard komt.**
 
@@ -167,23 +141,16 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 Adobe Experience Manager kan worden uitgevoerd als een zelfstandige server (het QuickStart JAR-bestand) of als een webtoepassing binnen een externe toepassingsserver (het WAR-bestand).
 
-De minimaal vereiste Servlet API-versie is Servlet 3.1
+De minimaal vereiste Servlet API-versie is Servlet 3.1. Daarnaast ondersteunt AEM Jakarta servlet 5 voor jar en war in toepassingsservers die Jakarta servlet API 5/6 implementeren.
 
-| Platform | Ondersteuningsniveau |
+| Perron | Ondersteuningsniveau |
 |---|---|
-| **Quickstart ingebouwde Motor van Servlet (Jetty 9.4)** | A: Ondersteund |
-| Oracle WebLogic Server 12.2 (12cR2) | Z: Niet ondersteund |
-| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) met Web Profile 7.0 en IBM® JRE 1.8 | R: Beperkte ondersteuning voor nieuwe contracten `[2]` |
-| IBM® WebSphere® Application Server 9.0 en IBM® JRE 1.8 | R: Beperkte ondersteuning voor nieuwe contracten `[1]` `[2]` |
-| Apache Tomcat 8.5.x | R: Beperkte ondersteuning voor nieuwe contracten `[2]` |
-| JBoss® EAP 7.2.x met JBoss® Application Server | Z: Niet ondersteund |
-| JBoss® EAP 7.1.4 met JBoss® Application Server | R: Beperkte ondersteuning voor nieuwe contracten `[1]` `[2]` |
-| JBoss® EAP 7.0.x met JBoss® Application Server | Z: Niet ondersteund |
+| **Quickstart ingebouwde Servlet-motor (steiger 11.0.x)** | A: Ondersteund |
+| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) met Web Profile 24.0.0.7 en IBM® Sumeru openen JRE® 17 | A: Beperkte ondersteuning voor nieuwe contracten `[2]` |
+| Apache Tomcat 10.1.x | R: Beperkte ondersteuning voor nieuwe contracten `[2]` |
 
 1. Aanbevolen voor implementaties met AEM Forms.
 1. Als u AEM 6.5-implementaties start op toepassingsservers, gaat u naar Beperkte ondersteuning. Bestaande klanten kunnen upgraden naar AEM 6.5 en blijven toepassingsservers gebruiken. Voor nieuwe klanten wordt het geleverd met steuncriteria en een steunprogramma zoals die in de hierboven beschreven Niveau-R beschrijving worden vermeld.
-1. Alleen van toepassing op AEM Forms:
-   * Verwijderde ondersteuning voor JBoss® EAP 7.1.4 en extra ondersteuning voor JBoss® EAP 7.4.10.
 
 ### Serverbesturingssystemen {#server-operating-systems}
 
@@ -194,13 +161,8 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | **Linux®, die op de distributie van Red Hat®** wordt gebaseerd | A: Ondersteund `[1]` `[3]` |
 | Linux®, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[1]` `[2]` |
 | Linux®, gebaseerd op SUSE®-distributie | A: Ondersteund `[1]` |
-| Microsoft® Windows Server 2019 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
-| Microsoft® Windows Server 2016 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
-| Microsoft® Windows Server 2012 R2 | Z: Niet ondersteund |
-| Oracle Solaris™ 11 | Z: Niet ondersteund |
-| IBM® AIX® 7.2 | Z: Niet ondersteund |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
+1. Linux® Kernel 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
 1. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
 1. Linux®-distributie ondersteund door Adobe Managed Services.
 
@@ -219,7 +181,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 >[!NOTE]
 >
->Als u AEM Forms 6.5 installeert, zorg ervoor u volgende 32 beetje Microsoft® Visuele C++ redistributable geïnstalleerd hebt.
+>Als u AEM Forms 6.5 installeert, moet u ervoor zorgen dat u de volgende 32-bits Microsoft® Visual C++ herdistribueerbare versie hebt geïnstalleerd.
 >
 >* Microsoft® Visual C++ 2008 herdistribueerbaar
 >* Microsoft® Visual C++ 2010 herdistribueerbaar
@@ -228,11 +190,11 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 >* Microsoft® Visual C++ 2019 (VC14.28 of groter) herdistribueerbaar
 
 
-### Virtuele en cloud computeromgevingen {#virtual-cloud-computing-environments}
+### Virtuele en cloud computing-omgevingen {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
+Adobe Experience Manager wordt ondersteund door te draaien in een virtuele machine in cloudcomputingomgevingen. Deze omgevingen omvatten Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld en volgens de standaard ondersteuningsvoorwaarden van Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
+Voor een cloud-native omgeving raadpleegt u het nieuwste aanbod van de AEM productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -329,7 +291,7 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
 </table>
 
 1. Uitgebreide Versie van de Steun van Firefox [ Leer meer op mozilla.org ](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. ondersteuning voor Apple iPad
+1. Ondersteuning voor Apple iPad
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
 
@@ -353,9 +315,9 @@ Deze sectie biedt speciale notities en meer gedetailleerde informatie over het u
 
 ### IPv4 en IPv6 {#ipv-and-ipv}
 
-Alle elementen van Adobe Experience Manager (Instance, Dispatcher) kunnen worden geïnstalleerd in zowel IPv4- als IPv6-netwerken.
+Alle elementen van Adobe Experience Manager (Instance, Dispatcher) kunnen in zowel IPv4 als IPv6 netwerken worden geïnstalleerd.
 
-De bediening is naadloos omdat er geen speciale configuratie nodig is. U geeft indien nodig een IP-adres op in de indeling die geschikt is voor uw netwerktype.
+De bewerking is naadloos omdat er geen speciale configuratie vereist is. U geeft indien nodig een IP-adres op in de indeling die geschikt is voor uw netwerktype.
 
 Wanneer een IP-adres moet worden opgegeven, kunt u (indien nodig) kiezen uit het volgende:
 
@@ -407,7 +369,7 @@ Als u Dynamic Media gebruikt op Linux®, moet aan de volgende voorwaarden worden
 
 >[!NOTE]
 >
->**architectuur NUMA:** Systemen met bewerkers die AMD64 en Intel® EM64T kenmerken worden gevormd typisch als niet-uniforme geheugenarchitectuur (NUMA) platforms. Dat wil zeggen, de kernel bouwt meerdere geheugenknooppunten tijdens het opstarten in plaats van een enkele geheugenknoop te bouwen.
+>**architectuur NUMA:** Systemen met bewerkers die AMD64 en Intel® EM64T kenmerken worden gevormd typisch als niet-uniforme geheugenarchitectuur (NUMA) platforms. Dat wil zeggen dat de kernel meerdere geheugenknooppunten samenstelt bij opstarttijd in plaats van één geheugenknooppunt te maken.
 >
 >De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
 >
@@ -422,9 +384,9 @@ Als u Dynamic Media gebruikt op Linux®, moet aan de volgende voorwaarden worden
 #### Ramen {#windows}
 
 * Microsoft® Windows Server 2016
-* Wissel ruimte om die gelijk is aan ten minste twee keer de hoeveelheid fysiek geheugen (RAM)
+* Ruimte wisselen gelijk aan minstens tweemaal de hoeveelheid fysiek geheugen (RAM)
 
-Als u Dynamic Media op Windows wilt gebruiken, installeert u Microsoft® Visual Studio 2010, 2013 en 2015, herdistribueerbaar voor x64 en x86.
+Om Dynamische Media op Vensters te gebruiken, installeer Microsoft® Visual Studio 2010, 2013, en 2015 redistributable voor x64 en x86.
 
 Voor Windows x64:
 
@@ -438,7 +400,7 @@ Voor Windows x86:
 * Krijg Microsoft® Visual Studio 2013 redistributable in [ https://www.microsoft.com/en-in/download/details.aspx?id=40769 ](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
 * Krijg Microsoft® Visual Studio 2015 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=52685 ](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
-#### macOS (Engelstalig) {#macos}
+#### macOS {#macos}
 
 * 10.9.x en hoger
 * Alleen ondersteund voor proefversie en demo-doeleinden
@@ -525,9 +487,9 @@ Voor Windows x86:
 * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
 * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
-* 2,35 GB beschikbare ruimte op de harde schijf
-* Monitorresolutie van 1024 x 768 pixels of meer
-* Versnelling van videohardware (optioneel)
+* 2,35 GB beschikbare ruimte op de vaste schijf
+* Monitorresolutie van 1024 x 768 pixels of hoger
+* Hardwareversnelling voor video (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
 * Beheerdersbevoegdheden om Designer te installeren
 * Microsoft Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime voor 32-bits AEM Forms Designer
@@ -539,7 +501,7 @@ Voor Windows x86:
 
 Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 
-* **Besturingssystemen:**
+* **Werkende Systemen:**
 
    * Linux® (32-bits en 32-bits toepassingsondersteuning op 64-bits systemen). Voor stappen om cliëntbibliotheken met 32 bits te installeren, zie [ hoe te de extractie van XMP en schrijven-terug op Rode Hoed® Linux® met 64 bits ](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) toelaten.
 
@@ -548,6 +510,6 @@ Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platf
 
 * **Formaten van het Dossier**: JPEG, PNG, TIFF, PDF, INDD, AI, en EPS.
 
-### Vereisten voor AEM Assets voor het verwerken van metadata-zware assets op Linux® {#assetsonlinux}
+### Vereisten voor AEM Assets om zwaar materiaal met metagegevens te verwerken op Linux® {#assetsonlinux}
 
-Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux-kernel® die GLIBC_2.14 bevat, bijvoorbeeld Linux-kernel® versie 3.1.x. Het verbetert de prestaties voor het verwerken van assets die een grote hoeveelheid metadata bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .
+Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .
