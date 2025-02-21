@@ -1,0 +1,65 @@
+---
+title: Uw accountomgeving configureren
+description: Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
+contentOwner: Chris Bohnert
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: introduction
+content-type: reference
+docset: aem65
+solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 0%
+
+---
+
+# Uw accountomgeving configureren{#configuring-your-account-environment}
+
+Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
+
+Gebruikend de [ rekeningsmontages ](#account-settings) en [ gebruikersvoorkeur ](#user-preferences) kunnen de volgende opties en de voorkeur worden bepaald:
+
+* **het Uitgeven Toolbar**
+Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze toolbar, die bij de bovenkant van het browser venster wordt getoond, geeft u **Exemplaar**, **Besnoeiing**, **Deeg**, **schrap** knopen voor het gebruiken met de paragraafcomponenten op die pagina:
+
+   * Weergeven indien nodig (standaard)
+   * Altijd tonen
+   * Verborgen houden
+
+* **impersonate als**
+De functionaliteit van [ imiteert als ](/help/sites-administering/security.md#impersonating-another-user) laat een gebruikerswerk namens een andere gebruiker.
+
+* **Taal**
+De taal die voor UI van het auteursmilieu moet worden gebruikt. Selecteer de gewenste taal in de beschikbare lijst.
+
+* **Beheer van het Venster**
+Selecteer een van de volgende opties:
+
+   * Meerdere vensters (standaard)
+Pagina&#39;s worden geopend in een nieuw venster.
+   * Eén venster
+Pagina&#39;s worden geopend in het huidige venster.
+
+## Accountinstellingen {#account-settings}
+
+Met het gebruikerspictogram hebt u toegang tot de volgende opties:
+
+* Afmelden
+* [Imiteren als](/help/sites-administering/security.md#impersonating-another-user)
+* [Gebruikersvoorkeuren](#user-preferences)
+* [Melding in vak](/help/sites-classic-ui-authoring/author-env-inbox.md)
+
+![ chlimage_1-122 ](assets/chlimage_1-122.png)
+
+### Gebruikersvoorkeuren {#user-preferences}
+
+Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen. Dit is beschikbaar van het **de dialoogvakje van de Voorkeur** in de hoger-juiste hoek van de consoles.
+
+![ screen_shot_2012-02-08at105033am ](assets/screen_shot_2012-02-08at105033am.png)
+
+Het dialoogvenster bevat de volgende opties:
+
+![ chlimage_1-123 ](assets/chlimage_1-123.png)

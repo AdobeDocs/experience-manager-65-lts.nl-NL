@@ -1,0 +1,55 @@
+---
+title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
+description: De functie voor responsieve code gebruiken om geoptimaliseerde afbeeldingen te leveren
+contentOwner: Rick Brough
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+topic-tags: dynamic-media
+content-type: reference
+feature: Asset Management
+role: User, Admin
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 8%
+
+---
+
+# Geoptimaliseerde afbeeldingen leveren voor een responsieve site {#delivering-optimized-images-for-a-responsive-site}
+
+Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsieve functies in uw webontwikkelaar. U kopieert de responsieve code (**[!UICONTROL RESS]**) naar het klembord zodat u deze kunt delen met de webontwikkelaar.
+
+Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw website zich echter op Adobe Experience Manager bevindt, wordt de afbeelding door een externe afbeeldingsserver gerenderd en aan de webpagina geleverd.
+
+Zie ook [ bed de VideoKijker op een Web-pagina ](embed-code.md) in.
+
+Zie ook [ Verbinding URLs aan uw Toepassing van het Web ](linking-urls-to-yourwebapplication.md).
+
+**om geoptimaliseerde beelden voor een ontvankelijke plaats te leveren:**
+
+1. Navigeer naar de afbeelding waarvoor u responsieve code wilt opgeven en selecteer **[!UICONTROL Renditions]** in het keuzemenu.
+
+   ![ chlimage_1-408 ](assets/chlimage_1-408.png)
+
+1. Selecteer een responsieve voorinstelling voor de afbeelding. De knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]** worden weergegeven.
+
+   ![ chlimage_1-409 ](assets/chlimage_1-208.png)
+
+   >[!NOTE]
+   >
+   >De geselecteerde asset *en* de geselecteerde afbeeldings- of viewervoorinstelling moeten worden gepubliceerd om de knoppen **[!UICONTROL URL]** of **[!UICONTROL RESS]** beschikbaar te maken.
+   >
+   >Dynamische media - Voor de hybride modus moet u voorinstellingen voor afbeeldingen publiceren. In de modus Dynamische media - Scene7 worden automatisch voorinstellingen voor afbeeldingen gepubliceerd.
+
+1. Selecteer **[!UICONTROL RESS]** .
+
+   ![ chlimage_1-410 ](assets/chlimage_1-410.png)
+
+1. Selecteer in het dialoogvenster **[!UICONTROL Embed Responsive Image]** de tekst van de responsieve code, kopieer deze en plak deze in uw website om het responsieve element te openen.
+1. Bewerk de standaardonderbrekingspunten in de insluitcode zodat deze overeenkomen met de onderbrekingspunten van de responsieve website, rechtstreeks in de code. Test bovendien de verschillende afbeeldingsresoluties die op verschillende pagina-onderbrekingspunten worden weergegeven.
+
+## HTTP/2 gebruiken om uw dynamische media-elementen te leveren {#using-http-to-delivery-your-dynamic-media-assets}
+
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijden biedt.
+
+Zie [ HTTP2 Levering van Inhoud ](http2.md) voor volledige details bij het worden begonnen HTTP/2 met uw Dynamische rekening van Media te gebruiken.

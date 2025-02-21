@@ -1,0 +1,250 @@
+---
+title: Bepalen of documenten voldoen aan PDF/A
+description: Gebruik de Assembler-service om te bepalen of een PDF-document PDF/A-compatibel is met de Java API en Web Service API.
+contentOwner: admin
+content-type: reference
+geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: operations
+role: Developer
+solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,Document Services,APIs & Integrations
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '2065'
+ht-degree: 0%
+
+---
+
+# Bepalen of documenten voldoen aan PDF/A {#determining-whether-documents-are-pdf-a-compliant}
+
+U kunt met de Assembler-service bepalen of een PDF-document PDF/A-compatibel is. Een PDF/A-document bestaat als een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+
+De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk A en B. Het grootste verschil tussen de twee niveaus is de logische structuur (toegankelijkheid) ondersteuning, die niet vereist is voor compatibiliteitsniveau B. Ongeacht het compatibiliteitsniveau, schrijft PDF/A-1 voor dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document. Momenteel wordt alleen PDF/A-1b ondersteund voor validatie (en conversie).
+
+Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
+
+```xml
+ <?xml version="1.0" encoding="UTF-8"?>
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
+         <DocumentInformation source="Loan.pdf" result="Loan_result.xml">
+         <PDFAValidation compliance="PDF/A-1b" resultLevel="Detailed"                       ignoreUnusedResources="true" allowCertificationSignatures="true" />
+     </DocumentInformation>
+ </DDX>
+```
+
+Binnen dit DDX-document geeft het `DocumentInformation` -element de Assembler-service de opdracht om informatie over het PDF-invoerdocument te retourneren. Binnen het element `DocumentInformation` geeft het element `PDFAValidation` de Assembler-service de opdracht aan te geven of het PDF-invoerdocument PDF/A-compatibel is.
+
+De Assembler-service retourneert informatie die aangeeft of het PDF-invoerdocument PDF/A-compatibel is in een XML-document dat een `PDFAConformance` -element bevat. Als het invoer-PDF-document PDF/A-compatibel is, is de waarde van het `isCompliant` -kenmerk van het `PDFAConformance` -element `true` . Als het PDF-document niet PDF/A-compatibel is, is de waarde van het `isCompliant` -kenmerk van het `PDFAConformance` -element `false` .
+
+>[!NOTE]
+>
+>Omdat het DDX-document dat in deze sectie wordt opgegeven, een `DocumentInformation` -element bevat, retourneert de Assembler-service XML-gegevens in plaats van een PDF-document. Met andere woorden, de Assembler-service kan een PDF-document niet samenstellen of demonteren, maar geeft informatie over het invoer-PDF-document in een XML-document.
+
+>[!NOTE]
+>
+>Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+
+>[!NOTE]
+>
+>Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+
+## Overzicht van de stappen {#summary-of-steps}
+
+Om te bepalen of een PDF-document PDF/A-compatibel is, voert u de volgende taken uit:
+
+1. Inclusief projectbestanden.
+1. Maak een PDF Assembler-client.
+1. Verwijs naar een bestaand DDX-document.
+1. Verwijs naar een PDF-document dat wordt gebruikt om PDF/A-compatibiliteit te bepalen.
+1. Stel runtime-opties in.
+1. Haal informatie op over het PDF-document.
+1. Sla het geretourneerde XML-document op.
+
+**omvat projectdossiers**
+
+Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, dient u de proxybestanden op te nemen.
+
+De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw project:
+
+* adobe-livecycle-client.jar
+* adobe-usermanager-client.jar
+* adobe-assembler-client.jar
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+
+als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+
+**creeer een cliënt van de Assembler van PDF**
+
+Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, moet u een de dienstcliënt van de Assembler tot stand brengen.
+
+**Verwijzing een bestaand document DDX**
+
+Er moet naar een DDX-document worden verwezen om een Assembler-servicebewerking uit te voeren. Als u wilt bepalen of een PDF-invoerdocument PDF/A-compatibel is, controleert u of het DDX-document het `PDFAValidation` -element in een `DocumentInformation` -element bevat. Het element `PDFAValidation` instrueert de Assembler-service een XML-document te retourneren dat opgeeft of het invoer-PDF-document PDF/A-compatibel is.
+
+**Verwijzing een document van PDF dat wordt gebruikt om naleving PDF/A te bepalen**
+
+Er moet naar een PDF-document worden verwezen en dat document moet worden doorgegeven aan de Assembler-service om te bepalen of het PDF-document compatibel is met PDF/A.
+
+**vastgestelde runtime opties**
+
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Voor informatie over de runtime opties die u kunt plaatsen, zie de `AssemblerOptionSpec` klassenverwijzing in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+
+**wint informatie over het document van PDF** terug
+
+Nadat u de Assembler-serviceclient hebt gemaakt, naar het DDX-document verwijst, naar een interactief PDF-document verwijst en runtime-opties hebt ingesteld, kunt u de `invokeDDX` -bewerking activeren. Omdat het DDX-document het `DocumentInformation` -element bevat, retourneert de Assembler-service XML-gegevens in plaats van een PDF-document.
+
+**sparen het teruggekeerde document van XML**
+
+Het XML-document dat door de Assembler-service wordt geretourneerd, geeft aan of het invoer-PDF-document PDF/A-compatibel is. Als het PDF-invoerdocument bijvoorbeeld niet PDF/A-compatibel is, retourneert de Assembler-service een XML-document dat het volgende element bevat:
+
+```xml
+ <PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Detailed" ignoreUnusedResources="true" allowCertificationSignatures="true">
+```
+
+Sla het XML-document op als een XML-bestand, zodat u het bestand kunt openen en de resultaten kunt bekijken.
+
+**zie ook**
+
+[Bepalen of een document compatibel is met PDF/A met de Java API](/help/forms/developing/determining-whether-documents-pdf-a.md#determine-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+
+[Bepalen of een document compatibel is met PDF/A met de webservice-API](/help/forms/developing/determining-whether-documents-pdf-a.md#determine-whether-a-document-is-pdf-a-compliant-using-the-web-service-api)
+
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
+[Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+
+[PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+
+## Bepalen of een document compatibel is met PDF/A met de Java API {#determine-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+
+Bepaal of een PDF-document PDF/A-compatibel is met behulp van de Assembler Service API (Java):
+
+1. Inclusief projectbestanden.
+
+   Neem client-JAR-bestanden, zoals adobe-assembler-client.jar, op in het klassenpad van uw Java-project.
+
+1. Maak een PDF Assembler-client.
+
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat.
+   * Maak een `AssemblerServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
+
+1. Verwijs naar een bestaand DDX-document.
+
+   * Maak een `java.io.FileInputStream` -object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft. Als u wilt bepalen of het PDF-document PDF/A-compatibel is, controleert u of het DDX-document het `PDFAValidation` -element bevat dat zich in een `DocumentInformation` -element bevindt.
+   * Maak een `com.adobe.idp.Document` -object door de constructor ervan te gebruiken en het `java.io.FileInputStream` -object door te geven.
+
+1. Verwijs naar een PDF-document dat wordt gebruikt om PDF/A-compatibiliteit te bepalen.
+
+   * Maak een `java.io.FileInputStream` -object door de constructor ervan te gebruiken en de locatie door te geven van een PDF-document dat wordt gebruikt om de compatibiliteit met PDF/A te bepalen.
+   * Maak een `com.adobe.idp.Document` -object met behulp van de constructor en geef het `java.io.FileInputStream` -object door dat het PDF-document bevat.
+   * Maak een `java.util.Map` -object dat wordt gebruikt om het invoer-PDF-document op te slaan met behulp van een `HashMap` -constructor.
+   * Voeg een item aan het object `java.util.Map` toe door de methode `put` ervan aan te roepen en de volgende argumenten door te geven:
+
+      * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het bronelement dat is opgegeven in het DDX-document. De waarde van het bronelement in het DDX-document dat in deze sectie wordt geïntroduceerd, is bijvoorbeeld Loan.pdf.
+      * Een `com.adobe.idp.Document` -object dat het invoer-PDF-document bevat.
+
+1. Stel runtime-opties in.
+
+   * Maak een `AssemblerOptionSpec` -object dat uitvoeringsopties opslaat met behulp van de bijbehorende constructor.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot het `AssemblerOptionSpec` -object behoort. Als u bijvoorbeeld wilt dat de Assembler-service een taak blijft verwerken wanneer een fout optreedt, roept u de methode `setFailOnError` van het object `AssemblerOptionSpec` aan en geeft u deze door `false` .
+
+1. Haal informatie op over het PDF-document.
+
+   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende vereiste waarden door:
+
+   * Een `com.adobe.idp.Document` -object dat het te gebruiken DDX-document vertegenwoordigt
+   * Een `java.util.Map` -object dat het PDF-invoerbestand bevat dat wordt gebruikt om de compatibiliteit met PDF/A te bepalen
+   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` -object dat de runtime-opties opgeeft
+
+   De methode `invokeDDX` retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` -object dat XML-gegevens bevat die opgeven of het invoer-PDF-document PDF/A-compatibel is.
+
+1. Sla het geretourneerde XML-document op.
+
+   Voer de volgende handelingen uit om XML-gegevens te verkrijgen die opgeven of het invoer-PDF-document een PDF/A-document is:
+
+   * Roep de methode `getDocuments` van het object `AssemblerResult` aan. Hiermee wordt een `java.util.Map` -object geretourneerd.
+   * Doorloop het `java.util.Map` -object totdat u het resulterende `com.adobe.idp.Document` -object vindt.
+   * Roep de methode `copyToFile` van het object `com.adobe.idp.Document` aan om het XML-document te extraheren. Zorg ervoor dat u de XML-gegevens opslaat als een XML-bestand.
+
+**zie ook**
+
+[ Snel Begin (de wijze van SOAP): Bepalend of een document PDF/A volgzaam gebruikend Java API ](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (de wijze van SOAP) is
+
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
+[Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+
+## Bepalen of een document compatibel is met PDF/A met de webservice-API {#determine-whether-a-document-is-pdf-a-compliant-using-the-web-service-api}
+
+Bepaal of een PDF-document PDF/A-compatibel is met behulp van de Assembler Service API (webservice):
+
+1. Inclusief projectbestanden.
+
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Gebruik de volgende WSDL-definitie: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1` .
+
+   >[!NOTE]
+   >
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+
+1. Maak een PDF Assembler-client.
+
+   * Maak een `AssemblerServiceClient` -object met de standaardconstructor.
+   * Maak een `AssemblerServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `AssemblerServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
+   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
+
+      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` .
+      * Wijs de bijbehorende wachtwoordwaarde toe aan het veld `AssemblerServiceClient.ClientCredentials.UserName.Password` .
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` toe aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` .
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` toe aan het veld `BasicHttpBindingSecurity.Security.Mode` .
+
+1. Verwijs naar een bestaand DDX-document.
+
+   * Maak een `BLOB` -object met behulp van de constructor. Het `BLOB` -object wordt gebruikt om het DDX-document op te slaan.
+   * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het `BLOB` -object door het `MTOM` -veld ervan toe te wijzen met de inhoud van de bytearray.
+
+1. Verwijs naar een PDF-document dat wordt gebruikt om PDF/A-compatibiliteit te bepalen.
+
+   * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt het invoer-PDF-document opgeslagen.
+   * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-invoerdocument en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
+   * Maak een `MyMapOf_xsd_string_To_xsd_anyType` -object. Met dit verzamelingsobject wordt het PDF-document opgeslagen.
+   * Maak een `MyMapOf_xsd_string_To_xsd_anyType_Item` -object.
+   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan het veld `key` van het `MyMapOf_xsd_string_To_xsd_anyType_Item` -object. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
+   * Wijs het `BLOB` -object toe dat het PDF-document opslaat in het veld `MyMapOf_xsd_string_To_xsd_anyType_Item` Object `value` .
+   * Voeg het object `MyMapOf_xsd_string_To_xsd_anyType_Item` toe aan het object `MyMapOf_xsd_string_To_xsd_anyType` . Roep de methode `MyMapOf_xsd_string_To_xsd_anyType` object&#39; `Add` aan en geef het object `MyMapOf_xsd_string_To_xsd_anyType` door.
+
+1. Stel runtime-opties in.
+
+   * Maak een `AssemblerOptionSpec` -object dat uitvoeringsopties opslaat met behulp van de bijbehorende constructor.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot het `AssemblerOptionSpec` -object behoort. Als u bijvoorbeeld de Assembler-service wilt instrueren een taak te blijven verwerken wanneer een fout optreedt, wijst u `false` toe aan het gegevenslid van het `AssemblerOptionSpec` object `failOnError` .
+
+1. Haal informatie op over het PDF-document.
+
+   Roep de methode `invoke` van het object `AssemblerServiceService` aan en geef de volgende waarden door:
+
+   * Een `BLOB` -object dat het DDX-document vertegenwoordigt.
+   * Het `MyMapOf_xsd_string_To_xsd_anyType` -object dat het invoer-PDF-document bevat. De sleutels ervan moeten overeenkomen met de namen van de PDF-bronbestanden en de waarden ervan moeten het `BLOB` -object zijn dat overeenkomt met het PDF-invoerbestand.
+   * Een `AssemblerOptionSpec` -object dat uitvoeringsopties opgeeft.
+
+   De methode `invoke` retourneert een `AssemblerResult` -object dat XML-gegevens bevat die opgeven of het invoer-PDF-document een PDF/A-document is.
+
+1. Sla het geretourneerde XML-document op.
+
+   Voer de volgende handelingen uit om XML-gegevens te verkrijgen die opgeven of het invoer-PDF-document een PDF/A-document is:
+
+   * Open het veld `documents` van het `AssemblerResult` -object (een `Map` -object dat de XML-gegevens bevat die opgeven of het invoer-PDF-document een PDF/A-document is).
+   * Doorloop het `Map` -object om elk resulterend document te verkrijgen. Vervolgens cast u de waarde van dat arraylid naar een `BLOB` .
+   * Haal de binaire gegevens die de XML-gegevens vertegenwoordigen uit het veld `MTOM` van het object `BLOB` . In dit veld wordt een array met bytes opgeslagen waarnaar u kunt schrijven als een XML-bestand.
+
+**zie ook**
+
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

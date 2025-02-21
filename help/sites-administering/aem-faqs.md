@@ -1,0 +1,121 @@
+---
+title: Veelgestelde vragen over AEM
+description: Gebruik deze veelgestelde vragen om algemene workflows of problemen in AEM te begrijpen, te configureren en op te lossen.
+solution: Experience Manager, Experience Manager Sites
+feature: Configuring
+role: Admin
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 0%
+
+---
+
+# Veelgestelde vragen over AEM {#aem-faqs}
+
+Weet de antwoorden op sommige problemen met AEM bij het oplossen van problemen en de configuratie.
+
+## Sites {#sites}
+
+### Hoe vorm ik binair-minder distributie? {#how-do-i-configure-binary-less-distribution}
+
+Distributie zonder binding wordt ondersteund voor implementaties via een gedeelde gegevensopslagruimte en betreft agents die gebruikmaken van de PID-pakketbuilder (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) op basis van vault.
+
+Met binair-geen toegelaten wijze, bevatten de verdeelde inhoudspakketten verwijzingen naar binaire getallen eerder dan de daadwerkelijke binaire getallen.
+
+#### Hoe laat ik binair-minder distributie toe? {#how-do-i-enable-binary-less-distribution}
+
+Om binair-minder distributie toe te laten, stel met een gedeelde blob opslag op.
+Controleer het `useBinaryReferences` bezit in de configuratie OSGI met fabriekPID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* dat uw agent gebruikt.
+
+#### Hoe kunt u machtigingen inschakelen tijdens het maken van Taalkopie voor inhoudsauteurs in AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
+
+Voor het maken van een functie voor het kopiëren van talen hebben inhoudsauteurs machtigingen nodig op de locatie `/content/projects` .
+
+Als u wilt dat de auteurs ook projecten beheren, kunt u dit omzeilen door de auteur toe te voegen aan de groep `projects-administrators` .
+
+#### Hoe te om het formaat te veranderen terwijl het creëren van het Exemplaar van de Taal voor een project? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
+
+Creeer een taalwortel en taalexemplaar binnen de wortel, alvorens een vertaalproject tot stand te brengen.
+
+Bijvoorbeeld:
+Maak een hoofdmap in `/content/geometrixx` met de naam `fr_LU` (en een titel als Frans (Luxemburg)). Maak vervolgens een taalkopie van de pagina in het venster Referenties en navigeer naar de optie `Create structure only` in `Create & Translate` . Tot slot creeer een vertaalproject en voeg dan de taalexemplaar aan de vertaalbaan toe.
+
+Zie de volgende aanvullende bronnen voor meer informatie:
+
+* [Inhoud voorbereiden voor vertaling](/help/sites-administering/tc-prep.md)
+* [Vertaalprojecten beheren](/help/sites-administering/tc-manage.md)
+
+#### Hoe te om de mogelijkheden van AEM zoals, login pogingen en ACL of toestemmingsveranderingen te controleren? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
+
+AEM heeft de capaciteit geïntroduceerd om administratieve veranderingen voor betere het oplossen van problemen en controle te registreren. Standaard wordt de informatie in het `error.log` -bestand aangemeld. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht.
+Om de output aan een afzonderlijk logboekdossier opnieuw te richten, zie [ hoe te de verrichtingen van het gebruikersbeheer in AEM ](/help/sites-administering/audit-user-management-operations.md) controleren.
+
+#### Hoe te om SSL door gebrek toe te laten? {#how-to-enable-ssl-by-default}
+
+Adobe Experience Manager (AEM) 6.4 wordt geleverd met de SSL-wizard en biedt een gebruikersinterface voor het configureren van Jetty- en Granite Jetty SSL-ondersteuning.
+
+Om SSL door gebrek toe te laten, zie [ SSL door gebrek ](/help/sites-administering/ssl-by-default.md).
+
+#### Wat is de aanbevolen architectuur wanneer u AEM Content Services gebruikt vanuit een mobiele app, idealiter React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+
+De services voor inhoud zijn gebaseerd op de modellen voor verkoop en de AEM-ontwikkelaars moeten een pojo voor het model voor verkoop opgeven voor elke component die wordt geëxporteerd.
+
+Om te begrijpen hoe te om de inhoudsdiensten van AEM van een React toepassing te verbruiken, zie [ Begonnen krijgen met de inhoudsdiensten van AEM ](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) leerprogramma.
+
+Als ontwikkelaars een structuur met componenten willen exporteren, kunnen ze ook de interfaces `ComponentExporter` en `ContainerExporter` implementeren en `ModelFactory` gebruiken om de onderliggende componenten te doorlopen en hun modelrepresentatie te retourneren. Zie de volgende bronnen:
+
+[ 1 ] [ Adobe-Marketing-Cloud/aem-kern-wcm-componenten ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
+
+[ [ ]  Apache die: Het verdelen Modellen ](https://sling.apache.org/documentation/bundles/models.html)
+
+#### Hoe kan ik pop-up voor AEM 6.4-enquêtes uitschakelen? {#how-to-disable-aem-survey-pop-up}
+
+U kunt in de inzameling van gebruiksstatistieken door of Touch UI of de Console van het Web te gebruiken kiezen. Voor gedetailleerde instructies, zie [ Opting in de inzameling van de bijeengevoegde gebruiksstatistieken ](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+
+#### Is er een goede bron die de belangrijkste functies voor de upgrade naar AEM 6.4 belicht? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
+
+Zie [ Begrijpend Redenen om AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) te bevorderen die de hoogtepunt - niveauuitsplitsing van zeer belangrijke eigenschappen voor klanten het overwegen van bevordering aan de recentste versie van Adobe Experience Manager beschrijft.
+
+## Assets {#assets}
+
+### Waarom wordt de Assets-workflow zichzelf herhaald tijdens het uploaden van MP4-bestanden (bijvoorbeeld via slepen en neerzetten)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
+
+Als de gebruiker, die de filmdossiers uploadt geen toestemmingen onder activaknoop schrapt, ontbreken de schrappingsbrokkenknopen en uploadt opnieuw begint.
+
+#### Wat zijn de standaardmontages voor uit-van-de-doos configuraties terwijl het creëren van het Exemplaar van de Taal? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+
+Wanneer u een taalexemplaar door Touch UI (**Verwijzingen** > **het Exemplaar van de Taal van de Update**) creeert, wordt een nieuwe omslag DAM gecreeerd onder de nieuwe taal en de activa van daar van verwijzingen voorzien.
+
+Dit is standaard het plaatsen voor uit-van-de-doos configuraties. U kunt **Vertaalpagina Assets** plaatsen = **vertaal** niet in Vertaalconfiguraties.
+Voor AEM 6.4, **Hulpmiddelen** > **de Diensten van de Wolk** > **de diensten van de Wolk van de Vertaling**.
+
+#### Hoe kan een AEM-component die exponentiële groei veroorzaakt, worden uitgeschakeld voor de AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
+
+U kunt de Component onbruikbaar maken OSGi. Om deze dienst te gebruiken, zie {de Disabler van de Component 0} OSGi ](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).[
+
+Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebruikersinterface of via een opdracht `curl` (voorbeeld hieronder), nadat elke AEM opnieuw is gestart.
+
+`curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
+
+#### Hoe te om admin consoles aan te passen? {#how-to-customize-admin-consoles}
+
+AEM biedt verschillende mechanismen waarmee u de consoles en de functionaliteit voor het schrijven van pagina&#39;s van uw ontwerpinstantie kunt aanpassen. Leren hoe te om een douaneconsole tot stand te brengen en een standaardmening voor een console aan te passen, zie [ Aanpassen van de Consoles ](/help/sites-developing/customizing-consoles-touch.md).
+
+#### Wat is het verschil tussen CoralUI 2 en CoralUI op 3-Gebaseerde componenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
+
+Er wordt een nieuwe set Sling-componenten van de Granite UI Foundation gemaakt voor Coral3 en deze bevindt zich onder [ /libs/granite/ui/components/koral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Er is één set voor op CoralUI 2 gebaseerde componenten en één set voor op CoralUI 3 gebaseerde componenten. De nieuwe set is niet alleen een kopie-plakbewerking van de oude set, maar wordt opgeschoond (bijvoorbeeld het stroomlijnen, verwijderen van vervangen functies). Daarom wordt aanbevolen dat een pagina alleen gebruik maakt van op CoralUI 3 gebaseerde of op CoralUI 2 gebaseerde sets.
+
+Meer in detail leren, zie [ Gids van de Migratie aan CoralUI 3-Gebaseerde ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+
+#### Hoe kan ik de zoekcomponent in AEM Assets aanpassen? {#how-to-customize-the-search-component-in-aem-assets}
+
+Om over onderzoeksverhoging/het rangschikken en verdere implementatieinformatie te leren, zie [ Eenvoudige gids van de onderzoeksimplementatie ](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
+
+De Eenvoudige onderzoeksimplementatie is de materialen van het het laboratorium van de Top van AEM van 2017 Gedemystificeerde Onderzoek.
+
+#### Is het mogelijk een insteekmodule voor WordPress te maken waarmee een klant toegang krijgt tot de Adobe Asset Picker om afbeeldingen te selecteren? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
+
+Ja, een klant die WordPress gebruikt, kan de Adobe Asset Picker gebruiken om afbeeldingen van zijn AEM Assets-server te selecteren en toe te voegen aan advertenties op zijn WordPress-site.
+
+Verwijs naar [ de Selecteur van Activa ](../assets/search-assets.md#assetpicker) voor meer informatie.
