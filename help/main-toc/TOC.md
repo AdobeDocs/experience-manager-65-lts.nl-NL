@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5
-source-git-commit: 72bf54362948b6429627466111a088bcebfd2a2b
+source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
 workflow-type: tm+mt
 source-wordcount: '7022'
 ht-degree: 1%
@@ -782,7 +782,7 @@ ht-degree: 1%
       + [ Referentie FormCalc van Designer ](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Krabbelen gebruiken in HTML5-formulieren](/help/forms/using/scribble-signature.md)
       + [Pagina-nulinhoud wijzigen in Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [ Beste praktijken van de Toegankelijkheid ]{#accessibility-best-practices}
+      + Aanbevolen werkwijzen voor toegankelijkheid {#accessibility-best-practices}
          + [Inleiding](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Aanbevolen procedures voor het maken van formulieren](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Technieken voor het testen van toegankelijkheid van formulieren](/help/forms/using/techniques-for-testing-form-accessibility.md)
