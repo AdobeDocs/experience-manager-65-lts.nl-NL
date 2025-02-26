@@ -1,13 +1,13 @@
 ---
-source-git-commit: 61cbd7d51fc0c434adde7f805c37b81c81ad2bfb
+source-git-commit: 8c01084831774686c0b02578dfd03e159ce01b50
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
 
 ---
-# Adobe Experience Manager 6.5 2025 Documentatie
+# Adobe Experience Manager 6.5 LTS-documentatie
 
-Dit is de opslagplaats voor Adobe Experience Manager 6.5 2025-documentatie. In deze documentatie worden de installatie, het beheer, het gebruik van de ontwerpfunctie en het aanpassen van AEM 6.5 2025 besproken.
+Dit is de opslagplaats voor Adobe Experience Manager 6.5 LTS documentatie. In deze documentatie worden de installatie, het beheer, het ontwerpgebruik en het aanpassen van AEM 6.5 LTS besproken.
 
 Uw bijdragen aan de documentatie zijn welkom. Zie de volgende bronnen:
 

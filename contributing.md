@@ -1,13 +1,13 @@
 ---
-source-git-commit: 0deac9cb7fb13c6fec515739168eb2dbfd9a58c7
+source-git-commit: dc9fe33c0b32fe8bd11ddbf8d25339a6a2003857
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
-# Bijdragen aan Adobe Experience Manager 6.6-documentatie
+# Bijdragen aan Adobe Experience Manager 6.5 LTS-documentatie
 
-Bedankt dat u hebt gekozen om een bijdrage te leveren aan Adobe Experience Manager 6.6-documentatie! Het documentatieteam is ingenomen met de bijdragen van de gehele lezergemeenschap en van collega-Adobe-medewerkers.
+Bedankt dat u hebt gekozen om een bijdrage te leveren aan de documentatie van Adobe Experience Manager 6.5 LTS! Het documentatieteam is ingenomen met de bijdragen van de gehele lezergemeenschap en van collega-Adobe-medewerkers.
 
 In dit bestand wordt beschreven hoe u een bijdrage kunt leveren en worden de richtlijnen beschreven die moeten worden gevolgd bij het maken van uw bijdragen.
 
