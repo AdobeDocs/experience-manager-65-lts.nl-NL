@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
 * [Aangepaste standalone installatie](/help/sites-deploying/custom-standalone-install.md)
 * [Installeren van toepassingsserver](/help/sites-deploying/application-server-install.md)
-* [Problemen oplossen](/help/sites-deploying/troubleshooting.md)
 * [Start en stop van opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configureren](/help/sites-deploying/configuring.md)
 * [Upgrade uitvoeren naar AEM 6.5](/help/sites-deploying/upgrade.md)
@@ -295,7 +294,6 @@ In het bovenstaande gedeelte hebt u een goed inzicht in de basisbeginselen van A
 * [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
 * [Aangepaste standalone installatie](/help/sites-deploying/custom-standalone-install.md)
 * [Installeren van toepassingsserver](/help/sites-deploying/application-server-install.md)
-* [Problemen oplossen](/help/sites-deploying/troubleshooting.md)
 * [Start en stop van opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configureren](/help/sites-deploying/configuring.md)
 * [Upgrade uitvoeren naar AEM 6.5](/help/sites-deploying/upgrade.md)

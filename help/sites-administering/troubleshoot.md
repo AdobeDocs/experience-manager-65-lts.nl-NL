@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -61,13 +61,6 @@ De volgende lijst verstrekt een overzicht van problemen die de beheerders kunnen
  </tbody>
 </table>
 
-## Installatieproblemen {#installation-issues}
-
-Zie {de Kwesties van de Installatie 0} Gemeenschappelijke ](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende het oplossen van problemenscenario&#39;s:[
-
-* Dubbelklikken op de Quickstart-strip heeft geen effect op het JAR-bestand met een ander programma (zoals archiefbeheer).
-* Toepassingen die op CRX worden uitgevoerd, genereren fouten die zich buiten het geheugen bevinden.
-* Het welkomstscherm van AEM wordt niet weergegeven in de browser nadat u op AEM QuickStart hebt gedubbelgeklikt.
 
 ## Methoden voor de Analyse van het Oplossen van problemen {#methods-for-troubleshooting-analysis}
 
