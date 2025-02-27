@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 108e1b3d840287e3d694242d934d0fbe4606801c
+source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudst
 * [Het bestand quickstart.properties genereren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Werkstroom- en controlelogbestanden leegmaken configureren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [De taken vóór de upgrade installeren, configureren en uitvoeren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [Aangepaste aanmeldingsmodules uitschakelen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Updates verwijderen uit de map /install](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Koude stand-byinstanties stoppen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Aangepaste geplande taken uitschakelen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -146,6 +145,10 @@ Schakel geplande OSGi-taken uit die in uw toepassingscode zijn opgenomen.
 >Deze stap is alleen nodig voor TarMK-installaties
 
 Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie bij het in werking stellen van de Opruiming van de Off-line Revisie, zie [ het Uitvoeren van de Opruiming van de Offline Revisie ](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+
+## Verzameling van afval uit datastore uitvoeren {#execute-datastore-garbage-collection}
+
+Nadat u de revisie hebt opgeschoond op CRX3-instanties, moet u de afvalverzameling van de datastore uitvoeren om eventuele niet-gerefereerde balken in de gegevensopslag te verwijderen. Voor instructies, zie de documentatie op [ de Inzameling van het huisvuil van de Opslag van Gegevens ](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Logbestanden roteren {#rotate-log-files}
 
