@@ -1,20 +1,20 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
+user-guide-description: Gebruik de Adobe Experience Manager 6.5 LTS documentatie om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
-user-guide-title: AEM 6.5
-source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
+user-guide-title: AEM 6.5 LTS
+source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
 workflow-type: tm+mt
-source-wordcount: '7019'
+source-wordcount: '7020'
 ht-degree: 1%
 
 ---
 
 
-# Adobe Experience Manager 6.5-documentatie {#content}
+# Adobe Experience Manager 6.5 LTS-documentatie {#content}
 
 + Opmerkingen bij de release {#release-notes}
    + [Opmerkingen bij de release](/help/release-notes/release-notes.md)
@@ -44,7 +44,7 @@ ht-degree: 1%
    + [Behandeling van GDPR-verzoeken voor de AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
    + [Hoofdweergave voor beheer van machtigingen](/help/sites-administering/touch-ui-principal-view.md)
    + [Filter voor inhoudsafzetting](/help/sites-administering/content-disposition-filter.md)
-   + [Toewijzing van aangepaste gebruikersgroepen in AEM 6.5](/help/sites-administering/cug-mapping.md)
+   + [Toewijzing aangepaste gebruikersgroep](/help/sites-administering/cug-mapping.md)
    + [Ondersteuning voor zelfde site-cookie](/help/sites-administering/same-site-cookie-support.md)
    + [JWT Credentials Deprection in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [IMS-integratie instellen voor AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
@@ -1424,7 +1424,7 @@ ht-degree: 1%
       + Inleiding tot het AEM-platform {#introduction}
          + [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
          + [Technische vereisten](/help/sites-deploying/technical-requirements.md)
-         + [Opslagelementen in AEM 6.5](/help/sites-deploying/storage-elements-in-aem-6.md)
+         + [Opslagelementen in AEM](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM met MongoDB](/help/sites-deploying/aem-with-mongodb.md)
       + AEM implementeren {#deploying}
          + [Implementeren en onderhouden](/help/sites-deploying/deploy.md)
@@ -1436,7 +1436,7 @@ ht-degree: 1%
          + [Revisie opschonen](/help/sites-deploying/revision-cleanup.md)
          + [Oak-query&#39;s en indexering](/help/sites-deploying/queries-and-indexing.md)
          + [AEM uitvoeren met TarMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
-         + [RDBMS-ondersteuning in AEM 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
+         + [RDBMS-ondersteuning in AEM](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indexeren via de door Oak beheerde Jar](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar Indexing Use cases](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Problemen met Oak-indexen oplossen](/help/sites-deploying/troubleshooting-oak-indexes.md)
@@ -1462,11 +1462,11 @@ ht-degree: 1%
          + [Assets Performance Guide](/help/sites-deploying/assets-performance-sizing.md)
          + [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
          + [Webconsole configureren](/help/sites-deploying/configuring-web-console.md)
-      + Upgrade uitvoeren naar AEM 6.5 {#upgrading}
-         + [Upgrade uitvoeren naar AEM 6.5](/help/sites-deploying/upgrade.md)
+      + Upgrade uitvoeren naar AEM 6.5 LTS {#upgrading}
+         + [Upgrade uitvoeren naar AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Uw upgrade plannen](/help/sites-deploying/upgrade-planning.md)
          + [De complexiteit van upgrades beoordelen met de patroondetector](/help/sites-deploying/pattern-detector.md)
-         + [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+         + [Achterwaartse compatibiliteit in AEM 6.5 LTS](/help/sites-deploying/backward-compatibility.md)
          + [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md)
          + [Een op locatie uitgevoerde upgrade uitvoeren](/help/sites-deploying/in-place-upgrade.md)
          + [Offlineindexering gebruiken om de downtime tijdens een upgrade te verminderen](/help/sites-deploying/upgrade-offline-reindexing.md)
