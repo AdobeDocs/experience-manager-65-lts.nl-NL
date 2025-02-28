@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de huidige release voor Adobe Experience Manager 6.5 LTS
 description: Dit zijn de huidige Release-aantekeningen voor Adobe Experience Manager 6.5 LTS.
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '796'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,6 @@ Vind de volledige matrijs van gesteunde platforms met inbegrip van steun-niveau 
 >
 >Java™ 17 is de aanbevolen versie voor gebruik met AEM 6.5 LTS.
 
-
 ## Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
 Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies.
@@ -92,6 +91,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Screens | Screens wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Assets | `dam-pim` en `dam-rating` worden niet ondersteund omdat bundels afhankelijk zijn van sociale componenten. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` is verwijderd. | Gebruik de alternatieve api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` die is toegevoegd. | 6,5 LTS GA |
+| Portal | AEM Portal Director wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | Bundel `com.adobe.granite.socketio` wordt verwijderd. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | `com.adobe.granite.crx-explorer` wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | `crx2oak` wordt niet ondersteund. | Kies relevante versie van [ eik-verbetering ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
@@ -104,7 +104,6 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Source openen | `javax.mail` -pakketten worden geëxporteerd uit de `com.sun.javax.mail` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `org.apache.jackrabbit.api` -pakketten worden nu geëxporteerd uit de `org.apache.jackrabbit.oak-jackrabbit-api` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `com.github.jknack.handlebars` wordt niet ondersteund | De relevante [ versie van de keuze ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
-
 
 ## Beperkte websites{#restricted-sites}
 
