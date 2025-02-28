@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de huidige release voor Adobe Experience Manager 6.5 LTS
 description: Dit zijn de huidige Release-aantekeningen voor Adobe Experience Manager 6.5 LTS.
-source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
+source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '783'
 ht-degree: 4%
 
 ---
@@ -37,17 +37,13 @@ De QuickStart gebruikt Eclipse Jetty 11.0.x als servlet-engine.
 * Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Voor meer informatie, zie [ installeer en werk ](/help/sites-deploying/custom-standalone-install.md) sectie bij.
 * Java™ 17 onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM-gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
 
-#### Java™-ontwikkeling {#java-development}
+#### Uberjar Packaging {#uber-jar-packaging}
 
-* Er zijn nu [ twee versies van Uberjar ](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), een geadviseerde versie met openbare interfaces die niet voor afschrijving worden gemerkt, en een versie die slechts voor afschrijving duidelijke interfaces omvat.
+* Er is een klein verschil tussen de Uberjar-verpakking en de AEM 6,5 LTS. Voor meer informatie [ verwijs ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version).
 
 #### Upgrade {#upgrade}
 
 * Voor details over de verbeteringsprocedure, zie de [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md).
-
-#### Bewaarplaats {#repository}
-
-* De basis voor Adobe Experience Manager 6.5 LTS is gebaseerd op de bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java™ Content Repository: Apache Jackrabbit Oak 1.68.0.
 
 ## Installeren en bijwerken {#install-update}
 
@@ -98,13 +94,17 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` is verwijderd. | Gebruik de alternatieve api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` die is toegevoegd. | 6,5 LTS GA |
 | Graniet | Bundel `com.adobe.granite.socketio` wordt verwijderd. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | `com.adobe.granite.crx-explorer` wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
+| Graniet | `crx2oak` wordt niet ondersteund. | Kies relevante versie van [ eik-verbetering ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration` wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Guava | Alle guave-afhankelijkheden worden nu verwijderd in AEM en daarom maakt de `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` -bundel geen deel uit van AEM. | Klanten kunnen alleen guave toevoegen als ze afhankelijk zijn van guave of de guave-code indien mogelijk vervangen door Java-verzamelingen of andere alternatieven. | 6,5 LTS GA |
 | We.Retail | De voorbeeldsite van de webwinkel wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Source openen | `oak-solr-osgi` -bundel wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Source openen | `org.apache.servicemix.bundles.abdera-parser` , `org.apache.servicemix.bundles.jdom` en `org.apache.sling.atom.taglib` worden niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
-| Source openen | `org.apache.commons.io packages` worden nu geëxporteerd uit `org.apache.commons.commons-io` . | Geen wijziging vereist. | 6,5 LTS GA |
+| Source openen | `org.apache.commons.io` -pakketten worden nu geëxporteerd uit `org.apache.commons.commons-io` . | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `javax.mail` -pakketten worden geëxporteerd uit de `com.sun.javax.mail` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `org.apache.jackrabbit.api` -pakketten worden nu geëxporteerd uit de `org.apache.jackrabbit.oak-jackrabbit-api` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
+| Source openen | `com.github.jknack.handlebars` wordt niet ondersteund | De relevante [ versie van de keuze ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
+
 
 ## Beperkte websites{#restricted-sites}
 
