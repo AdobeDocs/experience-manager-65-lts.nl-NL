@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de Adobe Experience Manager 6.5 LTS documentatie om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
+source-git-commit: fe361e43288ad0242faa1d82af086aee9fc7804b
 workflow-type: tm+mt
-source-wordcount: '7020'
+source-wordcount: '7044'
 ht-degree: 1%
 
 ---
@@ -1472,12 +1472,15 @@ ht-degree: 1%
          + [Offlineindexering gebruiken om de downtime tijdens een upgrade te verminderen](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
          + [CRX2Oak-migratiehulpprogramma gebruiken](/help/sites-deploying/using-crx2oak.md)
+         + [AEM 6.5 tot AEM 6.5 LTS-migratie van inhoud met Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
          + [Onderhoudstaken vóór upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
          + [Controles en probleemoplossing na upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Aangepast zoeken in Forms bijwerken](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Duurzame verbeteringen](/help/sites-deploying/sustainable-upgrades.md)
          + [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Upgradestappen voor installatie van toepassingsservers](/help/sites-deploying/app-server-upgrade.md)
+         + [De Stappen van de verbetering voor de Installaties van de Server van de Toepassing (WLP)](/help/sites-deploying/app-server-upgrade-wlp.md)
+         + [Upgradestappen voor installatie van toepassingsservers (Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [Lijst met verouderde bundels die na de upgrade zijn verwijderd](/help/sites-deploying/obsolete-bundles.md)
       + Best practices voor {#practices}
          + [Best practices implementeren](/help/sites-deploying/best-practices.md)
