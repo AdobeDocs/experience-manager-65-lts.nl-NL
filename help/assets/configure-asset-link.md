@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2852'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Om Experience Manager Assets te vormen die met de Verbinding van Activa moet wor
 
 1. Om Creative Cloud in kaart te brengen vergunning gegeven gebruikers met de gebruikers van Experience Manager, beheer [ controle van de gebruikerstoegang ](#user-access).
 
-1. Creeer [ de index van de douanevraag ](#create-custom-index), vorm [ Vertoningen FPO ](/help/assets/configure-fpo-renditions.md) voor InDesign, vorm [ de integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md), en vorm [ visueel of gelijkenis onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+1. Creeer [ de index van de douanevraag ](#create-custom-index), vorm [ Vertoningen FPO ](/help/assets/configure-fpo-renditions.md) voor InDesign, vorm [ de integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md), en vorm [ visueel of gelijkenis onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Vereisten en ondersteuning voor verschillende functies {#prerequisites}
 
@@ -242,7 +242,7 @@ In Experience Manager 6.4 en Experience Manager 6.5 kunnen beheerders workflows 
 
 De configuratie is bijvoorbeeld handig voor zakelijke gebruikers en marketers om een aangepaste workflow te maken voor een paar specifieke mappen. Alle elementen van de foto&#39;s van een agentschap kunnen van een watermerk zijn voorzien of alle elementen die door een freelancer zijn geüpload, kunnen worden verwerkt om specifieke uitvoeringen te maken.
 
-Voor meer informatie en voor de configuratie van Experience Manager, zie [ auto-voert werkschema op activa ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets) uit.
+Voor meer informatie en voor de configuratie van Experience Manager, zie [ auto-voert werkschema op activa ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets) uit.
 
 
 ## Een aangepaste index maken in Experience Manager 6.4.x-versies {#create-custom-index}
@@ -260,7 +260,7 @@ Experience Manager bevat indexen die worden gebruikt om te vragen. Maak de volge
 
 ## Zoeken op visuele of gelijkenis configureren {#configure-visual-similarity-search}
 
-Met de visuele zoekfunctie kunt u zoeken naar visueel vergelijkbare elementen in de AEM Assets-opslagplaats via het paneel Adobe Asset Link. De functionaliteit is beschikbaar in 6.5.0 of latere versies en alleen de geïndexeerde elementen worden doorzocht. Voor meer informatie, zie [ hoe te om visueel onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch) te vormen.
+Met de visuele zoekfunctie kunt u zoeken naar visueel vergelijkbare elementen in de AEM Assets-opslagplaats via het paneel Adobe Asset Link. De functionaliteit is beschikbaar in 6.5.0 of latere versies en alleen de geïndexeerde elementen worden doorzocht. Voor meer informatie, zie [ hoe te om visueel onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch) te vormen.
 
 ## Uitvoeringen alleen voor plaatsing genereren voor Adobe InDesign {#fpo-renditions}
 

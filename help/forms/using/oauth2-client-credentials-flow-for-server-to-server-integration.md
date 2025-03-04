@@ -4,7 +4,7 @@ description: Stappen om de integratie van Salesforce met AEM Forms te integreren
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 1%
@@ -69,4 +69,4 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM-omgeving i
 1. Klik op **[!UICONTROL Test Connection]**.
 1. Klik op de knop **[!UICONTROL Create]** als de verbinding tot stand is gebracht.
 
-Nu, kunt u [ tot het Model van de Gegevens van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/form-data-model/create-form-data-models.html?lang=en) leiden om de gevormde gegevensbron met uw Aanpassings Forms te integreren.
+Nu, kunt u [ tot het Model van de Gegevens van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en) leiden om de gevormde gegevensbron met uw Aanpassings Forms te integreren.

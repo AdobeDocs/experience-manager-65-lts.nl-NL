@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -31,9 +31,9 @@ De volgende tabel bevat een resolutie voor alle betrokken versies:
 
 | Geen | Huidige versie | Handeling door gebruiker |
 |---|---|---|
-| Experience Manager 6.5 Forms in juni | 6.5.19.0 | [ installeer het recentste de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| Experience Manager 6.5 Forms in juni | 6.5.13.0 - 6.5.18.0 | Gebruik een van de volgende methoden: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installeer het nieuwste servicepack </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Handmatige onderdrukkingsstappen gebruiken </a> |
-| Experience Manager 6.5 Forms in juni | 6.5 - 6.5.12.0 | [ installeer het recentste de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **NOTA:** AEM Forms steunt momenteel versies 6.5.13.0 door 6.5.19.0. Als u een oudere versie gebruikt, raden we u aan een upgrade uit te voeren naar 6.5.13.0 of een latere versie. Zie de opmerkingen bij de release voor instructies voor het installeren van AEM 6.5.13.0 of hoger. |
+| Experience Manager 6.5 Forms in juni | 6.5.19.0 | [ installeer het recentste de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| Experience Manager 6.5 Forms in juni | 6.5.13.0 - 6.5.18.0 | Gebruik een van de volgende methoden: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installeer het nieuwste servicepack </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Handmatige onderdrukkingsstappen gebruiken </a> |
+| Experience Manager 6.5 Forms in juni | 6.5 - 6.5.12.0 | [ installeer het recentste de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **NOTA:** AEM Forms steunt momenteel versies 6.5.13.0 door 6.5.19.0. Als u een oudere versie gebruikt, raden we u aan een upgrade uit te voeren naar 6.5.13.0 of een latere versie. Zie de opmerkingen bij de release voor instructies voor het installeren van AEM 6.5.13.0 of hoger. |
 
 ### Handmatige onderdrukkingsstappen gebruiken {#use-manual-mitigation-steps}
 

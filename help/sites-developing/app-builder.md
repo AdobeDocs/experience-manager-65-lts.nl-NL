@@ -4,7 +4,7 @@ description: Uitbreidend  [!DNL Adobe Experience Manager]  6.5 gebruikend Adobe 
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -29,7 +29,7 @@ App Builder is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners v
 
 >[!NOTE]
 >
->Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/extending-aem/app-builder.html).
+>Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html).
 
 ## Architectuur {#architecture}
 

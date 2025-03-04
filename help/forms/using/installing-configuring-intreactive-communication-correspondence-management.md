@@ -6,7 +6,7 @@ docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 0%
@@ -93,7 +93,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html)  en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
    U kunt het pakket ook downloaden via de directe koppeling die wordt vermeld in het artikel over AEM [Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) .
@@ -143,7 +143,7 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Compatibiliteitspakket installeren {#install-compatibility-package}
 
-Interactieve communicatie is de standaard en aanbevolen benadering voor het maken van klantcommunicatie in AEM 6.5-formulieren. Als u een upgrade hebt uitgevoerd of gemigreerd van een eerdere versie en van plan bent om letters te blijven gebruiken (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+Interactieve communicatie is de standaard en aanbevolen benadering voor het maken van klantcommunicatie in AEM 6.5-formulieren. Als u een upgrade hebt uitgevoerd of gemigreerd van een eerdere versie en van plan bent om letters te blijven gebruiken (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
 Met het AEMFD-compatibiliteitspakket kunt u de volgende activa van AEM 6.4-formulieren, AEM 6.3-formulieren en AEM 6.2-formulieren op AEM 6.5-formulieren gebruiken:
 

@@ -4,7 +4,7 @@ description: Op OAuth2 gebaseerde verificatie configureren voor Microsoft&reg (F
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
@@ -150,7 +150,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   > Om meer informatie met betrekking tot taakberichten te kennen, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Om meer informatie met betrekking tot taakberichten te kennen, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Om e-maileindpunt te vormen {#configure_email_endpoint}
 
@@ -164,7 +164,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   > Om meer informatie te kennen bij het vormen van e-maileindpunten, klik [ een e-maileindpunt ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html) vormen.
+   > Om meer informatie te kennen bij het vormen van e-maileindpunten, klik [ een e-maileindpunt ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html) vormen.
 
 ## Problemen oplossen {#troubleshooting}
 

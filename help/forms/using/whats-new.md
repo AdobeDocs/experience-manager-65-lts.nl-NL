@@ -7,7 +7,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Wat is inbegrepen in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
 
-Experience Manager 6.5.19.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd, foutoplossingen en verbeteringen op het gebied van prestaties, stabiliteit en beveiliging die zijn geïntroduceerd sinds de eerste beschikbaarheid van 6.5 in april 2019. [ installeer dit de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html) op Experience Manager 6.5.
+Experience Manager 6.5.19.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd, foutoplossingen en verbeteringen op het gebied van prestaties, stabiliteit en beveiliging die zijn geïntroduceerd sinds de eerste beschikbaarheid van 6.5 in april 2019. [ installeer dit de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html) op Experience Manager 6.5.
 
 ### Nieuwe functies
 
@@ -60,12 +60,12 @@ De 64-bits iteratie van XMLFM introduceert verhoogde prestaties, schaalbaarheid 
 
 ## Opgeloste problemen
 
-De release bevat ook oplossingen voor meer dan 20 door de klant gemelde problemen. Voor gedetailleerde lijst van moeilijke situaties inbegrepen in het de dienstpak, zie [ versienota&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html?lang=en#forms-6519)
+De release bevat ook oplossingen voor meer dan 20 door de klant gemelde problemen. Voor gedetailleerde lijst van moeilijke situaties inbegrepen in het de dienstpak, zie [ versienota&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)
 
 
 ## Het de dienstpak installeren
 
-Het de dienstpak brengt nieuwe eigenschappen en insectenmoeilijke situaties voor zowel AEM Forms op JEE als AEM Forms op OSGi. De installatieinstructies hebben veranderingen in vergelijking met vorige de dienstpakken, voor installatieinstructies, zie [ de instructies van de de dienstpak van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+Het de dienstpak brengt nieuwe eigenschappen en insectenmoeilijke situaties voor zowel AEM Forms op JEE als AEM Forms op OSGi. De installatieinstructies hebben veranderingen in vergelijking met vorige de dienstpakken, voor installatieinstructies, zie [ de instructies van de de dienstpak van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
 
 

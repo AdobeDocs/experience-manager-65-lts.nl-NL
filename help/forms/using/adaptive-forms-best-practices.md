@@ -6,7 +6,7 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 0%
@@ -104,9 +104,9 @@ De formuliersjablonen kunnen ook worden geüpload vanuit Adaptief formulierpakke
 
 * **nosamplcontent** runmode wordt geadviseerd slechts voor auteur en niet voor publicatieknooppunten.
 * Elementen zoals adaptieve formulieren, thema&#39;s, sjablonen of cloudconfiguraties worden alleen via auteurknooppunten gemaakt. Deze kunnen worden gepubliceerd op de geconfigureerde publicatieknooppunten.
-Voor meer informatie, zie [ het Publiceren en het unpublishing vormen en documenten ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+Voor meer informatie, zie [ het Publiceren en het unpublishing vormen en documenten ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
 * Forms addon package is vereist voor Authoring en voor Publishing ter ondersteuning van de bewerkingen van de documentservice; daarom kan het worden beschouwd als een afhankelijkheid.
-Als u slechts op Forms betrekking hebbende steekproefmalplaatje, thema&#39;s, en pakketten DOR wilt, dan kunt u hen van [ aemforms-references-* pakketten ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en) downloaden.
+Als u slechts op Forms betrekking hebbende steekproefmalplaatje, thema&#39;s, en pakketten DOR wilt, dan kunt u hen van [ aemforms-references-* pakketten ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en) downloaden.
 
 Voor verdere informatie, zie de beste praktijken in [ Inleiding aan auteursadaptieve vormen ](/help/forms/using/introduction-forms-authoring.md).
 
@@ -328,7 +328,7 @@ U kunt het beste AEM configureren om de algehele prestaties te verbeteren:
 
 * HTML inschakelen via de compressiemodule van de webserver. Voor meer informatie, zie [ Prestaties het stemmen van de server van AEM Forms ](/help/forms/using/performance-tuning-aem-forms.md).
 * Verhoog de aanroepen per aanvraagconfiguratie voor grote formulieren. Zie [ Optimizing prestaties van grote en complexe vormen ](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Creeer [ pagina&#39;s van de douanefout die door foutenmanager ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html) worden getoond.
+* Creeer [ pagina&#39;s van de douanefout die door foutenmanager ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html) worden getoond.
 * Beveiligde AEM Forms-server.
 
    * Gebruik de uitvoermodus van `nosamplecontent` om ervoor te zorgen dat er geen voorbeeldinhoud is en dat voorbeeldgebruikers op de productieserver zijn geïmplementeerd. Zie [ Lopend AEM op Productie Klaar Wijze ](/help/sites-administering/production-ready.md).

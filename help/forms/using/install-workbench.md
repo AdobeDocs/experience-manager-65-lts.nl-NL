@@ -6,7 +6,7 @@ topic-tags: author
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -36,11 +36,11 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
   </tr>
   <tr>
    <td><p>Algemene informatie over AEM Forms en de integratie ervan met andere Adobe-producten</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en"> het Overzicht van AEM Forms </a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en"> het Overzicht van AEM Forms </a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Alle documentatie die beschikbaar is voor AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en"> documentatie van AEM Forms </a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en"> documentatie van AEM Forms </a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Reparatie-updates, technische notities en aanvullende informatie over deze productversie</p> </td>
@@ -190,7 +190,7 @@ Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meesta
 
 ### Instellingen voor time-out configureren {#configuring-timeout-settings}
 
-Workbench is na twee uur standaard uitgevallen, ongeacht de activiteit of inactiviteit. Om onderbreking uit te geven die, zie &quot;het Vormen Beheer van de Gebruiker > Geavanceerde systeemattributen&quot;in de <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html"> hulp van de beleidsconsole </a> vormt.
+Workbench is na twee uur standaard uitgevallen, ongeacht de activiteit of inactiviteit. Om onderbreking uit te geven die, zie &quot;het Vormen Beheer van de Gebruiker > Geavanceerde systeemattributen&quot;in de <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html"> hulp van de beleidsconsole </a> vormt.
 
 ### Workbench configureren voor verbinding via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

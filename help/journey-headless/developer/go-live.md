@@ -4,7 +4,7 @@ description: In dit deel van de AEM Headless Developer Journey leert u hoe u een
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 0%
@@ -216,7 +216,7 @@ Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga aan het fac
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ AEM het Ontwikkelen Gids ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/the-basics.html)
+* [ AEM het Ontwikkelen Gids ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
 
 * [ WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
@@ -226,7 +226,7 @@ Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga aan het fac
 
    * [ Controlerend een CDN Geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Het vormen van [ CDN Rewriter ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/osgi-configuration-settings.html) (*onderzoek naar CDN Rewriter*)
+   * Het vormen van [ CDN Rewriter ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) (*onderzoek naar CDN Rewriter*)
 
 * [Inleiding tot AEM als een CMS zonder kop](/help/sites-developing/headless/introduction.md)
 * [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

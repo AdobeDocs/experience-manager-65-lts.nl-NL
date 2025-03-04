@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
@@ -175,4 +175,4 @@ Als een gebruiker zonder de vereiste AEM-formulieren en CQ-machtigingen zich pro
 
 CQ verstrekt een mechanisme om standaard 404 manager jsp met voeten te treden.
 
-Voor details op hoe te om de fout behandelende pagina aan te passen, zie [ Aanpassende Pagina&#39;s die door de Handler van de Fout ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en) in de documentatie van Adobe Experience Manager worden getoond.
+Voor details op hoe te om de fout behandelende pagina aan te passen, zie [ Aanpassende Pagina&#39;s die door de Handler van de Fout ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) in de documentatie van Adobe Experience Manager worden getoond.

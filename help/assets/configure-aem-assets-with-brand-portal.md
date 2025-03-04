@@ -9,7 +9,7 @@ feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 3%
@@ -76,11 +76,11 @@ Het wordt aanbevolen om AEM 6.5 te hebben om een AEM Author-instantie in te stel
 
 * Als u een partner van Adobe bent, gebruik het [ Programma van de Opleiding van de Partner van Adobe ](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.5 te verzoeken.
 
-Nadat u AEM downloadt, voor instructies aan opstelling een instantie van de Auteur van AEM, zie [ het opstellen en het handhaven ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html#default-local-install).
+Nadat u AEM downloadt, voor instructies aan opstelling een instantie van de Auteur van AEM, zie [ het opstellen en het handhaven ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html#default-local-install).
 
 ### Download en installeer AEM latest Service Pack {#servicepack}
 
-Voor gedetailleerde instructies, zie de huidige [ AEM 6.5 Nota&#39;s van de Versie van het Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html).
+Voor gedetailleerde instructies, zie de huidige [ AEM 6.5 Nota&#39;s van de Versie van het Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **contacteer de Klantenondersteuning van Adobe** als u niet het recentste pakket van AEM of Service Pack kunt vinden.
 
@@ -122,11 +122,11 @@ Voer de volgende stappen in de opgegeven reeks uit om Experience Manager Assets 
 
 #### De OAuth-referenties configureren in de Adobe Developer Console {#config-oauth}
 
-[ vorm de geloofsbrieven OAuth in Adobe Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) en selecteer Brand Portal API.
+[ vorm de geloofsbrieven OAuth in Adobe Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) en selecteer Brand Portal API.
 
 #### Nieuwe Adobe IMS-integratie maken met OAuth {#create-ims-account-configuration}
 
-[ creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth ](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) en selecteer Brand Portal van de drop down.
+[ creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) en selecteer Brand Portal van de drop down.
 
 #### Cloudservice configureren {#configure-cloud-service}
 

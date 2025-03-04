@@ -5,7 +5,7 @@ index: n
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Adobe Experience Manager Fluid Experience maakt gebruik van de krachtige functiesets van AEM Sites, AEM Dynamic Media en AEM Assets om een robuuste oplossing te bieden voor het leveren van inhoud zonder kop.
 
-AEM Fluid Experience onderscheidt zichzelf van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. De krachtige inhoud authoring en levering en de krachtige steun van AEM voor hybride gebruiksgevallen zijn beschikbaar met [ volledige AEM Sites, Assets, en de Dynamische oplossingen van Media.](https://experienceleague.adobe.com/docs/experience-manager-65-2025/user-guide/home.html)
+AEM Fluid Experience onderscheidt zichzelf van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. De krachtige inhoud authoring en levering en de krachtige steun van AEM voor hybride gebruiksgevallen zijn beschikbaar met [ volledige AEM Sites, Assets, en de Dynamische oplossingen van Media.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html)
 
 In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieerd en een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
 

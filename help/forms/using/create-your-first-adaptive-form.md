@@ -4,7 +4,7 @@ description: Leer zakelijke klassen, interactieve en responsieve formulieren te 
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 9bb44a58e919fd038c83cab89620256501137bef
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -42,7 +42,7 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM [!
 
 ### Vereiste {#prerequisite}
 
-* Opstelling een [ de auteursinstantie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* Opstelling een [ de auteursinstantie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installeer [ toe:voegen-on van AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md) op auteursinstantie.
 * Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op [!DNL MySQL] gegevensbestand en gebruiken [!DNL Oracle's] [ MySQL JDBC gegevensbestandbestuurder ](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

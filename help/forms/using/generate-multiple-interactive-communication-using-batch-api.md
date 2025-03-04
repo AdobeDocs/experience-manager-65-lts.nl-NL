@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map op. Bijvoorbeeld `c:\batchprocessing` .
    1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Process File Using]** .
    1. Selecteer de service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in het veld **[!UICONTROL Service Name]** .
-   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [ patroon ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
+   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [ patroon ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
 1. Geavanceerde parameters configureren:
    1. Open het tabblad **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
 
@@ -146,7 +146,7 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map op. Bijvoorbeeld `c:\batchprocessing` .
    1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Process File Using]** .
    1. Selecteer de service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in het veld **[!UICONTROL Service Name]** .
-   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [ patroon ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
+   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [ patroon ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
 1. Geavanceerde parameters configureren:
    1. Open het tabblad **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
 
@@ -362,4 +362,4 @@ U slaat de gegevens niet alleen op het bestandssysteem op, u slaat JSON-bestande
 
 >[!NOTE]
 >
->Alleen het CRX-protocol is standaard ingeschakeld. Om andere gesteunde protocollen toe te laten, zie [ Vormend vooraf ingevulde dienst gebruikend de Manager van de Configuratie ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Alleen het CRX-protocol is standaard ingeschakeld. Om andere gesteunde protocollen toe te laten, zie [ Vormend vooraf ingevulde dienst gebruikend de Manager van de Configuratie ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

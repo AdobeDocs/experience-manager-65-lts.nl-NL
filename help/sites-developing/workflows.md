@@ -8,7 +8,7 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: eff477824f2d1e5dfe5417835e8ced4b7eb85a0f
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 0%
@@ -39,7 +39,7 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >
 >* Deelnemend aan werkschema&#39;s, zie [ Gebruikend Werkschema&#39;s ](/help/sites-authoring/workflows.md).
 >* Het beheren van werkschema&#39;s en werkschemainstanties, zie [ het Beheer Werkschema&#39;s ](/help/sites-administering/workflows.md).
->* Voor een Communautair Artikel van begin tot eind, zie [ Wijzigend Digitale Assets gebruikend de Workflows van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html)
+>* Voor een Communautair Artikel van begin tot eind, zie [ Wijzigend Digitale Assets gebruikend de Workflows van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
 >* Zie [ vragen de Deskundigen van AEM Webinar op Werkschema&#39;s ](https://communities.adobeconnect.com/p5s33iburd54/).
 >* De veranderingen in de plaatsen van informatie, zie [ Beste praktijken van het Werkschema - Punten ](/help/sites-developing/workflows-best-practices.md#locations).
 >
