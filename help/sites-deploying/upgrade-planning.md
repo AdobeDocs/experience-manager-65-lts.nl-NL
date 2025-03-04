@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Het AEM Upgradeproces vereist zorgvuldig afgehandelde planning, analyse, en uitv
 >
 >De upgrade naar AEM 6.5 LTS wordt ondersteund door de laatste 6 servicepacks
 
-Het is belangrijk dat u een ondersteund besturingssysteem, Java™-runtime, httpd en Dispatcher-versie gebruikt. Zie voor meer informatie de TBD: link naar de technische vereisten van AEM 6.5 LTS. Het upgraden van deze onderdelen moet in uw upgradeplan worden opgenomen en moet plaatsvinden voordat u AEM upgradet.
+Het is belangrijk dat u een ondersteund besturingssysteem, Java™-runtime, httpd en Dispatcher-versie gebruikt. Voor meer informatie, verwijs de [ technische vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md). Het upgraden van deze onderdelen moet in uw upgradeplan worden opgenomen en moet plaatsvinden voordat u AEM upgradet.
 
 <!-- Alexandru: drafting for now
 
@@ -106,15 +106,15 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### Een testplan maken {#creating-a-test-plan}
 
-De implementatie van AEM door elke klant is uniek en is aangepast aan de zakelijke vereisten. Daarom is het belangrijk om alle aanpassingen te bepalen die aan het systeem zijn aangebracht zodat zij in een testplan kunnen worden omvat. Dit testplan zal het proces van QA aandrijven dat Adobe op de promotieinstantie uitvoert.
+De implementatie van AEM door elke klant is uniek en is aangepast aan de zakelijke vereisten. Daarom is het belangrijk om alle aanpassingen te bepalen die aan het systeem zijn aangebracht zodat zij in een testplan kunnen worden omvat.
 
 De exacte productieomgeving moet worden gedupliceerd en na de upgrade moeten er tests op worden uitgevoerd om te controleren of alle toepassingen en aangepaste code nog steeds naar wens worden uitgevoerd. Regenereer al uw aanpassingen en de prestaties, belasting en beveiligingstests. Wanneer het organiseren van uw testplan, zorg ervoor om alle aanpassingen te behandelen die aan het systeem naast uit de doos UIs en werkschema&#39;s zijn aangebracht die in uw dagelijkse verrichtingen worden gebruikt. Deze kunnen de diensten en de diensten van douaneOSGI, integraties aan de Adobe Experience Cloud, integraties met derden door de schakelaars van AEM, de integratie van de douanederde, douanecomponenten en malplaatjes, de overlays van de douanegebruikersinterface in AEM, en douanewerkschema&#39;s omvatten. Bovendien, zouden de douanevragen nog moeten worden getest om ervoor te zorgen dat hun indexen effectief na verbetering blijven werken.
 
 ### Complexiteit van upgrade beoordelen {#assessing-upgrade-complexity}
 
-Vanwege de grote verscheidenheid aan aanpassingen die Adobe-klanten op hun AEM-omgevingen toepassen, is het belangrijk dat u enige tijd van tevoren doorbrengt om het totale inspanningsniveau te bepalen dat in uw upgrade moet worden verwacht. Analysator voor AEM kan u helpen bij het beoordelen van de complexiteit van de upgrade.
+Vanwege de grote verscheidenheid aan aanpassingen die Adobe-klanten op hun AEM-omgevingen toepassen, is het belangrijk dat u enige tijd van tevoren doorbrengt om het totale inspanningsniveau te bepalen dat in uw upgrade moet worden verwacht. [ de Analysator van AEM voor AEM 6.5 LTS ](/help/sites-deploying/pattern-detector.md) kan u helpen in het beoordelen van de ingewikkeldheid van de verbetering.
 
-De AEM Analyer voor AEM 6.5 LTS zou u een vrij nauwkeurige schatting van wat tijdens een verbetering voor de meeste gevallen moeten geven. Nochtans, voor complexere aanpassingen en plaatsingen waar u onverenigbare veranderingen hebt, kunt u een ontwikkelingsinstantie aan AEM 6.5 LTS volgens de instructies in [ bevorderen Uitvoerend een Verbetering op zijn plaats ](/help/sites-deploying/in-place-upgrade.md). Na voltooiing, voer wat hoge rooktests op dit milieu uit. Het doel van deze exercitie is niet om de inventarisatie van de testgevallen volledig te voltooien en een formele inventarisatie van de gebreken te maken, maar om ons een ruwe schatting te geven van de hoeveelheid werk die nodig zal zijn om de code te upgraden voor compatibiliteit met 6,5 LTS. In combinatie met de AEM-analysator en de architectuurwijzigingen die in de vorige sectie werden bepaald, kan een ruwe schatting worden gegeven aan het projectbeheerteam voor het plannen van de upgrade.
+De [ Analyseer van AEM voor AEM 6.5 LTS ](/help/sites-deploying/pattern-detector.md) zou u een vrij nauwkeurige schatting van moeten geven wat tijdens een verbetering voor de meeste gevallen te verwachten. Nochtans, voor complexere aanpassingen en plaatsingen waar u onverenigbare veranderingen hebt, kunt u een ontwikkelingsinstantie aan AEM 6.5 LTS volgens de instructies in [ bevorderen Uitvoerend een Verbetering op zijn plaats ](/help/sites-deploying/in-place-upgrade.md). Na voltooiing, voer wat hoge rooktests op dit milieu uit. Het doel van deze exercitie is niet om de inventarisatie van de testgevallen volledig te voltooien en een formele inventarisatie van de gebreken te maken, maar om ons een ruwe schatting te geven van de hoeveelheid werk die nodig is om de code voor AEM 6.5 LTS-compatibiliteit te upgraden. Wanneer gecombineerd met de [ analysator van AEM ](/help/sites-deploying/pattern-detector.md) en de architecturale veranderingen die in de vorige sectie werden bepaald, kan een ruwe schatting aan het team van het projectbeheer voor de planning van de verbetering worden verstrekt.
 
 ### De upgrade- en terugdraaiversie van Runbook samenstellen {#building-the-upgrade-and-rollback-runbook}
 
@@ -128,7 +128,7 @@ Adobe heeft verbetering en terugschroeven van prijzenprocedures in [ Procedure v
 
 ### Een upgradeplan ontwikkelen {#developing-an-upgrade-plan}
 
-De output van de vorige oefeningen kan worden gebruikt om een verbeteringsplan te bouwen dat de verwachte chronologie voor uw test of ontwikkelingsinspanningen, opleiding, en daadwerkelijke verbeteringsuitvoering behandelt.
+De output van de vorige oefeningen kan worden gebruikt om een verbeteringsplan te bouwen dat de verwachte chronologie voor uw test of ontwikkelingsinspanningen, en daadwerkelijke verbeteringsuitvoering behandelt.
 
 <!--Alexandru: drafting for now
 
