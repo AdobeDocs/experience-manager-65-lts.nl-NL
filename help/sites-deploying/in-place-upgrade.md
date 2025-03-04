@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -16,23 +16,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze pagina schetst de verbeteringsprocedure voor AEM 6.5 LTS. Als u een installatie hebt die aan een toepassingsserver wordt opgesteld, zie [ de Stappen van de Verbetering voor de Installaties van de Server van de Toepassing ](/help/sites-deploying/app-server-upgrade.md).
+>Deze pagina schetst de op zijn plaats verbeteringsprocedure voor AEM 6.5 LTS. Als u een installatie hebt die aan een toepassingsserver wordt opgesteld, zie [ de Stappen van de Verbetering voor de Installaties van de Server van de Toepassing ](/help/sites-deploying/app-server-upgrade.md).
 
 ## Stappen voor upgrade {#pre-upgrade-steps}
 
-Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Zorg er bovendien voor dat uw systeem voldoet aan de vereisten voor AEM 6.5 LTS. Zie hoe de Analysator u kan helpen de ingewikkeldheid van uw upgarde schatten en ook de sectie van het Bereik en van de Vereisten van de Verbetering van [ zien de Planning van Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) voor meer informatie.
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [ vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md) voldoet en [ verbetering planningsoverwegingen ](/help/sites-deploying/upgrade-planning.md) ziet en hoe [ Analysator ](/help/sites-deploying/pattern-detector.md) u kan helpen de ingewikkeldheid schatten.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Migratievereisten {#migration-prerequisites}
 
-* **Minimaal Vereiste versie van Java:** zorg ervoor u Oracle JRE 17 hebt geïnstalleerd op uw systeem.
+* **Minimaal Vereiste versie van Java:** zorg ervoor u Oracle Java™ 17 hebt geïnstalleerd op uw systeem.
 
 ## Voorbereiding van het JAR-bestand van AEM Quickstart {#prep-quickstart-file}
 
+1. Download het nieuwe AEM 6.5 LTS jar-bestand
+
+1. [Bepaal het correcte verbeteringsbegin bevel](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. De instantie stoppen als deze wordt uitgevoerd
 
-1. Download het nieuwe AEM 6.5 LTS jar-bestand en gebruik dit om het oude bestand buiten de `crx-quickstart` -map te vervangen
+1. Nieuwe AEM 6.5 LTS-jar gebruiken om de oude buiten de `crx-quickstart` -map te vervangen
 
 1. Maak een back-up van het `sling.properties` -bestand (meestal aanwezig in de `crx-quickstart/conf/` ) en verwijder het vervolgens
 
@@ -175,7 +179,7 @@ Nu, begin de instantie van AEM gebruikend het nieuwe die bevel wordt bepaald geb
 
 >[!NOTE]
 >
->Ondersteuning voor enkele Java 8/11-argumenten is verwijderd in Java 17. Zie Java arguments Overwegingen voor AEM 6.5 LTS (link stub).
+>De steun voor sommige argumenten van Java 8/11 is verwijderd in Java 17, zie [ Oracle Java™ 17 documenten ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) en [ Java&amp;trade argumenten overwegingen voor AEM 6.5 LTS ](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM start met het jar-bestand om het exemplaar te tonen.
 
@@ -193,10 +197,10 @@ De upgrade wordt niet gestart wanneer u AEM start vanaf het startscript. De mees
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. Wijzig de opdracht door het pad naar de bestaande jar ( `crx-quickstart/app/aem-quickstart*.jar` in dit geval) te vervangen door de nieuwe jar die op hetzelfde niveau staat als de map `crx-quickstart` . Gebruikend ons vorige bevel als voorbeeld, zou ons bevel zijn:
+1. Wijzig de opdracht door het pad naar de bestaande jar ( `crx-quickstart/app/aem-quickstart*.jar` in dit geval) te vervangen door de nieuwe AEM 6.5 LTS-jar die op hetzelfde niveau staat als de `crx-quickstart` -map. Gebruikend ons vorige bevel als voorbeeld, zou ons bevel zijn:
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Hierdoor worden alle juiste geheugeninstellingen, aangepaste runmodi en andere omgevingsparameters voor de upgrade toegepast. Nadat de upgrade is voltooid, kan de instantie met het beginscript worden gestart in de toekomst.
