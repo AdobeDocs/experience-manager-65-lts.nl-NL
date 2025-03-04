@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,6 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 1. Start de primaire auteur opnieuw om ervoor te zorgen dat deze opnieuw op de juiste wijze wordt opgestart.
 1. Schakel replicatieagents op de primaire auteur uit.
 1. Voer [ preupgrade onderhoudstaken ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) op de primaire instantie van de Auteur in werking.
-1. Indien nodig, bevorder MongoDB op de primaire instantie Mongo aan versie 3.2 met WiredTiger.
 
 ### Uitvoering upgrade {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 ![ mongo-secundair ](assets/mongo-secondaries.jpg)
 
-1. Maak nieuwe auteur-instanties van 6.5.2025 die zijn verbonden met de geüpgrade Mongo-instantie.
+1. Maak nieuwe AEM 6.5 LTS-auteur-instanties die zijn verbonden met de geüpgrade Mongo-instantie.
 
 1. Maak de MongoDB-knooppunten die uit de cluster zijn verwijderd, opnieuw.
 
