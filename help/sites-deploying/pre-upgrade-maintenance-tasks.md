@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
+source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,15 @@ Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudst
 * [Offline revisie opschonen uitvoeren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Verzameling van afval uit datastore uitvoeren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
 * [Upgrade het databaseschema indien nodig](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [Gebruikers verwijderen die de upgrade mogelijk kunnen blokkeren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-
 * [Logbestanden roteren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Indexdefinities {#index-definitions}
 
-Zorg ervoor dat u de vereiste indexdefinities hebt geïnstalleerd die met AEM 6.5 de Packs van de Dienst met AEM Service Pack 22 bij een minimum worden vrijgegeven (verwijs naar [ AEM 6.5 de nota&#39;s van de de dienstversie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
+Controleer of u de vereiste indexdefinities hebt geïnstalleerd die bij AEM 6.5 Service Packs worden geleverd tot minimaal AEM Service Pack 22. (Verwijs naar [ AEM 6.5 de nota&#39;s van de servicepack versie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
 
 ## Zorgen voor voldoende schijfruimte {#ensure-sufficient-disk-space}
 
-Bij het uitvoeren van de upgrade moet, naast de activiteiten voor het upgraden van de inhoud en code, een migratie naar de opslagplaats worden uitgevoerd. Tijdens de migratie wordt een kopie van de opslagplaats gemaakt in de nieuwe indeling Segment Tar. Hierdoor hebt u voldoende schijfruimte nodig om een tweede, mogelijk grotere versie van uw opslagplaats te behouden.
+Zorg dat er voldoende schijfruimte is wanneer u de upgrade uitvoert.
 
 ## Volledige back-up van AEM maken {#fully-back-up-aem}
 
@@ -56,7 +54,6 @@ Wanneer u AEM start vanuit het jar-bestand, wordt een `quickstart.properties` -b
 
 De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` taken vereisen afzonderlijke configuraties OSGi en kunnen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. De documentatie voor het vormen werkschemazuiveringstaken kan bij [ het Beheer de Instanties van het Werkschema ](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kunnen bij [ het Onderhoud van het Logboek van de Controle in AEM 6 ](/help/sites-administering/operations-audit-log.md) worden gevonden.
 
-Voor werkschema en controlelogboek het zuiveren op CQ 5.6 en controlelogboek het zuiveren op AEM 6.0, zie {het werkschema van 0} zuiveren en controleknopen ](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).[
 
 ## De taken vóór de upgrade installeren, configureren en uitvoeren {#install-configure-run-pre-upgrade-tasks}
 
@@ -144,7 +141,7 @@ Schakel geplande OSGi-taken uit die in uw toepassingscode zijn opgenomen.
 >
 >Deze stap is alleen nodig voor TarMK-installaties
 
-Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie bij het in werking stellen van de Opruiming van de Off-line Revisie, zie [ het Uitvoeren van de Opruiming van de Offline Revisie ](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie bij het in werking stellen van de Opruiming van de Off-line Revisie, zie [ het Uitvoeren van de Opruiming van de Offline Revisie ](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup).
 
 ## Verzameling van afval uit datastore uitvoeren {#execute-datastore-garbage-collection}
 

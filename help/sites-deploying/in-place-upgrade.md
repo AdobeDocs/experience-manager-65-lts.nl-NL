@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
+source-git-commit: 67bd9b29ccc525111710a397cca5de1c961486ac
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Nu, begin de instantie van AEM gebruikend het nieuwe die bevel wordt bepaald geb
 
 >[!NOTE]
 >
->De steun voor sommige argumenten van Java 8/11 is verwijderd in Java 17, zie [ Oracle Java™ 17 documenten ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) en [ Java&amp;trade argumenten overwegingen voor AEM 6.5 LTS ](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>De steun voor sommige argumenten van Java 8/11 is verwijderd in Java 17, zie [ Oracle Java™ 17 documenten ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) en [ Java&amp;trade argumenten overwegingen voor AEM 6.5 LTS ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM start met het jar-bestand om het exemplaar te tonen.
 
