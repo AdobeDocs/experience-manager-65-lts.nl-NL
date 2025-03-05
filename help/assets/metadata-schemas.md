@@ -1,15 +1,14 @@
 ---
 title: Metagegevensschema's definiëren de indeling van de pagina met eigenschappen van metagegevens
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
-contentOwner: AG
 mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
 workflow-type: tm+mt
-source-wordcount: '3408'
+source-wordcount: '3425'
 ht-degree: 5%
 
 ---
@@ -89,21 +88,21 @@ U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken. Het m
 Het tabblad **[!UICONTROL Build Form]** bevat formulieritems die u in het schemaformulier gebruikt. Het tabblad **[!UICONTROL Settings]** bevat de kenmerken van elk item dat u selecteert op het tabblad **[!UICONTROL Build Form]** . De volgende tabel bevat een lijst met formulieritems die beschikbaar zijn op het tabblad **[!UICONTROL Build Form]** :
 
 | Componentnaam | Beschrijving |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL Section Header] | Voeg een sectiekopje toe voor een lijst met gangbare componenten. |
-| [!UICONTROL Single Line Text] | Voeg een eigenschap voor één regel tekst toe. De eigenschap wordt opgeslagen als een tekenreeks. |
-| [!UICONTROL Multi Value Text] | Voeg een teksteigenschap voor meerdere waarden toe. Deze wordt opgeslagen als een tekenreeks-array. |
-| [!UICONTROL Number] | Voeg een getalcomponent toe. |
-| [!UICONTROL Date] | Voeg een datumcomponent toe. |
-| [!UICONTROL Dropdown] | Voeg een vervolgkeuzelijst toe. |
-| [!UICONTROL Standard Tags] | Voeg een tag toe. |
-| [!UICONTROL Smart Tags] | U kunt zoekmogelijkheden uitbreiden door automatisch metagegevenstags toe te voegen. |
-| [!UICONTROL Hidden Field] | Voeg een verborgen veld toe. Deze wordt als een POST-parameter verzonden wanneer het element wordt opgeslagen. |
-| [!UICONTROL Asset Referenced By] | Voeg deze component toe om een lijst weer te geven met elementen waarnaar door het element wordt verwezen. |
-| [!UICONTROL Asset Referencing] | Toevoegen om een lijst weer te geven met elementen die naar het element verwijzen. |
-| [!UICONTROL Products References] | Toevoegen om de lijst weer te geven met producten die aan het element zijn gekoppeld. |
-| [!UICONTROL Asset Rating] | Toevoegen aan weergaveopties voor het beoordelen van het element. |
-| [!UICONTROL Contextual Metadata] | Toevoegen om de weergave van andere tabbladen met metagegevens in de eigenschappenpagina met elementen te besturen. |
+|----|----|
+| **[!UICONTROL Section Header]** | Voeg een sectiekopje toe voor een lijst met gangbare componenten. |
+| **[!UICONTROL Single Line Text]** | Voeg een eigenschap voor één regel tekst toe. De eigenschap wordt opgeslagen als een tekenreeks. |
+| **[!UICONTROL Multi ValueText]** | Voeg een teksteigenschap met meerdere waarden toe. Deze wordt opgeslagen als een tekenreeks-array. |
+| **[!UICONTROL Number]** | Voeg een getalcomponent toe. |
+| **[!UICONTROL Date]** | Voeg een datumcomponent toe. |
+| **[!UICONTROL Dropdown]** | Voeg een vervolgkeuzelijst toe. |
+| **[!UICONTROL Standard Tags]** | Voeg een tag toe. Beheerders moeten mogelijk de padwaarde wijzigen. `/etc/tags/mac/<tenant_id>/<custom_tag_namespace>` bijvoorbeeld, als ze het schema voor metagegevens publiceren vanuit Experience Manager Assets, waar het pad geen huurdersgegevens bevat, bijvoorbeeld `/etc/tags/<custom_tag_namespace>` . |
+| **[!UICONTROL Smart Tags]** | Automatisch gedetecteerde tags als u de invoegtoepassing voor slimme tags van Experience Manager Assets hebt aangeschaft en geconfigureerd. |
+| **[!UICONTROL Hidden Field]** | Voeg een verborgen veld toe. Deze wordt als een POST-parameter verzonden wanneer het element wordt opgeslagen. |
+| **[!UICONTROL Asset Referenced By]** | Voeg deze component toe om een lijst weer te geven met elementen waarnaar door het element wordt verwezen. |
+| **[!UICONTROL Asset Referencing]** | Toevoegen om een lijst weer te geven met elementen die naar het element verwijzen. |
+| **[!UICONTROL Contextual Metadata]** | Toevoegen om de weergave van andere tabbladen met metagegevens op de pagina Eigenschappen van elementen te bepalen. |
+
+<!--| **[!UICONTROL Asset Rating]** |  Average rating of an asset added from Experience Manager Assets before it is published to Brand Portal. |-->
 
 #### De metagegevenscomponent bewerken {#edit-the-metadata-component}
 
