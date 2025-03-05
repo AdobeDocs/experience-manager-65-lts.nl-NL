@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 168e9f5865d20a53f9abed4bb90aceae9a1c7b6a
+source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,15 @@ ht-degree: 0%
 Bij het plannen van een upgrade moeten de volgende onderdelen van een implementatie worden onderzocht en aangepakt.
 
 * [De basiscode bijwerken](#upgrade-code-base)
-* [Uitlijnen met 6.5 Repository Structure](#align-repository-structure)
-* [AEM-aanpassingen](#aem-customizations)
 * [Testprocedure](#testing-procedure)
 
 ## Overzicht {#overview}
 
-1. **de Analysator van AEM** - stel de Analysator van AEM in werking zoals die in verbeterings planning wordt beschreven, en die in detail op [ wordt beschreven die de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/pattern-detector.md) pagina beoordelen. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het PAEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS bestaat, is uw implementatie al compatibel met 6,5 LTS. U kunt er nog steeds voor kiezen om nieuwe ontwikkelingen uit te voeren voor het gebruik van de 6.5 LTS-functionaliteit, maar dit is niet nodig voor het behoud van compatibiliteit.
-
-1. **ontwikkelt de Basis van de Code voor 6.5 LTS** - creeer een specifieke tak of een bewaarplaats voor de codebasis voor de versie van het Doel. Gebruik info van Compatibiliteit vóór upgrade om gebieden met code te plannen die moeten worden bijgewerkt.
-1. **compileert met 6.5 LTS Uber jar** - de basis POMs van de Update codebasis aan punt aan 6.5.2025 uber jar en compileert code tegen het.
-1. **stelt aan 6.5 LTS Milieu** op - een schoon geval van AEM 6.5 LTS (Auteur + publiceer) zou omhoog in een milieu moeten worden gestaan Dev/QA. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
-1. **QA- Bevestiging en Bug bevestigen** - QA zou de toepassing op zowel Auteur als Publish instanties van 6.5.2025 moeten bevestigen. Alle gevonden fouten moeten worden gecorrigeerd en toegewezen aan de basis van de 6.5 LTS-code. Herhaal indien nodig de Dev-Cycle totdat alle bugs zijn opgelost.
+1. **de Analysator van AEM** - stel de Analysator van AEM zoals die in [ wordt bepaald de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/pattern-detector.md) pagina. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het AEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS is, is de implementatie compatibel met AEM 6.5 LTS. U kunt er nog steeds voor kiezen om een nieuwe ontwikkeling uit te voeren voor het gebruik van AEM 6.5 LTS, maar dit is niet nodig voor het behoud van compatibiliteit.
+1. **ontwikkelt de Basis van de Code voor 6.5 LTS** - creeer een specifieke tak of een bewaarplaats voor de codebasis voor de versie van AEM van het Doel. Gebruik info van compatibiliteit vóór upgrade om gebieden met code die moeten worden bijgewerkt, te plannen.
+1. **compileert met 6.5 LTS Uber jar** - de basis POMs van de Update codebasis aan punt aan AEM 6.5 LTS uber jar en compileert code tegen het.
+1. **stelt aan 6.5 LTS Milieu** op - een schoon geval van AEM 6.5 LTS (Auteur + publiceer) zou opstelling in een milieu moeten zijn Dev/QA. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
+1. **QA- Bevestiging en Bug bevestigen** - QA zou de toepassing op zowel Auteur als Publish instanties van AEM 6.5 LTS moeten bevestigen. Gevonden fouten moeten worden gecorrigeerd en vastgelegd in de AEM 6.5 LTS-codebasis. Herhaal indien nodig de Dev-Cycle totdat alle bugs zijn opgelost.
 
 Voordat u verdergaat met een upgrade, moet u beschikken over een stabiele basis voor toepassingscode die grondig is getest op AEM 6.5 LTS.
 
@@ -61,23 +58,22 @@ De AEM Uber jar omvat alle AEM APIs als één enkele gebiedsdeel in uw Maven pro
 >
 >Er is een klein verschil in de manier waarop AEM 6.5 en AEM 6.5 LTS Uber Jars worden verpakt. Zie de volgende sectie:
 
-**voor AEM 6.5.x, zijn er twee soorten Jars van het Uber**
+**Jars van de Uber voor AEM 6.5**
 
-1. `uber-jar-6.5.x.jar` - Bevat alle openbare API&#39;s van AEM 6.5.x
-1. `uber-jar-6.5.x-apis-with-deprecations.jar` - Bevat zowel openbare API&#39;s als verouderde API&#39;s van AEM 6.5.x.
+1. `uber-jar-6.5.x.jar` - Bevat alle openbare API&#39;s van AEM 6.5.
+1. `uber-jar-6.5.x-apis-with-deprecations.jar` - Bevat zowel openbare API&#39;s als verouderde API&#39;s van AEM 6.5.
 
-**Jars van de Uber voor AEM 6.5.2025.x**
+**Jars van de Uber voor AEM 6.5 LTS**
 
-Voor AEM 6.5.2025.x zijn er weer twee typen Uber Jars:
+Voor AEM 6.5 LTS zijn er weer twee soorten Uber Jars:
 
-1. `uber-jar-6.5.2025.x.jar` - Bevat alle openbare API&#39;s van AEM 6.5.2025.x.
-1. `uber-jar-6.5.2025.x-deprecated.jar` - Alleen vervangen API&#39;s van AEM 6.5.2025.x worden opgenomen
+1. `uber-jar-6.6.x-apis.jar` - Bevat alle openbare API&#39;s van AEM 6.5 LTS.
+1. `uber-jar-6.6.x-deprecated-apis.jar` - Alleen verouderde API&#39;s van AEM 6.5 LTS worden opgenomen.
 
-**Zeer belangrijk Verschil: AEM 6.5.x vs. AEM 6.5.2025.x Aantal Jars**
+**Zeer belangrijk Verschil: AEM 6.5 vs. AEM 6.5 LTS Uber Jars**
 
-* Als u in AEM 6.5.x zowel openbare als verouderde API&#39;s nodig hebt, kunt u de enkele jar `uber-jar-6.5.x-apis-with-deprecations.jar` in het `pom.xml` -bestand opnemen.
-* Als u in AEM 6.5.2025.x zowel openbare als verouderde API&#39;s nodig hebt, moet u twee aparte jars opnemen: `uber-jar-6.5.2025.x.jar` voor openbare API&#39;s en `uber-jar-6.5.2025.x-deprecated.jar` voor verouderde API&#39;s.
-* Als u in AEM 6.5.2025.x zowel openbare als verouderde API&#39;s nodig hebt, moet u twee aparte jars opnemen: `uber-jar-6.5.2025.x.jar` voor openbare API&#39;s en `uber-jar-6.5.2025.x-deprecated.jar` voor verouderde API&#39;s.
+* Als u in AEM 6.5 zowel openbare als verouderde API&#39;s nodig hebt, kunt u de enkele jar `uber-jar-6.5.x-apis-with-deprecations.jar` in het `pom.xml` -bestand opnemen.
+* Als u in AEM 6.5 LTS zowel openbare als verouderde API&#39;s nodig hebt, moet u twee aparte jars opnemen, `uber-jar-6.6.x-apis.jar` voor openbare API&#39;s en `uber-jar-6.6.x-deprecated-apis.jar` voor verouderde API&#39;s.
 
 **Gemaakte coördinaten voor afgekeurde APIs Jar**
 
@@ -93,7 +89,7 @@ Voor AEM 6.5.2025.x zijn er weer twee typen Uber Jars:
 
 ### Notities ontwikkelaar {#developer-notes}
 
-* AEM 6.5.2025 bevat geen Google guava-bibliotheek buiten de box, de vereiste versie kan naar behoefte worden geïnstalleerd.
+* AEM 6.5 LTS bevat geen Google guava-bibliotheek buiten de box, de vereiste versie kan naar behoefte worden geïnstalleerd.
 * Sling XSS-bundel gebruikt nu de Java HTML Sanitizer-bibliotheek en het gebruik van de `XSSAPI#filterHTML()` -methode moet worden gebruikt voor het veilig renderen van HTML-inhoud en niet voor het doorgeven van gegevens naar andere API&#39;s.
 
 ## Testprocedure {#testing-procedure}
@@ -102,7 +98,7 @@ Er moet een uitgebreid testplan worden opgesteld voor het testen van upgrades. H
 
 ### De upgradeprocedure testen {#testing-upgrade-procedure}
 
-De verbeteringsprocedure zoals die hier wordt geschetst zou op Dev en milieu&#39;s QA zoals die in uw aangepast in werking gesteld boek worden gedocumenteerd (zie [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md)). De verbeteringsprocedure zou moeten worden herhaald tot alle stappen in de verbeteringsloopboek worden gedocumenteerd en het verbeteringsproces is vlot
+De verbeteringsprocedure zoals die hier wordt geschetst zou op Dev en milieu&#39;s QA zoals die in uw aangepast in werking gesteld boek worden gedocumenteerd (zie [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md)). De verbeteringsprocedure zou moeten worden herhaald tot alle stappen in het verbeteringsloopboek worden gedocumenteerd en het verbeteringsproces is vlot.
 
 ### Testgebieden voor de implementatie  {#implementation-test-areas-}
 
