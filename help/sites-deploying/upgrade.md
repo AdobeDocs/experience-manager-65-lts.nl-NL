@@ -9,7 +9,7 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -52,4 +52,4 @@ Om gemakkelijker te kunnen verwijzen naar de AEM-instanties die bij deze procedu
 
 De laag van de stichting steunt nu Java 17, die recentste open-bronbundels van Apache Sling, Felix, en Jackrabbit Oak omvat. Bovendien is de verpakking van de AEM 6.5 LTS uber-jar veranderd. Bovendien zijn een aantal verouderde functies verwijderd uit AEM 6.5 LTS. Voor meer informatie, verwijs naar [ de nota&#39;s van de Versie ](/help/release-notes/release-notes.md#whats-new-what-s-new) en [ Lijst van de Verouderde Bundels die na de Verbetering ](/help/sites-deploying/obsolete-bundles.md) worden gedesinstalleerd
 
-AEM 6.5 LTS richt zich sterk op achterwaartse compatibiliteit van functies en wordt geleverd met een analyseprogramma. Zie [ het Beoordelen van de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/pattern-detector.md) voor beoordeling van ingewikkeldheid aangezien u [ planning voor de verbetering ](/help/sites-deploying/upgrade-planning.md) begint.
+AEM 6.5 LTS richt zich sterk op achterwaartse compatibiliteit van functies en wordt geleverd met een analyseprogramma. Zie [ het Beoordelen van de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) voor beoordeling van ingewikkeldheid aangezien u [ planning voor de verbetering ](/help/sites-deploying/upgrade-planning.md) begint.

@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
+source-git-commit: da061097fd57135bde149b41a12ab78cad5761d6
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Bij het plannen van een upgrade moeten de volgende onderdelen van een implementa
 
 ## Overzicht {#overview}
 
-1. **de Analysator van AEM** - stel de Analysator van AEM zoals die in [ wordt bepaald de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/pattern-detector.md) pagina. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het AEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS is, is de implementatie compatibel met AEM 6.5 LTS. U kunt er nog steeds voor kiezen om een nieuwe ontwikkeling uit te voeren voor het gebruik van AEM 6.5 LTS, maar dit is niet nodig voor het behoud van compatibiliteit.
-1. **ontwikkelt de Basis van de Code voor 6.5 LTS** - creeer een specifieke tak of een bewaarplaats voor de codebasis voor de versie van AEM van het Doel. Gebruik info van compatibiliteit vóór upgrade om gebieden met code die moeten worden bijgewerkt, te plannen.
-1. **compileert met 6.5 LTS Uber jar** - de basis POMs van de Update codebasis aan punt aan AEM 6.5 LTS uber jar en compileert code tegen het.
-1. **stelt aan 6.5 LTS Milieu** op - een schoon geval van AEM 6.5 LTS (Auteur + publiceer) zou opstelling in een milieu moeten zijn Dev/QA. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
-1. **QA- Bevestiging en Bug bevestigen** - QA zou de toepassing op zowel Auteur als Publish instanties van AEM 6.5 LTS moeten bevestigen. Gevonden fouten moeten worden gecorrigeerd en vastgelegd in de AEM 6.5 LTS-codebasis. Herhaal indien nodig de Dev-Cycle totdat alle bugs zijn opgelost.
+1. **de Analysator van AEM** - stel de Analysator van AEM in werking zoals die in verbeterings planning wordt beschreven, en die in detail op [ wordt beschreven die de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) pagina beoordelen. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het AEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS bestaat, is uw implementatie al compatibel met 6,5 LTS. U kunt er nog steeds voor kiezen om nieuwe ontwikkelingen uit te voeren voor het gebruik van de 6.5 LTS-functionaliteit, maar dit is niet nodig voor het behoud van compatibiliteit.
+1. **ontwikkelt de Basis van de Code voor 6.5 LTS** - creeer een specifieke tak of een bewaarplaats voor de codebasis voor de versie van het Doel. Gebruik info van Compatibiliteit vóór upgrade om gebieden met code te plannen die moeten worden bijgewerkt.
+1. **compileert met 6.5 LTS Uber jar** - de basis POMs van de Update codebasis aan punt aan 6.5.2025 uber jar en compileert code tegen het.
+1. **stelt aan 6.5 LTS Milieu** op - een schoon geval van AEM 6.5 LTS (Auteur + publiceer) zou omhoog in een milieu moeten worden gestaan Dev/QA. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
+1. **QA- Bevestiging en Bug bevestigen** - QA zou de toepassing op zowel Auteur als Publish instanties van 6.5.2025 moeten bevestigen. Alle gevonden fouten moeten worden gecorrigeerd en toegewezen aan de basis van de 6.5 LTS-code. Herhaal indien nodig de Dev-Cycle totdat alle bugs zijn opgelost.
 
 Voordat u verdergaat met een upgrade, moet u beschikken over een stabiele basis voor toepassingscode die grondig is getest op AEM 6.5 LTS.
 

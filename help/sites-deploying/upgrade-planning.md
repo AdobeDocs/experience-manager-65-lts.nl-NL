@@ -9,7 +9,7 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -112,9 +112,9 @@ De exacte productieomgeving moet worden gedupliceerd en na de upgrade moeten er 
 
 ### Complexiteit van upgrade beoordelen {#assessing-upgrade-complexity}
 
-Vanwege de grote verscheidenheid aan aanpassingen die Adobe-klanten op hun AEM-omgevingen toepassen, is het belangrijk dat u enige tijd van tevoren doorbrengt om het totale inspanningsniveau te bepalen dat in uw upgrade moet worden verwacht. [ de Analysator van AEM voor AEM 6.5 LTS ](/help/sites-deploying/pattern-detector.md) kan u helpen in het beoordelen van de ingewikkeldheid van de verbetering.
+Vanwege de grote verscheidenheid aan aanpassingen die Adobe-klanten op hun AEM-omgevingen toepassen, is het belangrijk dat u enige tijd van tevoren doorbrengt om het totale inspanningsniveau te bepalen dat in uw upgrade moet worden verwacht. [ de Analysator van AEM voor AEM 6.5 LTS ](/help/sites-deploying/aem-analyzer.md) kan u helpen in het beoordelen van de ingewikkeldheid van de verbetering.
 
-De [ Analyseer van AEM voor AEM 6.5 LTS ](/help/sites-deploying/pattern-detector.md) zou u een vrij nauwkeurige schatting van moeten geven wat tijdens een verbetering voor de meeste gevallen te verwachten. Nochtans, voor complexere aanpassingen en plaatsingen waar u onverenigbare veranderingen hebt, kunt u een ontwikkelingsinstantie aan AEM 6.5 LTS volgens de instructies in [ bevorderen Uitvoerend een Verbetering op zijn plaats ](/help/sites-deploying/in-place-upgrade.md). Na voltooiing, voer wat hoge rooktests op dit milieu uit. Het doel van deze exercitie is niet om de inventarisatie van de testgevallen volledig te voltooien en een formele inventarisatie van de gebreken te maken, maar om ons een ruwe schatting te geven van de hoeveelheid werk die nodig is om de code voor AEM 6.5 LTS-compatibiliteit te upgraden. Wanneer gecombineerd met de [ analysator van AEM ](/help/sites-deploying/pattern-detector.md) en de architecturale veranderingen die in de vorige sectie werden bepaald, kan een ruwe schatting aan het team van het projectbeheer voor de planning van de verbetering worden verstrekt.
+De [ Analyseer van AEM voor AEM 6.5 LTS ](/help/sites-deploying/pattern-detector.md) zou u een vrij nauwkeurige schatting van moeten geven wat tijdens een verbetering voor de meeste gevallen te verwachten. Nochtans, voor complexere aanpassingen en plaatsingen waar u onverenigbare veranderingen hebt, kunt u een ontwikkelingsinstantie aan AEM 6.5 LTS volgens de instructies in [ bevorderen Uitvoerend een Verbetering op zijn plaats ](/help/sites-deploying/in-place-upgrade.md). Na voltooiing, voer wat hoge rooktests op dit milieu uit. Het doel van deze exercitie is niet om de inventarisatie van de testgevallen volledig te voltooien en een formele inventarisatie van de gebreken te maken, maar om ons een ruwe schatting te geven van de hoeveelheid werk die nodig is om de code voor AEM 6.5 LTS-compatibiliteit te upgraden. Wanneer gecombineerd met de [ Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) en de architecturale veranderingen die in de vorige sectie werden bepaald, kan een ruwe schatting aan het team van het projectbeheer voor de planning van de verbetering worden verstrekt.
 
 ### De upgrade- en terugdraaiversie van Runbook samenstellen {#building-the-upgrade-and-rollback-runbook}
 
