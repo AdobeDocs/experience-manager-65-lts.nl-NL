@@ -3,9 +3,9 @@ title: De Universal Editor
 description: Leer meer over de flexibiliteit van de Universal Editor en hoe deze uw ervaringen zonder kop kan helpen gebruiken met AEM 6.5.
 feature: Developing
 role: Developer
-source-git-commit: 229fdd9f17bdeb1c4cc1a1ba064d285169dc1cbc
+source-git-commit: 1f4024310858c6973681c079439ae82834cf716f
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,18 @@ De Universal Editor is een service die in combinatie met AEM werkt om inhoud zon
 * De Universal Editor Service, die wordt uitgevoerd op dezelfde host als de Dispatcher, schrijft de wijzigingen terug naar de AEM-auteurinstantie.
 
 ![ stroom van de Auteur gebruikend de Universele Redacteur ](assets/author-flow.png)
+
+## Vereisten {#requirements}
+
+De Universal Editor wordt ondersteund door:
+
+* AEM 6.5 LTS
+   * Zowel on-premisse als AMS hosting worden gesteund.
+* [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (de dienstpak 21 of 22 plus een eigenschapspak)
+   * Zowel on-premisse als AMS hosting worden gesteund.
+* [ AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versie `2023.8.13099` of hoger)
+
+Dit document is gericht op AEM 6.5 LTS-ondersteuning van de Universal Editor.
 
 ## Instellen {#setup}
 
