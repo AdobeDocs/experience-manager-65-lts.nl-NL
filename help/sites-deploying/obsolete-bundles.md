@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
+source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Lijst met verouderde bundels die na de upgrade zijn verwijderd{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-Bij de upgrade naar AEM 6.5.2025 worden de volgende bundels automatisch verwijderd, afhankelijk van welke AEM 6.5-servicepack-versie de upgrade is uitgevoerd:
+Bij de upgrade naar AEM 6.5 LTS worden de volgende bundels automatisch verwijderd, afhankelijk van de AEM 6.5-servicepack-versie die de upgrade is uitgevoerd:
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -95,7 +95,7 @@ Bij de upgrade naar AEM 6.5.2025 worden de volgende bundels automatisch verwijde
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-De volgende bundels worden niet opgenomen in een nieuwe AEM 6.5.2025-instantie. Na de verbetering zou u deze bundels in niet-actieve staten kunnen vinden. U kunt ze handmatig verwijderen:
+De volgende bundels worden niet opgenomen in een nieuwe AEM 6.5 LTS-instantie. Na de verbetering zou u deze bundels in niet-actieve staten kunnen vinden. U kunt ze handmatig verwijderen:
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
