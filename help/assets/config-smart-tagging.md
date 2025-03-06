@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 20e1f9b362a42eb0d6b4ab2b5668f01fbefd2448
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 12%
+source-wordcount: '1787'
+ht-degree: 13%
 
 ---
 
@@ -31,22 +31,24 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
 
 * [ integreer met Adobe Developer Console ](#integrate-adobe-io).
 * [ Lijn de Slimme Dienst van de Inhoud ](#training-the-smart-content-service).
-
 * Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+
+Ook, verwijs naar [ voorbereidingen treffen Assets voor slim etiketteren ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/config-smart-tagging) voor de configuratie van slimme markeringen in AEM 6.5.
 
 ## SCS upgrade ter ondersteuning van Oauth voor Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
-**Nieuwe Gebruikers**
+<!--**New Users**-->
 
-Installeer Service Pack 21. Om Oauth integratie op Service Pack 21 te steunen, moet u [ Hotfix voor Service Pack 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installeren.
+Installeer Service Pack 22. Om Oauth integratie op Service Pack 22 te steunen, moet u [ Hotfix voor Service Pack 22 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installeren.
 
-Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
+<!--Follow the instructions mentioned in this article to set up Smart Content Services.
 
-**Bestaande gebruikers**
+**Existing users**
 
-Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
+If you have upgraded to Service Pack 21, install the [Hotfix for Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) to support Oauth integration. Any existing configuration is automatically deleted. Follow the instructions mentioned in this article to set up Smart Content Services. If you upgrade to Service Pack 22, you must install this [Hotfix for Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
-Voor Service Pack 20 en ouder, moet u de tijdelijke stappen voor SCS uitvoeren om Oauth integratie te steunen. Zie [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md).
+For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](config-oauth.md).
+-->
 
 ## SCS verbetering om Oauth voor Op-premise gebruikers te steunen {#scs-upgrade-oauth-on-premise}
 
@@ -57,10 +59,10 @@ Smart Content Services is niet meer beschikbaar voor nieuwe [!DNL Experience Man
 **Bestaande gebruikers**
 
 Bestaande gebruikers op locatie die deze mogelijkheid al hebben ingeschakeld, kunnen services voor slimme inhoud blijven gebruiken.
+<!--
+If you have upgraded to Service Pack 21, install the [Hotfix for Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) to support Oauth integration. Any existing configuration is automatically deleted. Follow the instructions mentioned in this article to set up Smart Content Services. If you upgrade to Service Pack 22, you must install this [Hotfix for Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
-Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
-
-Voor Service Pack 20 en ouder, moet u de tijdelijke stappen voor SCS uitvoeren om Oauth integratie te steunen. Zie [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md).
+For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](config-oauth.md).-->
 
 
 ## Integreren met Adobe Developer Console {#integrate-adobe-io}
