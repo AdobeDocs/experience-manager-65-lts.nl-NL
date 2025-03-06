@@ -5,7 +5,8 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2817'
 ht-degree: 0%
@@ -384,4 +385,3 @@ Controleer ook of de implementatiecode en de knooppuntstructuur voor meerdere ve
 **Configuratie beschikbaar aan beheerders is niet beschikbaar aan auteurs**
 
 Als de updates van interfaceconfiguraties voor beheerders maar niet voor auteursrekeningen worden weerspiegeld, zorg ervoor dat de configuratieknoopknoop niet `config` wordt genoemd. Gebruik het [`configPath` bezit ](/help/sites-developing/components-basics.md#cq-inplaceediting).
-

@@ -4,7 +4,8 @@ description: Uitbreidend  [!DNL Adobe Experience Manager]  6.5 gebruikend Adobe 
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -64,4 +65,3 @@ App Builder biedt video&#39;s en documentatie voor ontwikkelaars, waaronder hulp
 Klaar om te beginnen met ontwikkelen? Er zijn veel voorbeeldtoepassingen waarmee u snel aan de slag kunt:
 
 * [ de Etiketten van de Code van App Builder op de Website van Adobe Developer ](https://developer.adobe.com/app-builder/docs/resources/)
-

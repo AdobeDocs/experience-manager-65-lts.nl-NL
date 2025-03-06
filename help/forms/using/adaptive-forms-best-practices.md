@@ -6,7 +6,8 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: b87629fa-85a9-4024-963a-4761bc093e62
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 0%
@@ -416,6 +417,3 @@ Voordat u besluit aangepaste clientbibliotheken te gebruiken, is het belangrijk 
 * **Efficiënt Ontwikkelingsproces:**
    * Met modulariteit kunnen ontwikkelaars zich richten op specifieke functies.
    * Vermindert de last van ontwikkelaars door de ingewikkeldheid van de volledige codebase voor een efficiënter ontwikkelingsproces te verminderen.
-
-
-

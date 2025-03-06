@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
@@ -41,5 +42,3 @@ Zie ook de volgende onderwerpen:
 >**als u bevordert:**
 >
 >* Nadat u Experience Manager hebt uitgevoerd, wordt voor elk element dat u uploadt, automatisch Dynamische media ingeschakeld (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een geüpgrade instantie van Experience Manager bevindt en u niet bekend bent met Dynamic Media, moet u de elementen opnieuw verwerken om ze dynamisch voor media in te schakelen.
-
-

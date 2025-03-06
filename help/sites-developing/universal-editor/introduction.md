@@ -3,13 +3,13 @@ title: De Universal Editor
 description: Leer meer over de flexibiliteit van de Universal Editor en hoe deze uw ervaringen zonder kop kan helpen gebruiken met AEM 6.5.
 feature: Developing
 role: Developer
-source-git-commit: 1f4024310858c6973681c079439ae82834cf716f
+exl-id: 495df631-5bdd-456b-b115-ec8561f33488
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
 
 ---
-
 
 # De Universal Editor {#universal-editor}
 

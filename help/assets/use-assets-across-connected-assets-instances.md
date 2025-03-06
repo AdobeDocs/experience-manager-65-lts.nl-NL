@@ -7,7 +7,8 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3792'
 ht-degree: 14%
@@ -368,4 +369,3 @@ Ga als volgt te werk om algemene fouten op te lossen:
   ![ mislukking om activa verre verwijzingen terug te winnen ](assets/reference-report-failure.png)
 
 * Als de cookies niet van de Sites-server naar de Assets-server in Google Chrome worden verzonden, is dit omdat de Assets-verbinding niet via HTTPS plaatsvindt. Als u geen HTTPS gebruikt op de Assets-instantie, kan de header `SameSite=None` niet worden toegevoegd aan de reactie nadat u deze hebt geverifieerd met de Assets-server.
-

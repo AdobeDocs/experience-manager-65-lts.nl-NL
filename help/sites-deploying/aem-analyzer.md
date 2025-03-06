@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 15%
 
 ---
-
 
 # De complexiteit van upgrades beoordelen met de AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ De resterende tijd voor het AEM Analyzer-rapport is te zien op de zijspoor. Het 
 
 * Soms wordt bij de verwijderbewerking de melding *&quot;Sommige paden zijn niet verwijderd. Controleer de logbestanden en probeer het opnieuw.*&quot;. Als de paden echter zijn verwijderd, kunt u dit bericht veilig negeren
 * Op dezelfde manier kan de bewerking Pakket mislukken met de fout: *&quot;Fout tijdens het uitvoeren van de gewenste bewerking, controleer de logboeken en probeer het opnieuw.*&quot;. Dit is waarschijnlijk te wijten aan het verlopen van de sessie. In dergelijke gevallen moet het probleem worden opgelost door de bewerking opnieuw te proberen.
-
-
-
-
-

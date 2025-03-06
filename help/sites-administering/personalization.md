@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 0%
@@ -166,4 +167,3 @@ AEM biedt verschillende onderdelen voor personalisatie. Sommige gebruikers kunne
 | Afmelden | Hiermee wordt aangegeven welke gebruiker momenteel is aangemeld en krijgt u een koppeling naar het afmelden. |
 | Cloud labelen | Een labelcloud waarmee een grafisch weergegeven selectie van tags op uw website wordt getoond |
 | Teaser | Een stuk inhoud (gewoonlijk een beeld) die op een hoofdpagina wordt getoond om gebruikers tot de onderliggende inhoud &quot;te &quot;teweegbrengen&quot;. |
-

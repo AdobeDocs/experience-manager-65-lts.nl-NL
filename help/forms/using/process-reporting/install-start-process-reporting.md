@@ -8,7 +8,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 0%
@@ -281,5 +282,3 @@ Voor details op de gegevens het publiceren dienst en hoe te om deze dienst te pl
 * **[!UICONTROL Sync]**: Synchroniseer de ingesloten Process Reporting-opslagplaats met de AEM Forms-database.
 * **[!UICONTROL Help]**: bekijk de Help-documentatie over Process Reporting.
 * **[!UICONTROL Logout]**: Afmelden van procesrapportage
-
-

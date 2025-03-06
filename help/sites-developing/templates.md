@@ -9,7 +9,8 @@ legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a6121f570f7840c9b7a63d10c7a95cd2894fe4ec
+exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%
@@ -129,4 +130,3 @@ Als u wilt beperken welke sjablonen kunnen worden gebruikt om onderliggende pagi
 U kunt de eigenschap `cq:allowedTemplates` op het knooppunt `jcr:content` van de sjabloon gebruiken om deze configuratie toe te passen op alle nieuwe pagina&#39;s die deze sjabloon gebruiken.
 
 Als u meer beperkingen wilt toevoegen, bijvoorbeeld met betrekking tot de sjabloonhiërarchie, kunt u de eigenschappen `allowedParents/allowedChildren` op de sjabloon gebruiken. U kunt dan uitdrukkelijk specificeren dat de pagina&#39;s die van een malplaatjeT worden gecreeerd ouderpagina/kinderen van pagina&#39;s moeten zijn die van een malplaatjeT worden gecreeerd.
-

@@ -3,7 +3,8 @@ title: Hoe wordt hCaptcha&amp gebruikt;reg; in een AEM 6.5 Forms?
 description: Verbeter de formulierbeveiliging met hCaptcha&reg; service zonder problemen. Stap-voor-stap gids binnen!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: da0f8fc5-732e-41de-b73c-0355ec723d26
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 0%

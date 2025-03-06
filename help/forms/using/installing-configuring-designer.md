@@ -4,7 +4,8 @@ description: Designer is beschikbaar als zelfstandig installatieprogramma en is 
 role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -118,4 +119,3 @@ Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM
       1. Open Designer, ga Hulp, klik over ontwerper en u ziet de informatie van de ontwerpversie samen met de beetjeinformatie, bijvoorbeeld, wordt 64 beetje geschreven aan het eind van de versie zoals hier getoond:
          `6.5.21.20240522.1.161 | 64 bit`
       1. Open Designer. Linksboven ziet u dat een brandpictogram 64-bits informatie met de productnaam bevat.
-

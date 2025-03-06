@@ -6,7 +6,8 @@ contentOwner: Rick Brough
 solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -160,4 +161,3 @@ In deze gearchiveerde nieuwsbrief van één-loketwinkel kunt u waardevolle kenni
    * Om u te helpen uw rijke mediastrategie te ontwikkelen, leert u meer over de Adobe-webinarreeks op aanvraag.
    * Lees meer over belangrijke gebruiksscenario&#39;s voor media en Adobe-oplossingen voor deze toepassingen.
    * ... en nog veel meer!
-
