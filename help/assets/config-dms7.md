@@ -1,19 +1,14 @@
 ---
 title: Dynamische media configureren - modus Scene7
 description: Leer hoe te om Dynamische Media te vormen - wijze Scene7.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6120'
+source-wordcount: '6104'
 ht-degree: 1%
 
 ---
@@ -132,7 +127,7 @@ Zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-mi
 
    * **[!UICONTROL Publishing Assets]** - U kunt uit de volgende drie opties kiezen:
       * **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en direct de URL/Embed-URL verschaft. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
-      * **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat er een URL-/insluitkoppeling wordt opgegeven.<br><!-- CQDOC-17478, Added March 9, 2021--> Vanaf Experience Manager 6.5.8 weerspiegelt de instantie van de Publicatie van Experience Manager nauwkeurige waarden van de meta-gegevens van Media, zoals `dam:scene7Domain` en `dam:scene7FileStatus` in **[!UICONTROL Upon Activation]** publiceer slechts wijze. Installeer Service Pack 8 en start vervolgens Experience Manager opnieuw om deze functionaliteit in te schakelen. Ga naar Sling Config Manager. Zoek de configuratie voor `Scene7ActivationJobConsumer Component` of maak nieuwe). Selecteer het selectievakje **[!UICONTROL Replicate Metadata after Dynamic Media publishing]** en selecteer vervolgens **[!UICONTROL Save]** .
+      * **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat er een URL-/insluitkoppeling wordt opgegeven.<br><!-- CQDOC-17478, Added March 9, 2021--> Vanaf Experience Manager 6.5.8 weerspiegelt de instantie van de Publicatie van Experience Manager nauwkeurige waarden van de meta-gegevens van Media, zoals `dam:scene7Domain` en `dam:scene7FileStatus` in **[!UICONTROL Upon Activation]** publiceer slechts wijze. Ga naar Sling Config Manager. Zoek de configuratie voor `Scene7ActivationJobConsumer Component` of maak nieuwe). Selecteer het selectievakje **[!UICONTROL Replicate Metadata after Dynamic Media publishing]** en selecteer vervolgens **[!UICONTROL Save]** .
 
         ![ Repliceer Meta-gegevens na Dynamische media publiceren checkbox ](assets-dm/replicate-metadata-setting.png)
 
@@ -250,7 +245,7 @@ In Dynamische Media - wijze Scene7, is de standaard grootte van het element uplo
 
 Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebruiken:
 
-* U moet Experience Manager 6.5 met Service Pack 6.5.4.0 of later op Dynamische Media - wijze Scene7 in werking stellen.
+* U moet Experience Manager 6.5 LTS in Dynamische Media - wijze Scene7 in werking stellen.
 * Deze grote upload eigenschap wordt slechts gesteund voor [*Managed Services* ](https://business.adobe.com/products/experience-manager/managed-services.html) klanten.
 * Zorg ervoor dat uw Experience Manager-instantie is geconfigureerd met Amazon S3 of Microsoft® Azure Blob-opslag.
 

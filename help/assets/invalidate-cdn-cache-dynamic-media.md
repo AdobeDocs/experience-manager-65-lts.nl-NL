@@ -9,9 +9,9 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,11 @@ ht-degree: 0%
 De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN (het Netwerk van de Levering van de Inhoud) voor snelle levering aan uw klanten. Wanneer u echter updates van deze elementen uitvoert, wilt u dat deze wijzigingen onmiddellijk op uw website van kracht worden. Door de CDN-cache te wissen of ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd. In plaats van te wachten op het verlopen van het geheime voorgeheugen gebruikend een waarde van TTL (Tijd aan Levend) (gebrek is tien uren), kunt u een verzoek van binnen Dynamische Media verzenden om het geheime voorgeheugen te hebben verlopen binnen notulen.
 
 
-
->[!IMPORTANT]
->
->De volgende stappen zijn slechts op Dynamische Media - wijze Scene7 in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) of later van toepassing. Deze CDN-validatiefunctie vereist ook dat u de uit-van-de-box CDN gebruikt die is gebundeld met Adobe Experience Manager - Dynamische media. Een andere aangepaste CDN wordt niet ondersteund met deze functie.<br> als u Dynamische Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) of vroeger gebruikt, de stappen volgen die in [ worden gevonden het ongeldig maken van het CDN geheime voorgeheugen als Dynamic Media Classic ](/help/assets/invalidate-cdn-cache-dm-classic.md).
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **om uw CDN caching inhoud voor Dynamische activa van Media ongeldig te maken:**
 
 *Deel 1 van 2: Creërend een malplaatje van de Invalidatie CDN*
 
-1. Navigeer in Experience Manager 6.5.6 of hoger naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]** .
+1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]** .
 
    ![ eigenschap van de Bevestiging CDN ](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

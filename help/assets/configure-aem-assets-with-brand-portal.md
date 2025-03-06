@@ -10,9 +10,9 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '664'
 ht-degree: 3%
 
 ---
@@ -68,11 +68,11 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 [Download en installeer de nieuwste AEM Service Pack](#servicepack)
 
-### AEM 6.5 downloaden en installeren {#aemquickstart}
+### AEM 6.5 LTS downloaden en installeren {#aemquickstart}
 
-Het wordt aanbevolen om AEM 6.5 te hebben om een AEM Author-instantie in te stellen. Als AEM niet actief is, kunt u het downloaden van de volgende locaties:
+Het wordt aanbevolen om AEM 6.5 LTS te hebben om een AEM Author-instantie in te stellen. Als AEM niet actief is, kunt u het downloaden van de volgende locaties:
 
-* Als u een bestaande klant van AEM bent, download AEM 6.5 van de [ Adobe Vergunnende website ](https://licensing.adobe.com).
+* Als u een bestaande klant van AEM bent, download AEM 6.5 LTS van de [ Adobe Vergunnende website ](https://licensing.adobe.com).
 
 * Als u een partner van Adobe bent, gebruik het [ Programma van de Opleiding van de Partner van Adobe ](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.5 te verzoeken.
 
@@ -80,7 +80,7 @@ Nadat u AEM downloadt, voor instructies aan opstelling een instantie van de Aute
 
 ### Download en installeer AEM latest Service Pack {#servicepack}
 
-Voor gedetailleerde instructies, zie de huidige [ AEM 6.5 Nota&#39;s van de Versie van het Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Voor gedetailleerde instructies, zie huidige [ AEM 6.5 de Nota&#39;s van de Versie van het Pak van de Dienst van LTS ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **contacteer de Klantenondersteuning van Adobe** als u niet het recentste pakket van AEM of Service Pack kunt vinden.
 

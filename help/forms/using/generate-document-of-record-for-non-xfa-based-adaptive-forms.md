@@ -1,17 +1,13 @@
 ---
 title: Document met record genereren voor adaptieve formulieren
 description: Verklaart hoe u document van verslag (DoR) voor adaptieve vormen kunt produceren.
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4154'
+source-wordcount: '4130'
 ht-degree: 0%
 
 ---
@@ -31,11 +27,6 @@ ht-degree: 0%
 Nadat u een formulier hebt verzonden, willen uw klanten doorgaans de informatie die zij in het formulier hebben ingevuld, afdrukken of in documentindeling bewaren voor toekomstig gebruik. Dit wordt bedoeld als document van verslag.
 
 In dit artikel wordt uitgelegd hoe u een recorddocument kunt genereren voor adaptief Forms- of adaptief formulierfragment.
-
->[!NOTE]
->
-> De ondersteuning voor het aanpassen van uw fragmenten van het adaptieve formulier en de bijbehorende velden in de Adaptive Form Editor is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
-
 
 >[!NOTE]
 >

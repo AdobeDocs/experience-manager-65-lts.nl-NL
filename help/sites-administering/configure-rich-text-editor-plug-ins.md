@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4366'
 ht-degree: 0%
 
 ---
@@ -285,10 +285,6 @@ Geef vervolgens de locaties op van de stijlpagina&#39;s waarnaar u wilt verwijze
 ### RTE configureren voor optimale woordeinden in het Japans {#jpwordwrap}
 
 Auteurs die AEM gebruiken om inhoud in de Japanse taal te ontwerpen, kunnen een stijl toepassen op tekens om regeleinden te voorkomen wanneer een regeleinde niet vereist is. Op deze manier kunnen auteurs de zinnen op de gewenste positie laten afbreken. De stijl voor deze functionaliteit is gebaseerd op CSS-klasse die vooraf is gedefinieerd in de CSS-stijlpagina.
-
->[!NOTE]
->
->Voor deze functie is minstens AEM 6.5 Service Pack 1 vereist.
 
 Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen toepassen:
 

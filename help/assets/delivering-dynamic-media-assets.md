@@ -1,18 +1,13 @@
 ---
 title: Dynamische media-elementen leveren
 description: Leer hoe u dynamische media-elementen, zoals video en afbeeldingen, op uw webpagina's kunt plaatsen.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -42,9 +37,7 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 * [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](/help/assets/responsive-site.md)
 * [HTTP2-levering van inhoud](/help/assets/http2.md)
-* [De CDN-cache ongeldig maken via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Regels gebruiken om URL&#39;s te transformeren](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## HTTP/2-levering van Dynamic Media-elementen {#http-delivery-of-dynamic-media-assets}
 

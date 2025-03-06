@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun J
 
 **Actie**: Migreer uw configuratie aangezien AEM nu geloofsbrieven OAuth steunt.
 
-**Relevante versies van AEM**: Adobe Managed Services (Service Pack 21 en hierboven).
+**Relevante versies van AEM**: Adobe Managed Services.
 
 AEM-klanten gebruiken de AEM om integratie met alle andere Adobe-oplossingen te configureren. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
 
@@ -44,6 +44,6 @@ Zie {de Integraties IMS van de Opstelling voor AEM ](/help/sites-administering/s
 
 **Actie**: Bevestig wanneer deze van geloofsbrieven kunnen worden gemigreerd JWT aan OAuth.
 
-**Relevante versies van AEM**: Adobe Managed Services (Service Pack 21 en hierboven).
+**Relevante versies van AEM**: Adobe Managed Services.
 
 De klanten creëren de projecten van Adobe Developer Console zodat kunnen zij [ Cloud Manager APIs ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aanhalen. De geloofsbrieven in het project van Adobe Developer zouden aan het server-aan-Server referentie type OAuth moeten worden gemigreerd alvorens de afgekeurde geloofsbrieven JWT in Januari 2025 verlopen.
