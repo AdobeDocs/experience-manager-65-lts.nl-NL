@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige release voor Adobe Experience Manager 6.5 LTS
 description: Dit zijn de huidige Release-aantekeningen voor Adobe Experience Manager 6.5 LTS.
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 9bbd7acd498a1a0614db246f9d1326a62c199806
+source-git-commit: f9fefb530e9cdcced664bede2e11556ab0345876
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '795'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ De onderstaande lijst biedt een overzicht, terwijl op de volgende pagina&#39;s a
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
-Het platform van [!DNL Adobe Experience Manager] 6.5 LTS bouwt voort op bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java™ Content Repository: Apache Jackrabbit Oak 1.68.0.
+Het platform van [!DNL Adobe Experience Manager] 6.5 LTS bouwt voort op bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java™ Content Repository: Apache Jackrabbit Oak 1.68.x.
 
 De QuickStart gebruikt Eclipse Jetty 11.0.x als servlet-engine.
 

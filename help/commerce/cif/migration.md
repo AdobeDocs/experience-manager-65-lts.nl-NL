@@ -5,9 +5,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fdb84a17b3af7eaa76e5a7c30d21d7a601463278
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Deze handleiding helpt u de gebieden te identificeren die u voor de Experience M
 
 ## CIF-invoegtoepassing
 
-CIF toe:voegen-op is beschikbaar voor AEM 6.5 via het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Het is compatibel en biedt dezelfde functies als de CIF-invoegtoepassing voor Experience Manager as a Cloud Service.
+CIF toe:voegen-op is beschikbaar via het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc layout=list&amp;p.offset=0&amp;p.limit=16). Het is compatibel en biedt dezelfde functies als de CIF-invoegtoepassing voor Experience Manager as a Cloud Service.
 
 Zie [ Begonnen het worden met de Inhoud van AEM en Commerce ](getting-started.md).
 
