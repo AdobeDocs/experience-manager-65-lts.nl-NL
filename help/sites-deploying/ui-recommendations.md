@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: f65f9e94-0837-48d1-a565-cfb880963790
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -93,10 +93,6 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
   </tr>
  </tbody>
 </table>
-
-### Veelgestelde vragen {#faq}
-
-Zie het artikel van de Kennisbank, [ Aanraakinterface Authoring FAQ ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), voor details; met inbegrip van om het even welke informatie over het afbraakprogramma voor klassieke UI.
 
 ### Gebruikersinterface selecteren {#selecting-your-ui}
 
