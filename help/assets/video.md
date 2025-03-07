@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '10966'
+source-wordcount: '10339'
 ht-degree: 1%
 
 ---
@@ -263,10 +263,6 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->*Als u DASH wilt gebruiken voor uw video&#39;s, moet Adobe Technical Support deze eerst inschakelen op uw account. Zie [ DASH op uw Dynamische rekening van Media ](#enable-dash) toelaten.
-
 ## Architectuur van Dynamic Media-video-oplossing {#architecture-of-dynamic-media-video-solution}
 
 In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s die via de DMGateway (in de modus Dynamische media hybride) zijn geüpload en gecodeerd en voor openbare consumptie beschikbaar zijn.
@@ -419,60 +415,6 @@ Stel dat uw bronvideo bijvoorbeeld 1920 × 1080 is. In de volgende tabel bieden 
 
 Dynamische media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebruiken. Omdat MP4-bestanden de H.264-videocodec gebruiken, biedt deze video van hoge kwaliteit, maar met een gecomprimeerde bestandsgrootte.
 
-### Ondersteuning voor DASH, meerdere bijschriften en audiotracks inschakelen op uw Dynamic Media-account {#enable-dash}
-
-**Ongeveer toelatend DASH op uw rekening**
-DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. U kunt ook kiezen voor beide opties met automatische schakelen tussen spelers als **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling van de viewer.
-
-Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
-
-* Pakketvideo voor aangepaste bitsnelheidstreaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.
-* Met voor browsers geoptimaliseerde streaming met Dynamic Media-spelers kunt u schakelen tussen HLS- en DASH-streaming voor de beste kwaliteit van de service. De videospeler schakelt automatisch over naar HLS wanneer een Safari-browser wordt gebruikt.
-* U kunt uw voorkeursstreamingsmethode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.
-* Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl DASH-mogelijkheden worden ingeschakeld. Er wordt één set videocoderingen gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.
-* Helpt de levering van video toegankelijker te maken voor uw klanten.
-* U kunt de URL voor streaming ook ophalen via API&#39;s.
-
-Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
-
-* Dynamische media configureren voor gebruik van DASH, wat u eenvoudig zelf kunt doen.
-* Experience Manager configureren voor gebruik van DASH, wat gebeurt in de vorm van een Adobe Customer Support-case die u maakt en verzendt.
-
-Wanneer u een Adobe Support-case maakt om DASH voor uw account in te schakelen, wordt automatisch ook ondersteuning voor meerdere bijschriften en audiotracks ingeschakeld. Als deze optie is geactiveerd, worden alle nieuw geüploade video&#39;s verwerkt met behulp van een bijgewerkte back-endarchitectuur die het toevoegen van meerdere bijschriften en audiotracks ondersteunt.
-
->[!IMPORTANT]
->
->Om het even welke video&#39;s die u *alvorens* toelatend veelvoudige titel en audiospoorsteun op uw Dynamische rekening van Media uploadde, [ moet worden opnieuw verwerkt ](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
-
-**om DASH, veelvoudige titel en veelvoudige audio spoorsteun op uw Dynamische rekening van Media toe te laten:**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. Begin door **het vormen Dynamische Media voor DASH** - van Experience Manager, navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-
-1. Van de **[!UICONTROL Adobe Experience Manager Web Console Configuration]** pagina, rol aan de naam *AEM Assets Dynamische Video van Media Geavanceerde Vlag van de Eigenschap Streaming*.
-
-1. Schakel links van de naam het selectievakje in om DASH in te schakelen (inschakelen).
-
-1. Selecteer **[!UICONTROL Save]** .
-
-1. Nu, gebruik Admin Console om [ verwezenlijking van een nieuw steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te beginnen.
-1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
-
-   * Primaire contactpersoon, e-mail, telefoon.
-   * Naam van uw Dynamic Media-account.
-   * Geef op of u ondersteuning voor DASH, meerdere bijschriften en meerdere audiotracks wilt inschakelen voor uw Dynamic Media-account, op Experience Manager.
-
-1. De klantenondersteuning van Adobe voegt u toe aan de wachtlijst van de Klant op basis van de volgorde waarin de verzoeken worden verzonden.
-1. Wanneer Adobe klaar is om uw verzoek af te handelen, neemt de klantenondersteuning contact met u op om een datum voor activering te coördineren en in te stellen.
-1. De steun van de klant brengt u na voltooiing op de hoogte.
-1. U kunt nu een van de volgende twee handelingen uitvoeren:
-
-   * Creeer uw [ vooraf ingestelde videokijker ](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) zoals gebruikelijk.
-   * [ voeg veelvoudige titel en audiosporen ](#add-msma) aan uw video toe.
-
 ## Videorapporten weergeven {#viewing-video-reports}
 
 >[!NOTE]
@@ -610,7 +552,6 @@ Voordat u meerdere bijschriften en audiotracks aan uw video toevoegt, moet u con
 
 * Dynamic Media wordt ingesteld in een AEM-omgeving.
 * Het profiel van A [ Dynamische Video van Media wordt toegepast op de omslag waar uw video&#39;s ](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) worden opgenomen.
-* [ Veelvoudige titel en audiospoor wordt toegelaten op uw Dynamische rekening van Media ](#enable-dash).
 
 Toegevoegde bijschriften en bijschriften worden ondersteund in de indelingen WebVTT en Adobe `.vtt` . Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
 
@@ -842,10 +783,6 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 
 ## Gesloten bijschriften toevoegen aan een video {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->Adobe adviseert dat u [ veelvoudige titel en audiospoorvermogen ](#enable-dash) op uw Dynamische rekening van Media toelaat. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Bijschriften in vreemde talen worden weergegeven zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 

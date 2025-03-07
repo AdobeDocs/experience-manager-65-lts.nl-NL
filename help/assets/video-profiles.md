@@ -11,26 +11,26 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 6%
+source-wordcount: '3531'
+ht-degree: 3%
 
 ---
 
 # Videoprofielen {#video-profiles}
 
-Dynamische media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. Wanneer u uw primaire bronvideo&#39;s codeert met behulp van het profiel Adaptieve videocodering, past de videospeler tijdens het afspelen automatisch de kwaliteit van de videostream aan op basis van de snelheid van de internetverbinding van uw klanten. Deze functionaliteit wordt ook wel adaptieve bitsnelheidstreaming genoemd.
+Dynamische media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. Wanneer u uw primaire bronvideo&#39;s codeert met het profiel Adaptieve videocodering, optimaliseert de videospeler de afspeelkwaliteit. De videostream wordt automatisch aangepast op basis van de snelheid van de internetverbinding van uw klanten. Deze functionaliteit wordt ook wel adaptieve bitsnelheidstreaming genoemd.
 
 Hier volgen nog andere factoren die de kwaliteit van uw video&#39;s bepalen:
 
 * **Resolutie van de geuploade primaire bronvideo**
 
-  Als de MP4-video met een lagere resolutie, zoals 240p of 360p, is opgenomen, kan deze niet in HD worden gestreamd.
+  Als de MP4-video wordt opgenomen met een lagere resolutie, zoals 240p of 360p, kan deze niet worden gestreamd in HD.
 
 * **de grootte van de videospeler**
 
-  Standaard is de breedte in het profiel Adaptieve videocodering ingesteld op Automatisch. Ook tijdens het afspelen wordt de beste kwaliteit gebruikt op basis van de grootte van de speler.
+  Standaard is de breedte in het profiel Adaptieve videocodering ingesteld op Automatisch. Tijdens het afspelen selecteert de videospeler automatisch de beste kwaliteit op basis van de grootte.
 
 Zie [ Beste praktijken voor Video Coderen ](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -40,7 +40,7 @@ Zie ook [ Beste praktijken voor het Organiseren van uw Digitale Assets voor het 
 >
 >Als u de metagegevens van een video en de bijbehorende miniaturen van videoafbeeldingen wilt genereren, moet de video zelf het coderingsproces doorlopen in Dynamische media. In Adobe Experience Manager codeert de **[!UICONTROL Dynamic Media Encode Video]** -workflow video als u Dynamic Media hebt ingeschakeld en videocloudservices hebt ingesteld. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [ video het coderen van de Monitor en YouTube het publiceren vooruitgang ](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Als u Dynamic Media hebt ingeschakeld en cloudservices voor video hebt ingesteld, wordt de **[!UICONTROL Dynamic Media Encode Video]** -workflow automatisch van kracht wanneer u een video uploadt. (Als u geen gebruik maakt van Dynamische media, wordt de **[!UICONTROL DAM Update Asset]** -workflow van kracht.)
 >
->Metagegevens zijn handig wanneer u naar elementen zoekt. De miniaturen zijn statische videobeelden die tijdens het coderen worden gegenereerd. Ze zijn vereist door het Experience Manager-systeem en worden gebruikt in de gebruikersinterface om u te helpen video&#39;s visueel te identificeren in de weergave Kaarten, de weergave Zoekresultaten en de weergave Lijst met middelen. De gegenereerde miniaturen worden weergegeven wanneer u het pictogram Uitvoeringen (verfpalet) van een gecodeerde video selecteert.
+>Metagegevens zijn handig wanneer u naar elementen zoekt. De miniaturen zijn statische videobeelden die tijdens het coderen worden gegenereerd. Het Experience Manager-systeem vereist deze bestanden en gebruikt ze in de gebruikersinterface om u te helpen video&#39;s visueel te identificeren in de weergave Kaarten, de weergave Zoekresultaten en de weergave Lijst met middelen. De gegenereerde miniaturen worden weergegeven wanneer u het pictogram Uitvoeringen (verfpalet) van een gecodeerde video selecteert.
 
 Wanneer u klaar bent met het maken van het videoprofiel, past u het toe op een of meerdere mappen. Zie [ een videoprofiel op omslagen ](#applying-a-video-profile-to-folders) toepassen.
 
@@ -99,7 +99,7 @@ In de volgende tabel vindt u de beste praktijken voor het coderen van profielen 
 
 ## Informatie over slim uitsnijden in videoprofielen {#about-smart-crop-video}
 
-Slim uitsnijden voor video - een optionele functie die beschikbaar is in videoprofielen - is een hulpprogramma dat gebruik maakt van de kracht van kunstmatige intelligentie in Adobe Sensei. Het brandpunt wordt automatisch gedetecteerd en bijgesneden in adaptieve video of progressieve video die u hebt geüpload, ongeacht de grootte.
+Slim uitsnijden voor video - een optionele functie die beschikbaar is in videoprofielen - is een gereedschap dat gebruik maakt van de kracht van kunstmatige intelligentie in Adobe Sensei. Het brandpunt wordt automatisch gedetecteerd en bijgesneden in adaptieve video of progressieve video die u hebt geüpload, ongeacht de grootte.
 
 Ondersteunde video-indelingen voor slim uitsnijden zijn MP4, MKV, MOV, AVI, FLV en WMV.
 
@@ -109,7 +109,7 @@ De maximaal ondersteunde videobestandsgrootte voor slim uitsnijden is aan de vol
 * 30 frames per seconde (FPS).
 * Bestandsgrootte van 300 MB.
 
-Adobe Sensei is beperkt tot 9000 frames. Dat wil zeggen, vijf minuten bij 30 FPS. Als uw video een hogere FPS heeft, neemt de maximaal ondersteunde videoduur af. Een video van 60 FPS moet bijvoorbeeld tweeënhalve minuut duren voordat Adobe Sensei en SmartCrop deze ondersteunen.
+Adobe Sensei is beperkt tot 9000 frames. Dat wil zeggen, vijf minuten bij 30 FPS. Als uw video een hogere FPS heeft, neemt de maximaal ondersteunde videoduur af. Adobe Sensei en SmartCrop ondersteunen bijvoorbeeld alleen een video van 60 FPS als deze minstens tweeënhalve minuut duurt.
 
 ![ Slim Gewas voor Video ](assets/smart-crop-video.png)
 
@@ -117,7 +117,7 @@ Adobe Sensei is beperkt tot 9000 frames. Dat wil zeggen, vijf minuten bij 30 FPS
 >
 >Als u slimme videoclips alleen wilt gebruiken, moet u een of meer voorinstellingen voor videocodering opnemen in uw videoprofiel.
 
-Als u SmartCrop voor video wilt gebruiken, maakt u een adaptief of progressief videocoderingsprofiel. Als onderdeel van uw profiel gebruikt u het gereedschap **[!UICONTROL Smart Crop Ratio]** om vooraf gedefinieerde hoogte-breedteverhoudingen te selecteren. Nadat u bijvoorbeeld de videocoderingsvoorinstellingen hebt gedefinieerd, kunt u een definitie &quot;Mobiel liggend&quot; toevoegen met een hoogte-breedteverhouding van 16×9 en een definitie &quot;Mobiel staand&quot; met een hoogte-breedteverhouding van 9×16. Andere hoogte- of uitsnijdverhoudingen waaruit u kunt kiezen, zijn onder andere 1×1, 4×3 en 4×5.
+Als u een slim uitsnijden voor video wilt gebruiken, maakt u een adaptief of progressief videocoderingsprofiel. Als onderdeel van uw profiel gebruikt u het gereedschap **[!UICONTROL Smart Crop Ratio]** om vooraf gedefinieerde hoogte-breedteverhoudingen te selecteren. Nadat u bijvoorbeeld de videocoderingsvoorinstellingen hebt gedefinieerd, kunt u een definitie &quot;Mobiel liggend&quot; toevoegen met een hoogte-breedteverhouding van 16 x 9. U kunt ook een definitie van Mobiel portret toevoegen met een hoogte-breedteverhouding van 9 × 16. Andere hoogte- of uitsnijdverhoudingen waaruit u kunt kiezen, zijn onder andere 1 × 1, 4 × 3 en 4 × 5.
 
 ![ geef een video het coderen profiel met slimme gewas ](assets/edit-smart-crop-video2.png) uit
 
@@ -133,11 +133,11 @@ Zie ook [ Slimme uitsnijding voor beelden ](image-profiles.md).
 
 Dynamische media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel - een groep video-uploadinstellingen voor MP4 H.264-systeem dat is geoptimaliseerd voor de beste kijkervaring. U kunt dit profiel gebruiken wanneer u uw video&#39;s uploadt.
 
-Als dit vooraf gedefinieerde profiel echter niet aan uw behoeften voldoet, kunt u desgewenst uw eigen adaptieve videocoderingsprofiel maken. Als u de instelling **[!UICONTROL Encode for adaptive streaming]** gebruikt, worden alle coderingsvoorinstellingen die u aan het profiel toevoegt, gevalideerd om ervoor te zorgen dat alle video&#39;s dezelfde hoogte-breedteverhouding hebben. Bovendien worden de gecodeerde video&#39;s beschouwd als een set met multibitsnelheden voor streaming.
+Als dit vooraf gedefinieerde profiel echter niet aan uw wensen voldoet, kunt u uw eigen profiel voor adaptieve videocodering maken. Als u de instelling **[!UICONTROL Encode for adaptive streaming]** gebruikt, worden alle coderingsvoorinstellingen die u aan het profiel toevoegt, gevalideerd om ervoor te zorgen dat alle video&#39;s dezelfde hoogte-breedteverhouding hebben. Bovendien worden de gecodeerde video&#39;s beschouwd als een set met multibitsnelheden voor streaming.
 
 Wanneer u het videocoderingsprofiel maakt, ziet u dat de meeste coderingsopties vooraf zijn gevuld met de aanbevolen standaardinstellingen. Als u echter een andere waarde selecteert dan de aanbevolen standaardwaarde, kan dit resulteren in een slechte videokwaliteit tijdens het afspelen en andere prestatieproblemen.
 
-Voor alle MP4 H.264-videocoderingsvoorinstellingen in het profiel worden dus de volgende waarden gevalideerd om ervoor te zorgen dat deze voor afzonderlijke coderingsvoorinstellingen in het profiel hetzelfde zijn, zodat adaptieve bitsnelheidstreaming mogelijk wordt:
+Daarom valideert het systeem bepaalde waarden voor alle voorinstellingen voor MP4 H.264-videocodering in het profiel om adaptieve bitsnelheidstreaming mogelijk te maken. De volgende waarden moeten consistent blijven voor afzonderlijke coderingsvoorinstellingen in het profiel:
 
 * Video-indelingscodec - MP4 H.264 (.mp4)
 * Audiocodec
@@ -148,7 +148,7 @@ Voor alle MP4 H.264-videocoderingsvoorinstellingen in het profiel worden dus de 
 * H264-profiel
 * Samplingfrequentie audio
 
-Als de waarden niet gelijk zijn, kunt u doorgaan met het maken van het profiel. Adaptieve bitsnelheidstreaming is echter niet mogelijk. In plaats daarvan ervaren gebruikers het streamen met één bitsnelheid. Het wordt aanbevolen de coderingsinstellingen te bewerken om dezelfde waarden te gebruiken voor afzonderlijke coderingsvoorinstellingen in het profiel. (De videoprofiel/voorinstellingseditor dwingt de pariteit van de adaptieve instellingen voor videocodering af als **[!UICONTROL Encode for adaptive streaming]** is ingeschakeld.)
+Als de waarden niet gelijk zijn, kunt u doorgaan met het maken van het profiel. Adaptieve bitsnelheidstreaming is echter niet mogelijk. In plaats daarvan ervaren gebruikers het streamen met één bitsnelheid. Adobe raadt u aan de coderingsinstellingen te bewerken om dezelfde waarden te gebruiken voor afzonderlijke coderingsvoorinstellingen in het profiel. (De videoprofiel/voorinstellingseditor dwingt de pariteit van de adaptieve instellingen voor videocodering af als **[!UICONTROL Encode for adaptive streaming]** is ingeschakeld.)
 
 Zie ook [ een video het coderen profiel voor het progressieve stromen ](#creating-a-video-encoding-profile-for-progressive-streaming) creëren.
 
@@ -164,9 +164,9 @@ Om geavanceerde verwerkingsparameters voor andere activatypes te bepalen, zie [ 
 1. Voer een naam en beschrijving in voor het profiel.
 1. Selecteer **[!UICONTROL Add Video Encoding Preset]** op de pagina Voorinstellingen voor videocodering maken/bewerken.
 1. Stel op het tabblad **[!UICONTROL Basic]** de video- en audio-opties in.
-Selecteer het informatiepictogram naast elke optie voor extra beschrijvingen of geadviseerde montages die op geselecteerde videoformaatcodec worden gebaseerd.
+Selecteer het informatiepictogram naast elke optie. U kunt op basis van de gekozen codec voor video-indelingen informatie lezen over beschrijvingen of aanbevolen instellingen.
 1. Controleer of onder de kop Videogrootte de optie **[!UICONTROL Keep aspect ratio]** is ingeschakeld.
-1. Stel de resolutie van de videoframegrootte in pixels in. Gebruik de waarde van **[!UICONTROL Auto]** om automatisch te schalen zodat deze overeenkomt met de hoogte-breedteverhouding van de bron (breedte-hoogteverhouding). Bijvoorbeeld Auto x 480 of 640 x Auto.
+1. Stel de resolutie van de videoframegrootte in pixels in. Gebruik de waarde **[!UICONTROL Auto]** om automatisch te schalen zodat deze overeenkomt met de hoogte-breedteverhouding (breedte-hoogteverhouding) van de bron. Bijvoorbeeld Auto × 480 of 640 × Auto.
 
 1. Voer een van de volgende handelingen uit:
 
@@ -216,18 +216,18 @@ Om geavanceerde verwerkingsparameters voor andere activatypes te bepalen, zie [ 
 1. Voer een naam en beschrijving in voor het profiel.
 1. Selecteer **[!UICONTROL Add Video Encoding Preset]** op de pagina Voorinstellingen voor videocodering maken/bewerken.
 1. Stel op het tabblad **[!UICONTROL Basic]** de video- en audio-opties in.
-Selecteer het informatiepictogram naast elke optie voor extra beschrijvingen of geadviseerde montages die op geselecteerde videoformaatcodec worden gebaseerd.
+Selecteer het informatiepictogram naast elke optie. Op basis van de geselecteerde codec voor video-indelingen kunt u aanvullende beschrijvingen of aanbevolen instellingen lezen.
 1. (Optioneel) Schakel **[!UICONTROL Keep aspect ratio]** uit onder de kop Videogrootte.
 1. Ga als volgt te werk:
    * Typ **[!UICONTROL auto]** in het veld **[!UICONTROL Width]** .
    * Voer in het veld **[!UICONTROL Height]** een waarde in pixels in.
-Om u te helpen de grootte van de video visualiseren, selecteer het de informatiepictogram van de Hoogte om de **[!UICONTROL Size Calculator]** pagina te openen. Gebruik de pagina **[!UICONTROL Size Calculator]** om de videodimensie (blauwe doos) verder in te stellen hoe u wilt. Als u klaar bent, selecteert u **[!UICONTROL X]** in de rechterbovenhoek van het dialoogvenster.
+Om u te helpen de grootte van de video visualiseren, selecteer het de informatiepictogram van de Hoogte om de **[!UICONTROL Size Calculator]** pagina te openen. Gebruik de pagina **[!UICONTROL Size Calculator]** om de videodimensie verder in te stellen (blauw vak) hoe u wilt. Als u klaar bent, selecteert u **[!UICONTROL X]** in de rechterbovenhoek van het dialoogvenster.
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
    * Selecteer de tab **[!UICONTROL Advanced]** en controleer of het selectievakje **[!UICONTROL Use Default Values]** is ingeschakeld (aanbevolen).
 
    * Schakel het selectievakje **[!UICONTROL Use Default Values]** uit en geef de gewenste video-instellingen en audio-instellingen op.
-Selecteer het informatiepictogram naast elke optie voor extra beschrijvingen of geadviseerde montages die op geselecteerde videoformaatcodec worden gebaseerd.
+Selecteer het informatiepictogram naast elke optie. Op basis van de geselecteerde codec voor video-indelingen kunt u aanvullende beschrijvingen of aanbevolen instellingen lezen.
 
 1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina om de voorinstelling op te slaan.
 1. Voer een van de volgende handelingen uit:
@@ -252,7 +252,7 @@ U kunt het profiel nu toepassen op mappen die video&#39;s bevatten. Zie [ Toepas
 
 ## Parameters voor aangepaste videocodering gebruiken {#using-custom-added-video-encoding-parameters}
 
-U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van de geavanceerde parameters voor videocodering die niet in de gebruikersinterface worden gevonden wanneer u een videoprofiel maakt of bewerkt in Experience Manager. Voeg een of meer geavanceerde parameters, zoals minBitrate en maxBitrate, toe aan uw bestaande profiel.
+U kunt een bestaand videocoderingsprofiel bewerken om toegang te krijgen tot geavanceerde parameters voor videocodering. Deze parameters zijn niet beschikbaar in de gebruikersinterface wanneer u een videoprofiel maakt of bewerkt in Experience Manager. Voeg een of meer geavanceerde parameters, zoals minBitrate en maxBitrate, toe aan uw bestaande profiel.
 
 **om douane-toegevoegde video het coderen parameters te gebruiken:**
 
@@ -281,9 +281,9 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van de geava
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde, zodat elke 2-10 seconden een hoofdframe kan worden gegenereerd. Bij 30 frames per seconde moet het hoofdframe-interval bijvoorbeeld 60-300 zijn.<br /> <br /> De lagere keyframe intervallen verbeteren het gedrag voor het zoeken naar streams en het schakelen tussen streams voor adaptieve videocoderingen en kunnen ook de kwaliteit voor video's met veel beweging verbeteren. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
+   <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde, zodat elke 2-10 seconden een hoofdframe kan worden gegenereerd. Bij 30 frames per seconde moet het hoofdframe-interval bijvoorbeeld 60-300 zijn.<br /> <br /> Met lagere keyframe-intervallen verbetert u het zoeken naar streams en het schakelen tussen streams voor adaptieve videocoderingen en de kwaliteit van video's met hoge beweging. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
    <td><code>String</code></td>
-   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor DASH of HLS is 60-90. (Als u DASH wilt gebruiken voor uw video's, moet deze eerst zijn ingeschakeld op uw account. Zie <a href="/help/assets/video.md#enable-dash"> DASH op uw rekening </a> toelaten.)</p> </td>
+   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor DASH of HLS is 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -301,7 +301,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van de geava
    <td><code>audioBitrateCustom</code></td>
    <td>Stel waarde in op <code>true</code> om een constante bitsnelheid voor de audiostream te forceren, indien ondersteund door audiocodec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>De standaardwaarde is <code>false</code> .</p> <p>De aanbevolen waarde voor DASH of HLS is <code>false</code> . (Als u DASH wilt gebruiken voor uw video's, moet deze eerst zijn ingeschakeld op uw account. Zie <a href="/help/assets/video.md#enable-dash"> DASH op uw rekening </a> toelaten.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>De standaardwaarde is <code>false</code> .</p> <p>De aanbevolen waarde voor DASH of HLS is <code>false</code> .</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -336,7 +336,7 @@ Om geavanceerde verwerkingsparameters voor andere activatypes te bepalen, zie [ 
 Selecteer het informatiepictogram voor een beschrijving van adaptieve bitsnelheidstreaming. (Schakel dit selectievakje niet in als u een progressief videoprofiel bewerkt.)
 1. Onder de kop Voorinstellingen videocodering kunt u voorinstellingen voor videocodering die het profiel vormen, toevoegen, bewerken of verwijderen.
 
-   Selecteer het informatiepictogram naast elke optie op de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]** voor extra beschrijvingen of aanbevolen instellingen op basis van de geselecteerde codec voor video-indeling.
+   Selecteer het informatiepictogram naast elke optie op de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]** . Op basis van de geselecteerde codec voor video-indelingen kunt u aanvullende beschrijvingen of aanbevolen instellingen lezen.
 
 1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 
@@ -351,7 +351,7 @@ Selecteer het informatiepictogram voor een beschrijving van adaptieve bitsnelhei
    Als in de modus Dynamische media - hybride een WebM-videovoorinstelling deel uitmaakt van het videoprofiel, is **[!UICONTROL Encode for adaptive streaming]** niet mogelijk omdat alle voorinstellingen MP4 moeten zijn.
 1. Onder de kop Voorinstellingen videocodering kunt u voorinstellingen voor videocodering die het profiel vormen, toevoegen, bewerken of verwijderen.
 
-   Selecteer het informatiepictogram naast elke optie op de tabbladen Standaard en Geavanceerd voor aanbevolen instellingen en beschrijvingen.
+   Selecteer het informatiepictogram naast elke optie op de tabbladen Standaard en Geavanceerd. U kunt informatie lezen over aanbevolen instellingen en beschrijvingen.
 
 1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 
@@ -368,7 +368,7 @@ Wanneer u een videoprofiel aan een omslag toewijst, erven om het even welke subf
 
 Als u een ander videoprofiel aan een omslag toewees, treedt het nieuwe profiel het vorige profiel met voeten. De vorige bestaande mapelementen blijven ongewijzigd. Het nieuwe profiel wordt toegepast op de elementen die later aan de map worden toegevoegd.
 
-Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aangegeven door de weergave van de profielnaam in de kaartnaam.
+In de gebruikersinterface wordt de profielnaam weergegeven in de kaartnaam om mappen met een toegewezen profiel aan te geven.
 
 ![ chlimage_1-517 ](assets/chlimage_1-517.png)
 
@@ -380,7 +380,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 U kunt een videoprofiel toepassen op een map vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren op mappen kunt toepassen.
 
-Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+In de gebruikersinterface wordt de profielnaam weergegeven in de kaartnaam om mappen met een toegewezen profiel aan te geven.
 
 Zie ook [ activa in een omslag opnieuw verwerken nadat u zijn verwerkingsprofiel ](processing-profiles.md#reprocessing-assets) hebt uitgegeven.
 
@@ -388,14 +388,15 @@ Zie ook [ activa in een omslag opnieuw verwerken nadat u zijn verwerkingsprofiel
 
 1. Selecteer het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** .
 1. Selecteer het videoprofiel dat u wilt toepassen op een of meerdere mappen.
-1. Selecteer **[!UICONTROL Apply Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]** . Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven terwijl u zich in **[!UICONTROL Card View]** bevindt.
-U kunt [ de vooruitgang van een videoprofielverwerkingstaak ](#monitoring-the-progress-of-an-encoding-job) controleren.
+1. Selecteer **[!UICONTROL Apply Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]** . In de gebruikersinterface wordt de profielnaam weergegeven in de kaartnaam om mappen met een toegewezen profiel aan te geven.
+
+   U kunt [ de vooruitgang van een videoprofielverwerkingstaak ](#monitoring-the-progress-of-an-encoding-job) controleren.
 
 #### Een videoprofiel vanuit Eigenschappen toepassen op mappen {#applying-video-profiles-to-folders-from-properties}
 
 1. Selecteer het Experience Manager-logo en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een videoprofiel wilt toepassen.
 1. Selecteer in de map het vinkje om het te selecteren en selecteer vervolgens **[!UICONTROL Properties]** .
-1. Selecteer de tab **[!UICONTROL Video Profiles]** , selecteer het profiel in de vervolgkeuzelijst en selecteer **[!UICONTROL Save & Close]** . Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Selecteer de tab **[!UICONTROL Video Profiles]** , selecteer het profiel in de vervolgkeuzelijst en selecteer **[!UICONTROL Save & Close]** . In de gebruikersinterface wordt de profielnaam weergegeven in de kaartnaam om mappen met een toegewezen profiel aan te geven.
 
    ![ chlimage_1-518 ](assets/chlimage_1-518.png)
 U kunt [ de vooruitgang van een videoprofielverwerkingstaak ](#monitoring-the-progress-of-an-encoding-job) controleren.
@@ -437,4 +438,4 @@ U kunt een videoprofiel uit een map verwijderen vanuit het menu **[!UICONTROL To
 
 1. Selecteer het Experience Manager-logo en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waaruit u een videoprofiel wilt verwijderen.
 1. Selecteer in de map het vinkje en selecteer vervolgens **[!UICONTROL Properties]** .
-1. Selecteer de tab **[!UICONTROL Video Profiles]** , selecteer **[!UICONTROL None]** in de vervolgkeuzelijst en selecteer **[!UICONTROL Save & Close]** . Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Selecteer de tab **[!UICONTROL Video Profiles]** , selecteer **[!UICONTROL None]** in de vervolgkeuzelijst en selecteer **[!UICONTROL Save & Close]** . In de gebruikersinterface wordt de profielnaam weergegeven in de kaartnaam om mappen met een toegewezen profiel aan te geven.
