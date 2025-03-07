@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 8ddfc767-08a5-4045-86a7-97150e028a14
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -59,10 +59,12 @@ De volgende tabel bevat een lijst met alle ondersteunde typen persistentie en di
 
 TarMK is ontworpen voor prestaties, terwijl MongoMK en RDBMK zijn ontworpen voor schaalbaarheid. Adobe adviseert hoogst TarMK als standaardpersistentietechnologie voor alle de plaatsingsscenario&#39;s van AEM Forms, voor zowel Auteur als publiceer instanties, behalve in de gebruiksgevallen die in sectie [ worden geschetst die Mongo of een Relationele Microkernel van het Gegevensbestand over TarMK ](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p) kiezen.
 
-Voor de lijst van gesteunde Microkernels, zie [ AEM Forms op Technische Vereisten OSGi ](/help/sites-deploying/technical-requirements.md) of [ AEM Forms op JEE gesteunde platformcombinaties ](/help/forms/using/aem-forms-jee-supported-platforms.md) artikelen.
+Voor de lijst van gesteunde Microkernels, zie [ AEM Forms op Technische Vereisten OSGi ](/help/sites-deploying/technical-requirements.md) <!--or [AEM Forms on JEE supported platform combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) articles-->.
 
 ## Mongo of een relationele database-microkernel kiezen boven TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 Een scalable (gegroepeerde) milieu van AEM Forms is een reeks van twee of meer horizontaal gevormde actieve auteursinstanties. U kunt ervoor kiezen om meer dan één auteurinstantie uit te voeren als één enkele server, die alle gelijktijdige auteursactiviteiten steunt, niet meer duurzaam is.
 
-Alleen het persistentietype MongoMK en RDBMK wordt ondersteund voor een schaalbare (geclusterde) AEM Forms op JEE-omgeving. Het aantal servers of de grootte van scalable milieu varieert voor elke installatie. Voor een lijst van overwegingen en voorbeelden, zie [ Geadviseerde Inzet ](/help/sites-deploying/recommended-deploys.md) en of [ Architectuur en plaatsingstopologieën voor AEM Forms ](/help/forms/using/aem-forms-architecture-deployment.md) artikel. U kunt ook contact opnemen met AEM Forms-ondersteuning voor gedetailleerde informatie over capaciteitsplanning voor AEM Forms met RDBMK en TarMK.
+<!--Only MongoMK and RDBMK persistence type are supported for a scalable (clustered) AEM Forms on JEE environment.-->
+
+Het aantal servers of de grootte van scalable milieu varieert voor elke installatie. Voor een lijst van overwegingen en voorbeelden, zie [ Geadviseerde Inzet ](/help/sites-deploying/recommended-deploys.md) en of [ Architectuur en plaatsingstopologieën voor AEM Forms ](/help/forms/using/aem-forms-architecture-deployment.md) artikel. U kunt ook contact opnemen met AEM Forms-ondersteuning voor gedetailleerde informatie over capaciteitsplanning voor AEM Forms met RDBMK en TarMK.

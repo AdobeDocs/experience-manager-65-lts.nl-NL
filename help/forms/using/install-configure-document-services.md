@@ -6,7 +6,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5503'
 ht-degree: 0%
@@ -74,8 +74,8 @@ Voordat u de documentservices van AEM Forms gaat installeren en configureren, mo
 
 * Clientsoftware die vereist is voor conversie door PDF-producenten op Microsoft® Windows en Linux®, is geïnstalleerd:
 
-   * **Microsoft® Vensters**: Installeer [ Microsoft® Bureau ](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) of [ Apache OpenOffice ](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: Installeer [ Apache OpenOffice ](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft® Vensters**: Installeer **Microsoft® Bureau** of **Apache OpenOffice**
+   * **Linux®**: Installeer **Apache OpenOffice**
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 +++ Adobe Acrobat
 
-* Verzeker slechts [ gesteunde versie ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Microsoft® Office (met 32 bits) en Adobe Acrobat wordt geïnstalleerd en het openen van dialogen wordt geannuleerd.
+* Verzeker slechts [ gesteunde versie ](/help/sites-deploying/technical-requirements.md) van Microsoft® Office (met 32 bits) en Adobe Acrobat wordt geïnstalleerd en het openen van dialogen wordt geannuleerd.
 * Controleer of Adobe Acrobat Update Service is uitgeschakeld.
 * Zorg ervoor dat het {](#configure-acrobat-for-the-pdf-generator-service) partijdossier 0} Acrobat_for_PDFG_Configuration.bat met beheerdervoorrechten in werking werd gesteld.[
 * Controleer of een PDF Generator-gebruiker is toegevoegd aan de configuratieinterface van PDF.
@@ -667,7 +667,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 **Microsoft® Vensters**
 
-* Zorg ervoor dat 32 beetje [ gesteunde versie ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Microsoft Office geïnstalleerd is en het openen van dialogen voor alle toepassingen wordt geannuleerd.
+* Zorg ervoor dat 32 beetje [ gesteunde versie ](/help/sites-deploying/technical-requirements.md) van Microsoft Office geïnstalleerd is en het openen van dialogen voor alle toepassingen wordt geannuleerd.
 * Controleer of een PDF Generator-gebruiker is toegevoegd aan de configuratieinterface van PDF.
 * Verzeker de gebruiker van PDF Generator een lid van beheerdersgroep is en [ vervangt het symbolische ](#grant-the-replace-a-process-level-token-privilege) voorrecht van het procesniveau voor de gebruiker wordt geplaatst.
 * Zorg ervoor dat de gebruiker is geconfigureerd in de gebruikersinterface van PDF Generator en voer de volgende handelingen uit:
@@ -681,7 +681,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 **Linux®**
 
-* Installeer de [ gesteunde versie ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van OpenOffice. AEM Forms ondersteunt zowel 32-bits als 64-bits versies. Na het installeren, open alle toepassingen OpenOffice, annuleer alle dialoogvensters, en sluit de toepassingen. Open de toepassingen opnieuw en controleer of er geen dialoogvenster wordt weergegeven wanneer u een OpenOffice-toepassing opent.
+* Installeer de ondersteunde versie van OpenOffice. AEM Forms ondersteunt zowel 32-bits als 64-bits versies. Na het installeren, open alle toepassingen OpenOffice, annuleer alle dialoogvensters, en sluit de toepassingen. Open de toepassingen opnieuw en controleer of er geen dialoogvenster wordt weergegeven wanneer u een OpenOffice-toepassing opent.
 
 * Creeer een omgevingsvariabele `OpenOffice_PATH` en plaats het om het aan installatie te richten OpenOffice wordt geplaatst in de [ console ](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) of het dt (de Boom van het Apparaat) profiel.
 * Als er kwesties in het installeren van OpenOffice zijn, zorg ervoor dat [ bibliotheken met 32 bits ](#extrarequirements) die voor installatie OpenOffice worden vereist beschikbaar zijn.

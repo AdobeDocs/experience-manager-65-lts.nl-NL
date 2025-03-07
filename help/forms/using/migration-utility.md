@@ -1,31 +1,26 @@
 ---
 title: AEM Forms-elementen en -documenten migreren
-description: Met het migratiehulpprogramma kunt u Adobe Experience Manager (AEM) Forms-middelen en -documenten migreren van AEM 6.3 Forms of eerdere versies naar AEM 6.4 Forms.
+description: Met het migratiehulpprogramma kunt u Adobe Experience Manager (AEM) Forms-middelen en -documenten migreren van AEM 6.5.22.0 Forms naar AEM 6.5 Forms LTS.
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
 
 # AEM Forms-elementen en -documenten migreren{#migrate-aem-forms-assets-and-documents}
 
-Het nut van de Migratie zet de [ Aangepaste activa van Forms ](../../forms/using/introduction-forms-authoring.md), [ wolkenconfiguraties ](/help/sites-developing/extending-cloud-config.md) om, en [ de activa van het Beheer van de Correspondentie ](/help/forms/using/cm-overview.md) van het formaat dat in de vroegere versies aan het formaat wordt gebruikt in Adobe Experience Manager (AEM) 6.5 Forms. Wanneer u het migratiehulpprogramma uitvoert, wordt het volgende gemigreerd:
+Het nut van de Migratie zet de [ Aangepaste activa van Forms ](../../forms/using/introduction-forms-authoring.md), [ wolkenconfiguraties ](/help/sites-developing/extending-cloud-config.md) om, en [ de activa van het Beheer van de Correspondentie ](/help/forms/using/cm-overview.md) van het formaat dat in de vroegere versies in het formaat wordt gebruikt dat in Adobe Experience Manager (AEM) 6.5 LTS Forms wordt gebruikt. Wanneer u het migratiehulpprogramma uitvoert, wordt het volgende gemigreerd:
 
 * Aangepaste componenten voor aangepaste formulieren
-* Aangepaste formulieren en correspondentiebeheersjablonen
+* Aangepaste formulieren en overeenkomstige beheersjablonen
 * Cloud-configuraties
-* Correspondentenbeheer en aangepaste formulieren
+* Correspondentenbeheer en Adaptieve Forms-middelen
 
 >[!NOTE]
 >
@@ -33,11 +28,11 @@ Het nut van de Migratie zet de [ Aangepaste activa van Forms ](../../forms/using
 
 ## Migratieaanpak {#approach-to-migration}
 
-U kunt [ bevorderen ](../../forms/using/upgrade.md) aan de recentste versie van AEM Forms 6.5 van AEM Forms 6.4, 6.3, of 6.2, of een nieuwe installatie. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
+U kunt [ bevorderen ](../../forms/using/upgrade.md) aan [ AEM Forms 6.5 LTS van AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md). Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
 
 **als er een verbetering op zijn plaats** is
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Nochtans, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren
+Als u een [ op zijn plaats verbetering ](/help/sites-deploying/in-place-upgrade.md) uitvoerde, heeft de promotieinstantie reeds de activa en de documenten. Nochtans, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren.
 
 Dan moet u de activa en de documenten door [ bijwerken die het nut van de Migratie ](#runningmigrationutility) in werking stellen.
 
@@ -62,7 +57,7 @@ Voor Correspondentenbeheermiddelen:
 * De staat Klaar om te publiceren is verouderd sinds AEM 6.1 Forms, zodat worden alle activa in Klaar om staat te publiceren veranderd in Gewijzigde staat.
 * Aangezien de gebruikersinterface in AEM Forms 6.3 wordt bijgewerkt, zijn de stappen voor het uitvoeren van de aanpassingen ook verschillend. Als u migreert van een versie die ouder is dan versie 6.3, voert u de aanpassing opnieuw uit.
 * Layoutfragmenten worden verplaatst van `/content/apps/cm/layouts/fragmentlayouts/1001` naar `/content/apps/cm/modules/fragmentlayouts` . De verwijzing van het Woordenboek van gegevens in activa toont de weg van het Woordenboek van Gegevens in plaats van zijn naam.
-* Alle tabruimten die worden gebruikt voor uitlijning in tekstmodules moeten worden aangepast. Voor meer informatie, zie [ Correspondentiebeheer - Gebruikend lusje het uit elkaar plaatsen voor het schikken van tekst ](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+* Alle tabruimten die worden gebruikt voor uitlijning in tekstmodules moeten worden aangepast. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * Configuraties van de middelencomposer veranderen in Correspondence Management-configuraties.
 * Assets wordt onder mappen geplaatst met namen zoals Bestaande tekst en Bestaande lijst.
 

@@ -5,7 +5,7 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >* De versie met 64 bits van de ontwerper werd geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 >* De versie met 32 bits van de ontwerper wordt afgekeurd sinds de versie van [ AEM Forms Service Pack 21 (6.5.21.0) ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
-> * De ondersteunde platformen voor Forms Designer worden uitgelijnd met de door AEM Forms ondersteunde platforms. Om over de gesteunde platforms voor Forms Designer te leren, [ klik hier ](/help/forms/using/aem-forms-jee-supported-platforms.md).
+> * De ondersteunde platformen voor Forms Designer worden uitgelijnd met de door AEM Forms ondersteunde platforms. Over de gesteunde platforms voor Forms Designer leren, [ klik hier ](/help/sites-deploying/technical-requirements.md)
 
 Voor meer informatie betreffende installatie van Forms Designer, bezoek [ vaak gestelde vragen ](#fandq).
 

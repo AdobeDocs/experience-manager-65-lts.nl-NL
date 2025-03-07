@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2307'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De AEM Forms-app maakt het mogelijk om adaptieve formulieren, mobiele formulieren en formsets op mobiele apparaten te synchroniseren op basis van uw server. U kunt werkschema&#39;s bepalen die [ centric werkschema&#39;s van Forms op OSGi ](/help/forms/using/aem-forms-workflow.md) of de werkschema&#39;s van Forms op JEE zijn. Bijvoorbeeld, leidt u een bankbedrijf, en gebruikt AEM Forms om klantentoepassingen en mededelingen te beheren. Uw klanten vullen een formulier in en verzenden het ter verificatie. Als u het formulier inschakelt op mobiele apparaten, kunnen uw klanten het formulier invullen in de AEM Forms-app. U kunt de verificatieworkflow ook beheren door het verificatieformulier in te schakelen op mobiele apparaten. Uw veldworker kan een mobiel apparaat bij de klant dragen, de gegevens controleren en het formulier verzenden. De AEM Forms-toepassing synchroniseert met de AEM Forms-server en haalt de formulieren op die zijn ingeschakeld voor mobiele apparaten. Als de app offline is, worden de gegevens lokaal opgeslagen.
+De AEM Forms-app maakt het mogelijk om adaptieve formulieren, mobiele formulieren en formsets op mobiele apparaten te synchroniseren op basis van uw server. U kunt werkschema&#39;s bepalen die [ centric werkschema&#39;s van Forms op OSGi ](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE--> zijn. Bijvoorbeeld, leidt u een bankbedrijf, en gebruikt AEM Forms om klantentoepassingen en mededelingen te beheren. Uw klanten vullen een formulier in en verzenden het ter verificatie. Als u het formulier inschakelt op mobiele apparaten, kunnen uw klanten het formulier invullen in de AEM Forms-app. U kunt de verificatieworkflow ook beheren door het verificatieformulier in te schakelen op mobiele apparaten. Uw veldworker kan een mobiel apparaat bij de klant dragen, de gegevens controleren en het formulier verzenden. De AEM Forms-toepassing synchroniseert met de AEM Forms-server en haalt de formulieren op die zijn ingeschakeld voor mobiele apparaten. Als de app offline is, worden de gegevens lokaal opgeslagen.
 
 De broncode van de AEM Forms-app is via Software Distribution beschikbaar voor klanten. Het broncodepakket in Softwaredistributie is beschikbaar als: `adobe-aemfd-forms-app-src-pkg-<version>.zip` .
 
@@ -62,9 +62,13 @@ Uw formulier synchroniseren in AEM Forms-app:
 
 Wanneer het formulier wordt gepubliceerd, wordt de app gesynchroniseerd met de server en wordt het formulier opgehaald. Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en selecteert u **[!UICONTROL Sync with AEM Forms App]** .
 
-## Ondersteuning voor mobiele apparaten {#mobile-device-support}
+<!--
 
-Zie [ app van AEM Forms (die eerder als Mobiele Workspace wordt bekend) ](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## Belangrijkste functies van de AEM Forms-app {#key-features-of-aem-forms-app}
 
@@ -72,7 +76,7 @@ Zie [ app van AEM Forms (die eerder als Mobiele Workspace wordt bekend) ](/help/
 
 U kunt uw app synchroniseren met de AEM Forms-server en met formulieren werken op uw mobiele apparaat.
 
-Met AEM Forms Workflow Server kan een formulier worden gekoppeld aan een startpunt in een workbench-proces en AEM Inbox-toepassing. Aan een AEM Inbox-toepassing kan een adaptief formulier worden gekoppeld. Een startpunt kan een adaptief formulier, een HTML5-formulier of een bijbehorende indeling hebben. Een startpunt kan als taak worden voorgelegd of de taak kan als ontwerp worden bewaard. Voor meer informatie over verschillen tussen een toepassing van AEM Inbox en een startpunt zie [ Acties en mogelijkheden van Form-centric de Workflows van AEM op OSGi en de werkschema&#39;s van AEM Forms JEE ](capabilities-osgi-jee-workflows.md).
+Met AEM Forms Workflow Server kan een formulier worden gekoppeld aan een startpunt in een workbench-proces en AEM Inbox-toepassing. Aan een AEM Inbox-toepassing kan een adaptief formulier worden gekoppeld. Een startpunt kan een adaptief formulier, een HTML5-formulier of een bijbehorende indeling hebben. Een startpunt kan als taak worden voorgelegd of de taak kan als ontwerp worden bewaard. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 Met een AEM Forms-server zonder AEM Forms-workflow wordt een formulier dat voor synchronisatie in de app is ingeschakeld, weergegeven in de AEM Forms-app. Forms is beschikbaar op het tabblad Forms van de app. U kunt de app verzenden of opslaan als concept. Aangepaste formulieren en mobiele formulieren worden ondersteund in de app.
 
@@ -123,7 +127,7 @@ Zie [ Gebruikend autosave in AEM Forms app ](/help/forms/using/autosave-data-app
 
 ## Verschillen tussen de toepassingsfuncties van AEM Inbox en AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Twee van de prominente manieren om een Forms-centric werkschema te lanceren gebruiken [ AEM Inbox ](/help/forms/using/manage-applications-inbox.md) en AEM Forms app. De mogelijkheden van de AEM Inbox- en AEM Forms-app verschillen echter. AEM Inbox werkt slechts met [ Forms-centric werkschema&#39;s ](/help/forms/using/aem-forms-workflow.md) terwijl de app van AEM Forms met zowel Forms-centric werkschema&#39;s als procesbeheer werkt. Voor meer informatie over verschillen tussen AEM Inbox en AEM Forms app mogelijkheden, zie [ Acties en mogelijkheden van vorm-centric de Workflows van AEM op OSGi en de werkschema&#39;s van AEM Forms JEE ](capabilities-osgi-jee-workflows.md).
+Twee van de prominente manieren om een Forms-centric werkschema te lanceren gebruiken [ AEM Inbox ](/help/forms/using/manage-applications-inbox.md) en AEM Forms app. De mogelijkheden van de AEM Inbox- en AEM Forms-app verschillen echter. AEM Inbox werkt slechts met [ Forms-centric werkschema&#39;s ](/help/forms/using/aem-forms-workflow.md) terwijl de app van AEM Forms met zowel Forms-centric werkschema&#39;s als procesbeheer werkt. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## Ondersteunde formulieren {#supported-forms}
 

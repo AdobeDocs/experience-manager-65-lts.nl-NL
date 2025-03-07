@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ AEM biedt naast opties voor het maken van formulieren, documenten en gerelateerd
 
 ### Forms &amp; Documenten  {#forms-documents}
 
-Forms &amp; Documents biedt opties voor het maken van interactieve communicatie, adaptief formulier, adaptief formulierfragment en formulierset. Alleen voor AEM [!DNL Forms] in JEE biedt Forms en Documenten een optie voor het importeren van bestanden van lokale opslag en het synchroniseren van AEM [!DNL Forms] -elementen met Workbench.
+Forms &amp; Documents biedt opties voor het maken van interactieve communicatie, adaptief formulier, adaptief formulierfragment en formulierset. <!--Only for AEM [!DNL Forms] on JEE, Forms & Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.-->
 
 De knop Maken is het beginpunt van het proces voor het maken of uploaden van AEM [!DNL Forms] -elementen. U hebt de volgende opties om te maken:
 

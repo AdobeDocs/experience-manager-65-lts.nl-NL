@@ -7,9 +7,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,11 @@ AEM Forms is een krachtig platform op bedrijfsniveau. Forms-gerichte workflow op
 
 >[!NOTE]
 >
->Met Forms-centric workflow op OSGi kunt u snel workflows bouwen en implementeren voor verschillende taken op de OSGi-stack, zonder dat u de volwaardige Process Management-mogelijkheid op de JEE-stack hoeft te installeren. Bekijk een [vergelijking](capabilities-osgi-jee-workflows.md) van de formuliergerichte AEM Workflows op OSGi en Process Management op JEE om het verschil en de overeenkomsten in de mogelijkheden te leren.
->
->Als u ervoor kiest om na de vergelijking de mogelijkheid Procesbeheer op de JEE-stack te installeren, raadpleegt [u AEM Forms op JEE](/help/forms/using/introduction-aem-forms.md) installeren of upgraden voor gedetailleerde informatie over het installeren en configureren van de JEE-stack en de mogelijkheden voor procesbeheer.
+>Met Forms-centric workflow op OSGi kunt u snel workflows bouwen en implementeren voor verschillende taken op de OSGi-stack<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## Implementatie Topologie {#deployment-topology}
 
-AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U hebt slechts minimaal één AEM Author Processing-instantie (productieauteur) nodig om de Forms-centric workflow op OSGi-functionaliteit uit te voeren. Een verwerkingsinstantie is a [ geharde de Auteur van AEM ](/help/forms/using/hardening-securing-aem-forms-environment.md) instantie. Voer geen daadwerkelijke ontwerpbewerkingen uit, zoals het maken van workflows of adaptieve formulieren, op de auteur van de productie.
+Het add-onpakket AEM Forms is een toepassing die op AEM is geïmplementeerd. U hebt slechts minimaal één AEM Author of Processing-instantie (productieauteur) nodig om de formuliergerichte werkstroom op OSGi-mogelijkheden uit te voeren. Een verwerkingsinstantie is a [ geharde de Auteur van AEM ](/help/forms/using/hardening-securing-aem-forms-environment.md) instantie. Voer geen daadwerkelijke ontwerpbewerkingen uit, zoals het maken van workflows of adaptieve formulieren, op de auteur van de productie.
 
 De volgende topologie is indicatieve topologie om de Interactieve Mededelingen van AEM Forms, het Beheer van de Correspondentie, AEM Forms gegevensvangst, en Forms-Centric werkschema op mogelijkheden in werking te stellen OSGi. Voor gedetailleerde informatie over de topologie, zie [ Architectuur en plaatsingstopologieën voor AEM Forms ](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -107,9 +105,9 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
 1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
-1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
+1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   U kunt het pakket ook downloaden via de directe koppeling die wordt vermeld in het artikel over AEM [Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
+   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd het AEM exemplaar opnieuw te starten. **Start de server niet onmiddellijk opnieuw op.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het [bestand AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logboek stabiel is.
 
@@ -117,17 +115,17 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    >
    > Het wordt aanbevolen om de opdracht &#39;Ctrl + C&#39; te gebruiken om de SDK opnieuw op te starten. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-7 op alle auteurs- en publicatie-instanties.
 
-## Configuratie na installatie {#post-installation-configurations}
+## Configuraties na installatie {#post-installation-configurations}
 
-AEM Forms heeft een aantal verplichte en optionele configuraties. De verplichte configuraties omvatten het configureren van BouncyCastle-bibliotheken en serialisatieagent. De optionele configuraties omvatten het configureren van de dispatcher en Adobe Target.
+AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
 
 ### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
 
 #### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
-Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
+Voer de volgende stappen uit op alle instanties Auteur en Publiceren om de bibliotheken op te starten:
 
 1. Stop de onderliggende AEM-instantie.
 1. Open het [ dossier van de de installatiemap van AEM ] \crx-quickstart\conf\sling.properties voor het uitgeven.

@@ -8,8 +8,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -26,7 +28,7 @@ De Rapportering van het proces verstrekt een reeks out-of-the-box rapporten die 
 
 Bovendien verstrekt de Rapportering van het Proces een interface om ad hoc vragen in werking te stellen en de meningen van het douanerapport in het Proces te integreren Meldend gebruikersinterface.
 
-Voor de lijst van gesteunde browsers, zie [ Ondersteunde Platforms van AEM Forms ](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Voor de lijst van gesteunde browsers, zie [ Ondersteunde Platforms van AEM Forms ](/help/sites-deploying/technical-requirements.md)
 
 Procesrapportage is gebaseerd op modules die:
 

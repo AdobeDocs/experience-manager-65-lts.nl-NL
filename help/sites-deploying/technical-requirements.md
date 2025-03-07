@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3044'
+source-wordcount: '3064'
 ht-degree: 0%
 
 ---
@@ -150,12 +150,11 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 | **Platform** | **Niveau van de Steun** |
 |---|---|
-| **Linux®, die op de distributie van Red Hat®** wordt gebaseerd | A: Ondersteund `[1]` `[3]` |
-| Linux®, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[1]` `[2]` |
+| **Linux®, die op de distributie van Red Hat®** wordt gebaseerd | A: Ondersteund `[1]` `[2]` |
+| Linux®, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[1]` |
 | Linux®, gebaseerd op SUSE®-distributie | A: Ondersteund `[1]` |
 
-1. Linux® Kernel 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
-1. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
+1. Linux® Kernel 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®.
 1. Linux®-distributie ondersteund door Adobe Managed Services.
 
    >[!NOTE]
@@ -166,6 +165,8 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 (2.17 of hoger)
+
 
 ### Virtuele en cloud computeromgevingen {#virtual-cloud-computing-environments}
 
@@ -175,13 +176,13 @@ Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productl
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-In alle andere gevallen waarin AEM wordt geïmplementeerd in Azure of AWS, of in elke andere cloudcomputeromgeving, is de ondersteuning van Adobe beperkt tot de virtuele computeromgeving. Die virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM dat in een van deze cloudomgevingen wordt uitgevoerd, moet onafhankelijk van een cloudservice die specifiek is voor de cloud computing-omgeving reproduceerbaar zijn. Dat wil zeggen, tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
+In alle andere gevallen waarin AEM wordt geïmplementeerd in Azure of AWS, of in elke andere cloudcomputeromgeving, is de ondersteuning van Adobe beperkt tot de virtuele computeromgeving. Die virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM dat in een van deze cloudomgevingen wordt uitgevoerd, moet onafhankelijk van elke cloudservice die specifiek is voor de cloud computing-omgeving kunnen worden gereproduceerd. Dat wil zeggen, tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
 
-Adobe raadt u aan om voor aanbevelingen over het implementeren van AEM in Azure of AWS, buiten Adobe Managed Services, rechtstreeks samen te werken met de cloud provider. Of u werkt samen met Adobe-partners die de implementatie van AEM ondersteunen in de cloud-omgeving van uw keuze. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur, om aan uw specifieke prestaties, lading, scalability, en veiligheidsvereisten te voldoen.
+Voor aanbevelingen over het implementeren van AEM op Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan om rechtstreeks met de cloudprovider samen te werken. Of u werkt samen met Adobe-partners die de implementatie van AEM ondersteunen in de cloud-omgeving van uw keuze. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur, om aan uw specifieke prestaties, lading, scalability, en veiligheidsvereisten te voldoen.
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [Download de nieuwste versie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) van de Dispatcher. Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
+De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -272,7 +273,7 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
 
-Over het algemeen is browserondersteuning voor websites die door AEM Sites worden geleverd, afhankelijk van de implementatie van AEM paginasjablonen, het ontwerp en de uitvoer van componenten, en is daarom in de controle van de partij die deze onderdelen implementeert.
+Over het algemeen is browserondersteuning voor websites die door AEM Sites worden weergegeven afhankelijk van de implementatie van AEM-paginasjablonen, het ontwerp en de uitvoer van componenten. Deze ondersteuning is daarom in handen van de partij die deze onderdelen implementeert.
 
 ## Aanvullende platformnotities {#additional-platform-notes}
 
@@ -342,20 +343,20 @@ Als u Dynamic Media gebruikt op Linux®, moet aan de volgende voorwaarden worden
 
 >[!NOTE]
 >
->**Serverhostnaam moet worden omgezet:** Zorg ervoor dat de hostnaam van de server kan worden omgezet naar een IP-adres. Als dat niet mogelijk is, voeg dan de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
+>**de gastheernaam van de Server moet oplossen:** ervoor zorgen dat de gastheernaam van de server aan een IP adres oplosbaar is. Als dat niet mogelijk is, voeg dan de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Ramen {#windows}
 
 * Microsoft® Windows Server 2016
-* Ruimte wisselen gelijk aan minstens tweemaal de hoeveelheid fysiek geheugen (RAM)
+* Wissel ruimte om die gelijk is aan ten minste twee keer de hoeveelheid fysiek geheugen (RAM)
 
-Om Dynamische Media op Vensters te gebruiken, installeer Microsoft® Visual Studio 2010, 2013, en 2015 redistributable voor x64 en x86.
+Als u Dynamic Media op Windows wilt gebruiken, installeert u Microsoft® Visual Studio 2010, 2013 en 2015, herdistribueerbaar voor x64 en x86.
 
 Voor Windows x64:
 
-* Krijg Microsoft® Visual Studio 2010 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=26999 ](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Ontvang Microsoft® Visual Studio 2010 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Download Microsoft® Visual Studio 2013 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * Download Microsoft® Visual Studio 2015 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
@@ -381,7 +382,7 @@ Voor Windows x86:
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> nieuwste versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -397,7 +398,7 @@ Voor Windows x86:
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect 2020 <br /> </td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
@@ -434,10 +435,12 @@ Voor Windows x86:
 >Daarnaast
 >
 >* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of versie 17.011.30078 van Acrobat 2017 om de omzetting uit te voeren.
->* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
->* PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie op het Windows-besturingssysteem.
+>* PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
+>* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
+>* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
 >* PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux®-besturingssysteem.
 >* PDF Generator ondersteunt Microsoft® Office 365 niet.
+>* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
 >* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service biedt geen ondersteuning voor Microsoft® Windows 10.
@@ -452,12 +455,12 @@ Voor Windows x86:
 * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
 * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
-* 2,35 GB beschikbare ruimte op de harde schijf
-* Monitorresolutie van 1024 x 768 pixels of hoger
+* 2,35 GB beschikbare ruimte op de vaste schijf
+* Monitorresolutie van 1024 x 768 pixels of meer
 * Versnelling van videohardware (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
-* Beheerdersbevoegdheden om Designer te installeren
-* Microsoft Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime voor 32-bits AEM Forms Designer
+* Beheerdersrechten voor het installeren van Designer
+* Microsoft Visual C++ 2019 (VC 14.28 of groter) 32-bits runtime voor AEM Forms Designer met 32 bits
 * Microsoft Visual C++ 2019 (VC 14.28 of groter) runtime met 64 bits voor AEM Forms Designer met 64 bits (voor zowel de stapel OSGI als JEE)
 
 [AEM Forms-ontwerper installeren en configureren](/help/forms/using/installing-configuring-designer.md)
@@ -473,8 +476,8 @@ Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platf
    * Windows Server
    * macOS X (64-bits)
 
-* **Formaten van het Dossier**: JPEG, PNG, TIFF, PDF, INDD, AI, en EPS.
+* **Bestandsindelingen**: JPEG, PNG, TIFF, PDF, INDD, AI en EPS.
 
 ### Vereisten voor AEM Assets voor het verwerken van metadata-zware assets op Linux® {#assetsonlinux}
 
-Het XMPFilesProcessor-proces vereist dat de bibliotheek GLIBC_2.14 werkt om te werken. Gebruik een Linux-kernel® die GLIBC_2.14 bevat, bijvoorbeeld Linux-kernel® versie 3.1.x. Het verbetert de prestaties voor het verwerken van assets die een grote hoeveelheid metadata bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .
+Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .
