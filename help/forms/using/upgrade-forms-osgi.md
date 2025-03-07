@@ -6,9 +6,9 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: dd45dfe953a111ccbbc71e8e25a8a2577037587a
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
       1. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
    1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
    1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
-   1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
    1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
       U kunt het pakket ook downloaden gebruikend de directe verbinding die in [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) artikel.
@@ -43,11 +42,9 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
       Als de server via een script of service wordt gestart, moet u de server overeenkomstig bijwerken zodat het bovenstaande wordt opgenomen zodat deze ook van kracht zijn nadat de server opnieuw is gestart.
 
-1. Start de AEM-instantie opnieuw.
-
-   >[!NOTE]
-   >
-   > U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.
+      >[!NOTE]
+      >
+      > U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.
 
 1. Nainstallatie uitvoeren.
 

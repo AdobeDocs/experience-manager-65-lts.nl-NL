@@ -1,17 +1,13 @@
 ---
 title: Modi uitvoeren
 description: Leer hoe u uw AEM-instantie voor specifieke doeleinden kunt afstemmen met behulp van uitvoeringsmodi.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -38,18 +34,14 @@ De uitvoermodi voor de installatie zijn beschikbaar buiten de box:
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 Dit zijn twee paren van elkaar uitsluitende looppaswijzen; bijvoorbeeld, kunt u:
 
 * `author` of `publish` definiëren, niet tegelijkertijd
 
-* `author` combineren met `samplecontent` of `nosamplecontent` (maar niet met beide)
-
 >[!CAUTION]
 >
->Wanneer het gebruiken van één van de bovengenoemde looppaswijzen (auteur, publiceer, steekproefinhoud, geen steekproefinhoud), bepaalt de waarde die bij installatietijd wordt gebruikt de looppaswijze voor het *volledige leven* van die installatie.
+>Wanneer het gebruiken van één van de bovengenoemde looppaswijzen (auteur, publiceer), bepaalt de waarde die bij installatietijd wordt gebruikt de looppaswijze voor het *volledige leven* van die installatie.
 >
 >Voor deze looppaswijzen kunt u *niet* hen na installatie veranderen.
 
@@ -68,16 +60,6 @@ U kunt ook uw eigen aangepaste uitvoermodi maken. Deze kunnen worden gecombineer
 * indien nodig. . .
 
 De aangepaste looppaswijzen kunnen ook bij elk opstarten worden geselecteerd.
-
-## Inhoud en geen samplinginhoud gebruiken {#using-samplecontent-and-nosamplecontent}
-
-Met deze modi kunt u het gebruik van voorbeeldinhoud beheren. De voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten:
-
-* In de uitvoermodus van `samplecontent` wordt deze inhoud geïnstalleerd (de standaardmodus).
-
-* In de modus `nosamplecontent` wordt de voorbeeldinhoud niet geïnstalleerd.
-
-De run-modus voor noSampling-inhoud is ontworpen voor productie-installaties.
 
 ## Configuratieeigenschappen definiëren voor een uitvoermodus {#defining-configuration-properties-for-a-run-mode}
 

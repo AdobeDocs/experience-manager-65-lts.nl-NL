@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Stappen voor upgrade {#pre-upgrade-steps}
 
-Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [ vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md) voldoet en [ verbetering planningsoverwegingen ](/help/sites-deploying/upgrade-planning.md) ziet en hoe [ Analysator ](/help/sites-deploying/pattern-detector.md) u kan helpen de ingewikkeldheid schatten.
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [ vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md) voldoet en [ verbetering planningsoverwegingen ](/help/sites-deploying/upgrade-planning.md) ziet en hoe [ Analysator ](/help/sites-deploying/aem-analyzer.md) u kan helpen de ingewikkeldheid schatten.
 
 
 ### Migratievereisten {#migration-prerequisites}
@@ -42,7 +42,7 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
    ```
 
 1. AEM 6.5 LTS-compatibele Tomcat-server instellen
-1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat u de parameters bijwerkt volgens de systeemvereisten. Zie [ Java 17 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) voor meer informatie
+1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat u de parameters bijwerkt volgens de systeemvereisten. Zie [ Java 17 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie
 1. Implementeer de nieuwe gedownloade 6,5 LTS-oorlog op de Tomcat-server met behulp van Java 17 en start AEM 6.5 LTS Tomcat-server door:
 
    ```

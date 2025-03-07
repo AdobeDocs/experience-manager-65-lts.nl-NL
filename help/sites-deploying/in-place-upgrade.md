@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 1. Download het nieuwe AEM 6.5 LTS jar-bestand
 
-1. [Bepaal het correcte verbeteringsbegin bevel](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+1. [Bepaal het correcte verbeteringsbegin bevel](#determining-the-correct-upgrade-start-command)
 
 1. De instantie stoppen als deze wordt uitgevoerd
 

@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,5 @@ De eenvoudigste manier om dit probleem op te lossen is het opgeven van de bronda
 De waarschuwing kan ook worden genegeerd, maar in dit geval zal de repository bij het eerste opstarten volledig opnieuw worden ontkoppeld. Het kan een lang proces zijn, vooral voor de grote instantie. Bewaarplaats is pas bruikbaar als het herindexeringsproces is voltooid. Gebruik de optie `--skip-checkpoints` om de waarschuwing te onderdrukken.
 
 U kunt de bewaarplaats ook off-line opnieuw indexeren alvorens AEM te beginnen die [ off-line opnieuw indexeren ](/help/sites-deploying/upgrade-offline-reindexing.md) vermijden volledig opnieuw indexeren bij eerste opstarten.
+
+Voor meer informatie over het eiken-verbetering hulpmiddel en het geavanceerde gebruik, verwijs naar de [ officiële documentatie ](https://jackrabbit.apache.org/oak/docs/migration.html).

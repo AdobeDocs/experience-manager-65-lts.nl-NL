@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [ vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md) voldoet.
 
-Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) en hoe de [ Analysator van AEM ](/help/sites-deploying/pattern-detector.md) u kan helpen de ingewikkeldheid rond de bevordering van AEM schatten.
+Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) en hoe de [ Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) u kan helpen de ingewikkeldheid rond de bevordering van AEM schatten.
 
 ### Migratievereisten {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) 
    java -version
    ```
 
-1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat de parameters aan uw vereisten voldoen. Zie [ Java 17 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) voor meer informatie
+1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat de parameters aan uw vereisten voldoen. Zie [ Java 17 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie.
 1. Download de nieuwe 6.5 LTS-oorlog en kopieer deze naar de map dropins in: `/<path-to-aem-server>/dropins/`
 1. AEM-instantie starten: dit kan doorgaans gebeuren met de volgende opdracht:
 

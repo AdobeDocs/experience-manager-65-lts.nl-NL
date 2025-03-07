@@ -2,14 +2,13 @@
 title: De complexiteit van upgrades beoordelen met de AEM Analyzer
 description: Leer hoe u de AEM Analyzer gebruikt om de complexiteit van uw upgrade te beoordelen.
 topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 15%
 
 ---
@@ -34,17 +33,17 @@ Het AEM 6.5 LTS Analyzer-rapport bevat de volgende categorieën:
 * AEM 6.5-functies die zijn verwijderd door nieuwe functionaliteit of die momenteel niet worden ondersteund door AEM 6.5 LTS
 * Java- en Guava API-gebruik verwijderen
 
-Aanvullende informatie over de categorieën en mogelijke implicaties en oplossingen die aan die categorieën zijn gekoppeld, wordt verstrekt via koppelingen vanuit het AEM 6.5 LTS Analyzer Report.
+Aanvullende informatie over de categorieën en mogelijke implicaties en oplossingen die aan deze categorieën zijn gekoppeld, wordt verstrekt via koppelingen vanuit het AEM 6.5 LTS Analyzer Report.
 
 ## Beschikbaarheid {#analyzer-availability}
 
-De Analysator van AEM kan als zip dossier van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) worden gedownload. U kunt het pakket via [ Manager van het Pakket ](/help/sites-administering/package-manager.md) op uw bronAEM instantie installeren.
+De Analysator van AEM kan als zip dossier van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) worden gedownload. U kunt het pakket via [ Manager van het Pakket ](/help/sites-administering/package-manager.md) op uw bronAEM instantie installeren.
 
 ## Belangrijke overwegingen voor het gebruik van AEM Analyzer {#important-considerations-for-using-aem-analyzer}
 
 Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen voor het uitvoeren van de AEM Analyzer:
 
-* Het rapport van de Analysator wordt gebouwd gebruikend de output van de Detector van het Patroon van AEM [ ](/help/sites-deploying/pattern-detector.md). De versie van Patroondetector die door Analyzer wordt gebruikt, is opgenomen in het installatiepakket voor AEM Analyzer
+* Het rapport Analyzer wordt gemaakt met behulp van de uitvoer van de AEM Pattern Detector. De versie van Patroondetector die door Analyzer wordt gebruikt, is opgenomen in het installatiepakket voor AEM Analyzer
 * De Analysator van AEM kan slechts door de **admin** gebruiker of een gebruiker in de **beheerders** groep worden in werking gesteld
 * Analyzer wordt ondersteund op AEM-instanties met versie 6.5 en hoger.
 
