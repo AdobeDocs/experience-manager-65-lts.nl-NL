@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -38,21 +38,21 @@ Op deze pagina vindt u:
    * [Onverpakte installatiemap](#unpacked-install-directory)
    * [Starten en stoppen](#starting-and-stopping)
 
-Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanceerde en gedetailleerde informatie op de volgende subpagina&#39;s:
+<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
 
-* [Technische vereisten](/help/sites-deploying/technical-requirements.md)
-* [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
-* [Aangepaste standalone installatie](/help/sites-deploying/custom-standalone-install.md)
-* [Installeren van toepassingsserver](/help/sites-deploying/application-server-install.md)
-* [Start en stop van opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configureren](/help/sites-deploying/configuring.md)
-* [Upgrade uitvoeren naar AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
-* [Webconsole](/help/sites-deploying/web-console.md)
-* [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
-* [Aanbevolen procedures](/help/sites-deploying/best-practices.md)
-* [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
-* [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
+* [Best Practices](/help/sites-deploying/best-practices.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->
 
 ## Basisconcepten {#basic-concepts}
 
@@ -79,7 +79,7 @@ De server van AEM is **op Java-Gebaseerd** en loopt op de meeste werkende system
 
 >[!NOTE]
 >
->De functie Adaptive Forms, die beschikbaar is in AEM 6.5 QuickStart, is alleen ontworpen voor exploratie- en evaluatiedoeleinden. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De functie Adaptive Forms, beschikbaar in AEM 6.5 LTS QuickStart, is alleen ontworpen voor exploratie- en evaluatiedoeleinden. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### Typische implementatiescenario&#39;s {#typical-deployment-scenarios}
 
@@ -102,37 +102,23 @@ In de volgende secties worden beide scenario&#39;s beschreven:
 
 ### Op locatie {#on-premise}
 
-U kunt AEM installeren op servers in uw bedrijfsomgeving. Voorbeelden van gebruikelijke installatieprogramma&#39;s zijn: ontwikkelings-, test- en publicatieomgevingen. Zie [ Begonnen het Worden ](/help/sites-deploying/deploy.md#getting%20started) voor basisdetails op hoe te om de software van AEM te krijgen om het plaatselijk te installeren.
+U kunt AEM installeren op servers in uw bedrijfsomgeving. Voorbeelden van gebruikelijke installatieprogramma&#39;s zijn: ontwikkelings-, test- en publicatieomgevingen. Zie [ Begonnen het Worden ](#getting-started) voor basisdetails op hoe te om de software van AEM te krijgen om het plaatselijk te installeren.
 
-Om meer over de typische plaatsingen te leren op-gebouw, zie [ Geadviseerde Plaatsingen ](/help/sites-deploying/recommended-deploys.md).
+<!-- To learn more about the typical on-premises deployments, see [Recommended Deployments](/help/sites-deploying/recommended-deploys.md). -->
 
 ### Managed Services met Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services is een complete oplossing voor Digital Experience Management. Het biedt voordelen van de oplossing van de ervaringslevering in de wolk terwijl het handhaven van alle controle, veiligheid, en aanpassingsvoordelen van een plaatsing op-premise. AEM Managed Services stelt klanten in staat sneller te starten door te implementeren in de cloud en door te leren van de beste praktijken en support van Adobe. Organisaties en zakelijke gebruikers kunnen hun klanten zo weinig mogelijk tijd in dienst nemen, hun marktaandeel vergroten en zich richten op het maken van innovatieve marketingcampagnes en tegelijk de last voor de IT-afdeling verminderen.
-
-Met AEM Managed Services kunnen klanten de volgende voordelen realiseren:
-
-**Snellere Tijd aan Markt:** met flexibele wolkeninfrastructuur van Adobe Managed Services, kunnen de organisaties succesvolle digitale ervaringen snel plannen, lanceren en optimaliseren. Adobe beheert de cloudarchitectuur zonder extra kapitaal, hardware of software vereist en Adobe Customer Solutions Engineers, hulp met de AEM-architectuur, provisioning, aanpassing voor het maken van verbinding met back-end apps en &#39;go-live&#39; best practices.
-
-**Hogere Prestaties:** verstrekt betrouwbare digitale ervaringen voor uw zaken met vier opties van de de dienstbeschikbaarheid 99.5%, 99.9%, 99.95%, en 99.99%. Bovendien maakt het automatische back-up en multimode modellen voor noodherstel mogelijk om betrouwbaarheid en noodbeheer te garanderen.
-
-**Geoptimaliseerde Kosten van IT:** de pro-actieve begeleiding en de organisaties van de expertisehulp blijven huidig op de recentste versie van AEM. Adobe Platinum Maintenance and Support wordt automatisch opgenomen in nieuwe implementaties van AMS Enterprise/Basic, die technische expertise en operationele ervaring bieden om organisaties te helpen hun bedrijfskritieke toepassingen te onderhouden. Gratis basisanalysemogelijkheden of doelmogelijkheden bieden extra waarde, met name voor organisaties uit het midden- en kleinbedrijf die weinig behoefte hebben aan analyses en personalisatie.
-
-**Hoogste Veiligheid:** verzekert onderneming-rang fysiek, netwerk, en gegevensveiligheid door klantentoepassingen in een beperkt-toegangsfaciliteit, achter firewallsystemen, of binnen een virtuele privé wolk te ontvangen. Het omvat virtuele machines van één huurder met robuuste gegevensopslagencryptie, antivirale middelen, en gegevensisolatie.
-
-**Cloud Manager**: Cloud Manager, een deel van het aanbieden van Adobe Experience Manager Managed Services is een zelfbedieningsportaal dat verder organisaties toelaat om Adobe Experience Manager in de wolk zelf-te beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor Adobe Managed Service-klanten.
-
-Meer over de Manager van de Wolk en zijn middelen leren, zie {de Gids van de Gebruiker van 0} Cloud Manager **](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).[**
+<i> om spoedig worden aangekondigd.</i>
 
 ## Aan de slag {#getting-started}
 
 ### Vereisten {#prerequisites}
 
-Terwijl de productieinstanties in werking worden gesteld op specifieke machines die officieel gesteund OS in werking stellen (zie [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md)), zal de server van Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 8 van Java™** ](https://www.oracle.com/java/technologies/downloads/#java8) steunt.
+Terwijl de productieinstanties in werking worden gesteld op specifieke machines die officieel gesteund OS in werking stellen (zie [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md)), zal de server van Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 17 Java™** ](https://www.oracle.com/java/technologies/downloads/#java17) steunt.
 
 Om vertrouwd te raken en zich op AEM te ontwikkelen, is het gebruikelijk om een instantie te gebruiken die op uw lokale computer wordt geïnstalleerd die OS X of Desktopversies van Microsoft® Windows of Linux® in werking stelt.
 
-Op cliënt-kant, werkt AEM met alle moderne browsers (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
+Op cliënt-kant, werkt AEM met alle moderne browsers (**Microsoft® Edge**, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
 
 ### De software ophalen {#getting-the-software}
 
@@ -140,9 +126,9 @@ De klanten met een geldig onderhoud en steuncontract zouden een postbericht met 
 
 Het AEM-softwarepakket is beschikbaar in twee vormen:
 
-* **cq-quickstart-6.5.0.jar:** Een standalone uitvoerbaar *jar* dossier dat alles omvat die u moet lopen.
+* **CQ AEM 6.5 LTS jar:** Een standalone uitvoerbaar *jar* dossier dat alles omvat die u moet lopen.
 
-* **cq-quickstart-6.5.0.war:** A *oorlog* dossier voor plaatsing in een server van de derdetoepassing.
+* **CQ AEM 6.5 LTS oorlog:** A *oorlog* dossier voor plaatsing in een server van de derdetoepassing.
 
 In de volgende sectie beschrijven wij de **standalone installatie**. Voor details bij het installeren van AEM in een toepassingsserver zie [ de Server van de Toepassing installeren ](/help/sites-deploying/application-server-install.md).
 
@@ -164,18 +150,18 @@ In de volgende sectie beschrijven wij de **standalone installatie**. Voor detail
 
    ```shell
    <aem-install>/
-       cq-quickstart-6.5.0.jar
+       <aem-65-lts>.jar
        license.properties
    ```
 
    Als u geen a `license.properties` dossier verstrekt, leidt AEM uw browser aan het a **Welkome** scherm op opstarten opnieuw, waar u een vergunningssleutel kunt ingaan. Als u nog geen geldige licentiecode hebt, moet u een geldige licentiecode aanvragen bij Adobe.
 
-1. Als u de instantie wilt starten in een GUI-omgeving, dubbelklikt u op het bestand **`cq-quickstart-6.5.0.jar`** .
+1. Als u de instantie wilt starten in een GUI-omgeving, dubbelklikt u op het bestand **`<aem-65-lts>.jar`** .
 
    U kunt AEM ook starten vanaf de opdrachtregel:
 
    ```shell
-       java -Xmx1024M -jar cq-quickstart-6.5.0.jar
+       java -Xmx1024M -jar <aem-65-lts>.jar
    ```
 
 AEM neemt enkele minuten in beslag om het jar-bestand uit te pakken, te installeren en op te starten. Deze procedure leidt tot:
@@ -217,7 +203,7 @@ U installeert deze twee varianten bijvoorbeeld in
 Raadpleeg de volgende bronnen voor meer informatie over het aanpassen van de installatie:
 
 * [Aangepaste standalone installatie](/help/sites-deploying/custom-standalone-install.md)
-* [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md)
+<!-- * [Run Modes](/help/sites-deploying/configure-runmodes.md) -->
 
 ### Onverpakte installatiemap {#unpacked-install-directory}
 
@@ -226,7 +212,7 @@ Wanneer de snelstartjar voor het eerst wordt gestart, wordt deze zichzelf in dez
 ```xml
 <aem-install>/
     license.properties
-    cq-quickstart-6.5.0.jar
+    <aem-65-lts>.jar
     crx-quickstart/
         app/
         bin/
@@ -279,28 +265,28 @@ AEM start en leidt uw webbrowser automatisch om naar de juiste pagina, meestal d
 `https://localhost:4502/`
 
 ![ teken binnen het scherm ](assets/screen_shot_2019-04-08at83533am.png)
-
-Nadat u bent aangemeld, hebt u toegang tot AEM. Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw rol:
+<!-- 
+After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
 * [Authoring](/help/sites-authoring/first-steps.md)
-* [Beheer](/help/sites-administering/home.md)
-* [Ontwikkelen](/help/sites-developing/getting-started.md)
-* [Beheer](/help/managing/best-practices.md)
+* [Administering](/help/sites-administering/home.md)
+* [Developing](/help/sites-developing/getting-started.md)
+* [Managing](/help/managing/best-practices.md)
 
-## Geavanceerde implementatie {#advanced-deployment}
+## Advanced Deployment {#advanced-deployment}
 
-In het bovenstaande gedeelte hebt u een goed inzicht in de basisbeginselen van AEM-installatie. De installatie van een volledig productiesysteem van AEM kan echter aanzienlijk complexer zijn. Zie de volgende subpagina&#39;s voor volledige dekking van geavanceerde installatie:
+The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
 
-* [Technische vereisten](/help/sites-deploying/technical-requirements.md)
-* [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
-* [Aangepaste standalone installatie](/help/sites-deploying/custom-standalone-install.md)
-* [Installeren van toepassingsserver](/help/sites-deploying/application-server-install.md)
-* [Start en stop van opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configureren](/help/sites-deploying/configuring.md)
-* [Upgrade uitvoeren naar AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
-* [Webconsole](/help/sites-deploying/web-console.md)
-* [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
-* [Aanbevolen procedures](/help/sites-deploying/best-practices.md)
-* [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
-* [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
+* [Best Practices](/help/sites-deploying/best-practices.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->

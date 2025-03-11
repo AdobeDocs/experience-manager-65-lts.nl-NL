@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,13 @@ In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt install
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
 * [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
-* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
-* [Tomcat 8/8.5](#tomcat)
+* [Tomcat 11.0.x](#tomcat)
 
 Raadpleeg de documentatie bij de toepassingsserver voor meer informatie over het installeren van webtoepassingen, serverconfiguraties en over het starten en stoppen van de server.
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->Als u Dynamische Media in een plaatsing van WAR gebruikt, zie [ Dynamische documentatie van Media ](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
 
 ## Algemene beschrijving {#general-description}
 
@@ -49,7 +47,7 @@ Indien opgesteld, gebeurt het volgende door gebrek:
 * de uitvoermodus is `author`
 * de instantie (Repository, Felix OSGI-omgeving, bundels, enzovoort) is geïnstalleerd in `${user.dir}/crx-quickstart` waar `${user.dir}` de huidige werkmap is. Dit pad naar crx-quickstart wordt `sling.home` genoemd.
 
-* de hoofdmap van de context is bijvoorbeeld de naam van het oorlogsbestand, `aem-6`
+* de hoofdmap van de context is bijvoorbeeld de naam van het oorlogsbestand, `aem-65-lts`
 
 #### Configuratie {#configuration}
 
@@ -95,7 +93,7 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en 
 
 ## Installatieprocedures voor toepassingsservers {#application-servers-installation-procedures}
 
-### WebSphere® 8.5 {#websphere}
+### WebSphere® 24.0.0.7 {#websphere}
 
 Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
 
@@ -124,66 +122,7 @@ Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) 
 
 * AEM-webtoepassing starten
 
-#### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
-
-Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
-
-**bereidt server JBoss®** voor
-
-Geheugenargumenten in uw conf-bestand instellen (bijvoorbeeld `standalone.conf`)
-
-* JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
-
-Als u de implementatie-scanner gebruikt om de AEM-webtoepassing te installeren, is het mogelijk goed om de waarde `deployment-timeout,` voor die set te verhogen voor een `deployment-timeout` -kenmerk in het XML-bestand van uw instantie (bijvoorbeeld `configuration/standalone.xml)` :
-
-```xml
-<subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
-            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" deployment-timeout="1000"/>
-</subsystem>
-```
-
-**stelt het Webtoepassing van AEM** op
-
-* Upload de AEM-webtoepassing in uw JBoss®-beheerconsole.
-
-* Schakel de AEM-webtoepassing in.
-
-#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
-
-Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
-
-Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
-
-**Voorbereiding van de Server WebLogic**
-
-* In `${myDomain}/config/config.xml` voeg aan de veiligheid-configuratie sectie toe:
-
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [ https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd ](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is o.k.)
-
-* VM-geheugeninstellingen verhogen:
-
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) zoekopdracht naar WLS_MEM_ARGS, stel bijvoorbeeld set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m` in
-   * WebLogic Server opnieuw starten
-
-* Maak in `${myDomain}` een pakketmap en in een cq-map en maak er een overzichtsmap van
-
-**stelt het Webtoepassing van AEM** op
-
-* AEM-oorlogsbestand downloaden
-* Plaats het AEM oorlogsdossier in $ {myDomain}/packages/cq omslag
-* Maak uw configuraties in `WEB-INF/web.xml` indien nodig (zie hierboven in de Algemene beschrijving)
-
-   * `WEB-INF/web.xml` -bestand uitpakken
-   * de parameter sling.run.modes wijzigen om te publiceren
-   * uncomment sling.home aanvankelijke parameter en reeks dit weg zoals u nodig hebt (zie Algemene Beschrijving)
-   * Het bestand web.xml herstellen
-
-* AEM-oorlogsbestand distribueren als een toepassing (voor de andere instellingen gebruikt u de standaardinstellingen)
-* De installatie kan tijd in beslag nemen...
-* Controleer of de installatie is voltooid zoals hierboven vermeld in de algemene beschrijving (bijvoorbeeld door te tikken op error.log)
-* U kunt de hoofdmap van de context wijzigen op het tabblad Configuratie van de webtoepassing in de WebLogic `/console`
-
-#### Tomcat 8/8.5 {#tomcat}
+#### Tomcat 11.0.x {#tomcat}
 
 Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
 

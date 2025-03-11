@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
+source-wordcount: '5139'
 ht-degree: 0%
 
 ---
@@ -78,18 +78,15 @@ Daarom wordt aanbevolen de schijf minstens twee of drie keer groter te maken dan
 
 ## Compactiemodi voor volledig en op het spoor  {#full-and-tail-compaction-modes}
 
-**AEM 6.5** introduceert **twee nieuwe wijzen** voor de **samenstellingsfase** van het Online proces van de Opruiming van de Revisie:
+**AEM 6.5 LTS** heeft **twee wijzen** voor de **samenstellingsfase** van het Online proces van de Opruiming van de Revisie:
 
-* De **volledige samenstellingswijze** herschrijft alle segmenten en teerdossiers in de volledige bewaarplaats. De volgende opschoningsfase kan zo de maximumhoeveelheid huisvuil over de bewaarplaats verwijderen. Omdat volledige compactie de volledige bewaarplaats beïnvloedt, vereist het een aanzienlijke hoeveelheid systeemmiddelen en tijd om te voltooien. De volledige compactie komt overeen met de verdichtingsfase in AEM 6.3.
+* De **volledige samenstellingswijze** herschrijft alle segmenten en teerdossiers in de volledige bewaarplaats. De volgende opschoningsfase kan zo de maximumhoeveelheid huisvuil over de bewaarplaats verwijderen. Omdat volledige compactie de volledige bewaarplaats beïnvloedt, vereist het een aanzienlijke hoeveelheid systeemmiddelen en tijd om te voltooien.
 * De **wijze van de staartcompressie** herschrijft slechts de meest recente segmenten en teerdossiers in de bewaarplaats. De meest recente segmenten en teerbestanden zijn de segmenten die zijn toegevoegd sinds de laatste keer dat de volledige of eindcompressie is uitgevoerd. De volgende opschoningsfase kan dus alleen het afval verwijderen dat zich in het recente deel van de opslagplaats bevindt. Omdat de staartcompensatie slechts een deel van de bewaarplaats beïnvloedt, vereist het aanzienlijk minder systeemmiddelen en tijd om te voltooien dan volledige compensatie.
 
 Deze methoden van verrekening vormen een afweging tussen efficiëntie en hulpbronnengebruik: hoewel de verdichtingsmethode bij staarten minder effectief is, heeft deze ook minder invloed op de normale werking van het systeem. Daarentegen is volledige compressie effectiever, maar heeft deze een grotere invloed op de normale werking van het systeem.
 
-AEM 6.5 introduceert ook een efficiënter mechanisme voor het dedupliceren van inhoud tijdens het comprimeren, waardoor de ruimte op de schijf verder wordt verkleind.
+AEM 6.5 LTS beschikt over een efficiënt mechanisme voor het dedupliceren van inhoud tijdens het comprimeren, waardoor de ruimte op de schijf van de opslagplaats verder wordt verkleind.
 
-De twee onderstaande grafieken zijn de resultaten van interne laboratoriumtests die de vermindering van de gemiddelde uitvoeringstijden en de gemiddelde voetafdruk op schijf in AEM 6.5 ten opzichte van AEM 6.3 aantonen:
-
-![ onrc-duration-6_4vs63 ](assets/onrc-duration-6_4vs63.png) ![ segmentstore-6_4vs63 ](assets/segmentstore-6_4vs63.png)
 
 ### Hoe te om Volledige en Samenstelling van het Lusje te vormen {#how-to-configure-full-and-tail-compaction}
 
@@ -108,7 +105,7 @@ Houd er ook rekening mee dat:
 Houd rekening met het volgende wanneer u de nieuwe compressiemodi gebruikt:
 
 * U kunt de invoer-/uitvoeractiviteit (I/O) controleren, bijvoorbeeld: I/O-bewerkingen, CPU die op IO wacht, wachtrijgrootte vastleggen. Dit helpt bepalen of het systeem I/O verbindend wordt en vereist upsizing.
-* De `RevisionCleanupTaskHealthCheck` geeft de algemene status van de Online revisie-opschoning aan. Het werkt op dezelfde manier als in AEM 6.3 en maakt geen onderscheid tussen volledige en eindverdichtingen.
+* De `RevisionCleanupTaskHealthCheck` geeft de algemene status van de Online revisie-opschoning aan.
 * De logberichten bevatten relevante informatie over de compactiemodi. Bijvoorbeeld, wanneer de Online Opruiming van de Revisie begint, wijzen de overeenkomstige logboekberichten op de samenstellingswijze. Ook, in sommige hoekgevallen, keert het systeem aan volledige compressie terug wanneer het werd gepland om een staartcompensatie in werking te stellen en de logboekberichten wijzen op deze verandering. De hieronder logboeksteekproeven wijzen op de samenstellingswijze en de verandering van staart in volledige compressie:
 
 ```
@@ -123,83 +120,6 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
 **het wordt geadviseerd om de schijf minstens twee of drie keer groter te zijn dan de aanvankelijk geschatte bewaarplaatgrootte.**
 
 ## Online revisie opschonen Veelgestelde vragen {#online-revision-cleanup-frequently-asked-questions}
-
-### Overwegingen bij AEM 6.5-upgrade {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>Vragen </td>
-   <td>Antwoorden</td>
-  </tr>
-  <tr>
-   <td>Wat moet ik weten wanneer ik een upgrade naar AEM 6.5 ga uitvoeren?</td>
-   <td><p>De persistentieformaat van TarMK verandert met AEM 6.5. Deze wijzigingen vereisen geen proactieve migratiestap. Bestaande opslagruimten doorlopen een rolmigratie, die transparant is voor de gebruiker. Het migratieproces wordt gestart de eerste keer dat AEM 6.5 (of verwante tools) toegang krijgt tot de opslagplaats.</p> <p><strong>Zodra de migratie naar de AEM 6.5 persistence-indeling is gestart, kan de repository niet worden teruggezet naar de vorige AEM 6.3 persistence format.</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### Migreren naar Oak Segment Tar {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>Vragen</strong></td>
-   <td><strong>Antwoorden</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Waarom moet ik de repository migreren?</strong></td>
-   <td><p>In AEM waren 6.3 wijzigingen in de opslagindeling nodig, vooral om de prestaties en effectiviteit van Online Revision Cleanup te verbeteren. Deze wijzigingen zijn niet compatibel met oudere versies en opslagruimten die zijn gemaakt met het oude Oak Segment (AEM 6.2 en eerder) moeten worden gemigreerd.</p> <p>Extra voordelen van het wijzigen van de opslagindeling:</p>
-    <ul>
-     <li>Betere schaalbaarheid (geoptimaliseerde segmentgrootte).</li>
-     <li>Sneller <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank"> de Inzameling van de Opslag van Gegevens </a>.<br /> </li>
-     <li>Grondwerkzaamheden voor toekomstige verbeteringen.</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Wordt de vorige opmaak van de Tar nog steeds ondersteund?</strong></td>
-   <td>Alleen de nieuwe Oak Segment Tar wordt ondersteund met AEM 6.3 of hoger.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Is migratie van inhoud altijd verplicht?</strong></td>
-   <td>Ja. Tenzij u met een nieuw exemplaar begint, zult u altijd de inhoud moeten migreren.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Kan ik upgraden naar 6.3 of hoger en de migratie later uitvoeren (bijvoorbeeld met een ander onderhoudsvenster)?</strong></td>
-   <td>Nee, zoals hierboven is uiteengezet, is migratie van inhoud verplicht.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Kan downtime tijdens migreren worden voorkomen?</strong></td>
-   <td>Nee. Dit is een eenmalige inspanning die niet op een lopende instantie kan worden gedaan.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Wat gebeurt er als ik per ongeluk tegen de verkeerde gegevensopslagindeling looppas?</strong></td>
-   <td>Als u probeert om de eiken-segmentmodule tegen een eak-segment-teer bewaarplaats (of omgekeerd) in werking te stellen, ontbreekt het opstarten met een <em> IllegalStateException </em> met het bericht "Ongeldig segmentformaat". Er treedt geen gegevensbeschadiging op.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Zal een herindex van de zoekindexen noodzakelijk zijn?</strong></td>
-   <td>Nee. Bij het migreren van een eikensegment naar een eikensegment worden wijzigingen aangebracht in de containerindeling. De ingesloten gegevens worden niet beïnvloed en worden niet gewijzigd.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Hoe kan de verwachte schijfruimte die tijdens en na de migratie nodig is het beste worden berekend?</strong></td>
-   <td>De migratie is gelijk aan het opnieuw maken van de segmentstore in de nieuwe indeling. Dit kan worden gebruikt om de extra schijfruimte te schatten nodig tijdens migratie. Na de migratie kan de oude segmentwinkel worden verwijderd om ruimte vrij te maken.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Hoe kan de duur van de migratie het best worden ingeschat?</strong></td>
-   <td>De prestaties van de migratie kunnen zeer worden verbeterd als <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup"> off-line revisie schoonmaakbeurt </a> voorafgaand aan de migratie wordt uitgevoerd. Alle klanten wordt geadviseerd om het als eerste vereiste van het verbeteringsproces uit te voeren. In het algemeen, zou de duur van de migratie aan de duur van de off-line revisie schoonmaakbeurttaak gelijkaardig moeten zijn, veronderstellend dat de off-line revisie schoonmaakbeurttaak vóór de migratie is uitgevoerd.</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### Onlinerevisie opschonen uitvoeren {#running-online-revision-cleanup}
 
@@ -243,11 +163,6 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   <tr>
    <td><strong>Zouden Auteur en Publiceren typisch verschillende Online vensters van de Overgang van de Herziening hebben?</strong></td>
    <td>Dit hangt van kantooruren en de verkeerspatronen van de klant online aanwezigheid af. De onderhoudsvensters moeten buiten de hoofdproductietijden worden geconfigureerd om de beste schoonmaakefficiëntie te waarborgen. Voor meerdere publicatie-instanties van AEM (TarMK Farm) moeten de onderhoudsvensters voor Online revisie Cleanup worden gefaseerd.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Zijn er om het even welke eerste vereisten alvorens Online de Opruiming van de Revisie in werking te stellen?</strong></td>
-   <td><p>Onlinerevisie opschonen is alleen beschikbaar in AEM 6.3 en hoger. Ook, als u een oudere versie van AEM gebruikt, moet u aan nieuwe <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar"> Tar van het Segment van Oak migreren </a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
