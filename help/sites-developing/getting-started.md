@@ -1,16 +1,11 @@
 ---
 title: Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie
 description: Leer hoe u uw AEM-exemplaar kunt uitbouwen. Ontdek meer over het platform en de onderdelen, en over tools voor ontwikkeling en personalisatie.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: introduction
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eac6c640-1c00-4fd9-9858-50fa2a0ea1ef
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fa066f9b822f1d5883e79610b239b13224a62fe0
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 10%

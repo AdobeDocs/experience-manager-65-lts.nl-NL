@@ -1,20 +1,20 @@
 ---
-title: AEM 6.5 Beheerdershandleiding
-description: Ontdek meer over het beheren van AEM 6.5. Deze handleidingen behandelen websitefuncties, implementatiebewerkingen, beveiligingseigenschappen, personalisatie, integratie en meer.
+title: AEM 6.5 LTS Administering User Guide
+description: Meer informatie over het gebruik van AEM 6.5 LTS. Deze gidsen behandelen plaatseigenschappen, plaatsingsverrichtingen, veiligheidseigenschappen, verpersoonlijking, integratie, en meer.
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1ef575fc-5fc4-43ca-978e-911118dad438
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3db401e19e0d819760acb3b470d0beda2c16dc5d
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 73%
+source-wordcount: '67'
+ht-degree: 0%
 
 ---
 
-# AEM 6.5 Beheerdershandleiding
+# AEM 6.5 LTS Administering User Guide
 
-Ontdek meer over het beheren van AEM 6.5. Deze handleidingen behandelen websitefuncties, implementatiebewerkingen, beveiligingseigenschappen, personalisatie, integratie en meer.
+Meer informatie over het gebruik van AEM 6.5 LTS. Deze gidsen behandelen plaatseigenschappen, plaatsingsverrichtingen, veiligheidseigenschappen, verpersoonlijking, integratie, en meer.
 
 ## Artikelen voor sleutelbeheer
 
