@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,10 @@ Er zijn momenteel twee knoopopslagimplementaties beschikbaar in AEM6: Tar-opslag
 
 Standaard gebruikt AEM 6 de Tar-opslag om knooppunten en binaire bestanden op te slaan met de standaardconfiguratieopties. U kunt de opslaginstellingen handmatig configureren door het volgende te doen:
 
-1. Download de AEM 6 QuickStart jar en plaats deze in een nieuwe map.
+1. Download de AEM 6.5 LTS QuickStart jar en plaats deze in een nieuwe map.
 1. AEM uitpakken door uit te voeren:
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. Maak een map met de naam `crx-quickstart\install` in de installatiemap.
 
@@ -60,12 +60,12 @@ Standaard gebruikt AEM 6 de Tar-opslag om knooppunten en binaire bestanden op te
 
 #### Een nieuw geïnstalleerd AEM-exemplaar uitvoeren met Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de onderstaande procedure te volgen:
+AEM 6.5 LTS kan worden geconfigureerd voor gebruik met MongoDB-opslag door de onderstaande procedure te volgen:
 
-1. Download de AEM 6 QuickStart jar en plaats deze in een nieuwe map.
+1. Download de AEM 6.5 LTS QuickStart jar en plaats deze in een nieuwe map.
 1. Pak AEM uit met de volgende opdracht:
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. Controleer of MongoDB is geïnstalleerd en of een instantie van `mongod` wordt uitgevoerd. Voor meer info, zie [ Installerend MongoDB ](https://docs.mongodb.org/manual/installation/).
 1. Maak een map met de naam `crx-quickstart\install` in de installatiemap.
@@ -83,10 +83,10 @@ AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de ondersta
 
 1. Maak een configuratiebestand met de PID van de gegevensopslagruimte die u wilt gebruiken en bewerk het bestand om de configuratieopties in te stellen. Voor meer info, zie [ het Vormen de Opslag van de Knoop en de Opslag van Gegevens ](/help/sites-deploying/data-store-config.md).
 
-1. Start de AEM 6-jar met een MongoDB-opslagback-end door deze uit te voeren:
+1. Start de AEM 6.5 LTS-kaart met een MongoDB-opslagback-end door deze uit te voeren:
 
    ```shell
-   java -jar cq-quickstart-6.jar -r crx3,crx3mongo
+   java -jar <aem-65-lts>.jar -r crx3,crx3mongo
    ```
 
    In de modus voor uitvoering op de achtergrond **`-r`** begint het voorbeeld met ondersteuning voor MongoDB.
