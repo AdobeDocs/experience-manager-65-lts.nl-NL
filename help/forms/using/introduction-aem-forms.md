@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot AEM Forms
-description: Met deze AEM 6.5 LTS-handleiding kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren en vind meer informatie over het ontwerpen van adaptieve formulieren.
+description: Met deze AEM 6.5 LTS-handleiding kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij installeren, upgraden en configureren en lees meer over het ontwerpen van adaptieve formulieren.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -8,7 +8,7 @@ exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 

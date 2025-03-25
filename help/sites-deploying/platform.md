@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot het AEM-platform
-description: Leer meer over het AEM-platform en de belangrijkste onderdelen ervan, zoals de installatie en implementatie van Adobe Experience Manager 6.5 LTS, en over de architectuur ervan, inclusief de implementatie van de Adobe Managed Services-cloud.
+description: Lees meer over het AEM-platform en de belangrijkste onderdelen zoals het installeren en implementeren van Adobe Experience Manager 6.5 LTS, en over de architectuur zoals Adobe Managed Services cloud-implementatie.
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Architect
@@ -10,7 +10,7 @@ exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
 source-git-commit: 4666e698b05510e2ed90995f7e7098e7f8d860da
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

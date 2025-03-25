@@ -1,6 +1,6 @@
 ---
 title: Eerste stappen voor auteurs bij het maken van inhoud in AEM
-description: Ontdek de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5 LTS. U vindt ook informatie over tags, sjablonen en andere paginafuncties.
+description: Verken de belangrijkste concepten bij het maken van content en authoring in AEM 6.5 LTS. U vindt ook informatie over het gebruik van tags, sjablonen en andere paginafuncties.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
 source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
