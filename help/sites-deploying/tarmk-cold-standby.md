@@ -12,7 +12,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: eb6903d0a34e9f9e90eaeee3ca6a89d1a2622dd0
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 0%
@@ -68,7 +68,7 @@ De gegevensstroom wordt ontworpen om verbinding en netwerk-verwante problemen au
 
 #### Prestaties {#performance}
 
-Het inschakelen van TarMK Cold Standby op de primaire instantie heeft vrijwel geen meetbare invloed op de prestaties. Het extra verbruik van CPU is laag en de extra vaste schijf en netwerk-IO zouden geen problemen en prestatieproblemen moeten veroorzaken.
+Het inschakelen van TarMK Cold Standby op de primaire instantie heeft vrijwel geen meetbare invloed op de prestaties. Het extra verbruik van CPU is laag en de extra vaste schijf en netwerk-IO zouden geen prestatieproblemen moeten veroorzaken.
 
 Op stand-by kunt u een hoog CPU-verbruik verwachten tijdens het synchronisatieproces. Omdat de procedure niet multithreaded is, kan het niet worden versneld door veelvoudige kernen te gebruiken. Als er geen gegevens worden gewijzigd of overgedragen, is er geen meetbare activiteit. De verbindingssnelheid is afhankelijk van de hardware- en netwerkomgeving, maar is niet afhankelijk van de grootte van de repository of het SSL-gebruik. Onthoud dit wanneer u de tijd inschat die nodig is voor een eerste synchronisatie of wanneer er ondertussen veel gegevens zijn gewijzigd op het primaire knooppunt.
 
