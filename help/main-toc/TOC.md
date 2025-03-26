@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de Adobe Experience Manager 6.5 LTS documentatie om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 5405b449377e464b7311b09f2f854488e404c1fd
 workflow-type: tm+mt
 source-wordcount: '6798'
 ht-degree: 1%
@@ -1281,7 +1281,7 @@ ht-degree: 1%
          + [Aan de slag met Reageren](/help/sites-developing/spa-getting-started-react.md)
          + [Het uitvoeren van een Component van de Reactie voor SPA](/help/sites-developing/spa-implementing-react-component.md)
          + [Aan de slag met Angular](/help/sites-developing/spa-getting-started-angular.md)
-         + [Diepe kieuwen](/help/sites-developing/spa-deep-dives.md)
+         + [Diepe kieuwen](/help/sites-developing/spa-deep-dives-gems.md)
          + [SBZ&#39;s voor AEM ontwikkelen](/help/sites-developing/spa-architecture.md)
          + [Overzicht van SPA-editor](/help/sites-developing/spa-overview.md)
          + [SPA-blauwdruk](/help/sites-developing/spa-blueprint.md)
