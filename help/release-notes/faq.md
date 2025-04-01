@@ -4,7 +4,8 @@ description: Veelgestelde vragen over AEM 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e9f8f59fd068e9e296c20e1d930fdbe2f5d30b1
+exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
+source-git-commit: 3677c3921a7dd603afd251aebf4be67947fb1e02
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -21,7 +22,7 @@ Adobe blijft zich sterk maken voor de veiligheid en stabiliteit van de toepassin
 
 ## Wat gebeurt er als ik geen upgrade naar AEM 6.5 LTS doe?
 
-AEM 6.5 LTS bevat belangrijke beveiligings- en stabiliteitsupdates, waaronder ondersteuning voor Oracle Java 17. Hoewel Adobe AEM 6.5 gedurende ten minste de komende 3 jaar zal blijven ondersteunen, wordt aanbevolen dat organisaties een upgrade naar 6.5 LTS gaan plannen.
+AEM 6.5 LTS bevat belangrijke beveiligings- en stabiliteitsupdates, waaronder ondersteuning voor Oracle Java 17. Hoewel Adobe AEM 6.5 gedurende minstens de komende twee jaar zal blijven ondersteunen, wordt aanbevolen dat organisaties een upgrade naar 6.5 LTS gaan plannen.
 
 ## Zullen mijn bestaande aanpassingen en integraties worden beïnvloed?
 
