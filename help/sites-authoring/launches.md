@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 4%
 
 Met behulp van opstartprogramma&#39;s kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release.
 
-Er wordt een lancering gecreeerd zodat u veranderingen klaar voor toekomstige publicatie (terwijl het handhaven van uw huidige pagina&#39;s) kunt maken. Nadat u de startpagina&#39;s hebt bewerkt en bijgewerkt, publiceert u deze weer naar de bron en activeert u vervolgens de bronpagina&#39;s (hoofdniveau). Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
+A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereiding op toekomstige publicatie aan te brengen, tezelfdertijd als het handhaven van uw huidige pagina&#39;s. Dit betekent dat u in feite twee versies tegelijk bewerkt: pagina&#39;s die momenteel worden gepubliceerd en een versie van deze pagina&#39;s die in de toekomst tegelijk worden gepubliceerd. Zodra dat tijdstip is bereikt, kunt u de originele pagina&#39;s vervangen en de nieuwe versie publiceren.
+
+U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3} pagina&#39;s van de Lancering {u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
 
 De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld elk kwartaal bijgewerkt, zodat de aanbevolen producten op één lijn komen met het huidige seizoen. Als u de volgende driemaandelijkse update wilt voorbereiden, kunt u de juiste webpagina&#39;s starten. In het hele kwartaal worden de volgende wijzigingen in de opstartafbeelding opgebouwd:
 
