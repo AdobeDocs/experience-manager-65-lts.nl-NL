@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
 exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7e1d05c2c6bda15632d49aaecfd931238ae25e79
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 5%
@@ -48,7 +48,7 @@ De volgende Documentatiereizen zijn beschikbaar voor onderwerpen zonder kop.
 |---|---|---|
 | [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) | Leer meer over technologieën zonder kop, wat ze brengen voor de gebruikerservaring, hoe AEM modellen zonder kop ondersteunt en hoe u uw eigen ontwikkelingsproject zonder kop kunt implementeren van A naar Z. | Ontwikkelaars |
 | [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md) | Leer over headless technologieën, waarom zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
-| [ Headless Authoring Reis ](/help/journey-headless/author/overview.md) | Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. | Architecten |
-| [ Evolutie van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt modelleren. | Inhoudsmakers en auteurs |
+| [ Evolutie van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) | Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. | Architecten |
+| [ Headless Authoring Reis ](/help/journey-headless/author/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt maken. | Inhoudsmakers en auteurs |
 
 Blijf voor [ aanstaande reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)
