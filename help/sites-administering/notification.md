@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2147'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Gebruik de volgende procedure om het knooppunt in de bronmappen van het inhoudsp
 
 ## De Workflow Email Notification Service configureren {#configuring-the-workflow-email-notification-service}
 
-Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van de e-mail als het URL-voorvoegsel van de host ingesteld op standaardwaarden. U kunt deze waarden veranderen door de **Dienst van het Bericht E-mail van het Bericht van het Werkschema van CQ van de Dag te vormen** in de Console van het Web. Als u dat doet, wordt aanbevolen de wijziging in de opslagplaats voort te zetten.
+Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van de e-mail als het URL-voorvoegsel van de host ingesteld op standaardwaarden. U kunt deze waarden veranderen door de **Dienst van het Bericht E-mail van het Bericht van het Werkschema van CQ van de Dag te vormen** in de Console van het Web. Als u dat doet, moet u de wijziging in de opslagplaats voortzetten.
 
 De standaardconfiguratie kijkt als volgt in de Console van het Web:
 
