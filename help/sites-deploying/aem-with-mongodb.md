@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
+source-wordcount: '5965'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager met MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>De minimaal ondersteunde versie van Mongo is Mongo 6.
 
 Dit artikel heeft tot doel de kennis over de taken en overwegingen te verbeteren die nodig zijn om AEM (Adobe Experience Manager) met MongoDB succesvol te implementeren.
 
@@ -74,8 +78,6 @@ Om de lees- en schrijfdoorvoer te behalen voor de beste prestaties zonder de beh
 
 ### RAM {#ram}
 
-Voor MongoDB-versies 2.6 en 3.0 die de MMAP-opslagengine gebruiken, is het vereist dat de werkset van de database en de bijbehorende indexen in het RAM passen.
-
 Onvoldoende RAM leidt tot een aanzienlijke prestatievermindering. De grootte van de werkset en van de database is sterk afhankelijk van de toepassing. Hoewel sommige schattingen kunnen worden gemaakt, is de betrouwbaarste manier om te bepalen hoeveel RAM nodig is, het bouwen van de AEM-toepassing en het testen van de belasting.
 
 Ter ondersteuning van het laadtestproces kan de volgende verhouding tussen werkset en totale databasegrootte worden aangenomen:
@@ -85,11 +87,9 @@ Ter ondersteuning van het laadtestproces kan de volgende verhouding tussen werks
 
 Deze verhoudingen betekenen dat voor SSD-implementaties 200 GB RAM vereist is voor een database van 2 TB.
 
-Hoewel de zelfde beperkingen op de opslag WiredTiger motor in MongoDB 3.0 van toepassing zijn, is de correlatie tussen de het werk reeks, RAM, en paginafouten niet zo sterk. WiredTiger gebruikt geheugentoewijzing niet op dezelfde manier als de MMAP-opslagengine.
-
 >[!NOTE]
 >
->Adobe raadt aan de WiredTiger-opslagengine te gebruiken voor AEM 6.1-implementaties die MongoDB 3.0 gebruiken.
+>Adobe raadt aan de WiredTiger-opslagengine te gebruiken voor AEM 6.5 LTS-implementaties die MongoDB 6 of hoger gebruiken.
 
 ### Gegevensopslag {#data-store}
 
@@ -235,8 +235,6 @@ Het wordt aanbevolen een permanente cacheconfiguratie in te schakelen voor Mongo
 
 ### Ondersteuning van besturingssystemen {#operating-system-support}
 
-MongoDB 2.6 gebruikt een in geheugen toegewezen opslagengine die gevoelig is voor bepaalde aspecten van het systeembeheer tussen RAM en schijf. De vraag en gelezen Prestaties van de instantie MongoDB baseert zich op het vermijden of het elimineren van langzame I/O verrichtingen die vaak als paginafouten worden bedoeld. Dit zijn vooral paginafouten die van toepassing zijn op het `mongod` -proces. Let op het verschil met paginafouten op besturingssysteemniveau.
-
 Voor snelle verrichting, zou het gegevensbestand MongoDB slechts tot gegevens moeten toegang hebben die reeds in RAM zijn. De gegevens waartoe het toegang moet krijgen, bestaan uit indexen en gegevens. Deze verzameling indexen en gegevens wordt de werkset genoemd. Als de werkset groter is dan de beschikbare RAM-geheugen, moet MongoDB die gegevens vanaf een schijf met I/O-kosten inpakken, zodat andere gegevens die al in het geheugen staan, worden verwijderd. Als de verwijdering ertoe leidt dat gegevens van schijf worden opnieuw geladen, nemen de paginafouten en de prestaties af. Wanneer de werkset dynamisch en variabel is, worden er meer paginafouten gegenereerd om bewerkingen te ondersteunen.
 
 MongoDB wordt uitgevoerd op verschillende besturingssystemen, waaronder een groot aantal Linux®-kleuren, Windows en macOS. Zie [ https://docs.mongodb.com/manual/installation/#supported-platforms ](https://docs.mongodb.com/manual/installation/#supported-platforms) voor extra details. Afhankelijk van de keuze van het besturingssysteem heeft MongoDB verschillende aanbevelingen voor het niveau van het besturingssysteem. Er zijn gedocumenteerd in [ https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration ](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) en hier samengevat voor gemak.
@@ -246,7 +244,6 @@ MongoDB wordt uitgevoerd op verschillende besturingssystemen, waaronder een groo
 * Schakel de transparante kleurtonen en foutopsporing uit. Zie [ de Transparante Montages van de Pagina&#39;s van de Groot ](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) voor meer informatie.
 * [ pas de readahead montages ](https://docs.mongodb.com/manual/administration/production-notes/#readahead) op de apparaten aan die uw gegevensbestanddossiers opslaan zodat u uw gebruiksgeval past.
 
-   * Als de werkset van de MMAPv1-opslagengine groter is dan het beschikbare RAM en het toegangspatroon van het document willekeurig is, kunt u het aflezen naar 32 of 16 verkleinen. U kunt verschillende instellingen evalueren, zodat u een optimale waarde kunt vinden voor een zo groot mogelijk geheugen en een lager aantal paginafouten.
    * Voor de opslag WiredTiger motor, reeks opnieuw gelezen aan 0 ongeacht opslagmedia type (het draaien, SSD, etc.). Over het algemeen gebruikt u de aanbevolen instelling voor het aflezen van voorkeuren, tenzij tests een meetbaar, herhaalbaar en betrouwbaar voordeel opleveren bij een hogere aflezing. [ de Professionele Steun van MongoDB ](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kan advies en begeleiding op non-zero readahead configuraties verstrekken.
 
 * Schakel het afgestelde gereedschap uit als u RHEL 7 / CentOS 7 in een virtuele omgeving uitvoert.
@@ -358,11 +355,13 @@ Om de grootte van het interne geheime voorgeheugen WiredTiger aan te passen, zie
 
 ### NUMA {#numa}
 
-Met NUMA (Non-Uniform Memory Access) kan een kernel bepalen hoe geheugen wordt toegewezen aan de processorkernen. Hoewel dit proces probeert om geheugentoegang voor kernen sneller te maken die ervoor zorgen dat zij tot de vereiste gegevens kunnen toegang hebben, mengt NUMA zich in MMAP die extra latentie introduceert aangezien leest niet kan worden voorspeld. Het gevolg is dat NUMA moet worden uitgeschakeld voor het `mongod` -proces op alle besturingssystemen die hiervoor geschikt zijn.
+Met NUMA (Non-Uniform Memory Access) kan een kernel bepalen hoe geheugen wordt toegewezen aan de processorkernen.
 
 In wezen wordt het geheugen van een NUMA-architectuur aangesloten op de CPU en worden de CPU&#39;s aangesloten op een bus. In een SMP of een architectuur UMA, wordt het geheugen verbonden met de bus en door cpu&#39;s gedeeld. Wanneer een draad geheugen op NUMA CPU toewijst, wijst het volgens een beleid toe. Standaard wordt geheugen toegewezen dat is gekoppeld aan de lokale CPU van de verbinding, tenzij er geen vrije verbinding is. Op dat moment wordt geheugen van een gratis CPU tegen hogere kosten gebruikt. Nadat het geheugen is toegewezen, wordt het niet verplaatst tussen CPU&#39;s. De toewijzing wordt uitgevoerd door een beleid dat van de ouderdraad wordt geërft, die uiteindelijk de draad is die het proces begon.
 
-In veel databases die de computer zien als een multicore, uniforme geheugenarchitectuur, leidt dit scenario ertoe dat de eerste CPU volledig wordt en de tweede CPU-opvulling later. Het is vooral waar als een centrale draad voor het toewijzen van geheugenbuffers verantwoordelijk is. De oplossing is het beleid van NUMA van de belangrijkste draad te veranderen die wordt gebruikt om het `mongod` proces te beginnen door het volgende bevel in werking te stellen:
+Als u MongoDB uitvoert op een systeem met NUMA (Non-Uniform Memory Access), kan dit een aantal operationele problemen veroorzaken, zoals een trage prestatie gedurende een periode, een onmogelijkheid om alle beschikbare RAM te gebruiken en een hoog systeemprocesgebruik.
+
+De oplossing is het beleid van NUMA van de belangrijkste draad te veranderen die wordt gebruikt om het `mongod` proces te beginnen door het volgende bevel in werking te stellen:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ Voor generische informatie over prestaties MongoDB, zie [ Analyserend Prestaties
 Hoewel het gelijktijdige gebruik van meerdere AEM-instanties met één database wordt ondersteund door MongoMK, worden gelijktijdige installaties niet ondersteund.
 
 Om dit probleem te verhelpen, dient u de installatie eerst uit te voeren met één lid en de andere leden toe te voegen nadat de eerste installatie is voltooid.
-
-### Lengte paginanaam {#page-name-length}
-
-Als AEM op een persistentiebeheerplaatsing MongoMK loopt, [ paginanamen zijn beperkt tot 150 karakters.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: Opslaan van knooppunten en gegevensopslag configureren in AEM 6
+title: Het vormen knoopopslag en gegevensopslag in AEM 6.5 LTS
 description: Leer hoe te om knoopopslag en gegevensopslag te vormen en hoe te om huisvuilinzameling van de gegevensopslag uit te voeren.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3330'
 ht-degree: 0%
 
 ---
 
-# Opslaan van knooppunten en gegevensopslag configureren in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Het vormen knoopopslag en gegevensopslag in AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Inleiding {#introduction}
 
@@ -46,19 +46,10 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
 ## Configuratie van knooppuntopslag {#node-store-configurations}
 
->[!CAUTION]
->
->De nieuwere versies van Oak gebruiken een nieuw noemend regeling en formaat voor OSGi configuratiedossiers. Het nieuwe noemende schema vereist dat het configuratiedossier **.config** wordt genoemd en het nieuwe formaat vereist dat de waarden worden getypt. Voor details zie [ het Apache Sling Provisioning Model en Apache SlingStart - het StandaardFormaat van de Configuratie ](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->
->Als u van een oudere versie van Oak bevordert, zorg ervoor dat u eerst een steun van de `crx-quickstart/install` omslag maakt. Na de verbetering, herstel de inhoud van de omslag aan de promotieinstallatie en wijzig de uitbreiding van de configuratiedossiers van **.cfg** aan **.config**.
-
 ### Segmentknooppuntarchief {#segment-node-store}
 
-De opslag van segmentknooppunten is de basis van de Adobe TarMK-implementatie in AEM6. De `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID wordt gebruikt voor configuratie.
+De opslag van de segmentknoop is de basis van Adobe TarMK implementatie in AEM 6.5 LTS. De `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID wordt gebruikt voor configuratie.
 
->[!CAUTION]
->
->De PID voor het archief met segmentknooppunten is gewijzigd van `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` van AEM 6 in `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3. Zorg ervoor u de noodzakelijke configuratieaanpassingen aanbrengt om deze verandering te weerspiegelen.
 
 U kunt de volgende opties configureren:
 
@@ -86,7 +77,7 @@ De opslag van documentknooppunten is de basis van de AEM MongoMK-implementatie. 
 
 * `mongouri`: [ MongoURI ](https://docs.mongodb.org/manual/reference/connection-string/) wordt vereist om met het Gegevensbestand van Mongo te verbinden dat. De standaardwaarde is `mongodb://localhost:27017`
 
-* `db`: naam van de Mongo-database. Het gebrek is **Oak** ``. However, new AEM 6 installations use **aem-author** `` als standaardgegevensbestandnaam.
+* `db`: naam van de Mongo-database. Het gebrek is **a-auteur**.
 
 * `cache`: De cachegrootte in MB. Dit wordt verdeeld over diverse geheime voorgeheugens die in DocumentNodeStore worden gebruikt. De standaardwaarde is `256`
 
@@ -143,9 +134,9 @@ AEM kan worden geconfigureerd om gegevens op te slaan in Amazon Simple Storage S
 
 >[!NOTE]
 >
->AEM 6.5 biedt ondersteuning voor het opslaan van gegevens in Amazon S3, maar de ondersteuning wordt niet uitgebreid tot het opslaan van gegevens op andere platformen, waarvan de leveranciers hun eigen implementaties van Amazon S3 API&#39;s hebben.
+>AEM 6.5 LTS steunt het opslaan van gegevens in Amazon S3, nochtans wordt de steun niet uitgebreid tot het opslaan van gegevens in andere platforms, de verkopers kunnen hun eigen implementaties van Amazon S3 APIs hebben.
 
-Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de recentste versie van 1.10.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.s3connector-1.10.0.zip). Ook, moet u het recentste de dienstpak van AEM downloaden en installeren zoals vermeld op [ AEM 6.5 de Nota&#39;s van de Versie ](/help/release-notes/release-notes.md) pagina.
+Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de recentste versie van 1.60.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.s3connector-1.60.2.zip). Ook, moet u het recentste de dienstpak van AEM downloaden en installeren zoals vermeld op [ AEM 6.5 de Nota&#39;s van de Versie van LTS ](/help/release-notes/release-notes.md) pagina.
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ Na het downloaden kunt u de S3-connector als volgt installeren en configureren:
 1. Bewerk het bestand en voeg de configuratieopties toe die nodig zijn voor de installatie.
 1. Start AEM.
 
-## Een upgrade uitvoeren naar een nieuwe versie van de 1.10.x S3-connector {#upgrading-to-a-new-version-of-the-s-connector}
+## Een upgrade uitvoeren naar een nieuwe versie van de 1.60.x S3-connector {#upgrading-to-a-new-version-of-the-s-connector}
 
-Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.10.x S3-connector (bijvoorbeeld van 1.10.0 naar 1.10.4):
+Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.60.x S3-connector:
 
 1. Stop de AEM-instantie.
 
@@ -205,7 +196,7 @@ Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.10.x S3-conn
    >
    >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
-1. Download de recentste versie van het 1.10.x eigenschappak van het [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Download de recentste versie van het 1.60.x eigenschappak van de [ Distributie van de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
 1. Pak de inhoud uit en ga vervolgens naar `jcr_root/libs/system/install/15` .
 1. Kopieer de jar dossiers aan **&lt;aem-install>**/crx-quickstart/install/15 in de installatiemap van AEM.
 1. Start AEM en controleer de verbindingsfunctionaliteit.
@@ -413,7 +404,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 AEM kan worden geconfigureerd om gegevens op te slaan in de Azure-opslagservice van Microsoft®. De `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID wordt gebruikt voor configuratie.
 
-Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de recentste versie van 1.6.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) en download de recentste versie van 1.9.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >
