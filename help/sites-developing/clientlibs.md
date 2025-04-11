@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 0%
@@ -139,13 +139,13 @@ In eerdere versies stonden de clientbibliotheekmappen onder `/etc/clientlibs` in
 >
 >Als u code beter wilt isoleren van de inhoud en configuratie, is het raadzaam clientbibliotheken onder `/apps` te zoeken en deze via `/etc.clientlibs` weer te geven met de eigenschap `allowProxy` .
 
-De clientbibliotheken onder `/apps` zijn alleen toegankelijk als er een proxyserver wordt gebruikt. ACLs wordt nog afgedwongen op de omslag van de cliëntbibliotheek, maar servlet staat voor de inhoud toe om via `/etc.clientlibs/` worden gelezen als het `allowProxy` bezit aan `true` wordt geplaatst.
+De clientbibliotheken onder `/apps` zijn alleen toegankelijk als een proxyserver wordt gebruikt. ACLs wordt nog afgedwongen op de omslag van de cliëntbibliotheek, maar servlet staat voor de inhoud toe om via `/etc.clientlibs/` worden gelezen als het `allowProxy` bezit aan `true` wordt geplaatst.
 
 Een statische bron is alleen toegankelijk via de proxy als deze zich onder een bron onder de map met de clientbibliotheek bevindt.
 
 Als voorbeeld:
 
-* U hebt een clientlib in `/apps/myproject/clientlibs/foo`
+* U hebt een clientlib in `/apps/myprojects/clientlibs/foo`
 * U hebt een statische afbeelding in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 Vervolgens stelt u de eigenschap `allowProxy` op `foo` in op true.
