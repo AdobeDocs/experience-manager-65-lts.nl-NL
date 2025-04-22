@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -80,9 +80,9 @@ Voor elke instantie in de cluster, kunt u verscheidene op topologie betrekking h
 * De taakonderwerpen waarvoor de instantie is geregistreerd voor offloaden.
 * De taakonderwerpen die de instantie verwerkt.
 
-1. Klik met de aanraakinterface op het tabblad Gereedschappen. ([ http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Klik in het gebied Bewerkingen graniet op Browser offloaden.
-1. Klik in het navigatievenster op Topologiebrowser.
+1. Klik met de aanraakinterface op het tabblad Gereedschappen. ([ http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. Als u Offloading wilt weergeven, klikt u op Offloading-tegel in het gedeelte Implementatie.
+1. Om Topology te bekijken, klik de tegel van de Topologie in de sectie van de Plaatsing.
 
    De clusters die aan de topologie deelnemen verschijnen.
 
@@ -100,7 +100,7 @@ U kunt de Console van het Web ook gebruiken om topologieinformatie te bekijken. 
 Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van de Console van het Web te openen:
 
 1. Open de webconsole in uw browser. ([ http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Klik op Hoofd > Topologiebeheer.
+1. Klik op Sling > Topologiebeheer.
 
    ![ chlimage_1-112 ](assets/chlimage_1-112.png)
 
