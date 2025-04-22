@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3247'
 ht-degree: 0%
 
 ---
@@ -36,10 +36,6 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 >De noodzakelijke configuratie varieert van project tot project.
 >
 >Zie de console van het Web voor gebruikte waarden en gedetailleerde informatie over parameters.
-
->[!NOTE]
->
->Het gereedschap van Diff van de Configuratie OSGi, een deel van [ Hulpmiddelen van AEM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kan worden gebruikt om van de standaard configuraties OSGi een lijst te maken.
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 Zie [ het Registreren van AEM ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
 
-**Apache die Gebeurtenis verbinden pool** vormt:
+**Apache die de Groep van de Verbindingsdraad** vormt:
 
 * **Min de Grootte van de Pool** en **Max de Grootte van de Pool**, de grootte van de pool die wordt gebruikt om gebeurtenisdraden te houden.
 
@@ -102,7 +98,7 @@ Schakel JSON niet uit.
 >
 >Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**Apache Sling JavaScript Handler** vormt montages voor de compilatie van.java- dossiers als manuscripten (servlets).
+**Apache het Verdelen de Handler van het Manuscript van Java** vormt montages voor de compilatie van.java- dossiers als manuscripten (servlets).
 
 Bepaalde instellingen kunnen van invloed zijn op de prestaties. Schakel deze instellingen waar mogelijk uit, met name voor een productie-instantie.
 
@@ -118,9 +114,9 @@ Bepaalde instellingen kunnen van invloed zijn op de prestaties. Schakel deze ins
 
 * **Weg van het Onderzoek**, lijst van wegen die jcrinstall zoekt naar te installeren middelen, samen met een aantal die op de wegingsfactor voor die weg wijzen.
 
-**Apache het Verdelen de Handler van de Gebeurtenis van de Baan** vormt parameters die baan het plannen beheren:
+**Apache die de Configuratie van de Rij van de Rij** vormt parameters die baan het plannen beheren:
 
-* **probeert opnieuw interval**, **Maximum probeert**, **Maximale Parallelle Banen** opnieuw, **erkent wacht Tijd**, onder anderen.
+* **probeert opnieuw interval**, **Maximum probeert**, **Maximum Parallelle Banen**, onder anderen.
 
 * Als u deze instellingen wijzigt, worden de prestaties verbeterd in scenario&#39;s met een groot aantal taken, zoals een intensief gebruik van AEM DAM en Workflows.
 * De waarden specifiek voor uw scenario zouden moeten worden bepaald gebruikend tests.
@@ -177,7 +173,7 @@ Zie [ het Registreren van AEM ](/help/sites-deploying/configure-logging.md) en [
 
 * **Aantal Vraag per Verzoek** en **Diepte van de Recursie** om uw systeem tegen oneindige recursie en bovenmatige manuscriptvraag te beschermen.
 
-**Apache die de Dienst van het Type MIME** vormt:
+**Apache Sling Commons MIME de Dienst van het Type** vormt:
 
 * **types MIME** om types toe te voegen die door uw project aan het systeem worden vereist. Hierdoor kan een `GET` -aanvraag in een bestand de juiste header van het inhoudstype instellen voor het koppelen van het bestandstype en de toepassing.
 
@@ -239,23 +235,11 @@ Er kunnen verschillende parameters worden ingesteld, waaronder:
 * **de Wegen van de Uitvoering** - maakt een lijst van de wegen aan onderzoek naar uitvoerbare manuscripten. Door specifieke paden te configureren, kunt u beperken welke scripts kunnen worden uitgevoerd. Als geen weg wordt gevormd, dan wordt het gebrek gebruikt ( `/` = wortel), toestaand het lopen van alle manuscripten.
 Als een gevormde wegwaarde met een schuine streep beëindigt, wordt de volledige subboom gezocht. Zonder een dergelijke slash wordt het script alleen uitgevoerd als het exact overeenkomt.
 
-* **Gebruiker van het Manuscript** - Dit facultatieve bezit kan de rekening specificeren van de bewaarplaatsgebruiker die voor het lezen van de manuscripten wordt gebruikt. Als er geen account is opgegeven, wordt standaard de `admin` -gebruiker gebruikt.
-
 * **StandaardUitbreidingen** - de lijst van uitbreidingen waarvoor het standaardgedrag wordt gebruikt. Het laatste wegsegment van het middeltype kan als manuscriptnaam worden gebruikt.
 
 **de Configuratie van de Volmacht van de Volmacht van HTTP van Apache** - de volmachtsconfiguratie voor alle code die de cliënt van HTTP Apache gebruikt, wordt gebruikt wanneer HTTP wordt gemaakt. Bijvoorbeeld bij replicatie.
 
 Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats daarvan, creeer een fabrieksconfiguratie voor deze component gebruikend de hier beschikbare configuratiemanager: **https://localhost:4502/system/console/configMgr/**. De volmachtsconfiguratie is beschikbaar in **org.apache.http.proxyconfigurator.**
-
->[!NOTE]
->
->In AEM 6.0 en eerdere versies werd de proxy geconfigureerd in Day Commons HTTP Client. Vanaf AEM 6.1 en latere versies is de proxyconfiguratie verplaatst naar de &quot;Apache HTTP Components Proxy Configuration&quot; in plaats van de &#39;Day Commons HTTP Client&#39;-configuratie.
-
-**Dag CQ Antispam** vormt de anti-spamdienst (Akismet) gebruikte. Voor deze functie moet u het volgende registreren:
-
-* **Leverancier**
-* **API sleutel**
-* **Geregistreerde URL**
 
 **Adobe Granite HTML Library Manager** vormt om de behandeling van cliëntbibliotheken (css of js) met inbegrip van te controleren, bijvoorbeeld, hoe de onderliggende structuur wordt gezien.
 
@@ -281,7 +265,7 @@ Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats 
 >
 >Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**De Handler van de Authentificatie van de Kopbal van HTTP van de Dag CQ** montages van het Systeem voor de basisauthentificatiemethode van het HTTP- verzoek.
+**Adobe Granite HTTP Handler van de Authentificatie van de Kopbal** de montages van de systeembrede voor de basisauthentificatiemethode van het HTTP- verzoek.
 
 Wanneer het gebruiken van [ gesloten gebruikersgroepen ](/help/sites-administering/cug.md), kunt u, onder anderen, het volgende vormen:
 
@@ -377,7 +361,7 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 >
 >Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**Vorm van de Configurator van de Controle van de Verbinding van 0} Dag CQ WCM:**
+**dag CQ WCM de Controle van de Verbinding van WCM** vormt:
 
 * **Lijst van herschrijven configuraties** om een lijst van plaatsen voor op inhoud-gebaseerde configuraties van de verbindingscontrole te specificeren. De configuraties kunnen op looppaswijze worden gebaseerd. Dit is belangrijk om onderscheid te maken tussen auteur- en publicatieomgevingen, omdat de instellingen voor koppelingencontrole kunnen verschillen.
 
@@ -427,7 +411,7 @@ Zie ](/help/sites-deploying/version-purging.md) het Opheffen van de Versie 0} {v
 
 **de Dienst van het Bericht van het E-mail van het Werkschema van de Dag CQ** vormt de e-mailmontages voor berichten die door een werkschema worden verzonden.
 
-**CQ Rewriter HTML Parser Factory**
+**Adobe AEM Rewriter HTML Parser Factory**
 
 Controls the HTML Parser for the CQ rewriter.
 

@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -174,9 +174,6 @@ Aangezien de zelfde configuratieparameter op verscheidene plaatsen is, is het sy
 * filters volgens de dienstnaam
 * filters op basis van de uitvoermodus
 
->[!NOTE]
->
->Lees ook [ hoe te om een op bewaarplaats-gebaseerde configuratie voor een specifieke instantie slechts ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html) te bepalen.
 
 ### Een nieuwe configuratie toevoegen aan de opslagplaats {#adding-a-new-configuration-to-the-repository}
 
@@ -186,9 +183,9 @@ Om een configuratie aan de bewaarplaats toe te voegen, moet u het volgende weten
 
 1. De **Blijvende Identiteit** (PID) van de dienst.
 
-   Verwijs het **gebied van Configuraties** in de console van het Web. De naam wordt getoond in steunen na de bundelnaam (of in de **Informatie van de Configuratie** naar de bodem van de pagina).
+   Verwijs de **Configuraties** in de console van het Web. De naam wordt getoond in de **Informatie van de Configuratie** naar de bodem van de pagina.
 
-   Bijvoorbeeld, creeer een knoop `com.day.cq.wcm.core.impl.VersionManagerImpl.` om **Manager van de Versie van AEM te vormen WCM**.
+   Bijvoorbeeld, `com.day.cq.wcm.core.impl.VersionManagerImpl.` om **Manager van de Versie van AEM te vormen WCM**.
 
    ![ chlimage_1-141 ](assets/chlimage_1-141.png)
 
@@ -237,13 +234,13 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
    >[!NOTE]
    >
-   >Als u een fabrieksconfiguratie maakt, voegt u `-<identifier>` aan de naam toe.
+   >Als u een fabrieksconfiguratie maakt, voegt u `~<identifier>` aan de naam toe.
    >
-   >As in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >As in: `org.apache.sling.commons.log.LogManager.factory.config~<identifier>`
    >
    >Waar `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten), bijvoorbeeld:
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >`org.apache.sling.commons.log.LogManager.factory.config~MINE`
 
 1. Voor elke parameter die u wilt vormen, creeer een bezit op deze knoop:
 
@@ -310,23 +307,7 @@ De configuratie met het hoogste aantal passende looppaswijzen is effectief voor 
 
 ### Standaardconfiguraties {#standard-configurations}
 
-De volgende lijst toont een kleine selectie van de configuraties beschikbaar (in een standaardinstallatie) in de bewaarplaats:
-
-* Auteur - AEM WCM-filter:
-
-  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publiceren - AEM WCM-filter:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publiceren - AEM WCM-paginatistieken:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
-
->[!NOTE]
->
->Aangezien deze configuraties zich in `/libs` bevinden, mogen ze niet rechtstreeks worden bewerkt, maar worden gekopieerd naar het toepassingsgebied ( `/apps` ) voordat ze worden aangepast.
+Als een standaardconfiguratie zich in `/libs` bevindt, moet deze niet rechtstreeks worden bewerkt, maar naar het toepassingsgebied ( `/apps` ) worden gekopieerd voordat de configuratie wordt aangepast.
 
 Om van alle configuratieknopen in uw instantie een lijst te maken, gebruik de **functionaliteit van de Vraag** in CRXDE Lite om de volgende SQL vraag voor te leggen:
 
