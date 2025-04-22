@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,7 @@ Er zijn diverse redenen voor replicatie om te ontbreken. In dit artikel wordt ui
 
 **worden de replicaties teweeggebracht bij allen wanneer het klikken van de Activate knoop? Als NIET dan het volgende doet:**
 
-1. Ga naar /crx/explorer en login als admin.
-1. &quot;Content Explorer&quot; openen
+1. Ga naar /crx/de/index.jsp en meld u aan als beheerder.
 1. Zie of bestaat een knoop /bin/replicate of /bin/replicate.json. Als het knooppunt bestaat, verwijdert u het en slaat u het op.
 
 **worden de replicaties een rij gevormd in de rijen van de replicatieagent?**
@@ -76,12 +75,12 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan de repl
 Soms is het nuttig om al replicatieregistreren te plaatsen om in een afzonderlijk logboekdossier op het niveau van DEBUG worden toegevoegd. Dit doet u als volgt:
 
 1. Ga naar https://host:port/system/console/configMgr en meld u aan als beheerder.
-1. Zoek de Apache Sling Logging Logger-fabriek en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie te klikken. Hiermee maakt u een nieuw logbestand.
+1. Zoek de configuratie van het Logboekprogramma voor Apache Sling Logging en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie te klikken. Hiermee maakt u een nieuw logbestand.
 1. Stel de configuratie als volgt in:
 
    * Logniveau: FOUTOPSPORING
-   * Logbestandspad: logs/replication.log
-   * Categorieën: com.day.cq.replication
+   * Logbestand: logs/replication.log
+   * Logger: com.day.cq.replication
 
 1. Als u vermoedt dat het probleem te maken heeft met sling-gebeurtenissen/taken, kunt u dit Java™-pakket ook toevoegen onder categorieën:org.apache.sling.event
 

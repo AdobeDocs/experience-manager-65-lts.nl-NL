@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3278'
 ht-degree: 0%
 
 ---
@@ -60,18 +60,26 @@ De omgekeerde replicatie gebruikt een agent in het Publish milieu dat verwijzing
 
 ### Replicatie - uit de doos {#replication-out-of-the-box}
 
-De website van de wij-kleinhandel die in een standaardinstallatie van AEM inbegrepen is kan worden gebruikt om replicatie te illustreren.
+Creeer een pagina door [ te volgen Creërend en Organiserend Pagina&#39;s ](/help/sites-authoring/managing-pages.md).
 
 Om dit voorbeeld te volgen, en de standaardreplicatieagenten te gebruiken, [ installeert AEM ](/help/sites-deploying/deploy.md) met:
 
+
 * de omgeving Auteur op de poort `4502`
 * de publicatieomgeving op de poort `4503`
+
+Deze replicatie wordt van het milieu van de Auteur in actie gebracht door:
+
+* **StandaardAgent (publiceert)**
+Deze agent repliceert inhoud aan het gebrek publiceren instantie.
+De details van dit (configuratie en logboeken) kunnen van de console van Hulpmiddelen van het milieu van de Auteur worden betreden; of:
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
 >Standaard ingeschakeld:
 >
->* Agenten op Auteur: StandaardAgent (publiceren)
+>* Agenten op Auteur: De StandaardAgent (publiceert), als niet, zorg ervoor om het toe te laten alvorens verder te werk te gaan.
 >
 >Effectief standaard uitgeschakeld (vanaf AEM 6.1):
 >
@@ -84,19 +92,13 @@ Om dit voorbeeld te volgen, en de standaardreplicatieagenten te gebruiken, [ ins
 #### Replicatie (te publiceren auteur) {#replication-author-to-publish}
 
 1. Navigeer naar de ondersteuningspagina in de ontwerpomgeving.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. Bewerk de pagina zodat u nieuwe tekst kunt toevoegen.
 1. **activeer Pagina** zodat kunt u de veranderingen publiceren.
 1. Open de ondersteuningspagina in de publicatieomgeving:
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. U kunt nu de wijzigingen zien die u hebt ingevoerd voor de auteur.
 
-Deze replicatie wordt van het milieu van de Auteur in actie gebracht door:
-
-* **StandaardAgent (publiceert)**
-Deze agent repliceert inhoud aan het gebrek publiceren instantie.
-De details van dit (configuratie en logboeken) kunnen van de console van Hulpmiddelen van het milieu van de Auteur worden betreden; of:
-  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Replication Agents - Out of the Box {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ Wordt gebruikt voor het repliceren van Auteur naar Publiceren.
 * Dispatcher Flush
 Dit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [ het Invalideren van het Geheime voorgeheugen van Dispatcher van het Authoring Milieu ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) en [ het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie.
 
-* [ Omgekeerde Replicatie ](#reverse-replication-publish-to-author)
+* [ Omgekeerde Replicatie ](#configuring-reverse-replication)
 Wordt gebruikt voor het repliceren van Publiceren naar Auteur. Reverse-replicatie wordt niet gebruikt voor functies van Gemeenschappen, zoals forums, blogs en opmerkingen. De optie is in feite uitgeschakeld omdat de Postvak UIT niet is ingeschakeld. Het gebruik van omgekeerde replicatie zou douaneconfiguratie vereisen.
 
 * Statische agent
