@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ Als u gedwongen afsluit, wordt de asynchrone indexering maximaal 30 minuten na h
 1. Wacht ongeveer 45 minuten totdat AEM normale asynchrone indexeringsbewerkingen hervat.
 
 ## Thread pool overloaded {#thread-pool-overloaded}
-
->[!NOTE]
->
->Voor AEM 6.1, zorg ervoor dat [ AEM 6.1 GFP 11 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) geïnstalleerd is.
 
 In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asynchrone indexering te beheren overbelast worden. Om het indexeren proces te isoleren, kan een draadpool worden gevormd om ander werk van AEM te verhinderen het vermogen van Oak om inhoud op een geschikte manier te indexeren in te perken. Voer in dergelijke gevallen de volgende handelingen uit:
 

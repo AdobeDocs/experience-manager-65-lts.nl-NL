@@ -10,7 +10,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Oak-run ondersteunt alle indexering van gebruiksgevallen op de opdrachtregel zonder dat deze vanaf JMX-niveau moeten werken. De voordelen van de &quot;eak-run&quot;-aanpak zijn:
 
-1. Het is een nieuwe indexeringstoolset voor AEM 6.4
+1. Het is een nieuwe indexerende toolset sinds AEM 6.4
 1. Het vermindert tijd-aan-herindex die nuttige gevolgen herindextijden op grotere bewaarplaatsen heeft
 1. Het verbruik van hulpbronnen neemt af tijdens herindexering in AEM, wat leidt tot betere systeemprestaties voor andere AEM-activiteiten
 1. Oak-run biedt out-of-band ondersteuning: als de productieomstandigheden het niet mogelijk maken om opnieuw indexering uit te voeren op productie-instanties, kan een gekloonde omgeving worden gebruikt om opnieuw te rendexeren om een kritiek effect op de prestaties te voorkomen.
@@ -64,7 +64,7 @@ Dit diagram is een beslissingsstructuur voor wanneer de verschillende herindexer
 
 ### Voorvertoning van tekst voor SegmentNodeStore en DocumentNodeStore {#textpre-extraction}
 
-[ pre-extractie van de Tekst ](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (een eigenschap die met AEM 6.3) heeft bestaan kan worden gebruikt om de tijd te verminderen om opnieuw te indexeren. De preextractie van de tekst kan met alle het opnieuw indexeren benaderingen worden gebruikt.
+[ de pre-extractie van de Tekst ](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (een eigenschap die sinds AEM 6.3 heeft bestaan) kan worden gebruikt om de tijd te verminderen om opnieuw te indexeren. De preextractie van de tekst kan met alle het opnieuw indexeren benaderingen worden gebruikt.
 
 Afhankelijk van de `oak-run.jar` indexeringsbenadering, zijn er diverse stappen op één van beide kant van de Uitvoeren Reindex stap in het hieronder diagram.
 

@@ -1,6 +1,6 @@
 ---
 title: Oak-query's en indexering
-description: Leer hoe u indexen configureert in Adobe Experience Manager (AEM) 6.5.
+description: Leer hoe u indexen configureert in Adobe Experience Manager (AEM) 6.5 LTS.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '2577'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit artikel gaat over het configureren van indexen in AEM 6. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>Dit artikel gaat over het configureren van indexen in AEM 6.5 LTS. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Inleiding {#introduction}
 
@@ -50,7 +50,7 @@ Met de op Apache Oak gebaseerde backend kunnen verschillende indexen op de repos
 
 Één indexeerder is de **Index van het Bezit**, waarvoor de indexdefinitie in de bewaarplaats zelf wordt opgeslagen.
 
-De uitvoeringen voor **Lucene van Apache** en **zonne** zijn ook beschikbaar door gebrek, die allebei fullText indexeren steunen.
+De implementatie voor **Apache Lucene** is beschikbaar door gebrek, dat fullText het indexeren steunt.
 
 De **Traversal Index** wordt gebruikt als geen andere indexeerder beschikbaar is. Dit betekent dat de inhoud niet wordt geïndexeerd en de inhoudsknopen worden getransformeerd om gelijken aan de vraag te vinden.
 
@@ -109,7 +109,7 @@ De geordende index is een uitbreiding van de index van het Bezit. Het is echter 
 
 ### De index van volledige tekst met Lucene {#the-lucene-full-text-index}
 
-Een volledige tekstindexeerfunctie op basis van Apache Lucene is beschikbaar in AEM 6.
+Een volledige tekstindexeerfunctie op basis van Apache Lucene is beschikbaar in AEM 6.5 LTS.
 
 Als een full-text index wordt gevormd, gebruiken alle vragen die een full-text voorwaarde hebben de full-text index, geen kwestie als er andere voorwaarden zijn die worden geïndexeerd, en geen kwestie als er een wegbeperking is.
 
@@ -308,7 +308,7 @@ Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens
 
 #### Analysatoren maken door middel van compositie {#creating-analyzers-via-composition}
 
-Analyzers kunnen ook worden samengesteld op basis van `Tokenizers` , `TokenFilters` en `CharFilters` . U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde worden toegepast. Zie ook [ https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Analyzers kunnen ook worden samengesteld op basis van `Tokenizers` , `TokenFilters` en `CharFilters` . U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde worden toegepast.
 
 Bekijk deze knooppuntstructuur als voorbeeld:
 
@@ -359,87 +359,6 @@ De naam van de filters, charFilters, en tokenizers wordt gevormd door de fabriek
 Om het even welke configuratieparameter die voor de fabriek wordt vereist wordt gespecificeerd als bezit van de knoop in kwestie.
 
 Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggend knooppunt van het type `nt:file` voor het desbetreffende bestand te maken.
-
-### De zonne-index {#the-solr-index}
-
-Het doel van de index Solr is full-text onderzoek maar het kan ook worden gebruikt om onderzoek door weg, bezitsbeperkingen, en primaire typebeperkingen te indexeren. Dit betekent dat de Solr-index in Oak kan worden gebruikt voor elk type JCR-query.
-
-De integratie in AEM gebeurt op het niveau van de repository, zodat Solr een van de mogelijke indexen is die gebruikt kunnen worden in Oak, de nieuwe implementatie van de repository die geleverd wordt met AEM.
-
-Het kan worden gevormd om als verre server met de instantie van AEM te werken.
-
-### AEM configureren met één externe server {#configuring-aem-with-a-single-remote-solr-server}
-
-AEM kan ook worden geconfigureerd voor een externe Solr-serverinstantie:
-
-1. Download en extraheer de nieuwste versie van Solr. Voor meer informatie over hoe te om dit te doen, zie de [ documentatie van de Installatie van Apache Solr ](https://solr.apache.org/guide/6_6/installing-solr.html).
-1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elk segment in de map waarin Solr is uitgepakt:
-
-   * Voor de eerste gedeelde map maakt u de map:
-
-   `<solrunpackdirectory>\aemsolr1\node1`
-
-   * Voor de tweede schijf maakt u de map:
-
-   `<solrunpackdirectory>\aemsolr2\node2`
-
-1. Zoek de voorbeeldinstantie in het Solr-pakket. Deze bevindt zich in de map &quot; `example`&quot; in de hoofdmap van het pakket.
-1. Kopieer de volgende mappen van de voorbeeldinstantie naar de twee gedeelde mappen ( `aemsolr1\node1` en `aemsolr2\node2` ):
-
-   * `contexts`
-   * `etc`
-   * `lib`
-   * `resources`
-   * `scripts`
-   * `solr-webapp`
-   * `webapps`
-   * `start.jar`
-
-1. Maak in elk van de twee gedeelde mappen een map met de naam &quot; `cfg`&quot;.
-1. Plaats uw Solr en Zookeeper configuratiedossiers in de pas gecreëerde `cfg` omslagen.
-
-   >[!NOTE]
-   >
-   >Voor meer info over de configuratie van Solr en ZooKeeper, raadpleeg de [ documentatie van de Configuratie van Solr ](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) en [ ZooKeeper die Begonnen Gids ](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html) worden.
-
-1. Begin eerste shard met steun ZooKeeper door naar `aemsolr1\node1` te gaan en het volgende bevel in werking te stellen:
-
-   ```xml
-   java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
-   ```
-
-1. Start de tweede delen door naar `aemsolr2\node2` te gaan en de volgende opdracht uit te voeren:
-
-   ```xml
-   java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
-   ```
-
-1. Nadat beide kaarten zijn gestart, test u of alles in gebruik is door verbinding te maken met de Solr-interface op `http://localhost:8983/solr/#/`
-1. Start AEM en ga naar de webconsole op `http://localhost:4502/system/console/configMgr`
-1. Plaats de volgende configuratie onder **de verre serverconfiguratie van Oak Solr**:
-
-   * Kies HTTP-URL: `http://localhost:8983/solr/`
-
-1. Kies **Verre Solr** in de drop-down lijst onder **Oak Solr** serverleverancier.
-
-1. Ga naar CRXDE en login als Admin.
-1. Creeer een knoop genoemd **solrIndex** onder **eik:index**, en plaats de volgende eigenschappen:
-
-   * **type:** solr (van typeKoord)
-   * **async:** async (van typeKoord)
-   * **herdex:** waar (van type Boolean)
-
-1. Sla de wijzigingen op.
-
-#### Aanbevolen configuratie voor Solr {#recommended-configuration-for-solr}
-
-Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. De toegewezen eigenschapsindexen die al in AEM aanwezig zijn, worden aangepast en worden niet gebruikt met andere toepassingen.
-
-Om het behoorlijk te gebruiken, moet u de inhoud van het archief in de Solr Folder van het Huis direct plaatsen. Als er multi-knoopplaatsingen zijn, zou het direct onder de wortelomslag van elke knoop moeten gaan.
-
-Aanbevolen Solr-configuratiebestanden
-
-[Bestand ophalen](assets/recommended-conf.zip)
 
 ### AEM Indexeringsgereedschappen {#aem-indexing-tools}
 

@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Oak-in werking stelt steunt het indexeren van gebruiksgevallen op de bevellijn z
 
 De overkoepelende voordelen van het gebruik van de bevelbenadering van het eak-looppas.jar indexbevel voor het beheren van indexen van Oak zijn:
 
-1. Oak-run index command biedt een nieuwe indexeringstoolset voor AEM 6.4.
+1. Oak-run index command biedt een nieuwe indexerende toolset sinds AEM 6.4.
 1. Oak-run verkort tijd-aan-herdex die herindextijden op grotere bewaarplaatsen vermindert.
 1. Oak-run vermindert het verbruik van bronnen tijdens herindexering in AEM, wat resulteert in over het algemeen betere systeemprestaties.
 1. Oak-run biedt out-of-band herindexering, ondersteunende situaties waarin productie beschikbaar moet zijn, en kan geen onderhoud of downtime tolereren die anders vereist zijn om opnieuw te indexeren.
