@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6470'
+source-wordcount: '5052'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,6 @@ ht-degree: 1%
 # Optimalisatie van prestaties {#performance-optimization}
 
 >[!NOTE]
->
->Voor algemene richtlijnen over prestaties, lees de [ pagina van de Richtlijnen van Prestaties ](/help/sites-deploying/performance-guidelines.md).
 >
 >Voor meer informatie over het oplossen van problemen en het bevestigen van prestatieskwesties, zie ook de [ boom van Prestaties ](/help/sites-deploying/performance-tree.md).
 >
@@ -203,10 +201,6 @@ Bij het optimaliseren van prestaties moet rekening worden gehouden met bepaalde 
 
 Bepaalde aspecten van AEM (en/of de onderliggende opslagplaats) kunnen worden geconfigureerd om de prestaties te optimaliseren. Hieronder vindt u mogelijkheden en suggesties. Voordat u wijzigingen aanbrengt, moet u zeker weten of en hoe u de desbetreffende functionaliteit gebruikt.
 
->[!NOTE]
->
->Zie [ Optimalisering van Prestaties ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
 ### Indexering zoeken {#search-indexing}
 
 Vanaf AEM 6.0 gebruikt Adobe Experience Manager een op Oak gebaseerde repository architectuur.
@@ -224,6 +218,7 @@ Wanneer bijvoorbeeld afbeeldingen (of DAM-elementen in het algemeen) worden geü
 
 De workflowengine gebruikt Apache Sling-taakwachtrijen voor het verwerken en plannen van de verwerking van werkitems. De volgende taakrijservices zijn standaard gemaakt in de Apache Sling Job Queue Configuration-service factory voor het verwerken van werkstroomtaken:
 
+<!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * De Rij van het Werkschema van Granite: De meeste werkschemastappen, zoals degenen die activa DAM verwerken, gebruiken de dienst van de Rij van de Werkstroom van Granite.
 * De Externe Rij van de Baan van het Proces van Granite Werkschema: Deze dienst wordt gebruikt voor speciale externe werkschemastappen die typisch voor contact met een extern systeem en opiniepeiling voor resultaten worden gebruikt. De stap InDesign Media Extraction Process wordt bijvoorbeeld geïmplementeerd als een extern proces. De workflowengine gebruikt de externe wachtrij voor het verwerken van de opiniepeiling. (Zie [ com.day.cq.workflow.exec.WorkflowExternalProcess ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
@@ -462,7 +457,6 @@ U kunt kiezen uit verschillende gereedschappen voor het genereren van de belasti
 
 * [ JMeter ](https://jmeter.apache.org/)
 * [ Laad Runner ](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [ InfraRED ](https://www.infraredsoftware.com/)
 * [ Java™ Interactief Profiel ](https://jiprof.sourceforge.net/)
 
 Na optimalisering, test opnieuw om het effect te bevestigen.
@@ -642,87 +636,3 @@ Volg de onderstaande richtlijnen om ervoor te zorgen dat bestanden correct in he
 
 * Zorg ervoor dat bestanden altijd de juiste extensie hebben.
 * Vermijd generieke serverscripts, die URL&#39;s zoals `download.jsp?file=2214` hebben. Als u URL&#39;s met de bestandsspecificatie wilt gebruiken, moet u het script opnieuw schrijven. In het vorige voorbeeld is dit herschrijven `download.2214.pdf` .
-
-## Back-upprestaties {#backup-performance}
-
-Deze sectie bevat een reeks benchmarks die worden gebruikt om de prestaties van AEM-back-ups en de effecten van back-upactiviteiten op de prestaties van de toepassing te beoordelen. AEM-back-ups zijn tijdens de uitvoering van het systeem aanzienlijk belast. Adobe meet dit effect en het effect van de instellingen voor back-upvertraging die proberen deze effecten te moduleren. Het doel is om enkele referentiegegevens te bieden over de verwachte prestaties van back-ups in realistische configuraties en hoeveelheden productiegegevens, en om u te helpen bij het schatten van de back-uptijden voor geplande systemen.
-
-### Referentiemilieu {#reference-environment}
-
-#### Fysiek systeem {#physical-system}
-
-De resultaten die in dit document worden gerapporteerd, zijn verkregen uit benchmarks die in een referentieomgeving met de volgende configuratie worden uitgevoerd. Deze configuratie is gelijkaardig aan een typische productiemilieu in een gegevenscentrum:
-
-* HP ProLiant DL380 G6, 8 CPU&#39;s x 2,533 GHz
-* Serial Attached SCSI 300 GB harde schijven (10.000 rpm)
-* RAID-controller voor hardware; acht schijven in een RAID0+5-array
-* VMware image CPU x 2 Intel Xeon® E5540 @ 2,53 GHz
-* Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
-* Single Author-instantie
-
-Het schijfsubsysteem op deze server is snel en vertegenwoordigt een krachtige RAID-configuratie die in een productieserver kan worden gebruikt. Back-upprestaties kunnen gevoelig zijn voor schijfprestaties en de resultaten in deze omgeving weerspiegelen de prestaties bij een snelle RAID-configuratie. Het VMWare-image is geconfigureerd voor één groot schijfvolume dat zich fysiek in de lokale schijfopslag op de RAID-array bevindt.
-
-De AEM-configuratie plaatst de opslagplaats en datastore op hetzelfde logische volume, naast het besturingssysteem en de AEM-software. De doelmap voor back-ups bevindt zich ook op dit logische bestandssysteem.
-
-#### Gegevensvolumes {#data-volumes}
-
-De volgende tabel illustreert de grootte van gegevensvolumes die worden gebruikt in de back-upbenchmarks. De initiële basislijninhoud wordt eerst geïnstalleerd, waarna extra bekende hoeveelheden gegevens worden toegevoegd om de inhoud waarvan een back-up wordt gemaakt, groter te maken. Back-ups worden gemaakt in specifieke stappen, zodat de inhoud van de back-up aanzienlijk toeneemt en het resultaat per dag groter wordt. De distributie van inhoud (pagina&#39;s, afbeeldingen, tags) is ruwweg gebaseerd op een realistische compositie van productieelementen. Pagina&#39;s, afbeeldingen en tags zijn beperkt tot maximaal 800 onderliggende pagina&#39;s. Elke pagina bevat de volgende onderdelen: titel, Flash, tekst/afbeelding, video, presentatie, formulier, tabel, cloud en carrousel. Afbeeldingen worden geüpload uit een groep van 400 unieke bestanden, van 37 kB tot 594 kB.
-
-| Inhoud | Knooppunten | Pagina&#39;s | Afbeeldingen | Tags |
-|---|---|---|---|---|
-| Basisinstallatie | 69 610 | 562 | 256 | 237 |
-| Kleine inhoud voor incrementele back-up |  | +100 | +2 | +2 |
-| Grote inhoud voor volledige back-up |  | +10 000 | +100 | +100 |
-
-De reservebenchmark wordt herhaald met de extra inhoudssets die bij elke herhaling worden toegevoegd.
-
-#### Benchmark Scenarios {#benchmark-scenarios}
-
-De back-upbenchmarks hebben betrekking op twee hoofdscenario&#39;s: back-ups wanneer het systeem onder aanzienlijke toepassingsbelasting staat en back-ups wanneer het systeem niet actief is. Hoewel de algemene aanbeveling is dat back-ups moeten worden uitgevoerd wanneer AEM zo inactief mogelijk is, zijn er situaties waarin het nodig is dat de back-up moet worden uitgevoerd wanneer het systeem onder belasting is.
-
-* **Niet-actieve Staat** - de steunen worden uitgevoerd met geen andere activiteit op AEM.
-* **onder Lading** - de steunen worden uitgevoerd terwijl het systeem onder 80% lading van online processen is. De back-upvertraging varieerde om de impact op de belasting te zien.
-
-De back-uptijden en -grootte van de resulterende back-up worden opgehaald uit de logbestanden van de AEM-server. Het wordt normaal aanbevolen om back-ups te plannen voor &#39;off-times&#39; wanneer AEM niet actief is, bijvoorbeeld &#39;s nachts. Dit scenario is representatief voor de aanbevolen aanpak.
-
-De lading bestaat uit gecreeerde pagina&#39;s, verwijderde pagina&#39;s, traversals, en vragen met de meeste lading die uit paginalandangen en vragen komt. Door te veel pagina&#39;s toe te voegen en te verwijderen wordt de werkruimte steeds groter en wordt voorkomen dat de back-ups worden voltooid. De verdeling van het laden die het script gebruikt, is 75% pagina-traversals, 24% query&#39;s en 1% pagina-ontwerpen (één niveau zonder geneste subpagina&#39;s). De piekgemiddelde transacties per seconde op een nutteloos systeem worden bereikt met vier gezamenlijke draden, die wanneer het testen van file-ups onder lading wordt gebruikt.
-
-De impact van de belasting op de back-upprestaties kan worden geschat door het verschil tussen prestaties met en zonder deze toepassingsbelasting. De impact van de back-up op de doorvoer van de toepassing wordt gevonden door de doorvoerscenario&#39;s per uur te vergelijken met en zonder een gelijktijdige back-up aan de gang, en met back-ups die werken met verschillende instellingen voor &quot;back-upvertraging&quot;.
-
-* **het Plaatsen van de Vertraging** - voor verscheidene van de scenario&#39;s, werd de reservevertraging het plaatsen ook gevarieerd, gebruikend waarden van 10 milliseconden (gebrek), 1 milliseconden, en 0 milliseconden, om te onderzoeken hoe dit plaatsen de prestaties van steunen beïnvloedde.
-* **Reservekopype** - Alle steunen waren externe steunen van de bewaarplaats die aan een reservefolder zonder het creëren van een ritssluiting wordt gemaakt, behalve in één geval voor vergelijking waar het teerbevel direct werd gebruikt. Aangezien incrementele back-ups niet naar een ZIP-bestand kunnen worden gemaakt of wanneer de voorafgaande volledige back-up een ZIP-bestand is, wordt de back-upmapmethode het meest gebruikt in productiesituaties.
-
-### Samenvatting van de resultaten {#summary-of-results}
-
-#### Back-uptijd en -doorvoer {#backup-time-and-throughput}
-
-Het belangrijkste resultaat van deze benchmarks is te laten zien hoe de back-uptijden variëren afhankelijk van het back-uptype en de totale hoeveelheid gegevens. In het volgende diagram wordt de verkregen back-uptijd weergegeven met de standaardback-upconfiguratie, als een functie van het totale aantal pagina&#39;s.
-
-![ chlimage_1-81 ](assets/chlimage_1-81.png)
-
-De reservetijden op een nutteloze instantie zijn vrij verenigbaar, die gemiddelde 0.608 MB per seconde, ongeacht volledige, of stijgende steunen (zie grafiek hieronder). De back-uptijd is gewoon een functie van de hoeveelheid gegevens waarvan een back-up wordt gemaakt. De tijd om een volledige steun te voltooien neemt duidelijk met het totale aantal pagina&#39;s toe. De tijd om een stijgende steun te voltooien klimt ook met het totale aantal pagina&#39;s, maar bij een veel lager tarief. De tijd die nodig is om de incrementele back-up te voltooien is veel korter vanwege de relatief kleine hoeveelheid gegevens waarvan een back-up wordt gemaakt.
-
-De grootte van de gemaakte back-up is de belangrijkste bepalende factor voor de tijd die nodig is om de back-up te voltooien. In het volgende diagram wordt de tijd weergegeven die is ingenomen als functie van de uiteindelijke back-upgrootte.
-
-![ chlimage_1-82 ](assets/chlimage_1-82.png)
-
-Dit diagram toont aan dat zowel incrementele als volledige back-ups een eenvoudig formaat versus tijd-patroon volgen dat Adobe als doorvoer kan meten. Back-uptijden op een inactieve instantie zijn redelijk consistent, met een gemiddelde van 0,61 MB per seconde, ongeacht de volledige of incrementele back-ups op de benchmarkomgeving.
-
-#### Back-upvertraging {#backup-delay}
-
-De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot welke steunen productiewerklasten kunnen interfereren. De parameter geeft een wachttijd in milliseconden aan, die per bestand in de back-upbewerking wordt afgedrukt. Het algemene effect hangt gedeeltelijk af van de grootte van de betrokken bestanden. Het meten van back-upprestaties in MB/sec biedt een redelijke manier om de effecten van vertraging op de back-up te vergelijken.
-
-* Als u een back-up tegelijkertijd uitvoert met de normale belasting van de toepassing, heeft dit een negatieve invloed op de doorvoer van de normale laadbewerking.
-* De invloed kan gering zijn (maar niet minder dan 5%) of significant, waardoor de productie met maar liefst 75% afneemt. Het hangt waarschijnlijk het meest van de toepassing af.
-* Back-up is geen zware belasting voor de CPU en dus zouden de CPU-intensieve productiewerklasten minder worden beïnvloed door back-up dan de I/O-intensieve werklasten.
-
-![ chlimage_1-83 ](assets/chlimage_1-83.png)
-
-Ter vergelijking: de doorvoer die wordt verkregen via een back-up van een bestandssysteem (&#39;tar&#39;) om back-ups te maken van dezelfde opslagplaats. De prestaties van het teer zijn vergelijkbaar, maar iets hoger dan de back-up met een vertraging die op nul is ingesteld. Zelfs een kleine vertraging verlaagt de back-updoorvoer aanzienlijk en de standaardvertraging van 10 milliseconden resulteert in een sterk verminderde doorvoer. In situaties waarin back-ups kunnen worden gepland wanneer het totale gebruik van de toepassing laag is of wanneer de toepassing inactief kan zijn, verlaagt u de vertraging tot onder de standaardwaarde, zodat de back-up sneller kan worden uitgevoerd.
-
-De daadwerkelijke impact van de doorvoer van toepassingen van een continue back-up is afhankelijk van de toepassings- en infrastructuurdetails. De vertragingswaarde moet worden gekozen door een empirische analyse van de toepassing, maar moet zo klein mogelijk worden gekozen, zodat de back-ups zo snel mogelijk kunnen worden voltooid. Omdat er slechts een zwakke correlatie is tussen de keuze van vertragingswaarde en de invloed op de doorvoer van de toepassing, zou de keuze van vertraging kortere algemene back-uptijden moeten begunstigen om de algemene impact van back-ups te minimaliseren. Een back-up die acht uur duurt, maar die invloed heeft op de doorvoer met -20%, heeft waarschijnlijk een groter algemeen effect dan een back-up die twee uur duurt, maar die invloed heeft op de doorvoer met -30%.
-
-### Verwijzingen {#references}
-
-* [Beheer - Back-up en herstel](/help/sites-administering/backup-and-restore.md)
-* [Beheer - Capaciteit en volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)
