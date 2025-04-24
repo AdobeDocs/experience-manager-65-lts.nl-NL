@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '2961'
 ht-degree: 0%
 
 ---
@@ -153,13 +153,14 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | **Linux®, die op de distributie van Red Hat®** wordt gebaseerd | A: Ondersteund `[1]` `[2]` |
 | Linux®, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[1]` |
 | Linux®, gebaseerd op SUSE®-distributie | A: Ondersteund `[1]` |
+| Microsoft® Windows Server 2022 | R: Ondersteund |
 
 1. Linux® Kernel 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®.
 1. Linux®-distributie ondersteund door Adobe Managed Services.
 
    >[!NOTE]
    >
-   >Voor Linux-gebaseerde servers (OSGI- en JEE-stack) vereist de invoegtoepassing AEM Forms runtime-afhankelijkheden, zoals:
+   >Voor Linux-gebaseerde servers vereist de invoegtoepassing AEM Forms runtime-afhankelijkheden, zoals:
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -176,13 +177,13 @@ Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productl
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-In alle andere gevallen waarin AEM wordt geïmplementeerd in Azure of AWS, of in elke andere cloudcomputeromgeving, is de ondersteuning van Adobe beperkt tot de virtuele computeromgeving. Die virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM dat in een van deze cloudomgevingen wordt uitgevoerd, moet onafhankelijk van elke cloudservice die specifiek is voor de cloud computing-omgeving kunnen worden gereproduceerd. Dat wil zeggen, tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
+In alle andere gevallen van implementatie van AEM op Azure of AWS, of een andere cloud computing-omgeving, is de ondersteuning van Adobe beperkt tot de virtuele rekenomgeving. Die virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM dat in een van deze cloudomgevingen wordt uitgevoerd, moet onafhankelijk van een cloudservice die specifiek is voor de cloud computing-omgeving reproduceerbaar zijn. Dat wil zeggen, tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
 
 Voor aanbevelingen over het implementeren van AEM op Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan om rechtstreeks met de cloudprovider samen te werken. Of u werkt samen met Adobe-partners die de implementatie van AEM ondersteunen in de cloud-omgeving van uw keuze. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur, om aan uw specifieke prestaties, lading, scalability, en veiligheidsvereisten te voldoen.
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
+De Dispatcher is het onderdeel voor caching en taakverdeling. [Download de nieuwste versie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) van de Dispatcher. Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -268,7 +269,7 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
  </tbody>
 </table>
 
-1. Uitgebreide Versie van de Steun van Firefox [ Leer meer op mozilla.org ](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Uitgebreide ondersteuningsrelease van Firefox [Meer informatie op mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Ondersteuning voor Apple iPad
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
@@ -339,26 +340,26 @@ Als u Dynamic Media gebruikt op Linux®, moet aan de volgende voorwaarden worden
 >
 >De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
 >
->Daarom adviseert Adobe dat als u zulk een systeem in werking stelt dat u NUMA gebruikend de **numa=off** laarsoptie uitzet om kernel te vermijden die deze processen doden.
+>Daarom raadt Adobe aan om, als u een dergelijk systeem gebruikt, NUMA uit te schakelen met de **opstartoptie numa=off** om te voorkomen dat de kernel deze processen doodt.
 
 >[!NOTE]
 >
->**de gastheernaam van de Server moet oplossen:** ervoor zorgen dat de gastheernaam van de server aan een IP adres oplosbaar is. Als dat niet mogelijk is, voeg dan de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
+>**Serverhostnaam moet worden omgezet:** Zorg ervoor dat de hostnaam van de server kan worden omgezet naar een IP-adres. Als dat niet mogelijk is, voeg dan de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Ramen {#windows}
 
 * Microsoft® Windows Server 2016
-* Wissel ruimte om die gelijk is aan ten minste twee keer de hoeveelheid fysiek geheugen (RAM)
+* Ruimte wisselen gelijk aan minstens tweemaal de hoeveelheid fysiek geheugen (RAM)
 
-Als u Dynamic Media op Windows wilt gebruiken, installeert u Microsoft® Visual Studio 2010, 2013 en 2015, herdistribueerbaar voor x64 en x86.
+Om Dynamische Media op Vensters te gebruiken, installeer Microsoft® Visual Studio 2010, 2013, en 2015 redistributable voor x64 en x86.
 
 Voor Windows x64:
 
 * Ontvang Microsoft® Visual Studio 2010 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Download Microsoft® Visual Studio 2013 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Download Microsoft® Visual Studio 2015 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Krijg Microsoft® Visual Studio 2015 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=48145 ](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Voor Windows x86:
 
@@ -386,15 +387,7 @@ Voor Windows x86:
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
-   <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (Afgeschaft)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
@@ -402,29 +395,13 @@ Voor Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (Afgekeurd) <br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019 <br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (Afgekeurd) <br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (Afgekeurd) <br /> </td>
-   <td>MPP</td>
+   <td>Microsoft® Publisher 2019<br /> </td>
+   <td>BAR</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM F en TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (afgekeurd)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM F en TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -456,18 +433,18 @@ Voor Windows x86:
 * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
 * 2,35 GB beschikbare ruimte op de vaste schijf
-* Monitorresolutie van 1024 x 768 pixels of meer
-* Versnelling van videohardware (optioneel)
+* Monitorresolutie van 1024 x 768 pixels of hoger
+* Hardwareversnelling voor video (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
 * Beheerdersrechten voor het installeren van Designer
-* Microsoft Visual C++ 2019 (VC 14.28 of groter) 32-bits runtime voor AEM Forms Designer met 32 bits
-* Microsoft Visual C++ 2019 (VC 14.28 of groter) runtime met 64 bits voor AEM Forms Designer met 64 bits (voor zowel de stapel OSGI als JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime voor 32-bits AEM Forms Designer
+* Microsoft Visual C++ 2019 (VC 14.28 of hoger) 64-bits runtime voor 64-bits AEM Forms Designer
 
-[AEM Forms-ontwerper installeren en configureren](/help/forms/using/installing-configuring-designer.md)
+[AEM Forms designer installeren en configureren](/help/forms/using/installing-configuring-designer.md)
 
-### Vereisten voor terugschrijven van AEM Assets XMP-metagegevens {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Vereisten voor het terugschrijven van AEM Assets XMP-metagegevens {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
+XMP-terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 
 * **Werkende Systemen:**
 
@@ -478,6 +455,6 @@ Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platf
 
 * **Bestandsindelingen**: JPEG, PNG, TIFF, PDF, INDD, AI en EPS.
 
-### Vereisten voor AEM Assets voor het verwerken van metadata-zware assets op Linux® {#assetsonlinux}
+### Vereisten voor AEM Assets om zwaar materiaal met metagegevens te verwerken op Linux® {#assetsonlinux}
 
 Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .
