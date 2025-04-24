@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d9bb95b41f065ced60ceef6eb6f2c08ebf115d2d
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -75,9 +75,9 @@ De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met
 
 **het Tijdelijke Systeem van het Dossier** Een langzaam lokaal dossiersysteem kan interactieve prestatiesproblemen veroorzaken, vooral wanneer het zoeken, omdat de onderzoeksindexen op de lokale schijf worden opgeslagen. Het kan ook problemen met de middelenverwerking veroorzaken als het opdrachtregelproces wordt gebruikt.
 
-**Interactieve prestatiesproblemen van de Finder van 0} AEM DAM**, vaak ervaren in onderzoeken worden veroorzaakt door hoog gebruik van CPU toe te schrijven aan vele gezamenlijke gebruikers of andere CPU-consumerende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als een hoge CPU-belasting wordt veroorzaakt door middelenverwerking en veel gelijktijdige gebruikers, wordt u aangeraden extra clusterknooppunten toe te voegen.
+**Interactieve prestatiesproblemen van de Finder van 0} AEM DAM**, vaak ervaren in onderzoeken worden veroorzaakt door hoog gebruik van CPU toe te schrijven aan vele gezamenlijke gebruikers of andere CPU-consumerende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als hoge CPU-belasting wordt veroorzaakt door middelenverwerking en veel gelijktijdige gebruikers, raadt Adobe aan extra clusterknooppunten toe te voegen.
 
-**AEM DAM van het Werkschema** Lange-lopende werkschemaprocessen tijdens activaopname veroorzaken de prestatieproblemen van de activaverwerking. Afhankelijk van het type activa dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. De dag adviseert dat u het aantal andere processen vermindert die op het systeem lopen en het aantal beschikbare cpu&#39;s verhoogt door clusterknopen toe te voegen.
+**AEM DAM van het Werkschema** Lange-lopende werkschemaprocessen tijdens activaopname veroorzaken de prestatieproblemen van de activaverwerking. Afhankelijk van het type activa dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. Adobe raadt u aan het aantal andere processen dat op het systeem wordt uitgevoerd te verminderen en het aantal beschikbare CPU&#39;s te verhogen door clusterknooppunten toe te voegen.
 
 **NAS Connectiviteit** De slechte netwerkconnectiviteit aan NAS veroorzaakt interactieve prestatiesproblemen, omdat de toegang tot van nieuwe knopen tijdens activaverwerking wordt vertraagd toe te schrijven aan netwerklatentie. Ook, beïnvloedt de langzame netwerkproductie negatief productie, maar ook prestaties van de activaverwerking, omdat het laden en het bewaren van uitvoeringen wordt vertraagd.
 
