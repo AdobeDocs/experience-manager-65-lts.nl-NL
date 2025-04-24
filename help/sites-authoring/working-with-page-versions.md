@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1567'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,13 @@ Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaal
    * om een wijziging die u hebt aangebracht in de pagina ongedaan te maken.
 * Vergelijk de huidige versie van een pagina met een vorige versie:
    * om verschillen in de tekst en afbeeldingen te benadrukken.
+
+>[!NOTE]
+>
+>Alleen inhoud wordt versioned in de AEM-opslagplaats. Dynamische bronnen zoals code, CSS en JavaScript hebben geen versiebeheer.
+>
+>* Wanneer u versies weergeeft, wordt de inhoud weergegeven met de huidige code, CSS en JavaScript van de opslagplaats.
+>* Bij het herstellen van versies wordt alleen de inhoud hersteld en worden de huidige code, CSS en JavaScript van de opslagplaats erop toegepast.
 
 ## Een nieuwe versie maken {#creating-a-new-version}
 
