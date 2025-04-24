@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stap 19</strong></td>
    <td>100% CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html</a></td>
+   <td>Zie <a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at"> CPU bij 100% </a></td>
   </tr>
   <tr>
    <td><strong>Stap 20</strong></td>
@@ -288,7 +288,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong> Stappen 45 <br /> en 47 </strong><br /> </td>
    <td>HTTP/2 gebruiken</td>
-   <td>Zie de Gem-sessie voor de stappen 37,38 en 39. Ook, controleer <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html"> dit </a> forumpost op HTTP/2 steun.<br /> </td>
+   <td>Zie de Zitting van Gem voor stappen 37,38 en 39.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 49</strong></td>

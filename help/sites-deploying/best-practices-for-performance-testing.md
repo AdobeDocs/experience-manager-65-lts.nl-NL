@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,6 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 
 * **Laad Runner** is een ladingstestproduct van de ondernemingsrang. Er is een gratis evaluatieversie beschikbaar. Meer informatie kan in [ https://www.microfocus.com/en-us/portfolio/performance-engineering/overview ](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview) worden gevonden
 
-* Het laden van de website testende hulpmiddelen zoals [ Vercara ](https://vercara.com/website-performance-management) kan ook worden gebruikt.
 * Bij het testen van mobiele of responsieve websites moet een aparte set gereedschappen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Tot de meer gebruikte gereedschappen behoren onder meer:
 
    * **[Voorwaardiger van de Verbinding van het Netwerk ](https://nshipster.com/network-link-conditioner/)** - het verstrekt gemakkelijk om UI te gebruiken en werkt op een vrij laag niveau op de voorzien van een netwerkstapel. Dit omvat versies voor OS X en iOS;
@@ -108,21 +107,18 @@ Op systemen met de steunen MongoDB, verstrekt AEM verscheidene [ JMX ](/help/sit
 
 * De **Geconsolideerde Statistieken van het Geheime voorgeheugen** MBean. Het kan direct worden betreden door te gaan:
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DConsolidated+Cache+statistics%2Ctype%3DConsolidatedCacheStats`
 
 Voor het geheime voorgeheugen genoemd **document-Afschuiving**, zou het slagtarief over `.90` moeten zijn. Als de raaksnelheid lager is dan 90%, is het waarschijnlijk dat u de `DocumentNodeStoreService` -configuratie moet bewerken. Ondersteuning van Adobe-producten kan optimale instellingen voor uw omgeving aanbevelen.
 
 * De **Statistieken van de Bewaarplaats van Oak** boon. Het kan direct worden betreden door te gaan:
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DOak+Repository+Statistics%2Ctype%3DRepositoryStats`
 
 De **ObservationQueueMaxLength** sectie toont het aantal gebeurtenissen in de de observatierij van Oak over de laatste uren, notulen, seconden, en weken. Zoek het grootste aantal gebeurtenissen in de sectie &quot;per uur&quot;. Vergelijk dit getal met de instelling `oak.observation.queue-length` . Als het hoogste getal dat voor de waarnemingswachtrij wordt weergegeven, de instelling `queue-length` overschrijdt:
 
-1. Maak een bestand met de naam: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` dat de parameter bevat `oak.observation.queue‐length=50000`
+1. Maak een bestand met de naam: `com.adobe.granite.repository.impl.SlingRepositoryManager.config` dat de parameter bevat `oak.observation.queue‐length=50000`
 1. Plaats de toepassing onder de map /crx-quickstart/install.
-
->[!NOTE]
->Zie [ AEM 6.x | Tips voor afstemmen van prestaties ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 De standaardinstelling is 10.000, maar de meeste implementaties moeten deze verhogen tot 20.000 of 50.000.
 
@@ -150,10 +146,9 @@ Nadat u prestatietests op de auteur hebt uitgevoerd, moeten eventuele problemen 
 * Bekijk het foutenlogboek voor fouten of waarschuwingen. Voor meer informatie, zie [ het Registreren ](/help/sites-deploying/configure-logging.md).
 * Hardwarebronnen van het systeem controleren, zoals geheugen- en CPU-gebruik, schijf-I/O of netwerk-I/O. Deze middelen zijn vaak de oorzaken van prestatiesknelpunten.
 * Optimaliseer de architectuur van de pagina&#39;s en hoe zij worden gericht om het gebruik van URL parameters te minimaliseren om voor zoveel mogelijk caching mogelijk toe te staan.
-* Volg de [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) en [ het stemmen van Prestaties uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html) documentatie.
-
+* Volg de [ documentatie van de Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md).
 * Als er problemen optreden bij het bewerken van bepaalde pagina&#39;s of componenten op auteur-instanties, gebruikt u de TouchUI-ontwikkelaarsmodus om de pagina in kwestie te inspecteren. Dit geeft een indeling van elk inhoudsgebied op de pagina en de laadtijd.
-* Alle JS en CSS op de site miniaturen. Zie dit [ blogbericht ](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Alle JS en CSS op de site miniaturen..
 * Elimineer ingesloten CSS en JS uit de componenten. Ze moeten worden opgenomen in en geminiateerd bij de bibliotheken aan de clientzijde om het aantal aanvragen te minimaliseren dat vereist is om de pagina weer te geven.
 * Om de serververzoeken te inspecteren en te zien welke het langst nemen, gebruik browser hulpmiddelen zoals het lusje van het Netwerk van Chrome.
 

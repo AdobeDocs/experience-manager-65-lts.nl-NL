@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -100,10 +100,6 @@ Houd tijdens het migreren rekening met de volgende grote verschillen tussen de k
 </table>
 
 Met andere woorden, migrerend een sectie van uw UI van klassieke UI aan de aanraking UI betekent om een *widget ExtJS* aan a *Sling component* te haven. Om dit te vergemakkelijken, is de aanraak UI gebaseerd op het kader van Granite UI, dat reeds sommige componenten van het Verkopen voor UI (die als componenten van Granite UI wordt bedoeld) verstrekt.
-
-Controleer voordat u begint de status en de bijbehorende aanbevelingen:
-
-* [Aanbevelingen voor gebruikersinterface voor klanten](/help/sites-deploying/ui-recommendations.md)
 
 De basisbeginselen van de ontwikkeling van de aanraakinterface bieden een solide basis:
 

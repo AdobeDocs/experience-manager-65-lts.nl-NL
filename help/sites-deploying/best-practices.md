@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -71,10 +71,6 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
 </table>
 
 ## UI {#ui}
-
-De beste werkwijzen rond de gebruikersinterface worden hier beschreven:
-
-[Aanbevelingen voor gebruikersinterface voor klanten](/help/sites-deploying/ui-recommendations.md)
 
 AEM heeft momenteel twee gebruikersinterface&#39;s: een klassieke gebruikersinterface en interface met aanraakfunctionaliteit in dezelfde release. Daarom moeten klanten een besluit nemen over welk gebruik tijdens de uitvoering van het project moet worden gemaakt. Dit document is bedoeld om u te helpen bij het zoeken naar de juiste keuze.
 

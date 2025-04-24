@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,6 @@ Voordat een serieuze discussie begint over het ontwikkelen van componenten, moet
   [ het standaardgebruikersinterface ](/help/sites-developing/touch-ui-concepts.md) is gebaseerd op de verenigde gebruikerservaring voor Adobe Experience Cloud, gebruikend de onderliggende technologieën van [ Koraal UI ](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [ graniet UI ](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Klassieke UI**
 Gebruikersinterface gebaseerd op ExtJS-technologie die is vervangen door AEM 6.4.
-
-Zie {de Aanbevelingen van de Interface 0} UI voor Klanten ](/help/sites-deploying/ui-recommendations.md) voor meer details.[
 
 Componenten kunnen worden geïmplementeerd ter ondersteuning van de interface met aanraakbediening, de klassieke interface of beide. Wanneer het bekijken van een standaardinstantie zult u ook uit-van-de-dooscomponenten zien die oorspronkelijk voor klassieke UI, of aanraking-toegelaten UI, of allebei werden ontworpen.
 
