@@ -4,9 +4,9 @@ description: Leer meer over de flexibiliteit van de Universal Editor en hoe deze
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ De Universal Editor is een service die in combinatie met AEM werkt om inhoud zon
 
 De Universal Editor wordt ondersteund door:
 
-* AEM 6.5 LTS
+* AEM 6,5 LTS GA
    * Zowel on-premisse als AMS hosting worden gesteund.
-* [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (de dienstpak 21 of 22 plus een eigenschapspak)
+* [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (de dienstpak 21 of 22 plus een eigenschappak of hoger)
    * Zowel on-premisse als AMS hosting worden gesteund.
 * [ AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versie `2023.8.13099` of hoger)
 
@@ -50,29 +50,15 @@ Dit document is gericht op AEM 6.5 LTS-ondersteuning van de Universal Editor.
 
 Als u de Universal Editor wilt testen, moet u:
 
-1. [Werk uw AEM-ontwerpinstantie bij en configureer deze.](#update-configure-aem)
+1. [Configureer services op uw AEM-ontwerpinstantie.](#configure-aem)
 1. [Stel een lokale Universal Editor-service in.](#set-up-ue)
 1. [Pas de verzender aan om de Universal Editor Service toe te staan.](#update-dispatcher)
 
 Zodra u de opstelling hebt voltooid, kunt u [ instrument uw toepassingen om de Universele Redacteur te gebruiken.](#instrumentation)
 
-### AEM bijwerken {#update-aem}
+### Services configureren {#configure-aem}
 
-Servicepack 21 of 22 en een functiepakket voor AEM zijn vereist om de Universal Editor met AEM 6.5 te kunnen gebruiken.
-
-#### Nieuwste Service Pack toepassen {#latest}
-
-Zorg ervoor dat u minstens de dienstpak 21 of 22 voor AEM 6.5 in werking stelt. U kunt het recentste de dienstpak van [ Distributie van de Software downloaden.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-
-#### Universal Editor-functiepakket installeren {#feature-pack}
-
-Installeer het **Universele Pak van de Eigenschap van de Redacteur voor AEM 6.5** [ beschikbaar op de Distributie van de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
-
-Als u reeds de dienstpak 23 of hoger in werking stelt, is het eigenschappak niet noodzakelijk.
-
-### Services configureren {#configure-services}
-
-Het eigenschappak installeert een aantal nieuwe pakketten waarvoor extra configuratie nodig is.
+De Universele Redacteur baseert zich op een aantal diensten die moeten worden gevormd.
 
 #### Stel het kenmerk SameSite in voor het cookie `login-token` . {#samesite-attribute}
 
