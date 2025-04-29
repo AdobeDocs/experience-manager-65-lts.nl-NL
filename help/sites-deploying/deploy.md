@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -38,20 +38,20 @@ Op deze pagina vindt u:
    * [Onverpakte installatiemap](#unpacked-install-directory)
    * [Starten en stoppen](#starting-and-stopping)
 
-<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
+Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanceerde en gedetailleerde informatie op de volgende subpagina&#39;s:
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md) -->
+* [Technische vereisten](/help/sites-deploying/technical-requirements.md)
+* [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
+* [Aangepaste standalone installatie](/help/sites-deploying/custom-standalone-install.md)
+* [Installeren van toepassingsserver](/help/sites-deploying/application-server-install.md)
+* [Start en stop van opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configureren](/help/sites-deploying/configuring.md)
+* [Upgrade uitvoeren naar AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
+* [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
+* [Webconsole](/help/sites-deploying/web-console.md)
+* [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
+* [Aanbevolen procedures](/help/sites-deploying/best-practices.md)
+* [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
 
 ## Basisconcepten {#basic-concepts}
 
@@ -265,28 +265,28 @@ AEM start en leidt uw webbrowser automatisch om naar de juiste pagina, meestal d
 
 ![ teken binnen het scherm ](assets/screen_shot_2019-04-08at83533am.png)
 
-<!-- 
-After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
+
+Nadat u bent aangemeld, hebt u toegang tot AEM. Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw rol:
 
 * [Authoring](/help/sites-authoring/first-steps.md)
-* [Administering](/help/sites-administering/home.md)
-* [Developing](/help/sites-developing/getting-started.md)
-* [Managing](/help/managing/best-practices.md)
+* [Beheer](/help/sites-administering/home.md)
+* [Ontwikkelen](/help/sites-developing/getting-started.md)
+* [Beheer](/help/managing/best-practices.md)
 
-## Advanced Deployment {#advanced-deployment}
+## Geavanceerde implementatie {#advanced-deployment}
 
-The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
+In het bovenstaande gedeelte hebt u een goed inzicht in de basisbeginselen van AEM-installatie. De installatie van een volledig productiesysteem van AEM kan echter aanzienlijk complexer zijn. Zie de volgende subpagina&#39;s voor volledige dekking van geavanceerde installatie:
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
- -->
+* [Technische vereisten](/help/sites-deploying/technical-requirements.md)
+* [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
+* [Aangepaste standalone installatie](/help/sites-deploying/custom-standalone-install.md)
+* [Installeren van toepassingsserver](/help/sites-deploying/application-server-install.md)
+* [Start en stop van opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configureren](/help/sites-deploying/configuring.md)
+* [Upgrade uitvoeren naar AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
+* [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
+* [Webconsole](/help/sites-deploying/web-console.md)
+* [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
+* [Aanbevolen procedures](/help/sites-deploying/best-practices.md)
+* [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
+
