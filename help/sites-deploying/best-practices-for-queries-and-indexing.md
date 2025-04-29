@@ -8,12 +8,10 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4196'
 ht-degree: 0%
 
 ---
@@ -145,7 +143,7 @@ De aanbevolen waarden zijn:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3, zijn de bovengenoemde twee parameters preconfigured out-of-the-box, en kunnen via OSGi QueryEngineSettings worden voortgeduurd.
+Vanaf AEM 6.3, zijn de bovengenoemde twee parameters preconfigured out-of-the-box, en kunnen via OSGi QueryEngineSettings worden voortgeduurd.
 
 Meer informatie beschikbaar onder: [ https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -168,20 +166,6 @@ Lucene-indexen werden geïntroduceerd in Oak 1.0.9 en bieden krachtige optimalis
 * Door asynchroon te zijn, kunnen de indexen van Lucene geen uniciteitsbeperkingen afdwingen. Als dit wordt vereist, dan moet een bezitsindex op zijn plaats worden gebracht.
 
 In het algemeen, wordt het geadviseerd u de indexen van Lucene tenzij er een dwingende behoefte is om bezitsindexen te gebruiken zodat u de voordelen van hogere prestaties en flexibiliteit kunt bereiken.
-
-### Solr Indexering {#solr-indexing}
-
-AEM biedt standaard ook ondersteuning voor Solr-indexering. Dit wordt gebruikt om volledige tekstonderzoek te steunen, maar het kan ook worden gebruikt om om het even welk type van vraag te steunen JCR. Solr moet in overweging worden genomen wanneer de AEM-instanties niet over de CPU-capaciteit beschikken om het aantal query&#39;s af te handelen dat vereist is bij zoekintensieve implementaties, zoals websites met zoekopdrachten, met een groot aantal gelijktijdige gebruikers. Alternatief, kan Solr in een op kruipper-gebaseerde benadering worden uitgevoerd om enkele meer geavanceerde eigenschappen van het platform te gebruiken.
-
-Solr-indexen kunnen worden geconfigureerd om te worden ingesloten op de AEM-server voor ontwikkelomgevingen of kunnen worden geoffload naar een externe instantie om de schaalbaarheid van zoekopdrachten in de productie- en staging-omgeving te verbeteren. Hoewel het offloaden van onderzoek scalability verbetert, introduceert het latentie en wegens dit, wordt niet geadviseerd tenzij vereist. Voor meer informatie over hoe te om de Solr integratie te vormen en hoe te om zonne indexen tot stand te brengen zie de [ Vragen van Oak en het Indexeren documentatie ](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
-
->[!NOTE]
->
->Terwijl het nemen van de geïntegreerde Solr onderzoeksbenadering zou voor het ontladen van indexeren aan een Solr server toestaan. Als de geavanceerdere eigenschappen van de server van Solr door een op kruipper-gebaseerde benadering worden gebruikt, wordt het extra configuratiewerk vereist.
-
-Het nadeel aan het nemen van deze benadering is dat terwijl door gebrek, de vragen van AEM ACLs respecteren en zo resultaten verbergen die een gebruiker geen toegang tot heeft, het externaliseren van onderzoek aan een Solr server zal deze eigenschap niet steunen. Als de zoekactie op deze manier extern moet worden uitgevoerd, moet er extra op worden gelet dat de gebruikers geen resultaten krijgen die ze niet zouden moeten zien.
-
-Mogelijke gebruiksgevallen waarin deze aanpak passend kan zijn, zijn gevallen waarin zoekgegevens uit meerdere bronnen moeten worden samengevoegd. U hebt bijvoorbeeld een site die wordt gehost op AEM en een tweede site die wordt gehost op een extern platform. Solr zou kunnen worden gevormd om de inhoud van beide plaatsen te kruipen en hen op te slaan in een bijeengevoegde index. Op die manier kunnen zoekopdrachten naar andere sites worden uitgevoerd.
 
 ### Ontwerpoverwegingen {#design-considerations}
 
@@ -216,7 +200,7 @@ Wanneer u een index op een MongoDB-instantie verwijdert, zijn de verwijderingsko
 
 ### Het JCR-query-controleblad {#jcrquerycheatsheet}
 
-Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [ JCR- Cheat Sheet van de Vraag ](assets/JCR_query_cheatsheet-v1.1.pdf) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling. Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van Oak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
+Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [ JCR- Cheat Sheet van de Vraag ](assets/JCR_query_cheatsheet-v1.1.pdf) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling. Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van Oak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5, AEM 6.5 LTS en AEM as a Cloud Service.
 
 ## Opnieuw indexeren {#re-indexing}
 
@@ -380,7 +364,7 @@ De volgende details en resoluties zijn mogelijk:
 
 >[!NOTE]
 >
->In AEM 6.5, [ oak-run.jar is de ENIGE gesteunde methode ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) voor het opnieuw indexeren op de bewaarplaatsen MongoMK of RDBMK.
+>In AEM 6.5 LTS, [ oak-run.jar is de ENIGE gesteunde methode ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) voor het opnieuw indexeren op MongoMK of RDBMK bewaarplaatsen.
 
 #### Eigenschapindexen opnieuw indexeren {#re-indexing-property-indexes}
 
