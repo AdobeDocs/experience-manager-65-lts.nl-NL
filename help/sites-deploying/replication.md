@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3261'
 ht-degree: 0%
 
 ---
@@ -347,8 +347,6 @@ Deze instellingen worden gebruikt om triggers voor geautomatiseerde replicatie t
   Als deze optie is ingeschakeld, dwingt de agent geen versiering van geactiveerde pagina&#39;s.
 
 ## De replicatieagents configureren {#configuring-your-replication-agents}
-
-Voor informatie over het aansluiten van replicatieagenten aan de Publish instantie die MSSL gebruiken, zie [ het Repliceren Gebruikend Wederzijdse SSL ](/help/sites-deploying/mssl-replication.md).
 
 ### Het vormen van uw Agenten van de Replicatie van het Milieu van de Auteur {#configuring-your-replication-agents-from-the-author-environment}
 

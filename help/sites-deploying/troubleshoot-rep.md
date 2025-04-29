@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -59,16 +59,6 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan de repl
    1. Voer in het vak &quot;Query&quot; deze query/jcr:root/var/eventing/jobs//element({0,slingevent:Job)-volgorde in door @slingevent:created&#42;
    1. Klik op Zoeken.
    1. In de resultaten zijn de belangrijkste items de meest recente slingerende taken. Klik op elke kopie en zoek de geplakte replicaties die overeenkomen met wat boven in de wachtrij wordt weergegeven.
-
-1. Er kan iets mis zijn met het sling van de baanrijen van het gebeurteniskader. Start de bundel org.apache.sling.event opnieuw in de map/system/console.
-1. Het kan zijn dat de verwerking van taken is uitgeschakeld. U kunt dat controleren onder Felix Console op het tabblad Gebeurtenis. Controleren of het scherm wordt weergegeven - Apache Sling Event (JOB PROCESSING IS UITGESCHAKELD!)
-
-   * Als dat het geval is, schakelt u Apache Sling Job Event Handler in op het tabblad Configuration in Felix Console. Mogelijk is het selectievakje &#39;Taakverwerking ingeschakeld&#39; uitgeschakeld. Als dat wordt gecontroleerd en nog steeds wordt weergegeven dat &#39;taakverwerking is uitgeschakeld&#39;, controleert u of er sprake is van een overlay onder /apps/system/config die de taakverwerking uitschakelt. Probeer een osgi:config-knooppunt voor jobmanager.enabled met een booleaanse waarde voor true te maken en controleer opnieuw of de activering is gestart en er geen taken meer in de wachtrij staan.
-
-1. Het zou ook het geval kunnen zijn dat de configuratie DefaultJobManager in een inconsistente staat krijgt. Dit kan gebeuren wanneer iemand handmatig de configuratie van de &#39;Apache Sling Job Event Handler&#39; wijzigt via de OSGiconsole (Schakel bijvoorbeeld de eigenschap &#39;Job Processing Enabled&#39; uit en schakel deze weer in en sla de configuratie op).
-
-   * Op dit punt wordt de configuratie DefaultJobManager die in crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config wordt opgeslagen in een inconsistente staat. En alhoewel het bezit van de Gebeurtenis van de Baan van de &quot;Apache het Verdelen van de Baan van de Gebeurtenis&quot;om in gecontroleerde staat toont te zijn toegelaten, wanneer men aan het Verschuivende lusje van de Gebeurtenis navigeert, toont het het bericht - DE VERWERKING VAN DE TAAK WORDT UITGESCHAKELD en de replicatie werkt niet.
-   * Om deze kwestie op te lossen, navigeer aan de pagina van de Configuratie van de console OSGi en schrap de &quot;Apache Sling de Handler van de Gebeurtenis van de Baan&quot;configuratie. Dan begin de Hoofdknoop van de cluster opnieuw om de configuratie terug in een verenigbare staat te krijgen. Dit zou de kwestie moeten bevestigen en de replicatie begint opnieuw te werken.
 
 **creeer een replication.log**
 
