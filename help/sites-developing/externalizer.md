@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In Adobe Experience Manager (AEM), is **externalizer** de dienst OSGI die u prog
 
 Omdat een instantie zijn uiterlijk zichtbare URL niet kan kennen als het achter een Weblaag loopt, en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
-Deze pagina verklaart hoe te om de **dienst te vormen Externalzer** en hoe te om het te gebruiken. Voor meer details, zie [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Deze pagina verklaart hoe te om de **dienst te vormen Externalzer** en hoe te om het te gebruiken. Voor meer details, zie [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## De service ExternalAlizer configureren {#configuring-the-externalizer-service}
 
@@ -128,4 +128,4 @@ Deze sectie toont een paar voorbeelden van hoe de **** dienst Externalzer kan wo
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. U kunt meer voorbeelden in [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html) vinden.
+1. U kunt meer voorbeelden in [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html) vinden.

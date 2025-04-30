@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 0%
@@ -43,8 +43,8 @@ Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitb
 
 Beheer van meerdere sites bestaat uit de volgende pakketten:
 
-* [ com.day.cq.wcm.msm.api ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [ com.day.cq.wcm.msm.commons ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [ com.day.cq.wcm.msm.api ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [ com.day.cq.wcm.msm.commons ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 De belangrijkste voorwerpen MSM API in wisselwerking als volgt (zie ook [ Gebruikte Termen ](/help/sites-administering/msm.md#terms-used)):
 
@@ -103,8 +103,8 @@ De belangrijkste voorwerpen MSM API in wisselwerking als volgt (zie ook [ Gebrui
 
 Creeer de acties van de douanesynchronisatie om met uw rollout configuraties te gebruiken. Creeer een synchronisatieactie wanneer de [ geïnstalleerde acties ](/help/sites-administering/msm-sync.md#installed-synchronization-actions) niet aan uw specifieke toepassingsvereisten voldoen. Hiertoe maakt u twee klassen:
 
-* Een implementatie van de [`com.day.cq.wcm.msm.api.LiveAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface die de actie uitvoert.
-* Een component OSGI die de [`com.day.cq.wcm.msm.api.LiveActionFactory` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface uitvoert en instanties van uw `LiveAction` klasse leidt.
+* Een implementatie van de [`com.day.cq.wcm.msm.api.LiveAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface die de actie uitvoert.
+* Een component OSGI die de [`com.day.cq.wcm.msm.api.LiveActionFactory` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface uitvoert en instanties van uw `LiveAction` klasse leidt.
 
 In `LiveActionFactory` worden instanties van de klasse `LiveAction` voor een bepaalde configuratie gemaakt:
 
@@ -127,7 +127,7 @@ Gebruik het configuratieknooppunt `LiveAction` in de opslagplaats om informatie 
 
 Een `LiveAction` moet bijvoorbeeld de naam van de auteur van het concept opslaan. Een bezit van de configuratieknoop omvat de bezitsnaam van de blauwdruk pagina die de informatie opslaat. Tijdens runtime haalt `LiveAction` de eigenschapnaam uit de configuratie op en verkrijgt vervolgens de eigenschapswaarde.
 
-De parameter van de methode [`LiveActionFactory.createAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) is een `Resource` -object. Dit `Resource` voorwerp vertegenwoordigt de `cq:LiveSyncAction` knoop voor deze levende actie in de rollout configuratie; zie [ Creërend een Configuratie van de Output ](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Zoals gebruikelijk wanneer het gebruiken van een configuratieknoop, zou u het aan een voorwerp `ValueMap` moeten aanpassen:
+De parameter van de methode [`LiveActionFactory.createAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) is een `Resource` -object. Dit `Resource` voorwerp vertegenwoordigt de `cq:LiveSyncAction` knoop voor deze levende actie in de rollout configuratie; zie [ Creërend een Configuratie van de Output ](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Zoals gebruikelijk wanneer het gebruiken van een configuratieknoop, zou u het aan een voorwerp `ValueMap` moeten aanpassen:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -145,9 +145,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 De volgende objecten worden opgegeven als parameters van de methode `execute` van het object `LiveAction` :
 
-* Een [`Resource` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) voorwerp dat de bron van Levende Exemplaar vertegenwoordigt.
+* Een [`Resource` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) voorwerp dat de bron van Levende Exemplaar vertegenwoordigt.
 * Een `Resource` -object dat het doel van de actieve kopie vertegenwoordigt.
-* Het [`LiveRelationship` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) voorwerp voor het levende exemplaar.
+* Het [`LiveRelationship` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) voorwerp voor het levende exemplaar.
 * De `autoSave` -waarde geeft aan of de `LiveAction` wijzigingen moet opslaan die in de gegevensopslagruimte zijn aangebracht.
 
 * De reset-waarde geeft de rollout reset-modus aan.
@@ -164,7 +164,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->De `Resource` argumenten kunnen `null` of `Resources` objecten zijn die zich niet aanpassen aan `Node` -objecten, zoals [`NonExistingResource` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) -objecten.
+>De `Resource` argumenten kunnen `null` of `Resources` objecten zijn die zich niet aanpassen aan `Node` -objecten, zoals [`NonExistingResource` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/NonExistingResource.html) -objecten.
 
 ## Een nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Deze kunnen op verschillende manieren worden gebruikt om uw AEM-consoles uit te 
 >
 >* Het gebruiken van en het creëren van [ clientlibs ](/help/sites-developing/clientlibs.md).
 >* Het gebruiken van en het creëren van [ bekledingen ](/help/sites-developing/overlays.md).
->* [ Graniet ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [ Graniet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 >
 
 
@@ -150,7 +150,7 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 1. Optioneel:
 
-   * Als u extra gegevens wilt stoppen, moet u a [ PageInforProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a schrijven
+   * Als u extra gegevens wilt stoppen, moet u a [ PageInforProvider ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a schrijven
      `pageInfoProviderType` eigenschap.
 
    Bijvoorbeeld, zie hieronder de klasse/de bundel in bijlage (van GitHub).

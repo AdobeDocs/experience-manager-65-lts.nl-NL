@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Het is belangrijk dat u deze configuratie aanpast aan uw eigen veiligheidsbehoef
 
 >[!NOTE]
 >
->Adobe adviseert dat u altijd tot de XSS bescherming API toegang hebt door [ XSSAPI te gebruiken die door AEM ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html) wordt verstrekt.
+>Adobe adviseert dat u altijd tot de XSS bescherming API toegang hebt door [ XSSAPI te gebruiken die door AEM ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html) wordt verstrekt.
 
 Ook, kan een firewall van de Webtoepassing, zoals [ mod_security voor Apache ](https://www.modsecurity.org), betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
 

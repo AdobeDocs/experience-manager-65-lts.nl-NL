@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 0%
@@ -243,7 +243,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebben; zie:
 
-[ com.adobe.cq.dam.cfm ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[ com.adobe.cq.dam.cfm ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -253,7 +253,7 @@ U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebbe
 
 De volgende drie interfaces kunnen als ingangspunten dienen:
 
-* **Malplaatje van het Fragment** ([ FragmentTemplate ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Malplaatje van het Fragment** ([ FragmentTemplate ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Gebruik `FragmentTemplate.createFragment()` om een fragment te maken.
 
@@ -296,7 +296,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
 
-* **Fragment van de Inhoud** ([ ContentFragment ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragment van de Inhoud** ([ ContentFragment ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Met deze interface kunt u op abstracte wijze met een inhoudsfragment werken.
 
@@ -328,7 +328,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
   De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
-   * **Element van de Inhoud** ([ ContentElement ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Element van de Inhoud** ([ ContentElement ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -342,7 +342,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
       * Sneltoets voor het oplossen van variaties (door een aanvullende, implementatiespecifieke fallback-logica toe te passen als de opgegeven variatie niet beschikbaar is voor een element)
 
-   * **de Variatie van de Inhoud** ([ ContentVariation ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **de Variatie van de Inhoud** ([ ContentVariation ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen

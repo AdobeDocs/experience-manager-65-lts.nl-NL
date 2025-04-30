@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3499'
 ht-degree: 0%
@@ -76,9 +76,9 @@ De `/libs/cq/workflow/components/model/step` component is de meest dichtbijgeleg
 
 De volgende objecten zijn beschikbaar (afhankelijk van het type stap) in ECMA-scripts:
 
-* [ WorkItem ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
-* [ WorkflowSession ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [ WorkflowData ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
+* [ WorkItem ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
+* [ WorkflowSession ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [ WorkflowData ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
 * `args` : array met de procesargumenten.
 
 * `sling` : voor toegang tot andere osgi-services.
@@ -257,7 +257,7 @@ Voeg onder het knooppunt `cq:Component` een knooppunt `cq:EditConfig` toe. Hiero
 
 U kunt werkschemagegevens gebruiken om informatie voort te zetten die tijdens het leven van het werkschema - en tussen stappen wordt vereist. Een algemene vereiste voor workflowstappen is dat gegevens voor toekomstig gebruik behouden blijven of dat de blijvend gegevens uit eerdere stappen worden opgehaald.
 
-Metagegevens van werkstromen worden opgeslagen in een [`MetaDataMap`](#metadatamaps) -object. De Java API biedt de methode [`Workflow.getWorkflowData` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) om een [`WorkflowData` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) -object te retourneren dat het juiste `MetaDataMap` -object biedt. Dit `WorkflowData` `MetaDataMap` -object is beschikbaar voor de OSGi-service of het ECMA-script van een step-component.
+Metagegevens van werkstromen worden opgeslagen in een [`MetaDataMap`](#metadatamaps) -object. De Java API biedt de methode [`Workflow.getWorkflowData` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) om een [`WorkflowData` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) -object te retourneren dat het juiste `MetaDataMap` -object biedt. Dit `WorkflowData` `MetaDataMap` -object is beschikbaar voor de OSGi-service of het ECMA-script van een step-component.
 
 #### Java {#java}
 
@@ -662,8 +662,8 @@ function getParticipant() {
 >
 >De volgende stappen in het workflowproces accepteren workflowpakketten voor activering van bulkpagina&#39;s:
 >
->* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
->* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
 U kunt workflowstappen ontwikkelen om de pakketbronnen te verkrijgen en deze te verwerken. De volgende leden van het `com.day.cq.workflow.collection` -pakket bieden toegang tot workflowpakketten:
@@ -832,7 +832,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
    * `cq:icon`
 
-     Gebruikt om het pictogram van het a [ Koraal ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) voor de stap te specificeren.
+     Gebruikt om het pictogram van het a [ Koraal ](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) voor de stap te specificeren.
 
    * `componentGroup`
 

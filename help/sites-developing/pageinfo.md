@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -554,7 +554,7 @@ Voor bronnen die uw component van de toepassingspagina als `sling:resourceType` 
 
 ### Voorbeeld van implementatie van PageInfoProvider {#example-pageinfoprovider-implementation}
 
-De volgende klasse van Java voert [ PageInfoProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) uit en keert gepubliceerde URL van het huidige paginamiddel terug.
+De volgende klasse van Java voert [ PageInfoProvider ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) uit en keert gepubliceerde URL van het huidige paginamiddel terug.
 
 ```java
 package com.adobe.example;

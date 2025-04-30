@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 0%
@@ -110,13 +110,13 @@ Het [ geeft gedrag van een component uit wordt gevormd ](/help/sites-developing/
 
 ## Het gedrag Voorvertoning configureren {#configuring-the-preview-behavior}
 
-Het ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM wordt geplaatst wanneer het schakelen naar **3} wijze van de Voorproef {zelfs wanneer de pagina niet wordt verfrist.[**
+Het ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM wordt geplaatst wanneer het schakelen naar **3} wijze van de Voorproef {zelfs wanneer de pagina niet wordt verfrist.[**
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 
 >[!NOTE]
 >
->In aanraking-toegelaten UI slechts worden de waarden `EDIT` en `PREVIEW` gebruikt voor het [ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM.
+>In aanraking-toegelaten UI slechts worden de waarden `EDIT` en `PREVIEW` gebruikt voor het [ ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM.
 
 ## Een dialoogvenster maken en configureren {#creating-and-configuring-a-dialog}
 

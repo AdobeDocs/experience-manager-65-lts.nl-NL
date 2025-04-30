@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3251'
 ht-degree: 0%
@@ -391,7 +391,7 @@ Als u bijvoorbeeld de naam van de huidige pagina wilt ophalen, kunt u de volgend
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage is het huidige paginaobject. Voor meer informatie bij het manipuleren van de voorwerpen van de Pagina, zie de [ documenten Java™ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage is het huidige paginaobject. Voor meer informatie bij het manipuleren van de voorwerpen van de Pagina, zie de [ documenten Java™ ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **de Manager van de Pagina** De paginamanager is een Interface die methodes voor de verrichtingen van het paginaniveau verstrekt.
 
@@ -399,7 +399,7 @@ Bijvoorbeeld, om de bevattende pagina van een middel te krijgen, kunt u de volge
 
 Page myPage = pageManager.getConcontainingPage(myResource);
 
-De pageManager die het voorwerp van de paginamanager zijn, en myResource een middelvoorwerp. Voor meer informatie over de methodes die door de paginamanager worden verstrekt, zie de [ documenten Java™ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+De pageManager die het voorwerp van de paginamanager zijn, en myResource een middelvoorwerp. Voor meer informatie over de methodes die door de paginamanager worden verstrekt, zie de [ documenten Java™ ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structuur in de opslagplaats {#structure-within-the-repository}
 

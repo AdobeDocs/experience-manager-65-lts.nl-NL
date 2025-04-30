@@ -6,7 +6,7 @@ role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 12%
@@ -52,7 +52,7 @@ U kunt extra zoektabbladen toevoegen door deze te configureren in de beheerinter
 
 Naast het gebruiken van reeds bestaande predikaten, [!DNL Experience Manager] kunnen de ontwikkelaars hun eigen predikaten ook creëren gebruikend [ de Bouwer van de Vraag API ](/help/sites-developing/querybuilder-api.md).
 
-Het creëren van douane voorspelt vereist basiskennis over het [ kader Widgets ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+Het creëren van douane voorspelt vereist basiskennis over het [ kader Widgets ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Voorspelregels voor voorbeelden vindt u in **/libs/cq/search/components/predicates** .
 

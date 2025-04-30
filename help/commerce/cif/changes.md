@@ -5,7 +5,7 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: aced89a0-dec1-49fe-afbc-3ddf1318b900
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -60,4 +60,4 @@ AEM geeft de ervaringen met productcatalogi direct weer met AEM-catalogussjablon
 
 >[!NOTE]
 >
->Voor extra documentatie op hoe te om CIF met AEM te gebruiken Beheerde Dienst of AEM op-Premise, zie [ Commerce integration framework ](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Voor extra documentatie op hoe te om CIF met AEM te gebruiken Beheerde Dienst of AEM op-Premise, zie [ Commerce integration framework ](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)

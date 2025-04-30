@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 0%
@@ -31,7 +31,7 @@ In AEM-workflowmodellen kunt u het volgende doen:
 * [ plaats een waarde voor de variabele ](../../forms/using/variable-in-aem-workflows.md#set-a-variable) gebruikend de Vastgestelde Veranderlijke werkschemastap.
 * [ gebruik veranderlijk ](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in alle stappen van het Werkschema van AEM Forms om de opgeslagen waarde en in OF te winnen Splitsen en gaan stappen om een verpletterende uitdrukking te bepalen.
 
-De variabelen zijn een uitbreiding van de bestaande [ MetaDataMap ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. U kunt [ MetaDataMap ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript gebruiken om tot meta-gegevens toegang te hebben die gebruikend variabelen worden bewaard.
+De variabelen zijn een uitbreiding van de bestaande [ MetaDataMap ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. U kunt [ MetaDataMap ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript gebruiken om tot meta-gegevens toegang te hebben die gebruikend variabelen worden bewaard.
 
 ## Een variabele maken {#create-a-variable}
 
@@ -182,7 +182,7 @@ Alle AEM Forms Workflowstappen ondersteunen variabelen. Voor meer informatie, zi
 
 ### Workflowstappen zonder ondersteuning voor variabelen {#workflow-steps-without-support-for-variables}
 
-U kunt [ MetaDataMap ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface gebruiken om tot variabelen in werkschemastappen toegang te hebben die geen variabelen steunen.
+U kunt [ MetaDataMap ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface gebruiken om tot variabelen in werkschemastappen toegang te hebben die geen variabelen steunen.
 
 #### De waarde van de variabele ophalen {#retrieve-the-variable-value}
 
@@ -226,7 +226,7 @@ werkt de waarde voor de **salaris** variabele aan 50000 bij.
 
 U kunt een API gebruiken om variabelen in te stellen en deze door te geven om workflowinstanties aan te roepen.
 
-[ workflowSession.startWorkflow ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) gebruikt model, wfData, en metaData als argumenten. Gebruik MetaDataMap om de waarde voor de variabele in te stellen.
+[ workflowSession.startWorkflow ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) gebruikt model, wfData, en metaData als argumenten. Gebruik MetaDataMap om de waarde voor de variabele in te stellen.
 
 In dit API, wordt de **variableName** variabele geplaatst aan **waarde** gebruikend metaData.put (variableName, waarde);
 

@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Vanaf AEM 6.1, wanneer gebruikerssynchronisatie wordt toegelaten, worden de gebr
 
 ## Verspreiding {#sling-distribution}
 
-De gebruikersgegevens, samen met hun [ ACLs ](/help/sites-administering/security.md), worden opgeslagen in de [ Kern van Oak ](/help/sites-deploying/platform.md), de laag onder Oak JCR, en worden betreden gebruikend [ Oak API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Met infrequente updates, is het redelijk voor gebruikersgegevens om met andere publiceer instanties te worden gesynchroniseerd gebruikend [ het Verdelen van de Distributie van de Inhoud ](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (het Verdelen van distributie).
+De gebruikersgegevens, samen met hun [ ACLs ](/help/sites-administering/security.md), worden opgeslagen in de [ Kern van Oak ](/help/sites-deploying/platform.md), de laag onder Oak JCR, en worden betreden gebruikend [ Oak API ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Met infrequente updates, is het redelijk voor gebruikersgegevens om met andere publiceer instanties te worden gesynchroniseerd gebruikend [ het Verdelen van de Distributie van de Inhoud ](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (het Verdelen van distributie).
 
 De voordelen van gebruikerssynchronisatie met de verkoopverdeling in vergelijking met traditionele replicatie zijn:
 

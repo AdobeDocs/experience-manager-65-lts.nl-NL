@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 0%
@@ -428,7 +428,7 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
 
 * **dienst OSGi**
 
-  De diensten moeten [ com.day.cq.workflow.exec.ParticipantStepChooser ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface uitvoeren. De interface definieert de volgende leden:
+  De diensten moeten [ com.day.cq.workflow.exec.ParticipantStepChooser ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface uitvoeren. De interface definieert de volgende leden:
 
    * `SERVICE_PROPERTY_LABEL` -veld: gebruik dit veld om de naam van de deelnemerkiezer op te geven. De naam verschijnt in een lijst van beschikbare deelnemerverkieskundigen in de **Dynamische eigenschappen van de Stap van de Deelnemer**.
 

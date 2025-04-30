@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Elke kolom is een geval van de [`columnbase` component ](#column-base-component)
 De query:
 
 * Is gedefinieerd als onderdeel van de component [`reportbase`](#report-base) .
-* Is gebaseerd op [ CQ QueryBuilder ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* Is gebaseerd op [ CQ QueryBuilder ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
 * Haalt de gegevens op die als basis voor het rapport worden gebruikt. Elke rij van de resultaatreeks (lijst) is gebonden aan een knoop zoals teruggekeerd door de vraag. De specifieke informatie voor [ individuele kolommen ](#column-base-component) wordt dan gehaald uit deze gegevensreeks.
 
 * Bestaat gewoonlijk uit:

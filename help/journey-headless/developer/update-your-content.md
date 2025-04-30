@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 322f08c7-f13a-473f-8c59-1050b2e6c2f5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -257,7 +257,7 @@ Het gebruik kan verschillen, afhankelijk van het feit of u een AEM-auteur of -pu
 
 >[!NOTE]
 >
->Zie de API-naslaggids voor meer informatie. In het bijzonder, [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Zie de API-naslaggids voor meer informatie. In het bijzonder, [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Lezen/Levering {#read-delivery}
 
@@ -327,7 +327,7 @@ U zou uw reis zonder kop van AEM door het document [ moeten voortzetten te herzi
 * [ASSETS HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/assets-api-content-fragments.md)
    * [API-naslag](/help/assets/assets-api-content-fragments.md#api-reference)
-* [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
 * [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [ CORS/AEM verklaarde ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

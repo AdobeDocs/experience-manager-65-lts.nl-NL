@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
 exl-id: 2196af09-8053-49c3-8a23-caf03bb9a39d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -131,4 +131,4 @@ De uit-van-de-doos configuratie gebruikt de volgende transformatoren:
 * `transformer-cfm-parfilter` - filtert ongewenste alinea&#39;s uit als er een alineabereik is opgegeven (zoals u kunt doen met de component Content Fragment)
 * `transformer-cfm-assetprocessor` - wordt intern gebruikt voor het ophalen van een lijst met elementen die in het fragment zijn ingesloten
 
-Het renderingsproces wordt blootgesteld door [`com.adobe.cq.dam.cfm.content.FragmentRenderService` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) en kan (bijvoorbeeld) door douanecomponenten, indien nodig worden gebruikt.
+Het renderingsproces wordt blootgesteld door [`com.adobe.cq.dam.cfm.content.FragmentRenderService` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) en kan (bijvoorbeeld) door douanecomponenten, indien nodig worden gebruikt.

@@ -9,7 +9,7 @@ feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Voor programmatisch werken met tags of tags uitbreiden binnen een aangepaste AEM-toepassing, wordt op deze pagina het gebruik van de
 
-* [ Tagging API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
+* [ Tagging API ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
 
 Dat heeft invloed op de
 
@@ -33,7 +33,7 @@ Zie voor gerelateerde informatie over labelen:
 
 ## Overzicht van de API voor tags {#overview-of-the-tagging-api}
 
-De implementatie van het [ etiketterende kader ](/help/sites-developing/framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. De TagManager zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array niet worden gedupliceerd, de tag-id&#39;s die verwijzen naar niet-bestaande tags, worden verwijderd en de tag-id&#39;s voor verplaatste of samengevoegde tags worden bijgewerkt. TagManager gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [ com.day.cq.tagging ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) pakket:
+De implementatie van het [ etiketterende kader ](/help/sites-developing/framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. De TagManager zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array niet worden gedupliceerd, de tag-id&#39;s die verwijzen naar niet-bestaande tags, worden verwijderd en de tag-id&#39;s voor verplaatste of samengevoegde tags worden bijgewerkt. TagManager gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [ com.day.cq.tagging ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html) pakket:
 
 * JcrTagManagerFactory - retourneert een op JCR gebaseerde implementatie van een `TagManager` . Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.
@@ -156,7 +156,7 @@ Wanneer de **Dieren** markering aan de **Producten** pagina wordt toegevoegd, wo
 
 De server-side API heeft gelokaliseerde `title` -gerelateerde methoden:
 
-* [ com.day.cq.tagging.Tag ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [ com.day.cq.tagging.Tag ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
    * getLocalizedTitle(Locale locale)
    * getLocalizedTitlePaths()
@@ -164,7 +164,7 @@ De server-side API heeft gelokaliseerde `title` -gerelateerde methoden:
    * getTitle(landinstelling)
    * getTitlePath(landinstelling)
 
-* [ com.day.cq.tagging.TagManager ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [ com.day.cq.tagging.TagManager ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
    * canCreateTagByTitle(String tagTitlePath, landinstelling)
    * createTagByTitle(String tagTitlePath, landinstelling)

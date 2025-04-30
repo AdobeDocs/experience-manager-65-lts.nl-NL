@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 1%
@@ -523,9 +523,9 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
 
 1. Kopieer de volgende code in `navimage.png.java.` de code breidt de klasse AbstractImageServlet uit:
 
-   * [ AbstractImageServlet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) leidt tot een voorwerp ImageContext dat de eigenschappen van het huidige middel opslaat.
+   * [ AbstractImageServlet ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) leidt tot een voorwerp ImageContext dat de eigenschappen van het huidige middel opslaat.
    * De bovenliggende pagina van de bron wordt geëxtraheerd uit het ImageContext-object. De paginatitel en -ondertitel worden vervolgens opgehaald.
-   * [ ImageHelper ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) wordt gebruikt om het beeld van het navimage_bg.jpg- dossier van het plaatsontwerp, de paginatitel, en de paginasubtitle te produceren.
+   * [ ImageHelper ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) wordt gebruikt om het beeld van het navimage_bg.jpg- dossier van het plaatsontwerp, de paginatitel, en de paginasubtitle te produceren.
 
    ```java
    package apps.mywebsite.components.contentpage;

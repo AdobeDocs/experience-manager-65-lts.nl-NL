@@ -6,7 +6,7 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -261,7 +261,7 @@ Het gebruik kan verschillen, afhankelijk van het feit of u een AEM-auteur of -pu
 
 >[!NOTE]
 >
->Voor verdere details, zie de [ API Verwijzing ](/help/assets/assets-api-content-fragments.md#api-reference). In het bijzonder, [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Voor verdere details, zie de [ API Verwijzing ](/help/assets/assets-api-content-fragments.md#api-reference). In het bijzonder, [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Lezen/Levering {#read-delivery}
 
@@ -385,7 +385,7 @@ Geretourneerd wanneer:
 
 Zie hier voor gedetailleerde API-referenties:
 
-* [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [ASSETS HTTP API](/help/assets/mac-api-assets.md)
 
    * [Beschikbare functies](/help/assets/mac-api-assets.md#assets)

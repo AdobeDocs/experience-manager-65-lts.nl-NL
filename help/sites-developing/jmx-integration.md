@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 0%
@@ -38,11 +38,11 @@ Naast het bepalen van de beheersinterface, bepaalt de interface ook de OSGi de d
 
 ### Het gebruiken van Annotaties om Informatie MBean te verstrekken {#using-annotations-to-provide-mbean-information}
 
-Het {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) pakket 0} com.adobe.granite.jmx.annotation verstrekt verscheidene annotaties en klassen voor het gemakkelijk verstrekken van meta-gegevens MBean aan de console JMX. [ Gebruik deze annotaties en klassen in plaats van rechtstreeks informatie toe te voegen aan het MBean-object MBeanInfo.
+Het {](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) pakket 0} com.adobe.granite.jmx.annotation verstrekt verscheidene annotaties en klassen voor het gemakkelijk verstrekken van meta-gegevens MBean aan de console JMX. [ Gebruik deze annotaties en klassen in plaats van rechtstreeks informatie toe te voegen aan het MBean-object MBeanInfo.
 
 **Annotaties**
 
-Voeg annotaties aan de beheersinterface toe om meta-gegevens te specificeren MBean. De informatie verschijnt in de console JMX voor elke implementatieklasse die wordt opgesteld. De volgende annotaties zijn beschikbaar (voor volledige informatie, zie [ com.adobe.granite.jmx.annotation JavaDocs ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Voeg annotaties aan de beheersinterface toe om meta-gegevens te specificeren MBean. De informatie verschijnt in de console JMX voor elke implementatieklasse die wordt opgesteld. De volgende annotaties zijn beschikbaar (voor volledige informatie, zie [ com.adobe.granite.jmx.annotation JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Beschrijving:** verstrekt een beschrijving van de klasse MBean of de methode. Wanneer gebruikt op de klassendeclaratie, verschijnt de beschrijving op de pagina van de Console JMX voor MBean. Wanneer de beschrijving bij een methode wordt gebruikt, wordt deze weergegeven als zwevende tekst voor het bijbehorende kenmerk of de bijbehorende bewerking.
 * **Effect:** het effect van een methode. De geldige parameterwaarden zijn de gebieden die door [ worden bepaald javax.management.MBeanOperationInfo ](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).

@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 0%
@@ -42,7 +42,7 @@ U hebt het volgende nodig om [!DNL Adobe Sign] te integreren met AEM [!DNL Forms
 
 * Een actieve [ rekening van de ontwikkelaar van het Teken van Adobe.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
 * Een [ SSL toegelaten ](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms] server.
-* Een [ toepassing van het Teken van Adobe API ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* Een [ toepassing van het Teken van Adobe API ](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Referenties (client-id en clientgeheim) van [!DNL Adobe Sign] API-toepassing.
 * Wanneer u de configuratie opnieuw configureert, verwijdert u de bestaande [!DNL Adobe Sign] -configuratie uit zowel auteur- als publicatieinstanties.
 * Gebruik [ identieke crypto sleutel ](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) voor auteur en publiceer instanties.
@@ -112,7 +112,7 @@ Voer de volgende stappen uit om [!DNL Adobe Sign] te configureren met AEM [!DNL 
    * widget_write
    * workflow_read
 
-   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
+   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
 
    ![ OAuth Config ](assets/oauthconfig_new.png)
 

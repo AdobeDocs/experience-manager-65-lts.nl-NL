@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 34dbd86b-7131-405b-a963-7b332232997c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a27a4a2aa0a6b4864908fc56ff7de53208cfcf7f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -22,12 +22,12 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM) biedt verschillende API&#39;s voor het ontwikkelen van toepassingen en het uitbreiden van AEM. De volgende lijst bevat de documentatie voor API&#39;s die door AEM worden ondersteund:
 
-* [ Adobe AEM 6.5.0 API ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
-* [ graniet UI (Touch-Toegelaten) API documentatie ](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
-* [ Koraal UI gids ](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
-* [ Widgets API (Klassieke UI) documentatie ](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [ UI de referentie van het testkader JavaScript API ](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
-* [ de kernJavaScript API van de Redacteur verwijzing ](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [ Adobe AEM 6.5 LTS API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
+* [ graniet UI (Touch-Toegelaten) API documentatie ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+* [ Koraal UI gids ](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+* [ Widgets API (Klassieke UI) documentatie ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+* [ UI de referentie van het testkader JavaScript API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
+* [ de kernJavaScript API van de Redacteur verwijzing ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor SDK framework JavaScript API-referenties:
 
@@ -46,11 +46,11 @@ AEM Delivery and Content Management APIs:
 
 * **Assets**: De HTTP API van Assets staat voor creeer-read-update-schrapt (CRUD) verrichtingen op Assets, met inbegrip van binair getal, meta-gegevens, vertoningen, en commentaren toe. Zie [ HTTP API van AEM Assets ](/help/assets/mac-api-assets.md)
 
-* **de Fragmenten van de Inhoud** (CFs): [ steun van CF in HTTP API van Assets ](/help/assets/assets-api-content-fragments.md) en [ AEM Assets API - de Fragmenten van de Inhoud ](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **de Fragmenten van de Inhoud** (CFs): [ steun van CF in HTTP API van Assets ](/help/assets/assets-api-content-fragments.md) en [ AEM Assets API - de Fragmenten van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 De volgende externe bronnen dienen slechts ter referentie:
 
 * [ Apache Sling 11 API ](https://sling.apache.org/apidocs/sling11/)
 * [ Jackrabbit Oak API ](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [ Java Content Repository API ](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [ Java Content Repository API ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [ Apache Jackrabbit API ](https://jackrabbit.apache.org/api)

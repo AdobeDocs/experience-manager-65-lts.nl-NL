@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2340'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Er zijn drie methoden om toegang te krijgen tot inhoud in AEM WCM:
 
 * Via het `currentPage` -object dat is geïntroduceerd in `global.jsp` :
 
-  Het `currentPage` voorwerp is een geval van een pagina (zie [ AEM API ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). De paginaklasse biedt enkele methoden om toegang te krijgen tot inhoud.
+  Het `currentPage` voorwerp is een geval van een pagina (zie [ AEM API ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). De paginaklasse biedt enkele methoden om toegang te krijgen tot inhoud.
 
   Voorbeeld: `String pageTitle = currentPage.getTitle();`
 

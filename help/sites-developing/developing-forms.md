@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -315,7 +315,7 @@ Wanneer de configuratie Tonen/verbergen ongeldig is, wordt de configuratie allee
 
 ### Scripts ontwikkelen voor gebruik met Forms {#developing-scripts-for-use-with-forms}
 
-Voor meer informatie over de API elementen die wanneer het schrijven van manuscripten kunnen worden gebruikt zien [ javadocs met betrekking tot vormen ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Voor meer informatie over de API elementen die wanneer het schrijven van manuscripten kunnen worden gebruikt zien [ javadocs met betrekking tot vormen ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 U kunt dit gebruiken voor handelingen zoals het aanroepen van een service voordat het formulier wordt verzonden en het annuleren van de service als dit mislukt:
 

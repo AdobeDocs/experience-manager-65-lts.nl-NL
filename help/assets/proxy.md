@@ -6,7 +6,7 @@ role: Admin, Architect
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van
 
 ### Client-API {#client-api}
 
-[`JobService` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met verre volmachtsservlet te communiceren.
+[`JobService` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met verre volmachtsservlet te communiceren.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -107,10 +107,10 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Cloud Service-configuraties {#cloud-service-configurations}
 
-<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
->Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
 Zowel zijn de volmacht als de configuraties van de volmachtsarbeider beschikbaar via de configuraties van de wolkendiensten zoals toegankelijk van de [!DNL Assets] **console van Hulpmiddelen** of onder `/etc/cloudservices/proxy`. Elke proxyworker moet een knooppunt onder `/etc/cloudservices/proxy` toevoegen voor arbeidersspecifieke configuratiegegevens (bijvoorbeeld `/etc/cloudservices/proxy/workername` ).

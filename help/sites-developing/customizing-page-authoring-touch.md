@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Bij het ontwerpen van pagina&#39;s moet de gebruiker vaak bronnen selecteren (bi
 
 Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Bijvoorbeeld, als de [`pathbrowser` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [ graniet ](/help/sites-developing/touch-ui-concepts.md#granite-ui) component wordt gebruikt om de gebruiker toe te staan om de weg aan een bepaald middel te selecteren, kunnen de voorgestelde wegen op de volgende manier worden gefiltreerd:
 
-* Implementeer de aangepaste voorspelling door de [`com.day.cq.commons.predicate.AbstractNodePredicate` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) -interface te implementeren.
+* Implementeer de aangepaste voorspelling door de [`com.day.cq.commons.predicate.AbstractNodePredicate` ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) -interface te implementeren.
 * Geef een naam voor de voorspelling op en verwijs die naam wanneer u de voorspelling van `pathbrowser` gebruikt.
 
 Voor verder detail bij het creëren van een douane predikaat, zie [ Uitvoerend een Evaluator van de Predicate van de Douane voor de Bouwer van de Vraag ](/help/sites-developing/implementing-custom-predicate-evaluator.md).
