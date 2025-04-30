@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: c23ab1f6cb5b96c35df3644780abcc9a0c5a6324
+source-git-commit: afbaff634a0bc25f04e2ba4320c719d82db58c9b
 workflow-type: tm+mt
-source-wordcount: '2343'
+source-wordcount: '2310'
 ht-degree: 1%
 
 ---
@@ -105,13 +105,6 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
    * Voeg een of meer velden van één regel tekst toe. De maximumlengte kan worden gedefinieerd
 * **Meerdere lijntekst**
    * Een tekstgebied dat RTF-tekst, platte tekst of Markering kan zijn
-
-     >[!NOTE]
-     >
-     Vanwege de prestaties is het niet raadzaam meer dan tien RTF-velden in één model op te nemen.
-     >
-     Indien nodig, wordt het geadviseerd dat u [ genestelde de Fragmenten van de Inhoud ](#fragment-reference-nested-fragments) gebruikt om de lading te verspreiden.
-
 * **Aantal**
    * Een of meer numerieke velden toevoegen
 * **Van Boole**
