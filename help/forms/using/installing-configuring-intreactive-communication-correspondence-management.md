@@ -97,7 +97,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Open [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
-   U kunt het pakket ook downloaden via de directe koppeling die wordt vermeld in het artikel over AEM [Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) .
+   U kunt het pakket ook downloaden via de directe koppeling die wordt vermeld in het artikel over AEM [Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) .
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd het AEM exemplaar opnieuw te starten. **Start de server niet onmiddellijk opnieuw op.** Voordat u de AEM Forms Server stopt, wacht u totdat de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het [bestand AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logboek stabiel is.
 
@@ -155,7 +155,7 @@ Met het AEMFD-compatibiliteitspakket kunt u de volgende activa van AEM 6.4-formu
 
 #### Dispatcher configureren {#configure-dispatcher}
 
-Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeling dat wordt gebruikt met een webserver op bedrijfsniveau. Als u [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
+Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeling dat wordt gebruikt met een webserver op bedrijfsniveau. Als u [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
 
 1. Toegang voor AEM Forms configureren:
 
@@ -163,7 +163,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeli
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
+   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL).
 
 1. Configureer de referentiefilterservice:
 

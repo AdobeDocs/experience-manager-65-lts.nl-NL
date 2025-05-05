@@ -26,7 +26,7 @@ Met voorbeelden en voorbeelden in dit document kunt u AEM Document Services op e
 
 * Alvorens de dienst DocAssurance APIs te gebruiken, [ vormt de dienst DocAssurance ](/help/forms/using/install-configure-document-services.md).
 
-* De download en vormt [ SDK van de Cliënt van AEM Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) met u AEM Gemaakt project. De cliëntklassen die worden vereist om Geweven Projecten te bouwen die de Diensten van het Document van AEM gebruiken zijn daar beschikbaar.
+* De download en vormt [ SDK van de Cliënt van AEM Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) met u AEM Gemaakt project. De cliëntklassen die worden vereist om Geweven Projecten te bouwen die de Diensten van het Document van AEM gebruiken zijn daar beschikbaar.
 
 * Leer [ hoe te om uw project van AEM te bouwen gebruikend Maven ](/help/sites-developing/ht-projects-maven.md)
 
@@ -68,7 +68,7 @@ U kunt de volgende verrichtingen uitvoeren gebruikend de dienst DocAssurance:
 
 >[!NOTE]
 >
->Al deze diensten gebruiken het voorwerp van het Document als inputparameter waarvoor Javadoc bij URL [ https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html ](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html) kan worden gevonden
+>Al deze diensten gebruiken het voorwerp van het Document als inputparameter waarvoor Javadoc bij URL [ https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/index.html ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/index.html) kan worden gevonden
 
 ### Een onzichtbaar handtekeningveld toevoegen {#adding-an-invisible-signature-field}
 
@@ -4463,7 +4463,7 @@ De PDF Generator-service biedt API&#39;s waarmee native bestandsindelingen naar 
 De GeneratePDFService verstrekt APIs om diverse dossierformaten zoals .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (afgekeurd), .jpg, .bmp, .tif, .png, .html, en vele andere dossierformaten in PDF om te zetten. Het biedt ook API&#39;s om PDF naar verschillende bestandsindelingen te exporteren en PDF&#39;s te optimaliseren. De service ondersteunt de volgende API&#39;s:
 
 * **createPDF**: Zet een gesteund dossiertype in een document van PDF om. Bestandsindelingen worden ondersteund, zoals Microsoft Word, Microsoft PowerPoint, Microsoft Excel en Microsoft Project. Naast deze toepassingen kan elk generiek PDF-type dat toepassingen genereert van derden ook worden aangesloten op de API.
-* **exportPDF**: Converteert een document van PDF naar een gesteund dossiertype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling. U kunt een PDF-document exporteren in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 met CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word-document( doc , docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), / A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB)-indelingen. U kunt [ profielen van de douanePreflight ](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) voor de output van PDF ook specificeren.
+* **exportPDF**: Converteert een document van PDF naar een gesteund dossiertype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling. U kunt een PDF-document exporteren in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 met CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word-document( doc , docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), / A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB)-indelingen. U kunt [ profielen van de douanePreflight ](https://helpx.adobe.com/nl/acrobat/using/preflight-profiles-acrobat-pro.html) voor de output van PDF ook specificeren.
 
 * **optimizePDF**: Optimizes het document van PDF en zet ook een document van PDF van één type in een andere om. De methode accepteert een PDF-document als invoer.
 * **htmlToPdf2**: Zet een pagina van HTML in een document van PDF om. De URL van de HTML-pagina wordt als invoer geaccepteerd.

@@ -66,7 +66,7 @@ Wanneer de integratie volledig is, kunt u [ auteur gerichte inhoud ](/help/sites
 
 Voor de integratie van AEM met Adobe Target is kennis van Adobe Target, AEM Activity Management en AEM Audiences Management vereist. U zou met de volgende informatie vertrouwd moeten zijn:
 
-* Adobe Target (zie de [ documentatie van Adobe Target ](https://experienceleague.adobe.com/docs/target/using/target-home.html)).
+* Adobe Target (zie de [ documentatie van Adobe Target ](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL)).
 * De console van de Activiteiten van AEM (zie [ het Leiden Activiteiten ](/help/sites-authoring/activitylib.md)).
 * Het publiek van AEM (zie [ het Leiden Soorten publiek ](/help/sites-authoring/managing-audiences.md)).
 

@@ -66,7 +66,7 @@ Als u een workflow of versie voor uw middelen nodig hebt, uploadt u deze eerst n
 
 Als u geen werkschema of het versioning voor uw activa nodig hebt, upload uw activa aan Scene7. Hieronder vindt u de aanbevolen workflow:
 
-1. In Dynamic Media Classic, [ opstelling een geplande FTP uploadend en het coderen aan Scene7 (systeem geautomatiseerd) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+1. In Dynamic Media Classic, [ opstelling een geplande FTP uploadend en het coderen aan Scene7 (systeem geautomatiseerd) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-files-using-via-ftp).
 1. Open in Experience Manager video-elementen op het tabblad **[!UICONTROL Scene7]** van de Inhoudszoeker in WCM.
 1. Auteur met de component **[!UICONTROL Scene7 Video]** .
 
@@ -85,7 +85,7 @@ Als u geen werkschema of het versioning voor uw activa nodig hebt, upload uw act
 
    >[!NOTE]
    >
-   >Voor meer informatie over wat de video vooraf instelt betekent, zie de [ documentatie van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Voor meer informatie over wat de video vooraf instelt betekent, zie de [ documentatie van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#video-presets-for-encoding-video-files).
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 

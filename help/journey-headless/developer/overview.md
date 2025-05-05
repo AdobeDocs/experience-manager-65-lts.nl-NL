@@ -81,7 +81,7 @@ Je bent nu klaar om aan de slag te gaan met je Adobe Headless-reis. Wij moedigen
 Adobe wil echter dat u slaagt wanneer u aan de slag gaat met uw AEM Headless-project, ongeacht uw leerstijl. Bekijk deze twee opties.
 
 * Als u verkiest om **over headless concepten en AEM te blijven leren zonder kop technologieën**, zou u uw reis zonder kop van AEM moeten voortzetten zoals geadviseerd door het document [ te herzien hoe te Uw Inhoud als Modellen van de Inhoud van AEM te modelleren ](model-your-content.md) waar u leert hoe te om uw inhoudsstructuur in AEM te modelleren.
-* Als u verkiest om **te leren door** te doen, kunt u aan [ springen Begonnen het Worden met AEM Headless hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) waar u direct in de Zwaarloze ontwikkeling van AEM zult springen door een eenvoudig project uit te voeren om de inhoud van AEM zonder kop bloot te stellen.
+* Als u verkiest om **te leren door** te doen, kunt u aan [ springen Begonnen het Worden met AEM Headless hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) waar u direct in de Zwaarloze ontwikkeling van AEM zult springen door een eenvoudig project uit te voeren om de inhoud van AEM zonder kop bloot te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -89,12 +89,12 @@ Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal 
 
 Als zodanig zijn reizen zodanig ontworpen dat ze op zichzelf staan. Verschillende kunnen echter aan elkaar zijn gerelateerd. Bekijk deze extra ritten voor meer informatie over hoe de krachtige functies van AEM samenwerken.
 
-* [ Hoofdloze zelfstudies van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op de Hoofdloze AEM worden gebouwd.
+* [ Hoofdloze zelfstudies van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op de Hoofdloze AEM worden gebouwd.
 * [&#128279;](/help/journey-headless/translation/overview.md) de Vertaalreis van 0&rbrace; AEM Headless  - Deze documentatietraject geeft u een breed inzicht in headless technologie, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
 * [ Koploze het Authoring Reis ](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 * [ Eis van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te modelleren.
-* [ technische documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
+* [ technische documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
 
    * Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
 
-* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)

@@ -130,5 +130,5 @@ Bouw op deze kennis voort en ga uw reis zonder kop van AEM door het document [ t
 Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingsreis door het document [ te herzien Begonnen worden Begonnen met de Zetel van AEM ](getting-started.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen, maar zij worden niet vereist om op de headless reis verder te gaan.
 
 * Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
-* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Hoofdloze Leerprogramma&#39;s van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
+* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [ Hoofdloze Leerprogramma&#39;s van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.

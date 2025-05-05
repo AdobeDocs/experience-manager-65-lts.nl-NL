@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Het Adobe Consulting Services Team heeft een reeks Adobe Experience Manager (AEM)-codevoorbeelden gegenereerd. Deze voorbeelden zijn goed gecommenteerde stukken code die AEM Developers helpen de belangrijkste bouwstenen van AEM te begrijpen. De steekproeven zijn hier beschikbaar: [ https://adobe-consulting-services.github.io/acs-aem-samples/ ](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Een meerdelig leerprogramma dat voor ontwikkelaars nieuw aan AEM wordt ontworpen die fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt, en componentenontwikkeling behandelen: [ Begonnen het worden met AEM Sites - WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Een meerdelig leerprogramma dat voor ontwikkelaars nieuw aan AEM wordt ontworpen die fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt, en componentenontwikkeling behandelen: [ Begonnen het worden met AEM Sites - WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
 
 Een Gemaakt malplaatje om een project van AEM als uitgangspunt tot stand te brengen om uw eigen functionaliteit te ontwikkelen is beschikbaar [ op GitHub - het Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype).
 

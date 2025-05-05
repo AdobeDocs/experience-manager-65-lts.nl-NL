@@ -36,11 +36,11 @@ De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worde
 
 ## Gem-sessie {#gem-session}
 
-[ Adobe Experience Manager (AEM) Gems ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is nuttig voor een overzicht en gebruik van het hulpmiddel.
+[ Adobe Experience Manager (AEM) Gems ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=nl-NL) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is nuttig voor een overzicht en gebruik van het hulpmiddel.
 
 >[!NOTE]
 >
->De zitting van AEM Gem [ die vormen van het Onderzoek met AEM wordt gemaakt querybuilder ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) voor een gedetailleerd overzicht van de vraagbouwer.
+>De zitting van AEM Gem [ die vormen van het Onderzoek met AEM wordt gemaakt querybuilder ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=nl-NL) voor een gedetailleerd overzicht van de vraagbouwer.
 
 ## Voorbeeldquery&#39;s {#sample-queries}
 

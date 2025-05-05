@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 U kunt OAuth 2.0 cliëntgeloofsbrieven gebruiken om AEM Forms met de toepassing van Salesforce te integreren. OAuth 2.0 cliëntgeloofsbrieven zijn een standaard en veilige methode voor directe mededeling zonder gebruikersbetrokkenheid.
@@ -36,7 +36,7 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM-omgeving i
 
 * Creeer a [ Salesforce verbonden app met OAuth 2.0 cliëntcredentiële stroom ](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) en een API-enige gebruiker voor uw organisatie en verkrijg de consumentensleutel en het consumentengeheim voor app.
 
-* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [ tot een dossier van de Swagger ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
+* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [ tot een dossier van de Swagger ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=nl-NL) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
 >[!NOTE]
 >
 > AEM 6.5 ondersteunt alleen Swagger 2.0-bestandsspecificaties.

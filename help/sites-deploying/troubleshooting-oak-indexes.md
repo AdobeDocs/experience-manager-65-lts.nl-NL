@@ -124,7 +124,7 @@ Ga als volgt te werk om een vast opnieuw indexeringsproces te identificeren en t
 1. Start AEM opnieuw nadat u alle informatie hebt verzameld die in Stap 1 is beschreven.
 
    * Het opnieuw opstarten van AEM kan het probleem oplossen als er een hoge gelijktijdige belasting is (overloop van de waarnemingswachtrij of iets dergelijks).
-   * Als een nieuw begin het probleem niet oplost, open een kwestie met [ de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) en verstrek alle informatie die in Stap 1 wordt verzameld.
+   * Als een nieuw begin het probleem niet oplost, open een kwestie met [ de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support) en verstrek alle informatie die in Stap 1 wordt verzameld.
 
 ## Asynchrone herindexering veilig afbreken {#safely-aborting-asynchronous-re-indexing}
 

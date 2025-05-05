@@ -195,5 +195,5 @@ Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze verta
 * [ Vormend het Kader van de Integratie van de Vertaling ](/help/sites-administering/tc-tic.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
 * [ het Leiden Vertaalprojecten ](/help/sites-administering/tc-manage.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.
 * Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
-* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)

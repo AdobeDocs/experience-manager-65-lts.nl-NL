@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Analyses met [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
-AEM Forms integreert met [ Adobe Analytics ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview) om u prestatiesmetriek voor uw gepubliceerde vormen te laten vangen en volgen. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt gedrag van zowel aangemelde als niet-aangemelde (anonieme) gebruikers vastleggen en volgen via Adobe Analytics for Adaptive Forms.
+AEM Forms integreert met [ Adobe Analytics ](https://experienceleague.adobe.com/nl/docs/analytics-learn/tutorials/overview) om u prestatiesmetriek voor uw gepubliceerde vormen te laten vangen en volgen. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt gedrag van zowel aangemelde als niet-aangemelde (anonieme) gebruikers vastleggen en volgen via Adobe Analytics for Adaptive Forms.
 
 U kunt ook analyses uitvoeren met Cloud Service Framework. Voor meer informatie over hoe te om AEM Forms met het Kader van Cloud Service te integreren, zie [ Analytics gebruikend het Kader van Cloud Service ](/help/forms/using/configure-analytics-forms-documents.md). Het belangrijkste voordeel van het gebruik van Adobe Launch via Analytics met behulp van Cloud Service Framework is dat u naast deze gebeurtenissen uit de box ook aangepaste gebeurtenissen kunt definiëren. De aangepaste gebeurtenissen worden gedefinieerd met de regeleditor of clientlibs van de klant en worden toegewezen aan gebeurtenissen in [!DNL Adobe Analytics] .
 
@@ -49,12 +49,12 @@ In de volgende afbeelding ziet u de handelingen die u moet uitvoeren voordat u r
 Maak voordat u [!DNL Adobe Analytics] configureert:
 
 * Een Adobe ID aan login aan [ Adobe Experience Cloud ](https://experience.adobe.com/#/home).
-* A [ rapportreeks ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* A [ rapportreeks ](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 
 ### AEM Forms- en [!DNL Adobe Analytics] extensies installeren {#install-extensions}
 
-Voer de volgende stappen uit om AEM Forms en [ Adobe Analytics ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview) uitbreidingen te vormen:
+Voer de volgende stappen uit om AEM Forms en [ Adobe Analytics ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/analytics/overview) uitbreidingen te vormen:
 
 1. Meld u aan bij Adobe Experience Cloud en selecteer de gewenste naam voor het bedrijf.
 
@@ -198,7 +198,7 @@ Voer de volgende stappen uit om de configuratie te publiceren:
 
 ## 2. AEM Forms configureren {#configure-aem-forms}
 
-Alvorens de configuratie van de Lancering van Adobe tot stand te brengen, creeer een [ Configuratie van Adobe IMS gebruikend de Lancering van Adobe als Oplossing van de Wolk ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
+Alvorens de configuratie van de Lancering van Adobe tot stand te brengen, creeer een [ Configuratie van Adobe IMS gebruikend de Lancering van Adobe als Oplossing van de Wolk ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
 
 ### Adobe-startconfiguratie maken {#create-adobe-launch-configuration}
 
@@ -210,7 +210,7 @@ Voer de volgende stappen uit om een Adobe-startconfiguratie te maken:
 
 1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
 
-1. Selecteer de [ bijbehorende configuratie van Adobe IMS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
+1. Selecteer de [ bijbehorende configuratie van Adobe IMS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
 
 1. Selecteer de naam van het gebruikte bedrijf terwijl [ het vormen Adobe Analytics ](#Configure-adobe-analytics).
 
@@ -235,7 +235,7 @@ U kunt als volgt de [!DNL Adobe Launch] -configuratie in een bestaand adaptief f
 1. Selecteer **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Analytics] .
 1. Publiceer het formulier.
 
-Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
+Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
 
 >[!NOTE]
 >In het geval, als zowel [ Analytics gebruikend het Kader van Cloud Service ](/help/forms/using/configure-analytics-forms-documents.md) en **Analytics gebruikend de 3&rbrace; eigenschappen van de Lanceerinrichting van Adobe gelijktijdig worden toegelaten,** Analytics gebruikend de Lancering van Adobe **zal belangrijkheid nemen.**

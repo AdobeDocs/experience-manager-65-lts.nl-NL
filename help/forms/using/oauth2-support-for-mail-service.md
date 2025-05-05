@@ -153,7 +153,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   > Om meer informatie met betrekking tot taakberichten te kennen, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Om meer informatie met betrekking tot taakberichten te kennen, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=nl-NL#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Om e-maileindpunt te vormen {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   > Om meer informatie te kennen bij het vormen van e-maileindpunten, klik [ een e-maileindpunt ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html) vormen.
+   > Om meer informatie te kennen bij het vormen van e-maileindpunten, klik [ een e-maileindpunt ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=nl-NL) vormen.
 
 ## Problemen oplossen {#troubleshooting}
 

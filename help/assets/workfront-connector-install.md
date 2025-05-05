@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] installeert de verbeterde schakelaar. Alvorens u installeert, herzie de platformsteun en andere [ eerste vereisten voor de schakelaar ](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).

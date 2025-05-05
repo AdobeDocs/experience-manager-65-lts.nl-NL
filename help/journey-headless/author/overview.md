@@ -72,7 +72,7 @@ Je bent nu klaar om aan de slag te gaan met je Adobe Headless-reis. Wij moedigen
 However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
+* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 -->
 
 ## Aanvullende bronnen {#additional-resources}
@@ -84,7 +84,7 @@ Als zodanig zijn reizen zodanig ontworpen dat ze op zichzelf staan. Verschillend
 * [&#128279;](/help/journey-headless/translation/overview.md) de Vertaalreis van 0&rbrace; AEM Headless  - Deze documentatietraject geeft u een breed inzicht in headless technologie, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
 * [ AEM Headless Developer Journey ](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele hoofdloze eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 * [ Eis van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te modelleren.
-* [ technische documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
+* [ technische documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
    * Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
-* [ Hoofdloze zelfstudies van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op de Hoofdloze AEM worden gebouwd.
-* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ Hoofdloze zelfstudies van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op de Hoofdloze AEM worden gebouwd.
+* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)

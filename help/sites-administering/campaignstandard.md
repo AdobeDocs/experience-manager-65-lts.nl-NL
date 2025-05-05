@@ -44,7 +44,7 @@ Dit document leidt u door elk van deze stappen in detail.
 ## Vereisten {#prerequisites}
 
 * Toegang tot Adobe Campaign Standard voor beheerders
-   * Als u extra details op nodig hebt om Adobe Campaign Standard op te zetten en te vormen zie de [ documentatie van Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+   * Als u extra details op nodig hebt om Adobe Campaign Standard op te zetten en te vormen zie de [ documentatie van Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=nl-NL)
 * Toegang tot AEM voor beheerders
 
 ## De beheerder van de server configureren in Campagne {#aemserver-user}
@@ -65,7 +65,7 @@ Adobe Campaign Standard wordt standaard geleverd met een `aemserver` -gebruiker 
 
 Uw `aemserver` -gebruiker heeft nu de benodigde rechten zodat AEM deze kan gebruiken om te communiceren met Adobe Campaign.
 
-AEM kan de `aemserver` -gebruiker echter pas gebruiken als het wachtwoord is ingesteld. Dat kan niet via Adobe Campaign. Het moet worden uitgevoerd door een Adobe support engineer. [ leg een kaartje met de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/?support-tab=home#support) voor om het terugstellen van het `aemserver` wachtwoord te verzoeken. Bewaar het wachtwoord van de Adobe Customer Care op een veilige locatie.
+AEM kan de `aemserver` -gebruiker echter pas gebruiken als het wachtwoord is ingesteld. Dat kan niet via Adobe Campaign. Het moet worden uitgevoerd door een Adobe support engineer. [ leg een kaartje met de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/nl?support-tab=home#support) voor om het terugstellen van het `aemserver` wachtwoord te verzoeken. Bewaar het wachtwoord van de Adobe Customer Care op een veilige locatie.
 
 ## Verifieer AEMResourceTypeFilter in Campagne {#resource-type-filter}
 

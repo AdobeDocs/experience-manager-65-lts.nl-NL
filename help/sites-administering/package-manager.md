@@ -583,7 +583,7 @@ Met AEM Packages kunt u inhoud maken en delen in AEM-omgevingen.
 
 [ de Distributie van de Software ](https://downloads.experiencecloud.adobe.com) is de gecentraliseerde dienst die wordt ontworpen om het onderzoek en de download van de pakketten van AEM te vereenvoudigen.
 
-Voor meer informatie, zie de [ documentatie van de Distributie van de Software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Voor meer informatie, zie de [ documentatie van de Distributie van de Software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL)
 
 >[!NOTE]
 >

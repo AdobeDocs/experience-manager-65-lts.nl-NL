@@ -447,7 +447,7 @@ Met AEM, bestaat een productiemilieu vaak uit twee verschillende soorten instant
 
 ## De Dispatcher {#the-dispatcher}
 
-De Dispatcher is Adobe-tool voor zowel caching als taakverdeling. De verdere informatie kan onder [ worden gevonden Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+De Dispatcher is Adobe-tool voor zowel caching als taakverdeling. De verdere informatie kan onder [ worden gevonden Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL).
 
 ## FileVault (systeem voor bronrevisie) {#filevault-source-revision-system}
 

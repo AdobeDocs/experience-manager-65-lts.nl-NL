@@ -22,8 +22,8 @@ De implementatie van de geconstrueerde pakketten op AEM wordt uitgevoerd door de
 >
 >Zie voor meer informatie:
 >
->* Het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) artikel van de Insteekmodule van de Inhoud van 0&rbrace; Adobe Geweven &lbrace;in de documentatie van AEM as a Cloud Service voor hoe te om de toepassingen van AEM op te stellen.
->* Het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel van de Structuur van het Project van 0&rbrace; AEM &lbrace;in de documentatie van AEM as a Cloud Service voor hoe te om moderne projecten van AEM te structureren.
->* De [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie van de Archetype van het Project van 0&rbrace; AEM &lbrace;voor hoe te om een nieuw project van AEM te beginnen gebruikend archetype.
+>* Het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=nl-NL#developer-tools) artikel van de Insteekmodule van de Inhoud van 0&rbrace; Adobe Geweven &lbrace;in de documentatie van AEM as a Cloud Service voor hoe te om de toepassingen van AEM op te stellen.
+>* Het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) artikel van de Structuur van het Project van 0&rbrace; AEM &lbrace;in de documentatie van AEM as a Cloud Service voor hoe te om moderne projecten van AEM te structureren.
+>* De [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) documentatie van de Archetype van het Project van 0&rbrace; AEM &lbrace;voor hoe te om een nieuw project van AEM te beginnen gebruikend archetype.
 >
 >Alle drie documenten zijn van toepassing op AEM 6.5.

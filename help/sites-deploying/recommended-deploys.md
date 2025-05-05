@@ -190,4 +190,4 @@ Er is een reeks voorwaarden en aanbevelingen beschikbaar als u een MongoMK-imple
 
 >[!NOTE]
 >
->Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html).

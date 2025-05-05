@@ -32,7 +32,7 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
    1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
    1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) artikel.
+      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) artikel.
 
       Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het bestand &lt;crx-repository>/error.log en het logbestand stabiel is. Houd er rekening mee dat een aantal pakketten in de installatiestatus kunnen blijven staan. U kunt de status van deze verpakkingen veilig negeren.
 
@@ -52,7 +52,7 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
      Het migratiehulpprogramma maakt de adaptieve formulieren en het beheer van correspondentie van eerdere versies compatibel met AEM 6.5-formulieren. U kunt het hulpprogramma downloaden van AEM Software Distribution. Voor geleidelijke informatie om het migratienut te vormen en te gebruiken, zie [ migratienut ](../../forms/using/migration-utility.md).
 
-     Als u [ Steekproef voor het integreren van concepten &amp; voorleggingscomponent ](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
+     Als u [ Steekproef voor het integreren van concepten &amp; voorleggingscomponent ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,4 +93,4 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [ de Herstructurering van de Bewaarplaats van Forms in AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [ de Herstructurering van de Bewaarplaats van Forms in AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).

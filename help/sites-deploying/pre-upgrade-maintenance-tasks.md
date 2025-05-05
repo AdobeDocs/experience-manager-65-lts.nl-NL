@@ -37,7 +37,7 @@ Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudst
 
 ## Indexdefinities {#index-definitions}
 
-Controleer of u de vereiste indexdefinities hebt geïnstalleerd die bij AEM 6.5 Service Packs worden geleverd tot minimaal AEM Service Pack 22. (Verwijs naar [ AEM 6.5 de nota&#39;s van de servicepack versie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
+Controleer of u de vereiste indexdefinities hebt geïnstalleerd die bij AEM 6.5 Service Packs worden geleverd tot minimaal AEM Service Pack 22. (Verwijs naar [ AEM 6.5 de nota&#39;s van de servicepack versie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
 
 ## Zorgen voor voldoende schijfruimte {#ensure-sufficient-disk-space}
 

@@ -19,11 +19,11 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
 
 * [ integreer met Adobe Developer Console ](#integrate-adobe-io).
 * [ Lijn de Slimme Dienst van de Inhoud ](#training-the-smart-content-service).
-* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL).
 
 >[!IMPORTANT]
 >
->Verwijs naar [ Assets voor slimme het etiketteren ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/config-smart-tagging) voor de configuratie van slimme markeringen in AEM 6.5 voorbereiden.
+>Verwijs naar [ Assets voor slimme het etiketteren ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/administer/config-smart-tagging) voor de configuratie van slimme markeringen in AEM 6.5 voorbereiden.
 
 **Nieuwe Gebruikers**
 
@@ -270,4 +270,4 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 >
 >* [ Overzicht en hoe te om Slimme Markeringen ](enhanced-smart-tags.md) te trainen
 >* [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md)
->* [ Videozelfstudie over slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [ Videozelfstudie over slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=nl-NL)

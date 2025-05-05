@@ -102,7 +102,7 @@ Het rapport is als volgt ingedeeld:
 
 >[!NOTE]
 >
->Meer over elke het Vinden Categorie leren, zie {de Categorieën van de Detector van 0} Patroon [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Meer over elke het Vinden Categorie leren, zie {de Categorieën van de Detector van 0} Patroon [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Om inzicht te krijgen in de belangrijkste niveaus, volgt u de onderstaande tabel:
 

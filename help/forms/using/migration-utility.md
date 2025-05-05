@@ -32,13 +32,13 @@ U kunt [ bevorderen ](../../forms/using/upgrade.md) aan [ AEM Forms 6.5 LTS van 
 
 **als er een verbetering op zijn plaats** is
 
-Als u een [ op zijn plaats verbetering ](/help/sites-deploying/in-place-upgrade.md) uitvoerde, heeft de promotieinstantie reeds de activa en de documenten. Nochtans, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren.
+Als u een [ op zijn plaats verbetering ](/help/sites-deploying/in-place-upgrade.md) uitvoerde, heeft de promotieinstantie reeds de activa en de documenten. Nochtans, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren.
 
 Dan moet u de activa en de documenten door [ bijwerken die het nut van de Migratie ](#runningmigrationutility) in werking stellen.
 
 **als er een uit-van-plaats installatie** is
 
-Als het een uit plaats (verse) installatie is, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren.
+Als het een uit plaats (verse) installatie is, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren.
 
 Dan moet u uw activapakket (ZIP of cmp) op de nieuwe opstelling invoeren en dan de activa en de documenten bijwerken door [ in werking te stellen het nut van de Migratie ](#runningmigrationutility). Adobe raadt u aan alleen na het uitvoeren van het migratiehulpprogramma middelen op de nieuwe installatie te maken.
 

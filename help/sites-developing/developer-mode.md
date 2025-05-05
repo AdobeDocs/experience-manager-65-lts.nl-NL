@@ -57,7 +57,7 @@ Deze hulp een ontwikkelaar om:
 >Zie het volgende:
 >
 >* Het artikel van de Kennisbank, [ de kwesties van AEM TouchUI van het Oplossen van problemen ](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor verdere uiteinden en hulpmiddelen.
->* De zitting van AEM Gems over [ AEM 6.0 de Wijze van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* De zitting van AEM Gems over [ AEM 6.0 de Wijze van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=nl-NL).
 >
 
 ## Ontwerpmodus openen {#opening-developer-mode}

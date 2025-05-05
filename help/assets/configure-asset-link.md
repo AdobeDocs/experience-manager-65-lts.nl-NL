@@ -33,7 +33,7 @@ Zorg ervoor dat u het juiste servicepakket en -pakket installeert. Zie de volgen
 
 | Assets-functionaliteit | Experience Manager-versie en vereisten voor ondersteuning |
 |--- |--- |
-| Koppeling van middelen werkt standaard | Experience Manager 6.5 en 6.5.2 of hoger. </br> Experience Manager 6.4.4 en 6.4.6 of hoger. </br> Adobe adviseert installerend het recentste [ de dienstpak van Experience Manager (SP) ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) alvorens AAL te gebruiken. |
+| Koppeling van middelen werkt standaard | Experience Manager 6.5 en 6.5.2 of hoger. </br> Experience Manager 6.4.4 en 6.4.6 of hoger. </br> Adobe adviseert installerend het recentste [ de dienstpak van Experience Manager (SP) ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL) alvorens AAL te gebruiken. |
 | Asset Link werkt na het installeren van een pakket | Voor Experience Manager 6.4.0 - 6.4.3, installeer [ adobe-asset-link-support ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) pakket. |
 | Adobe Stock-integratie | Experience Manager 6.4.2 of hoger |
 | Zoeken op visuele of gelijkenis | Experience Manager 6.5.0 of hoger |
@@ -54,7 +54,7 @@ Adobe adviseert dat u [ adobe-asset-link-config ](https://experience.adobe.com/#
    Stel de volgende eigenschappen in en sla de wijzigingen op.
 
    * [!UICONTROL Group Mappings]: Laat leeg, tenzij gewenst. Voor details, zie [ Afbeelding van de Groep ](#group-mapping).
-   * [!UICONTROL Organization]: voer de organisatie-id in die u in de Adobe Admin Console gebruikt. Voor meer informatie over organisatie IDs, zie [ gebruikersgroep ](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html) creëren.
+   * [!UICONTROL Organization]: voer de organisatie-id in die u in de Adobe Admin Console gebruikt. Voor meer informatie over organisatie IDs, zie [ gebruikersgroep ](https://helpx.adobe.com/nl/enterprise/using/create-aal-user-group.html) creëren.
 
 1. Zoek **[!UICONTROL Adobe Granite Bearer Authentication Handler]** -configuratie en klik om deze te bewerken.
 
@@ -116,7 +116,7 @@ Experience Manager handmatig configureren:
 
 ## Aanvullende configuratie na migratie naar bedrijfsprofielen {#configure-migration-activity}
 
-Gebruikers van Adobe Asset Link kunnen verbinding maken met Experience Manager om IMS-aanmelding toe te staan vanaf de Creative Cloud for Enterprise (CCE) org. Experience Manager gebruikt de client-id&#39;s om de toegestane IMS-organisatie te identificeren. Na migratie naar bedrijfsprofielen is het vereist om de client-id en de geheime sleutel voor de IMS-org in Experience Manager te configureren voor de Verteller. Voor meer informatie over Bedrijfs Profielen, zie [ introducerend de Profielen van Adobe ](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
+Gebruikers van Adobe Asset Link kunnen verbinding maken met Experience Manager om IMS-aanmelding toe te staan vanaf de Creative Cloud for Enterprise (CCE) org. Experience Manager gebruikt de client-id&#39;s om de toegestane IMS-organisatie te identificeren. Na migratie naar bedrijfsprofielen is het vereist om de client-id en de geheime sleutel voor de IMS-org in Experience Manager te configureren voor de Verteller. Voor meer informatie over Bedrijfs Profielen, zie [ introducerend de Profielen van Adobe ](https://helpx.adobe.com/nl/enterprise/kb/introducing-adobe-profiles.html).
 
 Aanvullende configuratie is alleen vereist als u verschillende Adobe IMS-organisaties voor Experience Manager en Creative Cloud for Enterprise (CCE) gebruikt en er een vertrouwensrelatie tussen deze twee organisaties tot stand is gebracht.
 
@@ -283,11 +283,11 @@ Als u problemen ondervindt bij het configureren of gebruiken van Adobe Asset Lin
 * Zorg ervoor dat uw implementatie aan de voorwaarden voldoet. Controleer met name of de juiste functiepakketten of pakketten zijn geïnstalleerd.
 * Neem contact op met de partner of systeemintegrator van uw organisatie.
 * Als uw Creative Cloud-gebruikers niet kunnen controleren in de uitgecheckte middelen, controleert u of de domeinnamen in de e-mailadressen zijn opgeslagen. Om te bevestigen, zie [ handconfiguratie ](#manual-configuration).
-* Voor meer info, zie [ de Verbinding van Activa problemen oplossen ](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+* Voor meer info, zie [ de Verbinding van Activa problemen oplossen ](https://helpx.adobe.com/nl/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]
 >
->* [ Ongeveer de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [ Ongeveer de Verbinding van Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html)
 >* [ Verbinding van Activa van het Gebruik in de Desktopapp van Creative Cloud en beheert activa ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [ vorm Adobe Experience Manager Assets as a Cloud Service ](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [ vorm Adobe Experience Manager Assets as a Cloud Service ](https://helpx.adobe.com/nl/enterprise/using/configure-aem-assets-for-asset-link.html).
