@@ -76,7 +76,7 @@ Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerk
 Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden overwogen:
 
 * [ Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor een configureerbare, toe:voegen-op SaaS aan [!DNL Experience Manager Assets] om activa te publiceren.
-* De oplossingen van de douane worden gecreeerd gebaseerd op ](https://adobe-marketing-cloud.github.io/asset-share-commons/) de codebasis van het Aandeel van activa 0}.[
+* De oplossingen van de douane worden gecreeerd gebaseerd op [&#128279;](https://adobe-marketing-cloud.github.io/asset-share-commons/) de codebasis van het Aandeel van activa 0&rbrace;.
 * [!DNL Experience Manager] [ verbindingsaandeel ](/help/assets/link-sharing.md) om activa te delen op bestelling gebruikend verbindingen.
 * [ het Webinterface van Experience Manager Assets ](/help/assets/manage-assets.md) met gebieden voor externe partijen die door [!DNL Experience Manager] worden beveiligd toegangsbeheeropstelling en met noodzakelijke aanpassingen van IT/netwerkconfiguratie, die deze externe gebruikers toegang geven tot [!DNL Experience Manager].
 

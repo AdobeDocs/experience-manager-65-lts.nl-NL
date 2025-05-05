@@ -35,11 +35,11 @@ Als u AEM-gegevens wilt bijhouden in Adobe Analytics, moet u een geldige Adobe E
 De Adobe Analytics-account moet:
 
 * Heb **voorrechten van de Beheerder**
-* Wordt toegewezen aan de **gebruikersgroep van de Toegang van de Dienst van 0} Web.**
+* Wordt toegewezen aan de **gebruikersgroep van de Toegang van de Dienst van 0&rbrace; Web.**
 
 >[!CAUTION]
 >
->Het verstrekken van **voorrechten van de Beheerder** (binnen Adobe Analytics) is niet genoeg om een gebruiker toe te staan om van AEM met Adobe Analytics te verbinden. De rekening moet ook **voorrechten hebben van de Toegang van de Dienst van het 0} Web.**
+>Het verstrekken van **voorrechten van de Beheerder** (binnen Adobe Analytics) is niet genoeg om een gebruiker toe te staan om van AEM met Adobe Analytics te verbinden. De rekening moet ook **voorrechten hebben van de Toegang van de Dienst van het 0&rbrace; Web.**
 
 ![ chlimage_1-67 ](assets/chlimage_1-67.png)
 
@@ -212,7 +212,7 @@ Om deze dienst te vormen OSGi, kunt u of de [ Console van het Web ](/help/sites-
 
 ## Adobe Analytics-configuraties en/of frameworks bewerken {#editing-adobe-analytics-configurations-and-or-frameworks}
 
-Zoals wanneer het creëren van een configuratie of een kader van Adobe Analytics, navigeer aan het (erfenis) **scherm van de Diensten van de Wolk 0} {.** Selecteer **tonen Configuraties**, dan klik de verbinding aan de specifieke configuratie u wilt bijwerken.
+Zoals wanneer het creëren van een configuratie of een kader van Adobe Analytics, navigeer aan het (erfenis) **scherm van de Diensten van de Wolk 0&rbrace; &lbrace;.** Selecteer **tonen Configuraties**, dan klik de verbinding aan de specifieke configuratie u wilt bijwerken.
 
 Wanneer het uitgeven van een configuratie van Adobe Analytics, druk **uitgeven** wanneer op de configuratiepagina zelf om **te openen geef de dialoog van de Component** uit.
 

@@ -322,7 +322,7 @@ Voor meer informatie over het vormen van RTE, zie de [ Widget API van AEM ](http
 
 Met name om de beschikbare plug-ins en bijbehorende opties te zien:
 
-* De {](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) component 0} CQ.form.RichText verstrekt een vormgebied voor het uitgeven van gestileerde tekstinformatie (rijke tekst). [ Zie Configuratieopties voor meer informatie over alle parameters die beschikbaar zijn voor het RTF-formulier.
+* De {[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) component 0} CQ.form.RichText verstrekt een vormgebied voor het uitgeven van gestileerde tekstinformatie (rijke tekst).  Zie Configuratieopties voor meer informatie over alle parameters die beschikbaar zijn voor het RTF-formulier.
 * De component RichText verstrekt een brede waaier van functionaliteit gebruikend stop-ins die onder [ CQ.form.rte.plugins.Plugin ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) worden vermeld. Voor elke insteekmodule:
 
    * zie de Eigenschappen voor details van functionaliteit die kan worden toegelaten (of worden onbruikbaar gemaakt)
@@ -374,7 +374,7 @@ Controleer de opgeslagen inhoud in CRXDE (in het inhoudsknooppunt) om te control
 
 Indien niet opgeslagen, moet de HTML door RTE zijn verwijderd aangezien het zich niet aan de regels van RTE hield.
 
-Als bewaard in CRXDE maar niet teruggegeven op de Pagina (om het teruggeven te controleren, zie de voorproef van de pagina [ ](/help/sites-authoring/editing-content.md#preview-mode), wordt het verwijderd door de regels van AEM XSS.
+Als bewaard in CRXDE maar niet teruggegeven op de Pagina (om het teruggeven te controleren, zie de voorproef van de pagina [&#128279;](/help/sites-authoring/editing-content.md#preview-mode), wordt het verwijderd door de regels van AEM XSS.
 
 **Multifield component werkt niet zoals verwacht**
 

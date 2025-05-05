@@ -90,7 +90,7 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
    >
    >Als u de wolkenconfiguratie aan het Fragment van de Ervaring zelf toevoegt, wordt de configuratie geërft door alle variaties.
 
-1. Selecteer de **tabel van de Diensten van de Wolk 0} {.**
+1. Selecteer de **tabel van de Diensten van de Wolk 0&rbrace; &lbrace;.**
 
 1. Onder **Configuratie van Cloud Service**, uitgezochte **Adobe Target** van de drop-down lijst.
 

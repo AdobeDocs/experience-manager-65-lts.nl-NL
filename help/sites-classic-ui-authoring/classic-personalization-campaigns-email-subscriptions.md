@@ -23,7 +23,7 @@ ht-degree: 0%
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
 >De aanbeveling moet [ Adobe Campaign en zijn integratie van AEM ](/help/sites-administering/campaign.md) gebruiken.
 
-De gebruikers kunnen worden gevraagd om aan **het posteren lijsten 1} van de E-mailDienstverlener {met de hulp van de** 3} component in te tekenen van de Vorm {die op een Web-pagina van AEM wordt gebruikt. **** Als u een AEM-pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op uw mailinglijsten voor e-mailservices, moet u de bijbehorende serviceconfiguratie toepassen op de AEM-pagina die de potentiële abonnee zal bezoeken.
+De gebruikers kunnen worden gevraagd om aan **het posteren lijsten 1&rbrace; van de E-mailDienstverlener {met de hulp van de** 3} component in te tekenen van de Vorm &lbrace;die op een Web-pagina van AEM wordt gebruikt. **&#x200B;**&#x200B;Als u een AEM-pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op uw mailinglijsten voor e-mailservices, moet u de bijbehorende serviceconfiguratie toepassen op de AEM-pagina die de potentiële abonnee zal bezoeken.
 
 ## Configuratie van e-mailservice toepassen op een pagina {#applying-email-service-configuration-to-a-page}
 
@@ -32,7 +32,7 @@ Een AEM-pagina configureren:
 1. Navigeer aan de **Websites** tabel.
 1. Selecteer de pagina die voor de dienst moet worden gevormd. Klik de pagina met de rechtermuisknop aan en selecteer **Eigenschappen**.
 
-1. Selecteer {de Diensten van de Wolk 1} toen **de Dienst** toevoegen. **** Selecteer een configuratie in de lijst met beschikbare configuraties.
+1. Selecteer {de Diensten van de Wolk 1} toen **de Dienst** toevoegen. **&#x200B;**&#x200B;Selecteer een configuratie in de lijst met beschikbare configuraties.
 
    ![ chlimage_1-164 ](assets/chlimage_1-164.png)
 
@@ -97,7 +97,7 @@ Om een auto-antwoordapparaat e-mail voor een abonnee te vormen:
 1. Open de pagina-eigenschappen van de AEM-pagina met het aanmeldingsformulier voor het configureren van de automatische beantwoorder voor een lead.
 1. Pas de configuratie ExactTarget op de pagina toe.
 
-1. Voeg de component van de a **Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelaar aan ontwerpwijze en laat de **1} groep van de Vorm {toe.**
+1. Voeg de component van de a **Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelaar aan ontwerpwijze en laat de **1&rbrace; groep van de Vorm &lbrace;toe.**
 1. Klik **uitgeven** in het **Begin van de bar van de Vorm** en navigeer aan **Geavanceerd** tabel.
 1. In het **drop-down menu van de Vorm**, uitgezochte **E-mailDienst: verzend auto antwoordapparaat e-mail.**
 1. **selecteer een e-mail** (dit is de post die als auto-antwoordapparaat e-mail wordt verzonden).

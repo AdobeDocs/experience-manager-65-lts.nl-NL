@@ -171,7 +171,7 @@ Als een gebruiker zonder de vereiste AEM-formulieren en CQ-machtigingen zich pro
 * Correspondentenbeheeroplossing
 * AEM-formulieren Workspace
 
-  ***nota **: De Werkruimte van Flex wordt afgekeurd voor de vormenversie van AEM.*
+  ***nota &#x200B;**: De Werkruimte van Flex wordt afgekeurd voor de vormenversie van AEM.*
 
 * formulierbeheer
 * Procesrapportage

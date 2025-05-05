@@ -96,7 +96,7 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, moe
 
 Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Neem bijvoorbeeld het DDX-document dat in deze sectie is geïntroduceerd. Als u een PDF-document wilt samenstellen dat unieke pagina-id&#39;s bevat, moet het DDX-document het element `BatesNumber` bevatten.
 
-{de documenten van PDF van de 0} input van de Verwijzing ****
+{de documenten van PDF van de 0} input van de Verwijzing **&#x200B;**
 
 Invoerdocumenten van PDF moeten worden vermeld om een PDF-document samen te stellen. Er moet bijvoorbeeld naar de documenten map.pdf en direction.pdf worden verwezen om deze PDF-documenten samen te voegen tot één PDF-document.
 

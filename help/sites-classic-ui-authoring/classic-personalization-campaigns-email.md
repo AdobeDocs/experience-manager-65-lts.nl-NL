@@ -248,7 +248,7 @@ Een nieuwsbrief sturen vanuit de campagne:
    >
    >[ het testen van de Vlucht ](#flight-testing-newsletters) nieuwsbrief alvorens wordt het verzenden geadviseerd.
 
-1. Bij de bovenkant van nieuwsbrief, verzendt de klik ****. De wizard Nieuwsbrief wordt geopend.
+1. Bij de bovenkant van nieuwsbrief, verzendt de klik **&#x200B;**. De wizard Nieuwsbrief wordt geopend.
 
 1. In de lijst van de ontvanger, selecteer de lijst u nieuwsbrief wilt ontvangen en **daarna** klikken.
 
@@ -296,7 +296,7 @@ In deze sectie wordt beschreven hoe u zich op een nieuwsbrief kunt abonneren.
 
 Abonneren op een nieuwsbrief (de Geometrixx-website als voorbeeld gebruiken):
 
-1. Klik **Websites** en navigeer aan de 2} Toolbar van Geometrixx **en open het.**
+1. Klik **Websites** en navigeer aan de 2&rbrace; Toolbar van Geometrixx **en open het.**
 
    ![ steekproef van de Abonnement ](assets/chlimage_1-121.png)
 

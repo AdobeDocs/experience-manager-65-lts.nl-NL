@@ -176,7 +176,7 @@ Het responsieve ontwerp voor uw elementen betekent dat uw elementen worden aange
 
 Een interactieve kijkervaring toevoegen aan een responsieve site in de klassieke gebruikersinterface:
 
-1. Login aan Experience Manager, en zorg ervoor dat u de Diensten van de Wolk van Adobe Dynamic Media Classic (Scene7) ](/help/sites-administering/scene7.md#configuring-scene-integration) hebt gevormd en dat de componenten van Dynamic Media Classic (Scene7) beschikbaar zijn.[
+1. Login aan Experience Manager, en zorg ervoor dat u de Diensten van de Wolk van Adobe Dynamic Media Classic (Scene7) [&#128279;](/help/sites-administering/scene7.md#configuring-scene-integration) hebt gevormd en dat de componenten van Dynamic Media Classic (Scene7) beschikbaar zijn.
 
    >[!NOTE]
    >
@@ -197,7 +197,7 @@ Hoewel de configuratieopties variëren, zijn het volgende gemeenschappelijk voor
 * **Breedte** - laat u de breedte plaatsen.
 * **Hoogte** - laat u de hoogte plaatsen.
 
-U plaatst deze configuratieopties door (het tweemaal klikken) een component van Dynamic Media Classic (Scene7) te openen, bijvoorbeeld, wanneer u a **** component van het Gezoem opent:
+U plaatst deze configuratieopties door (het tweemaal klikken) een component van Dynamic Media Classic (Scene7) te openen, bijvoorbeeld, wanneer u a **&#x200B;**&#x200B;component van het Gezoem opent:
 
 ![ chlimage_1-52 ](assets/chlimage_1-52.png)
 
@@ -395,7 +395,7 @@ Standaard zoekt Experience Manager naar de geselecteerde map en naar alle submap
 >* In klassieke UI, kunt u ook naar **Flits** en **FXG** zoeken. Filteren voor deze twee termen in de interface met geoptimaliseerde aanrakingen wordt niet ondersteund.
 >
 >* Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke uitvoering (alleen &#42; .mp4) en de gecodeerde uitvoering.
-* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
+>* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
 >
 
 **publiceer Status** - u kunt voor activa filtreren die op publicatiestatus worden gebaseerd: Niet gepubliceerd of Gepubliceerd. Als u geen publicatiestatus selecteert, zoekt Experience Manager standaard alle publicatiestatus.

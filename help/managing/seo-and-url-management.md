@@ -52,6 +52,7 @@ Hier volgen enkele algemene tips voor het samenstellen van URL&#39;s voor SEO:
    * Wanneer u selectors op een pagina gebruikt, hebben selectors die semantische waarde bieden, de voorkeur.
    * Als mensen uw URL niet kunnen lezen, kan een zoekmachine dat ook niet.
    * Bijvoorbeeld:
+
      `mybrand.com/products/product-detail.product-category.product-name.html`
 heeft de voorkeur boven `mybrand.com/products/product-detail.1234.html`
 
@@ -256,6 +257,7 @@ Er is echter ook een eenvoudigere manier om deze kwestie te beheren:
    Met behulp van de webconsole (bijvoorbeeld localhost:4502/system/console/configMgr) kunt u de Sling Resource Resolver configureren:
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Adobe raadt aan dat u de toewijzingen opmaakt die nodig zijn om URL&#39;s in te korten als reguliere expressies en deze configuraties vervolgens definieert onder een OsgiConfignode `config.publish` die in uw build is opgenomen.

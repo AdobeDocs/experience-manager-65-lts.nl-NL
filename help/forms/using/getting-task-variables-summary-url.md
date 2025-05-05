@@ -70,7 +70,7 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
 
       Ook, voeg a **sling toe:resourceType** sleutel met waarde **Werknemers/PtoApplication** in de kaart.
 
-   1. Gebruik subprocess **storeContent** van de **** dienst ContentRepositoryConnector in **creeer PTO summiere** proces. Dit subproces maakt een CRX-knooppunt.
+   1. Gebruik subprocess **storeContent** van de **&#x200B;**&#x200B;dienst ContentRepositoryConnector in **creeer PTO summiere** proces. Dit subproces maakt een CRX-knooppunt.
 
       Er zijn drie invoervariabelen voor nodig:
 

@@ -52,7 +52,7 @@ Zie ook [ Facultatief - Opstelling en configuratie van Dynamische Media - Scene7
    * [ Illustrator ](#illustrator-tab) lusje
 
    ![ Dynamische pagina van de Montages van Media Algemene ](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamische pagina van de Montages van Media Algemene, met het **[!UICONTROL Image Editing]**geselecteerde lusje.*<br><br>
+   *Dynamische pagina van de Montages van Media Algemene, met het **[!UICONTROL Image Editing]**&#x200B;geselecteerde lusje.*<br><br>
 
 1. Wanneer u klaar bent, selecteert u **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 

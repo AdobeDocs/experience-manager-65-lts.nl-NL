@@ -40,7 +40,7 @@ De Test en van het Doel [ replicatieagent ](/help/sites-deploying/replication.md
 1. Op de homepage van AEM, klik **Hulpmiddelen** > **Plaatsing** > **Replicatie**.
 1. Klik **Agenten op Auteur**.
 1. Klik de **Test en Doel (test en doel)** replicatieagent, en klik dan **uitgeven**.
-1. Selecteer de Toegelaten optie, dan klik O.K. ****.
+1. Selecteer de Toegelaten optie, dan klik O.K. **&#x200B;**.
 
    >[!NOTE]
    >

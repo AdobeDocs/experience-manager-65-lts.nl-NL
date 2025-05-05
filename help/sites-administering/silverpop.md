@@ -73,7 +73,7 @@ Een Silverpop-configuratie maken in de gereedschappen:
 
 Meerdere configuraties toevoegen:
 
-1. Voor de welkomstpagina, klik **de Diensten van de Wolk van 0} {en klik** Silverpop Ingenieur **.** Klik **tonen de knoop van Configuraties** die verschijnt als één of meerdere configuraties Silverpop beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
+1. Voor de welkomstpagina, klik **de Diensten van de Wolk van 0&rbrace; &lbrace;en klik** Silverpop Ingenieur **.** Klik **tonen de knoop van Configuraties** die verschijnt als één of meerdere configuraties Silverpop beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
 1. Klik op het **+** -teken naast Beschikbare configuraties. Het opent **leidt tot Configuraties** venster. Volg de vorige configuratieprocedure zodat kunt u een configuratie creëren.
 
 ### API-eindpunten configureren voor verbinding met Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}

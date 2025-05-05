@@ -32,7 +32,7 @@ Voor informatie over klassieke UI zie [ de Componenten van AEM voor Klassieke UI
 >
 >AEM biedt de volgende mogelijkheden om uw componenten te analyseren, te testen en fouten op te sporen:
 >
->* ](/help/sites-developing/developer-mode.md) de Wijze van de Ontwikkelaar 0}[
+>* [&#128279;](/help/sites-developing/developer-mode.md) de Wijze van de Ontwikkelaar 0&rbrace;
 >* a [ kader voor het automatiseren van tests, die op de bibliotheek Hobbes.js ](/help/sites-developing/hobbes.md) worden gebaseerd
 >
 

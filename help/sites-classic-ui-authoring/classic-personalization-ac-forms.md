@@ -96,7 +96,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
 
    Het **gebied van de Configuratie van de Actie** laat u specificeren al dan niet u het ontvankelijke profiel in het gegevensbestand van Adobe Campaign zou willen tot stand brengen als het nog niet bestaat. Om dit te doen, controleer **creeer gebruiker als niet bestaande** optie.
 
-1. Voeg de geselecteerde componenten toe door deze vanuit de gereedschapset te slepen en neer te zetten op het formulier. Voor meer informatie over de beschikbare specifieke componenten van Adobe Campaign, zie {de Componenten van de Vorm van 0} Adobe ](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).[
+1. Voeg de geselecteerde componenten toe door deze vanuit de gereedschapset te slepen en neer te zetten op het formulier. Voor meer informatie over de beschikbare specifieke componenten van Adobe Campaign, zie {de Componenten van de Vorm van 0} Adobe [&#128279;](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
    ![ chlimage_1-188 ](assets/chlimage_1-188.png)
 

@@ -123,9 +123,9 @@ U kunt de interne firewall vormen om bepaalde componenten van AEM Forms (bijvoor
 
 Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iedereen. Alleen-lezen toegang is ingeschakeld voor alle elementen. Het is vereist anonieme toegang toe te laten. Als u de formulierweergave wilt beperken en alleen voor geverifieerde gebruikers toegang wilt geven, gebruikt u een algemene groep om alleen geverifieerde gebruikers alleen-lezentoegang te geven tot de elementen die beschikbaar zijn op de publicatieknooppunten. De volgende locaties/mappen bevatten formulierelementen die verharding vereisen (alleen-lezen toegang voor geverifieerde gebruikers):
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/&ast;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&ast;
 
 ## Formuliergegevens veilig verwerken  {#securely-handle-forms-data}
 
@@ -196,4 +196,4 @@ Een verwerkingscluster wordt uitgevoerd in de auteursmodus, maar gebruikt deze n
 
 ### Gebruik AEM best practices om een AEM Forms-omgeving te beveiligen {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Dit document bevat specifieke instructies voor de AEM Forms-omgeving. Zorg ervoor dat de onderliggende AEM-installatie veilig is wanneer deze wordt geïmplementeerd. Voor gedetailleerde instructies, zie {de 1} documentatie van Checklist van de Veiligheid van 0} AEM.[](/help/sites-administering/security-checklist.md)
+Dit document bevat specifieke instructies voor de AEM Forms-omgeving. Zorg ervoor dat de onderliggende AEM-installatie veilig is wanneer deze wordt geïmplementeerd. Voor gedetailleerde instructies, zie {de 1} documentatie van Checklist van de Veiligheid van 0&rbrace; AEM.[&#128279;](/help/sites-administering/security-checklist.md)

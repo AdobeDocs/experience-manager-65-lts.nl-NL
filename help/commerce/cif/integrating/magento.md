@@ -36,7 +36,7 @@ Voor de cliënt-zijcomponenten, die gebruikend [ React ](https://reactjs.org/) b
 
 ![ de Architectuur van de Component van de Kern van AEM CIF ](../assets/cif-component-architecture.jpg)
 
-{de Componenten van de Kern van AEM CIF van 0} ](https://github.com/adobe/aem-core-cif-components) volgen zeer gelijkaardige ontwerppatronen en beste praktijken zoals [ de Componenten van de Kern van AEM WCM ](https://github.com/adobe/aem-core-wcm-components).[
+{de Componenten van de Kern van AEM CIF van 0} [&#128279;](https://github.com/adobe/aem-core-cif-components) volgen zeer gelijkaardige ontwerppatronen en beste praktijken zoals [ de Componenten van de Kern van AEM WCM ](https://github.com/adobe/aem-core-wcm-components).
 
 De bedrijfslogica en de achtergrondcommunicatie met Adobe Commerce voor de AEM CIF Core Components worden geïmplementeerd in Sling Models. Als deze logica moet worden aangepast om aan projectspecifieke vereisten te voldoen, kan het delegatiepatroon voor Sling Models worden gebruikt.
 

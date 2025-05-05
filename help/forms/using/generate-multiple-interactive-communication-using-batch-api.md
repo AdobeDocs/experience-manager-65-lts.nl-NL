@@ -177,7 +177,7 @@ Voordat u de Java™-servlet implementeert, moet u ervoor zorgen dat u een inter
 
 1. Meld u aan bij uw AEM-exemplaar en maak een interactieve communicatie. Om de interactieve mededeling te gebruiken die in de hieronder vermelde steekproefcode wordt vermeld, [ klik hier ](assets/SimpleMediumIC.zip).
 1. [ bouwt en stelt een Project van AEM op gebruikend Apache Maven ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) op uw instantie van AEM.
-1. Voeg {versie 6.0.12 van SDK van de Cliënt van 0} AEM Forms of recenter ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) in de gebiedslijst van POM dossier van uw project van AEM toe. [ Bijvoorbeeld:
+1. Voeg {versie 6.0.12 van SDK van de Cliënt van 0} AEM Forms of recenter [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) in de gebiedslijst van POM dossier van uw project van AEM toe.  Bijvoorbeeld:
 
    ```xml
        <dependency>

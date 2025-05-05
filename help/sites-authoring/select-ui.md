@@ -104,9 +104,11 @@ De montages die door een gebruiker of systeembeheerder worden bepaald kunnen doo
 * Bij het ontwerpen van pagina&#39;s:
 
    * Het gebruik van de klassieke editor wordt geforceerd wanneer u de pagina opent met `cf#` in de URL. Bijvoorbeeld:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Het gebruik van de aanraakeditor wordt geforceerd wanneer u `/editor.html` in de URL gebruikt of wanneer u een aanraakapparaat gebruikt. Bijvoorbeeld:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Elke forcering is tijdelijk en is alleen geldig voor de browsersessie

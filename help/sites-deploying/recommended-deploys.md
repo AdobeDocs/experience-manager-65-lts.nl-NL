@@ -129,7 +129,7 @@ De voordelen:
 
 >[!NOTE]
 >
->Voor extra informatie over de architecturale concepten MongoDB die in deze sectie worden beschreven, zie {de Replicatie van 0} MongoDB ](https://docs.mongodb.org/manual/replication/).[
+>Voor extra informatie over de architecturale concepten MongoDB die in deze sectie worden beschreven, zie {de Replicatie van 0} MongoDB [&#128279;](https://docs.mongodb.org/manual/replication/).
 
 ## Microkorrels: één voor gebruik {#microkernels-which-one-to-use}
 

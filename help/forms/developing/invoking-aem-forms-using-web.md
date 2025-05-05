@@ -621,7 +621,7 @@ Creeer een project van de Bibliotheek van de Klasse van Visual Studio dat een .N
 1. Importeer het CS-bestand dat u hebt gemaakt met wsdl.exe.
 1. In het **menu van het Project**, uitgezocht **voeg Verwijzing** toe.
 1. In Add de dialoogdoos van de Verwijzing, uitgezocht **System.Web.Services.dll**.
-1. Klik **Uitgezocht** en klik dan O.K. ****.
+1. Klik **Uitgezocht** en klik dan O.K. **&#x200B;**.
 1. Compileer en bouw het project.
 
 >[!NOTE]
@@ -639,7 +639,7 @@ Plaats uw onlangs gecreeerde .NET cliëntassemblage op de computer waar u uw cli
 1. In het **menu van het Project**, uitgezocht **voeg Verwijzing** toe.
 1. Klik **.NET** tabel.
 1. Klik **doorbladeren** en van het dossier de plaats bepalen DocumentService.dll.
-1. Klik **Uitgezocht** en klik dan O.K. ****.
+1. Klik **Uitgezocht** en klik dan O.K. **&#x200B;**.
 
 **het aanhalen van de dienst die een .NET cliëntassemblage gebruikt die Base64 het coderen** gebruikt
 
@@ -765,7 +765,7 @@ Nadat u een Verwijzing van de Dienst creeert, zijn de gegevenstypes verbonden aa
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-1. Klik **gaan** en klik dan O.K. ****.
+1. Klik **gaan** en klik dan O.K. **&#x200B;**.
 
 ### Het aanhalen van de dienst die MTOM in een .NET project gebruikt {#invoking-a-service-using-mtom-in-a-net-project}
 
@@ -955,7 +955,7 @@ Plaats uw nieuwe .NET cliëntassemblage op de computer waar u uw cliënttoepassi
 1. In het **menu van het Project**, uitgezocht **voeg Verwijzing** toe.
 1. Klik **.NET** tabel.
 1. Klik **doorbladeren** en van het dossier de plaats bepalen DocumentService.dll.
-1. Klik **Uitgezocht** en klik dan O.K. ****.
+1. Klik **Uitgezocht** en klik dan O.K. **&#x200B;**.
 
 **aanroepend de dienst die een .NET cliëntassemblage gebruikt die BLOB gegevens over HTTP** gebruikt
 

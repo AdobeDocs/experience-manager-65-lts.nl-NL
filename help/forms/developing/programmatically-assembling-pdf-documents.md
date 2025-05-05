@@ -97,7 +97,7 @@ Voordat u een Assembler-bewerking programmatisch kunt uitvoeren, moet u een Asse
 
 Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Neem bijvoorbeeld het DDX-document dat in deze sectie is geïntroduceerd. Dit DDX-document geeft de Assembler-service de opdracht om twee PDF-documenten samen te voegen tot één PDF-document.
 
-{de documenten van PDF van de 0} input van de Verwijzing ****
+{de documenten van PDF van de 0} input van de Verwijzing **&#x200B;**
 
 Referentie-invoer PDF-documenten die u wilt doorgeven aan de Assembler-service. Als u bijvoorbeeld twee invoer-PDF-documenten met de naam Kaart en Richtingen wilt doorgeven, moet u de bijbehorende PDF-bestanden doorgeven.
 

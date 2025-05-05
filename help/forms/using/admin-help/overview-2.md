@@ -24,7 +24,7 @@ A *referentie* bevat uw privé zeer belangrijke informatie nodig voor het ondert
 
 * Acrobat Reader DC-extensies gebruiken een referentie om gebruiksrechten voor Adobe Reader in PDF-documenten in te schakelen. (Zie [ Vormende geloofsbrieven voor gebruik met de uitbreidingen van gelijkstroom van de Lezer van de Acrobaat ](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
 * U kunt Rights Management zo configureren dat deze alleen aanmeldingsgegevens van vertrouwde uitgevers weergeeft voor gebruik in Acrobat. (Zie [ de vertoningsmontages van Rights Management ](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings) vormen.) De Gemeenschappelijke Naam (CN) moet in het certificaat aanwezig zijn.
-* De handtekeningservice heeft toegang tot certificaten en referenties. Voor details op de dienst van de Handtekening, zie {de Verwijzing van de Diensten 0} ](https://www.adobe.com/go/learn_aemforms_services_65).[
+* De handtekeningservice heeft toegang tot certificaten en referenties. Voor details op de dienst van de Handtekening, zie {de Verwijzing van de Diensten 0} [&#128279;](https://www.adobe.com/go/learn_aemforms_services_65).
 
 **die een paarsleutel** produceren
 

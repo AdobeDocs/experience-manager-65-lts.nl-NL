@@ -55,7 +55,7 @@ Als u het formulierontwerp ophaalt vanaf een vaste locatie, zoals het bestandssy
 
 Als u een URI-waarde wilt doorgeven die de locatie van het formulierontwerp opgeeft bij het maken van een PDF-document, gebruikt u de methode `generatePDFOutput` . Op dezelfde manier kunt u de methode `generatePDFOutput2` gebruiken om een `com.adobe.idp.Document` -instantie door te geven aan de uitvoerservice wanneer u een PDF-document maakt.
 
-Wanneer u een uitvoerstream naar een netwerkprinter verzendt, kunt u ook een van de twee technieken gebruiken. Om een outputstroom naar een printer te verzenden door een `com.adobe.idp.Document` instantie over te gaan die een vormontwerp bevat, gebruik de `sendToPrinter2` methode. Om een outputstroom naar een printer te verzenden door een waarde van URI over te gaan, gebruik de `sendToPrinter` methode. Het *verzenden van de Streams van de Druk aan de 1} sectie van Printers {gebruikt de `sendToPrinter` methode.*
+Wanneer u een uitvoerstream naar een netwerkprinter verzendt, kunt u ook een van de twee technieken gebruiken. Om een outputstroom naar een printer te verzenden door een `com.adobe.idp.Document` instantie over te gaan die een vormontwerp bevat, gebruik de `sendToPrinter2` methode. Om een outputstroom naar een printer te verzenden door een waarde van URI over te gaan, gebruik de `sendToPrinter` methode. Het *verzenden van de Streams van de Druk aan de 1&rbrace; sectie van Printers &lbrace;gebruikt de `sendToPrinter` methode.*
 
 U kunt deze taken uitvoeren met de service Uitvoer:
 
@@ -506,7 +506,7 @@ Een PDF/A-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >De versie van PDF van een document PDF/A is 1.4 ongeacht welke waarde u voor de `setPdfVersion`*methode van 0} objecten {specificeert.*`RenderOptionsSpec`
+   >De versie van PDF van een document PDF/A is 1.4 ongeacht welke waarde u voor de `setPdfVersion`*methode van 0&rbrace; objecten &lbrace;specificeert.*`RenderOptionsSpec`
 
 1. Een PDF/A-document genereren.
 

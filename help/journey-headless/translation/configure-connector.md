@@ -77,7 +77,7 @@ Een vertaalconfiguratie maken:
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
    * In dit geval zou een configuratie globaal kunnen worden gemaakt om op alle inhoud, of enkel voor het WKND project van toepassing te zijn.
 
-   {de configuratielocatie van 0} Vertaling ](assets/translation-configuration-location.png)![
+   {de configuratielocatie van 0} Vertaling ![&#128279;](assets/translation-configuration-location.png)
 
 1. Verstrek de volgende informatie op de gebieden en klik dan **creëren**.
    1. Selecteer **Type van Configuratie** in drop-down. Selecteer **Integratie van de Vertaling** van de lijst.
@@ -119,7 +119,7 @@ Navigeer hiertoe naar de hoofdtaalmap van de inhoud. Voor ons voorbeelddoel is d
 
 1. Ga naar de globale navigatie en ga naar **Navigatie** > **Assets** > **Dossiers**.
 1. In de activa console, selecteer de taalwortel om **Eigenschappen** te vormen en te klikken.
-1. Klik de **tabel van de Diensten van de Wolk 0} {.**
+1. Klik de **tabel van de Diensten van de Wolk 0&rbrace; &lbrace;.**
 1. Onder **de Configuraties van Cloud Service** in **voeg Configuratie** dropdown toe, selecteer uw schakelaar. Het zou in dropdown moeten verschijnen wanneer u zijn pakket zoals [ eerder beschreven hebt geïnstalleerd.](#connect-translation-provider)
 1. Onder **de Configuraties van Cloud Service** in **voeg Configuratie** dropdown toe, selecteer ook uw configuratie.
 1. Klik **sparen &amp; Sluiten**.

@@ -94,7 +94,7 @@ De in dit document beschreven taken worden weergegeven met de rol die verantwoor
 
 * [Bewerkbare sjablonen](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * Kan [ worden gecreeerd ](#creatinganewtemplate) en [ ](#editingatemplate) door malplaatjeauteurs worden uitgegeven gebruikend de **console en de redacteur van het Malplaatje**. De **console van het Malplaatje** is toegankelijk in de **Algemene** sectie van de **console van Hulpmiddelen**.
+   * Kan [ worden gecreeerd ](#creatinganewtemplate) en [&#128279;](#editingatemplate) door malplaatjeauteurs worden uitgegeven gebruikend de **console en de redacteur van het Malplaatje**. De **console van het Malplaatje** is toegankelijk in de **Algemene** sectie van de **console van Hulpmiddelen**.
 
    * Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. Dit betekent dat wijzigingen in de sjabloonstructuur en/of vergrendelde inhoud worden doorgevoerd op alle pagina&#39;s die met die sjabloon zijn gemaakt. Wijzigingen in de ontgrendelde (initiële) inhoud worden niet doorgevoerd.
    * Het inhoudsbeleid van het gebruik, dat u deze van de malplaatjeredacteur kunt bepalen, om de ontwerpeigenschappen voort te zetten. De ontwerpmodus in de pagina-editor wordt niet meer gebruikt voor bewerkbare sjablonen.
@@ -105,7 +105,7 @@ De sjabloonconsole en sjablooneditor staan per definitie alleen het maken en bew
 
 Bij het maken van een bewerkbare sjabloon:
 
-* Gebruik de **console van het Malplaatje**. Dit is beschikbaar in de **Algemene** sectie van de **3} console van Hulpmiddelen {.**
+* Gebruik de **console van het Malplaatje**. Dit is beschikbaar in de **Algemene** sectie van de **3&rbrace; console van Hulpmiddelen &lbrace;.**
 
    * Of direct bij: [ https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
@@ -130,7 +130,7 @@ Bij het maken van een bewerkbare sjabloon:
 
 >[!CAUTION]
 >
->Ga nooit om het even welke informatie in die [ ](/help/sites-developing/i18n.md) in een malplaatje moet worden geinternationaliseerd. Voor internaliseringsdoeleinden, worden de [ localiseringseigenschappen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) geadviseerd.
+>Ga nooit om het even welke informatie in die [&#128279;](/help/sites-developing/i18n.md) in een malplaatje moet worden geinternationaliseerd. Voor internaliseringsdoeleinden, worden de [ localiseringseigenschappen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) geadviseerd.
 
 ### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
@@ -234,7 +234,7 @@ Een malplaatje kan worden toegelaten of worden onbruikbaar gemaakt om het beschi
 
 1. In de **Console van Malplaatjes**, selecteer het malplaatje.
 1. Selecteer **toelaten** of **onbruikbaar maken** van de toolbar, en opnieuw in de bevestigingsdialoog.
-1. U kunt uw malplaatje nu gebruiken wanneer [ creërend een pagina ](/help/sites-authoring/managing-pages.md#creating-a-new-page), hoewel u waarschijnlijk het malplaatje [ ](#editingatemplate) volgens uw eigen vereisten wilt uitgeven.
+1. U kunt uw malplaatje nu gebruiken wanneer [ creërend een pagina ](/help/sites-authoring/managing-pages.md#creating-a-new-page), hoewel u waarschijnlijk het malplaatje [&#128279;](#editingatemplate) volgens uw eigen vereisten wilt uitgeven.
 
 >[!NOTE]
 >
@@ -392,7 +392,7 @@ Op **wijze van de Structuur** van de malplaatjeredacteur:
 
   Wanneer het werken op **de wijze van de Structuur** een oranje grens wijst op de component momenteel geselecteerd. Een stippellijn geeft ook de bovenliggende component aan.
 
-  Bijvoorbeeld, in het schermafbeelding onder de **** component van de Tekst wordt geselecteerd, binnen de Container van de Lay-out van de a **** (responsivegrid).
+  Bijvoorbeeld, in het schermafbeelding onder de **&#x200B;**&#x200B;component van de Tekst wordt geselecteerd, binnen de Container van de Lay-out van de a **&#x200B;**&#x200B;(responsivegrid).
 
   ![ chlimage_1-134 ](assets/chlimage_1-134.png)
 
@@ -456,7 +456,7 @@ Op **wijze van de Structuur** van de malplaatjeredacteur:
 
   Om een configuratie te verwijderen, klik de **Schrapping** knoop die aan het recht van de configuratie wordt gevestigd.
 
-  Als u een configuratie wilt verwijderen, klikt u op de knop** Verwijderen**.
+  Als u een configuratie wilt verwijderen, klikt u op de knop **&#x200B; Verwijderen**.
 
   ![ chlimage_1-142 ](assets/chlimage_1-142.png)
 
@@ -474,7 +474,7 @@ Op **wijze van de Structuur** van de malplaatjeredacteur:
 
   >[!NOTE]
   >
-  >[ het beleid van de Inhoud voor componenten die de rijke tekstredacteur ](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) uitvoeren kan slechts voor opties worden bepaald die door RTE door zijn montages worden ter beschikking gesteld UI. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[ het beleid van de Inhoud voor componenten die de rijke tekstredacteur ](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) uitvoeren kan slechts voor opties worden bepaald die door RTE door zijn montages worden ter beschikking gesteld UI. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Beleid &amp; Eigenschappen (de Container van de Lay-out)**
 
@@ -542,7 +542,7 @@ Op **wijze van de Structuur** van de malplaatjeredacteur:
 
   ![ chlimage_1-146 ](assets/chlimage_1-146.png)
 
-  Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u reeds componenten/inhoud aan de container vóór het ontgrendelen van het hebt toegevoegd, dan worden deze niet meer getoond wanneer op **wijze van de Structuur 0} {, maar zij worden getoond op** Aanvankelijke 3} wijze van de Inhoud. **** In **Wijze van de Structuur**, slechts wordt de containercomponent zelf getoond met zijn lijst van **Toegestane Componenten**.
+  Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u reeds componenten/inhoud aan de container vóór het ontgrendelen van het hebt toegevoegd, dan worden deze niet meer getoond wanneer op **wijze van de Structuur 0&rbrace; {, maar zij worden getoond op** Aanvankelijke 3} wijze van de Inhoud. **&#x200B;**&#x200B;In **Wijze van de Structuur**, slechts wordt de containercomponent zelf getoond met zijn lijst van **Toegestane Componenten**.
 
   ![ chlimage_1-147 ](assets/chlimage_1-147.png)
 
@@ -560,13 +560,13 @@ Op **wijze van de Structuur** van de malplaatjeredacteur:
 
 ### Een sjabloon bewerken - Eerste inhoud - Auteur {#editing-a-template-initial-content-author}
 
-**de wijze van de 1} Eerste Inhoud van 0} wordt gebruikt aan bepaalde inhoud die zal verschijnen wanneer een pagina eerst gebaseerd op het malplaatje wordt gecreeerd.** De eerste inhoud kan vervolgens door auteurs van pagina&#39;s worden bewerkt.
+**de wijze van de 1&rbrace; Eerste Inhoud van 0&rbrace; wordt gebruikt aan bepaalde inhoud die zal verschijnen wanneer een pagina eerst gebaseerd op het malplaatje wordt gecreeerd.** De eerste inhoud kan vervolgens door auteurs van pagina&#39;s worden bewerkt.
 
 Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **Initiële content**, kunnen alleen de ontgrendelde componenten worden geselecteerd en bewerkt.
 
 >[!NOTE]
 >
->**de wijze van de 1} Eerste Inhoud** kan van uitgeeft wijze voor pagina&#39;s worden gedacht die met dat malplaatje worden gecreeerd. Daarom wordt het beleid niet bepaald op **Aanvankelijke wijze van de Inhoud** maar eerder op [**3} wijze van de Structuur ](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).**
+>**de wijze van de 1&rbrace; Eerste Inhoud** kan van uitgeeft wijze voor pagina&#39;s worden gedacht die met dat malplaatje worden gecreeerd. Daarom wordt het beleid niet bepaald op **Aanvankelijke wijze van de Inhoud** maar eerder op [**3&rbrace; wijze van de Structuur ](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).**
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
@@ -607,7 +607,7 @@ Het paginaontwerp, inclusief de vereiste clientbibliotheken en de paginabeleidsr
 Om tot de **dialoog van het Ontwerp van de Pagina** toegang te hebben:
 
 1. Van de **Redacteur van het Malplaatje**, selecteer **Informatie van de Pagina** van de toolbar, toen **Ontwerp van de Pagina** om de dialoog te openen.
-1. Het **dialoogvenster van het Ontwerp van de 0} Pagina {opent en is verdeeld in twee secties:**
+1. Het **dialoogvenster van het Ontwerp van de 0&rbrace; Pagina &lbrace;opent en is verdeeld in twee secties:**
 
    * De linkerhelft bepaalt het [ paginabeleid ](/help/sites-authoring/templates.md#page-policies)
    * De rechterhelft bepaalt de [ paginaeigenschappen ](/help/sites-authoring/templates.md#page-properties)

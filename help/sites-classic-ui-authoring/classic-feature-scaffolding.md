@@ -136,7 +136,7 @@ De vaste waarde die voor deze eigenschap is opgegeven, is
 
 `foundation/components/textimage`
 
-Dit specificeert dat de component die moet worden gebruikt om de tekstinhoud van deze paragraaf terug te geven is de *component van het Beeld van de Tekst 0} {.* Met de Booleaanse waarde `isRichText` die in het andere verborgen veld is opgegeven, kan de component de werkelijke tekenreeks die op `./jcr:content/par/text/text` is opgeslagen, op de gewenste manier renderen.
+Dit specificeert dat de component die moet worden gebruikt om de tekstinhoud van deze paragraaf terug te geven is de *component van het Beeld van de Tekst 0&rbrace; &lbrace;.* Met de Booleaanse waarde `isRichText` die in het andere verborgen veld is opgegeven, kan de component de werkelijke tekenreeks die op `./jcr:content/par/text/text` is opgeslagen, op de gewenste manier renderen.
 
 ### Basisstructuur met MSM-overerving {#scaffolding-with-msm-inheritance}
 

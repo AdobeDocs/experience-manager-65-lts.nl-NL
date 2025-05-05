@@ -61,7 +61,7 @@ Voor extra details over het creëren van de diensten van de douanegegevensimport
 
 ### Het afsluiten duurt lang vanwege de PollingImporter {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk, laat u Analytics voor een plaats toe door een verwijzing naar een configuratie van Analytics binnen de pagina eigenschappen ](/help/sites-developing/extending-cloud-config.md) tabel van de Diensten van de Wolk toe 0} Cloud. [ De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw te verwijzen tenzij een pagina een verschillende configuratie vereist. Als u een verwijzing naar een site toevoegt, worden ook automatisch meerdere knooppunten gemaakt (12 voor AEM 6.3 en eerder of 6 voor AEM 6.4)   en hoger) van het type `cq;PollConfig` dat PollingImporters instantieert die worden gebruikt om analysegegevens in AEM te importeren. Dientengevolge:
+Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk, laat u Analytics voor een plaats toe door een verwijzing naar een configuratie van Analytics binnen de pagina eigenschappen [&#128279;](/help/sites-developing/extending-cloud-config.md) tabel van de Diensten van de Wolk toe 0&rbrace; Cloud.  De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw te verwijzen tenzij een pagina een verschillende configuratie vereist. Als u een verwijzing naar een site toevoegt, worden ook automatisch meerdere knooppunten gemaakt (12 voor AEM 6.3 en eerder of 6 voor AEM 6.4)   en hoger) van het type `cq;PollConfig` dat PollingImporters instantieert die worden gebruikt om analysegegevens in AEM te importeren. Dientengevolge:
 
 * Veel pagina&#39;s die verwijzen naar Analytics leiden tot een grote hoeveelheid PollingImporters.
 * Bovendien, leidt het kopiëren en het kleven van pagina&#39;s met een verwijzing naar een configuratie van Analytics tot een verdubbeling van zijn PollingImporters.
@@ -101,10 +101,10 @@ U kunt het volgende proberen om het probleem op te lossen:
 * Controleer ACLs op `/etc/cloudservices`. ACLs zou moeten zijn:
 
    * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/defaults`
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/public`
+   * allow; jcr:read; all; `rep:glob:`&ast;`/defaults/`&ast;
+   * allow; jcr:read; all; `rep:glob:`&ast;`/defaults`
+   * allow; jcr:read; all; `rep:glob:`&ast;`/public/`&ast;
+   * allow; jcr:read; all; `rep:glob:`&ast;`/public`
 
 Voor meer informatie over het beheren van ACLs, lees het [ Beleid van de Gebruiker en de pagina van de Veiligheid ](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -191,7 +191,7 @@ adobe.target.getOffer({
 
 ### De pagina van Doelstellingen &amp; van Montages toont niet de sectie van Rapporteringsbronnen {#the-goals-settings-page-does-not-show-the-reporting-sources-section}
 
-Deze kwestie is zeer waarschijnlijk een [ A4T Analytics Cloud 1} leveringskwestie van de Configuratie van de Configuratie.](/help/sites-administering/target-configuring.md)
+Deze kwestie is zeer waarschijnlijk een [ A4T Analytics Cloud 1&rbrace; leveringskwestie van de Configuratie van de Configuratie.](/help/sites-administering/target-configuring.md)
 
 #### Oplossing {#solution-7}
 

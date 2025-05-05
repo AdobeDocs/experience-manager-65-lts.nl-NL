@@ -52,7 +52,7 @@ Voordat u de migratie start, moet u de draagraketten voor de [!UICONTROL DAM Upd
 
 ### Labels laden {#loading-tags}
 
-Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Hoewel met gereedschappen als CSV Asset Importer en [!DNL Experience Manager] ondersteuning voor metagegevensprofielen het toepassen van tags op elementen kan worden geautomatiseerd, moeten de tags in het systeem worden geladen. De ](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) eigenschap van de Tagmaker van de Markering van AEM van 0} ACS {laat u markeringen bevolken door een spreadsheet van Microsoft te gebruiken Excel die in het systeem wordt geladen.[
+Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Hoewel met gereedschappen als CSV Asset Importer en [!DNL Experience Manager] ondersteuning voor metagegevensprofielen het toepassen van tags op elementen kan worden geautomatiseerd, moeten de tags in het systeem worden geladen. De [&#128279;](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) eigenschap van de Tagmaker van de Markering van AEM van 0&rbrace; ACS &lbrace;laat u markeringen bevolken door een spreadsheet van Microsoft te gebruiken Excel die in het systeem wordt geladen.
 
 ### Middelen opnemen {#ingesting-assets}
 

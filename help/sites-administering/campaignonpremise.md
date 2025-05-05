@@ -204,7 +204,7 @@ U hebt de Externalzer geconfigureerd en Adobe Campaign heeft nu toegang tot uw i
 
 >[!NOTE]
 >
-De publicatie-instantie moet bereikbaar zijn vanaf de Adobe Campaign-server. Als het verwijst naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden afbeeldingen van AEM niet weergegeven in de Adobe Campaign-console.
+>De publicatie-instantie moet bereikbaar zijn vanaf de Adobe Campaign-server. Als het verwijst naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden afbeeldingen van AEM niet weergegeven in de Adobe Campaign-console.
 
 ## De externe gebruiker van de campagne configureren in AEM {#configure-user}
 
@@ -222,7 +222,7 @@ Campagne kan alleen communiceren met AEM als u een wachtwoord instelt voor de ge
 
 ## Externe AEM-account configureren in campagne {#acc-setup}
 
-Wanneer [ het installeren van het **2} pakket van de Integratie van AEM {in Campagne, ](#install-package) een externe rekening wordt gecreeerd voor AEM.** Door deze externe account te configureren, kan Adobe Campaign verbinding maken met AEM, waardoor tweerichtingscommunicatie tussen de oplossingen mogelijk wordt.
+Wanneer [ het installeren van het **2&rbrace; pakket van de Integratie van AEM &lbrace;in Campagne, ](#install-package) een externe rekening wordt gecreeerd voor AEM.** Door deze externe account te configureren, kan Adobe Campaign verbinding maken met AEM, waardoor tweerichtingscommunicatie tussen de oplossingen mogelijk wordt.
 
 1. Meld u met de clientconsole aan bij Adobe Campaign als beheerder.
 

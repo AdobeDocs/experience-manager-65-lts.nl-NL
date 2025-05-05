@@ -110,17 +110,17 @@ Het [ geeft gedrag van een component uit wordt gevormd ](/help/sites-developing/
 
 ## Het gedrag Voorvertoning configureren {#configuring-the-preview-behavior}
 
-Het ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM wordt geplaatst wanneer het schakelen naar **3} wijze van de Voorproef {zelfs wanneer de pagina niet wordt verfrist.[**
+Het [&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM wordt geplaatst wanneer het schakelen naar **3&rbrace; wijze van de Voorproef &lbrace;zelfs wanneer de pagina niet wordt verfrist.**
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 
 >[!NOTE]
 >
->In aanraking-toegelaten UI slechts worden de waarden `EDIT` en `PREVIEW` gebruikt voor het [ ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM.
+>In aanraking-toegelaten UI slechts worden de waarden `EDIT` en `PREVIEW` gebruikt voor het [&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM.
 
 ## Een dialoogvenster maken en configureren {#creating-and-configuring-a-dialog}
 
-Dialogen worden gebruikt om auteur toe te staan om met de component in wisselwerking te staan. Het gebruiken van een dialoog staat auteurs en/of beheerders toe om inhoud uit te geven, de component te vormen of ontwerpparameters te bepalen (gebruikend de Dialoog van het Ontwerp van de a [ ](#creating-and-configuring-a-design-dialog))
+Dialogen worden gebruikt om auteur toe te staan om met de component in wisselwerking te staan. Het gebruiken van een dialoog staat auteurs en/of beheerders toe om inhoud uit te geven, de component te vormen of ontwerpparameters te bepalen (gebruikend de Dialoog van het Ontwerp van de a [&#128279;](#creating-and-configuring-a-design-dialog))
 
 ### Gebruikersinterface voor koralen en graniet {#coral-ui-and-granite-ui}
 
@@ -183,7 +183,7 @@ Zie voor voorbeelden:
 
 >[!NOTE]
 >
->Als er voor een component geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening, wordt het klassieke dialoogvenster UI gebruikt als fallback binnen een compatibiliteitslaag. Als u een dergelijk dialoogvenster wilt aanpassen, moet u het dialoogvenster voor klassieke gebruikersinterface aanpassen. Zie {de Componenten van 0} AEM voor Klassieke UI ](/help/sites-developing/developing-components-classic.md).[
+>Als er voor een component geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening, wordt het klassieke dialoogvenster UI gebruikt als fallback binnen een compatibiliteitslaag. Als u een dergelijk dialoogvenster wilt aanpassen, moet u het dialoogvenster voor klassieke gebruikersinterface aanpassen. Zie {de Componenten van 0} AEM voor Klassieke UI [&#128279;](/help/sites-developing/developing-components-classic.md).
 
 ### Dialoogvenstervelden aanpassen {#customizing-dialog-fields}
 
@@ -427,7 +427,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 ## De AEM Brackets-extensie gebruiken {#using-the-aem-brackets-extension}
 
-De [ Uitbreiding van de Brackets van AEM ](/help/sites-developing/aem-brackets.md) verstrekt een vlotte werkschema om de componenten en de cliëntbibliotheken van AEM uit te geven. Het is gebaseerd op de ](https://brackets.io/) coderedacteur 0} Brackets {.[
+De [ Uitbreiding van de Brackets van AEM ](/help/sites-developing/aem-brackets.md) verstrekt een vlotte werkschema om de componenten en de cliëntbibliotheken van AEM uit te geven. Het is gebaseerd op de [&#128279;](https://brackets.io/) coderedacteur 0&rbrace; Brackets &lbrace;.
 
 De extensie:
 

@@ -80,7 +80,7 @@ Afhankelijk van de AEM-formuliercomponenten die u hebt geïnstalleerd, kunnen de
 
 **AEM vormt Workspace Beheerder:** kan montages van de pagina van Workspace in de Console van het Beleid bekijken en wijzigen
 
-***nota **: De Werkruimte van Flex wordt afgekeurd voor de vormenversie van AEM.*
+***nota &#x200B;**: De Werkruimte van Flex wordt afgekeurd voor de vormenversie van AEM.*
 
 **Gebruiker van Workspace:** kan login aan de eindgebruikertoepassing van Workspace
 

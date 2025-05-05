@@ -42,7 +42,7 @@ U kunt ook opgeven of gebruikers- en groepsgegevens tijdens het synchroniseren v
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een inhoudsbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie {het document van de het productlevenscyclus van 0} Adobe ](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).[
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een inhoudsbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie {het document van de het productlevenscyclus van 0} Adobe [&#128279;](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Synchronisatie van delta-directory inschakelen {#enable-delta-directory-synchronization}
 
@@ -77,7 +77,7 @@ U kunt Gebruikersbeheer configureren om periodiek te controleren op mislukte pog
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
 1. Onder de Uitdrukking van de Uitsnede van de Finisher van de Synch, ga een kroonuitdrukking in die het interval vertegenwoordigt waarmee het Beheer van de Gebruiker mislukte synchronisaties opnieuw probeert. Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
-   De standaardwaarde is 0 0/13 &amp;ast; ? &amp;ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
+   De standaardwaarde is 0 0/13 &ast; ? &ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
 
 ## Mappen handmatig synchroniseren {#manually-synchronize-directories}
 

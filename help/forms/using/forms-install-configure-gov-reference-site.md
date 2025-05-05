@@ -153,7 +153,7 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 1. De opstellingsdocumentatie van het overzicht [ Vormend E-mailbericht ](/help/sites-administering/notification.md)
 1. Meld u aan als beheerder voor deze taak.
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. Bepaal en klik de **dienst van de Post van 0} Dag CQ {om te vormen.**
+1. Bepaal en klik de **dienst van de Post van 0&rbrace; Dag CQ &lbrace;om te vormen.**
 
    ![ vorm de Dienst van de Post van de Dag CQ ](assets/day_cq_mail_service.jpg)
 
@@ -312,15 +312,15 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
    >[!NOTE]
    >
-   Na het testen van de diensten, annuleert de klik **** om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
+   >Na het testen van de diensten, annuleert de klik **&#x200B;**&#x200B;om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
 
    >[!NOTE]
    >
-   Er is gemeld dat een AEM Server-herstart vereist was om de Data Source met succes te binden aan de FDM.
+   >Er is gemeld dat een AEM Server-herstart vereist was om de Data Source met succes te binden aan de FDM.
 
    >[!NOTE]
    >
-   U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.
+   >U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.
 
 #### Het Forms-gegevensmodel testen (Derby) {#test-fdm-derby}
 
@@ -425,7 +425,7 @@ Beheerders kunnen gebruikers de AEM-analysebevoegdheden verlenen door de volgend
 
 >[!NOTE]
 >
-AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
+>AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
 
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Selecteer de &quot;AEM Forms We.Gov-site&quot; om de sitepagina&#39;s weer te geven.
@@ -454,7 +454,7 @@ AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-config
 
 >[!NOTE]
 >
-AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
+>AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
 
 1. Navigeren naar
 
@@ -501,7 +501,7 @@ Manager linksboven > Gereedschappen > Beveiliging > Adobe IMS-configuratie.
 
 >[!NOTE]
 >
-Het in deze sectie gemaakte certificaat wordt gebruikt om de integratieservice in Adobe I/O te maken. Zodra de gebruikers in de integratieservice hebben gecreeerd kunnen de gebruikers die informatie van Adobe I/O gebruiken om de configuratie te beëindigen.
+>Het in deze sectie gemaakte certificaat wordt gebruikt om de integratieservice in Adobe I/O te maken. Zodra de gebruikers in de integratieservice hebben gecreeerd kunnen de gebruikers die informatie van Adobe I/O gebruiken om de configuratie te beëindigen.
 
 #### Integratie in Adobe I/O maken {#create-integration-adobeio}
 
@@ -629,7 +629,7 @@ Wanneer de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF
 
 1. Zodra de knop is geselecteerd, krijgen gebruikers de volgende opties te zien
 
-   * Zorg ervoor dat de gebruikers de {*configuratie 1} van de Productie 0} Web.Gov selecteren*
+   * Zorg ervoor dat de gebruikers de {*configuratie 1} van de Productie 0&rbrace; Web.Gov selecteren*
 
    ![ montages van de Omzetting ](assets/aftia-conversion-settings.jpg)
 
@@ -800,7 +800,7 @@ Om hen te vormen om binnen het Werkschema worden toegelaten, moeten de gebruiker
 
    >[!NOTE]
    >
-   Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist aan opstelling een de dienstconfiguratie om met de externe gevraagde diensten te communiceren.
+   >Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist aan opstelling een de dienstconfiguratie om met de externe gevraagde diensten te communiceren.
 
    ![ wij gaan vormenpakket ](assets/aftia-configuration-options.jpg)
 

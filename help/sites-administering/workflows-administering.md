@@ -93,7 +93,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 ## Fouten in werkstroominstantie herstellen {#fixing-workflow-instance-failures}
 
-Wanneer een werkschema ontbreekt, verstrekt AEM de **** console Failures om u te laten onderzoeken en aangewezen actie voeren zodra de originele oorzaak is behandeld:
+Wanneer een werkschema ontbreekt, verstrekt AEM de **&#x200B;**&#x200B;console Failures om u te laten onderzoeken en aangewezen actie voeren zodra de originele oorzaak is behandeld:
 
 * **Details van de Mislukking**
 Opent een venster om het **Bericht van de Mislukking**, **Stap**, en **Stapel van de Mislukking** te tonen.

@@ -22,7 +22,7 @@ CIF toe:voegen-op is beschikbaar via het [ portaal van de Distributie van de Sof
 
 Zie [ Begonnen het worden met de Inhoud van AEM en Commerce ](getting-started.md).
 
-Om projecten te steunen die CIF opstellen, verstrekt Adobe {de Componenten van de Kern van 0} AEM CIF ](https://github.com/adobe/aem-core-cif-components).[
+Om projecten te steunen die CIF opstellen, verstrekt Adobe {de Componenten van de Kern van 0} AEM CIF [&#128279;](https://github.com/adobe/aem-core-cif-components).
 
 ## Productcatalogus
 

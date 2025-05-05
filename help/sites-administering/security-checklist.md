@@ -49,7 +49,7 @@ Zorg ervoor dat u recentste [ Hotfixes van de Veiligheid geïnstalleerd hebt die
 
 ### Standaardwachtwoorden voor AEM- en OSGi Console-beheeraccounts wijzigen {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe adviseert na installatie dat u het wachtwoord voor de bevoorrechte **`admin` rekeningen van AEM ](#changing-the-aem-admin-password) (op alle instanties) verandert.[**
+Adobe adviseert na installatie dat u het wachtwoord voor de bevoorrechte **`admin` rekeningen van AEM [&#128279;](#changing-the-aem-admin-password) (op alle instanties) verandert.**
 
 Deze rekeningen omvatten:
 
@@ -324,7 +324,7 @@ Om misbruik van DosS te helpen voorkomen, kunt u het volgende doen:
 >
 >Deze beperking mag alleen worden uitgevoerd in AEM-omgevingen die geen Forms gebruiken.
 
-Omdat AEM geen out-of-the-box indexen voor `FormChooserServlet` verstrekt, kan het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, die gewoonlijk de instantie van AEM aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het formulier **&amp;ast;.form.&amp;ast;** koord in vragen.
+Omdat AEM geen out-of-the-box indexen voor `FormChooserServlet` verstrekt, kan het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, die gewoonlijk de instantie van AEM aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het formulier **&ast;.form.&ast;** koord in vragen.
 
 U kunt dit probleem verhelpen door de volgende stappen uit te voeren:
 

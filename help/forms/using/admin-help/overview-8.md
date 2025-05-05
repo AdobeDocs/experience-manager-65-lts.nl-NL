@@ -24,7 +24,7 @@ Met Uitvoer kunt u XML-formuliergegevens samenvoegen met een formulierontwerp da
 
 U kunt de pagina van de Output in beleidsconsole gebruiken om de dienst van de Output te beheren. De instellingen die u configureert, worden tijdens runtime gebruikt wanneer de equivalente instellingen niet zijn opgegeven via de API voor AEM-formulieren. Configuratie via de AEM-formulieren heeft SDK voorrang op de instellingen die zijn geconfigureerd met de beheerconsole.
 
-Voor extra informatie over de dienst van de Output, zie {de Verwijzing van de Diensten 0} ](https://www.adobe.com/go/learn_aemforms_services_61).[
+Voor extra informatie over de dienst van de Output, zie {de Verwijzing van de Diensten 0} [&#128279;](https://www.adobe.com/go/learn_aemforms_services_61).
 
 Op de pagina&#39;s van de Output in beleidsconsole, kunt u verscheidene taken uitvoeren:
 

@@ -54,7 +54,7 @@ We.Retail wordt geleverd als voorbeeldinhoud voor AEM. Om te gebruiken, eenvoudi
 
 ### Laatste versie {#latest-version}
 
-Hoewel We.Retail wordt gedistribueerd met de AEM-release, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk om [ de recentste versie van GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) te downloaden en dan [ ](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) te uploaden en [ te installeren ](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw instantie van AEM.
+Hoewel We.Retail wordt gedistribueerd met de AEM-release, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk om [ de recentste versie van GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) te downloaden en dan [&#128279;](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) te uploaden en [ te installeren ](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw instantie van AEM.
 
 ### Eerste stappen {#first-steps}
 

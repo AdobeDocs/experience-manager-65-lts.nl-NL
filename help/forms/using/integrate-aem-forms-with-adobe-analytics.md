@@ -238,7 +238,7 @@ U kunt als volgt de [!DNL Adobe Launch] -configuratie in een bestaand adaptief f
 Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
 
 >[!NOTE]
->In het geval, als zowel [ Analytics gebruikend het Kader van Cloud Service ](/help/forms/using/configure-analytics-forms-documents.md) en **Analytics gebruikend de 3} eigenschappen van de Lanceerinrichting van Adobe gelijktijdig worden toegelaten,** Analytics gebruikend de Lancering van Adobe **zal belangrijkheid nemen.**
+>In het geval, als zowel [ Analytics gebruikend het Kader van Cloud Service ](/help/forms/using/configure-analytics-forms-documents.md) en **Analytics gebruikend de 3&rbrace; eigenschappen van de Lanceerinrichting van Adobe gelijktijdig worden toegelaten,** Analytics gebruikend de Lancering van Adobe **zal belangrijkheid nemen.**
 > 
 
 ### Regels maken om aangepaste gebeurtenissen vast te leggen (optioneel) {#capture-custom-events}

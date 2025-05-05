@@ -52,6 +52,7 @@ De onderstaande stappen kunnen door de systeembeheerder worden uitgevoerd. De kl
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Werk `auth.token.provider.client.id` met Cliënt identiteitskaart van de nieuwe configuratie OAuth bij.
    * `auth.access.token.request` bijwerken naar `"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -87,7 +88,7 @@ Als nieuwe gebruiker, wanneer u met Adobe Developer Console integreert, verifiee
 
 Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
-1. Om een openbare sleutel te produceren, [ creeer een Slimme 1} configuratie van de Dienst van de Inhoud {in [!DNL Experience Manager]. ](#obtain-public-certificate) [ Download een openbaar certificaat ](#obtain-public-certificate) voor integratie OAuth.
+1. Om een openbare sleutel te produceren, [ creeer een Slimme 1&rbrace; configuratie van de Dienst van de Inhoud &lbrace;in [!DNL Experience Manager]. ](#obtain-public-certificate) [ Download een openbaar certificaat ](#obtain-public-certificate) voor integratie OAuth.
 
 1. *[niet toepasselijk als u een bestaande gebruiker]* [ bent creeer een integratie in Adobe Developer Console ](#create-adobe-i-o-integration).
 

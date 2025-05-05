@@ -59,7 +59,7 @@ U kunt zien of de software is ingeschakeld (ingeschakeld) door de volgende kenme
 * Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar.
 * PTIFF-uitvoeringen worden gemaakt.
 
-Wanneer u een beeldactiva selecteert, is de mening van de activa verschillend met de toegelaten software [ ](config-dynamic.md#enabling-dynamic-media). Het gebruikt de HTML5-viewers op aanvraag.
+Wanneer u een beeldactiva selecteert, is de mening van de activa verschillend met de toegelaten software [&#128279;](config-dynamic.md#enabling-dynamic-media). Het gebruikt de HTML5-viewers op aanvraag.
 
 ### Dynamische uitvoeringen {#dynamic-renditions}
 

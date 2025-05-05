@@ -29,7 +29,7 @@ Integreer uw AEM-sites met Adobe Target om inhoud op uw pagina&#39;s aan te pass
 
 Voer de volgende taken uit om met Doel te integreren:
 
-1. [ voer in eerste instantie vereiste taken ](/help/sites-administering/target-requirements.md) uit: Register met Adobe Target en vorm bepaalde aspecten van de de auteursinstantie van AEM. Uw Adobe Target-account moet minimaal **fiatteur **level-machtigingen hebben. Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
+1. [ voer in eerste instantie vereiste taken ](/help/sites-administering/target-requirements.md) uit: Register met Adobe Target en vorm bepaalde aspecten van de de auteursinstantie van AEM. Uw Adobe Target-account moet minimaal **fiatteur &#x200B;** level-machtigingen hebben. Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
 
 1. Ofwel:
 

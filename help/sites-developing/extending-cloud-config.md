@@ -140,7 +140,7 @@ Voor verwijzingsdocumentatie op API, zie [ com.day.cq.wcm.webservicesupport ](ht
 
 ### AEM-integratie {#aem-integration}
 
-De beschikbare diensten zijn vermeld in het **lusje van de Diensten van de Wolk van de** Pagina **dialoog van Eigenschappen {van om het even welke pagina die van `foundation/components/page` of `wcm/mobile/components/page` erft.**
+De beschikbare diensten zijn vermeld in het **lusje van de Diensten van de Wolk van de** Pagina **dialoog van Eigenschappen &lbrace;van om het even welke pagina die van `foundation/components/page` of `wcm/mobile/components/page` erft.**
 
 Het tabblad bevat ook:
 
