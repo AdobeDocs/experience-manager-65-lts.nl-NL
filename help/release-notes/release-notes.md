@@ -113,5 +113,5 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
 
