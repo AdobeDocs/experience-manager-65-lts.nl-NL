@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) 
 
 ### Migratievereisten {#migration-prerequisites}
 
-* **Minimum Vereiste versie van Java**: Zorg ervoor u IBM® Sumeru JRE 17 op uw server van WLP hebt geïnstalleerd.
+* **Minimum Vereiste versie van Java**: Zorg ervoor u IBM® Sumeru JRE 17/21 op uw server WLP hebt geïnstalleerd.
 
 ### De upgrade uitvoeren {#performing-the-upgrade}
 
@@ -76,13 +76,13 @@ Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) 
 
 1. Maak een back-up van het `sling.properties` -bestand (gewoonlijk aanwezig in `crx-quickstart/conf/` ) en verwijder deze
 1. Verander de versie van servlet in **6.0** in het `server.xml` dossier
-1. Installeer Java 17 en zorg ervoor dat het correct geïnstalleerd door te lopen is:
+1. Installeer Java 17/Java 21 en zorg ervoor dat dit correct wordt geïnstalleerd door:
 
    ```shell
    java -version
    ```
 
-1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat de parameters aan uw vereisten voldoen. Zie [ Java 17 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie.
+1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat de parameters aan uw vereisten voldoen. Zie [ Java 17/Java 21 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie.
 1. Download de nieuwe 6.5 LTS-oorlog en kopieer deze naar de map dropins in: `/<path-to-aem-server>/dropins/`
 1. AEM-instantie starten: dit kan doorgaans gebeuren met de volgende opdracht:
 

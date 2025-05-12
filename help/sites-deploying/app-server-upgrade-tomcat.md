@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 ### Migratievereisten {#migration-prerequisites}
 
-* **Minimum Vereiste versie van Java**: Zorg ervoor u Oracle® JRE 17 op uw server van Tomcat hebt geïnstalleerd.
+* **Minimaal Vereiste versie van Java**: Zorg ervoor u Oracle® JRE 17/21 op uw server van Tomcat hebt geïnstalleerd.
 * **Tomcat server**: De versie van de server van Tomcat die voor 6.5 LTS wordt vereist is **11.0.x**.
 
 ### De upgrade uitvoeren {#performing-the-upgrade}
@@ -35,15 +35,15 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 1. Als AEM 6.5 al is geïmplementeerd, controleert u of de bundels correct werken door toegang te krijgen tot: *`https://<serveraddress:port>/system/console/bundles`*
 1. Stop vervolgens met AEM 6.5. Dit kan worden gedaan vanuit Tomcat App Manager op: *`https://<serveraddress:port>/manager/html`*
 1. Zorg ervoor dat u [ pre-verbeterings ](#pre-upgrade-steps) activiteiten zoals steun van AEM 6.5 server alvorens om het even welke verbeteringsactiviteit hebt voltooid
-1. Installeer Java 17 en zorg ervoor dat het correct geïnstalleerd door het bevel in werking te stellen is:
+1. Installeer Java 17/Java 21 en zorg ervoor dat het correct geïnstalleerd door het bevel in werking te stellen is:
 
    ```
    java –version
    ```
 
 1. AEM 6.5 LTS-compatibele Tomcat-server instellen
-1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat u de parameters bijwerkt volgens de systeemvereisten. Zie [ Java 17 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie
-1. Implementeer de nieuwe gedownloade 6,5 LTS-oorlog op de Tomcat-server met behulp van Java 17 en start AEM 6.5 LTS Tomcat-server door:
+1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat u de parameters bijwerkt volgens de systeemvereisten. Zie [ Java 17/Java 21 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie
+1. Implementeer de nieuwe gedownloade 6,5 LTS-oorlog op de Tomcat-server met Java 17/Java 21 en start AEM 6.5 LTS Tomcat-server door:
 
    ```
    $CATALINA_HOME/bin/catalina.sh start

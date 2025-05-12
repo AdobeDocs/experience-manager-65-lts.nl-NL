@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 ## Migratievereisten {#migration-prerequisites}
 
-* **Minimaal Vereiste versie van Java:** zorg ervoor u Oracle Java™ 17 hebt geïnstalleerd op uw systeem.
+* **Minimaal Vereiste versie van Java:** zorg ervoor u Oracle Java™ 17/21 hebt geïnstalleerd op uw systeem.
 
 ## Voorbereiding van het JAR-bestand van AEM Quickstart {#prep-quickstart-file}
 
@@ -180,7 +180,7 @@ Nu, begin de instantie van AEM gebruikend het nieuwe die bevel wordt bepaald geb
 
 >[!NOTE]
 >
->De steun voor sommige argumenten van Java 8/11 is verwijderd in Java 17, zie [ Oracle Java™ 17 documenten ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) en [ Java&amp;trade argumenten overwegingen voor AEM 6.5 LTS ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>De steun voor sommige van Java 8/11 argumenten is verwijderd in Java 17/21, zie [ Oracle Java™ 17 documenten ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [ Oracle Java™ 21 documenten ](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) en [ Java&amp;trade argumenten overwegingen voor AEM 6.5 LTS ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM start met het jar-bestand om het exemplaar te tonen.
 

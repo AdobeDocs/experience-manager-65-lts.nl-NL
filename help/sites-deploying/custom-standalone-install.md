@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1539'
 ht-degree: 0%
 
 ---
@@ -44,11 +44,11 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 >
 >U kunt het poortnummer ook wijzigen met de optie `-port` in de startopdracht.
 
-### Overwegingen bij Java 17 {#java-considerations}
+### Overwegingen bij Java 17/Java 21 {#java-considerations}
 
-Als u Oracle Java 17 gebruikt, moeten bij het starten van AEM extra switches aan uw opdrachtregel worden toegevoegd.
+Als u Oracle Java 17 of Java 21 gebruikt, moeten extra switches aan uw opdrachtregel worden toegevoegd wanneer u AEM start.
 
-Hieronder ziet u hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 17:
+Hieronder ziet u hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 17/Java 21:
 
 ```shell
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
@@ -124,7 +124,7 @@ AEM installeren en starten als Windows-service:
 >
 >Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** &lbrace;of van de lijst in de bevellijn wanneer u `net start` typt.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -354,7 +354,7 @@ of voor de pagina Bundles
 
 ![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
-Zie {Configuratie 0} OSGi met de Console van het Web [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
+Zie {Configuratie 0} OSGi met de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.[
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 

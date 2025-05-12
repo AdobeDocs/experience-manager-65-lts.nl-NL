@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,6 @@ Om gemakkelijker te kunnen verwijzen naar de AEM-instanties die bij deze procedu
 
 ### Updates {#updates}
 
-De laag van de stichting steunt nu Java 17, die recentste open-bronbundels van Apache Sling, Felix, en Jackrabbit Oak omvat. Bovendien is de verpakking van de AEM 6.5 LTS uber-jar veranderd. Bovendien zijn een aantal verouderde functies verwijderd uit AEM 6.5 LTS. Voor meer informatie, verwijs naar [ de nota&#39;s van de Versie ](/help/release-notes/release-notes.md#whats-new-what-s-new) en [ Lijst van de Verouderde Bundels die na de Verbetering ](/help/sites-deploying/obsolete-bundles.md) worden gedesinstalleerd
+De laag van de stichting steunt nu Java 17 en Java 21, die recentste open-bronbundels van Apache Sling, Felix, en Jackrabbit Oak omvat. Bovendien is de verpakking van de AEM 6.5 LTS uber-jar veranderd. Bovendien zijn een aantal verouderde functies verwijderd uit AEM 6.5 LTS. Voor meer informatie, verwijs naar [ de nota&#39;s van de Versie ](/help/release-notes/release-notes.md#whats-new-what-s-new) en [ Lijst van de Verouderde Bundels die na de Verbetering ](/help/sites-deploying/obsolete-bundles.md) worden gedesinstalleerd
 
 AEM 6.5 LTS richt zich sterk op achterwaartse compatibiliteit van functies en wordt geleverd met een analyseprogramma. Zie [ het Beoordelen van de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) voor beoordeling van ingewikkeldheid aangezien u [ planning voor de verbetering ](/help/sites-deploying/upgrade-planning.md) begint.

@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '805'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 ## Wat is er nieuw? {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5 LTS is een upgrade-release naar de [!DNL Adobe Experience Manager] 6.5 code base. Het verstrekt nieuwe en verbeterde functionaliteit, zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit, en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook [!DNL Adobe Experience Manager] 6.5 Service Pack-releases tot SP22.
+[!DNL Adobe Experience Manager] 6.5 LTS is een upgrade-release naar de [!DNL Adobe Experience Manager] 6.5 code base. Het verstrekt zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit, en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook [!DNL Adobe Experience Manager] 6.5 Service Pack-releases tot SP22.
 
 De onderstaande lijst biedt een overzicht, terwijl op de volgende pagina&#39;s alle details worden weergegeven.
 
@@ -36,9 +36,9 @@ De QuickStart gebruikt Eclipse Jetty 11.0.x als servlet-engine.
 
 #### Java™-ondersteuning  {#java-support}
 
-* Ondersteuning voor Java™ 17.
+* Ondersteuning voor Java™ 17 en Java™ 21.
 * Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Voor meer informatie, zie [ installeer en werk ](/help/sites-deploying/custom-standalone-install.md) sectie bij.
-* Java™ 17 onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM-gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
+* Java™ 17- en Java™ 21-onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM-gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
 
 #### Uberjar Packaging {#uber-jar-packaging}
 
@@ -60,7 +60,7 @@ Vind de volledige matrijs van gesteunde platforms met inbegrip van steun-niveau 
 
 >[!NOTE]
 >
->Java™ 17 is de aanbevolen versie voor gebruik met AEM 6.5 LTS.
+>Java™ 17/Java™ 21 zijn de aanbevolen versies voor gebruik met AEM 6.5 LTS.
 
 ## Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
@@ -113,5 +113,5 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 

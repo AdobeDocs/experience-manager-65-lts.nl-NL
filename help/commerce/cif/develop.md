@@ -9,9 +9,9 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Een lokale ontwikkelomgeving wordt aanbevolen voor het werken met CIF-projecten.
 
 >[!NOTE]
 >
->De volgende instructies helpen u bij het instellen van een lokale AEM-ontwikkelomgeving voor AEM Commerce met CIF (met focus voor AEM 6.5 LTS). Als u AEM as a Cloud Service gebruikt, zie de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=nl-NL) documentatie van 0&rbrace; AEM Commerce as a Cloud Service.
+>De volgende instructies helpen u bij het instellen van een lokale AEM-ontwikkelomgeving voor AEM Commerce met CIF (met focus voor AEM 6.5 LTS). Als u AEM as a Cloud Service gebruikt, zie de ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) documentatie van 0} AEM Commerce as a Cloud Service.[
 
 De AEM Commerce Add-On voor AEM, de zogenaamde CIF Add-On, is ook beschikbaar voor lokale ontwikkeling en wordt geleverd als een AEM-pakket. Het kan van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als eigenschappak worden gedownload.
 
@@ -40,7 +40,7 @@ De AEM Commerce Add-On voor AEM, de zogenaamde CIF Add-On, is ook beschikbaar vo
 Het volgende moet lokaal worden geïnstalleerd:
 
 - Lokale AEM 6.5 LTS
-- [ Java 17 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- [ Java 17/Java 21 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
 - [ Knoop LTS ](https://nodejs.org/en/)
 - [ npm 6+ ](https://www.npmjs.com/)
