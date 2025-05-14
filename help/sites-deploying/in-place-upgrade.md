@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 9e58e4c993929f792bd71bf70b3e64719e761b7f
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
    java -Xmx4096m -jar aem-quickstart.jar -unpack
    ```
 
-1. Met de opdracht Uitpakken wordt een nieuw `sling.properties` -bestand onder de map `crx-quickstart/conf/` gegenereerd. U kunt nu uw aangepaste wijzigingen toepassen op het nieuwe `sling.properties` -bestand.
+1. Als aangepaste sling.properties moeten worden toegepast, maakt u een nieuwe lokale AEM-instantie en haalt u het bestand sling.properties op uit de map crx-quickstart/conf. Pas de vereiste aangepaste wijzigingen toe op dit bestand en kopieer het vervolgens naar de map crx-quickstart/conf van de AEM-instantie die wordt bijgewerkt. Als er geen aangepaste eigenschappen zijn, kan deze stap worden overgeslagen.
 
 <!-- Alexandru: drafting temporarily
 
