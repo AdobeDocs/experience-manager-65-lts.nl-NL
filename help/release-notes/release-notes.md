@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '927'
 ht-degree: 5%
 
 ---
@@ -108,10 +108,28 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Source openen | `org.apache.jackrabbit.api` -pakketten worden nu geëxporteerd uit de `org.apache.jackrabbit.oak-jackrabbit-api` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `com.github.jknack.handlebars` wordt niet ondersteund | De relevante [ versie van de keuze ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
 
+## Bekende problemen {#known-issues}
+
+### Dispatcher-verbindingsfout met SSL-functie {#ssl-only-feature}
+
+Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is er een bekende kwestie die connectiviteit tussen de verzender en de instanties van AEM beïnvloedt. Nadat u deze functie hebt ingeschakeld, kunnen de controles op de gezondheid mislukken en kan de communicatie tussen de verzender en AEM-instanties worden verstoord.
+
+**Effect:**
+* Fouten in de health check met HTTP 500-responscodes
+* Gebroken verkeer tussen verzender en AEM instanties
+* Inhoud kan niet correct worden aangeboden via de verzender
+
+**Betrokken milieu&#39;s:**
+* AEM-implementaties met dispatcherconfiguraties
+* Systemen waarbij de functie Alleen SSL is ingeschakeld
+
+**Oplossing:**
+Neem contact op met Customer Support van Adobe als dit probleem zich voordoet. Een hotfix [ cq-6.5.lts.0-hotfix-CQ-4359803 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip) is beschikbaar om dit probleem op te lossen. Probeer alleen SSL-functies in te schakelen voordat u de vereiste hotfix toepast.
+
 ## Beperkte websites{#restricted-sites}
 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
