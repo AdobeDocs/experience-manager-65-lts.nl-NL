@@ -1,14 +1,14 @@
 ---
 title: Opmerkingen bij de huidige release voor Adobe Experience Manager 6.5 LTS
-description: Dit is de huidige aanvullende informatie voor Adobe Experience Manager 6.5 LTS.
+description: Hier vindt u de actuele releasegegevens voor Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
+source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 5%
+source-wordcount: '1016'
+ht-degree: 0%
 
 ---
 
@@ -32,13 +32,13 @@ De onderstaande lijst biedt een overzicht, terwijl op de volgende pagina&#39;s a
 
 Het platform van [!DNL Adobe Experience Manager] 6.5 LTS bouwt voort op bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java™ Content Repository: Apache Jackrabbit Oak 1.68.x.
 
-De QuickStart gebruikt Eclipse Jetty 11.0.x als servlet-engine.
+Eclipse Jetty 11.0.x wordt gebruikt als servletmotor voor QuickStart.
 
 #### Java™-ondersteuning  {#java-support}
 
 * Ondersteuning voor Java™ 17 en Java™ 21.
 * Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Voor meer informatie, zie [ installeer en werk ](/help/sites-deploying/custom-standalone-install.md) sectie bij.
-* Java™ 17- en Java™ 21-onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM-gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
+* Adobe verspreidt updates voor Java™ 17- en Java™ 21-onderhoud voor gebruik door klanten in AEM-gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
 
 #### Uberjar Packaging {#uber-jar-packaging}
 
@@ -52,7 +52,7 @@ De QuickStart gebruikt Eclipse Jetty 11.0.x als servlet-engine.
 
 Voor opstellingsvereisten, zie [ installatieinstructies ](/help/sites-deploying/custom-standalone-install.md).
 
-Voor gedetailleerde instructies, zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md).
+Voor gedetailleerde instructies, zie de [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md).
 
 ## Ondersteunde platforms {#supported-platforms}
 
@@ -64,18 +64,19 @@ Vind de volledige matrijs van gesteunde platforms met inbegrip van steun-niveau 
 
 ## Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
-Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies.
+Adobe controleert voortdurend de productmogelijkheden om de waarde van klanten te verbeteren door oudere functies te moderniseren of te vervangen. Deze veranderingen worden gemaakt met zorgvuldige aandacht aan achterwaartse verenigbaarheid.
 
 Om de aanstaande verwijdering of vervanging van Adobe Experience Manager (AEM) mogelijkheden mee te delen, zijn de volgende regels van toepassing:
 
 1. Aankondiging van afkeuring komt voorop. Hoewel afgekeurd, zijn de mogelijkheden nog beschikbaar maar niet verder verbeterd.
-1. Het verwijderen van verouderde mogelijkheden komt in de volgende belangrijkste versie op zijn vroegst voor. De werkelijke streefdatum voor verwijdering wordt later bekendgemaakt.
+1. Het verwijderen van verouderde mogelijkheden komt in de volgende belangrijkste versie op zijn vroegst voor. De daadwerkelijke streefdatum voor verwijdering is gepland voor bekendmaking later.
 
 Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan een nieuwe versie of opvolger van een vervangen capaciteit aan te passen, alvorens daadwerkelijke verwijdering.
 
 ### Verouderde functies {#deprecated-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.5 LTS. In het algemeen worden functies die in een toekomstige versie moeten worden verwijderd, eerst vervangen, met een alternatief dat beschikbaar is.
+In deze sectie worden de functies en mogelijkheden weergegeven die Adobe in AEM 6.5 LTS heeft vervangen. Adobe heeft doorgaans een lagere functie dan functies voordat deze in een toekomstige versie worden verwijderd. Bovendien is dit een alternatief.
+
 
 Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun huidige implementatie gebruiken en plannen te maken om hun implementatie te wijzigen en het meegeleverde alternatief te gebruiken.
 
@@ -89,7 +90,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 
 | Gebied | Functie | Vervanging | Versie (SP) |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic wordt niet ondersteund. | U zou aan [ AEM CIF ](/help/commerce/cif/migration.md) moeten migreren. | 6,5 LTS GA |
+| Commerce | AEM CIF Classic wordt niet ondersteund. | Migreer aan [ AEM CIF ](/help/commerce/cif/migration.md). | 6,5 LTS GA |
 | Oplossingen | Sociaal/Gemeenschappen worden niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Screens | Screens wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Assets | `dam-pim` en `dam-rating` worden niet ondersteund omdat bundels afhankelijk zijn van sociale componenten. | Geen vervanging beschikbaar. | 6,5 LTS GA |
@@ -97,7 +98,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Portal | AEM Portal Director wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | Bundel `com.adobe.granite.socketio` wordt verwijderd. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | `com.adobe.granite.crx-explorer` wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
-| Graniet | `crx2oak` wordt niet ondersteund. | Kies relevante versie van [ eik-verbetering ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
+| Graniet | `crx2oak` wordt niet ondersteund. | Kies de relevante versie van [ eiken-verbetering ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
 | Adobe | `com.adobe.cq.cq-searchpromote-integration` wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Guava | Alle guave-afhankelijkheden worden nu verwijderd in AEM en daarom maakt de `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` -bundel geen deel uit van AEM. | Klanten kunnen alleen guave toevoegen als ze afhankelijk zijn van guave of de guave-code indien mogelijk vervangen door Java-verzamelingen of andere alternatieven. | 6,5 LTS GA |
 | We.Retail | De voorbeeldsite van de webwinkel wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
@@ -106,21 +107,38 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Source openen | `org.apache.commons.io` -pakketten worden nu geëxporteerd uit `org.apache.commons.commons-io` . | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `javax.mail` -pakketten worden geëxporteerd uit de `com.sun.javax.mail` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `org.apache.jackrabbit.api` -pakketten worden nu geëxporteerd uit de `org.apache.jackrabbit.oak-jackrabbit-api` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
-| Source openen | `com.github.jknack.handlebars` wordt niet ondersteund | De relevante [ versie van de keuze ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
+| Source openen | `com.github.jknack.handlebars` wordt niet ondersteund | Kies de relevante [ versie ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
 
 ## Bekende problemen {#known-issues}
 
+### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA**
+
+AEM 6.5.21, 6.5.22, 6.5.23 en AEM 6.5 LTS GA schip met de `org.apache.sling.scripting.jsp:2.6.0` bundel, die een bekende kwestie bevat. De kwestie komt typisch onder hoge lading voor wanneer de instantie van AEM vele gezamenlijke verzoeken behandelt.
+
+Wanneer dit probleem optreedt, kan een van de volgende uitzonderingen voorkomen in de foutenlogboeken naast verwijzingen naar `org.apache.sling.scripting.jsp:2.6.0` :
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+Als deze fout optreedt, kunt u de AEM-instantie alleen opnieuw starten als de herstelmethode is uitgevoerd.
+
+Neem contact op met de klantenondersteuning van Adobe en raadpleeg deze releaseopmerking voor een oplossing.
+
 ### Dispatcher-verbindingsfout met SSL-functie {#ssl-only-feature}
 
-Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is er een bekende kwestie die connectiviteit tussen de verzender en de instanties van AEM beïnvloedt. Nadat u deze functie hebt ingeschakeld, kunnen de controles op de gezondheid mislukken en kan de communicatie tussen de verzender en AEM-instanties worden verstoord.
+Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is er een bekende kwestie die connectiviteit tussen de instanties van Dispatcher en van AEM beïnvloedt. Nadat u deze functie hebt ingeschakeld, kunnen de gezondheidscontroles mislukken en kan de communicatie tussen Dispatcher- en AEM-instanties worden verstoord.
 
 **Effect:**
+
 * Fouten in de health check met HTTP 500-responscodes
-* Gebroken verkeer tussen verzender en AEM instanties
-* Inhoud kan niet correct worden aangeboden via de verzender
+* Gebroken verkeer tussen Dispatcher en AEM
+* Inhoud kan niet correct worden aangeboden via de Dispatcher
 
 **Betrokken milieu&#39;s:**
-* AEM-implementaties met dispatcherconfiguraties
+
+* AEM-implementaties met Dispatcher-configuraties
 * Systemen waarbij de functie Alleen SSL is ingeschakeld
 
 **Oplossing:**
@@ -131,5 +149,5 @@ Neem contact op met Customer Support van Adobe als dit probleem zich voordoet. E
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
