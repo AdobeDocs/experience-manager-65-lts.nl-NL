@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -74,10 +74,6 @@ Dit is vooral interessant voor verschillende gebruiksgevallen:
 * Als er iets mis gaat, zijn de webconsole en de opslagplaats niet bereikbaar. Met dit kunt u extra bundels in deze folder zetten en zij zouden moeten worden geïnstalleerd.
 * De map `crx-quickstart/install` kan worden gemaakt voordat de snelstartprocedure wordt gestart en er kunnen extra pakketten worden geplaatst.
 
->[!NOTE]
->
->Zie ook [ hoe te om de pakketten van CRX automatisch op serveropstarten ](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) voor voorbeelden te installeren.
-
 ## Adobe Experience Manager installeren en starten als Windows-service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
@@ -124,7 +120,7 @@ AEM installeren en starten als Windows-service:
 >
 >Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** &lbrace;of van de lijst in de bevellijn wanneer u `net start` typt.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -354,7 +350,7 @@ of voor de pagina Bundles
 
 ![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
-Zie {Configuratie 0} OSGi met de Console van het Web [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
+Zie {Configuratie 0} OSGi met de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.[
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 
