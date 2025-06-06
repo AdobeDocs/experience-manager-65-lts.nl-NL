@@ -10,9 +10,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
@@ -211,6 +211,10 @@ Het enige gevonden document dat beide termen bevat, is 200, zoals in het onderst
 | --- | --- | --- |
 
 Wanneer meerdere items worden gevonden, worden deze op score gesorteerd.
+
+>[!NOTE]
+>
+>Het zoekmechanisme dat in deze sectie wordt beschreven gebruikt Lucene indexering, niet gedeeltelijke aanpassing zoals het Linux `grep` bevel.
 
 ### De index van de eigenschap Lucene {#the-lucene-property-index}
 
