@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 4403f563-e9c7-4693-9142-45e0f587a88a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
 
 ---
+
 
 # SPA Model Routing{#spa-model-routing}
 
@@ -28,7 +30,7 @@ App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het proje
 
 ## Architectuur {#architecture}
 
-Voor een gedetailleerde beschrijving, zie de [&#128279;](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sectie PageModelManager van het document van de Vervaging van het KUUROORD.
+Voor een gedetailleerde beschrijving, zie de [ ](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sectie PageModelManager van het document van de Vervaging van het KUUROORD.
 
 ## ModelRouter {#modelrouter}
 
@@ -40,7 +42,7 @@ Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zo
 
 >[!NOTE]
 >
->Het {[&#128279;](https://github.com/adobe/aem-sample-we-retail-journal) steekproefReageer project van het Dagboek van 0} Wij.Retail illustreert de geautomatiseerde benadering terwijl het project van Angular het handboek illustreert.  Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
+>Het {](https://github.com/adobe/aem-sample-we-retail-journal) steekproefReageer project van het Dagboek van 0} Wij.Retail illustreert de geautomatiseerde benadering terwijl het project van Angular het handboek illustreert. [ Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
 
 >[!CAUTION]
 >

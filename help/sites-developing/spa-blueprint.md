@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 0%
 
 ---
+
 
 # SPA-blauwdruk{#spa-blueprint}
 
@@ -206,7 +208,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens eigenlijk in de [ opslag van de Afbeelding van de Component 1&rbrace; wordt geregistreerd. ](/help/sites-developing/spa-blueprint.md#componentmapping) Dit gebeurt door de [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) -bibliotheek in te kapselen en uit te breiden en de ondersteuning van het `EditConfig` -configuratieobject te introduceren:
+In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens eigenlijk in de [ opslag van de Afbeelding van de Component 1} wordt geregistreerd. ](/help/sites-developing/spa-blueprint.md#componentmapping) Dit gebeurt door de [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) -bibliotheek in te kapselen en uit te breiden en de ondersteuning van het `EditConfig` -configuratieobject te introduceren:
 
 ```
 /**

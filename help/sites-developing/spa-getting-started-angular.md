@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 801364fc-0fde-49d0-a95f-963ed6db189b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%
 
 ---
+
 
 # Aan de slag met SPA&#39;s in AEM - Angular{#getting-started-with-spas-in-aem-angular}
 
@@ -111,7 +113,7 @@ Nadat het pakket is gemaakt, kan het worden geüpload naar een AEM-instantie.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
+Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -291,4 +293,4 @@ Voor verdere informatie over hoe te om zich te organiseren om SPAs voor AEM te o
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt, zie het artikel [ Dynamisch Model aan Component Mapping voor SPAs ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPAs in AEM voor een kader buiten Reageren of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor de werken van AEM, het [&#128279;](/help/sites-developing/spa-blueprint.md) artikel van het Blauwdruk van 0&rbrace; SPA &lbrace;ziet.
+Als u wenst om SPAs in AEM voor een kader buiten Reageren of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor de werken van AEM, het ](/help/sites-developing/spa-blueprint.md) artikel van het Blauwdruk van 0} SPA {ziet.[

@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 0%
 
 ---
+
 
 # SBZ&#39;s voor AEM ontwikkelen{#developing-spas-for-aem}
 
@@ -64,7 +66,7 @@ Om het even welk statisch verpletterend werk tegen het [ beginsel van portabilit
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
+Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ## SPA-ontwerpmodellen {#spa-design-models}
 
@@ -133,7 +135,7 @@ Hieronder volgt een overzicht van de stappen die een front-end ontwikkelaar moet
 
    Zodra de componenten worden overeengekomen en het model JSON op zijn plaats is, is de front-end ontwikkelaar vrij om het KUUROORD te ontwikkelen en kan eenvoudig tot het model JSON via `this.props.cqModel` toegang hebben.
 
-1. `render()` methode van de component van 0&rbrace; uitvoeren **&#x200B;**
+1. `render()` methode van de component van 0} uitvoeren ****
 
    De front-end ontwikkelaar implementeert de `render()` -methode naar eigen inzicht en kan de velden van de `cqModel` -eigenschap gebruiken. Hiermee worden de DOM- en HTML-fragmenten uitgevoerd die in de pagina worden ingevoegd. Dit is de standaardmanier om een app te maken in React.
 
@@ -228,4 +230,4 @@ Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [ Begonnen het
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt, zie het artikel [ Dynamisch Model aan Component Mapping voor SPAs ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPAs in AEM voor een kader buiten Reageren of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor de werken van AEM, het [&#128279;](/help/sites-developing/spa-blueprint.md) artikel van het Blauwdruk van 0&rbrace; SPA &lbrace;ziet.
+Als u wenst om SPAs in AEM voor een kader buiten Reageren of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor de werken van AEM, het ](/help/sites-developing/spa-blueprint.md) artikel van het Blauwdruk van 0} SPA {ziet.[

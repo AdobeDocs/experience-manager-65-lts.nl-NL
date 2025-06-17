@@ -5,12 +5,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
 
 ---
+
 
 # Een externe SPA bewerken in Adobe Experience Manager {#editing-external-spa-within-aem}
 
@@ -27,9 +29,9 @@ Dit document beschrijft de geadviseerde stappen om een standalone SPA aan een in
 De voorwaarden zijn eenvoudig.
 
 * Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd.
-* Creeer een project van basisAEM SPA gebruikend [ het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL&#available-properties).
+* Creeer een project van basisAEM SPA gebruikend [ het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Dit vormt de basis van het AEM-project dat zal worden bijgewerkt om de externe SPA op te nemen.
-   * De steekproeven in dit document gebruiken het uitgangspunt van [ het project van KND SPA ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL#spa-editor).
+   * De steekproeven in dit document gebruiken het uitgangspunt van [ het project van KND SPA ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Heb het werkende, externe KUUROORD van de Reactie die u bij hand wenst te integreren.
 
 ## SPA uploaden naar AEM-project {#upload-spa-to-aem-project}
@@ -371,8 +373,8 @@ De component RemotePage verwacht dat de implementatie activa-manifest zoals [ we
 
 Het volgende referentiemateriaal kan nuttig zijn om SPAs in de context van AEM te begrijpen.
 
-* [ The AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
-* [ het project van het KND SPA ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL)
+* [ The AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [ het project van het KND SPA ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [Begonnen het worden met SPAs in AEM Gebruikend Reageren](spa-getting-started-react.md)
 * [SPA Reference Materials (API-referenties)](spa-reference-materials.md)
 * [SPA Blueprint en PageModelManager](spa-blueprint.md#pagemodelmanager)

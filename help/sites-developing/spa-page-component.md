@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 470636ce-3934-4aac-80ff-1fe6bd84455e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
 
 ---
+
 
 # SPA-pagina-component{#spa-page-component}
 
@@ -90,7 +92,7 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Niet gebruiken voor projectwerk.
 >
->Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden moeten worden gebaseerd op het Maven Archetype voor Kit van de Aanzet van het KUUUROORD.
+>Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden moeten worden gebaseerd op het Maven Archetype voor Kit van de Aanzet van het KUUUROORD.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 
