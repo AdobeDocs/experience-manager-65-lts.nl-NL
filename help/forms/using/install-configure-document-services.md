@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '5503'
+source-wordcount: '5502'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,7 @@ Als u de PDF Generator-service gaat gebruiken om eigen bestandsindelingen zoals 
 >* Adobe Acrobat, Microsoft® Word, Excel en PowerPoint zijn alleen beschikbaar voor Microsoft® Windows. Als u het op UNIX-Gebaseerde werkende systeem gebruikt, installeer OpenOffice om rijke tekstdossiers en gesteunde dossiers van Microsoft® Office in de documenten van PDF om te zetten.
 >* Sluit alle dialoogvensters die worden weergegeven na de installatie van Adobe Acrobat en software van derden voor alle gebruikers die zijn geconfigureerd voor het gebruik van de PDF Generator-service.
 >* Start minstens één keer alle geïnstalleerde software. Alle dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd om de PDF Generator-service te gebruiken.
->* [ de vervaldatum van de Controle van uw serienummers van Adobe Acrobat ](https://helpx.adobe.com/nl/enterprise/kb/volume-license-expiration-check.html) en reeks een datum om vergunning bij te werken of [ migreer uw serienummer ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) dat op de vervaldatum wordt gebaseerd.
+>* [ de vervaldatum van de Controle van uw serienummers van Adobe Acrobat ](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) en reeks een datum om vergunning bij te werken of [ migreer uw serienummer ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) dat op de vervaldatum wordt gebaseerd.
 
 Open Microsoft® Word nadat u Acrobat hebt geïnstalleerd. Op het **Acrobat** lusje, klik **creeer PDF** en zet een .doc of .docx dossier beschikbaar op uw machine in een Document van PDF om. Als de conversie succesvol is, is AEM Forms klaar om Acrobat te gebruiken met de PDF Generator-service.
 
@@ -379,10 +379,10 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) artikel.
+   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) artikel.
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer in het bestand `[AEM-Installation-Directory]/crx-quickstart/logs/error` .log worden weergegeven en het logbestand stabiel is.
 
@@ -656,7 +656,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 * Verzeker slechts [ gesteunde versie ](/help/sites-deploying/technical-requirements.md) van Microsoft® Office (met 32 bits) en Adobe Acrobat wordt geïnstalleerd en het openen van dialogen wordt geannuleerd.
 * Controleer of Adobe Acrobat Update Service is uitgeschakeld.
-* Zorg ervoor dat het {[&#128279;](#configure-acrobat-for-the-pdf-generator-service) partijdossier 0} Acrobat_for_PDFG_Configuration.bat met beheerdervoorrechten in werking werd gesteld.
+* Zorg ervoor dat het {](#configure-acrobat-for-the-pdf-generator-service) partijdossier 0} Acrobat_for_PDFG_Configuration.bat met beheerdervoorrechten in werking werd gesteld.[
 * Controleer of een PDF Generator-gebruiker is toegevoegd aan de configuratieinterface van PDF.
 * Zorg ervoor dat [ vervang een teken van het procesniveau ](#grant-the-replace-a-process-level-token-privilege) toestemming voor de gebruiker van PDF Generator wordt toegevoegd.
 * Zorg ervoor dat de COM-invoegtoepassing Acrobat PDFMaker Office is ingeschakeld voor Microsoft Office-toepassingen.
@@ -688,7 +688,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 +++
 
-+++ HTML naar PDF conversieproblemen
+++ + HTML naar PDF conversieproblemen
 
 * Zorg ervoor dat de mappen met fonts worden toegevoegd in de PDF Generator config-gebruikersinterface.
 

@@ -5,18 +5,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
 exl-id: 56b4a767-1210-47f3-b022-766b0dda9943
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 1%
 
 ---
 
-# Integratie van Salesforce met gebruik van OAuth 2.0 client credentials flow {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integratie van Salesforce met gebruik van OAuth 2.0 client credentials flow  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=nl-NL) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration) |
 | AEM 6.5 | Dit artikel |
 
 U kunt OAuth 2.0 cliëntgeloofsbrieven gebruiken om AEM Forms met de toepassing van Salesforce te integreren. OAuth 2.0 cliëntgeloofsbrieven zijn een standaard en veilige methode voor directe mededeling zonder gebruikersbetrokkenheid.
@@ -34,9 +34,9 @@ Er zijn veelvoudige voordelen om OAuth 2.0 cliëntgeloofsbrieven voor authentifi
 
 Voordat u de communicatie tussen een Salesforce-toepassing en een AEM-omgeving instelt:
 
-* Creeer a [ Salesforce verbonden app met OAuth 2.0 cliëntcredentiële stroom ](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) en een API-enige gebruiker voor uw organisatie en verkrijg de consumentensleutel en het consumentengeheim voor app.
+* Creeer a [ Salesforce verbonden app met OAuth 2.0 cliëntcredentiële stroom ](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) en een API-enige gebruiker voor uw organisatie en verkrijg de consumentensleutel en het consumentengeheim voor app.
 
-* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [ tot een dossier van de Swagger ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=nl-NL) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
+* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [ tot een dossier van de Swagger ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
 >[!NOTE]
 >
 > AEM 6.5 ondersteunt alleen Swagger 2.0-bestandsspecificaties.
@@ -70,4 +70,4 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM-omgeving i
 1. Klik op **[!UICONTROL Test Connection]**.
 1. Klik op de knop **[!UICONTROL Create]** als de verbinding tot stand is gebracht.
 
-Nu, kunt u [ tot het Model van de Gegevens van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en) leiden om de gevormde gegevensbron met uw Aanpassings Forms te integreren.
+Nu, kunt u [ tot het Model van de Gegevens van de Vorm ](/help/forms/using/create-form-data-model.md) leiden om de gevormde gegevensbron met uw Aanpassings Forms te integreren.

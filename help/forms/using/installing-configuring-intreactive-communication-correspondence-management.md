@@ -1,15 +1,15 @@
 ---
 title: Interactieve communicatie installeren en configureren
-description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, verklaringen, uitkeringsberichten, marketingmails, rekeningen en welkomstpakketten te maken.
+description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken.
 topic-tags: installing
 docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ Voordat u de mogelijkheden voor interactief communicatie- en correspondentiebehe
    * **Auteur**: Een instantie van AEM die wordt gebruikt om, inhoud tot stand te brengen te uploaden en uit te geven en de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
    * **Verwerking:** de verwerkingsinstantie van A is a [ geharde instantie van de Auteur van AEM ](/help/forms/using/hardening-securing-aem-forms-environment.md). Nadat u de installatie hebt uitgevoerd, kunt u een instantie Auteur instellen en deze lastiger maken.
 
-   * **Publiceren**: een AEM instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
+   * **publiceer**: Een instantie van AEM die de gepubliceerde inhoud aan het publiek over Internet of een intern netwerk dient.
 
-* Er wordt voldaan aan de geheugenvereisten. Het add-onpakket voor AEM Forms vereist:
+* Er wordt voldaan aan de geheugenvereisten. AEM Forms-add-on-pakket vereist:
 
-   * 15 GB tijdelijke ruimte voor installaties op basis van Microsoft® Windows.
+   * 15 GB tijdelijke ruimte voor Microsoft® Windows-installaties.
    * 6 GB tijdelijke ruimte voor UNIX-installaties.
 
 * Extra vereisten voor op UNIX gebaseerde systemen: als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgende pakketten via de installatiemedia van het desbetreffende besturingssysteem.
@@ -89,17 +89,17 @@ Voordat u de mogelijkheden voor interactief communicatie- en correspondentiebehe
 AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat interactieve AEM Forms-communicatie, correspondentiebeheer en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
 1. Open [ Distributie van de Software ](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het kopmenu.
-1. In de **[!UICONTROL Filters]** sectie:
+1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In de sectie **[!UICONTROL Filters]** :
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
-1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
+1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   U kunt het pakket ook downloaden via de directe koppeling die wordt vermeld in het artikel over AEM [Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) .
+   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) artikel.
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd het AEM exemplaar opnieuw te starten. **Start de server niet onmiddellijk opnieuw op.** Voordat u de AEM Forms Server stopt, wacht u totdat de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het [bestand AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logboek stabiel is.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **begin niet onmiddellijk de server opnieuw.** alvorens de Server van AEM Forms tegen te houden, wacht tot ServiceEvent REGISTERED en ServiceEvent niet GEREGISTREERDE berichten ophouden die in het [ AEM-Installatie-Folder ] /crx-quickstart/logs/error.log- dossier verschijnen en het logboek stabiel is.
 
    >[!NOTE]
    >
@@ -136,7 +136,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. Het gebrek URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-1. Onderzoek en open **Configuratie van de Firewall 0&rbrace; Deserialization.**
+1. Onderzoek en open **Configuratie van de Firewall 0} Deserialization.**
 1. Voeg het {**pakket 0} sun.util.endar aan het** lijst van gewenste personen **gebied toe.** Klik op Opslaan.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 
@@ -144,18 +144,18 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Compatibiliteitspakket installeren {#install-compatibility-package}
 
-Interactieve communicatie is de standaard en aanbevolen benadering voor het maken van klantcommunicatie in AEM 6.5-formulieren. Als u een upgrade hebt uitgevoerd of gemigreerd van een eerdere versie en van plan bent om letters te blijven gebruiken (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+Interactieve communicatie is de standaard en aanbevolen aanpak om klantcommunicatie tot stand te brengen in AEM 6.5 Forms. Als u hebt bevorderd of van een vorige versie gemigreerd, en van plan bent om brieven (het Beheer van de Correspondentie) te blijven gebruiken, installeer het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-Met het AEMFD-compatibiliteitspakket kunt u de volgende activa van AEM 6.4-formulieren, AEM 6.3-formulieren en AEM 6.2-formulieren op AEM 6.5-formulieren gebruiken:
+Met het compatibiliteitspakket AEMFD kunt u de volgende elementen uit AEM 6.4 Forms, AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.5 Forms gebruiken:
 
-* Fragmenten van documenten
-* Brieven
+* Documentfragmenten
+* Letters
 * Gegevenswoordenboeken
 * Afgekeurde sjablonen en pagina&#39;s voor adaptieve formulieren
 
 #### Dispatcher configureren {#configure-dispatcher}
 
-Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeling dat wordt gebruikt met een webserver op bedrijfsniveau. Als u [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
+Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeling dat wordt gebruikt met een webserver op bedrijfsniveau. Als u [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
 
 1. Toegang voor AEM Forms configureren:
 
@@ -163,7 +163,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeli
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL).
+   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).[
 
 1. Configureer de referentiefilterservice:
 
@@ -183,9 +183,9 @@ U kunt SSL-communicatie inschakelen voor het formuliergegevensmodel. Als u SSL-c
 
 ## Volgende stappen {#next-steps}
 
-U hebt een omgeving geconfigureerd voor het gebruik van interactieve communicatie- en correspondentiebeheermogelijkheden. De stappen voor het gebruik van de mogelijkheid zijn nu:
+U hebt een omgeving geconfigureerd voor het gebruik van de mogelijkheden voor interactieve communicatie en correspondentiebeheer. De volgende stappen zijn:
 
-* [Overzicht van correspondentiebeheer](/help/forms/using/interactive-communications-overview.md)
+* [Overzicht van het correspondentiebeheer](/help/forms/using/interactive-communications-overview.md)
 
 * [Een interactieve communicatie maken](../../forms/using/create-interactive-communication.md)
 

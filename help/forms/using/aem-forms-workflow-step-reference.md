@@ -1,16 +1,13 @@
 ---
 title: Forms-centric workflow voor OSGi - Step Reference
 description: Met een Forms-gerichte workflow voor OSGi-stappen kunt u snel adaptieve formulieren op basis van workflows maken.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: publish
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '7512'
+source-wordcount: '7476'
 ht-degree: 0%
 
 ---
@@ -19,14 +16,14 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | Dit artikel |
 
 U gebruikt workflowmodellen om een bedrijfslogica om te zetten in een geautomatiseerd, zich herhalend proces. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse stappen van het Werkschema van AEM in een model omvatten om de bedrijfslogica ](/help/sites-developing/workflows-models.md#extending-aem) te bereiken.
 
 ## Forms Workflow-stappen {#forms-workflow-steps}
 
-Forms Workflow-stappen voeren AEM Forms-specifieke bewerkingen uit in een AEM-workflow. Met deze stappen kunt u snel adaptieve formulieren maken op basis van een Forms-gerichte workflow op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook Forms Workflow-stappen gebruiken om documentservices te starten, te integreren met de ondertekeningsworkflow van Adobe Sign en andere AEM Forms-bewerkingen uit te voeren. U vereist [ toe:voegen-op van AEM Forms ](https://www.adobe.com/go/learn_aemforms_documentation_63) om deze stappen in een werkschema te gebruiken.
+Forms Workflow-stappen voeren AEM Forms-specifieke bewerkingen uit in een AEM-workflow. Met deze stappen kunt u snel adaptieve formulieren maken op basis van een Forms-gerichte workflow op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook Forms Workflow-stappen gebruiken om documentservices te starten, te integreren met de ondertekeningsworkflow van Adobe Sign en andere AEM Forms-bewerkingen uit te voeren.
 
 Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een AEM-workflow. Met deze stappen kunt u snel een op Adaptive Forms gebaseerde Forms-gerichte workflow bouwen op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne processen en bedrijfsprocessen binnen de firewall.
 
@@ -89,7 +86,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
    * **sparen lay-outmalplaatje gebruikend:** sparen het lay-outmalplaatje gebruikend een weg die met betrekking tot de lading is of het opslaat in een variabele van het gegevenstype van het Document. Het [ lay-outmalplaatje ](../../forms/using/layout-design-details.md) verwijst naar een XDP dossier dat u gebruikend Forms Designer creeert. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
 
 * **toewijzen de Wijs opties toe:** specificeer de methode om de taak aan een gebruiker toe te wijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM-gebruiker of -groep.
-* **Kiezer van de Deelnemer:** de optie is beschikbaar wanneer **dynamisch aan een gebruiker of een groep** optie op het Assign optiesgebied wordt geselecteerd. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ dynamisch een werkschema toewijzen aan de gebruikers ](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [ Creërend een stap van de Dynamische Deelnemer van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&amp;CID=RedirectAEMCommunityKautuk)
+* **Kiezer van de Deelnemer:** de optie is beschikbaar wanneer **dynamisch aan een gebruiker of een groep** optie op het Assign optiesgebied wordt geselecteerd. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren.
 
 * **Deelnemers:** het gebied is beschikbaar wanneer de **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** optie op het **de Chooser van de Deelnemer** gebied wordt geselecteerd. In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 

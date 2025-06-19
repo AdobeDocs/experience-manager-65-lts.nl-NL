@@ -1,17 +1,13 @@
 ---
 title: Forms-toepassingen en -taken beheren in AEM Inbox
 description: Met AEM Inbox kunt u op Forms gerichte workflows starten door toepassingen in te dienen en taken te beheren.
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -140,7 +136,7 @@ Een eigenaar van een workflowmodel kan geen items weergeven die gerelateerd zijn
      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices door middel van een AEM-pakket. U kunt een [ Archetype van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=nl-NL) project gebruiken om een plaatsbaar pakket van AEM tot stand te brengen. Gebruik de volgende voorbeeldcode om indexen toe te voegen aan een AEM Archetype-project:
+   * Implementeer de indices door middel van een AEM-pakket. U kunt een [ Archetype van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) project gebruiken om een plaatsbaar pakket van AEM tot stand te brengen. Gebruik de volgende voorbeeldcode om indexen toe te voegen aan een AEM Archetype-project:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +146,6 @@ Een eigenaar van een workflowmodel kan geen items weergeven die gerelateerd zijn
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [ creeer een Index van het Bezit en plaats het aan waar ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [ creeer een Index van het Bezit en plaats het aan waar ](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. Na het vormen van indexen in CRX DE of het opstellen via een pakket, [ re-index de bewaarplaats ](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. Na het configureren van indices in CRX DE of het implementeren via een pakket, dient u de repository opnieuw te indexeren.

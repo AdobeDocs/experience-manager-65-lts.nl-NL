@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
 In de volgende afbeelding wordt de geëxtraheerde inhoud van de `adobe-lc-mobileworkspace-src-<version>.zip` weergegeven.
@@ -79,7 +79,7 @@ Het volgende beeld toont de folderstructuur van de `android` omslag in de `src` 
    ![ eclipse project na de bouw app ](assets/eclipsebuildmws.png)
 
 1. Selecteer **[!UICONTROL Import Project (Eclipse ADT, Gradle, Etc.)]** in Android™ Studio.
-1. In de projectontdekkingsreiziger, selecteer de wortelfolder van het project dat u in het **de tekstvakje van de Folder van de 1&rbrace; wortel wilt bouwen**:
+1. In de projectontdekkingsreiziger, selecteer de wortelfolder van het project dat u in het **de tekstvakje van de Folder van de 1} wortel wilt bouwen**:
 
    **voor de gebruikers van Mac:** [ User_Home ]/Projecten/MobileWorkspace/src/android
 

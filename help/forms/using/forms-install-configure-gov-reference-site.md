@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '4519'
+source-wordcount: '4518'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Deze sectie bevat informatie over het installeren van het demopakket.
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer **wij-gov-forms.pkg.all-&lt;version>.zip** pakketnaam, selecteer **[!UICONTROL Accept EULA Terms]**, en selecteer **[!UICONTROL Download]**.
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
    ![ wij gaan vormenpakket ](assets/wegov_forms_package.jpg)
@@ -153,7 +153,7 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 1. De opstellingsdocumentatie van het overzicht [ Vormend E-mailbericht ](/help/sites-administering/notification.md)
 1. Meld u aan als beheerder voor deze taak.
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. Bepaal en klik de **dienst van de Post van 0&rbrace; Dag CQ &lbrace;om te vormen.**
+1. Bepaal en klik de **dienst van de Post van 0} Dag CQ {om te vormen.**
 
    ![ vorm de Dienst van de Post van de Dag CQ ](assets/day_cq_mail_service.jpg)
 
@@ -226,7 +226,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 **Verwijzingen:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [ het Vormen Dynamica Microsoft® voor AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=nl-NL)
+1. [ het Vormen Dynamica Microsoft® voor AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
 #### MS® Dynamics OData cloudservice {#ms-dynamics-odata-cloud-service}
 
@@ -312,7 +312,7 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
    >[!NOTE]
    >
-   >Na het testen van de diensten, annuleert de klik **&#x200B;**&#x200B;om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
+   >Na het testen van de diensten, annuleert de klik **** om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
 
    >[!NOTE]
    >
@@ -320,7 +320,7 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
    >[!NOTE]
    >
-   >U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.
+   > U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.
 
 #### Het Forms-gegevensmodel testen (Derby) {#test-fdm-derby}
 
@@ -480,7 +480,7 @@ Gebruikers van het gereedschap Conversie moeten het volgende hebben om AEM Forms
 
 Lees het volgende voordat u verdere instructies leest:
 
-* [De service voor automatische conversie van formulieren configureren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL)
+* [De service voor automatische conversie van formulieren configureren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### Een IMS-configuratie maken, deel 1 {#creating-ims-config}
 
@@ -579,7 +579,7 @@ Nadat de IMS-configuratie is voltooid, kunt u doorgaan met het controleren van d
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
-   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
+   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service) vormen.
 
 #### Cloud Configuration (wij.Finance AFC Production) configureren {#configure-cloud-configuration-wefinance}
 
@@ -609,7 +609,7 @@ Nadat de IMS-configuratie is voltooid, kunnen we doorgaan met het maken van de c
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
-   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
+   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service) vormen.
 
 #### De formulierconversie testen (Web.Gov-inschrijvingstoepassing) {#test-forms-conversion}
 
@@ -629,7 +629,7 @@ Wanneer de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF
 
 1. Zodra de knop is geselecteerd, krijgen gebruikers de volgende opties te zien
 
-   * Zorg ervoor dat de gebruikers de {*configuratie 1} van de Productie 0&rbrace; Web.Gov selecteren*
+   * Zorg ervoor dat de gebruikers de {*configuratie 1} van de Productie 0} Web.Gov selecteren*
 
    ![ montages van de Omzetting ](assets/aftia-conversion-settings.jpg)
 
@@ -649,7 +649,7 @@ Wanneer de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF
 
 #### Bekende problemen en notities {#known-issues-notes}
 
-De Geautomatiseerde dienst van de Omzetting van Vormen omvat bepaalde [ beste praktijken, bekende complexe patronen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=nl-NL), en [ bekende kwesties ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=nl-NL). Controleer deze voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken.
+De Geautomatiseerde dienst van de Omzetting van Vormen omvat bepaalde [ beste praktijken, bekende complexe patronen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), en [ bekende kwesties ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Controleer deze voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken.
 
 1. Genereer het formulier met Aangepaste formulieren genereren zonder gegevensbindingen ingeschakeld als u het formulier na conversie aan een FDM wilt binden.
 
