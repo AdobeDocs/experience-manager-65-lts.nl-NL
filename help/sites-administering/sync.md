@@ -303,9 +303,11 @@ Als de verkoop-id van een instantie Publish overeenkomt met de id Sling van een 
    * onderzoek naar en schrap het dossier genoemd *sling.id.file*
 
       * bijvoorbeeld op een Linux®-systeem:
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * bijvoorbeeld op een Windows-systeem:
+
         `use windows explorer and search for *sling.id.file*`
 
 1. De instantie Publiceren starten
