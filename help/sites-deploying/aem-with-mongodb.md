@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '5965'
 ht-degree: 0%
@@ -572,7 +572,7 @@ Als u WMWare ESX gebruikt om uw gevirtualiseerde milieu&#39;s te beheren en op t
 
 ### Amazon Web Services {#amazon-web-services}
 
-Voor documentatie op hoe te opstelling MongoDB met Amazon Web Services, controleer het [ vormt de 1&rbrace; artikel van de Integratie van AWS op de website MongoDB.](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/)
+Voor documentatie op hoe te opstelling MongoDB met Amazon Web Services, controleer het [ vormt de 1} artikel van de Integratie van AWS op de website MongoDB.](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/)
 
 ## MongoDB beveiligen voor implementatie {#securing-mongodb-before-deployment}
 
@@ -594,7 +594,7 @@ Omdat de Dispatcher geen status heeft, kan deze eenvoudig horizontaal worden ges
 
 Als u AEM uitvoert zonder Dispatcher, moet SSL worden afgesloten en moet de taakverdeling door een andere toepassing worden uitgevoerd. Dit is vereist omdat sessies affiniteit moeten hebben met de AEM-instantie waarop ze zijn gemaakt, een concept dat sticky connections wordt genoemd. De reden hiervoor is dat updates van de inhoud minimale vertraging vertonen.
 
-Controleer de [ documentatie van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) voor meer informatie over hoe te om het te vormen.
+Controleer de [ documentatie van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) voor meer informatie over hoe te om het te vormen.
 
 ### Aanvullende configuratie {#additional-configuration}
 
@@ -656,7 +656,7 @@ CSP staat voor het verfijnen van beleid toe. In een complexe toepassing, echter,
 
 >[!NOTE]
 >
->Voor meer informatie over hoe dit werk, zie de [ Pagina van OWASP over het Beleid van de Veiligheid van de Inhoud ](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Voor meer informatie over hoe dit werk, zie de [ Pagina van OWASP over het Beleid van de Veiligheid van de Inhoud ](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Grootte {#sizing}
 

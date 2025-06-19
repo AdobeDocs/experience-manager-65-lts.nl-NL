@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5236'
+source-wordcount: '5216'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Wanneer u met middelen in deze oplossing werkt, doet u één van het volgende:
 * Upload activa direct aan Dynamic Media Classic en dan toegang als **Dynamic Media Classic** inhoudsbrowser voor paginaontwerp of
 * Upload aan Experience Manager Assets en laat dan automatisch het publiceren aan Dynamic Media Classic toe; u hebt toegang via **Assets** inhoudbrowser voor paginaontwerp
 
-De componenten u voor deze integratie gebruikt worden gevonden in het **&#x200B;**&#x200B;componentengebied van Dynamic Media Classic op [ wijze van het Ontwerp ](/help/sites-authoring/author-environment-tools.md#page-modes).
+De componenten u voor deze integratie gebruikt worden gevonden in het **** componentengebied van Dynamic Media Classic op [ wijze van het Ontwerp ](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -394,7 +394,7 @@ Wanneer een element aan Experience Manager Assets wordt toegevoegd, wordt het au
 
    ![ screen_shot_2018-03-15at52501pm ](assets/screen_shot_2018-03-15at52501pm.jpg)
 
-1. Ga terug naar de welkomstpagina van Experience Manager en selecteer **[!UICONTROL Workflows]** . Dubbelklik het **werkschema van de Activa van de Update van 0&rbrace; DAM &lbrace;zodat opent het.**
+1. Ga terug naar de welkomstpagina van Experience Manager en selecteer **[!UICONTROL Workflows]** . Dubbelklik het **werkschema van de Activa van de Update van 0} DAM {zodat opent het.**
 1. Navigeer in de assistent naar de **[!UICONTROL Workflow]** -componenten en selecteer **[!UICONTROL Dynamic Media Classic]** . Sleep **[!UICONTROL Dynamic Media Classic]** naar de workflow en selecteer **[!UICONTROL Save]** . Assets die in de doelmap aan Experience Manager Assets is toegevoegd, wordt automatisch naar Dynamic Media Classic geüpload.
 
    ![ chlimage_1-301 ](assets/chlimage_1-301.png)
@@ -420,14 +420,10 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 
 Voordat u elementen naar Dynamic Media Classic kunt duwen zonder ze te publiceren, moet u het volgende instellen:
 
-1. [ Gebruik Admin Console om een steungeval ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen. In het geval van ondersteuning kunt u vragen of een beveiligde voorvertoning voor uw Dynamic Media Classic-account is ingeschakeld.
-1. [ Opstelling veilige voorproef voor uw rekening van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL).
+1. [ Gebruik Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen. In het geval van ondersteuning kunt u vragen of een beveiligde voorvertoning voor uw Dynamic Media Classic-account is ingeschakeld.
+1. [ Opstelling veilige voorproef voor uw rekening van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Dit zijn dezelfde stappen die u zou volgen om een veilige testinstallatie in Dynamic Media Classic te maken.
-
->[!NOTE]
->
->Als uw installatiemilieu een werkend systeem met 64 bits UNIX® is, zie [ https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html ](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) betreffende andere configuratieopties u moet plaatsen.
 
 #### Bekende beperkingen voor het doorduwen van elementen in niet-gepubliceerde toestand  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -454,7 +450,7 @@ Houd rekening met de volgende beperkingen als u deze functie gebruikt:
 1. Selecteer de tab **[!UICONTROL Advanced]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Enable Secure View]** de optie **[!UICONTROL Upon AEM Publish Activation]** om elementen naar Dynamic Media Classic te verplaatsen zonder ze te publiceren. (Deze waarde wordt standaard ingesteld op **[!UICONTROL Immediately]** , waarbij Dynamic Media Classic-elementen direct worden gepubliceerd.)
 
-   Zie {de documentatie van 0} Dynamic Media Classic [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL) voor meer informatie over het testen van activa alvorens hen openbaar te maken.
+   Zie {de documentatie van 0} Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) voor meer informatie over het testen van activa alvorens hen openbaar te maken.[
 
    ![ chlimage_1-302 ](assets/chlimage_1-302.png)
 
@@ -569,7 +565,7 @@ Specifiek, vormt u het erkende dossierformaat door MIME type in het OSGi (Open h
 
    Bijvoorbeeld `psprocess="rasterize"&psresolution=120` .
 
-   Zie [ het Systeem API van de Productie van het Beeld van Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=nl-NL) voor meer uploadbaanparameters u kunt gebruiken.
+   Zie [ het Systeem API van de Productie van het Beeld van Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) voor meer uploadbaanparameters u kunt gebruiken.
 
    >[!NOTE]
    >

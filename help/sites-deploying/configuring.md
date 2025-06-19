@@ -1,17 +1,13 @@
 ---
 title: Basisconfiguratieconcepten
 description: Leer hoe u Adobe Experience Manager configureert voor uw eigen specifieke vereisten.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -38,7 +34,7 @@ Afhankelijk van de specifieke configuratie, kunnen deze veranderingen worden aan
 
   Een ondergroep van configuraties OSGi is beschikbaar in de bewaarplaats. Dit zorgt ervoor dat het kopiëren, of het repliceren, de inhoud van de bewaarplaats identieke configuraties ontspannen. U kunt ook uw eigen configuraties, afhankelijk van de uitvoeringsmodus, aan de opslagplaats toevoegen.
 
-  Zie {Configuratie 0} OSGi in de Bewaarplaats [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) en in het bijzonder [ Toevoegend een Nieuwe Configuratie aan de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) voor verdere details.
+  Zie {Configuratie 0} OSGi in de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) en in het bijzonder [ Toevoegend een Nieuwe Configuratie aan de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) voor verdere details.[
 
 * **systeem van het Dossier**
 
@@ -111,7 +107,7 @@ In een standaardinstallatie maakt AEM een versie van een pagina of knooppunt wan
 
 Deze versies worden nooit gewist, zodat de grootte van de opslagplaats in tijd groeit en daarom moet worden beheerd.
 
-Zie [&#128279;](/help/sites-deploying/version-purging.md) het Schrappen van de Versie 1&rbrace; voor volledige details, in het bijzonder [ Manager van de Versie ](/help/sites-deploying/version-purging.md#version-manager) voor details van hoe te om AEM te vormen om oudere versies te zuiveren wanneer een nieuwe versie wordt gecreeerd.
+Zie ](/help/sites-deploying/version-purging.md) het Schrappen van de Versie 1} voor volledige details, in het bijzonder [ Manager van de Versie ](/help/sites-deploying/version-purging.md#version-manager) voor details van hoe te om AEM te vormen om oudere versies te zuiveren wanneer een nieuwe versie wordt gecreeerd.[
 
 ### Logboekregistratie {#logging}
 
@@ -180,11 +176,11 @@ Voor gebruikersbeheer binnen AEM (met inbegrip van toewijzing van toegangsrechte
 
 Dispatcher is een Adobe Experience Manager-programma voor caching, taakverdeling of beide. Het kan met een onderneming-klasse Webserver worden gebruikt.
 
-Zie [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) voor volledige details, in het bijzonder [ Vormend Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL) voor verdere configuratiedetails.
+Zie [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor volledige details, in het bijzonder [ Vormend Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) voor verdere configuratiedetails.
 
 ### AEM LiveCycle Connector configureren {#configuring-aem-livecycle-connector}
 
-Met de release van AEM Doc Services en AEM Doc Security kan AEM nu de LiveCycle-documentservices aanroepen om een XFA-formulier te genereren, een document om te zetten in PDF en een document te beschermen door beleid. Zie [ de Schakelaar van AEM LiveCycle ](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) voor meer details.
+Met de release van AEM Doc Services en AEM Doc Security kan AEM nu de LiveCycle-documentservices aanroepen om een XFA-formulier te genereren, een document om te zetten in PDF en een document te beschermen door beleid.
 
 ### Het Verschuiven van de baan en het Beleid van de Topologie {#job-offloading-and-topology-administration}
 
@@ -297,7 +293,7 @@ Zie [ Vormend E-mailBericht ](/help/sites-administering/notification.md) voor ve
 
 ### Paginaafdrukken inschakelen {#enabling-page-impressions}
 
-De impressies van de pagina worden getoond in de **1&rbrace; kolom van Impressies &lbrace;van de klassieke console van UI plaatsadmin.** U kunt als volgt het vastleggen van pagina-afdrukken inschakelen:
+De impressies van de pagina worden getoond in de **1} kolom van Impressies {van de klassieke console van UI plaatsadmin.** U kunt als volgt het vastleggen van pagina-afdrukken inschakelen:
 
 * Op de publicatie-instantie:
 

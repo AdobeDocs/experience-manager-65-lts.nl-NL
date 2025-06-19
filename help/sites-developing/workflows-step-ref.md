@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ function check(){
 
 ### Simuleren van een lus for met behulp van Regeldefinitie {#simulateforloop}
 
-U kunt ook simuleren voor lijn gebruikend de Definitie van de Regel als verpletterende uitdrukking. [ creeer a **telling** variabele ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) van Lang gegevenstype. De Uitdrukking van het gebruik **als kaartwijze in de**&#x200B;[ Vastgestelde Veranderlijke ](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)**stap om de waarde van de** telling **variabele aan** telling + 1 **op elke uitvoering van de** Vastgestelde Veranderlijke **stap te plaatsen.**
+U kunt ook simuleren voor lijn gebruikend de Definitie van de Regel als verpletterende uitdrukking. [ creeer a **telling** variabele ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) van Lang gegevenstype. De Uitdrukking van het gebruik **als kaartwijze in de**[ Vastgestelde Veranderlijke ](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)**stap om de waarde van de** telling **variabele aan** telling + 1 **op elke uitvoering van de** Vastgestelde Veranderlijke **stap te plaatsen.**
 
 ![ Simulerend a voor lijn ](assets/variable_use_case_count_new.png)
 
@@ -188,7 +188,7 @@ De **Vastgestelde Veranderlijke** stap loopt herhaaldelijk, die de waarde van **
 
 >[!NOTE]
 >
->Zie [ OF Gesplitste stap ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Zie [ OF Gesplitste stap ](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)
 
 ![ Vertakkend gebruikend OF Gesplitst ](assets/variables_orsplit_new.png)
 
@@ -285,7 +285,6 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 * **Gegevens van de Opslag met de Payload**
 
    * Als u widgetgegevens wilt opslaan als een eigenschap van de payload van de workflow, gebruikt u de volgende indeling voor de waarde van de eigenschap name van het widgetknooppunt:
-
      `./jcr:content/nodename`
 
    * De gegevens worden opgeslagen in de eigenschap `nodename` van het payload-knooppunt. Als het knooppunt die eigenschap niet bevat, wordt de eigenschap gemaakt.
@@ -294,7 +293,6 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 * **Gegevens van de opslag met het Punt van het Werk**
 
    * Als u widgetgegevens wilt opslaan als een eigenschap van de metagegevens van het werkitem, gebruikt u de volgende indeling voor de waarde van de eigenschap name:
-
      `nodename`
 
    * De gegevens worden opgeslagen in de eigenschap `nodename` van het tijdelijke item `metadata` . De gegevens blijven behouden als het dialoogvenster later wordt gebruikt met dezelfde payload.
@@ -342,7 +340,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
 1. **Definitie van de Dialoog van het Voorbeeld**
 
-   Het volgende XML-codefragment vertegenwoordigt een dialoogvenster waarin een `String` -waarde wordt opgeslagen in het knooppunt `watchEmail` van de ladingsinhoud. De titelknoop vertegenwoordigt de [&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component TextField:
+   Het volgende XML-codefragment vertegenwoordigt een dialoogvenster waarin een `String` -waarde wordt opgeslagen in het knooppunt `watchEmail` van de ladingsinhoud. De titelknoop vertegenwoordigt de [ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component TextField:
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -426,7 +424,7 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
 
   >[!NOTE]
   >
-  >De **component van de Server van de Aanvrager van de Aanvrager van het 0&rbrace; Werkschema &lbrace; breidt de** Dynamische Stap van de Deelnemer van de Deelnemer **uit en gebruikt dit manuscript als stapimplementatie.**
+  >De **component van de Server van de Aanvrager van de Aanvrager van het 0} Werkschema { breidt de** Dynamische Stap van de Deelnemer van de Deelnemer **uit en gebruikt dit manuscript als stapimplementatie.**
 
 * **dienst OSGi**
 
@@ -524,7 +522,7 @@ Creeer een vorm voor gebruik met de Stap van de Deelnemer van de a **Vorm** als 
 
 * Het **Begin van de component van de Vorm** moet het **bezit hebben van het Type van Actie** dat aan `Edit Workflow Controlled Resource(s)` wordt geplaatst.
 * Het **Begin van de component van de Vorm** moet een waarde voor het `Form Identifier` bezit hebben.
-* De vormcomponenten moeten het **bezit hebben van de Naam van het 0&rbrace; Element &lbrace;dat aan de weg van de knoop wordt geplaatst waar het gebiedsgegeven wordt opgeslagen.** Het pad moet een knooppunt in de ladingsinhoud van de workflow vinden. De waarde gebruikt de volgende indeling:
+* De vormcomponenten moeten het **bezit hebben van de Naam van het 0} Element {dat aan de weg van de knoop wordt geplaatst waar het gebiedsgegeven wordt opgeslagen.** Het pad moet een knooppunt in de ladingsinhoud van de workflow vinden. De waarde gebruikt de volgende indeling:
 
   `./jcr:content/path_to_node`
 
@@ -538,7 +536,7 @@ In het volgende voorbeeld, wordt het gebiedsgegeven gebruikt als inhoud van de c
 
 `./jcr:content/par/text_3/text`
 
-Het eerste voorbeeld kan worden gebruikt voor elke pagina die de component `cq:Page` genereert. Het tweede voorbeeld kan slechts worden gebruikt wanneer de ladingspagina a **component van de Tekst** &lbrace;omvat die identiteitskaart van `text_3` heeft.
+Het eerste voorbeeld kan worden gebruikt voor elke pagina die de component `cq:Page` genereert. Het tweede voorbeeld kan slechts worden gebruikt wanneer de ladingspagina a **component van de Tekst** {omvat die identiteitskaart van `text_3` heeft.
 
 Het formulier kan overal in de gegevensopslagruimte worden gevonden, maar workflowgebruikers moeten worden gemachtigd om het formulier te lezen.
 
@@ -586,7 +584,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
       * Creërend ECMAScripts voor een stap van het Proces, zie [ Uitvoerend een Stap van het Proces met ECMAScript ](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creërend de diensten OSGi voor een stap van het Proces, zie [ Uitvoerend een Stap van het Proces met een Klasse Java™ ](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
 
-   * **de Vooruitgang van de Bewerker 0&rbrace;: Selecteer deze optie om het werkschema aan de volgende stap na uitvoering automatisch vooruit te gaan.** Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
+   * **de Vooruitgang van de Bewerker 0}: Selecteer deze optie om het werkschema aan de volgende stap na uitvoering automatisch vooruit te gaan.** Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
    * **Argumenten**: Argumenten die aan het proces moeten worden overgegaan.
 
 ## Variabele instellen {#set-variable}

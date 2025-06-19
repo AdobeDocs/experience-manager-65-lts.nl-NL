@@ -8,7 +8,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '3330'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
    >[!NOTE]
    >
-   >Zie {de Configuraties van de Opslag van 0} Knoop [&#128279;](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.
+   >Zie {de Configuraties van de Opslag van 0} Knoop ](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.[
 
 1. Start AEM.
 
@@ -320,7 +320,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 1. Installeer de auteur en publiceer instanties en zorg ervoor zij behoorlijk begonnen zijn.
 1. Ga naar de montages van de replicatieagent, door een pagina aan *https://localhost:4502/etc/replication/agents.author/publish.html* te openen.
 1. Druk **uitgeven** knoop in de **sectie van Montages**.
-1. Verander de **typeoptie van de Serienummering** &lbrace;in **Binair minder**.
+1. Verander de **typeoptie van de Serienummering** {in **Binair minder**.
 
 1. Voeg de parameter &quot; `binaryless`= `true`&quot; toe aan de transporturi. Na de wijziging moet de uri er ongeveer als volgt uitzien:
 
@@ -436,7 +436,7 @@ U kunt het configuratiebestand gebruiken met de volgende opties:
 * azureSas=&quot;&quot;: in versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **als zowel SAS als opslaggeloofsbrieven in het configuratiedossier bestaan, heeft SAS prioriteit.** voor meer informatie over SAS zie de [ officiële documentatie ](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Het Azure Blob Endpoint. Bijvoorbeeld https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: de naam van de opslagaccount. Voor meer details over Microsoft® Azure authentificatiegeloofsbrieven, zie de [ officiële documentatie ](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: de naam van de opslagaccount. Voor meer details over Microsoft® Azure authentificatiegeloofsbrieven, zie de [ officiële documentatie ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * SECTKey=&quot;&quot;: de toegangstoets voor opslag. Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
 * container=&quot;&quot;: De naam van de Microsoft® Azure blob opslagcontainer. De container is een groepering van een set bollen. Voor extra details, lees de [ officiële documentatie ](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

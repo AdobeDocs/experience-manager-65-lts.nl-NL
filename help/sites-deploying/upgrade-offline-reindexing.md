@@ -9,9 +9,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0001c874-7468-4750-a377-03156674f4b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -145,11 +145,11 @@ Kopieer vervolgens de zojuist gemaakte checkpoint-id en valideer de levensduur m
 >
 >Dit controlepunt wordt verwijderd wanneer de index later wordt geïmporteerd.
 
-Voor meer details, raadpleeg [&#128279;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) de verwezenlijking van het controlepunt van 0&rbrace; van de documentatie van Oak.
+Voor meer details, raadpleeg ](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) de verwezenlijking van het controlepunt van 0} van de documentatie van Oak.[
 
 **Voer off-line indexeren voor de geproduceerde indexdefinities uit**
 
-Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Tijdens dit proces worden indexgegevens op de schijf onder `indexing-result/indexes` gemaakt. Het **&#x200B;**&#x200B;schrijft niet aan de bewaarplaats en vereist daarom niet het tegenhouden van de lopende instantie van AEM. Het gemaakte tekstarchief wordt in dit proces gebruikt:
+Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Tijdens dit proces worden indexgegevens op de schijf onder `indexing-result/indexes` gemaakt. Het **** schrijft niet aan de bewaarplaats en vereist daarom niet het tegenhouden van de lopende instantie van AEM. Het gemaakte tekstarchief wordt in dit proces gebruikt:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -180,7 +180,7 @@ U wordt aangeraden het productiesysteem te klonen en de offline index te maken m
 
 ### Runbook en proefversie voorbereiden {#prepare-a-runbook-and-trial-run}
 
-Het wordt geadviseerd om a [ runbook ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) voor te bereiden en een paar proeven uit te voeren alvorens de verbetering in productie in werking te stellen.
+Het wordt geadviseerd om a [ runbook ](/help/sites-deploying/upgrade-planning.md#building-the-upgrade-and-rollback-runbook) voor te bereiden en een paar proeven uit te voeren alvorens de verbetering in productie in werking te stellen.
 
 ### Doc Traversal Mode with Offline Indexing {#doc-traversal-mode-with-offline-indexing}
 

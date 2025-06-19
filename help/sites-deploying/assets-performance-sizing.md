@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met
 
 **het Tijdelijke Systeem van het Dossier** Een langzaam lokaal dossiersysteem kan interactieve prestatiesproblemen veroorzaken, vooral wanneer het zoeken, omdat de onderzoeksindexen op de lokale schijf worden opgeslagen. Het kan ook problemen met de middelenverwerking veroorzaken als het opdrachtregelproces wordt gebruikt.
 
-**Interactieve prestatiesproblemen van de Finder van 0&rbrace; AEM DAM**, vaak ervaren in onderzoeken worden veroorzaakt door hoog gebruik van CPU toe te schrijven aan vele gezamenlijke gebruikers of andere CPU-consumerende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als hoge CPU-belasting wordt veroorzaakt door middelenverwerking en veel gelijktijdige gebruikers, raadt Adobe aan extra clusterknooppunten toe te voegen.
+**Interactieve prestatiesproblemen van de Finder van 0} AEM DAM**, vaak ervaren in onderzoeken worden veroorzaakt door hoog gebruik van CPU toe te schrijven aan vele gezamenlijke gebruikers of andere CPU-consumerende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als hoge CPU-belasting wordt veroorzaakt door middelenverwerking en veel gelijktijdige gebruikers, raadt Adobe aan extra clusterknooppunten toe te voegen.
 
 **AEM DAM van het Werkschema** Lange-lopende werkschemaprocessen tijdens activaopname veroorzaken de prestatieproblemen van de activaverwerking. Afhankelijk van het type activa dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. Adobe raadt u aan het aantal andere processen dat op het systeem wordt uitgevoerd te verminderen en het aantal beschikbare CPU&#39;s te verhogen door clusterknooppunten toe te voegen.
 
@@ -81,7 +81,7 @@ De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met
 
 De redenen voor slechte latentie en productie in NAS zijn netwerktopologie of NAS overgebruik door andere diensten.
 
-{de 1} over-gebruikte netwerk-in bijlage van het 0&rbrace; Netwerk In bijlage opslagsystemen kunnen een serie van problemen veroorzaken:**&#x200B;**
+{de 1} over-gebruikte netwerk-in bijlage van het 0} Netwerk In bijlage opslagsystemen kunnen een serie van problemen veroorzaken:****
 
 * Weinig schijfruimte is een vaak aangetroffen probleem dat kan worden voorkomen door een DAM-project naar behoren te rangschikken.
 * De hoge schijflatentie verspreidt zich in langzame toegangstijden voor CRX en kan in interactieve prestatiesproblemen resulteren.
@@ -105,7 +105,3 @@ De volgende prestatietwekken zijn tot dusver gebruikt in projecten:
 
 * Selectieve uitvoering genereren: genereer alleen de uitvoeringen die u nodig hebt door voorwaarden toe te voegen aan de workflow voor het verwerken van elementen, zodat duurdere uitvoeringen alleen worden gegenereerd voor bepaalde elementen.
 * Gedeelde gegevensopslag onder instanties: wanneer het lopen van laag op schijfruimte kan dit de hoeveelheid schijfruimte beduidend verminderen nodig ten koste van hogere configuratieinspanningen en het verliezen van de auto-schoonmaakbeurt van de datastore.
-
-## Verdere lezing {#further-reading}
-
-* [ het Analyseren langzaam en Geblokkeerde Processen ](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)

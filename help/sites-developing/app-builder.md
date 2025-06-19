@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ App Builder biedt klanten de mogelijkheid om Adobe Experience Manager in verschi
 * De Uitbreidbaarheid van de Diensten van de kern - breid kerntoepassingsmogelijkheden door het standaardgedrag met douaneeigenschappen &amp; bedrijfslogica uit te breiden.
 * Gebruikerservaring Uitbreidbaarheid: breid de kernervaring uit om bedrijfsvereisten te ondersteunen of klantspecifieke digitale eigenschappen, winkelcentra en back-office toepassingen te ontwikkelen.
 
-App Builder is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners via Adobe Developer Preview. De algemene beschikbaarheid (GA) van App Builder is gepland voor december 2021. Adobe verwelkomt ontwikkelaars om App Builder door Adobe [ Proefprogramma ](https://developer.adobe.com/app-builder/trial/) uit te proberen.
+App Builder is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners via Adobe Developer Preview. De algemene beschikbaarheid (GA) van App Builder is gepland voor december 2021. Adobe verwelkomt ontwikkelaars om App Builder door Adobe [ Proefprogramma ](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials) uit te proberen.
 
 >[!NOTE]
 >
->Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html).
+>Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](/help/sites-developing/app-builder.md).
 
 ## Architectuur {#architecture}
 
@@ -45,13 +45,13 @@ In het volgende diagram ziet u hoe een standaardtoepassing die op App Builder is
 
 ![Architectuur](assets/appbuilder-architecture.jpg)
 
-Voor meer details over de architectuur van App Builder, heb een blik bij [ Overzicht van de Architectuur ](https://developer.adobe.com/app-builder/docs/guides/).
+Voor meer details over de architectuur van App Builder, heb een blik bij [ Overzicht van de Architectuur ](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview).
 
 ## Aan de slag met App Builder {#additional-resources}
 
 Om u te helpen aan de slag te gaan met App Builder, is een aantal documentatie gemaakt waarmee u kunt beginnen:
 
-* [ Aan de slag App Builder ](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [ Aan de slag App Builder ](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app)
 
 ## Doorgaan met leren met documentatie {#appbuilder-documentation}
 

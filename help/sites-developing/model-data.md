@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -73,8 +73,6 @@ Persoonlijk, verkies ik hiërarchische overeenkomsten over het knoop die systeem
 >[!CAUTION]
 >
 >De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats niet 1&#39;000 moeten overschrijden.
->
->Zie [ hoeveel gegevens CRX behandelen?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Voorbeeld {#example-2}
 

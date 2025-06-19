@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Vanaf AEM 6.1, wanneer gebruikerssynchronisatie wordt toegelaten, worden de gebr
 
 ## Verspreiding {#sling-distribution}
 
-De gebruikersgegevens, samen met hun [ ACLs ](/help/sites-administering/security.md), worden opgeslagen in de [ Kern van Oak ](/help/sites-deploying/platform.md), de laag onder Oak JCR, en worden betreden gebruikend [ Oak API ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Met infrequente updates, is het redelijk voor gebruikersgegevens om met andere publiceer instanties te worden gesynchroniseerd gebruikend [ het Verdelen van de Distributie van de Inhoud ](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (het Verdelen van distributie).
+De gebruikersgegevens, samen met hun [ ACLs ](/help/sites-administering/security.md), worden opgeslagen in de [ Kern van Oak ](/help/sites-deploying/platform.md), de laag onder Oak JCR, en worden betreden gebruikend [ Oak API ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html). Met infrequente updates, is het redelijk voor gebruikersgegevens om met andere publiceer instanties te worden gesynchroniseerd gebruikend [ het Verdelen van de Distributie van de Inhoud ](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (het Verdelen van distributie).
 
 De voordelen van gebruikerssynchronisatie met de verkoopverdeling in vergelijking met traditionele replicatie zijn:
 
@@ -75,7 +75,7 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
 
 1. Controleer of de laatste code is geïnstalleerd:
 
-* [ het platformupdates van AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL)
+* [ het platformupdates van AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -98,7 +98,7 @@ Verifiëren `name`: **`socialpubsync`**
 
 ![ Apache Sling Distribution Agent ](assets/chlimage_1-20.png)
 
-### 2. Gemachtigde gebruiker maken {#createauthuser}
+### &#x200B;2. Gemachtigde gebruiker maken {#createauthuser}
 
 **vorm toestemmingen**
 
@@ -280,7 +280,7 @@ Er zou een importereindpunt voor elke Publish instantie moeten zijn. Als er bijv
 
 * select `Save`
 
-### 8. Unieke verkoper-id {#unique-sling-id}
+### &#x200B;8. Unieke verkoper-id {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ Als de verkoop-id van een instantie Publish overeenkomt met de id Sling van een 
    * onderzoek naar en schrap het dossier genoemd *sling.id.file*
 
       * bijvoorbeeld op een Linux®-systeem:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * bijvoorbeeld op een Windows-systeem:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. De instantie Publiceren starten

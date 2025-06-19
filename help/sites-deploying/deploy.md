@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1363'
 ht-degree: 0%
 
 ---
@@ -233,10 +233,6 @@ Wanneer de snelstartjar voor het eerst wordt gestart, wordt deze zichzelf in dez
 Als de instantie is geïnstalleerd via de gebruikersinterface, wordt automatisch een browservenster geopend en wordt ook een venster van de bureaubladtoepassing geopend met daarin de host en poort van de instantie en een aan/uit-schakelaar:
 
 ![ begin op scherm ](assets/screen_shot_.png)
-
->[!NOTE]
->
->Als u symlinks gebruikt, heb een blik bij [ kwesties met symlink ](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
 
 ### Starten en stoppen {#starting-and-stopping}
 
