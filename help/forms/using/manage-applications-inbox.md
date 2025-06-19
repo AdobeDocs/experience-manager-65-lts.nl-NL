@@ -136,7 +136,7 @@ Een eigenaar van een workflowmodel kan geen items weergeven die gerelateerd zijn
      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices door middel van een AEM-pakket. U kunt een [ Archetype van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) project gebruiken om een plaatsbaar pakket van AEM tot stand te brengen. Gebruik de volgende voorbeeldcode om indexen toe te voegen aan een AEM Archetype-project:
+   * Implementeer de indices door middel van een AEM-pakket. U kunt een [ Archetype van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using) project gebruiken om een plaatsbaar pakket van AEM tot stand te brengen. Gebruik de volgende voorbeeldcode om indexen toe te voegen aan een AEM Archetype-project:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

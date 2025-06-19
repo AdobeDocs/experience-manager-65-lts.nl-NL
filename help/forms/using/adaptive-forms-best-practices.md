@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Aanbevolen werkwijzen voor het werken met adaptieve formulieren {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -99,9 +99,9 @@ Voor meer informatie, zie [ een adaptieve vorm ](/help/forms/using/creating-adap
 
 ### Formuliersjablonen maken
 
-U kunt een adaptieve vorm tot stand brengen gebruikend de vormmalplaatjes die in **Browser van de Configuratie** worden toegelaten. Om de vormmalplaatjes toe te laten, zie [ Creërend Aangepast Malplaatje van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+U kunt een adaptieve vorm tot stand brengen gebruikend de vormmalplaatjes die in **Browser van de Configuratie** worden toegelaten. Om de vormmalplaatjes toe te laten, zie [ Creërend Aangepast Malplaatje van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-De formuliersjablonen kunnen ook worden geüpload vanuit Adaptief formulierpakketten die zijn gemaakt op een andere auteur. De malplaatjes van de vorm worden ter beschikking gesteld door [ aemforms-verwijzingen te installeren -* pakketten ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Enkele aanbevolen best practices zijn:
+De formuliersjablonen kunnen ook worden geüpload vanuit Adaptief formulierpakketten die zijn gemaakt op een andere auteur. De malplaatjes van de vorm worden ter beschikking gesteld door [ aemforms-verwijzingen te installeren -* pakketten ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Enkele aanbevolen best practices zijn:
 
 * **nosamplcontent** runmode wordt geadviseerd slechts voor auteur en niet voor publicatieknooppunten.
 * Elementen zoals adaptieve formulieren, thema&#39;s, sjablonen of cloudconfiguraties worden alleen via auteurknooppunten gemaakt. Deze kunnen worden gepubliceerd op de geconfigureerde publicatieknooppunten.
@@ -137,7 +137,7 @@ De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur v
 * Verwijs componenten door relatieve unieke hiërarchie om het even welk conflict te vermijden. Bijvoorbeeld `parentName.fieldName` .
 
 * Wanneer u complexe of veelgebruikte regels afhandelt, kunt u bedrijfslogica als functies in een aparte clientbibliotheek schrijven die u kunt opgeven en hergebruiken voor adaptieve formulieren. De clientbibliotheek moet een zelfstandige bibliotheek zijn en mag geen externe afhankelijkheden hebben, behalve op jQuery en Underscore.js. U kunt de cliëntbibliotheek ook gebruiken om [ server-zijbevestiging ](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) van voorgelegde vormgegevens af te dwingen.
-* Adaptieve formulieren bieden een set API&#39;s waarmee u kunt communiceren en waarmee u handelingen kunt uitvoeren op adaptieve formulieren. Enkele belangrijke API&#39;s zijn als volgt. Voor meer informatie, zie [ de API van de Bibliotheek van JavaScript verwijzing voor Aanpassings Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+* Adaptieve formulieren bieden een set API&#39;s waarmee u kunt communiceren en waarmee u handelingen kunt uitvoeren op adaptieve formulieren. Enkele belangrijke API&#39;s zijn als volgt. Voor meer informatie, zie [ de API van de Bibliotheek van JavaScript verwijzing voor Aanpassings Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
    * `guideBridge.reset()`: hiermee wordt een formulier opnieuw ingesteld.
    * `guideBridge.submit()`: verzendt een formulier.
@@ -323,7 +323,7 @@ Vaak moet u AEM-projecten van de ene omgeving naar de andere verplaatsen. Enkele
 U kunt het beste AEM configureren om de algehele prestaties te verbeteren:
 
 * Compressie van HTML-clientbibliotheek voor JavaScript en CSS vanuit Felix Console inschakelen.
-* Plaats alle clientbibliotheken in `/etc.clientlibs/fd` en eventuele extra aangepaste clientbibliotheken in AEM Dispatcher om de reactiesnelheid en beveiliging van uw gepubliceerde formulieren te verbeteren. Voor meer informatie, zie [ Dispatcher ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+* Plaats alle clientbibliotheken in `/etc.clientlibs/fd` en eventuele extra aangepaste clientbibliotheken in AEM Dispatcher om de reactiesnelheid en beveiliging van uw gepubliceerde formulieren te verbeteren. Voor meer informatie, zie [ Dispatcher ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher.html).
 
 * Plaats geen `/content/forms/af/` - en `/content/dam/formsanddocuments/*` -paden in de cache. voor gedetailleerde informatie over het vormen van adaptieve vormen caching, zie [ Aangepaste vormen in cache plaatsen ](/help/forms/using/configure-adaptive-forms-cache.md).
 
