@@ -204,7 +204,7 @@ Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
 
 ### Workflows en Forms {#workflows-and-forms}
 
-Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan met de [ kerncomponenten zijn componenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) beschikbaar in een standaardinstantie van AEM, of met de [ oplossing van AEM Forms ](/help/forms/using/aem-forms-workflow.md).
+Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan met de [ kerncomponenten zijn componenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=nl-NL) beschikbaar in een standaardinstantie van AEM, of met de [ oplossing van AEM Forms ](/help/forms/using/aem-forms-workflow.md).
 
 Bij het maken van een formulier kan het verzenden van het formulier eenvoudig worden gekoppeld aan een workflowmodel. Bijvoorbeeld om de inhoud op een bepaalde locatie van de gegevensopslagruimte op te slaan of om een gebruiker op de hoogte te stellen van het verzenden van het formulier en de inhoud ervan.
 
