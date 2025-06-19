@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstanti
 
 >[!CAUTION]
 >
->De uitgevoerde stappen zijn die die door het werkschemamodel *in de tijd worden bepaald dat de instantie* wordt geproduceerd. Zie [ het Ontwikkelen van Werkschema&#39;s ](/help/sites-developing/workflows.md#model) voor verdere details.
+>De uitgevoerde stappen zijn die die door het werkschemamodel *in de tijd worden bepaald dat de instantie* wordt geproduceerd. Zie [ het Ontwikkelen en het Uitbreiden Workflows - Modellen ](/help/sites-developing/workflows.md#model) voor verdere details.
 
 De instanties van het werkschema vorderen door de volgende levenscyclus:
 
