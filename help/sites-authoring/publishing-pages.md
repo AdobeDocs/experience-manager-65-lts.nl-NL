@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1701'
 ht-degree: 5%
 
 ---
+
 
 # Pagina&#39;s publiceren {#publishing-pages}
 
@@ -25,13 +26,13 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >Bepaalde termen met betrekking tot publicatie kunnen worden verward:
 >
 >* **publiceren/unpublish**
->  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
+>  >  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
 >
 >* **activeert/deactiveert**
->  Deze termen zijn synoniem met publiceren/verwijderen.
+>  >  Deze termen zijn synoniem met publiceren/verwijderen.
 >
 >* **Replicatie/Replicatie**
->  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
+>  >  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
 
 ## Onvoldoende rechten {#insufficient-privileges}
 
@@ -141,7 +142,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    Het klikken van de Add knoop van de Inhoud begint [ wegbrowser ](/help/sites-authoring/author-environment-tools.md#path-browser) om inhoudselectie toe te staan.
 
-   Selecteer de vereiste pagina&#39;s en klik dan **Uitgezocht** om de inhoud aan de tovenaar toe te voegen of **Cancel &#x200B;** om de selectie te annuleren en aan de tovenaar terug te keren.
+   Selecteer de vereiste pagina&#39;s en klik dan **Uitgezocht** om de inhoud aan de tovenaar toe te voegen of **Cancel **om de selectie te annuleren en aan de tovenaar terug te keren.
 
    Terug in de tovenaar, kunt u een punt in de lijst selecteren om zijn verdere opties zoals te vormen:
 
@@ -197,6 +198,10 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![ chlimage_1-4 ](assets/chlimage_1-4.png)
 
+>[!TIP]
+>
+>Door inhoud te plannen voor publicatie worden de workflows voor de publicatie van inhoud gerepliceerd en worden de publicatieworkflows gerespecteerd. Als u wenst om reeds gepubliceerde inhoud tijdelijk te verbergen zonder unpublishing, overweeg [**op Tijd** en **van Tijd** beschikbaar in de paginaeigenschappen.](/help/sites-authoring/editing-page-properties.md#on-time)
+
 ## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
 
 Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw publicatieomgeving, zodat deze niet langer beschikbaar is voor uw lezers.
@@ -250,7 +255,7 @@ U kunt [ gebruiken beheert Publicatie ](/help/sites-authoring/publishing-pages.m
 
    ![ chlimage_1-7 ](assets/chlimage_1-7.png)
 
-1. De **beheert 1&rbrace; tovenaar van de Publicatie &lbrace;maakt een lijst van de inhoud van de boom voor overzicht.** U kunt de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
+1. De **beheert 1} tovenaar van de Publicatie {maakt een lijst van de inhoud van de boom voor overzicht.** U kunt de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
 
    ![ screen_shot_2018-03-21at154237 ](assets/screen_shot_2018-03-21at154237.png)
 
