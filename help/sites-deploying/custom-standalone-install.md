@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ AEM installeren en starten als Windows-service:
 >
 >Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** &lbrace;of van de lijst in de bevellijn wanneer u `net start` typt.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -315,6 +315,10 @@ Hoewel er vele mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties m
 * Raadpleeg [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) voor taken die worden vereist om ervoor te zorgen dat uw systeem veilig blijft.
 * Controleer de lijst met standaardgebruikers en -groepen die bij AEM WCM zijn geïnstalleerd. Controle of u actie op een andere rekeningen wilt ondernemen - zie [ Veiligheid en het Beleid van de Gebruiker ](/help/sites-administering/security.md) voor verdere details.
 
+>[!NOTE]
+>
+> Voor nieuwe AEM 6.5 LTS-installaties moeten indexdefinities afzonderlijk worden geïnstalleerd. Voor meer informatie, verwijs [ dit ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+
 ## Toegang tot CRXDE Lite en de webconsole {#accessing-crxde-lite-and-the-web-console}
 
 Nadat u AEM WCM hebt gestart, hebt u ook toegang tot:
@@ -350,7 +354,7 @@ of voor de pagina Bundles
 
 ![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
-Zie {Configuratie 0} OSGi met de Console van het Web [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
+Zie {Configuratie 0} OSGi met de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.[
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 

@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudst
 
 ## Indexdefinities {#index-definitions}
 
-Controleer of u de vereiste indexdefinities hebt geïnstalleerd die bij AEM 6.5 Service Packs worden geleverd tot minimaal AEM Service Pack 22. (Verwijs naar [ AEM 6.5 de nota&#39;s van de servicepack versie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
+Controleer of u de vereiste indexdefinities hebt geïnstalleerd die zijn vrijgegeven met de nieuwste AEM 6.5 Service Pack. (Verwijs naar [ AEM 6.5 de nota&#39;s van de servicepack versie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
 
 ## Zorgen voor voldoende schijfruimte {#ensure-sufficient-disk-space}
 
