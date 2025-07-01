@@ -97,7 +97,7 @@ De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 
 Nadat de lokale ontwikkelomgeving is ingesteld, kunt u inhoud die in de React-app wordt gebruikt, simuleren door een statische Node-server lokaal te implementeren.
 
-Om een meer diepgaande blik te krijgen bij vestiging een lokale ontwikkelomgeving en alle gebiedsdelen nodig voor inhoudsvoorproef, zie {de documentatie van de Plaatsing van de 0} Productie [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
+Om een meer diepgaande blik te krijgen bij vestiging een lokale ontwikkelomgeving en alle gebiedsdelen nodig voor inhoudsvoorproef, zie {de documentatie van de Plaatsing van de 0} Productie [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=nl-NL).
 
 ## AEM Headless-toepassing voorbereiden voor Go-Live {#prepare-your-aem-headless-application-for-golive}
 
@@ -144,13 +144,13 @@ Het opstellen aan Productie kan afhangen van of u a *traditionele* instantie van
 
 ## Distribueren naar productie met Maven {#deploy-to-production-maven}
 
-Voor a *traditionele* plaatsing (niet-AMS) gebruikend Gemaakt, zie het [ WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) voor een overzicht.
+Voor a *traditionele* plaatsing (niet-AMS) gebruikend Gemaakt, zie het [ WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=nl-NL#build) voor een overzicht.
 
 ## Distribueren naar productie met Cloud Manager {#deploy-to-production-cloud-manager}
 
-Als u een klant van AMS gebruikend Cloud Manager bent, nadat u ervoor zorgt dat alles wordt getest en behoorlijk werkt, kunt u uw codeupdates aan a [ gecentraliseerde bewaarplaats van de it in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html) duwen.
+Als u een klant van AMS gebruikend Cloud Manager bent, nadat u ervoor zorgt dat alles wordt getest en behoorlijk werkt, kunt u uw codeupdates aan a [ gecentraliseerde bewaarplaats van de it in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=nl-NL) duwen.
 
-Nadat de updates aan Cloud Manager zijn geupload, stel hen aan AEM op gebruikend [ Cloud Manager CI/CD pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
+Nadat de updates aan Cloud Manager zijn geupload, stel hen aan AEM op gebruikend [ Cloud Manager CI/CD pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=nl-NL).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -219,16 +219,16 @@ Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga aan het fac
 
 * [AEM Developing Guide](/help/sites-developing/the-basics.md)
 
-* [ WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [ WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
 
-* [ Cloud Manager voor AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [ Cloud Manager voor AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
 
 * CDN-cache
 
-   * [ Controlerend een CDN Geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+   * [ Controlerend een CDN Geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL#controlling-a-cdn-cache)
 
    * Het vormen van [ CDN Rewriter ](/help/sites-deploying/osgi-configuration-settings.md) (*onderzoek naar CDN Rewriter*)
 
 * [Inleiding tot AEM als een CMS zonder kop](/help/sites-developing/headless/introduction.md)
-* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
