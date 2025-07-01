@@ -1,17 +1,13 @@
 ---
 title: Aangepaste verzendactie schrijven voor adaptieve formulieren
 description: Met AEM Forms kunt u aangepaste verzendactie maken voor adaptieve formulieren. In dit artikel wordt de procedure beschreven voor het toevoegen van aangepaste verzendactie voor adaptieve formulieren.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: customization
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=nl-NL) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
 | AEM 6.5 | Dit artikel |
 
 Voor adaptieve formulieren moeten handelingen worden verzonden om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) omvat [ uit-van-de-doos acties ](../../forms/using/configuring-submit-actions.md) voorleggen die douanetaken tonen u het gebruiken van de user-submitted gegevens kunt uitvoeren. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
@@ -106,7 +102,7 @@ Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
-Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de handeling Verzenden uit de doos Winkelinhoud (afgekeurd) die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt CQ a [ Post ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) API die kan worden gebruikt om e-mails te verzenden. Alvorens de Post API te gebruiken, [ vorm ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL&amp;wcmmode=disabled) de dienst van de Post van Dag CQ door de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
+Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de handeling Verzenden uit de doos Winkelinhoud (afgekeurd) die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt CQ a [ Post ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) API die kan worden gebruikt om e-mails te verzenden. Alvorens de Post API te gebruiken, [ vorm ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) de dienst van de Post van Dag CQ door de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
 
 1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
 
@@ -142,7 +138,7 @@ Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gege
 
    Voeg het script post.POST.jsp toe aan uw handeling. (/apps/custom_submit_action/store_and_mail/).
 
-   Voer de handeling uit van de winkel (script post.POST.jsp). Gebruik [ FormsHelper.runAction ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) (java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ verstrekt Je code om de actie Winkel uit te voeren. Voeg de volgende code in uw JSP dossier toe:
+   Voer de handeling uit van de winkel (script post.POST.jsp). Gebruik [ FormsHelper.runAction ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse)) (java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ verstrekt Je code om de actie Winkel uit te voeren. Voeg de volgende code in uw JSP dossier toe:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -152,7 +148,7 @@ Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gege
 
    `String mailTo = properties.get("mailTo");`
 
-   Tot slot gebruikt u de CQ Mail-API om de e-mail te verzenden. Gebruik de [ klasse SimpleEmail ](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) om het E-mailVoorwerp tot stand te brengen zoals hieronder afgebeeld:
+   Tot slot gebruikt u de CQ Mail-API om de e-mail te verzenden. Gebruik de [ klasse SimpleEmail ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) om het E-mailVoorwerp tot stand te brengen zoals hieronder afgebeeld:
 
    >[!NOTE]
    >

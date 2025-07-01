@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,12 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 
 #### Testgereedschappen {#testing-tools}
 
-* Het hulpmiddel van de Dag van de Tough van Adobe **&#x200B;**&#x200B;kan worden gebruikt om lading op de instanties van AEM te produceren en prestatiesgegevens te verzamelen. Het technische team van Adobe AEM gebruikt het gereedschap voor het testen van de belasting van het AEM-product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Voor meer informatie, zie de [ documentatie van de Dag van de Hoek ](/help/sites-developing/tough-day.md).
+* Het hulpmiddel van de Dag van de Tough van Adobe **** kan worden gebruikt om lading op de instanties van AEM te produceren en prestatiesgegevens te verzamelen. Het technische team van Adobe AEM gebruikt het gereedschap voor het testen van de belasting van het AEM-product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Voor meer informatie, zie de [ documentatie van de Dag van de Hoek ](/help/sites-developing/tough-day.md).
 
 * AEM biedt de vakgereedschappen uit om snel problematische query&#39;s, verzoeken en foutberichten weer te geven. Voor meer informatie, zie de [ sectie van Hulpmiddelen van de Diagnose ](/help/sites-administering/operations-dashboard.md#diagnosis-tools) van de documentatie van het Dashboard van Verrichtingen.
 * Apache verstrekt een product genoemd **JMeter** dat voor prestaties en lading het testen, en functioneel gedrag kan worden gebruikt. Het is open-sourcesoftware en vrij te gebruiken, maar heeft een kleinere functieset dan bedrijfsproducten en een steile leercurve. JMeter kan op de website van Apache in [ https://jmeter.apache.org/ ](https://jmeter.apache.org/) worden gevonden
 
-* **Laad Runner** is een ladingstestproduct van de ondernemingsrang. Er is een gratis evaluatieversie beschikbaar. Meer informatie kan in [ https://www.microfocus.com/en-us/portfolio/performance-engineering/overview ](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview) worden gevonden
+* **Laad Runner** is een ladingstestproduct van de ondernemingsrang. Er is een gratis evaluatieversie beschikbaar. Meer informatie kan bij [ worden gevonden OpenText Professional de Techniek van Prestaties ](https://www.opentext.com/products/professional-performance-engineering).
 
 * Bij het testen van mobiele of responsieve websites moet een aparte set gereedschappen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Tot de meer gebruikte gereedschappen behoren onder meer:
 
@@ -74,7 +74,7 @@ De [ documentatie van de Prestaties van de Controle ](/help/sites-deploying/moni
 
 **de Wijze van de Ontwikkelaar in Aanraak UI**
 
-Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [ CQ Gems presentatie ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=nl-NL).
+Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [ CQ Gems presentatie ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Gebruikend rlog.jar om de verzoeklogboeken** te lezen
 

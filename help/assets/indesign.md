@@ -1,14 +1,13 @@
 ---
 title: Integreer  [!DNL Assets]  met  [!DNL InDesign Server]
 description: Leer hoe te om  [!DNL Adobe Experience Manager Assets]  met  [!DNL Adobe InDesign Server] te integreren.
-contentOwner: AG
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
@@ -21,11 +20,11 @@ ht-degree: 0%
 * Een volmachtsarbeider om een specifieke taak te bepalen en te beheren.
 Deze kunnen een groot aantal taken bestrijken, bijvoorbeeld het gebruik van een [!DNL InDesign Server] voor het verwerken van bestanden.
 
-Voor het volledig uploaden van bestanden naar [!DNL Experience Manager Assets] die u met [!DNL Adobe InDesign] hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met [!DNL Adobe InDesign Server] te communiceren, waar [ manuscripten ](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) in werking worden gesteld om meta-gegevens te halen en diverse vertoningen voor [!DNL Experience Manager Assets] te produceren. De proxyworker maakt de communicatie in twee richtingen mogelijk tussen de [!DNL InDesign Server] en de [!DNL Experience Manager] -instanties in een cloudconfiguratie.
+Voor het volledig uploaden van bestanden naar [!DNL Experience Manager Assets] die u met [!DNL Adobe InDesign] hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met [!DNL Adobe InDesign Server] te communiceren, waar [ manuscripten ](https://helpx.adobe.com/indesign/using/scripting.html) in werking worden gesteld om meta-gegevens te halen en diverse vertoningen voor [!DNL Experience Manager Assets] te produceren. De proxyworker maakt de communicatie in twee richtingen mogelijk tussen de [!DNL InDesign Server] en de [!DNL Experience Manager] -instanties in een cloudconfiguratie.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] wordt aangeboden als twee aparte aanbiedingen. [ Adobe InDesign ](https://www.adobe.com/products/indesign.html) Desktop app die wordt gebruikt om paginalay-outs voor druk en digitale distributie te ontwerpen. [ Adobe InDesign Server ](https://www.adobe.com/products/indesignserver.html) laat u toe programmatically om geautomatiseerde documenten tot stand te brengen die op wat u met [!DNL InDesign] hebt gecreeerd worden gebaseerd. Het werkt als dienst die een interface aan zijn [ aanbieden ExtendScript ](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) motor.De manuscripten worden geschreven in [!DNL ExtendScript], die aan [!DNL JavaScript] gelijkaardig is. Voor informatie over [!DNL InDesign] manuscripten zie [ https://www.adobe.com/devnet/indesign/documentation.html#idscripting ](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] wordt aangeboden als twee aparte aanbiedingen. [ Adobe InDesign ](https://www.adobe.com/products/indesign.html) Desktop app die wordt gebruikt om paginalay-outs voor druk en digitale distributie te ontwerpen. [ Adobe InDesign Server ](https://www.adobe.com/products/indesignserver.html) laat u toe programmatically om geautomatiseerde documenten tot stand te brengen die op wat u met [!DNL InDesign] hebt gecreeerd worden gebaseerd. Het werkt als dienst die een interface aan zijn [ aanbieden ExtendScript ](https://helpx.adobe.com/indesign/using/scripting.html) motor.De manuscripten worden geschreven in [!DNL ExtendScript], die aan [!DNL JavaScript] gelijkaardig is.
 
 ## Hoe de extractie werkt {#how-the-extraction-works}
 
@@ -50,7 +49,7 @@ Met dit opdrachtscript wordt:
 
    >[!NOTE]
    >
-   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] -bestand rendert. Het wordt opgeslagen als samengeperst pakket gebruikend [ ZIP ](https://www.techterms.com/definition/zip) compressie. Voor meer informatie, zie [ de Formaten INX en IDML van de Uitwisseling van InDesign ](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] -bestand rendert. Het wordt opgeslagen als samengeperst pakket gebruikend [ ZIP ](https://www.techterms.com/definition/zip) compressie. Voor meer informatie, zie [ de Formaten INX en IDML van de Uitwisseling van InDesign ](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >

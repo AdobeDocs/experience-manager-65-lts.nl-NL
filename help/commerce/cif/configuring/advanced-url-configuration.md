@@ -11,9 +11,9 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moet bij veel AEM-projecten aandacht worden besteed aan de zorgpunten van de SEO. Zie [ SEO en de Beste praktijken van het Beheer URL ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html) voor extra informatie.
+>SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moet bij veel AEM-projecten aandacht worden besteed aan de zorgpunten van de SEO. Zie [ SEO en de Beste praktijken van het Beheer URL ](/help/managing/seo-and-url-management.md) voor extra informatie.
 
 [ de Componenten van de Kern van AEM CIF van ](https://github.com/adobe/aem-core-cif-components) verstrekt geavanceerde configuraties om URLs voor product en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om de `UrlProvider` Dienst en eigenschappen van [ het Schipen Afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs voor product en categoriepagina&#39;s aan te passen.
 
@@ -101,7 +101,7 @@ URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_
 
 ## Voorbeeld
 
-Het [&#128279;](https://github.com/adobe/aem-cif-guides-venia) project van de opslag van de Verwijzing van 0&rbrace; Venia &lbrace;omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen.  Hierdoor kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
+Het ](https://github.com/adobe/aem-cif-guides-venia) project van de opslag van de Verwijzing van 0} Venia {omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen. [ Hierdoor kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
 
 >[!NOTE]
 >
@@ -110,5 +110,5 @@ Het [&#128279;](https://github.com/adobe/aem-cif-guides-venia) project van de op
 ## Aanvullende bronnen
 
 * [ de opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia)
-* [ het Middel van AEM Afbeelding ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
+* [AEM-brontoewijzing](/help/sites-deploying/resource-mapping.md)
 * [ Sling Mappings ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

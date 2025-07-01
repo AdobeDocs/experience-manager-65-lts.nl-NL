@@ -1,17 +1,13 @@
 ---
 title: Werken met de werkruimte van AEM Forms
 description: Ga aan de slag met de AEM Forms-werkruimte met dit korte overzicht van de procesworkflows.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -133,8 +129,4 @@ U kunt een groot deel van de interface en kernfunctionaliteit aanpassen, zoals l
 
 Voor een nieuw proces wordt een XDP-formulier standaard weergegeven in de PDF-indeling op een desktopcomputer en in de HTML-indeling op een tablet. Het is mogelijk om een XDP-formulier altijd in HTML-indeling te genereren. Voor details, zie [ Nieuw teruggeven en de Diensten ](/help/forms/using/new-render-submit-service.md) voorleggen.
 
-[ Mobiele Forms ](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) eigenschap, die met [ profielen ](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) werkt, laat de vertoning van HTML van vormen XDP toe. Standaard gebruikt het profiel &#39;Nieuw HTML-formulier renderen&#39; het profiel `default.html` dat u kunt wijzigen. U kunt ook aangepaste wijzigingen toevoegen die plaatsvinden voordat een XDP-formulier in HTML-indeling wordt weergegeven.
-
-## AEM Forms-app voor werkruimte {#aem-forms-workspace-app}
-
-Als u aan uw bedrijfsprocessen op een mobiel apparaat wilt werken, kunt u de AEM Forms-app voor werkruimte van AEM Forms gebruiken. Voor meer informatie, zie het [ de werkruimte van AEM Forms app overzicht ](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+[ Mobiele Forms ](/help/forms/using/introduction.md) eigenschap, die met [ profielen ](/help/forms/using/custom-profile.md) werkt, laat de vertoning van HTML van vormen XDP toe. Standaard gebruikt het profiel &#39;Nieuw HTML-formulier renderen&#39; het profiel `default.html` dat u kunt wijzigen. U kunt ook aangepaste wijzigingen toevoegen die plaatsvinden voordat een XDP-formulier in HTML-indeling wordt weergegeven.

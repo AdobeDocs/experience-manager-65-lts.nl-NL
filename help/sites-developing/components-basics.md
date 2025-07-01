@@ -1,18 +1,13 @@
 ---
 title: Adobe Experience Manager-componenten - De basisbeginselen
 description: Wanneer u begint om nieuwe componenten te ontwikkelen, moet u de grondbeginselen van hun structuur en configuratie begrijpen.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 0%
 
 ---
@@ -35,7 +30,7 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
    * Een duidelijke specificatie helpt in alle stadia van ontwikkeling, het testen, en overdracht. De details kunnen in tijd veranderen, maar de specificatie kan worden bijgewerkt (hoewel de veranderingen ook zouden moeten worden gedocumenteerd).
 * Moet u een geheel nieuwe component maken of kunt u de basisbeginselen overnemen van een bestaande component?
    * Het is niet nodig het wiel opnieuw uit te vinden.
-   * Er zijn verscheidene mechanismen die door AEM worden verstrekt die u toestaan en details van een andere componentendefinitie met inbegrip van opheffing, bedekking, en de [ Verzameling van het Middel 1&rbrace; erven uitbreiden.](/help/sites-developing/sling-resource-merger.md)
+   * Er zijn verscheidene mechanismen die door AEM worden verstrekt die u toestaan en details van een andere componentendefinitie met inbegrip van opheffing, bedekking, en de [ Verzameling van het Middel 1} erven uitbreiden.](/help/sites-developing/sling-resource-merger.md)
 * Heeft uw component logica nodig voor het selecteren of bewerken van de inhoud?
    * De logica moet gescheiden worden gehouden van de gebruikersinterfacelaag. HTL is ontworpen om ervoor te zorgen dat dit gebeurt.
 * Heeft uw component CSS-opmaak nodig?
@@ -64,13 +59,13 @@ De grondbeginselen van beide zijn op deze pagina besproken, en hoe te om hen te 
 
 Adobe raadt aan de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
-Deze filosofie wordt gesteund door [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL), een het malplaatjetaal die opzettelijk wordt beperkt om ervoor te zorgen dat een echte programmeertaal wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Deze (facultatieve) logica wordt aangehaald van HTML met een specifiek bevel. Dit mechanisme benadrukt de code die voor een bepaalde mening wordt geroepen en, indien nodig, staat specifieke logica voor verschillende meningen van de zelfde component toe.
+Deze filosofie wordt gesteund door [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), een het malplaatjetaal die opzettelijk wordt beperkt om ervoor te zorgen dat een echte programmeertaal wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Deze (facultatieve) logica wordt aangehaald van HTML met een specifiek bevel. Dit mechanisme benadrukt de code die voor een bepaalde mening wordt geroepen en, indien nodig, staat specifieke logica voor verschillende meningen van de zelfde component toe.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTML is een HTML-sjabloontaal die is geïntroduceerd met AEM 6.0.
 
-De bespreking van of om [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) of JSP (de Pagina&#39;s van de Server Java™) te gebruiken wanneer het ontwikkelen van uw eigen componenten duidelijk zou moeten zijn aangezien HTML nu de geadviseerde scripting taal voor AEM is.
+De bespreking van of om [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) of JSP (de Pagina&#39;s van de Server Java™) te gebruiken wanneer het ontwikkelen van uw eigen componenten duidelijk zou moeten zijn aangezien HTML nu de geadviseerde scripting taal voor AEM is.
 
 Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten voor zowel de klassieke als de interface met aanraakbediening. Hoewel er een tendens kan zijn om aan te nemen dat HTML slechts voor aanraking-toegelaten UI en JSP voor klassieke UI is, is dit een misvatting en meer toe te schrijven aan timing. De interface met aanraakbediening en HTML zijn in ongeveer dezelfde periode in AEM opgenomen. Aangezien HTML nu de aanbevolen taal is, wordt het gebruikt voor nieuwe componenten, die meestal voor de interface met aanraakbediening zijn.
 
@@ -312,7 +307,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Indien ingesteld, wordt deze eigenschap gebruikt als cel-id. Voor meer informatie, zie het artikel van de Kennisbank <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html"> hoe wordt gebouwde Identiteitskaart van de Cel van het Ontwerp </a>.<br /> </td>
+   <td>Indien geplaatst, wordt dit bezit genomen als identiteitskaart van de Cel.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -479,7 +474,7 @@ Het ontwerpdialoog voor het paragraafsysteem (bijvoorbeeld, parsys) is een speci
 
 Nadat een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een alineasysteem, kunt u:
 
-1. Open [&#128279;](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0&rbrace; &lbrace;voor een pagina en laat de vereiste component toe.
+1. Open ](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0} {voor een pagina en laat de vereiste component toe.[
 1. Voeg de vereiste componenten onder aan de eigenschap `components` van uw sjabloondefinitie toe:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
@@ -597,7 +592,7 @@ Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in **&#x200B; CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
+* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in** CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

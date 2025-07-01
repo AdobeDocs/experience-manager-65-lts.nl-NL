@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitb
 >[!NOTE]
 >
 >Deze pagina zou samen met [ het Hergebruiken Inhoud moeten worden gelezen: De multi Manager van de Plaats ](/help/sites-administering/msm.md).
->
->De volgende onderdelen van de herstructurering van de effectenbewaarinstelling zouden ook van belang kunnen zijn:
->* [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations) de Configuraties van de Vervaging van de Manager van 0&rbrace; multi-plaats
->* [ de Configuraties van de Output van de Manager van de Multisite ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 1. Voeg de volgende eigenschappen toe aan dit knooppunt:
    * **Naam**: `jcr:title`
-
      **Type**: `String`
      **Waarde**: Een het identificeren titel die in UI zal verschijnen.
    * **Naam**: `jcr:description`
-
      **Type**: `String`
      **Waarde**: Een facultatieve beschrijving.
    * **Naam**: `cq:trigger`
-
      **Type**: `String`
      **Waarde**: De [ Trigger van de Uitvoer ](/help/sites-administering/msm-sync.md#rollout-triggers) om worden gebruikt. Selecteren uit:
       * `rollout`
@@ -232,7 +225,7 @@ De configuraties van de rollout worden opgeslagen onder de [ knoop van de rollou
 
 Voeg onderliggende knooppunten van het type `cq:LiveSyncAction` toe om synchronisatiehandelingen toe te voegen aan de rollout-configuratie. De volgorde van de actieknooppunten voor synchronisatie bepaalt de volgorde waarin de acties plaatsvinden.
 
-1. Nog in CRXDE Lite, selecteer uw [&#128279;](#create-the-rollout-configuration) knoop van de Configuratie van de Output 0&rbrace; &lbrace;.
+1. Nog in CRXDE Lite, selecteer uw ](#create-the-rollout-configuration) knoop van de Configuratie van de Output 0} {.[
 
    Bijvoorbeeld:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
@@ -652,7 +645,7 @@ De talen wijzigen:
 1. Klik **Hulpmiddelen**, **Verrichtingen** toen **Console van het Web**. Van deze console klik **OSGi**, toen **Configuratie**.
 1. Bepaal de plaats en klik {de Manager van de Taal van 0} Dag CQ WCM **, en verander de waarde van** Lijst van de Taal **aan `/apps/wcm/core/resources/languages`, dan klik** sparen **.**
 
-   {de Manager van de Taal van 0} Dag CQ WCM ![&#128279;](assets/chlimage_1-78.png)
+   {de Manager van de Taal van 0} Dag CQ WCM ](assets/chlimage_1-78.png)![
 
 ## MSM-vergrendelingen configureren op pagina-eigenschappen (interface met aanraakbediening) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
@@ -689,7 +682,6 @@ Of een pagina-eigenschap moet worden geïmplementeerd en, afhankelijk van het an
       * **Type**: `String`
 
       * **Waarde**: houdt de naam van het bezit in overweging (en is vergelijkbaar met de waarde van het bezit `name`; bijvoorbeeld, zie
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wanneer `cq-msm-lockable` is gedefinieerd, wordt de interactie tussen het verbreken en sluiten van de keten en MSM als volgt uitgevoerd:

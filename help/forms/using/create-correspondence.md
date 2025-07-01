@@ -8,9 +8,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3790'
+source-wordcount: '3763'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## E-mailcorrespondentie maken in de gebruikersinterface Correspondentie maken {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Nadat het a [ brievenmalplaatje in het Beheer van de Correspondentie ](../../forms/using/create-letter.md) wordt gecreeerd, kan het eind - gebruiker/agent/bewering aanpast de brief in het Create de gebruikersinterface van de Correspondentie openen en tot een correspondentie leiden door gegevens in te gaan, inhoud te vestigen, en gehechtheid te beheren. Tot slot kan de eisencorrector of de agent de inhoud in de voorvertoningsmodus beheren en de brief verzenden.
+Nadat het a [ brievenmalplaatje in het Beheer van de Correspondentie ](/help/forms/using/create-letter.md) wordt gecreeerd, kan het eind - gebruiker/agent/bewering aanpast de brief in het Create de gebruikersinterface van de Correspondentie openen en tot een correspondentie leiden door gegevens in te gaan, inhoud te vestigen, en gehechtheid te beheren. Tot slot kan de eisencorrector of de agent de inhoud in de voorvertoningsmodus beheren en de brief verzenden.
 
 ### Een voorbeeld van een overeenkomst bekijken {#preview-a-correspondence}
 
@@ -51,13 +51,13 @@ Selecteer de brief aan voorproef gebruikend de volgende stappen:
 
 1. De voorvertoning van de letter HTML (voorvertoning van mobiele formulieren) wordt geopend met standaard de focus op het tabblad Gegevens.
 
-   Voor meer informatie over mobiele vormen en de eigenschappen die zij steunen, zie [ verschil van de Eigenschap tussen Mobiele Forms en PDF forms ](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Voor meer informatie over mobiele vormen en de eigenschappen die zij steunen, zie [ verschil van de Eigenschap tussen Mobiele Forms en PDF forms ](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Er zijn drie tabbladen: gegevens, inhoud en bijlagen. Als er geen gegevenselementen zijn (plaatsaanduidingsvariabelen en layoutvelden), wordt de letter rechtstreeks geopend met het tabblad Inhoud weergegeven. Het tabblad Bijlagen is alleen beschikbaar wanneer bijlagen aanwezig zijn of bibliotheektoegang is ingeschakeld.
 
    >[!NOTE]
    >
-   >Voor meer informatie bij het schakelen tussen HTML of de vertoningswijze van PDF van brievenvoorproef, zie [ de vertoningswijze van de Vertoning van de Verandering van brief ](#changerenditionmode). Voor meer informatie over de steun van PDF in het Beheer van de Correspondentie en AEM, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/nl/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Voor meer informatie bij het schakelen tussen HTML of de vertoningswijze van PDF van brievenvoorproef, zie [ de vertoningswijze van de Vertoning van de Verandering van brief ](#changerenditionmode). Voor meer informatie over de steun van PDF in het Beheer van de Correspondentie en AEM, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Gegevens invoeren {#enterdata}
 
@@ -95,7 +95,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    De standaardspellingcontrole in uw browser controleert spelling in de redacteur van de Tekst. Als u de spelling en grammatica wilt controleren, kunt u de instellingen voor spellingcontrole van uw browser bewerken of browserinsteekmodules/invoegtoepassingen installeren om de spelling en de grammatica te controleren.
 
-   U kunt ook de verschillende sneltoetsen in de teksteditor gebruiken voor het beheren, bewerken en opmaken van tekst. Voor meer informatie over [&#128279;](/help/forms/using/keyboard-shortcuts.md#correspondence-management) toetsenbordkortere weg van de Redacteur van de Tekst van 0&rbrace; &lbrace;in de Sneltoetsen van het Beheer van de Correspondentie.
+   U kunt ook de verschillende sneltoetsen in de teksteditor gebruiken voor het beheren, bewerken en opmaken van tekst. Voor meer informatie over ](/help/forms/using/keyboard-shortcuts.md#correspondence-management) toetsenbordkortere weg van de Redacteur van de Tekst van 0} {in de Sneltoetsen van het Beheer van de Correspondentie.[
 
    ![ 5_edittextmodule ](assets/5_edittextmodule.png)
 
@@ -111,17 +111,13 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    >[!NOTE]
    >
-   >Het formatteren van gekleefde tekst, echter, heeft sommige [ beperkingen ](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >De opmaak van geplakte tekst kent echter enkele beperkingen.
 
    Met de Tab-toets kunt u de tekst en de nummers in de letter laten inspringen. Met de Tab-toets kunt u bijvoorbeeld meerdere tekstkolommen in een lijst uitlijnen in een tabelindeling.
 
    ![ tabspaces ](assets/tabspaces.png)
 
    Voorbeeld: met de Tab-toets meerdere tekstkolommen uitlijnen in een tabellarische indeling
-
-   >[!NOTE]
-   >
-   >Voor meer informatie bij vestiging lusje het uit elkaar plaatsen voor uw tekstmodules en brieven, zie [ Meer informatie bij het gebruiken van lusje het uit elkaar plaatsen voor het schikken van tekst ](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 
 1. Voeg zo nodig speciale tekens in de correspondentie in. U kunt bijvoorbeeld het palet Speciale tekens gebruiken om het volgende in te voegen:
 
@@ -375,7 +371,7 @@ Voor meer informatie bij scripting steun in vormen HTML5, zie [ Scripting steun 
 
 Standaard gebruikt de gebruikersinterface Correspondentie maken de HTML- of mobiele formulieren om de lettertypevoorvertoning weer te geven. De voorvertoning van mobiele formulieren geeft in geen enkele browser een renderingprobleem omdat deze de native plug-in van de browser gebruikt en geen extra plug-ins nodig heeft. U kunt de modus voor lettertypevoorvertoning wijzigen in PDF. Browserbeperkingen kunnen echter problemen veroorzaken voor verschillende functies van de interactieve PDF-voorvertoning van de letter.
 
-Voor meer informatie over browser verenigbaarheid met brievenvoorproef, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/nl/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Voor meer informatie over browser verenigbaarheid met brievenvoorproef, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Voer de volgende stappen uit om de modus Voorvertoning van de letter te wijzigen:
 
