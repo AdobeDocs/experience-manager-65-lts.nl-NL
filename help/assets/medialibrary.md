@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 [!DNL Adobe Experience Manager] biedt verschillende mogelijkheden om elementen te beheren. Met de mediabibliotheek kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken uitvoeren voor middelenbeheer op de middelen.
@@ -93,6 +93,6 @@ U kunt geen slimme tags, [!DNL Asset] koppeling, [!DNL Asset] kiezer, bulksgewij
 
 >[!MORELIKETHIS]
 >
->* [ DAM eigenschappen in  [!DNL Experience Manager Assets] ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/assets/assets)
->* [[!DNL Experience Manager]  6.5 het productbeschrijving van Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager]  6.5 on-premise productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [ DAM eigenschappen in  [!DNL Experience Manager Assets] ](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/assets/assets)
+>* [[!DNL Experience Manager]  6.5 het productbeschrijving van Managed Services ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager]  6.5 on-premise productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html)

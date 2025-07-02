@@ -123,7 +123,7 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het ook ope
    >
    >Ga als volgt te werk om [!DNL Experience Manager] in te schakelen om afbeeldingen op te lossen:
    >
-   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/nl/indesign/using/graphics-links.html)).
    >* Koppel [!DNL Experience Manager] aan uw lokale bestandssysteem en wijs vervolgens ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager] .
 
 1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]** .
