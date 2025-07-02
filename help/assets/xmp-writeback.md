@@ -1,15 +1,14 @@
 ---
 title: Terugschrijven naar XMP-uitvoeringen
 description: Leer hoe de XMP-functie voor terugschrijven de wijzigingen in metagegevens van een element doorgeeft aan alle of specifieke uitvoeringen van het element.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '708'
 ht-degree: 4%
 
 ---
@@ -18,8 +17,8 @@ ht-degree: 4%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM 6.5 LTS | Dit artikel |
 
 Met deze XMP-schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens van een element wijzigt vanuit Assets of wanneer u het element uploadt, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie.
 
@@ -69,8 +68,6 @@ Voer de volgende stappen uit voor de XMP-functie voor het doorgeven van metagege
 De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatuur.140.100.png en miniatuur.319.319.png van het element, en niet aan de andere.
 
 >[!NOTE]
->
->Voor XMP meldt kwesties in Linux met 64 bits, zie [ hoe te om XMP toe te laten schrijf-terug op Linux met 64 bits RedHat ](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Voor de gesteunde platforms, zie [ XMP meta-gegevens schrijven-achtereerste vereisten ](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 

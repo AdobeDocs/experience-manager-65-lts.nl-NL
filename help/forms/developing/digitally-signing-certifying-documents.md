@@ -1,19 +1,15 @@
 ---
 title: Documenten digitaal ondertekenen en certificeren
 description: Met de service Handtekening kunt u digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document, de namen van handtekeningvelden in een PDF-document opvragen, handtekeningvelden wijzigen, PDF-documenten digitaal ondertekenen, PDF-documenten certificeren, digitale handtekeningen in een PDF-document valideren, alle digitale handtekeningen in een PDF-document valideren en een digitale handtekening uit een handtekeningveld verwijderen.
-contentOwner: admin
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9a11887b6bb8446772e5a41246da1023f40ce507
 workflow-type: tm+mt
-source-wordcount: '16917'
+source-wordcount: '16909'
 ht-degree: 0%
 
 ---
@@ -131,7 +127,7 @@ Voeg een handtekeningveld toe met de handtekening-API (Java):
 
    * Maak een `PositionRectangle` -object dat de locatie van het handtekeningveld opgeeft met behulp van de constructor. Geef binnen de constructor coördinaatwaarden op.
    * Maak desgewenst een `FieldMDPOptions` -object dat de velden opgeeft die zijn vergrendeld wanneer een digitale handtekening wordt toegepast op het handtekeningveld.
-   * Voeg een handtekeningveld toe aan een PDF-document door de methode `addSignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   * Voeg een handtekeningveld toe aan een PDF-document door de methode `SignatureServiceClient` van het object `addSignatureField` aan te roepen en de volgende waarden door te geven:
 
       * A `com.adobe.idp`. `Document` -object dat staat voor het PDF-document waaraan een handtekeningveld wordt toegevoegd.
       * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
@@ -145,12 +141,12 @@ Voeg een handtekeningveld toe met de handtekening-API (Java):
 
    >[!NOTE]
    >
-   >U kunt de methode `addInvisibleSignatureField` van het `SignatureServiceClient` -object aanroepen om een onzichtbaar handtekeningveld toe te voegen.
+   >U kunt de methode `SignatureServiceClient` van het `addInvisibleSignatureField` -object aanroepen om een onzichtbaar handtekeningveld toe te voegen.
 
 1. Het PDF-document opslaan als een PDF-bestand
 
    * Maak een `java.io.File` -object en controleer of de bestandsextensie .pdf is.
-   * Roep `com.adobe.idp` aan. De methode `copyToFile` van het object `Document` om de inhoud van het object `Document` naar het bestand te kopiëren. Zorg ervoor dat u `com.adobe.idp` gebruikt. `Document` die door de methode `addSignatureField` is geretourneerd.
+   * Roep `com.adobe.idp` aan. De methode `Document` van het object `copyToFile` om de inhoud van het object `Document` naar het bestand te kopiëren. Zorg ervoor dat u `com.adobe.idp` gebruikt. `Document` die door de methode `addSignatureField` is geretourneerd.
 
 **zie ook**
 
@@ -173,7 +169,7 @@ Een handtekeningveld toevoegen met de handtekening-API (webservice):
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -185,13 +181,13 @@ Een handtekeningveld toevoegen met de handtekening-API (webservice):
 
    * Maak een `BLOB` -object met behulp van de constructor. Het `BLOB` -object wordt gebruikt om het PDF-document op te slaan dat een handtekeningveld bevat.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. Een handtekeningveld toevoegen
 
-   Voeg een handtekeningveld toe aan het PDF-document door de methode `addSignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Voeg een handtekeningveld toe aan het PDF-document door de methode `SignatureServiceClient` van het object `addSignatureField` aan te roepen en de volgende waarden door te geven:
 
    * Een `BLOB` -object dat staat voor het PDF-document waaraan een handtekeningveld wordt toegevoegd.
    * Een tekenreekswaarde die de naam van het handtekeningveld aangeeft.
@@ -205,9 +201,9 @@ Een handtekeningveld toevoegen met de handtekening-API (webservice):
 1. Het PDF-document opslaan als een PDF-bestand
 
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het handtekeningveld en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `addSignatureField` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `binaryData` van het object `BLOB` .
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `addSignatureField` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `BLOB` van het object `binaryData` .
    * Maak een `System.IO.BinaryWriter` -object door de constructor ervan aan te roepen en het `System.IO.FileStream` -object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `System.IO.BinaryWriter` van het object `Write` aan te roepen en de bytearray door te geven.
 
 **zie ook**
 
@@ -290,8 +286,8 @@ Namen van handtekeningvelden ophalen met de handtekening-API (Java):
 
 1. De namen van handtekeningvelden ophalen
 
-   * Haal de namen van handtekeningvelden op door de methode `getSignatureFieldList` van het object `SignatureServiceClient` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode retourneert een `java.util.List` -object, waarin elk element een `PDFSignatureField` -object bevat. Met dit object kunt u aanvullende informatie verkrijgen over een handtekeningveld, bijvoorbeeld of dit zichtbaar is.
-   * Doorloop het `java.util.List` -object om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een apart `PDFSignatureField` -object ophalen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de methode `getName` van het object `PDFSignatureField` aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
+   * Haal de namen van handtekeningvelden op door de methode `SignatureServiceClient` van het object `getSignatureFieldList` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode retourneert een `java.util.List` -object, waarin elk element een `PDFSignatureField` -object bevat. Met dit object kunt u aanvullende informatie verkrijgen over een handtekeningveld, bijvoorbeeld of dit zichtbaar is.
+   * Doorloop het `java.util.List` -object om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een apart `PDFSignatureField` -object ophalen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de methode `PDFSignatureField` van het object `getName` aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
 
 **zie ook**
 
@@ -320,7 +316,7 @@ Namen van handtekeningvelden ophalen met de handtekening-API (webservice):
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -332,14 +328,14 @@ Namen van handtekeningvelden ophalen met de handtekening-API (webservice):
 
    * Maak een `BLOB` -object met behulp van de constructor. Het `BLOB` -object wordt gebruikt om het PDF-document op te slaan dat handtekeningvelden bevat.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
    * Vul het `BLOB` -object door het `MTOM` -veld ervan de inhoud van de bytearray toe te wijzen.
 
 1. De namen van handtekeningvelden ophalen
 
-   * Haal de namen van handtekeningvelden op door de methode `getSignatureFieldList` van het `SignatureServiceClient` -object aan te roepen en het `BLOB` -object door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode retourneert een `MyArrayOfPDFSignatureField` -verzamelingsobject waarin elk element een `PDFSignatureField` -object bevat.
-   * Doorloop het `MyArrayOfPDFSignatureField` -object om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een `PDFSignatureField` -object ophalen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de methode `getName` van het object `PDFSignatureField` aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
+   * Haal de namen van handtekeningvelden op door de methode `SignatureServiceClient` van het `getSignatureFieldList` -object aan te roepen en het `BLOB` -object door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode retourneert een `MyArrayOfPDFSignatureField` -verzamelingsobject waarin elk element een `PDFSignatureField` -object bevat.
+   * Doorloop het `MyArrayOfPDFSignatureField` -object om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een `PDFSignatureField` -object ophalen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de methode `PDFSignatureField` van het object `getName` aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
 
 **zie ook**
 
@@ -403,9 +399,9 @@ Als u een handtekeningveld wilt wijzigen, wijst u waarden toe aan het bijbehoren
 U kunt de volgende zaadwaardewoordenboekwaarden instellen:
 
 * **Controle van de Herziening**: Specificeert of de herroepingscontrole wordt uitgevoerd wanneer een handtekening op het handtekeningsgebied wordt toegepast.
-* **opties van het Certificaat**: Wijst waarden aan het woordenboek van de certificaatzaadwaarde toe. Voordat u certificaatopties opgeeft, is het raadzaam bekend te raken met een certificaatzaadwaardewoordenboek. (Zie [ Verwijzing van PDF ](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **opties van het Certificaat**: Wijst waarden aan het woordenboek van de certificaatzaadwaarde toe. Voordat u certificaatopties opgeeft, is het raadzaam bekend te raken met een certificaatzaadwaardewoordenboek.
 * **de opties van de Samenvatting**: Wijst samenvattingsalgoritmen toe die voor het ondertekenen worden gebruikt. Geldige waarden zijn SHA1, SHA256, SHA384, SHA512 en RIPEMD160.
-* **Filter**: Specificeert de filter die met het handtekeningsgebied wordt gebruikt. U kunt bijvoorbeeld het filter Adobe.PPKLite gebruiken. (Zie [ Verwijzing van PDF ](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **Filter**: Specificeert de filter die met het handtekeningsgebied wordt gebruikt. U kunt bijvoorbeeld het filter Adobe.PPKLite gebruiken.
 * **de opties van de Vlag**: Specificeert de vlagwaarden die met dit handtekeningsgebied worden geassocieerd. De waarde 1 houdt in dat een ondertekenaar alleen de opgegeven waarden voor het item moet gebruiken. De waarde 0 houdt in dat andere waarden zijn toegestaan. Hier zijn de posities van het Beetje:
 
    * **1 (Filter):** De handtekeningsmanager die moet worden gebruikt om het handtekeningsgebied te ondertekenen
@@ -460,11 +456,11 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
 
    * Maak een `PDFSignatureFieldProperties` -object met behulp van de constructor. In een `PDFSignatureFieldProperties` -object worden het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens opgeslagen.
    * Maak een `PDFSeedValueOptionSpec` -object met behulp van de constructor. Met dit object kunt u woordenboekwaarden voor zaadwaarden instellen.
-   * Wijzigingen in het PDF-document niet toestaan door de methode `setMdpValue` van het `PDFSeedValueOptionSpec` -object aan te roepen en de opsommingswaarde `MDPPermissions.NoChanges` door te geven.
+   * Wijzigingen in het PDF-document niet toestaan door de methode `PDFSeedValueOptionSpec` van het `setMdpValue` -object aan te roepen en de opsommingswaarde `MDPPermissions.NoChanges` door te geven.
    * Maak een `FieldMDPOptionSpec` -object met behulp van de constructor. Met dit object kunt u woordenboekwaarden voor handtekeningveldvergrendeling instellen.
-   * Vergrendel alle velden in het PDF-document door de methode `setMdpValue` van het `FieldMDPOptionSpec` -object aan te roepen en de opsommingswaarde `FieldMDPAction.ALL` door te geven.
-   * Stel de zaadwaardewoordenboekgegevens in door de methode `setSeedValue` van het object `PDFSignatureFieldProperties` aan te roepen en het object `PDFSeedValueOptionSpec` door te geven.
-   * Stel de vergrendelingswoordenboekgegevens voor handtekeningvelden in door de methode `setFieldMDP` van het object `PDFSignatureFieldProperties` aan te roepen en het object `FieldMDPOptionSpec` door te geven.
+   * Vergrendel alle velden in het PDF-document door de methode `FieldMDPOptionSpec` van het `setMdpValue` -object aan te roepen en de opsommingswaarde `FieldMDPAction.ALL` door te geven.
+   * Stel de zaadwaardewoordenboekgegevens in door de methode `PDFSignatureFieldProperties` van het object `setSeedValue` aan te roepen en het object `PDFSeedValueOptionSpec` door te geven.
+   * Stel de vergrendelingswoordenboekgegevens voor handtekeningvelden in door de methode `PDFSignatureFieldProperties` van het object `setFieldMDP` aan te roepen en het object `FieldMDPOptionSpec` door te geven.
 
    >[!NOTE]
    >
@@ -472,7 +468,7 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
 
 1. Het handtekeningveld wijzigen
 
-   Wijzig het handtekeningveld door de methode `modifySignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Wijzig het handtekeningveld door de methode `SignatureServiceClient` van het object `modifySignatureField` aan te roepen en de volgende waarden door te geven:
 
    * Het `com.adobe.idp.Document` -object dat het PDF-document opslaat dat het te wijzigen handtekeningveld bevat
    * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft
@@ -483,7 +479,7 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
 1. Het PDF-document opslaan als een PDF-bestand
 
    * Maak een `java.io.File` -object en controleer of de bestandsnaamextensie .pdf is.
-   * Roep de methode `copyToFile` van het object `com.adobe.idp.Document` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren. Zorg ervoor dat u het object `com.adobe.idp.Document` gebruikt dat de methode `modifySignatureField` heeft geretourneerd.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren. Zorg ervoor dat u het object `com.adobe.idp.Document` gebruikt dat de methode `modifySignatureField` heeft geretourneerd.
 
 ### Handtekeningvelden wijzigen met de webservice-API {#modify-signature-fields-using-the-web-service-api}
 
@@ -502,7 +498,7 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -514,8 +510,8 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
 
    * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt het PDF-document opgeslagen dat het handtekeningveld bevat dat u wilt wijzigen.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen aan de inhoud van de bytearray.
 
 1. Woordenboekwaarden instellen
@@ -534,7 +530,7 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
 
 1. Het handtekeningveld wijzigen
 
-   Wijzig het handtekeningveld door de methode `modifySignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Wijzig het handtekeningveld door de methode `SignatureServiceClient` van het object `modifySignatureField` aan te roepen en de volgende waarden door te geven:
 
    * Het `BLOB` -object dat het PDF-document opslaat dat het te wijzigen handtekeningveld bevat
    * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft
@@ -545,9 +541,9 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
 1. Het PDF-document opslaan als een PDF-bestand
 
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het handtekeningveld zal bevatten, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het object `BLOB` dat door de methode `addSignatureField` wordt geretourneerd. Vul de bytearray met de waarde van het gegevenslid `MTOM` van het object `BLOB` .
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het object `BLOB` dat door de methode `addSignatureField` wordt geretourneerd. Vul de bytearray met de waarde van het gegevenslid `BLOB` van het object `MTOM` .
    * Maak een `System.IO.BinaryWriter` -object door de constructor ervan aan te roepen en het `System.IO.FileStream` -object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `System.IO.BinaryWriter` van het object `Write` aan te roepen en de bytearray door te geven.
 
 **zie ook**
 
@@ -652,7 +648,7 @@ Bij het ondertekenen van een PDF-document kunt u uitvoeringsopties instellen die
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-U stelt vormgevingsopties in met een `PDFSignatureAppearanceOptionSpec` -object. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode `setShowDate` van het object `PDFSignatureAppearanceOptionSpec` aan te roepen en door te geven `true` .
+U stelt vormgevingsopties in met een `PDFSignatureAppearanceOptionSpec` -object. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode `PDFSignatureAppearanceOptionSpec` van het object `setShowDate` aan te roepen en door te geven `true` .
 
 U kunt ook opgeven of een intrekkingscontrole moet worden uitgevoerd die bepaalt of het certificaat dat wordt gebruikt om een PDF-document digitaal te ondertekenen, is ingetrokken. Als u de intrekkingscontrole wilt uitvoeren, kunt u een van de volgende waarden opgeven:
 
@@ -671,7 +667,7 @@ Als u opgeeft dat u de intrekkingscontrole niet wilt uitvoeren, controleert de s
 
 >[!NOTE]
 >
->Hoewel een CRL of een OCSP-server in het certificaat kan worden opgegeven, kunt u de URL die in het certificaat is opgegeven, overschrijven met een `CRLOptionSpec` - en `OCSPOptionSpec` -object. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `setLocalURI` van het object `CRLOptionSpec` aanroepen.
+>Hoewel een CRL of een OCSP-server in het certificaat kan worden opgegeven, kunt u de URL die in het certificaat is opgegeven, overschrijven met een `CRLOptionSpec` - en `OCSPOptionSpec` -object. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `CRLOptionSpec` van het object `setLocalURI` aanroepen.
 
 Tijdstempel verwijst naar het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, mag het niet meer worden gewijzigd, zelfs niet door de eigenaar van het document. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempels instellen met een `TSPOptionSpec` -object. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
 
@@ -721,7 +717,7 @@ Een PDF-document digitaal ondertekenen met de handtekening-API (Java):
 
 1. PDF-document ondertekenen
 
-   Onderteken het PDF-document door de methode `sign` van het `SignatureServiceClient` -object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het `sign` -object aan te roepen en de volgende waarden door te geven:
 
    * Een `com.adobe.idp.Document` -object dat staat voor het PDF-document dat moet worden ondertekend.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de digitale handtekening zal bevatten.
@@ -740,7 +736,7 @@ Een PDF-document digitaal ondertekenen met de handtekening-API (Java):
 1. Ondertekend PDF-document opslaan
 
    * Maak een `java.io.File` -object en controleer of de bestandsextensie .pdf is.
-   * Roep de methode `copyToFile` van het object `com.adobe.idp.Document` aan en geef `java.io.File` door om de inhoud van het object `Document` naar het bestand te kopiëren. Gebruik het object `com.adobe.idp.Document` dat door de methode `sign` is geretourneerd.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan en geef `java.io.File` door om de inhoud van het object `Document` naar het bestand te kopiëren. Gebruik het object `com.adobe.idp.Document` dat door de methode `sign` is geretourneerd.
 
 **zie ook**
 
@@ -769,7 +765,7 @@ Een PDF-document digitaal ondertekenen met de API voor handtekening (webservice)
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -781,13 +777,13 @@ Een PDF-document digitaal ondertekenen met de API voor handtekening (webservice)
 
    * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt een ondertekend PDF-document opgeslagen.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat moet worden ondertekend, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen aan de inhoud van de bytearray.
 
 1. PDF-document ondertekenen
 
-   Onderteken het PDF-document door de methode `sign` van het `SignatureServiceClient` -object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het `sign` -object aan te roepen en de volgende waarden door te geven:
 
    * Een `BLOB` -object dat staat voor het PDF-document dat moet worden ondertekend.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de digitale handtekening zal bevatten.
@@ -808,9 +804,9 @@ Een PDF-document digitaal ondertekenen met de API voor handtekening (webservice)
 1. Ondertekend PDF-document opslaan
 
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `MTOM` van het object `BLOB` .
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `BLOB` van het object `MTOM` .
    * Maak een `System.IO.BinaryWriter` -object door de constructor ervan aan te roepen en het `System.IO.FileStream` -object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `System.IO.BinaryWriter` van het object `Write` aan te roepen en de bytearray door te geven.
 
 **zie ook**
 
@@ -886,7 +882,7 @@ Bij het ondertekenen van een PDF-document kunt u uitvoeringsopties instellen die
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-U stelt vormgevingsopties in met een `PDFSignatureAppearanceOptionSpec` -object. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode `setShowDate` van het object `PDFSignatureAppearanceOptionSpec` aan te roepen en door te geven `true` .
+U stelt vormgevingsopties in met een `PDFSignatureAppearanceOptionSpec` -object. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode `PDFSignatureAppearanceOptionSpec` van het object `setShowDate` aan te roepen en door te geven `true` .
 
 **sparen het ondertekende document van PDF**
 
@@ -926,8 +922,8 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
    * Maak een `com.adobe.idp.Document` -object door de constructor ervan te gebruiken en het `java.io.FileInputStream` -object door te geven.
    * Maak een `java.io.FileInputStream` -object dat staat voor het XML-document dat formuliergegevens bevat die met behulp van de constructor aan de Forms-service moeten worden doorgegeven. Geef een tekenreekswaarde door die de locatie van het XML-bestand aangeeft.
    * Maak een `com.adobe.idp.Document` -object door de constructor ervan te gebruiken en het `java.io.FileInputStream` -object door te geven.
-   * Maak een `PDFFormRenderSpec` -object dat wordt gebruikt om uitvoeringsopties in te stellen. Roep de methode `setGenerateServerAppearance` van het object `PDFFormRenderSpec` aan en geef `true` door.
-   * Roep de methode `renderPDFForm2` van het object `FormsServiceClient` aan en geef de volgende waarden door:
+   * Maak een `PDFFormRenderSpec` -object dat wordt gebruikt om uitvoeringsopties in te stellen. Roep de methode `PDFFormRenderSpec` van het object `setGenerateServerAppearance` aan en geef `true` door.
+   * Roep de methode `FormsServiceClient` van het object `renderPDFForm2` aan en geef de volgende waarden door:
 
       * Een `com.adobe.idp.Document` -object dat het PDF-formulier bevat dat moet worden gegenereerd.
       * Een `com.adobe.idp.Document` -object dat gegevens bevat die met het formulier moeten worden samengevoegd.
@@ -937,11 +933,11 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
 
      De methode `renderPDFForm2` retourneert een `FormsResult` -object dat een formuliergegevensstroom bevat
 
-   * Haal het PDF-formulier op door de methode `getOutputContent` van het object `FormsResult` aan te roepen. Deze methode retourneert een `com.adobe.idp.Document` -object dat het interactieve formulier vertegenwoordigt.
+   * Haal het PDF-formulier op door de methode `FormsResult` van het object `getOutputContent` aan te roepen. Deze methode retourneert een `com.adobe.idp.Document` -object dat het interactieve formulier vertegenwoordigt.
 
 1. Het interactieve formulier ondertekenen
 
-   Onderteken het PDF-document door de methode `sign` van het `SignatureServiceClient` -object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het `sign` -object aan te roepen en de volgende waarden door te geven:
 
    * Een `com.adobe.idp.Document` -object dat staat voor het PDF-document dat moet worden ondertekend. Zorg ervoor dat dit object het `com.adobe.idp.Document` -object is dat is verkregen van de Forms-service.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat wordt ondertekend.
@@ -960,7 +956,7 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
 1. Ondertekend PDF-document opslaan
 
    * Maak een `java.io.File` -object en controleer of de bestandsnaamextensie .pdf is.
-   * Roep de methode `copyToFile` van het object `com.adobe.idp.Document` aan en geef `java.io.File` door om de inhoud van het object `Document` naar het bestand te kopiëren. Zorg ervoor dat u het object `com.adobe.idp.Document` gebruikt dat de methode `sign` heeft geretourneerd.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan en geef `java.io.File` door om de inhoud van het object `Document` naar het bestand te kopiëren. Zorg ervoor dat u het object `com.adobe.idp.Document` gebruikt dat de methode `sign` heeft geretourneerd.
 
 **zie ook**
 
@@ -993,7 +989,7 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -1010,16 +1006,16 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
 
    * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt een ondertekend PDF-document opgeslagen.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat moet worden ondertekend, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen aan de inhoud van de bytearray.
    * Maak een `BLOB` -object met behulp van de constructor. Het `BLOB` -object wordt gebruikt om formuliergegevens op te slaan.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het XML-bestand dat formuliergegevens bevat, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen aan de inhoud van de bytearray.
    * Maak een `PDFFormRenderSpec` -object dat wordt gebruikt om uitvoeringsopties in te stellen. Wijs de waarde `true` toe aan het veld `PDFFormRenderSpec` object `generateServerAppearance` .
-   * Roep de methode `renderPDFForm2` van het object `FormsServiceClient` aan en geef de volgende waarden door:
+   * Roep de methode `FormsServiceClient` van het object `renderPDFForm2` aan en geef de volgende waarden door:
 
       * Een `BLOB` -object dat het PDF-formulier bevat dat moet worden gegenereerd.
       * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd.
@@ -1030,11 +1026,11 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
       * Een tekenreeks-uitvoerparameter die wordt gebruikt voor de landinstellingswaarde.
       * Een `FormResult` -waarde die een uitvoerparameter is die wordt gebruikt om het interactieve formulier op te slaan.
 
-   * Haal het PDF-formulier op door het veld `outputContent` van het `FormsResult` -object op te halen. In dit veld wordt een `BLOB` -object opgeslagen dat het interactieve formulier vertegenwoordigt.
+   * Haal het PDF-formulier op door het veld `FormsResult` van het `outputContent` -object op te halen. In dit veld wordt een `BLOB` -object opgeslagen dat het interactieve formulier vertegenwoordigt.
 
 1. Het interactieve formulier ondertekenen
 
-   Onderteken het PDF-document door de methode `sign` van het `SignatureServiceClient` -object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het `sign` -object aan te roepen en de volgende waarden door te geven:
 
    * Een `BLOB` -object dat staat voor het PDF-document dat moet worden ondertekend. Gebruik de `BLOB` -instantie die door de Forms-service wordt geretourneerd.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat wordt ondertekend.
@@ -1055,9 +1051,9 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
 1. Ondertekend PDF-document opslaan
 
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `MTOM` van het object `BLOB` .
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `BLOB` van het object `MTOM` .
    * Maak een `System.IO.BinaryWriter` -object door de constructor ervan aan te roepen en het `System.IO.FileStream` -object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `System.IO.BinaryWriter` van het object `Write` aan te roepen en de bytearray door te geven.
 
 **zie ook**
 
@@ -1182,7 +1178,7 @@ Een PDF-document certificeren met de handtekening-API (Java):
 
 1. Het PDF-document certificeren
 
-   Certificeer het PDF-document door de methode `certify` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Certificeer het PDF-document door de methode `SignatureServiceClient` van het object `certify` aan te roepen en de volgende waarden door te geven:
 
    * Het `com.adobe.idp.Document` -object dat het te certificeren PDF-document vertegenwoordigt.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de handtekening zal bevatten.
@@ -1204,7 +1200,7 @@ Een PDF-document certificeren met de handtekening-API (Java):
 1. Het gecertificeerde PDF-document opslaan als een PDF-bestand
 
    * Maak een `java.io.File` -object en controleer of de bestandsextensie .pdf is.
-   * Roep de methode `copyToFile` van het object `com.adobe.idp.Document` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren.
 
 **zie ook**
 
@@ -1233,7 +1229,7 @@ Een PDF-document certificeren met de handtekening-API (webservice):
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -1245,13 +1241,13 @@ Een PDF-document certificeren met de handtekening-API (webservice):
 
    * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt een gecertificeerd PDF-document opgeslagen.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het te certificeren PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
    * Vul het `BLOB` -object door het `MTOM` -gegevenslid ervan toe te wijzen aan de inhoud van de bytearray.
 
 1. Het PDF-document certificeren
 
-   Certificeer het PDF-document door de methode `certify` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Certificeer het PDF-document door de methode `SignatureServiceClient` van het object `certify` aan te roepen en de volgende waarden door te geven:
 
    * Het `BLOB` -object dat het te certificeren PDF-document vertegenwoordigt.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de handtekening zal bevatten.
@@ -1277,9 +1273,9 @@ Een PDF-document certificeren met de handtekening-API (webservice):
 1. Het gecertificeerde PDF-document opslaan als een PDF-bestand
 
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het gecertificeerde PDF-document zal bevatten en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `certify` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `binaryData` van het object `BLOB` .
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `certify` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `BLOB` van het object `binaryData` .
    * Maak een `System.IO.BinaryWriter` -object door de constructor ervan aan te roepen en het `System.IO.FileStream` -object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `System.IO.BinaryWriter` van het object `Write` aan te roepen en de bytearray door te geven.
 
 **zie ook**
 
@@ -1359,7 +1355,7 @@ Als u de intrekkingscontrole niet uitvoert, controleert de service Handtekening 
 
 >[!NOTE]
 >
->U kunt de URL die in het certificaat is opgegeven, overschrijven met een object `CRLOptionSpec` en `OCSPOptionSpec` . Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `setLocalURI` van het object `CRLOptionSpec` aanroepen.
+>U kunt de URL die in het certificaat is opgegeven, overschrijven met een object `CRLOptionSpec` en `OCSPOptionSpec` . Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `CRLOptionSpec` van het object `setLocalURI` aanroepen.
 
 Tijdstempel is het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, kan niemand het wijzigen. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempels instellen met een `TSPOptionSpec` -object. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
 
@@ -1420,12 +1416,12 @@ Verifieer een digitale handtekening met de API van de Handtekeningenservice (Jav
 1. PKI-runtime-opties instellen
 
    * Maak een `PKIOptions` -object met behulp van de constructor.
-   * Stel de verificatietijd in door de methode `setVerificationTime` van het object `PKIOptions` aan te roepen en een opsommingswaarde `VerificationTime` door te geven die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door de methode `setRevocationCheckStyle` van het object `PKIOptions` aan te roepen en een opsommingswaarde `RevocationCheckStyle` door te geven die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
+   * Stel de verificatietijd in door de methode `PKIOptions` van het object `setVerificationTime` aan te roepen en een opsommingswaarde `VerificationTime` door te geven die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door de methode `PKIOptions` van het object `setRevocationCheckStyle` aan te roepen en een opsommingswaarde `RevocationCheckStyle` door te geven die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
 
 1. De digitale handtekening verifiëren
 
-   Verifieer de handtekening door de methode `verify2` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Verifieer de handtekening door de methode `SignatureServiceClient` van het object `verify2` aan te roepen en de volgende waarden door te geven:
 
    * Een `com.adobe.idp.Document` -object dat een digitaal ondertekend of gecertificeerd PDF-document bevat.
    * Een tekenreekswaarde die staat voor de naam van het handtekeningveld dat de te controleren handtekening bevat.
@@ -1436,12 +1432,12 @@ Verifieer een digitale handtekening met de API van de Handtekeningenservice (Jav
 
 1. De status van de handtekening bepalen
 
-   * Bepaal de status van de handtekening door de methode `getStatus` van het object `PDFSignatureVerificationInfo` aan te roepen. Deze methode retourneert een `SignatureStatus` -object dat de status van de handtekening opgeeft. Als een ondertekend PDF-document bijvoorbeeld niet wordt gewijzigd, retourneert deze methode `SignatureStatus.DocumentSigNoChanges` .
+   * Bepaal de status van de handtekening door de methode `PDFSignatureVerificationInfo` van het object `getStatus` aan te roepen. Deze methode retourneert een `SignatureStatus` -object dat de status van de handtekening opgeeft. Als een ondertekend PDF-document bijvoorbeeld niet wordt gewijzigd, retourneert deze methode `SignatureStatus.DocumentSigNoChanges` .
 
 1. De identiteit van de ondertekenaar bepalen
 
-   * Bepaal de identiteit van de ondertekenaar door de methode `getSigner` van het object `PDFSignatureVerificationInfo` aan te roepen. Deze methode retourneert een `IdentityInformation` -object.
-   * Roep de methode `getStatus` van het `IdentityInformation` -object aan om de identiteit van de ondertekenaar te bepalen. Deze methode retourneert een opsommingswaarde `IdentityStatus` die de identiteit opgeeft. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, retourneert deze methode `IdentityStatus.TRUSTED` .
+   * Bepaal de identiteit van de ondertekenaar door de methode `PDFSignatureVerificationInfo` van het object `getSigner` aan te roepen. Deze methode retourneert een `IdentityInformation` -object.
+   * Roep de methode `IdentityInformation` van het `getStatus` -object aan om de identiteit van de ondertekenaar te bepalen. Deze methode retourneert een opsommingswaarde `IdentityStatus` die de identiteit opgeeft. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, retourneert deze methode `IdentityStatus.TRUSTED` .
 
 **zie ook**
 
@@ -1470,7 +1466,7 @@ Verifieer een digitale handtekening met behulp van de Signature Service API (web
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -1482,19 +1478,19 @@ Verifieer een digitale handtekening met behulp van de Signature Service API (web
 
    * Maak een `BLOB` -object met behulp van de constructor. Het `BLOB` -object wordt gebruikt om een PDF-document op te slaan dat een digitale of gecertificeerde handtekening bevat om te verifiëren.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen aan de inhoud van de bytearray.
 
 1. PKI-runtime-opties instellen
 
    * Maak een `PKIOptions` -object met behulp van de constructor.
-   * Stel de verificatietijd in door de opsommingswaarde `verificationTime` data member `VerificationTime` van het `PKIOptions` -object toe te wijzen die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door de opsommingswaarde `revocationCheckStyle` data member `RevocationCheckStyle` van het `PKIOptions` -object toe te wijzen die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
+   * Stel de verificatietijd in door de opsommingswaarde `PKIOptions` data member `verificationTime` van het `VerificationTime` -object toe te wijzen die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door de opsommingswaarde `PKIOptions` data member `revocationCheckStyle` van het `RevocationCheckStyle` -object toe te wijzen die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
 
 1. De digitale handtekening verifiëren
 
-   Verifieer de handtekening door de methode `verify2` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Verifieer de handtekening door de methode `SignatureServiceClient` van het object `verify2` aan te roepen en de volgende waarden door te geven:
 
    * Het `BLOB` -object dat een digitaal ondertekend of gecertificeerd PDF-document bevat.
    * Een tekenreekswaarde die staat voor de naam van het handtekeningveld dat de te controleren handtekening bevat.
@@ -1505,12 +1501,12 @@ Verifieer een digitale handtekening met behulp van de Signature Service API (web
 
 1. De status van de handtekening bepalen
 
-   Bepaal de status van de handtekening door de waarde van het gegevenslid `status` van het `PDFSignatureVerificationInfo` -object op te halen. Dit gegevenslid slaat een `SignatureStatus` -object op dat de status van de handtekening opgeeft. Als bijvoorbeeld een ondertekend PDF-document wordt gewijzigd, slaat het `status` -gegevenslid de waarde `SignatureStatus.DocumentSigNoChanges` op.
+   Bepaal de status van de handtekening door de waarde van het gegevenslid `PDFSignatureVerificationInfo` van het `status` -object op te halen. Dit gegevenslid slaat een `SignatureStatus` -object op dat de status van de handtekening opgeeft. Als bijvoorbeeld een ondertekend PDF-document wordt gewijzigd, slaat het `status` -gegevenslid de waarde `SignatureStatus.DocumentSigNoChanges` op.
 
 1. De identiteit van de ondertekenaar bepalen
 
-   * Bepaal de identiteit van de ondertekenaar door de waarde van het gegevenslid `signer` van het `PDFSignatureVerificationInfo` -object op te halen. Dit lid retourneert een `IdentityInformation` -object.
-   * Haal het gegevenslid `status` van het `IdentityInformation` -object op om de identiteit van de ondertekenaar te bepalen. Dit gegevenslid retourneert een `IdentityStatus` opsommingswaarde die de identiteit opgeeft. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, retourneert dit lid `IdentityStatus.TRUSTED` .
+   * Bepaal de identiteit van de ondertekenaar door de waarde van het gegevenslid `PDFSignatureVerificationInfo` van het `signer` -object op te halen. Dit lid retourneert een `IdentityInformation` -object.
+   * Haal het gegevenslid `IdentityInformation` van het `status` -object op om de identiteit van de ondertekenaar te bepalen. Dit gegevenslid retourneert een `IdentityStatus` opsommingswaarde die de identiteit opgeeft. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, retourneert dit lid `IdentityStatus.TRUSTED` .
 
 **zie ook**
 
@@ -1583,7 +1579,7 @@ Als u de intrekkingscontrole niet uitvoert, controleert de service Handtekening 
 
 >[!NOTE]
 >
->U kunt de URL die in het certificaat is opgegeven, overschrijven met een object `CRLOptionSpec` en `OCSPOptionSpec` . Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `setLocalURI` van het object `CRLOptionSpec` aanroepen.
+>U kunt de URL die in het certificaat is opgegeven, overschrijven met een object `CRLOptionSpec` en `OCSPOptionSpec` . Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `CRLOptionSpec` van het object `setLocalURI` aanroepen.
 
 Tijdstempel is het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, kan niemand het wijzigen. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempels instellen met een `TSPOptionSpec` -object. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
 
@@ -1638,12 +1634,12 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
 1. PKI-runtime-opties instellen
 
    * Maak een `PKIOptions` -object met behulp van de constructor.
-   * Stel de verificatietijd in door de methode `setVerificationTime` van het object `PKIOptions` aan te roepen en een opsommingswaarde `VerificationTime` door te geven die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door de methode `setRevocationCheckStyle` van het object `PKIOptions` aan te roepen en een opsommingswaarde `RevocationCheckStyle` door te geven die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
+   * Stel de verificatietijd in door de methode `PKIOptions` van het object `setVerificationTime` aan te roepen en een opsommingswaarde `VerificationTime` door te geven die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door de methode `PKIOptions` van het object `setRevocationCheckStyle` aan te roepen en een opsommingswaarde `RevocationCheckStyle` door te geven die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
 
 1. Alle digitale handtekeningen ophalen
 
-   Roep de methode `verifyPDFDocument` van het object `SignatureServiceClient` aan en geef de volgende waarden door:
+   Roep de methode `SignatureServiceClient` van het object `verifyPDFDocument` aan en geef de volgende waarden door:
 
    * Een `com.adobe.idp.Document` -object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
    * Een `PKIOptions` -object dat PKI-runtime-opties bevat.
@@ -1653,7 +1649,7 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
 
 1. Alle handtekeningen doorlopen
 
-   * Doorloop alle handtekeningen door de methode `getVerificationInfos` van het object `PDFDocumentVerificationInfo` aan te roepen. Deze methode retourneert een `java.util.List` -object waarbij elk element een `PDFSignatureVerificationInfo` -object is. Gebruik een `java.util.Iterator` -object om de lijst met handtekeningen te doorlopen.
+   * Doorloop alle handtekeningen door de methode `PDFDocumentVerificationInfo` van het object `getVerificationInfos` aan te roepen. Deze methode retourneert een `java.util.List` -object waarbij elk element een `PDFSignatureVerificationInfo` -object is. Gebruik een `java.util.Iterator` -object om de lijst met handtekeningen te doorlopen.
    * Met behulp van het `PDFSignatureVerificationInfo` -object kunt u taken uitvoeren zoals het bepalen van de status van de handtekening door de methode `PDFSignatureVerificationInfo` object `getStatus` aan te roepen. Deze methode retourneert een `SignatureStatus` -object waarvan het lid met statische gegevens u op de hoogte stelt van de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, retourneert deze methode `SignatureStatus.DocumentSignatureUnknown` .
 
 **zie ook**
@@ -1685,7 +1681,7 @@ Verifieer veelvoudige digitale handtekeningen door de Dienst API van de Handteke
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -1697,19 +1693,19 @@ Verifieer veelvoudige digitale handtekeningen door de Dienst API van de Handteke
 
    * Maak een `BLOB` -object met behulp van de constructor. In het `BLOB` -object wordt een PDF-document opgeslagen dat meerdere digitale handtekeningen bevat om te verifiëren.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen aan de inhoud van de bytearray.
 
 1. PKI-runtime-opties instellen
 
    * Maak een `PKIOptions` -object met behulp van de constructor.
-   * Stel de verificatietijd in door de opsommingswaarde `verificationTime` data member `VerificationTime` van het `PKIOptions` -object toe te wijzen die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door het gegevenslid van het `revocationCheckStyle` data member `RevocationCheckStyle` -object een opsommingswaarde toe te wijzen die aangeeft of een intrekkingscontrole moet worden uitgevoerd.`PKIOptions`
+   * Stel de verificatietijd in door de opsommingswaarde `PKIOptions` data member `verificationTime` van het `VerificationTime` -object toe te wijzen die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door het gegevenslid van het `PKIOptions` data member `revocationCheckStyle` -object een opsommingswaarde toe te wijzen die aangeeft of een intrekkingscontrole moet worden uitgevoerd.`RevocationCheckStyle`
 
 1. Alle digitale handtekeningen ophalen
 
-   Roep de methode `verifyPDFDocument` van het object `SignatureServiceClient` aan en geef de volgende waarden door:
+   Roep de methode `SignatureServiceClient` van het object `verifyPDFDocument` aan en geef de volgende waarden door:
 
    * Een `BLOB` -object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
    * Een `PKIOptions` -object dat PKI-runtime-opties bevat.
@@ -1719,7 +1715,7 @@ Verifieer veelvoudige digitale handtekeningen door de Dienst API van de Handteke
 
 1. Alle handtekeningen doorlopen
 
-   * Doorloop alle handtekeningen door het gegevenslid `verificationInfos` van het object `PDFDocumentVerificationInfo` op te halen. Dit gegevenslid retourneert een `Object` -array waarbij elk element een `PDFSignatureVerificationInfo` -object is.
+   * Doorloop alle handtekeningen door het gegevenslid `PDFDocumentVerificationInfo` van het object `verificationInfos` op te halen. Dit gegevenslid retourneert een `Object` -array waarbij elk element een `PDFSignatureVerificationInfo` -object is.
    * Met het `PDFSignatureVerificationInfo` -object kunt u taken uitvoeren zoals het bepalen van de status van de handtekening door het gegevenslid van het `PDFSignatureVerificationInfo` object `status` op te halen. Dit gegevenslid retourneert een `SignatureStatus` -object waarvan het lid met statische gegevens u op de hoogte stelt van de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, retourneert deze methode `SignatureStatus.DocumentSignatureUnknown` .
 
 **zie ook**
@@ -1810,7 +1806,7 @@ Een digitale handtekening verwijderen met de handtekening-API (Java):
 
 1. De digitale handtekening verwijderen uit het handtekeningveld
 
-   Verwijder een digitale handtekening uit een handtekeningveld door de methode `clearSignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Verwijder een digitale handtekening uit een handtekeningveld door de methode `SignatureServiceClient` van het object `clearSignatureField` aan te roepen en de volgende waarden door te geven:
 
    * Een `com.adobe.idp.Document` -object dat staat voor het PDF-document dat de te verwijderen handtekening bevat.
    * Een tekenreekswaarde die de naam aangeeft van het handtekeningveld dat de digitale handtekening bevat.
@@ -1820,7 +1816,7 @@ Een digitale handtekening verwijderen met de handtekening-API (Java):
 1. Het PDF-document opslaan als een PDF-bestand
 
    * Maak een `java.io.File` -object en controleer of de bestandsextensie .pdf is.
-   * Roep de methode `copyToFile` van het object `com.adobe.idp.Document` aan. Geef het object `java.io.File` door om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren. Gebruik het object `Document` dat door de methode `clearSignatureField` is geretourneerd.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan. Geef het object `java.io.File` door om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren. Gebruik het object `Document` dat door de methode `clearSignatureField` is geretourneerd.
 
 **zie ook**
 
@@ -1849,7 +1845,7 @@ Een digitale handtekening verwijderen met de handtekening-API (webservice):
    * Maak een `SignatureServiceClient` -object met de standaardconstructor.
    * Maak een `SignatureServiceClient.Endpoint.Address` -object met de `System.ServiceModel.EndpointAddress` -constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL` ). U hoeft het attribuut `lc_version` niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` -object door de waarde van het `SignatureServiceClient.Endpoint.Binding` -veld op te halen. De geretourneerde waarde wordt gecast naar `BasicHttpBinding` .
-   * Stel het veld `MessageEncoding` van het `System.ServiceModel.BasicHttpBinding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het `MessageEncoding` -object in op `WSMessageEncoding.Mtom` . Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
       * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` .
@@ -1861,13 +1857,13 @@ Een digitale handtekening verwijderen met de handtekening-API (webservice):
 
    * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt een PDF-document opgeslagen dat een digitale handtekening bevat die moet worden verwijderd.
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `System.IO.FileStream` van het object `Read` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
    * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. De digitale handtekening verwijderen uit het handtekeningveld
 
-   Verwijder de digitale handtekening door de methode `clearSignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
+   Verwijder de digitale handtekening door de methode `SignatureServiceClient` van het object `clearSignatureField` aan te roepen en de volgende waarden door te geven:
 
    * Een `BLOB` -object dat het ondertekende PDF-document bevat.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de digitale handtekening bevat die moet worden verwijderd.
@@ -1877,9 +1873,9 @@ Een digitale handtekening verwijderen met de handtekening-API (webservice):
 1. Het PDF-document opslaan als een PDF-bestand
 
    * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat een leeg handtekeningveld bevat en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `MTOM` van het object `BLOB` .
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` -object dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `BLOB` van het object `MTOM` .
    * Maak een `System.IO.BinaryWriter` -object door de constructor ervan aan te roepen en het `System.IO.FileStream` -object door te geven.
-   * Schrijf de inhoud van de bytearray naar het PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Schrijf de inhoud van de bytearray naar het PDF-bestand door de methode `System.IO.BinaryWriter` van het object `Write` aan te roepen en de bytearray door te geven.
 
 **zie ook**
 

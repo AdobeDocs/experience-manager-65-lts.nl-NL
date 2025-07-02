@@ -7,7 +7,7 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 51f6da4da0bb3f79aa6fa17371b8084b72de7546
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=nl-NL) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 | Dit artikel |
 
 [!DNL Adobe Experience Manager] biedt verschillende mogelijkheden om elementen te beheren. Met de mediabibliotheek kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken uitvoeren voor middelenbeheer op de middelen.
@@ -93,6 +93,6 @@ U kunt geen slimme tags, [!DNL Asset] koppeling, [!DNL Asset] kiezer, bulksgewij
 
 >[!MORELIKETHIS]
 >
->* [ DAM eigenschappen in  [!DNL Experience Manager Assets] ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/home.html)
->* [[!DNL Experience Manager]  6.5 het productbeschrijving van Managed Services ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager]  6.5 on-premise productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [ DAM eigenschappen in  [!DNL Experience Manager Assets] ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/assets/assets)
+>* [[!DNL Experience Manager]  6.5 het productbeschrijving van Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager]  6.5 on-premise productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)

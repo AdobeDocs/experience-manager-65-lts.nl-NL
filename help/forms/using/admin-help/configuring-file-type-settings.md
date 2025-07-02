@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '5903'
+source-wordcount: '5888'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 
 1. Nadat u alle secties hebt voltooid, klikt u op **[!UICONTROL Save]** of **[!UICONTROL Save As]** en geeft u een naam voor de instelling op.
 
-Ondersteuning voor verschillende bestandstypen kan worden aangepast. (Zie &quot; [ Toevoegend Steun voor de Extra Inheemse Formaten van het Dossier ](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot;in [ Programmering met de vormen van AEM ](https://www.adobe.com/go/learn_lc_programming_11).)
+Ondersteuning voor verschillende bestandstypen kan worden aangepast.
 
 ## De standaardinstellingen wijzigen {#change-the-default-settings}
 
@@ -128,7 +128,7 @@ De volgende opties bepalen hoe afbeeldingsbestanden worden geconverteerd naar PD
 
 **OCR van het Gebruik:** specificeert of om OCR (optische karaktererkenning) op PDF toe te passen. Met de OCR-software kunt u de tekst in de PDF zoeken, corrigeren en kopiëren.
 
-***nota &#x200B;**: De (doorzoekbare PDF) eigenschap OCR PDF wordt gesteund slechts op Microsoft Vensters.*
+***nota **: De (doorzoekbare PDF) eigenschap OCR PDF wordt gesteund slechts op Microsoft Vensters.*
 
 **Primaire Taal OCR:** specificeert de taal voor de motor OCR om de karakters te gebruiken te identificeren.
 
@@ -267,7 +267,7 @@ Voor instructies over de toegang tot van dit plaatsen, zie [ creeer of geef doss
 
    >[!NOTE]
    >
-   >*Als u deze optie in combinatie met **gebruikt bedde sommige doopvonten**, zijn de doopvonten in **toevoegen doopvonten aan unembed**&#x200B;lijst nog volledig unembedded.*
+   >*Als u deze optie in combinatie met **gebruikt bedde sommige doopvonten**, zijn de doopvonten in **toevoegen doopvonten aan unembed**lijst nog volledig unembedded.*
 
    >[!NOTE]
    >
@@ -305,7 +305,7 @@ Selecteer **Transparantie** om de transparantiemontages te vormen terwijl het op
 
 **zet Alle Lijnen in Omtrek** om alle slagen in eenvoudige gevulde wegen op pagina&#39;s die transparantie bevatten. Met deze optie blijft de breedte van lijnen tijdens het afvlakken consistent. Houd er rekening mee dat dunne lijnen hierdoor iets dikker worden weergegeven en dat de prestaties van de afvlakking kunnen afnemen.
 
-**Zorgt de Complexe Gebieden van de Klem 1&rbrace; ervoor dat de grenzen tussen vectorkunstwerk en gerasterde kunstwerk langs objecten wegen vallen.** Met deze optie worden stitching-artefacten verminderd die ontstaan wanneer ze deel uitmaken van een logboek
+**Zorgt de Complexe Gebieden van de Klem 1} ervoor dat de grenzen tussen vectorkunstwerk en gerasterde kunstwerk langs objecten wegen vallen.** Met deze optie worden stitching-artefacten verminderd die ontstaan wanneer ze deel uitmaken van een logboek
 
 <!--
 NOTE to WRITER: Unfinished sentence above.

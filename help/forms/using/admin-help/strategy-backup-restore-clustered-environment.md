@@ -1,19 +1,15 @@
 ---
 title: Strategie voor back-up en herstel in een geclusterde omgeving
 description: Als in de implementatie van uw AEM-formulieren extra aangepaste gegevens worden opgeslagen in een andere database, moet u een strategie implementeren om back-ups van deze gegevens te maken, zodat deze consistent blijven met de AEM-formuliergegevens.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ In dit onderwerp worden de volgende strategieën besproken om een back-up te mak
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van de opslagplaats/systeem-id van elk clusterknooppunt afzonderlijk.
 
-   Voor gedetailleerde stappen, zie [ Steun en herstel ](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Voor gedetailleerde stappen, zie [ Steun en herstel ](/help/sites-administering/backup-and-restore.md).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
@@ -72,7 +68,7 @@ In dit onderwerp worden de volgende strategieën besproken om een back-up te mak
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van repository/system.id van elk clusterknooppunt afzonderlijk.
 
-   Voor gedetailleerde stappen, zie [ Steun en herstel ](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Voor gedetailleerde stappen, zie [ Steun en herstel ](/help/sites-administering/backup-and-restore.md).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
@@ -135,7 +131,7 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
    1. Verwijder het bestand clusterNode/revision.log op het knooppunt.
    1. Verwijder de .lock op het knooppunt, indien aanwezig.
    1. Verwijder de map repository/system.id op het knooppunt, indien aanwezig.
-   1. &amp;Bestandsnaam verwijderen;ast;&ast;/listener.properties op het knooppunt, indien aanwezig.
+   1. &amp;Bestandsnaam verwijderen;ast;&amp;ast;/listener.properties op het knooppunt, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]
@@ -165,7 +161,7 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
    1. Verwijder het bestand clusterNode/revision.log op alle clusterknooppunten.
    1. Verwijder de .lock op alle clusterknooppunten, indien aanwezig.
    1. Verwijder repository/system.id alle clusterknooppunten, indien aanwezig.
-   1. De bestanden &amp;amp verwijderen;ast;&ast;/listener.properties op alle clusterknooppunten, indien aanwezig.
+   1. De bestanden &amp;amp verwijderen;ast;&amp;ast;/listener.properties op alle clusterknooppunten, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]
@@ -178,15 +174,15 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
 
 ## Knooppunt voor het maken van back-ups en het herstellen van Correspondentenbeheeroplossingen {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-De uitgeversknoop heeft geen primair-secundaire verhouding in een gegroepeerde milieu. U kunt steun van om het even welke knoop van de Uitgever nemen door [ Steun te volgen en te herstellen ](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+De uitgeversknoop heeft geen primair-secundaire verhouding in een gegroepeerde milieu. U kunt steun van om het even welke knoop van de Uitgever nemen door [ Steun te volgen en te herstellen ](/help/sites-administering/backup-and-restore.md).
 
 ### Eén uitgeversknooppunt herstellen {#recover-a-single-publisher-node}
 
 1. Sluit de knoop die moet worden teruggekregen en doe geen publicatieactiviteit tot de knoop opnieuw omhoog is.
-1. Herstel de Publish knoop gebruikend [ Herstellend de Steun ](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Herstel de Publish knoop gebruikend [ Herstellend de Steun ](/help/sites-administering/backup-and-restore.md).
 
 ### Een cluster herstellen {#recover-a-cluster}
 
 1. Sluit de cluster af.
-1. Herstel de Publish knoop gebruikend [ Herstellend de Steun ](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Herstel de Publish knoop gebruikend [ Herstellend de Steun ](/help/sites-administering/backup-and-restore.md).
 1. Start het primaire knooppunt gevolgd door het secundaire knooppunt van de auteurcluster.

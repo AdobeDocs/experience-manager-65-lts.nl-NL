@@ -1,20 +1,15 @@
 ---
 title: Wat is documentbeveiliging?
 description: Leer hoe u vooraf gedefinieerde instellingen voor vertrouwelijkheid kunt maken, opslaan en toepassen en uw gegevens veilig kunt verspreiden met documentbeveiliging.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Documentbeveiliging zorgt ervoor dat alleen geautoriseerde gebruikers uw documen
 * Adobe PDF-bestanden
 * Microsoft® Word-, Excel- en PowerPoint-bestanden
 
-Voor meer informatie over hoe het beleid gesteunde dossiertypes beschermt, zie [ meer informatie van de documentveiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en).
+Voor meer informatie over hoe het beleid gesteunde dossiertypes beschermt, zie [ meer informatie van de documentveiligheid ](/help/forms/using/document-security-offerings.md).
 
 Met documentbeveiliging kunt u eenvoudig vooraf gedefinieerde instellingen voor vertrouwelijkheid maken, opslaan en toepassen op uw documenten. Als u wilt voorkomen dat gegevens buiten uw bereik worden verspreid, kunt u ook controleren en bepalen hoe ontvangers uw documenten gebruiken nadat u ze hebt verspreid.
 

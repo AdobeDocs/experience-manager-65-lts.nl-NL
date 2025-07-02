@@ -1,17 +1,15 @@
 ---
 title: Gebruikers toevoegen en configureren
 description: Met de instellingen voor gebruikersbeheer in de beheerconsole kunt u gebruikers maken of verwijderen en andere gebruikersinstellingen configureren.
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
@@ -41,10 +39,6 @@ Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijz
 
 1. (Optioneel) Als u rollen wilt toewijzen aan de gebruiker, klikt u op **[!UICONTROL Find Roles]**, schakelt u het selectievakje in voor de rollen die u wilt toewijzen en klikt u vervolgens op **[!UICONTROL OK]** .
 1. Klik op **[!UICONTROL Finish]**.
-
-   >[!NOTE]
-   >
-   >Als u om het even welke login kwestie met de gebruiker tegenkomt, zie [ AEM Forms op gebruiker JEE er niet in slaagt op AEM Forms op OSGi zij ](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html) aan te melden.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -125,8 +119,8 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 1. Voer de volgende taken uit om te zoeken naar de gebruiker die u wilt bewerken:
 
    * Typ in het vak **[!UICONTROL Find]** de zoekcriteria.
-   * Selecteer **[!UICONTROL Name]** , **[!UICONTROL Email]** of **[!UICONTROL User ID]** in de lijst **[!UICONTROL Using]** .
-   * Selecteer **[!UICONTROL Users]** in de **[!UICONTROL In list]** .
+   * Selecteer **[!UICONTROL Using]** , **[!UICONTROL Name]** of **[!UICONTROL Email]** in de lijst **[!UICONTROL User ID]** .
+   * Selecteer **[!UICONTROL In list]** in de **[!UICONTROL Users]** .
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Find]** .
 
 1. Klik op de gebruiker die u wilt bewerken.
@@ -154,8 +148,8 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 1. Voer de volgende taken uit om te zoeken naar de gebruiker die u wilt verwijderen:
 
    * Typ in het vak **[!UICONTROL Find]** de zoekcriteria.
-   * Selecteer **[!UICONTROL Name]** , **[!UICONTROL Email]** of **[!UICONTROL User ID]** in de lijst **[!UICONTROL Using]** .
-   * Selecteer **[!UICONTROL Users]** in de **[!UICONTROL In list]** .
+   * Selecteer **[!UICONTROL Using]** , **[!UICONTROL Name]** of **[!UICONTROL Email]** in de lijst **[!UICONTROL User ID]** .
+   * Selecteer **[!UICONTROL In list]** in de **[!UICONTROL Users]** .
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Find]** .
 
 1. Selecteer het selectievakje voor de gebruiker, klik op **[!UICONTROL Delete]** en klik op **[!UICONTROL OK]** .
@@ -171,11 +165,11 @@ Als een gebruiker zonder de vereiste AEM-formulieren en CQ-machtigingen zich pro
 * Correspondentenbeheeroplossing
 * AEM-formulieren Workspace
 
-  ***nota &#x200B;**: De Werkruimte van Flex wordt afgekeurd voor de vormenversie van AEM.*
+  ***nota **: De Werkruimte van Flex wordt afgekeurd voor de vormenversie van AEM.*
 
 * formulierbeheer
 * Procesrapportage
 
 CQ verstrekt een mechanisme om standaard 404 manager jsp met voeten te treden.
 
-Voor details op hoe te om de fout behandelende pagina aan te passen, zie [ Aanpassende Pagina&#39;s die door de Handler van de Fout ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) in de documentatie van Adobe Experience Manager worden getoond.
+Voor details op hoe te om de fout behandelende pagina aan te passen, zie [ Aanpassende Pagina&#39;s die door de Handler van de Fout ](/help/sites-developing/customizing-errorhandler-pages.md) in de documentatie van Adobe Experience Manager worden getoond.

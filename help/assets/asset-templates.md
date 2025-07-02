@@ -1,14 +1,13 @@
 ---
 title: Elementsjablonen
 description: Leer over de malplaatjes van Activa in  [!DNL Adobe Experience Manager Assets]  en hoe te om activamalplaatjes te gebruiken om marketing onderpand tot stand te brengen.
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
@@ -41,7 +40,7 @@ U kunt het bijgewerkte bestand in de bovenliggende map exporteren in de indeling
 
 Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals brochures, vliegers en advertenties voor een komende campagne en wereldwijd wilt delen met verkooppunten. Het creëren van onderpand dat op een malplaatje wordt gebaseerd helpt een verenigde klantenervaring over kanalen leveren. Ontwerpers kunnen de campagnemalplaatjes (enig-pagina of multi-page) tot stand brengen gebruikend een creatieve oplossing, zoals [!DNL InDesign] en de malplaatjes uploaden aan [!DNL Experience Manager Assets] voor u. Voordat u een hulpstuk maakt, moet u een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben in [!DNL Experience Manager] .
 
-1. Selecteer [!UICONTROL Assets] in de interface van [!DNL Experience Manager] .
+1. Selecteer [!DNL Experience Manager] in de interface van [!UICONTROL Assets] .
 
 1. Kies uit de opties **[!UICONTROL Templates]** .
 
@@ -124,10 +123,8 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het ook ope
    >
    >Ga als volgt te werk om [!DNL Experience Manager] in te schakelen om afbeeldingen op te lossen:
    >
-   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/nl/indesign/using/graphics-links.html)).
+   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Koppel [!DNL Experience Manager] aan uw lokale bestandssysteem en wijs vervolgens ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager] .
-   >
-   >Voor meer informatie rond het werken met [!DNL InDesign] documenten, zie [ beste praktijken om met de documenten van InDesign in Experience Manager ](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html) te werken.
 
 1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]** .
 1. Het hulpstuk wordt gecreeerd in de omslag die u met begon. Als u de vertoningen wilt weergeven, opent u het desbetreffende element en kiest u **[!UICONTROL Renditions]** in de lijst GlobalNav.

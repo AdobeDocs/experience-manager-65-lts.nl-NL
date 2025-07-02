@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8aeacdb7-68a7-476f-a725-f9ad7406cc9c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 02b9eb98d1fdf1b090166a6ae7c0a4379487d2e1
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ A *referentie* bevat uw privé zeer belangrijke informatie nodig voor het ondert
 
 * Acrobat Reader DC-extensies gebruiken een referentie om gebruiksrechten voor Adobe Reader in PDF-documenten in te schakelen. (Zie [ Vormende geloofsbrieven voor gebruik met de uitbreidingen van gelijkstroom van de Lezer van de Acrobaat ](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
 * U kunt Rights Management zo configureren dat deze alleen aanmeldingsgegevens van vertrouwde uitgevers weergeeft voor gebruik in Acrobat. (Zie [ de vertoningsmontages van Rights Management ](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings) vormen.) De Gemeenschappelijke Naam (CN) moet in het certificaat aanwezig zijn.
-* De handtekeningservice heeft toegang tot certificaten en referenties. Voor details op de dienst van de Handtekening, zie {de Verwijzing van de Diensten 0} [&#128279;](https://www.adobe.com/go/learn_aemforms_services_65).
+* De handtekeningservice heeft toegang tot certificaten en referenties. Voor details op de dienst van de Handtekening, zie {de Verwijzing van de Diensten 0} [.](https://www.adobe.com/go/learn_aemforms_services_65)
 
 **die een paarsleutel** produceren
 
@@ -35,8 +35,6 @@ AEM-formulieren bieden geen enkele optie om een sleutelpaar te genereren. U kunt
 [ https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 
 [ https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
-
-[ https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
 De volgende handtekeningtypen worden ondersteund en kunnen worden geïmporteerd in AEM-formulieren:
 

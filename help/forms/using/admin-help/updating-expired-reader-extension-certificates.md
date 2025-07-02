@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 83dbd00e-28ad-4a2e-ac22-3658fb6f639b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 7a1bbcb84a0be301bba4473f30ca4a8d9ea3f906
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ A. Op basis van de herbeoordeling van de situatie blijven alle PDF-documenten di
 
 **Q. Wie moet ik contacteren als ik extra vragen heb?**
 
-A. U kunt [ Steun van Adobe ](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#support) contacteren of een steunkaartje opheffen.
+A. U kunt [ Steun van Adobe ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) contacteren of een steunkaartje opheffen.
 
 **Q. Wat gebeurt er als ik mijn certificaat niet vóór 7 januari 2023 bijwerk?**
 
@@ -46,7 +46,7 @@ A. De beschrijving van de nieuwe certificaten van de Uitbreidingen van Acrobat R
 
 **Q. Hoe verkrijg ik de recentste certificaten?**
 
-A. Alle gerechtigde Klanten van Forms (met actieve vergunning) kunnen de nieuwe certificaten (certificaten downloaden die op &quot;Adobe Root CA G2&quot;worden gebaseerd) van de [ Adobe Vergunnende Website ](https://licensing.adobe.com/). Als u niet het certificaat op de Website van het Verlenen van vergunningen van Adobe kunt vinden, contacteer [ Steun van Adobe ](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager&amp;lang=en#support) of ophef een steunkaartje.
+A. Alle gerechtigde Klanten van Forms (met actieve vergunning) kunnen de nieuwe certificaten (certificaten downloaden die op &quot;Adobe Root CA G2&quot;worden gebaseerd) van de [ Adobe Vergunnende Website ](https://licensing.adobe.com/). Als u niet het certificaat op de Website van het Verlenen van vergunningen van Adobe kunt vinden, contacteer [ Steun van Adobe ](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support) of ophef een steunkaartje.
 
 **Q. Werken mijn PDF-documenten die zijn uitgebreid met certificaten die zijn uitgegeven door &quot;Adobe Root CA&quot; (de oude certificeringsinstantie) nog steeds na 7 januari 2023?**
 
@@ -54,11 +54,11 @@ A. Ja, alle PDF-documenten die vóór 7 januari 2023 zijn uitgebreid met product
 
 **Q. Welke versie van Adobe Acrobat Reader is vereist om PDF-documenten te blijven gebruiken die zijn uitgebreid met certificaten die zijn uitgegeven door &quot;Adobe Root CA&quot; (de oude certificeringsinstantie)?**
 
-A. Adobe Acrobat Reader 2020 of hoger is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA&quot; (de oude certificeringsinstantie). Dit is de ondersteunde versie van Acrobat Reader op het moment van publicatie van dit document. Als u a [ niet-gesteunde versie van Adobe Acrobat ](https://helpx.adobe.com/nl/support/programs/eol-matrix.html) gebruikt, adviseert Adobe dat u [ de recentste versie van Adobe Acrobat Reader ](https://get.adobe.com/reader/) downloadt en installeert.
+A. Adobe Acrobat Reader 2020 of hoger is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA&quot; (de oude certificeringsinstantie). Dit is de ondersteunde versie van Acrobat Reader op het moment van publicatie van dit document. Als u a [ niet-gesteunde versie van Adobe Acrobat ](https://helpx.adobe.com/support/programs/eol-matrix.html) gebruikt, adviseert Adobe dat u [ de recentste versie van Adobe Acrobat Reader ](https://get.adobe.com/reader/) downloadt en installeert.
 
 **Q. Welke versie van Adobe Acrobat Reader wordt vereist om de documenten van PDF verder te gebruiken die met certificaten worden uitgebreid die van &quot;Adobe Root CA 2&quot;(de nieuwe certificaatautoriteit) worden uitgegeven?**
 
-A. Adobe Acrobat Reader 2020 of hoger is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA 2&quot; (de nieuwe certificeringsinstantie). Als u a [ niet-gesteunde versie van Adobe Acrobat Reader ](https://helpx.adobe.com/nl/support/programs/eol-matrix.html) gebruikt, adviseert Adobe dat u [ de recentste versie van Adobe Acrobat Reader ](https://get.adobe.com/reader/) downloadt en installeert.
+A. Adobe Acrobat Reader 2020 of hoger is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA 2&quot; (de nieuwe certificeringsinstantie). Als u a [ niet-gesteunde versie van Adobe Acrobat Reader ](https://helpx.adobe.com/support/programs/eol-matrix.html) gebruikt, adviseert Adobe dat u [ de recentste versie van Adobe Acrobat Reader ](https://get.adobe.com/reader/) downloadt en installeert.
 
 **Q. Kan ik een oud certificaat van de Uitbreidingen van Acrobat Reader schrappen en een nieuwe toevoegen op een Server van Adobe Experience Manager Forms terwijl het blijven gebruiken van de bestaande alias?**
 
@@ -74,7 +74,7 @@ A. Ja, hetzelfde Acrobat Reader Extensions-certificaat kan in meerdere omgevinge
 
 **Q. Hoe kan ik de gebruiksrechten controleren die op een PDF-document zijn toegepast?**
 
-A. U kunt [ getDocumentUsageRights ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API gebruiken om de informatie over de gebruiksrechten terug te winnen die op een document van PDF worden toegepast.
+A. U kunt [ getDocumentUsageRights ](/help/forms/developing/acrobat-reader-dc-extensions-service.md) API gebruiken om de informatie over de gebruiksrechten terug te winnen die op een document van PDF worden toegepast.
 
 **Q. Hoe kan ik het wachtwoord van een Acrobat Reader Extensions-certificaatbestand wijzigen?**
 
@@ -190,4 +190,4 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=nl-NL).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).  -->

@@ -1,16 +1,15 @@
 ---
 title: Digitale elementen en afbeeldingen zoeken in  [!DNL Adobe Experience Manager]
 description: Leer hoe te om de vereiste activa in  [!DNL Adobe Experience Manager]  te vinden door het paneel van Filters te gebruiken, en hoe te om de activa te gebruiken die in onderzoek verschijnen.
-contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
 workflow-type: tm+mt
-source-wordcount: '5593'
+source-wordcount: '5588'
 ht-degree: 3%
 
 ---
@@ -19,8 +18,8 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
+| AEM 6.5 LTS | Dit artikel |
 
 [!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het detecteren van elementen die u helpen een hogere snelheid van de inhoud te bereiken. Uw teams kunnen tijd aan markt met naadloze, intelligente onderzoekservaring verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via de gebruikersinterface van [!DNL Assets] of andere apps en oppervlakken helpen deze gebruiksgevallen te verhelpen.
 
@@ -124,9 +123,9 @@ U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoeko
 1. Geef in het vak **[!UICONTROL Search Promote]** een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik vervolgens op **[!UICONTROL Add]** . U kunt meerdere trefwoorden op dezelfde manier opgeven.
 1. Klik op **[!UICONTROL Save & Close]**. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
 
-U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Voor gedetailleerde info, zie [ onderzoek in  [!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL).
+U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Voor gedetailleerde info, zie [ onderzoek in  [!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3444067/?quality=6&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: Begrijp hoe de onderzoeksresultaten gerangschikt zijn en hoe de rang kan worden beïnvloed.*
 
@@ -209,15 +208,15 @@ Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 
 ### Digitale middelen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
 
-Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets] zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve personen kunnen naadloos door elementen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de apps: [!DNL Adobe Photoshop] , [!DNL Adobe Illustrator] en [!DNL Adobe InDesign] . [!DNL Adobe Creative Cloud] Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [ onderzoek en doorblader activa ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) gebruikend de Verbinding van Activa van Adobe.
+Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets] zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve personen kunnen naadloos door elementen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de apps: [!DNL Adobe Creative Cloud] , [!DNL Adobe Photoshop] en [!DNL Adobe Illustrator] . [!DNL Adobe InDesign] Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [ onderzoek en doorblader activa ](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) gebruikend de Verbinding van Activa van Adobe.
 
 ### Digitale middelen zoeken in de [!DNL Experience Manager] bureaubladtoepassing {#desktop-app}
 
-Creatieve professionals gebruiken de desktop-app om [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar en beschikbaar te maken op hun lokale bureaublad (Win of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt standaardzoekopdrachten met een of meer trefwoorden, `*` en `?` jokertekens en `AND` operator. Zie [ doorbladeren, onderzoek, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets) in Desktop app.
+Creative-professionals gebruiken de bureaubladtoepassing om de [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar te maken en beschikbaar te maken op hun lokale bureaublad (Win of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt standaardzoekopdrachten met een of meer trefwoorden, `*` en `?` jokertekens en `AND` operator. Zie [ doorbladeren, onderzoek, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in Desktop app.
 
 ### Digitale middelen zoeken in [!DNL Brand Portal] {#brand-portal}
 
-Line-of-business gebruikers en marketers gebruiken Brand Portal om de goedgekeurde digitale middelen efficiënt en veilig te delen met hun uitgebreide interne teams, partners en wederverkopers. Zie [ onderzoeksactiva op Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=nl-NL).
+Line-of-business gebruikers en marketers gebruiken Brand Portal om de goedgekeurde digitale middelen efficiënt en veilig te delen met hun uitgebreide interne teams, partners en wederverkopers. Zie [ onderzoeksactiva op Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### [!DNL Adobe Stock] afbeeldingen zoeken {#adobe-stock1}
 
@@ -239,7 +238,7 @@ De zoekfunctie van [!DNL Experience Manager] ondersteunt het zoeken naar verzame
 
 >[!NOTE]
 >
->De selecteur van activa werd genoemd [ activa plukker ](https://helpx.adobe.com/nl/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Adobe Experience Manager].
+>De selecteur van activa werd genoemd [ activa plukker ](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Adobe Experience Manager].
 
 Met de functie Asset Selector kunt u de DAM-middelen op een speciale manier zoeken, filteren en doorbladeren. Asset Selector is beschikbaar via `https://[aem_server]:[port]/aem/assetpicker.html` . U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
 
@@ -285,7 +284,7 @@ De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#
 ## Zoektips {#tips}
 
 * Gebruik bij het controleren van de revisiestatus van de middelen de juiste optie om te bepalen welke middelen zijn goedgekeurd of welke activa nog moeten worden goedgekeurd.
-* Gebruik de Insights-voorspelling om te zoeken naar ondersteunde middelen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd onder Gebruiksscore, Impressies, Klikken en Mediakanalen waar de elementen categorieën weergeven.
+* Gebruik de Insights-voorspelling om te zoeken naar ondersteunde middelen op basis van hun gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd onder Gebruiksscore, Impressies, Klikken en Mediakanalen waar de elementen categorieën weergeven.
 * Schakel het selectievakje **[!UICONTROL Select All]** in om de gezochte elementen te selecteren. In [!DNL Experience Manager] worden in eerste instantie 100 elementen weergegeven in de kaartweergave en 200 elementen in de lijstweergave. Er worden meer elementen geladen wanneer u door de zoekresultaten schuift. U kunt meer elementen selecteren dan de geladen elementen. Het aantal geselecteerde elementen wordt in de rechterbovenhoek van de pagina met zoekresultaten weergegeven. U kunt de selectie bijvoorbeeld activeren door de geselecteerde elementen te downloaden, de eigenschappen van metagegevens voor de geselecteerde elementen bulksgewijs bij te werken of de geselecteerde elementen aan een verzameling toe te voegen. Wanneer er meer elementen zijn geselecteerd dan worden weergegeven, wordt een actie toegepast op alle geselecteerde elementen of wordt in een dialoogvenster het aantal elementen weergegeven waarop de actie wordt toegepast. Als u een handeling wilt toepassen op de elementen die niet zijn geladen, moet u ervoor zorgen dat alle elementen expliciet zijn geselecteerd.
 * Om naar activa te zoeken die niet de verplichte meta-gegevens bevatten, zie [ verplichte meta-gegevens ](#mandatorymetadata).
 * Zoeken gebruikt alle metagegevensvelden. Een generieke zoekopdracht, zoals zoeken naar 12, retourneert doorgaans veel resultaten. Voor betere resultaten gebruikt u dubbele (geen enkele) aanhalingstekens of zorgt u ervoor dat het getal aangrenzend is aan een woord zonder speciaal teken (bijvoorbeeld `shoe12` ).
@@ -365,11 +364,11 @@ Bij visueel zoeken worden slimme tags gebruikt. Voer de volgende stappen uit nad
    Sla de wijzigingen op.
 
 1. Open `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` en voeg `similarityTags` eigenschap van het type `Boolean` toe met de waarde van `true` .
-1. Pas slimme tags toe op de elementen in de [!DNL Experience Manager] -opslagplaats. Zie [ hoe te om slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=nl-NL#configuring) te vormen.
+1. Pas slimme tags toe op de elementen in de [!DNL Experience Manager] -opslagplaats. Zie [ hoe te om slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring) te vormen.
 1. In CRXDE stelt u in het knooppunt `/oak-index/damAssetLucene` de eigenschap `reindex` in op `true` . Sla de wijzigingen op.
 1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het knooppunt `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items` . Sla de wijzigingen op.
 
-Voor verwante informatie, zie [ slimme markeringen in Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=nl-NL) begrijpen en [ hoe te om slimme markeringen ](/help/assets/enhanced-smart-tags.md) te beheren.
+Voor verwante informatie, zie [ slimme markeringen in Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) begrijpen en [ hoe te om slimme markeringen ](/help/assets/enhanced-smart-tags.md) te beheren.
 
 >[!CAUTION]
 >
@@ -387,7 +386,7 @@ Zakelijke gebruikers, beheerders of DAM-bibliotheken kunnen bepaalde metagegeven
 
 U kunt [!DNL Experience Manager] zo configureren dat de tekst uit de elementen wordt gehaald wanneer gebruikers elementen uploaden, zoals PSD- of PDF-bestanden. [!DNL Experience Manager] indexeert de geëxtraheerde tekst en helpt gebruikers deze elementen te doorzoeken op basis van de geëxtraheerde tekst. Zie [ activa ](/help/assets/manage-assets.md#uploading-assets) uploaden.
 
-Als de tekstextractie te middel-intensief voor uw plaatsing wordt, overweeg [ onbruikbaar makend tekstextractie ](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
+Als de tekstextractie te hulpbronnenintensief wordt voor uw implementatie, kunt u de tekstextractie uitschakelen.
 
 ### Aangepaste voorspelling van filterzoekresultaten {#custompredicates}
 
@@ -492,6 +491,5 @@ Verwante en losse elementen die in de zoekresultaten worden weergegeven. Selecte
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager]  gids van de onderzoeksimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=nl-NL)
->* [ Geavanceerde configuratie om onderzoeksresultaten ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL) op te voeren
->* [ vorm slimme vertaalonderzoek ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
+>* [[!DNL Experience Manager]  gids van de onderzoeksimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [ Geavanceerde configuratie om onderzoeksresultaten ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost) op te voeren

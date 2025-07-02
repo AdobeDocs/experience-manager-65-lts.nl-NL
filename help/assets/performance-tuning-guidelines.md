@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e432b4e74f453ed222b2a295f1a6ef9e7b409223
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Hoewel Experience Manager op verschillende platforms wordt ondersteund, heeft Ad
 
 ### Tijdelijke map {#temp-folder}
 
-Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. Bijvoorbeeld, in Amazon EC2, kan een [&#128279;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) aandrijving van de 1&rbrace; aandrijving 0&rbrace; worden gebruikt voor de tijdelijke omslag.
+Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. Bijvoorbeeld, in Amazon EC2, kan een [ aandrijving van de 1} aandrijving 0} worden gebruikt voor de tijdelijke omslag.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
 
 Ervan uitgaande dat de server over voldoende geheugen beschikt, configureert u een RAM-station. Voer in Linux de volgende opdrachten uit om een 8 GB RAM-station te maken:
 
@@ -82,7 +82,7 @@ Wanneer u grote hoeveelheden assets uploadt naar [!DNL Adobe Experience Manager]
 
 Vorm de als buffer opgetreden voor geheim voorgeheugengrootte in de Console van het Web OSGi. Stel bij `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` de eigenschap `cq.dam.image.cache.max.memory` in bytes in. 1073741824 is bijvoorbeeld 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Van Experience Manager 6.1 SP1, als u een `sling:osgiConfig` knoop voor het vormen van dit bezit gebruikt, zorg ervoor om het gegevenstype aan Lang te plaatsen. Voor meer details, zie [ CQBufferedImageCache heap tijdens Activa uploads ](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html) verbruikt.
+Van Experience Manager 6.1 SP1, als u een `sling:osgiConfig` knoop voor het vormen van dit bezit gebruikt, zorg ervoor om het gegevenstype aan Lang te plaatsen.
 
 ### Gedeelde gegevensopslag {#shared-data-stores}
 
@@ -243,7 +243,7 @@ Bij het repliceren van elementen naar een groot aantal publicatie-instanties, bi
 
 ## Indexen zoeken {#search-indexes}
 
-Installeer [ de recentste Packs van de Dienst ](/help/release-notes/release-notes.md) en op prestaties betrekking hebbende hotfixes zoals die vaak updates aan systeemindexen omvatten. Zie [ prestaties het stemmen uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en) voor sommige indexoptimalisaties.
+Installeer [ de recentste Packs van de Dienst ](/help/release-notes/release-notes.md) en op prestaties betrekking hebbende hotfixes zoals die vaak updates aan systeemindexen omvatten.
 
 Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Voor details, zie [ methodologie voor het analyseren van langzame vragen ](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) en [ crefting douaneindexen ](/help/sites-deploying/queries-and-indexing.md). Voor extra inzichten rond vraag en index beste praktijken, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -258,7 +258,7 @@ Sommige optimalisaties kunnen worden uitgevoerd op Oak-indexconfiguraties die de
 
 Als uw gebruikers geen full-text onderzoek van activa hoeven te doen, bijvoorbeeld, doorzoekend door tekst in de documenten van PDF, dan onbruikbaar maken. U verbetert indexprestaties door full-text indexering onbruikbaar te maken. Voer de volgende stappen uit om het uitnemen van [!DNL Apache Lucene] -tekst uit te schakelen:
 
-1. Open [!UICONTROL Package Manager] in de [!DNL Experience Manager] -interface.
+1. Open [!DNL Experience Manager] in de [!UICONTROL Package Manager] -interface.
 1. Upload en installeer het pakket beschikbaar bij [ disable_indexingbinarytextraction-10.zip ](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Totaal raden {#guess-total}

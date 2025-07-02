@@ -2,16 +2,13 @@
 title: AEM-formuliergegevens herstellen
 description: In dit document worden de stappen beschreven die zijn vereist om de gegevens van AEM-formulieren te herstellen.
 contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -98,7 +95,7 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
 
    * **Zelfstandig**
 
-     *herstel auteur en publiceer instanties*: Als een ramp voorkomt, kunt u de bewaarplaats aan de laatste reservekopie herstellen door de stappen uit te voeren die in [ worden beschreven Steun en herstelt.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *herstel auteur en publiceer instanties*: Als een ramp voorkomt, kunt u de bewaarplaats aan de laatste reservekopiestatus herstellen door de stappen uit te voeren die in [ worden beschreven Steun en herstelt ](/help/sites-administering/backup-and-restore.md).
 
      De volledige restauratie van het Author-knooppunt controleert ook het herstel van Forms Manager- en AEM Forms Workspace-gegevens.
 
