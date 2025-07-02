@@ -336,9 +336,9 @@ Deze koptekst geeft het volgende aan:
 >**x-Adobe-Smart-Imaging = -1 met WebP die wordt geleverd**
 >
 >Als de waarde van `X-Adobe-Smart-Imaging` -1 is en WebP nog steeds wordt geleverd, is Smart Imaging actief. De groottevoordelen zijn echter niet berekend vanwege een verouderde cache. U kunt `cache=update` (slechts één keer) in de URL van de afbeelding gebruiken om dit probleem op te lossen.
->>Een voorbeeld van de modifier:
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>Als u de gehele cache wilt ongeldig maken, moet u een ondersteuningscase maken.
+>&#x200B;>Een voorbeeld van de modifier:
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>Als u de gehele cache wilt ongeldig maken, moet u een ondersteuningscase maken.
 
 +++
 
