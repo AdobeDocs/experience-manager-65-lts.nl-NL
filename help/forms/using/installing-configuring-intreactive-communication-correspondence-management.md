@@ -134,7 +134,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. Het gebrek URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-1. Onderzoek en open **Configuratie van de Firewall 0} Deserialization.**
+1. Onderzoek en open **Configuratie van de Firewall 0&rbrace; Deserialization.**
 1. Voeg het {**pakket 0} sun.util.endar aan het** lijst van gewenste personen **gebied toe.** Klik op Opslaan.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 

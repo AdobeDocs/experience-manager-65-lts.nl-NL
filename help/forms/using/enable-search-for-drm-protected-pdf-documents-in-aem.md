@@ -36,7 +36,7 @@ Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op versc
 * Voeg het {*pakket 0} sun.util.endar aan de lijst van gewenste personen toe.* Voer de volgende stappen uit om het pakket aan de lijst van gewenste personen toe te voegen:
 
    1. Open AEM-webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-   1. Bepaal en open **Configuratie van de Firewall 0} Deserialization.**
+   1. Bepaal en open **Configuratie van de Firewall 0&rbrace; Deserialization.**
 
    1. Voeg het pakket sun.util.agenda aan de Gevoegde op lijst van gewenste personen klassen of het pakket prefixes gebied toe en klik **sparen**.
 

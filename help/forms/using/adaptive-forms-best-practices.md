@@ -363,11 +363,11 @@ Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk 
 
 De AEM Forms Rule Editor biedt een visuele interface voor het maken en beheren van regels, waardoor er minder behoefte is aan uitgebreide codering. Het kan vooral nuttig voor bedrijfsgebruikers of vormontwerpers zijn die geen geavanceerde programmeringsvaardigheden kunnen hebben maar bedrijfsregels binnen de vormen moeten bepalen en handhaven, hier bespreken wij weinig gebruiksgevallen waar de regelredacteur u toestaat:
 
-* <!-- Allows you --> Om bedrijfsregels voor uw vormen zonder de behoefte aan uitgebreide programmering te bepalen.
-* <!-- Use the Rule Editor when you need --> Voorwaardelijke logica implementeren in uw formulieren. Dit omvat het tonen of verbergen van formulierelementen, het wijzigen van veldwaarden op basis van bepaalde voorwaarden of het dynamisch wijzigen van het gedrag van uw formulieren.
-* <!--When you want --> Om de regels van de gegevensbevestiging op vormbijdragen af te dwingen, kan de Redacteur van de Regel worden gebruikt om bevestigingsvoorwaarden te bepalen.
-* <!-- When you need --> Als u uw formulieren wilt integreren met externe gegevensbronnen (FDM) of services, kunt u in de Regeleditor regels definiëren voor het ophalen, weergeven of bewerken van gegevens tijdens formulierinteracties.
-* <!-- If you want -->Als u dynamische en interactieve formulieren wilt maken die reageren op handelingen van gebruikers, kunt u in de Regeleditor regels definiëren die het gedrag van formulierelementen in real-time bepalen.
+* &#x200B;<!-- Allows you --> Om bedrijfsregels voor uw vormen zonder de behoefte aan uitgebreide programmering te bepalen.
+* &#x200B;<!-- Use the Rule Editor when you need --> Voorwaardelijke logica implementeren in uw formulieren. Dit omvat het tonen of verbergen van formulierelementen, het wijzigen van veldwaarden op basis van bepaalde voorwaarden of het dynamisch wijzigen van het gedrag van uw formulieren.
+* &#x200B;<!--When you want --> Om de regels van de gegevensbevestiging op vormbijdragen af te dwingen, kan de Redacteur van de Regel worden gebruikt om bevestigingsvoorwaarden te bepalen.
+* &#x200B;<!-- When you need --> Als u uw formulieren wilt integreren met externe gegevensbronnen (FDM) of services, kunt u in de Regeleditor regels definiëren voor het ophalen, weergeven of bewerken van gegevens tijdens formulierinteracties.
+* &#x200B;<!-- If you want -->Als u dynamische en interactieve formulieren wilt maken die reageren op handelingen van gebruikers, kunt u in de Regeleditor regels definiëren die het gedrag van formulierelementen in real-time bepalen.
 
 De Redacteur van de regel is beschikbaar voor zowel de Componenten van de Stichting van AEM Forms als de Componenten van de Kern.
 
