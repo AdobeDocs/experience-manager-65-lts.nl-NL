@@ -1,17 +1,14 @@
 ---
 title: AEM toestaan te zoeken naar documenten die zijn beveiligd door PDF en Microsoft Office
 description: Leer hoe u native AEM-zoekopdrachten kunt uitvoeren voor full-text zoekopdrachten in met DRM beveiligde PDF-documenten.
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -49,7 +46,7 @@ Een veilige verbinding laat naadloze stroom van informatie tussen AEM Forms op J
 
 ### AEM Forms Client SDK-bundel configureren met wederzijdse verificatie {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [ CAC en Wederzijdse Authentificatie ](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Schakel wederzijdse verificatie in voor AEM Forms op JEE.
 1. Open AEM Configuration Manager en meld u aan als beheerder. De standaard-URL is https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Zoek en open de AEM Forms Client SDK-bundel. Geef waarde op voor de volgende eigenschappen:
 

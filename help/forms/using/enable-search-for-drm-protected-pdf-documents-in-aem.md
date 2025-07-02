@@ -1,18 +1,13 @@
 ---
 title: AEM toestaan te zoeken naar met documentbeveiliging beveiligde PDF-documenten
 description: Leer hoe u native AEM-zoekopdrachten kunt uitvoeren voor full-text zoekopdrachten in met DRM beveiligde PDF-documenten.
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -28,7 +23,7 @@ Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op versc
 
 * Als u AEM Forms gebruikt op OSGi:
 
-   * Installeer [ het pakket van de Indexer van de Veiligheid van het Document van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
+   * Installeer [ het pakket van de Indexer van de Veiligheid van het Document van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
 
    * Controleer of een AEM Forms op de JEE-server actief is en of documentbeveiliging op de overeenkomstige AEM Forms op de JEE-server is geïnstalleerd. Het AEM-formulier op de JEE-server is vereist om het beveiligde document te indexeren.
 
@@ -41,7 +36,7 @@ Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op versc
 * Voeg het {*pakket 0} sun.util.endar aan de lijst van gewenste personen toe.* Voer de volgende stappen uit om het pakket aan de lijst van gewenste personen toe te voegen:
 
    1. Open AEM-webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-   1. Bepaal en open **Configuratie van de Firewall 0&rbrace; Deserialization.**
+   1. Bepaal en open **Configuratie van de Firewall 0} Deserialization.**
 
    1. Voeg het pakket sun.util.agenda aan de Gevoegde op lijst van gewenste personen klassen of het pakket prefixes gebied toe en klik **sparen**.
 
@@ -66,7 +61,7 @@ U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot st
 
 #### Adobe LiveCycle Client SDK-bundel configureren met wederzijdse verificatie {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [ CAC en Wederzijdse Authentificatie ](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Schakel wederzijdse verificatie in voor AEM Forms op JEE.
 1. Open AEM-webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
 1. Bepaal en open de plaats van **Adobe LiveCycle Cliënt SDK** Bundel. Geef waarde op voor de volgende eigenschappen:
 

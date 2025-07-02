@@ -1,22 +1,19 @@
 ---
 title: Aanbevolen werkwijzen voor het werken met adaptieve formulieren
 description: Hierin worden de beste praktijken beschreven voor het opzetten van een AEM Forms-project, het ontwikkelen van adaptieve formulieren en het optimaliseren van de prestaties voor het AEM Forms-systeem.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
-source-git-commit: fef6317a0faf8d7324a83a36a3b441bbda66f970
+source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5536'
+source-wordcount: '5535'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen werkwijzen voor het werken met adaptieve formulieren {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -99,9 +96,9 @@ Voor meer informatie, zie [ een adaptieve vorm ](/help/forms/using/creating-adap
 
 ### Formuliersjablonen maken
 
-U kunt een adaptieve vorm tot stand brengen gebruikend de vormmalplaatjes die in **Browser van de Configuratie** worden toegelaten. Om de vormmalplaatjes toe te laten, zie [ Creërend Aangepast Malplaatje van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+U kunt een adaptieve vorm tot stand brengen gebruikend de vormmalplaatjes die in **Browser van de Configuratie** worden toegelaten. Om de vormmalplaatjes toe te laten, zie [ Creërend Aangepast Malplaatje van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-De formuliersjablonen kunnen ook worden geüpload vanuit Adaptief formulierpakketten die zijn gemaakt op een andere auteur. De malplaatjes van de vorm worden ter beschikking gesteld door [ aemforms-verwijzingen te installeren -* pakketten ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Enkele aanbevolen best practices zijn:
+De formuliersjablonen kunnen ook worden geüpload vanuit Adaptief formulierpakketten die zijn gemaakt op een andere auteur. De malplaatjes van de vorm worden ter beschikking gesteld door [ aemforms-verwijzingen te installeren -* pakketten ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Enkele aanbevolen best practices zijn:
 
 * **nosamplcontent** runmode wordt geadviseerd slechts voor auteur en niet voor publicatieknooppunten.
 * Elementen zoals adaptieve formulieren, thema&#39;s, sjablonen of cloudconfiguraties worden alleen via auteurknooppunten gemaakt. Deze kunnen worden gepubliceerd op de geconfigureerde publicatieknooppunten.
@@ -137,7 +134,7 @@ De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur v
 * Verwijs componenten door relatieve unieke hiërarchie om het even welk conflict te vermijden. Bijvoorbeeld `parentName.fieldName` .
 
 * Wanneer u complexe of veelgebruikte regels afhandelt, kunt u bedrijfslogica als functies in een aparte clientbibliotheek schrijven die u kunt opgeven en hergebruiken voor adaptieve formulieren. De clientbibliotheek moet een zelfstandige bibliotheek zijn en mag geen externe afhankelijkheden hebben, behalve op jQuery en Underscore.js. U kunt de cliëntbibliotheek ook gebruiken om [ server-zijbevestiging ](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) van voorgelegde vormgegevens af te dwingen.
-* Adaptieve formulieren bieden een set API&#39;s waarmee u kunt communiceren en waarmee u handelingen kunt uitvoeren op adaptieve formulieren. Enkele belangrijke API&#39;s zijn als volgt. Voor meer informatie, zie [ de API van de Bibliotheek van JavaScript verwijzing voor Aanpassings Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+* Adaptieve formulieren bieden een set API&#39;s waarmee u kunt communiceren en waarmee u handelingen kunt uitvoeren op adaptieve formulieren. Enkele belangrijke API&#39;s zijn als volgt. Voor meer informatie, zie [ de API van de Bibliotheek van JavaScript verwijzing voor Aanpassings Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
    * `guideBridge.reset()`: hiermee wordt een formulier opnieuw ingesteld.
    * `guideBridge.submit()`: verzendt een formulier.
@@ -152,7 +149,7 @@ De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur v
       * `field.enabled` om een veld in of uit te schakelen.
       * `field.visible` om de zichtbaarheid van een veld te wijzigen.
 
-* Auteurs van adaptieve formulieren moeten mogelijk JavaScript-code schrijven om bedrijfslogica in een formulier te maken. Hoewel JavaScript krachtig en effectief is, is het waarschijnlijk dat het de veiligheidsverwachtingen in gevaar kan brengen. Daarom moet u ervoor zorgen dat de auteur van het formulier een vertrouwd persoon is en dat er processen zijn om de JavaScript-code te controleren en goed te keuren voordat een formulier in productie wordt genomen. De beheerder kan de toegang tot de toegang van de regelredacteur tot gebruikersgroepen beperken die op hun rol of functie wordt gebaseerd. Zie {de toegang van de de regelredacteur van 0} Verlenen tot uitgezochte gebruikersgroepen [&#128279;](/help/forms/using/rule-editor-access-user-groups.md).
+* Auteurs van adaptieve formulieren moeten mogelijk JavaScript-code schrijven om bedrijfslogica in een formulier te maken. Hoewel JavaScript krachtig en effectief is, is het waarschijnlijk dat het de veiligheidsverwachtingen in gevaar kan brengen. Daarom moet u ervoor zorgen dat de auteur van het formulier een vertrouwd persoon is en dat er processen zijn om de JavaScript-code te controleren en goed te keuren voordat een formulier in productie wordt genomen. De beheerder kan de toegang tot de toegang van de regelredacteur tot gebruikersgroepen beperken die op hun rol of functie wordt gebaseerd. Zie {de toegang van de de regelredacteur van 0} Verlenen tot uitgezochte gebruikersgroepen [.](/help/forms/using/rule-editor-access-user-groups.md)
 * U kunt expressies in regels gebruiken om adaptieve formulieren dynamisch te maken. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor meer informatie over uitdrukkingen en beste praktijken rond hen, zie [ Aangepaste vormuitdrukkingen ](/help/forms/using/adaptive-form-expressions.md).
 
 * Adobe raadt u aan synchrone bewerkingen uit JavaScript te gebruiken in plaats van asynchrone bewerkingen wanneer u regels maakt met de regeleditor. Het gebruik van asynchrone bewerkingen wordt sterk afgeraden. Als u zich echter in een situatie bevindt waarin asynchrone bewerkingen onvermijdelijk zijn, is het van essentieel belang dat u de afsluitfuncties van JavaScript implementeert. Door dit te doen, kunt u effectief tegen om het even welke potentiële rassenvoorwaarden beschermen, ervoor zorgen uw regelimplementaties optimale prestaties leveren en stabiliteit handhaven door heel.
@@ -315,7 +312,7 @@ Vaak moet u AEM-projecten van de ene omgeving naar de andere verplaatsen. Enkele
 * Implementeer productpakketten en patches handmatig en in de opgegeven volgorde in de nieuwe omgeving.
 * Implementeer projectspecifieke codepakketten en -bundels handmatig en als een afzonderlijk pakket of bundel op de nieuwe AEM-server.
 * (*AEM Forms op JEE slechts*) stelt LCAs en DSCs manueel op de server van Forms Workflow op.
-* Het gebruik [&#128279;](/help/forms/using/import-export-forms-templates.md) functionaliteit van de uitvoer-Invoer  om activa naar het nieuwe milieu te bewegen. U kunt de replicatieagent ook vormen en de activa publiceren.
+* Het gebruik [ functionaliteit van de uitvoer-Invoer ](/help/forms/using/import-export-forms-templates.md) om activa naar het nieuwe milieu te bewegen. U kunt de replicatieagent ook vormen en de activa publiceren.
 * Wanneer u een upgrade uitvoert, vervangt u alle verouderde API&#39;s en functies door nieuwe API&#39;s en functies.
 
 ### AEM configureren {#configuring-aem}
@@ -323,13 +320,13 @@ Vaak moet u AEM-projecten van de ene omgeving naar de andere verplaatsen. Enkele
 U kunt het beste AEM configureren om de algehele prestaties te verbeteren:
 
 * Compressie van HTML-clientbibliotheek voor JavaScript en CSS vanuit Felix Console inschakelen.
-* Plaats alle clientbibliotheken in `/etc.clientlibs/fd` en eventuele extra aangepaste clientbibliotheken in AEM Dispatcher om de reactiesnelheid en beveiliging van uw gepubliceerde formulieren te verbeteren. Voor meer informatie, zie [ Dispatcher ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher.html).
+* Plaats alle clientbibliotheken in `/etc.clientlibs/fd` en eventuele extra aangepaste clientbibliotheken in AEM Dispatcher om de reactiesnelheid en beveiliging van uw gepubliceerde formulieren te verbeteren. Voor meer informatie, zie [ Dispatcher ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Plaats geen `/content/forms/af/` - en `/content/dam/formsanddocuments/*` -paden in de cache. voor gedetailleerde informatie over het vormen van adaptieve vormen caching, zie [ Aangepaste vormen in cache plaatsen ](/help/forms/using/configure-adaptive-forms-cache.md).
 
 * HTML inschakelen via de compressiemodule van de webserver. Voor meer informatie, zie [ Prestaties het stemmen van de server van AEM Forms ](/help/forms/using/performance-tuning-aem-forms.md).
-* Verhoog de aanroepen per aanvraagconfiguratie voor grote formulieren. Zie [ Optimizing prestaties van grote en complexe vormen ](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Creeer [ pagina&#39;s van de douanefout die door foutenmanager ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html) worden getoond.
+* Verhoog de aanroepen per aanvraagconfiguratie voor grote formulieren. Zie [ Optimizing prestaties van grote en complexe vormen ](#optimizing-performance-of-large-and-complex-forms).
+* Creeer [ pagina&#39;s van de douanefout die door foutenmanager ](/help/sites-developing/customizing-errorhandler-pages.md) worden getoond.
 * Beveiligde AEM Forms-server.
 
    * Gebruik de uitvoermodus van `nosamplecontent` om ervoor te zorgen dat er geen voorbeeldinhoud is en dat voorbeeldgebruikers op de productieserver zijn geïmplementeerd. Zie [ Lopend AEM op Productie Klaar Wijze ](/help/sites-administering/production-ready.md).
@@ -366,11 +363,11 @@ Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk 
 
 De AEM Forms Rule Editor biedt een visuele interface voor het maken en beheren van regels, waardoor er minder behoefte is aan uitgebreide codering. Het kan vooral nuttig voor bedrijfsgebruikers of vormontwerpers zijn die geen geavanceerde programmeringsvaardigheden kunnen hebben maar bedrijfsregels binnen de vormen moeten bepalen en handhaven, hier bespreken wij weinig gebruiksgevallen waar de regelredacteur u toestaat:
 
-* &#x200B;<!-- Allows you --> Om bedrijfsregels voor uw vormen zonder de behoefte aan uitgebreide programmering te bepalen.
-* &#x200B;<!-- Use the Rule Editor when you need --> Voorwaardelijke logica implementeren in uw formulieren. Dit omvat het tonen of verbergen van formulierelementen, het wijzigen van veldwaarden op basis van bepaalde voorwaarden of het dynamisch wijzigen van het gedrag van uw formulieren.
-* &#x200B;<!--When you want --> Om de regels van de gegevensbevestiging op vormbijdragen af te dwingen, kan de Redacteur van de Regel worden gebruikt om bevestigingsvoorwaarden te bepalen.
-* &#x200B;<!-- When you need --> Als u uw formulieren wilt integreren met externe gegevensbronnen (FDM) of services, kunt u in de Regeleditor regels definiëren voor het ophalen, weergeven of bewerken van gegevens tijdens formulierinteracties.
-* &#x200B;<!-- If you want -->Als u dynamische en interactieve formulieren wilt maken die reageren op handelingen van gebruikers, kunt u in de Regeleditor regels definiëren die het gedrag van formulierelementen in real-time bepalen.
+* <!-- Allows you --> Om bedrijfsregels voor uw vormen zonder de behoefte aan uitgebreide programmering te bepalen.
+* <!-- Use the Rule Editor when you need --> Voorwaardelijke logica implementeren in uw formulieren. Dit omvat het tonen of verbergen van formulierelementen, het wijzigen van veldwaarden op basis van bepaalde voorwaarden of het dynamisch wijzigen van het gedrag van uw formulieren.
+* <!--When you want --> Om de regels van de gegevensbevestiging op vormbijdragen af te dwingen, kan de Redacteur van de Regel worden gebruikt om bevestigingsvoorwaarden te bepalen.
+* <!-- When you need --> Als u uw formulieren wilt integreren met externe gegevensbronnen (FDM) of services, kunt u in de Regeleditor regels definiëren voor het ophalen, weergeven of bewerken van gegevens tijdens formulierinteracties.
+* <!-- If you want -->Als u dynamische en interactieve formulieren wilt maken die reageren op handelingen van gebruikers, kunt u in de Regeleditor regels definiëren die het gedrag van formulierelementen in real-time bepalen.
 
 De Redacteur van de regel is beschikbaar voor zowel de Componenten van de Stichting van AEM Forms als de Componenten van de Kern.
 

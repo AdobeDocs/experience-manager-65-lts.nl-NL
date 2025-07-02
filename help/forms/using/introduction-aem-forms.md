@@ -5,9 +5,9 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
+source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '950'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=nl-NL) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Dit artikel |
 
 Voor informatie over recentste eigenschappen en verhogingen in AEM Forms, zie [ wat in AEM Forms ](../../forms/using/whats-new.md) nieuw is.
@@ -33,7 +33,7 @@ AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptiev
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](/help/sites-deploying/deploy.md), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ![ de vormenmogelijkheden van AEM ](do-not-localize/4th-draft-updated.gif)
 
@@ -96,7 +96,7 @@ Met name voor mensen in het veld is het handig om gegevens offline vast te legge
 * ECM (Enterprise Content Management Connectors)
 * Ondersteuning voor open standaarden, waaronder XML en SOAP, voor het verbinden van formuliergegevens met bedrijfssystemen
 * De uit-van-de-doos HTML rapporten controleren achterstand, werkrijen, en Zeer belangrijke Indicatoren van Prestaties (KPIs)
-* Aanpasbare dashboards voor real-time inzicht in bedrijfsverrichtingen
+* Aanpasbare dashboards voor real-time insight voor zakelijke activiteiten
 * API voor verbinding met rapportagehulpprogramma&#39;s van derden
 
 ![ Derde ontwerp ](do-not-localize/3rd-draft.gif)

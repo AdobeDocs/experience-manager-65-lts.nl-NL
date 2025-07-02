@@ -1,15 +1,13 @@
 ---
 title: Interactieve communicatie installeren en configureren
 description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken.
-topic-tags: installing
-docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1366'
 ht-degree: 0%
 
 ---
@@ -97,7 +95,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) artikel.
+   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) artikel.
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **begin niet onmiddellijk de server opnieuw.** alvorens de Server van AEM Forms tegen te houden, wacht tot ServiceEvent REGISTERED en ServiceEvent niet GEREGISTREERDE berichten ophouden die in het [ AEM-Installatie-Folder ] /crx-quickstart/logs/error.log- dossier verschijnen en het logboek stabiel is.
 
@@ -136,7 +134,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. Het gebrek URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-1. Onderzoek en open **Configuratie van de Firewall 0&rbrace; Deserialization.**
+1. Onderzoek en open **Configuratie van de Firewall 0} Deserialization.**
 1. Voeg het {**pakket 0} sun.util.endar aan het** lijst van gewenste personen **gebied toe.** Klik op Opslaan.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 
@@ -144,7 +142,7 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Compatibiliteitspakket installeren {#install-compatibility-package}
 
-Interactieve communicatie is de standaard en aanbevolen aanpak om klantcommunicatie tot stand te brengen in AEM 6.5 Forms. Als u hebt bevorderd of van een vorige versie gemigreerd, en van plan bent om brieven (het Beheer van de Correspondentie) te blijven gebruiken, installeer het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+Interactieve communicatie is de standaard en aanbevolen aanpak om klantcommunicatie tot stand te brengen in AEM 6.5 Forms. Als u hebt bevorderd of van een vorige versie gemigreerd, en van plan bent om brieven (het Beheer van de Correspondentie) te blijven gebruiken, installeer het [ pakket van de Verenigbaarheid AEMFD ](/help/forms/using/compatibility-package.md).
 
 Met het compatibiliteitspakket AEMFD kunt u de volgende elementen uit AEM 6.4 Forms, AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.5 Forms gebruiken:
 
@@ -155,7 +153,7 @@ Met het compatibiliteitspakket AEMFD kunt u de volgende elementen uit AEM 6.4 Fo
 
 #### Dispatcher configureren {#configure-dispatcher}
 
-Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeling dat wordt gebruikt met een webserver op bedrijfsniveau. Als u [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
+Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeling dat wordt gebruikt met een webserver op bedrijfsniveau. Als u [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
 
 1. Toegang voor AEM Forms configureren:
 
@@ -163,7 +161,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeli
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL).
+   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher [.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)
 
 1. Configureer de referentiefilterservice:
 

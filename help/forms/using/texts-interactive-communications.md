@@ -1,16 +1,13 @@
 ---
 title: Teksten in interactieve communicatie
 description: Het creëren en het uitgeven van tekstdocumentfragmenten die in Interactieve Mededelingen moeten worden gebruikt - de tekst is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn voorwaarden, lijsten en layoutfragmenten.
-topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
@@ -26,7 +23,7 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
 * **modelvoorwerpen van Gegevens**: De gegevenseigenschappen gebruiken een achtereind gegevensbron.
 * **regel gebaseerde inhoud**: De delen van inhoud in een tekst die verschijnen of verborgen gebaseerd op een regel worden. Een regel kan ook worden gebaseerd op eigenschappen en variabelen van het formuliergegevensmodel.
 * **Variabelen**: In het fragment van het tekstdocument, zijn de variabelen niet verbindend aan een achterste gegevensbron. De agent vult in/selecteert waarden in variabelen of bindt de variabelen aan gegevensbronnen terwijl het voorbereiden van de Interactieve Mededeling voor het voorleggen van het aan een postproces.
-* **Herhaal**: U kunt dynamische informatie in uw Interactieve Mededeling, zoals transacties in een verklaring van de creditcard hebben, waarvan het aantal voorkomen met elke geproduceerde Interactieve Mededeling kan blijven veranderen. Met Herhaling kunt u dergelijke dynamische informatie opmaken en structureren. Voor meer informatie, zie [ Gealigneerde voorwaarde en herhaal ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Herhaal**: U kunt dynamische informatie in uw Interactieve Mededeling, zoals transacties in een verklaring van de creditcard hebben, waarvan het aantal voorkomen met elke geproduceerde Interactieve Mededeling kan blijven veranderen. Met Herhaling kunt u dergelijke dynamische informatie opmaken en structureren. Voor meer informatie, zie [ Gealigneerde voorwaarde en herhaal ](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Tekst maken {#createtext}
 
@@ -238,10 +235,6 @@ U kunt een of meer alinea&#39;s tekst in een bewerkbaar tekstdocumentfragment ko
 U kunt de tekst rechtstreeks vanuit het Microsoft® Word-document naar een bewerkbaar tekstdocumentfragment kopiëren en plakken. De opmaak, zoals een lijst met opsommingstekens, lettertype en tekstkleur, blijft behouden in het tekstdocumentfragment.
 
 ![ pastetexteditablemodule-1 ](assets/pastetexteditablemodule-1.png)
-
->[!NOTE]
->
->Het formatteren van gekleefde tekst, echter, heeft sommige [ beperkingen ](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 ## Speciale tekens in tekst invoegen {#special}
 
