@@ -4,9 +4,10 @@ description: Veelgestelde technische vragen over AEM 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2352420843c613884ad3cae487ed048bd775e294
+exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
+source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -28,6 +29,14 @@ Voor gedetailleerde documentatie over het kader van de Controle van de Gezondhei
 ### AEM Groovy-consolesupport
 
 De AEM Groovy-consoleversie die in AEM 6.5 werd gebruikt, werkt mogelijk niet in AEM 6.5 LTS vanwege ontbrekende guave-afhankelijkheden. De onlangs gesteunde versie van de console van AEM Groovy is [ 19.0.8 ](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8).
+
+### Biedt AEM 6.5 LTS ondersteuning voor gebruikerssynchronisatie?
+
+Ja, AEM 6.5 LTS ondersteunt gebruikerssynchronisatie. De functionaliteit van gebruikerssync tussen AEM 6.5 en 6.5 LTS verandert niet.
+
+### De Uber JAR op Maven Central lijkt beschadigd te zijn — wat is het probleem?
+
+Controleer of u de Uber JAR gebruikt met de classificator `apis` . De verpakkingsstructuur van de Uber JAR is veranderd in AEM 6.5 LTS. Voor meer informatie, zie [ Update de versie van AEM Uber Jar ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ## Aanvullende Help opvragen
 
