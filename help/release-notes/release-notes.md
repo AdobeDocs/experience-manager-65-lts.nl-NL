@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1074'
 ht-degree: 1%
 
 ---
@@ -130,18 +130,21 @@ Een hotfix [ cq-6.5.lts.0-hotfix-NPR-42640 ](https://experience.adobe.com/#/down
 
 ### Dispatcher-verbindingsfout met SSL-functie {#ssl-only-feature}
 
-Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is er een bekende kwestie die connectiviteit tussen de instanties van Dispatcher en van AEM beïnvloedt. Nadat u deze functie hebt ingeschakeld, kunnen de gezondheidscontroles mislukken en kan de communicatie tussen Dispatcher- en AEM-instanties worden verstoord.
+Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is er een bekende kwestie die connectiviteit tussen de instanties van Dispatcher en van AEM beïnvloedt. Nadat u deze functie hebt ingeschakeld, kunnen de gezondheidscontroles mislukken en kan de communicatie tussen Dispatcher- en AEM-instanties worden verstoord. Dit probleem doet zich met name voor wanneer klanten via `https + IP` verbinding proberen te maken met AEM-instanties en dit is gerelateerd aan SNI-validatieproblemen (Servernaamindicatie).
 
 **Effect:**
 
-* Fouten in de health check met HTTP 500-responscodes
+* Fouten in de health check met HTTP 400-responscodes
 * Gebroken verkeer tussen Dispatcher en AEM
 * Inhoud kan niet correct worden aangeboden via de Dispatcher
+* Verbindingsfouten bij gebruik van HTTPS met IP-adressen in Dispatcher-configuratie
+* HTTP 400 &quot;Ongeldige SNI&quot;fouten wanneer het verbinden via HTTPS + IP
 
 **Betrokken milieu&#39;s:**
 
 * AEM-implementaties met Dispatcher-configuraties
 * Systemen waarbij de functie Alleen SSL is ingeschakeld
+* Dispatcher-configuraties die gebruikmaken van de methode `https + IP` connection to AEM instances
 
 **Oplossing:**
 Neem contact op met Customer Support van Adobe als dit probleem zich voordoet. Een hotfix [ cq-6.5.lts.0-hotfix-CQ-4359803 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) is beschikbaar om dit probleem op te lossen. Probeer alleen SSL-functies in te schakelen voordat u de vereiste hotfix toepast.
@@ -151,5 +154,5 @@ Neem contact op met Customer Support van Adobe als dit probleem zich voordoet. E
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
