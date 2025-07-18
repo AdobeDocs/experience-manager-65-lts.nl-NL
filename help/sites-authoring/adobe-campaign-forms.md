@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanti
 
 >[!NOTE]
 >
->Zorg ervoor het **acMapping** bezit op jcr van de pagina **:content** knoop wordt geplaatst aan **mapRecipient** of **profiel** wanneer het gebruiken van Adobe Campaign Classic of Adobe Campaign Standard, respectievelijk
+>Zorg ervoor het **acMapping** bezit op de 2} jcr van de pagina **knoop {aan:content** mapRecipient **of** profiel **wanneer het gebruiken van Adobe Campaign Classic of Adobe Campaign Standard, respectievelijk wordt geplaatst**
 >
 
 1. Navigeer in AEM in Sites naar de plaats waar u een pagina wilt maken.
@@ -78,7 +78,7 @@ Forms gewijd aan Adobe Campaign heeft specifieke componenten. Deze componenten h
 
 >[!NOTE]
 >
->Als het gewenste malplaatje niet beschikbaar is, zie [ het Maken van een malplaatje beschikbaar ](/help/sites-authoring/adobe-campaign.md).
+>Als het gewenste malplaatje niet beschikbaar is, zie [ het Maken van een malplaatje beschikbaar.](/help/sites-authoring/campaign.md)
 
 In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschreven. Voor meer informatie over een meer algemeen overzicht van hoe te om vormen in Adobe Experience Manager te gebruiken, zie [ componenten Editmode ](/help/sites-authoring/default-components-foundation.md).
 
@@ -103,7 +103,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
 
    ![ chlimage_1-47 ](assets/chlimage_1-47a.png)
 
-1. Voeg zo nodig componenten aan het formulier toe, zoals een tekstveld, een datumveld, een veld Selectievakje, een veld Optie enzovoort. Zie {de Componenten van de Vorm van 0} Adobe Campaign [&#128279;](/help/sites-authoring/adobe-campaign-components.md) voor meer informatie over elke component.
+1. Voeg zo nodig componenten aan het formulier toe, zoals een tekstveld, een datumveld, een veld Selectievakje, een veld Optie enzovoort. Zie {de Componenten van de Vorm van 0} Adobe Campaign [ voor meer informatie over elke component.](/help/sites-authoring/adobe-campaign-components.md)
 1. Klik het pictogram van de Configuratie om de component te openen. Bijvoorbeeld, in **Gebied van de Tekst (Campagne)** component, verander de titel en de tekst.
 
    Klik **Adobe Campaign** om het vormgebied aan een de meta-gegevensvariabele van Adobe Campaign in kaart te brengen. Wanneer u het formulier verzendt, wordt het toegewezen veld bijgewerkt in Adobe Campaign. Alleen velden met overeenkomende typen zijn beschikbaar in de variabele kiezer (bijvoorbeeld tekenreeksvariabelen voor tekstvelden).

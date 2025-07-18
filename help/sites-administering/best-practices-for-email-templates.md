@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
+
 
 # Aanbevolen procedures voor e-mailsjablonen {#best-practices-for-email-templates}
 
@@ -23,7 +25,7 @@ ht-degree: 0%
 >
 >Dit artikel is op de afgekeurde componenten van de Stichting van toepassing die AEM e-mailcomponenten baseren.
 >
->De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL)
+>De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 In dit document worden enkele van de aanbevolen procedures beschreven voor het ontwerpen van e-mailberichten. Dit resulteert in een goed ontwikkelde sjabloon voor e-mailcampagnes.
 
@@ -45,7 +47,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
 >[!NOTE]
 >
->Wanneer het creëren van een postmalplaatje voor Adobe Campaign, moet u het bezit **acMapping** met de waarde **mapRecipient** in **jcr omvatten:content** knoop van het malplaatje. Als u niet, kunt u niet het malplaatje van Adobe Campaign in **Eigenschappen van de Pagina** van Experience Manager (het gebied is gehandicapt) selecteren.
+>Wanneer het creëren van een postmalplaatje voor Adobe Campaign, moet u het bezit **acMapping** met de waarde **mapRecipient** in de **jcr:content** knoop van het malplaatje omvatten. Als u niet, kunt u niet het malplaatje van Adobe Campaign in **Eigenschappen van de Pagina** van Experience Manager (het gebied is gehandicapt) selecteren.
 
 ## Sjabloon/pagina-component {#template-page-component}
 

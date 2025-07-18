@@ -9,20 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 59a79455-c108-4f4b-93c1-d8c6f23aec88
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
+
 # Aangepaste AEM-paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat [&#128279;](/help/sites-authoring/adobe-campaign-components.md) componenten gebruikt van de Vorm van 0&rbrace; Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (`/apps/geometrixx-outdoors/components/page_campaign_profile`) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.
-
->[!NOTE]
->
->[ E-mail en vormsteekproeven zijn slechts beschikbaar in Geometrixx ](/help/sites-developing/we-retail.md). Download voorbeeld Geometrixx-inhoud van Package Share.
+Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat [ componenten gebruikt van de Vorm van 0} Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (](/help/sites-authoring/adobe-campaign-components.md)) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.`/apps/geometrixx-outdoors/components/page_campaign_profile`
 
 >[!CAUTION]
 >

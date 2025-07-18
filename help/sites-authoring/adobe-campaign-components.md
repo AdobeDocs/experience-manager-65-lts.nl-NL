@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2855'
 ht-degree: 0%
 
 ---
+
 
 # Adobe Campaign-componenten{#adobe-campaign-components}
 
@@ -29,7 +31,7 @@ Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wan
 
 ## Adobe Campaign Newsletter-componenten {#adobe-campaign-newsletter-components}
 
-Alle componenten van de Campagne volgen de beste praktijken die in [ worden geschetst Beste praktijken voor E-mailMalplaatjes ](/help/sites-administering/best-practices-for-email-templates.md) en zijn gebaseerd op de de prijsverhogingstaal van Adobe [ HTML ](https://helpx.adobe.com/nl/experience-manager/htl/using/overview.html).
+Alle componenten van de Campagne volgen de beste praktijken die in [ worden geschetst Beste praktijken voor E-mailMalplaatjes ](/help/sites-administering/best-practices-for-email-templates.md) en zijn gebaseerd op de de prijsverhogingstaal van Adobe [ HTML ](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
 Wanneer u een nieuwsbrief/e-mail opent die om met Adobe Campaign wordt gevormd te integreren, zou u de volgende componenten in de **Newsletter van Adobe Campaign** sectie moeten zien:
 
@@ -131,7 +133,7 @@ Hiermee stelt u de hoogte en de breedte van de afbeelding in.
 
 >[!NOTE]
 >
->Ga informatie op het **Geavanceerd** gebied van de Tekst van Alt &lbrace;op het **Geavanceerde** lusje in, of het beeld kan niet opslaan en u ziet het volgende foutenbericht:
+>Ga informatie op het **Geavanceerd** gebied van de Tekst van Alt {op het **Geavanceerde** lusje in, of het beeld kan niet opslaan en u ziet het volgende foutenbericht:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -235,7 +237,7 @@ Hiermee stelt u de hoogte en breedte van de afbeelding in.
 
 >[!NOTE]
 >
->Het **gebied van de Tekst van 0&rbrace; Alt &lbrace;op het** Geavanceerde **lusje wordt vereist of de component kan niet opslaan en u ziet het volgende foutenbericht:**
+>Het **gebied van de Tekst van 0} Alt {op het** Geavanceerde **lusje wordt vereist of de component kan niet opslaan en u ziet het volgende foutenbericht:**
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -265,7 +267,7 @@ In de Inplace redacteur kunt u tekst toevoegen, de rechtvaardiging veranderen, v
 
 >[!NOTE]
 >
->Slechts worden de gebieden die in **worden bepaald nms:seedMember** schema of één van zijn uitbreidingen in aanmerking genomen. De attributen van de lijsten verbonden aan **nms:seedMember** zijn niet beschikbaar.
+>Slechts worden de gebieden die in het **worden bepaald nms:seedMember** schema of één van zijn uitbreidingen in aanmerking genomen. De attributen van de lijsten verbonden aan **nms:seedMember** zijn niet beschikbaar.
 
 ## Adobe Campaign-formuliercomponenten {#adobe-campaign-form-components}
 

@@ -9,12 +9,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: ce6ebfff-3a1d-4c9f-aa50-23d1c3afc852
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
+
 
 # Je Adobe Campaign als doelgroep instellen{#targeting-your-adobe-campaign}
 
@@ -61,52 +62,8 @@ Een campagne maken:
 Zo creëert u ervaringen voor segmenten:
 
 1. Open de **pagina van de Campagne** u creeerde.
-1. Creeer ervaringen voor uw segmenten door **te klikken creëren Pagina** en een titel voor uw pagina in te gaan, bijvoorbeeld, Male aangezien u een ervaring voor het Mannelijke segment creeert, en selecteer het **3&rbrace; malplaatje van de Ervaring &lbrace;.**
+1. Creeer ervaringen voor uw segmenten door **te klikken creëren Pagina** en een titel voor uw pagina in te gaan, bijvoorbeeld, Male aangezien u een ervaring voor het Mannelijke segment creeert, en selecteer het **3} malplaatje van de Ervaring {.**
 1. Open de pagina voor het maken van ervaring.
 1. Klik **uitgeven**, dan onder Segmenten klikt **Punt** toevoegen.
 1. Ga de weg aan het mannelijke segment, bijvoorbeeld, **/etc/segmentation/ac-segments/man** in en klik **O.K.**. Het volgende bericht zou moeten verschijnen: *de Ervaring wordt gericht op: Mannelijk*
 1. Herhaal de vorige stappen om een ervaring voor alle segmenten, bijvoorbeeld, het vrouwelijke doel tot stand te brengen.
-
-## Een nieuwsbrief met doelinhoud maken {#creating-a-newsletter-with-targeted-content}
-
-Nadat u segmenten, een merk, een campagne en een ervaring hebt gemaakt, kunt u een nieuwsbrief met gerichte inhoud maken. Nadat u de ervaring hebt gemaakt, koppelt u ervaringen aan uw segmenten.
-
->[!NOTE]
->
->[ E-mailsteekproeven zijn slechts beschikbaar in Geometrixx ](/help/sites-developing/we-retail.md). Download voorbeeld Geometrixx-inhoud van Package Share.
-
-Een nieuwsbrief met doelinhoud maken:
-
-1. Creeer een bulletin met gerichte inhoud: Onder E-mailcampagnes in Geometrixx Outdoors, klik **creëren** > **Pagina**, en selecteer één van de malplaatjes van de Post van Adobe Campaign.
-
-   ![ chlimage_1-188 ](assets/chlimage_1-188.png)
-
-1. Voeg in de nieuwsbrief een component Text en Personalization toe.
-1. Voeg tekst toe aan de component Text en Personalization, bijvoorbeeld &quot;Dit is de standaardinstelling&quot;.
-1. Klik de pijl naast **uitgeven** en selecteren **het richten**.
-1. Selecteer uw merk in het keuzemenu Merk en selecteer uw Campagne. (Dit is het merk en de campagne die u eerder hebt gemaakt).
-1. Klik **Begin richtend**. U ziet de segmenten verschijnen in het gebied Soorten publiek. De standaardervaring wordt gebruikt als geen van de gedefinieerde segmenten overeenkomt.
-
-   >[!NOTE]
-   >
-   >Standaard gebruiken de e-mailvoorbeelden die bij AEM worden geleverd Adobe Campaign als de doelengine. Voor aangepaste nieuwsbrieven moet u wellicht Adobe Campaign selecteren als de doelengine. Wanneer gericht, klik + in de toolbar, ga een titel voor de nieuwe activiteit in, en selecteer **Adobe Campaign** als het richten motor.
-
-1. Klik **Gebrek** en dan de component van de Tekst en van Personalization u toevoegde en u ziet de Bullseye met een pijl in het. Klik op het pictogram om deze component als doel in te stellen.
-
-   ![ chlimage_1-189 ](assets/chlimage_1-189.png)
-
-1. Navigeer aan een ander segment (Mannelijk), en klik **voeg aanbieding** toe en klik plus pictogram +. Bewerk vervolgens het voorstel.
-1. Navigeer aan een ander segment (Vrouwelijk) en klik **voeg aanbieding** en plus pictogram + toe. Bewerk dit voorstel vervolgens.
-1. Klik **daarna** om Afbeelding te zien, dan klik **daarna** om Montages te zien, die niet op Adobe Campaign van toepassing is, en **te klikken sparen**.
-
-   AEM genereert automatisch de juiste doelcode voor Adobe Campaign wanneer de inhoud wordt gebruikt in een levering in Adobe Campaign
-
-1. In Adobe Campaign, creeer uw levering - selecteer **E-mail levering met de inhoud van AEM** en selecteer de lokale rekening van AEM, zoals aangewezen en bevestig uw veranderingen.
-
-   In de HTML-weergave staan de verschillende ervaringen met doelcomponenten in Adobe Campaign-code.
-
-   ![ chlimage_1-190 ](assets/chlimage_1-190.png)
-
-   >[!NOTE]
-   >
-   >Als u ook opstelling de segmenten in Adobe Campaign, die **klikt zal de Voorproef** u de ervaringen voor elk segment tonen.
