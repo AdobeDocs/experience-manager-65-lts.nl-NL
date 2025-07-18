@@ -5,16 +5,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
+source-wordcount: '2476'
 ht-degree: 1%
 
 ---
 
 # Pagina&#39;s maken en ordenen {#creating-and-organizing-pages}
 
-Deze sectie beschrijft om pagina&#39;s met Adobe Experience Manager (AEM) tot stand te brengen en te beheren zodat u inhoud [&#128279;](/help/sites-authoring/editing-content.md) op die pagina&#39;s kunt dan  tot stand brengen.
+Deze sectie beschrijft om pagina&#39;s met Adobe Experience Manager (AEM) tot stand te brengen en te beheren zodat u inhoud [ op die pagina&#39;s kunt dan ](/help/sites-authoring/editing-content.md) tot stand brengen.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ De volledige details van alle toegestane karakters kunnen in [ worden gevonden d
 
 #### Titel {#title}
 
-Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, leidt AEM de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. A **gebied van de Titel van 0&rbrace; dat ongeldige karakters bevat zal worden goedgekeurd, maar de afgeleide naam zal de ongeldige karakters vervangen hebben.** Bijvoorbeeld:
+Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, leidt AEM de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. A **gebied van de Titel van 0} dat ongeldige karakters bevat zal worden goedgekeurd, maar de afgeleide naam zal de ongeldige karakters vervangen hebben.** Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -187,7 +187,7 @@ Zodra u hebt gecreeerd en een pagina geopend kunt u [ inhoud toevoegen gebruiken
 
 Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voordat u inhoud kunt gaan maken:
 
-1. Open de console van Plaatsen (bijvoorbeeld, [ https://localhost:4502/sites.html/content ](https://localhost:4502/sites.html/content)).
+1. Open de console van Plaatsen (bijvoorbeeld, [ https://localhost :4502 /sites.html/content ](https://localhost:4502/sites.html/content)).
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
 1. Open de drop-down selecteur gebruikend **creeer** in de toolbar, dan selecteer **Pagina** van de lijst:
 
@@ -228,7 +228,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
    ![ caop-05 ](assets/caop-05.png)
 
-1. Het gebruik **creeert** om het proces te voltooien en uw nieuwe pagina tot stand te brengen. De bevestigingsdialoog zal vragen of u **&#x200B;**&#x200B;de pagina onmiddellijk wilt openen of aan de console terugkeren (**Gedaan**):
+1. Het gebruik **creeert** om het proces te voltooien en uw nieuwe pagina tot stand te brengen. De bevestigingsdialoog zal vragen of u **** de pagina onmiddellijk wilt openen of aan de console terugkeren (**Gedaan**):
 
    ![ chlimage_1-118 ](assets/chlimage_1-118.png)
 
@@ -275,7 +275,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [ wijze van de Selectie ](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de toolbar
 
-   En toen het **1&rbrace; paginapictogram van het Exemplaar &lbrace;:**
+   En toen het **1} paginapictogram van het Exemplaar {:**
 
    ![ screen_shot_2018-03-22at105425 ](assets/screen_shot_2018-03-22at105425.png)
 
@@ -289,7 +289,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    ![ Deeg ](assets/paste-without-children.png)
 
    U kunt:
-   * Selecteer het **paginapictogram van het Deeg** &lbrace;zelf: Een exemplaar van de originele pagina en om het even welke kind-pagina&#39;s zullen bij deze plaats worden gecreeerd.
+   * Selecteer het **paginapictogram van het Deeg** {zelf: Een exemplaar van de originele pagina en om het even welke kind-pagina&#39;s zullen bij deze plaats worden gecreeerd.
    * Selecteer de drop-down pijl om **Deeg zonder kinderen** optie te openbaren. Op deze locatie wordt een kopie van de originele pagina gemaakt. Onderliggende pagina&#39;s worden niet gekopieerd.
 
    >[!NOTE]
@@ -320,13 +320,13 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [ wijze van de Selectie ](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de toolbar
 
-   En selecteer dan het **1&rbrace; paginapictogram van de Beweging &lbrace;:**
+   En selecteer dan het **1} paginapictogram van de Beweging {:**
 
    ![ screen_shot_2018-03-22at105534 ](assets/screen_shot_2018-03-22at105534.png)
 
    Hiermee opent u de wizard Verplaatsen pagina.
 
-1. Van **anders noem** stadium van de tovenaar u één van beide kunt:
+1. **noem** stap van de tovenaar anders noemt verstrekt u **Informatie** over de pagina met inbegrip van creatieve datum, weg, en aantal directe verwijzingen. Van hier kunt u:
 
    * Specificeer de naam u de pagina wilt hebben nadat het wordt bewogen, dan klik **daarna** te werk te gaan.
 
@@ -365,7 +365,8 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als er geen koppeling is naar de pagina en er niet naar wordt verwezen, is deze stap niet beschikbaar.
+   >* Als er geen koppeling is naar de pagina en er niet naar wordt verwezen, is deze stap niet beschikbaar.
+   >* In deze stap worden zowel directe als indirecte verwijzingen vermeld. Dit kan van het bedrag verschillen dat op **wordt gemeld anders noemt** stap van de tovenaar evenals de verwijzingen die door de verwijzingenspoorstaaf worden gemeld, allebei waarvan slechts directe verwijzingen om prestatiesredenen rapporteren.
 
    ![ caop-09 ](assets/caop-09.png)
 
@@ -384,12 +385,12 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 Handelingen voor het verplaatsen van pagina&#39;s worden altijd asynchroon verwerkt, zodat de gebruiker de bewerkingen in de gebruikersinterface ongehinderd kan voortzetten.
 
 * De gebruiker moet definiëren wanneer de asynchrone bewerking moet worden uitgevoerd
-   * **&#x200B;**&#x200B;begint nu de uitvoering van de asynchrone baan onmiddellijk.
+   * **** begint nu de uitvoering van de asynchrone baan onmiddellijk.
    * **later** staat de gebruiker toe om te bepalen wanneer de asynchrone baan zal beginnen.
 
   ![ Asynchrone paginabeweging ](assets/asynchronous-page-move.png)
 
-Het statuut van asynchrone banen kan in het **dashboard van de Banen van 0&rbrace; Async [&#128279;](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) bij** Globale Navigatie **worden gecontroleerd >** Hulpmiddelen **>** Verrichtingen **>** Banen **&#x200B;**
+Het statuut van asynchrone banen kan in het [**dashboard van de Banen van 0} Async** bij ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) Globale Navigatie **worden gecontroleerd >** Hulpmiddelen **>** Verrichtingen **>** Banen ****
 
 >[!NOTE]
 >
@@ -444,7 +445,7 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 >
 
 1. Open de **console van Plaatsen** en navigeer aan de vereiste plaats.
-1. Om de optielijst te openen, creeer **&#x200B;**&#x200B;van de toolbar
+1. Om de optielijst te openen, creeer **** van de toolbar
 1. Selecteer **Omslag** om de dialoog te openen. Hier kunt u de **Naam** ingaan en **Titel**:
 
    ![ chlimage_1-119 ](assets/chlimage_1-119.png)

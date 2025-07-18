@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ u kunt om het even welk aantal vervangingen in een vraag gebruiken.
 
 Met AEM kunt u zien welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
 
-Verwijzingen naar directe pagina&#39;s weergeven:
+Paginaverwijzingen weergeven:
 
 1. In sidekick, selecteer het **pictogram van het het lusje van de Pagina**.
 
@@ -165,6 +165,10 @@ Verwijzingen naar directe pagina&#39;s weergeven:
 1. Selecteer **tonen Verwijzingen..** AEM opent het venster van Verwijzingen en toont welke pagina&#39;s naar de geselecteerde pagina, met inbegrip van hun wegen verwijzen.
 
    ![ screen_shot_2012-02-16at83311pm ](assets/screen_shot_2012-02-16at83311pm.png)
+
+In AEM worden alle pagina&#39;s weergegeven die rechtstreeks naar de geselecteerde pagina verwijzen, evenals alle indirecte referenties. Dit is handig als u alle koppelingen begrijpt die worden bijgewerkt als u de pagina wilt verplaatsen of verwijderen.
+
+## Aanvullende Sidekick-handelingen {#additional-actions}
 
 In bepaalde situaties zijn verdere acties beschikbaar op Sidekick, waaronder:
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2919'
 ht-degree: 1%
 
 ---
@@ -556,15 +556,16 @@ Deze opties zijn toegankelijk als chevron naast het **gebied van de Commentaar**
 
 ### Verwijzingen {#references}
 
-**Verwijzingen** tonen om het even welke verbindingen aan het geselecteerde middel. Bijvoorbeeld, in de **console [ verwijzingen ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) van de Plaatsen** &lbrace;voor pagina&#39;s toont:
+**Verwijzingen** tonen verbindingen aan het geselecteerde middel. Bijvoorbeeld, in de **console** verwijzingen [ van de Plaatsen ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) {voor pagina&#39;s toont:
 
+* [Blauwdrukken](/help/sites-administering/msm.md)
 * [Lanceringen](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live kopieën](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Taalkopieën](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Content references:
 
-   * koppelingen van andere pagina&#39;s naar de geselecteerde pagina
-   * inhoud die door de component Reference van de geselecteerde pagina is geleend of geleend, of beide
+   * Directe koppelingen van andere pagina&#39;s naar de geselecteerde pagina
+   * Inhoud die door de component Reference is geleend van, geleend aan of beide op de geselecteerde pagina
 
 ![ bh-28 ](assets/bh-28.png)
 
