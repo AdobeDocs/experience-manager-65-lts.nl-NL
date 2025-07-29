@@ -126,7 +126,7 @@ AEM installeren en starten als Windows-service:
 >
 >Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** &lbrace;of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
