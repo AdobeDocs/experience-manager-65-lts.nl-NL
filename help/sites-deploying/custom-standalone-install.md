@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 90e63ad3be32b7ce551c5e3579c722ef75d97f95
+source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Als u Oracle Java 17 of Java 21 gebruikt, moeten extra switches aan uw opdrachtr
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
 ```
 
-* [ Forms slechts ] is hieronder een steekproef om AEM Forms te verzekeren correct met Java 17/Java21 werkt, omvat de volgende extra parameters JVM:
+* [ Forms slechts ] hieronder is een steekproef om AEM Forms te verzekeren werkt met Java 17/Java21, omvat de volgende extra parameters JVM:
 
 ```shell
 --add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
@@ -126,7 +126,7 @@ AEM installeren en starten als Windows-service:
 >
 >Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** &lbrace;of van de lijst in de bevellijn wanneer u `net start` typt.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
