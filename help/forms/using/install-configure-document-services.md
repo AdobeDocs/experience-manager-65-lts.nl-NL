@@ -266,13 +266,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -416,13 +416,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -572,13 +572,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -729,13 +729,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -1362,7 +1362,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 +++
 
-++ + HTML naar PDF conversieproblemen
++++ HTML naar PDF conversieproblemen
 
 * Zorg ervoor dat de mappen met fonts worden toegevoegd in de PDF Generator config-gebruikersinterface.
 
