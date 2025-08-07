@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10090'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,7 @@ Als u de PDF Generator-service gaat gebruiken om eigen bestandsindelingen zoals 
 >* Adobe Acrobat, Microsoft® Word, Excel en PowerPoint zijn alleen beschikbaar voor Microsoft® Windows. Als u het op UNIX-Gebaseerde werkende systeem gebruikt, installeer OpenOffice om rijke tekstdossiers en gesteunde dossiers van Microsoft® Office in de documenten van PDF om te zetten.
 >* Sluit alle dialoogvensters die worden weergegeven na de installatie van Adobe Acrobat en software van derden voor alle gebruikers die zijn geconfigureerd voor het gebruik van de PDF Generator-service.
 >* Start minstens één keer alle geïnstalleerde software. Alle dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd om de PDF Generator-service te gebruiken.
->* [ de vervaldatum van de Controle van uw serienummers van Adobe Acrobat ](https://helpx.adobe.com/nl/enterprise/kb/volume-license-expiration-check.html) en reeks een datum om vergunning bij te werken of [ migreer uw serienummer ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) dat op de vervaldatum wordt gebaseerd.
+>* [ de vervaldatum van de Controle van uw serienummers van Adobe Acrobat ](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) en reeks een datum om vergunning bij te werken of [ migreer uw serienummer ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) dat op de vervaldatum wordt gebaseerd.
 
 Open Microsoft® Word nadat u Acrobat hebt geïnstalleerd. Op het **Acrobat** lusje, klik **creeer PDF** en zet een .doc of .docx dossier beschikbaar op uw machine in een Document van PDF om. Als de conversie succesvol is, is AEM Forms klaar om Acrobat te gebruiken met de PDF Generator-service.
 
@@ -243,6 +243,12 @@ Het installatieproces voor Adobe Acrobat Pro DC voor Microsoft Office-installati
 * **Type van Vergunning**: Handel of vergunning van het Volume
 * **Type van Plaatsing**: Enige gebruiker of Veelvoudige gebruikers
 
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>De video demonstreert het installatieproces voor een Retail-licentie - Single User-configuratie. Voor andere plaatsingsscenario&#39;s (Detailhandel - Veelvoudige Gebruikers, Vergunning van het Volume - Enige Gebruiker, of Vergunning van het Volume - Veelvoudige Gebruikers), verwijs naar de specifieke stap 9 instructies in de overeenkomstige lusjes hieronder om behoorlijk serveropstarten en vergunningsactivering voor uw plaatsingstype te verzekeren.
+
 Elk tabblad bevat op maat gemaakte instructies die zijn geoptimaliseerd voor uw specifieke installatie, zodat u configuratieproblemen kunt voorkomen en ervoor kunt zorgen dat de licenties op de juiste wijze worden nageleefd.
 
 >[!BEGINTABS]
@@ -260,13 +266,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -410,13 +416,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -566,13 +572,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -692,7 +698,7 @@ Nadat u de vorige versie hebt verwijderd, moet u een compatibele versie van Adob
 Nadat u alle processen hebt voltooid, voert u een snelle actietest uit om te bevestigen dat de installatie geldig is:
 
 1. Gebruik RDP (Remote Desktop) om u aan te melden bij de server en AEM Forms-server te starten met services.
-2. Gebruik RDP (Remote Desktop) om u aan te melden bij de server en de AEM Forms-server te starten met Windows Services. Sluit het RDP-venster niet als de server eenmaal is gestart. In plaats daarvan, duidelijk teken uit door de gebruiker te registreren - dit verzekert de zitting schoon beëindigt terwijl de dienst op de achtergrond blijft lopen.
+2. Sluit het RDP-venster niet als de server eenmaal is gestart. In plaats daarvan, duidelijk teken uit door de gebruiker te registreren - dit verzekert de zitting schoon beëindigt terwijl de dienst op de achtergrond blijft lopen.
 
 ###### Stap 10: Test de PDF Generator-service
 
@@ -723,13 +729,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -1050,7 +1056,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) artikel.
+   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) artikel.
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer in het bestand `[AEM-Installation-Directory]/crx-quickstart/logs/error` .log worden weergegeven en het logbestand stabiel is.
 
@@ -1356,7 +1362,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 +++
 
-+++ HTML naar PDF conversieproblemen
+++ + HTML naar PDF conversieproblemen
 
 * Zorg ervoor dat de mappen met fonts worden toegevoegd in de PDF Generator config-gebruikersinterface.
 
