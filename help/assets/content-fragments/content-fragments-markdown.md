@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 3%
 
 ---
@@ -130,7 +130,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &ast; vóór de items in de lijst. Bijvoorbeeld:
+Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
@@ -166,7 +166,7 @@ U kunt tekst als volgt vet maken:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
+Om op een spanwijdte van code te wijzen, verpak het met backtick citaten (`` ` ``). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
 
 Bijvoorbeeld:
 
