@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de Adobe Experience Manager 6.5 LTS documentatie om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 023a8cc757ebbdd48466fbe512fde347c78ec848
 workflow-type: tm+mt
-source-wordcount: '6782'
+source-wordcount: '6754'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 1%
 
 + Release-opmerkingen {#release-notes}
    + [Opmerkingen bij de release](/help/release-notes/release-notes.md)
+   + Opmerkingen bij vorige release {#service-pack}
+      + [Algemene beschikbaarheid](/help/release-notes/previous/ga.md)
    + [Veelgestelde vragen](/help/release-notes/faq.md)
    + [Technische veelgestelde vragen](/help/release-notes/technical-faq.md)
 + Beveiliging {#security}
@@ -106,7 +108,7 @@ ht-degree: 1%
          + [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
          + [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md)
       + Paginaprestaties {#page-performance}
-         + [ Inhoud Insight ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html?lang=nl-NL)
+         + [ Inhoud Insight ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html)
          + [Paginaprestaties analyseren](/help/sites-authoring/ci-analyze.md)
          + [Gegevens van paginaanalyse bekijken](/help/sites-authoring/pa-using.md)
       + Personalization {#personalization}
@@ -181,7 +183,7 @@ ht-degree: 1%
          + [Beheerconsoles](/help/sites-administering/enable-classic-ui-admin.md)
       + Personalization {#personalization}
          + [Personalization](/help/sites-administering/personalization.md)
-         + [ Vormend ContextHub ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html?lang=nl-NL)
+         + [ Vormend ContextHub ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html)
          + [Clientcontext](/help/sites-administering/client-context.md)
          + [Het vormen Segmentatie met ContextHub](/help/sites-administering/segmentation.md)
          + [Segmentatie configureren](/help/sites-administering/campaign-segmentation.md)
@@ -215,7 +217,7 @@ ht-degree: 1%
          + [Integreren met Adobe Campaign](/help/sites-administering/campaign.md)
          + [Integreren met ExactTarget](/help/sites-administering/exacttarget.md)
          + [Analyse met externe providers](/help/sites-administering/external-providers.md)
-         + [Integratie met de Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
+         + [Integreren met Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
          + [De integratie met Adobe Target handmatig configureren](/help/sites-administering/target-configuring.md)
          + [Vereisten voor integratie met Adobe Target](/help/sites-administering/target-requirements.md)
          + [Adobe-classificaties](/help/sites-administering/adobeanalytics-classifications.md)
@@ -224,10 +226,10 @@ ht-degree: 1%
          + [Aanbevolen procedures voor e-mailsjablonen](/help/sites-administering/best-practices-for-email-templates.md)
       + Aanbevolen procedures {#bestpractices}
          + [Aanbevolen procedures](/help/sites-administering/administer-best-practices.md)
-         + [ Beste praktijken van de Vertaling 0](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html?lang=nl-NL)
-         + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html?lang=nl-NL)
+         + [ Beste praktijken van de Vertaling 0}](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html)
+         + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
-         + [ Behandelend GDPR- Verzoeken om de Stichting van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html?lang=nl-NL)
+         + [ Behandelend GDPR- Verzoeken om de Stichting van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-commerce.md)
       + Inhoud beheren {#contentmanagement}
          + [Pakketbeheer](/help/sites-administering/package-manager.md)
@@ -407,7 +409,7 @@ ht-degree: 1%
       + [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md)
       + [Inleiding tot Interactieve Mededelingen](/help/forms/using/interactive-communications-overview.md)
       + [Inleiding tot het beheren van formulieren](/help/forms/using/introduction-managing-forms.md)
-      + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=nl-NL)
+      + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
       + Zelfstudie: uw eerste adaptieve formulier maken {#create-first-adaptive-form}
          + [Lesbestand: uw eerste adaptieve formulier maken](/help/forms/using/create-your-first-adaptive-form.md)
          + [Lesbestand: een adaptief formulier maken](/help/forms/using/create-adaptive-form.md)
@@ -441,10 +443,10 @@ ht-degree: 1%
          + [Mogelijkheden voor gegevensvastlegging installeren en configureren](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [Forms-centric workflow installeren en configureren op OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [Interactieve communicatie installeren en configureren](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
-         + [ installeer en vorm de Geautomatiseerde dienst van de Omzetting van Vormen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL)
+         + [ installeer en vorm de Geautomatiseerde dienst van de Omzetting van Vormen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
       + [Designer installeren en configureren](/help/forms/using/installing-configuring-designer.md)
       + AEM Forms configureren {#configure-aem-forms}
-         + [Prestaties afstemmen van AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md)
+         + [Prestaties afstemmen op AEM Forms Server](/help/forms/using/performance-tuning-aem-forms.md)
          + [Cache voor adaptieve formulieren configureren](/help/forms/using/configure-adaptive-forms-cache.md)
          + [AEM DS-instellingen configureren](/help/forms/using/configuring-the-processing-server-url.md)
          + [De synchronisatieplanner configureren](/help/forms/using/configure-synchronization-scheduler.md)
@@ -632,8 +634,8 @@ ht-degree: 1%
       + [Het Xcode-project instellen en de iOS-app ontwikkelen](/help/forms/using/setup-xcode-project-build-installer.md)
       + [Een veilige AEM Forms-app voor iOS maken](/help/forms/using/building-secure-mobile-workspace-app.md)
       + [Opstelling het project van Visual Studio en bouwt Windows app](/help/forms/using/setup-visual-studio-project-build-installer.md)
-      + [Android-studioproject instellen en de Android-app ontwikkelen](/help/forms/using/setup-android-studio-project-build-installer.md)
-      + [De AEM Forms Android-app ontwikkelen](/help/forms/using/setup-eclipse-project-build-installer.md)
+      + [Android instellen](/help/forms/using/setup-android-studio-project-build-installer.md)
+      + [De AEM Forms Android bouwen](/help/forms/using/setup-eclipse-project-build-installer.md)
       + [AEM Forms-app distribueren](/help/forms/using/distribute-mobile-workspace-app.md)
       + [Bewegingsaanpassing](/help/forms/using/gesture-customization.md)
       + [Aanpassing branding](/help/forms/using/branding-customization.md)
@@ -727,10 +729,10 @@ ht-degree: 1%
       + [Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen](/help/forms/using/use-custom-email-template-assign-task-step.md)
       + [Metagegevens gebruiken in een e-mailmelding](/help/forms/using/use-metadata-in-email-notifications.md)
    + Forms Portal {#use-forms-portal}
-      + [Sjablonen aanpassen voor componenten van een formulierportal](/help/forms/using/customizing-templates-forms-portal-components.md)
-      + [portalcomponenten voor formulieren inschakelen](/help/forms/using/enabling-forms-portal-components.md)
-      + [Een pagina met een portal voor formulieren maken](/help/forms/using/creating-form-portal-page.md)
-      + [API&#39;s voor het werken met verzonden formulieren op het formulierportaal](/help/forms/using/report-submitted-data-forms.md)
+      + [Sjablonen aanpassen voor Forms Portal-componenten](/help/forms/using/customizing-templates-forms-portal-components.md)
+      + [Forms Portal-componenten inschakelen](/help/forms/using/enabling-forms-portal-components.md)
+      + [Forms Portal-pagina&#39;s maken](/help/forms/using/creating-form-portal-page.md)
+      + [API&#39;s voor het werken met verzonden formulieren op Forms Portal](/help/forms/using/report-submitted-data-forms.md)
       + [Aangepaste opslag voor concepten en verzendingscomponenten](/help/forms/using/adding-custom-storage-provider-forms.md)
    + Document Services {#use-document-services}
       + [Overzicht van AEM Document Services](/help/forms/using/overview-aem-document-services.md)
@@ -820,8 +822,8 @@ ht-degree: 1%
          + [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md)
       + Verbinding maken met een inhoudsbeheersysteem {#connect-content-management-system}
          + [Connector configureren voor EMC Documentum](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
-         + [Connector configureren voor IBM FileNet](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
-         + [Connector configureren voor IBM Content Manager](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
+         + [Connector configureren voor IBM](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
+         + [Connector configureren voor IBM](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
          + [Connector configureren voor Microsoft SharePoint](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
       + Certificaten en referenties beheren {#manage-certificates-credentials}
          + [Gebruikersnaam en wachtwoord toevoegen en verwijderen](/help/forms/using/admin-help/adding-removing-user-name-password.md)
@@ -839,21 +841,21 @@ ht-degree: 1%
          + [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md)
       + Eindpunten beheren {#manage-endpoints}
          + [Eindpunten toevoegen, inschakelen, wijzigen of verwijderen](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-      + [E-maileindpunten configureren](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [Auth2.0-verificatie configureren](/help/forms/using/oauth2-support-for-mail-service.md)
-      + [Het vormen het Verwijderen eindpunten](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [Gecontroleerde eindpunten van mappen configureren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Eindpunten van Taakbeheer configureren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
-      + [Typen eindpunten](/help/forms/using/admin-help/types-endpoints.md)
+         + [E-maileindpunten configureren](/help/forms/using/admin-help/configuring-email-endpoints.md)
+         + [Auth2.0-verificatie configureren](/help/forms/using/oauth2-support-for-mail-service.md)
+         + [Het vormen het Verwijderen eindpunten](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
+         + [Gecontroleerde eindpunten van mappen configureren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+         + [Eindpunten van Taakbeheer configureren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+         + [Typen eindpunten](/help/forms/using/admin-help/types-endpoints.md)
       + Acrobat Reader DC-extensies configureren {#configure-acrobat-reader-dc-extensions}
-         + [Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
+         + [Certificaattypen die worden gebruikt door Acrobat Reader DC Extensions](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
          + [Geldige en verlopen certificaten in PDF-documenten herkennen](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
          + [Acrobat Reader DC-extensies configureren voor het vastleggen van gegevens](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
          + [Gebruiksgegevens voor referentie controleren](/help/forms/using/admin-help/review-credential-information.md)
-         + [Referenties configureren voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
+         + [Referenties configureren voor gebruik met Acrobat Reader DC Extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
          + [De gebruiksrechten van een PDF-bestand bekijken](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
          + [Onlineopmerkingen inschakelen voor plug-in voor webbrowser van Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
-         + [Time-outwaarden instellen voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
+         + [Time-outwaarden instellen voor gebruik met Acrobat Reader DC Extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
          + [Verlopen Reader Extension Service-certificaten bijwerken](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
       + Werken met PDF Generator {#work-with-pdf-generator}
          + [Inleiding tot het werken met PDF Generator](/help/forms/using/admin-help/overview-5.md)
@@ -869,9 +871,9 @@ ht-degree: 1%
          + [Bestanden converteren met PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
       + SSL configureren {#configure-ssl}
          + [Overzicht van het configureren van SSL](/help/forms/using/admin-help/overview-6.md)
-         + [SSL configureren voor JBoss Application Server](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
+         + [SSL configureren voor JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
          + [SSL configureren onder Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
-         + [SSL configureren voor WebSphere-toepassingsserver](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
+         + [SSL configureren voor WebSphere](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
       + Werken met documentbeveiliging {#work-with-document-security}
          + [Documentbeveiliging](/help/forms/using/admin-help/document-security.md)
          + [Beveiligde informatieverstrekking voor grote volumes](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
@@ -902,11 +904,11 @@ ht-degree: 1%
          + [Te insluiten fonts opgeven](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [Beveiligingsinstellingen opgeven](/help/forms/using/admin-help/specify-security-settings.md)
          + [De tekenset wijzigen](/help/forms/using/admin-help/change-character-set.md)
-      + Workflow voor formulieren configureren{#configure-forms-workflow}
+      + Forms Workflow configureren{#configure-forms-workflow}
          + [Informatie over beheer en procesterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
          + [Processen beheren](/help/forms/using/admin-help/processes.md)
          + [Bedrijfskalenders configureren](/help/forms/using/admin-help/configuring-business-calendars.md)
-         + [Overzicht van de Forms-workflow](/help/forms/using/admin-help/overview-9.md)
+         + [Overzicht van Forms Workflow](/help/forms/using/admin-help/overview-9.md)
          + [Het vormen uit de Montages van het Bureau](/help/forms/using/admin-help/configuring-out-office-settings.md)
          + [Zoeken naar procesinstanties](/help/forms/using/admin-help/searching-process-instances.md)
          + [Serverinstellingen configureren](/help/forms/using/admin-help/configuring-server-settings.md)
@@ -932,9 +934,9 @@ ht-degree: 1%
          + [Tijdelijk beheer en vertraging](/help/forms/using/admin-help/manager-throttling.md)
          + [AEM-formulieren uitvoeren in de onderhoudsmodus](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
       + De AEM-formulierdatabase onderhouden {#maintain-aem-forms-database}
-         + [DB2-database: wekelijks een proces uitvoeren](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
+         + [DB2](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
          + [Oracle database maximum open cursors drempel](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
-         + [IBM DB2-database: opdrachten voor regelmatig onderhoud uitvoeren](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
+         + [IBM](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
          + [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md)
          + [Microsoft SQL Server-database: de configuratie verfijnen](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
          + [Tips voor het minimaliseren van databasegroei](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
@@ -943,9 +945,9 @@ ht-degree: 1%
          + [Algemene map voor documentopslag](/help/forms/using/admin-help/global-document-storage-directory.md)
          + [Overwegingen bij het uitvoeren van AdministrationConsole](/help/forms/using/admin-help/considerations-running-administration-console.md)
          + [Prestaties van toepassingsservers verbeteren](/help/forms/using/admin-help/enhancing-application-server-performance.md)
-         + [WebSphere-toepassingsserver starten en stoppen](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
+         + [WebSphere starten en stoppen](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
       + Back-up en herstel van AEM-formulieren {#aem-forms-backup-recovery}
-         + [Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
+         + [Back-ups maken van de EMC Documentum en deze herstellen](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
          + [Beveiligde back-upmodus in- en uitschakelen](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md)
          + [Back-ups maken van de AEM-formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md)
          + [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md)
@@ -953,7 +955,7 @@ ht-degree: 1%
          + [PDF Generator-back-upbeperkingen](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
          + [Back-upstrategieën voor gecontroleerde mappen](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
          + [AEM-formuliergegevens herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md)
-         + [Back-upstrategie voor Connector voor EMC Documentum gebruikers](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
+         + [Back-upstrategie voor Connector voor EMC Documentum](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
          + [Strategie voor back-up en herstel in een geclusterde omgeving](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md)
       + Systeeminformatiedienst {#system-information-service}
          + [De System Information Service instellen](/help/forms/using/admin-help/set-system-information-service.md)
@@ -967,24 +969,24 @@ ht-degree: 1%
       + [Ad hoc Vragen in Proces het Melden](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
       + [Problemen met procesrapportage oplossen](/help/forms/using/process-reporting/troubleshooting-process-management.md)
    + Referentie ontwikkelaar {#developer-reference}
-      + [ Taal van het Malplaatje van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
+      + [ Taal van het Malplaatje van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
       + [ insteekmodule van AEM om adaptieve vormen te zuiveren ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [Form Bridge API&#39;s voor HTML5-formulieren](/help/forms/using/form-bridge-apis.md)
-      + [ de API van de Bibliotheek van JavaScript verwijzing voor Adaptieve Forms ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html)
+      + [ de API van de Bibliotheek van JavaScript verwijzing voor Adaptieve Forms ](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [ de Dienst van de Assembler en Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + Programmeren met AEM Forms op JEE {#programming-aem-forms-jee}
          + Inleiding tot programmeren met AEM Forms op JEE {#introduction-programming-aem-forms-jee}
             + [Introductie van Java API QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [AEM Forms aanroepen met API&#39;s](/help/forms/developing/invoking-aem-forms-using-apis.md)
-         + [AEM Forms-processen begrijpen](/help/forms/developing/aem-forms-processes.md)
-         + [Servicecontainer](/help/forms/developing/service-container.md)
+            + [AEM Forms-processen begrijpen](/help/forms/developing/aem-forms-processes.md)
+            + [Servicecontainer](/help/forms/developing/service-container.md)
          + SPI&#39;s ontwikkelen voor AEM Forms {#developing-spis-aem-forms}
             + [Een Uitnodigingshandler voor externe gebruikers maken](/help/forms/developing/creating-invite-external-users-handler.md)
          + Java API Snel starten - Codevoorbeelden {#java-api-quick-start-code-examples}
             + [Application Manager Client JavaAPI Quick Start (SOAP)](/help/forms/developing/application-manager-client-java-api.md)
             + [Application Manager Service JavaAPI Quick Start (SOAP)](/help/forms/developing/application-manager-service-java-api.md)
             + [Java API QuickStart (SOAP) van de Assembler-service](/help/forms/developing/assembler-service-java-api-quick.md)
-            + [Acrobat Reader DC extensions Service Java API Quick Start (SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
+            + [Acrobat Reader DC Extensions Service Java API Quick Start (SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
             + [Back-up- en herstelservice APIQuick start](/help/forms/developing/backup-restore-service-api-quick.md)
             + [Barcoded Forms Service Java APIQuick Start (SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
             + [Componenten en services Java APIQuick Start (SOAP)](/help/forms/developing/components-services-java-api-quick.md)
@@ -1056,7 +1058,7 @@ ht-degree: 1%
             + [Gegevens importeren en exporteren](/help/forms/developing/importing-exporting-data.md)
             + [Gebruikers beheren](/help/forms/developing/users.md)
             + [Werken met AEM Forms Repository](/help/forms/developing/aem-forms-repository.md)
-            + [Werken met formulieren met streepjescodes](/help/forms/developing/barcoded-forms.md)
+            + [Werken met Forms met streepjescodes](/help/forms/developing/barcoded-forms.md)
             + [Werken met referenties](/help/forms/developing/credentials.md)
             + [Werken met PDF/A-documenten](/help/forms/developing/pdf-a-documents.md)
             + [Werken met PDF-hulpprogramma&#39;s](/help/forms/developing/pdf-utilities.md)
@@ -1194,8 +1196,8 @@ ht-degree: 1%
          + [De Bulk-editor ontwikkelen](/help/sites-developing/dev-bulk-editor.md)
          + [Rapporten ontwikkelen](/help/sites-developing/dev-reports.md)
       + Onderdelen{#components}
-         + [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-         + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html?lang=nl-NL)
+         + [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+         + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html)
          + [Overzicht van componenten](/help/sites-developing/components.md)
          + [AEM-componenten - De basisbeginselen](/help/sites-developing/components-basics.md)
          + [AEM-componenten ontwikkelen](/help/sites-developing/developing-components.md)
@@ -1225,21 +1227,21 @@ ht-degree: 1%
          + [Hoofdletters en AEM](/help/sites-developing/headless/introduction.md)
          + Reizen zonder hoofd {#journeys}
             + Headless Developer Journey {#developer}
-               + [ Begrijp Hoofdloos in AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html?lang=nl-NL)
-               + [ Leer over de Hoofdloze Ontwikkeling van CMS ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html?lang=nl-NL)
-               + [ Begonnen het Worden met AEM Headless as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html?lang=nl-NL)
-               + [ Weg aan uw eerste ervaring gebruikend de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html?lang=nl-NL)
-               + [ hoe te om uw inhoud als Modellen van de Inhoud van AEM te modelleren ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html?lang=nl-NL)
-               + [ hoe te om tot uw inhoud via levering APIs van AEM toegang te hebben ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=nl-NL)
-               + [ hoe te om uw inhoud via AEM Assets APIs bij te werken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html?lang=nl-NL)
-               + [ hoe te om het allen samen te zetten ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html?lang=nl-NL)
-               + [ hoe te om met uw headless toepassing te gaan ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=nl-NL)
-               + [ Facultatief - hoe te om enige paginatoepassingen met AEM  tot stand te brengen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=nl-NL)
+               + [ Begrijp Hoofdloos in AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html)
+               + [ Leer over de Hoofdloze Ontwikkeling van CMS ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html)
+               + [ Begonnen het Worden met AEM Headless as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html)
+               + [ Weg aan uw eerste ervaring gebruikend de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html)
+               + [ hoe te om uw inhoud als Modellen van de Inhoud van AEM te modelleren ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html)
+               + [ hoe te om tot uw inhoud via levering APIs van AEM toegang te hebben ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html)
+               + [ hoe te om uw inhoud via AEM Assets APIs bij te werken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html)
+               + [ hoe te om het allen samen te zetten ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
+               + [ hoe te om met uw headless toepassing te gaan ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
+               + [ Facultatief - hoe te om enige paginatoepassingen met AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html) tot stand te brengen
             + Reis voor architect zonder hoofdinhoud {#architect}
-               + [ AEM Headless Content Architect Reis Overzicht van de Reis van de Architect ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=nl-NL)
-               + [ Inhoud Modeling voor Zwaartepunt met AEM - een Inleiding ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=nl-NL)
-               + [ leer de Basisprincipes van de Modellering van de Inhoud voor Zwaartepunt met AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=nl-NL)
-               + [ Leer over het Creëren van Modellen van het Fragment van de Inhoud in AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=nl-NL)
+               + [ AEM Headless Content Architect Reis Overzicht van de Reis van de Architect ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
+               + [ Inhoud Modeling voor Zwaartepunt met AEM - een Inleiding ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
+               + [ leer de Basisprincipes van de Modellering van de Inhoud voor Zwaartepunt met AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
+               + [ Leer over het Creëren van Modellen van het Fragment van de Inhoud in AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html)
          + Aan de slag - hulplijnen {#getting-started}
             + [Inleiding](/help/sites-developing/headless/getting-started/introduction.md)
             + [Een configuratie maken](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1248,28 +1250,28 @@ ht-degree: 1%
             + [Een inhoudsfragment maken](/help/sites-developing/headless/getting-started/create-content-fragment.md)
             + [Inhoudsfragmenten openen en leveren](/help/sites-developing/headless/getting-started/create-api-request.md)
          + Inhoudsfragmenten{#content-fragments}
-            + [ Hoofdloze Levering met de Fragmenten van de Inhoud en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html?lang=nl-NL)
-            + [Werken met contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html?lang=nl-NL)
-            + [ laat de Functionaliteit van het Fragment van de Inhoud voor uw Instantie  toe](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html?lang=nl-NL)
-            + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html?lang=nl-NL)
-            + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html?lang=nl-NL)
-            + [Variaties - Authoring van content voor fragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html?lang=nl-NL)
-            + [Markering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html?lang=nl-NL)
-            + [ Gebruikend Bijbehorende Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=nl-NL)
-            + [Metagegevens - Fragmenteigenschappen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=nl-NL)
-            + [ de Boom van de Structuur ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=nl-NL)
-            + [ Voorproef - vertegenwoordiging JSON ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=nl-NL)
+            + [ Hoofdloze Levering met de Fragmenten van de Inhoud en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html)
+            + [Werken met contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html)
+            + [ laat de Functionaliteit van het Fragment van de Inhoud voor uw Instantie ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html) toe
+            + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html)
+            + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html)
+            + [Variaties - Authoring van content voor fragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html)
+            + [Markering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html)
+            + [ Gebruikend Bijbehorende Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html)
+            + [Metagegevens - Fragmenteigenschappen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html)
+            + [ de Boom van de Structuur ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html)
+            + [ Voorproef - vertegenwoordiging JSON ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html)
          + Leverings-API{#delivery-api}
-            + [HTTP-API voor assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=nl-NL)
-            + [ de Fragmenten van de Inhoud REST API ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=nl-NL)
-            + [ de Fragmenten van de Inhoud GraphQL API ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html?lang=nl-NL)
+            + [HTTP-API voor assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html)
+            + [ de Fragmenten van de Inhoud REST API ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html)
+            + [ de Fragmenten van de Inhoud GraphQL API ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html)
             + [GraphQL-eindpunten beheren](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [ Gebruikend GrahiQL winde ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html?lang=nl-NL)
-            + [ Blijven Vragen ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html?lang=nl-NL)
+            + [ Gebruikend GrahiQL winde ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html)
+            + [ Blijven Vragen ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html)
             + [GraphQL-query&#39;s optimaliseren](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [ Authentificatie voor de Verre Vragen van AEM GraphQL op de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html?lang=nl-NL)
-            + [ AEM GraphQL API met de Fragmenten van de Inhoud - de Inhoud en Vragen van de Steekproef ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html?lang=nl-NL)
+            + [ Authentificatie voor de Verre Vragen van AEM GraphQL op de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html)
+            + [ AEM GraphQL API met de Fragmenten van de Inhoud - de Inhoud en Vragen van de Steekproef ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html)
          + De Universal Editor {#universal-editor}
             + [Inleiding](/help/sites-developing/universal-editor/introduction.md)
       + Hybride en SPA AEM Development {#spas}
@@ -1290,7 +1292,7 @@ ht-degree: 1%
          + [De RemotePage-component](/help/sites-developing/spa-remote-page.md)
          + [Een externe SPA bewerken in AEM](/help/sites-developing/spa-edit-external.md)
          + [Samengestelde componenten in SPA&#39;s](/help/sites-developing/spa-composite-component.md)
-         + [ toelatend de Uitvoer JSON voor een Component ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html?lang=nl-NL)
+         + [ toelatend de Uitvoer JSON voor een Component ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html)
          + [Integratie starten](/help/sites-developing/spa-launch.md)
          + [SPA-referentiematerialen](/help/sites-developing/spa-reference-materials.md)
       + Ontwikkelingsinstrumenten {#devtools}
@@ -1356,7 +1358,7 @@ ht-degree: 1%
          + Klassieke gebruikersinterface uitbreiden{#extending-classic-ui}
             + [De websiteconsole aanpassen (klassieke gebruikersinterface)](/help/sites-developing/customizing-siteadmin.md)
             + [De welkomstconsole aanpassen (klassieke gebruikersinterface)](/help/sites-developing/customizing-the-welcome-console.md)
-            + [ het Ontwikkelen van Rapporten ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html?lang=nl-NL)
+            + [ het Ontwikkelen van Rapporten ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html)
       + Testen {#testing}
          + [Planning](/help/sites-developing/planning.md)
          + [Welke testomgevingen zijn nodig?](/help/sites-developing/test-environments.md)
@@ -1369,10 +1371,10 @@ ht-degree: 1%
          + [De volgende release..](/help/sites-developing/the-next-release.md)
          + [Controlelijsten](/help/sites-developing/checklists.md)
          + [Grove dag](/help/sites-developing/tough-day.md)
-         + [ het Testen van Uw UI ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html?lang=nl-NL)
+         + [ het Testen van Uw UI ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html)
       + Aanbevolen procedures {#bestpractices}
          + [Overzicht van best practices](/help/sites-developing/best-practices.md)
-         + [ de Richtlijnen van de Ontwikkeling van AEM en Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html?lang=nl-NL)
+         + [ de Richtlijnen van de Ontwikkeling van AEM en Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
          + [Aanbevolen werkwijzen voor ontwikkeling](/help/sites-developing/development-practices.md)
          + [Inhoud architectuur](/help/sites-developing/content-architecture.md)
          + [Softwarearchitectuur](/help/sites-developing/software-architecture.md)
