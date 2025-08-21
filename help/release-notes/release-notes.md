@@ -5,14 +5,14 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8c726951cbd99660d2cfd23abef8857a6f4fcf36
+source-git-commit: b6a5e6bacfee72e162ce3bc035f909c02fbbf6db
 workflow-type: tm+mt
-source-wordcount: '4939'
+source-wordcount: '4935'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de huidige release voor Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
+# Huidige releaseopmerkingen voor Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
 
 ## Gegevens vrijgeven {#release-information}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 [!DNL Experience Manager] 6.5 LTS, SP1 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en insectenmoeilijke situaties. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 LTS in Maart 2025 worden vrijgegeven. [ installeer dit Pak van de Dienst ](#install-update) op 6.5 LTS.
 
-## Belangrijke functies en verbeteringen
+<!-- ## Key features and enhancements -->
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -468,5 +468,5 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
