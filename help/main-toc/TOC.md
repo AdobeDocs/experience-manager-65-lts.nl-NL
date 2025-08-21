@@ -224,7 +224,7 @@ ht-degree: 1%
          + [Aanbevolen procedures voor e-mailsjablonen](/help/sites-administering/best-practices-for-email-templates.md)
       + Aanbevolen procedures {#bestpractices}
          + [Aanbevolen procedures](/help/sites-administering/administer-best-practices.md)
-         + [ Beste praktijken van de Vertaling 0}](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html)
+         + [ Beste praktijken van de Vertaling 0](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html)
          + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
          + [ Behandelend GDPR- Verzoeken om de Stichting van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html)
@@ -1234,7 +1234,7 @@ ht-degree: 1%
                + [ hoe te om uw inhoud via AEM Assets APIs bij te werken ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html)
                + [ hoe te om het allen samen te zetten ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
                + [ hoe te om met uw headless toepassing te gaan ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
-               + [ Facultatief - hoe te om enige paginatoepassingen met AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html) tot stand te brengen
+               + [ Facultatief - hoe te om enige paginatoepassingen met AEM  tot stand te brengen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
             + Reis voor architect zonder hoofdinhoud {#architect}
                + [ AEM Headless Content Architect Reis Overzicht van de Reis van de Architect ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
                + [ Inhoud Modeling voor Zwaartepunt met AEM - een Inleiding ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
@@ -1250,7 +1250,7 @@ ht-degree: 1%
          + Inhoudsfragmenten{#content-fragments}
             + [ Hoofdloze Levering met de Fragmenten van de Inhoud en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html)
             + [Werken met contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html)
-            + [ laat de Functionaliteit van het Fragment van de Inhoud voor uw Instantie ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html) toe
+            + [ laat de Functionaliteit van het Fragment van de Inhoud voor uw Instantie  toe](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html)
             + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html)
             + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html)
             + [Variaties - Authoring van content voor fragmenten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html)
