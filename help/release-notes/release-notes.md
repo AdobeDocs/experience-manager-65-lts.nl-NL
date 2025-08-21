@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 70436606-d95c-4208-94f6-e33f3eefdf66
-source-git-commit: e9c09eebb372fc36ae161959e0465c07ad755130
+source-git-commit: 7f9f24f173604640b454449b389da9fcdcf7017d
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 | Type | Grote release |
 | Algemene beschikbaarheid | 7 maart 2025 |
 
-## Wat is er nieuw? {#what-s-new}
+## Nieuwe functies {#what-s-new}
 
 [!DNL Adobe Experience Manager] 6.5 LTS is een upgrade-release naar de [!DNL Adobe Experience Manager] 6.5 code base. Het verstrekt zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit, en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook [!DNL Adobe Experience Manager] 6.5 Service Pack-releases tot SP22.
 
@@ -40,7 +40,7 @@ Eclipse Jetty 11.0.x wordt gebruikt als servletmotor voor QuickStart.
 * Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Voor meer informatie, zie [ installeer en werk ](/help/sites-deploying/custom-standalone-install.md) sectie bij.
 * Adobe verspreidt updates voor Java™ 17- en Java™ 21-onderhoud voor gebruik door klanten in AEM-gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
 
-#### Uberjar Packaging {#uber-jar-packaging}
+#### Uberjar-verpakking {#uber-jar-packaging}
 
 * Er is een klein verschil tussen de Uberjar-verpakking en de AEM 6,5 LTS. Voor meer informatie, zie [ Update de versie van AEM Uber Jar ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
@@ -154,4 +154,4 @@ Neem contact op met Customer Support van Adobe als dit probleem zich voordoet. E
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
