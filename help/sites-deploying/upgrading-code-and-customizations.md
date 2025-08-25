@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Voordat u verdergaat met een upgrade, moet u beschikken over een stabiele basis 
 
 ## De basiscode bijwerken {#upgrade-code-base}
 
-### Een specifieke vertakking maken voor 6.5 LTS-code in Versiebeheer {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
+### Creeer een Specifieke Tak voor 6.5 LTS Code in de Controle van de Versie {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 Alle code en configuraties die vereist zijn voor uw AEM-implementatie, moeten met een of andere vorm van versiebeheer worden beheerd. Een specifieke tak in versiecontrole zou voor het beheren van om het even welke veranderingen nodig voor de codebasis in de doelversie van AEM moeten worden gecreeerd. Het iteratieve testen van de codebasis tegen de doelversie van AEM en de verdere insectenmoeilijke situaties wordt beheerd in deze tak.
 
@@ -83,7 +83,7 @@ Voor AEM 6.5 LTS zijn er weer twee soorten Uber Jars:
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
     <version>6.6.0</version>
-    <classifier>apis</classifier>
+    <classifier>deprecated-apis</classifier>
     <scope>provided</scope>
 </dependency>
 ```
