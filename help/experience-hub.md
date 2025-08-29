@@ -5,7 +5,8 @@ landing-page-description: Meer informatie over de Adobe Experience Hub, een cent
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 33cc2b2370f4847254e9c38d7df93b44bae02f32
+exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
+source-git-commit: 66f0240a32830ba629b656e7f9aef84af2efc91c
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -65,7 +66,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-De **sectie van Milieu&#39;s van de Authoring** &lbrace;toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
+De **sectie van Milieu&#39;s van de Authoring** {toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
 
 De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een lijst van pagina&#39;s u onlangs in AEM bezocht. Afhankelijk van het licentiebeleid van uw huurder, kan de widget items bevatten zoals Programma, Uitvoering van pijplijn, Assets, Pagina-editor en Formuliereditor.
 
