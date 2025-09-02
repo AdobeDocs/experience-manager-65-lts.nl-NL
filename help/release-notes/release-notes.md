@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6b101bcb474abe07a72d5fd04895f858eef34587
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '5228'
+source-wordcount: '5238'
 ht-degree: 0%
 
 ---
@@ -297,7 +297,6 @@ Probleem verholpen waarbij plaatsaanduidingen onjuist werden weergegeven als lab
 #### QuickStart{#foundation-quickstart-65-lts-sp1}
 
 * Het verwijderscript is bijgewerkt om het versiebereik voor de Guava-bundel aan te passen, zodat deze niet kan worden gevoegd op lijst van gewenste personen wanneer deze via Package Manager wordt geïnstalleerd. (GRANITE-5959)
-* Oplossing voor een meerdelige configuratiefout die optrad tijdens het uploaden van het AEMFD-pakket naar Tomcat 11 met JDK 17 door de serverconfiguratie bij te werken om grote pakketinstallaties te ondersteunen zonder parseringsfouten te veroorzaken. (GRANITE-58327)
 * Oplossing voor een kwestie in de UI van de Replicatie die een fout (`#1660`) toonde toen het uitgeven van replicatieagenten door de behandeling van klassieke controledozen in de interface te verbeteren. (GRANITE-58302)
 * Oplossing van veelvoudige startfouten voor S3 datastore wanneer het runnen van AEM 6.5 LTS met JDK 21 door ontbrekende de diensttoestemmingen te richten, configuratie behandeling bij te werken, en de vereiste diensten te verzekeren initialiseert correct. (GRANITE-57082)
 * De onderhouds- en onderhoudsstrategie voor AEM 6.5. Deze correctie omvatte het volgende:
@@ -369,6 +368,11 @@ Eclipse Jetty 11.0.x wordt gebruikt als servletmotor voor QuickStart.
 ## Installeren en bijwerken {#install-update}
 
 Voor opstellingsvereisten, zie [ installatieinstructies ](/help/sites-deploying/custom-standalone-install.md).
+
+>[!NOTE]
+>
+> Als u rechtstreeks aan LTS SP1 van oude 6.5 SPs bevordert, gelieve de instructies te volgen die voor 6.5 tot 6.5 LTS GA [ verbetering ](/help/sites-deploying/upgrade.md) worden gegeven.
+
 
 Voor gedetailleerde instructies, zie de [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md).
 
@@ -452,7 +456,11 @@ Wanneer dit probleem optreedt, kan een van de volgende uitzonderingen voorkomen 
 
 Een hotfix [ cq-6.5.lts.0-hotfix-NPR-42640 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is beschikbaar om dit probleem op te lossen.
 
-### Dispatcher-verbindingsfout met alleen-SSL-functie {#ssl-only-feature}
+### Dispatcher-verbindingsfout met alleen-SSL-functie (opgelost in AEM 6.5 LTS SP1 en hoger){#ssl-only-feature}
+
+>[!NOTE]
+>
+> Dit probleem is alleen aanwezig in de AEM 6.5 LTS GA-release.
 
 Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is er een bekende kwestie die connectiviteit tussen de instanties van Dispatcher en van AEM beïnvloedt. Nadat u deze functie hebt ingeschakeld, kunnen de gezondheidscontroles mislukken en kan de communicatie tussen Dispatcher- en AEM-instanties worden verstoord. Dit probleem doet zich met name voor wanneer klanten `https + IP` proberen te doorlopen van de Dispatcher naar AEM-instanties. Het heeft betrekking op SNI (de Verwijzing van de Naam van de Server) bevestigingsproblemen.
 
@@ -485,5 +493,5 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
