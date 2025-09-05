@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
+source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7221'
 ht-degree: 0%
 
 ---
@@ -457,6 +457,12 @@ Voor gedetailleerde instructies, zie de [ verbeteringsdocumentatie ](/help/sites
 >
 > Voor nieuwe AEM 6.5 LTS-installaties moeten indexdefinities afzonderlijk worden geïnstalleerd. Voor meer informatie, zie [ dit artikel ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
+## AEM Forms-invoegtoepassing installeren en bijwerken {#install-update-aem-forms-add-on}
+
+Voor gedetailleerde instructies, zie [ de installatieinstructies van het Pak van de Dienst van AEM Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+
+
+
 ## Ondersteunde platforms {#supported-platforms}
 
 Vind de volledige matrijs van gesteunde platforms met inbegrip van steun-niveau op [ AEM 6.5 LTS technische vereisten ](/help/sites-deploying/technical-requirements.md).
@@ -570,5 +576,5 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
