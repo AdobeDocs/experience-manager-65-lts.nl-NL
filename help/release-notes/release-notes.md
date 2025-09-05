@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
+source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
 workflow-type: tm+mt
-source-wordcount: '5238'
+source-wordcount: '7204'
 ht-degree: 0%
 
 ---
@@ -342,8 +342,85 @@ Probleem verholpen waarbij plaatsaanduidingen onjuist werden weergegeven als lab
 * Probleem verholpen in de werkstroom Taak maken van Postvak In waarin het dialoogvenster Taak toevoegen niet werd gesloten nadat op Verzenden werd geklikt, ondanks de taak die werd gemaakt, als gevolg van een syntaxisfout van JavaScript. (CQ-4355336)
 * Oplossing voor een probleem dat het opslaan van de configuratie van de Postvak In-weergave verhinderde omdat de eigenschapdefinitie voor `isEndUserConfigurationEnabled` ontbreekt. (CQ-4287757)
 
+## Forms
 
+### Forms Designer
 
+* Wanneer een gebruiker de gegevens voor een op XFA gebaseerde PDF exporteert met behulp van de exportDataAPI, toont de resulterende XML discrepanties in vergelijking met de XML-gegevens die handmatig worden geëxporteerd met behulp van Acrobat Reader. De waarden van sommige velden ontbraken in de uitvoer in vergelijking met de uitvoer van Acrobat Reader. (LC-3922791)
+* Als u een gelabelde PDF genereert met de Uitvoerservice in Workbench, wordt een onverwachte labeltag toegevoegd onder de referentietag in een inhoudsopgave-item. (LC-3922756)
+* Bij het afvlakken van dynamische, invulbare PDF&#39;s naar de PDF/A-indeling met de Output Service, blijft de dynamische status niet behouden. Dit leidt tot gegevensverlies en potentiële nalevingsproblemen, vooral wanneer het etiketteren wordt toegelaten. (LC-3922708)
+* Wanneer een gebruiker bijschriften van velden met de uitlijning onder of rechts uitlijnt in AEM Forms Designer, bevat de codestructuur alleen het bijschrift zonder de bijbehorende waarde. Dit leidt tot onvolledige toegankelijkheidscodes. (LC-3922619)
+* De QR-codes in gegenereerde PDF&#39;s kunnen niet meer worden gelezen. De alternatieve tekst voor de QR-codes mislukt ook toegankelijkheidstests, wat van invloed is op de compatibiliteit van schermlezers. (LC-3922551)
+* Wanneer een gebruiker een brief in Agent UI teruggeeft, ontbreekt de inhoud correct om te tonen toe te schrijven aan FormService render () API. (LC-3922461)
+* Wanneer een gebruiker PDF/A-bestanden probeert te maken van XDP&#39;s met de stijl Verzonken vierkant in AEM Forms, levert dit problemen op bij het renderen van randen. (LC-3922180)
+* Het afvlakken van dynamische formulieren die zijn gebonden aan een XSD-schema leidt tot gedeeltelijk gegevensverlies, omdat bepaalde gebonden formuliergegevens niet behouden blijven in de uiteindelijke PDF. (LC-392/08)
+* Wanneer een gebruiker gegevens uit interactieve PDF&#39;s probeert te exporteren met de extractieData-API in AEM Forms 6.5.13 en latere versies, resulteert dit in ontbrekende gegevens in vergelijking met handmatig exporteren. (LC-3921983)
+* Gebruikers hebben te maken met een compatibiliteitsprobleem met betrekking tot toegankelijkheid waarbij meerdere Link-OBJR-codes worden gemaakt bij de conversie van XDP-formulieren naar statische PDF&#39;s met AEM Forms Designer of Output-service, in plaats van één enkele koppelingstag te maken. (LC-392/1977)
+
+### Adaptieve Forms
+
+* Als u in AEM Forms de optie &#39;RTF-tekst toestaan voor titel&#39; inschakelt in het hoofddeelvenster, wordt de titel &#39;Titel uitsluiten van document van record&#39; in een genest deelvenster onjuist verborgen. Dit gebeurt in het gegenereerde document of record. (FORMS-19696)
+* Het systeem negeert de douane die schuine streep :resourceType door aem :afProperties in een schema JSON wordt toegewezen. Het type aangepaste bron wordt tijdens het renderen genegeerd. (FORMS-19691)
+* Wanneer een gebruiker een adaptief formulier met vooraf gevulde bijlagen verzendt met behulp van URI&#39;s, mislukt het verzenden van het formulier met een NullPointerException vanwege ontbrekende binaire gegevens. (FORMS 19371) (FORMS 19486)
+* Wanneer een gebruiker een PDF uploadt onder de sectie &#39;Forms en Documenten&#39;, werkt de tijdlijnfunctie niet meer. (FORMS-19407)(FORMS-19234)
+* Wanneer een gebruiker bestanden uploadt met de OOTB-component (out-of-the-box) voor bestandsbijlagen in AEM Forms, worden beveiligingskwetsbaarheden geïdentificeerd. Deze kwestie leidt tot mogelijke onderschepping van het indieningsproces door onbevoegde entiteiten. (FORMS-19271)
+* Wanneer een gebruiker een uit-de-doos Aangepast Vorm in AEM Forms configureert om een Document van Verslag (DoR) automatisch te produceren, toont het gebied van de &quot;Titel&quot;in de Eigenschappen van het Document van Acrobat Reader niet de gevangen Titel van DoR. Standaard wordt de titel van het formulier niet weergegeven in plaats van de bestandsnaam. (FORMS-19263)
+* Wanneer een gebruiker een Interactieve Communicatie in Agent UI opent, kunnen de vooraf ingevulde gegevens niet volledig worden gewist; op verwijdering, vult het automatisch met de zelfde gegevens. (FORMS-19151)
+* Wanneer een gebruiker een datumgebied in de Agent UI previews, verandert de datum onverwacht. Dit probleem doet zich voor als gevolg van verschillen in tijdzone tussen de UTC-instelling van de VM en de interpretatie van de datum door het systeem. (FORMS-1915)
+* Wanneer een gebruiker een formulier verzendt, kunnen bestandsbijlagen worden gedupliceerd, wat leidt tot meerdere uploads van hetzelfde bestand. (FORMS-19045) (FORMS-19051)
+* Het toevoegen van coördinatoren aan beleidssets in Documentbeveiliging mislukt in zowel de productie- als de lagere omgeving. (FORMS-18603, FORMS-18212, FORMS-19697)
+* Wanneer een gebruiker in de bureaubladmodus op het pictogram &quot;datepicker-agenda-icon&quot; klikt met een leeg veld, treedt een fout op vanwege de ongedefinieerde variabele _$focusedDate, waardoor gekoppelde aangepaste scripts worden onderbroken. (FORMS-18483) (FORMS-18268)
+* Wanneer een klant een voorvertoning van een letter weergeeft, worden in het veld &#39;Hoeveelheid in woorden&#39; de getalwaarden niet correct weergegeven of bijgewerkt. Dit leidt tot een onjuiste uitlijning en ontbrekende spaties in de inhoud. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848, FORMS-19614, LC-3922004)
+* Wanneer een klant een voorvertoning weergeeft van een opgeslagen brief op RHEL, worden de inhoud verkeerd uitgelijnd, ontbreken spaties en worden onverwachte tekens zoals &#39;x&#39; weergegeven. (FORMS-18422)(FORMS-17641)
+* Wanneer een gebruiker in AEM Forms tussen tabbladen navigeert, reageert het selecteren van componenten op het eerste tabblad niet meer. (FORMS-18345)
+* Wanneer een gebruiker een HTML-bestand naar PDF converteert met de optie WebToPDF, ontbreekt de koptekstsectie in de uitvoer-PDF, inclusief metagegevens en titeltags. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
+* Wanneer een gebruiker in AEM JEE Process Manager SDK de methode retryAction(long actionOid) aanroept, probeert het systeem ten onrechte de eerste actie in de tabel tb_action_instance. Deze workflow vindt zelfs plaats wanneer een specifieke actie-id wordt opgegeven of wanneer de id null is, wat onbedoeld gedrag tot gevolg heeft. (FORMS-18187)
+* Een gebruiker vindt problemen waar het opgeslagen concept en de verzendfuncties mislukken zonder een foutbericht weer te geven. (FORMS-18069)
+* De overgang van op XSD gebaseerde stichtingscomponenten aan kerncomponenten verhindert de implementatie van dwars-dossierverwijzingen in JSON- schema&#39;s, die de Adaptieve migratie van Forms beïnvloeden. (FORMS-18065)
+* Wanneer een gebruiker een brief in de Agent UI previews, toont het datumgebied een onjuiste waarde toe te schrijven aan de kwesties van de tijdomzetting van IC. Deze verschillen zijn het gevolg van verschillen in tijdzone tussen de VM-omgeving en de interpretatie van de tijd van het systeem (UTC versus lokale tijd). (FORMS-17988) (FORMS-17248)
+* Wanneer een gebruiker voorvertoningen van letters gebruikt gebruikend de malplaatjes van Notice IC in AEM Forms, variëren de generatietijden van PDF beduidend, van 1.5 seconden tot meer dan 10 seconden, zelfs op de zelfde server. Deze inconsistentie beïnvloedt bedrijfskritieke werkstromen. (FORMS-17951)
+* Wanneer een gebruiker een voorwerp van de Handtekening van de Krabbels in een AanpassingsVorm aan XDP gebruikend de optie &quot;Gegevensbronnen&quot;bindt, kunnen de veranderingen niet worden bewaard. De reden hiervoor is dat er validatiefouten zijn met betrekking tot de permanente hoogte-breedteverhouding, zelfs als geldige waarden worden gebruikt. (FORMS-17587)
+* Wanneer een gebruiker specifieke XDP met vele verborgen gebieden voor documentfragmenten gebruikt, leidt AEM tot de knopen van CRX met het cm :optional bezit dat aan vals wordt geplaatst, wat de Interactieve Communicatie (IC) voorlegging veroorzaakt om te ontbreken. (FORMS-17538)
+* Wanneer een klant een voorvertoning van een letter weergeeft, worden negatieve waarden in het veld van het numerieke vak niet correct verwerkt wanneer cijferlimieten voor lead en frame zijn gedefinieerd. Dit probleem treedt op als gevolg van het gebruik van parseFloat, dat het minteken als onderdeel van het getal behandelt. (FORMS-17451)
+* Wanneer een voorvertoning van een brief wordt weergegeven, wordt het gebruik van de jokerteken &quot;*&quot; in het bestand Adobe.json opgemerkt, wat aanleiding geeft tot bezorgdheid over het doel en de mogelijke wijziging ervan. (FORMS-17317)
+* Wanneer een gebruiker een schermlezer gebruikt op de gezamenlijke account Toepassen voor een Vaste snelheidsbesparingsserver, worden de koppen ten onrechte als klikbaar aangekondigd, wat toegankelijkheidsproblemen veroorzaakt. (FORMS-17038)
+* Wanneer een formulier wordt ingesloten, ontbreekt in het gegenereerde iframe een titelkenmerk, wat leidt tot een compatibiliteitsprobleem met betrekking tot de toegankelijkheid. (FORMS-17010)
+* Het downloaden van een formulier via de gebruikersinterface van Forms Manager omvat altijd de bijbehorende afhankelijkheden, zoals thema&#39;s en fragmenten. (FORMS-15811)
+* Wanneer een gebruiker het formulier opent op mobiele apparaten (iOS en Android™), worden de knoppen Volgende en Vorige op de eerste pagina uitgeschakeld. De schermlezer herkent deze echter niet als uitgeschakeld. (FORMS-15773)
+* Wanneer een gebruiker een groot formulier opslaat met fragmenten en het laden van de laadproblemen is ingeschakeld, worden concepten niet opgehaald, waardoor de workflow wordt verstoord. (FORMS-19890, FORMS-19808)
+* Gebruikers ondervonden problemen bij het opslaan van formuliereigenschappen voor adaptief formulier op basis van Core Components. Dit kwam voor omdat de overtollige manuscripten van de Adaptieve Vorm die op de redacteur van de Componenten van de Stichting wordt gebaseerd inbegrepen, veroorzakend conflicten in de Aangepaste Vorm die op de Componenten van de Kern wordt gebaseerd. editor. (FORMS-17474)
+* Gebruikers hebben problemen ondervonden met de pagina Handtekening voor GovCloud-handtekening van Adobe. Deze pagina wordt niet weergegeven in een iframe. (FORMS-16803)
+* Gebruikers ervaren fouten bij het selecteren van verwijzingen voor Forms-fragmenten (AF) die specifiek zijn voor de Core Component Adaptive. Het foutbericht &quot;Kan verwijzing niet renderen: geen absoluut pad&quot; verscheen ter voorkoming van correcte rendering van verwijzingen. (FORMS-19678)
+* Toegevoegde ondersteuning voor multi-threaded conversie met Acrobat DC, waardoor gebruikers Word-, Excel- en PowerPoint-documenten efficiënter kunnen converteren naar PDF-documenten. (FORMS-21310)
+* Toegevoegde opname van `com.adobe.granite.toggle.impl.dev` -bundel in AEM Service Pack 24, waardoor meer gestroomlijnde ontwikkelingsprocessen mogelijk worden gemaakt door deze uit de invoegtoepassing Forms te verwijderen. (FORMS-20139)
+* FeatureToggleRenderConditionServlet is verwijderd uit de form-foundation en com.adobe.granite.toggle.impl.dev-bundel uit de form add-on. Deze update zorgt ervoor dat na de installatie van de add-on formulieren de rendervoorwaarde correct wordt omgezet, waardoor de functionaliteit van de component voor klanten wordt verbeterd. (FORMS-20138)
+* Gebruikers ondervonden trage prestaties als gevolg van langdurige query&#39;s in Adaptive Forms. Deze update backports vraagveranderingen om efficiency te verbeteren. Klanten kunnen nu index met tagnamen aemformsAFReferences maken. (FORMS-21411)
+* Gebruikers ondervonden onjuist uitgelijnde koptekstposities tijdens het converteren van HTML naar Portable Document Format (PDF) met WebPDF. Dit probleem heeft invloed op de consistentie en leesbaarheid van de uitvoerindeling van documenten. (FORMS-21502, FORMS-21540)
+* Gebruikers ondervonden validatiefouten bij PDF/A-1b ondanks geslaagde verificatie vóór de vlucht. Dit probleem betrof de controle op de naleving van documenten voor zakelijke klanten die PDF-validatieprogramma&#39;s gebruiken. (FORMS-20196)
+* De gebruikers ervoeren onvertaalde koorden op UI, veroorzakend verwarring en moeilijkheid in het begrijpen van de interface. (FORMS-6542)
+* Gebruikers hebben problemen ondervonden met e-mailmeldingen. De stap E-mailworkflow verzenden heeft geen invloed op geautomatiseerde communicatieprocessen. (FORMS-17961)
+* Gebruikers ondervonden mislukte tests voor formulierwerkstromen, die invloed hadden op hun vermogen om werkstroomprocessen efficiënt te voltooien. (FORMS-16231)
+* Gebruikers konden de tijdlijnfunctie van PDF-bestanden niet gebruiken in AEM-formulieren. Dit probleem heeft invloed op het vermogen van gebruikers om documentwijzigingen en revisies effectief bij te houden. Wanneer u een PDF uploadt onder de sectie &#39;Forms en Documenten&#39; in het gebied AEM-formulieren, werkt de tijdlijnweergave niet meer. (FORMS-19408)
+* De gebruikers ervaren een ongeldige wijzeruitzondering wanneer het in wisselwerking staan met OData. Dit veroorzaakt onderbrekingen in de processen van de gegevensherwinning. (FORMS-20348)
+* De google.common.collection-bibliotheek is verwijderd nadat Guava, een opensource Java-bibliotheek, is verwijderd. Deze update zorgt voor betere compatibiliteit en prestaties voor zakelijke klanten die gebruikmaken van Adaptive Forms. (FORMS-17031)
+
+### Forms Captcha
+
+* Toegevoegde Hcaptcha- en Turnstile-ondersteuning voor adaptieve Forms op basis van Foundation Components. (FORMS-16562)
+* Gebruikers met een ervaren pictogram overlappen problemen in het dialoogvenster Captcha-configuratie maken. Bij het invullen van de vereiste velden overlapte het informatiepictogram het foutpictogram, wat verwarring veroorzaakt tijdens de configuratie-instelling. (FORMS-16916)
+* Gebruikers ondervonden een onjuiste configuratie die voor reCAPTCHA werd opgepakt in Adaptive Forms op basis van stichtingscomponenten. Wanneer de configuratiecontainer niet is geselecteerd voor een formulier, hebben meerdere configuraties in de map `conf/global` het probleem veroorzaakt. (FORMS-19237)
+* Gebruikers ondervonden problemen met het renderen van reCAPTCHA. Dit beïnvloedde formulierverzendingen en beveiligingsvalidatie voor zakelijke klanten. (FORMS-17136, FORMS-19596)
+* Gebruikers ervaren een probleem waarbij de grootte van de reCAPTCHA-onderneming niet wordt weerspiegeld in de gebruikersinterface (UI). (FORMS-16574)
+* Gebruikers hebben problemen ondervonden met de functionaliteit van ReCaptcha als gevolg van een niet-gesloten ResourceResolver in &#39;ReCaptchaConfigurationServiceImpl&#39;, die periodiek validatiefouten veroorzaken tijdens formulierverzendingen. (FORMS-19241)
+* Gebruikers ondervonden problemen met de validatie van reCAPTCHA wanneer formulieren in sites worden gemaakt. AEM-formulieren herkennen de formuliernaam niet correct, waardoor validatiefouten zijn opgetreden. (FORMS-20486)
+* Gebruikers hebben formulieren ingediend, zelfs als de reCAPTCHA-score van de onderneming 1,0 was, wat tot potentiële beveiligingsrisico&#39;s leidde. (FORMS-16766) {{$include }}
+* Verbeterde reCAPTCHA-waarschuwingen in Adaptive Forms door het bijwerken van de verzendfoutcodes naar 400. Ook, verfijnde logboekalarm om tussen onderbrekingen, verlopen, en beide mislukkingen van de ontdekkingsopsporing te onderscheiden, die het verbeteren van het oplossen van problemennauwkeurigheid en systeemwaarneming verbeteren. (FORMS-19240)
+* Sluit een niet-gesloten instantie ResourceResolver in ReCaptchaConfigurationServiceImpl om potentiële middellekken te verhinderen en systeemstabiliteit te verbeteren wanneer het gebruiken van reCAPTCHA integraties in AEM Forms. (FORMS-19242)
+* Verbeterde CAPTCHA-configuratieverwerking voor AEM Forms door ervoor te zorgen dat de juiste configuratie aan elk formulier wordt gekoppeld wanneer er meerdere items in de map /conf/global aanwezig zijn. Voorkomt onbedoeld gebruik van onjuiste CAPTCHA-instellingen wanneer de configuratiecontainer niet expliciet is geselecteerd. (FORMS-19239)
+
+### Gebruikersinterface Forms Management
+
+* Gebruikers ondervonden niet-gelokaliseerde tekenreeksen in Forms > Controlemap maken > Maken van controlemap. Bij het maken van een gecontroleerde map zijn geen tekenreeksen gevonden, zoals &#39;Controlemap maken&#39; en &#39;Controlemap gemaakt&#39;. Dit heeft invloed op de gebruikersinterface. (FORMS-15234)
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -493,5 +570,5 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
