@@ -8,9 +8,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3345'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
    >[!NOTE]
    >
-   >Zie {de Configuraties van de Opslag van 0} Knoop [&#128279;](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.
+   >Zie {de Configuraties van de Opslag van 0} Knoop [ en ](#node-store-configurations) Configuraties van de Opslag van Gegevens [ voor configuratieopties.](#data-store-configurations)
 
 1. Start AEM.
 
@@ -184,19 +184,19 @@ Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.60.x S3-conn
 
 1. Stop de AEM-instantie.
 
-1. Navigeer naar `<aem-install>/crx-quickstart/install/15` in de installatiemap van AEM en maak een back-up van de inhoud ervan.
-1. Na de steun, schrap de oude versie van de S3 Schakelaar en zijn gebiedsdelen door alle jar dossiers in de `<aem-install>/crx-quickstart/install/15` omslag te schrappen, bijvoorbeeld:
+1. Navigeer naar `<aem-install>/crx-quickstart/install` in de installatiemap van AEM en maak een back-up van alle submappen.
+1. Na de steun, schrap de oude versie van de S3 Schakelaar en zijn gebiedsdelen door alle jar dossiers in alle omslagen onder `<aem-install>/crx-quickstart/install/` omslag te schrappen, bijvoorbeeld:
 
-   * **eiken-blob-wolk-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/eiken-blob-wolk-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
-1. Download de recentste versie van het 1.60.x eigenschappak van de [ Distributie van de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
-1. Pak de inhoud uit en ga vervolgens naar `jcr_root/libs/system/install/15` .
-1. Kopieer de jar dossiers aan **&lt;aem-install>**/crx-quickstart/install/15 in de installatiemap van AEM.
+1. Download de recentste versie van het 1.60.x eigenschappak van de [ Gemaakt bewaarplaats.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Pak de inhoud uit en ga vervolgens naar `jcr_root/libs/system/install/` .
+1. Kopieer alle subfolders aan **&lt;aaem-install>**/crx-quickstart/install/ in de installatiemap van AEM.
 1. Start AEM en controleer de verbindingsfunctionaliteit.
 
 U kunt het configuratiebestand gebruiken met de opties die hieronder worden beschreven.
@@ -318,13 +318,13 @@ De mislukte uploads (bijvoorbeeld, wegens een netwerkverstoring) worden gezet op
 Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 1. Installeer de auteur en publiceer instanties en zorg ervoor zij behoorlijk begonnen zijn.
-1. Ga naar de montages van de replicatieagent, door een pagina aan *https://localhost:4502/etc/replication/agents.author/publish.html* te openen.
+1. Ga naar de montages van de replicatieagent, door een pagina aan *https://localhost :4502 /etc/replication/agents.author/publish.html* te openen.
 1. Druk **uitgeven** knoop in de **sectie van Montages**.
-1. Verander de **typeoptie van de Serienummering** &lbrace;in **Binair minder**.
+1. Verander de **typeoptie van de Serienummering** {in **Binair minder**.
 
 1. Voeg de parameter &quot; `binaryless`= `true`&quot; toe aan de transporturi. Na de wijziging moet de uri er ongeveer als volgt uitzien:
 
-   *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
+   *https://localhost :4503/bin/receive?sling :authRequestLogin=1&amp;binaryless=true*
 
 1. Start alle auteur- en publicatieinstanties opnieuw om de wijzigingen van kracht te laten worden.
 
@@ -471,7 +471,7 @@ Het proces van de huisvuilinzameling van de gegevensopslag wordt gebruikt om het
 
 U kunt de inzameling van het huisvuilopslag in werking stellen door:
 
-1. Ga naar de console JMX in *https://&lt;serveradres:haven>/system/console/jmx*
+1. Ga naar de console JMX in *https://&lt;serveradres :port>/system/console/jmx*
 1. Het zoeken naar **RepositoryManagement.** Als u de gegevensopslagbeheerder MBean hebt gevonden, klikt u erop om de beschikbare opties weer te geven.
 1. De rol aan het eind van de pagina, en klikt **startDataStoreGC (booleaanse markOnly)** verbinding.
 1. In de volgende dialoog, ga `false` voor de `markOnly` parameter in, dan klik **aanhalen**:
