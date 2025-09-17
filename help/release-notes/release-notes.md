@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
+source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
 workflow-type: tm+mt
-source-wordcount: '7223'
+source-wordcount: '7103'
 ht-degree: 0%
 
 ---
@@ -317,7 +317,10 @@ Probleem verholpen waarbij plaatsaanduidingen onjuist werden weergegeven als lab
 
 * Bijgewerkte Sling ResourceAccessSecurity naar versie 1.1.2 om een `ClassCastException` op te lossen die optrad wanneer meerdere `ResourceAccessGate` references initialized `ResourceAccessSecurityImpl` waren. (NPR-42750)
 * Probleem verholpen waarbij het dialoogvenster Licentie grijs werd weergegeven tijdens het integreren met Adobe Stock. Dit probleem is ontstaan doordat de functie `sunt:initList` vereiste invoervelden heeft verwijderd. De functie is gevonden in de clientbibliotheken van de Coral Foundation. De clientbibliotheken zijn bijgewerkt om de benodigde velden te behouden en de functionaliteit van het licentiedialoogvenster is nu juist. (NPR-42748)
-* De oplossing voor het probleem Sling Scripting die tijdens de pakketinstallatie tot uitzonderingen `DataTimeParseException` en `String.length()` null pointer was geleid, is nu opgelost. Bijgewerkte het Schrappen van het Schrappen aan versie 2.8.3 - 1.0.10.6 om installatiefouten te verminderen en stabiliteit te verbeteren. (NPR-42640)
+* Oplossing voor een onverwachte JSP-compilatiefout met `org.apache.sling.scripting.jsp 2.6.0` . (NPR-42640)
+
+<!--
+* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
 
 <!--
 #### Translation{#foundation-translation-65-lts-sp1} -->
@@ -352,22 +355,22 @@ Probleem verholpen waarbij plaatsaanduidingen onjuist werden weergegeven als lab
 
 * Wanneer een gebruiker de gegevens voor een op XFA gebaseerde PDF exporteert met behulp van de exportDataAPI, toont de resulterende XML discrepanties in vergelijking met de XML-gegevens die handmatig worden geëxporteerd met behulp van Acrobat Reader. De waarden van sommige velden ontbraken in de uitvoer in vergelijking met de uitvoer van Acrobat Reader. (LC-3922791)
 * Als u een gelabelde PDF genereert met de Uitvoerservice in Workbench, wordt een onverwachte labeltag toegevoegd onder de referentietag in een inhoudsopgave-item. (LC-3922756)
-* Bij het afvlakken van dynamische, invulbare PDF&#39;s naar de PDF/A-indeling met de Output Service, blijft de dynamische status niet behouden. Dit leidt tot gegevensverlies en potentiële nalevingsproblemen, vooral wanneer het etiketteren wordt toegelaten. (LC-3922708)
+* Bij het afvlakken van dynamische, invulbare PDF&#39;s naar de PDF/A-indeling met de Output Service, blijft de dynamische status niet behouden. Dit probleem leidt tot gegevensverlies en mogelijke compatibiliteitsproblemen, vooral wanneer codering is ingeschakeld. (LC-3922708)
 * Wanneer een gebruiker bijschriften van velden met de uitlijning onder of rechts uitlijnt in AEM Forms Designer, bevat de codestructuur alleen het bijschrift zonder de bijbehorende waarde. Dit leidt tot onvolledige toegankelijkheidscodes. (LC-3922619)
 * De QR-codes in gegenereerde PDF&#39;s kunnen niet meer worden gelezen. De alternatieve tekst voor de QR-codes mislukt ook toegankelijkheidstests, wat van invloed is op de compatibiliteit van schermlezers. (LC-3922551)
 * Wanneer een gebruiker een brief in Agent UI teruggeeft, ontbreekt de inhoud correct om te tonen toe te schrijven aan FormService render () API. (LC-3922461)
 * Wanneer een gebruiker PDF/A-bestanden probeert te maken van XDP&#39;s met de stijl Verzonken vierkant in AEM Forms, levert dit problemen op bij het renderen van randen. (LC-3922180)
 * Het afvlakken van dynamische formulieren die zijn gebonden aan een XSD-schema leidt tot gedeeltelijk gegevensverlies, omdat bepaalde gebonden formuliergegevens niet behouden blijven in de uiteindelijke PDF. (LC-392/08)
 * Wanneer een gebruiker gegevens uit interactieve PDF&#39;s probeert te exporteren met de extractieData-API in AEM Forms 6.5.13 en latere versies, resulteert dit in ontbrekende gegevens in vergelijking met handmatig exporteren. (LC-3921983)
-* Gebruikers hebben te maken met een compatibiliteitsprobleem met betrekking tot toegankelijkheid waarbij meerdere Link-OBJR-codes worden gemaakt bij de conversie van XDP-formulieren naar statische PDF&#39;s met AEM Forms Designer of Output-service, in plaats van één enkele koppelingstag te maken. (LC-392/1977)
+* Als u XDP-formulieren converteert naar statische PDF&#39;s met AEM Forms Designer of de Output-service, worden er meerdere `Link-OBJR` -codes gemaakt. De problemen veroorzaken een compatibiliteitsprobleem met betrekking tot de toegankelijkheid omdat er één verenigde koppelingstag wordt verwacht. (LC-392/1977)
 
 ### Adaptieve Forms
 
 * Als u in AEM Forms de optie &#39;RTF-tekst toestaan voor titel&#39; inschakelt in het hoofddeelvenster, wordt de titel &#39;Titel uitsluiten van document van record&#39; in een genest deelvenster onjuist verborgen. Dit gebeurt in het gegenereerde document of record. (FORMS-19696)
-* Het systeem negeert de douane die schuine streep :resourceType door aem :afProperties in een schema JSON wordt toegewezen. Het type aangepaste bron wordt tijdens het renderen genegeerd. (FORMS-19691)
+* Het systeem negeert de aangepaste `sling:resourceType` die via `aem:afProperties` in een JSON-schema is toegewezen. Het type aangepaste bron wordt tijdens het renderen genegeerd. (FORMS-19691)
 * Wanneer een gebruiker een adaptief formulier met vooraf gevulde bijlagen verzendt met behulp van URI&#39;s, mislukt het verzenden van het formulier met een NullPointerException vanwege ontbrekende binaire gegevens. (FORMS 19371) (FORMS 19486)
 * Wanneer een gebruiker een PDF uploadt onder de sectie &#39;Forms en Documenten&#39;, werkt de tijdlijnfunctie niet meer. (FORMS-19407)(FORMS-19234)
-* Wanneer een gebruiker bestanden uploadt met de OOTB-component (out-of-the-box) voor bestandsbijlagen in AEM Forms, worden beveiligingskwetsbaarheden geïdentificeerd. Deze kwestie leidt tot mogelijke onderschepping van het indieningsproces door onbevoegde entiteiten. (FORMS-19271)
+* Wanneer een gebruiker bestanden uploadt met de OOTB-component (out-of-the-box) voor bestandsbijlagen in AEM Forms, worden beveiligingskwetsbaarheden geïdentificeerd. De kwestie leidt tot potentiële onderschepping van het indieningsproces door onbevoegde entiteiten. (FORMS-19271)
 * Wanneer een gebruiker een uit-de-doos Aangepast Vorm in AEM Forms configureert om een Document van Verslag (DoR) automatisch te produceren, toont het gebied van de &quot;Titel&quot;in de Eigenschappen van het Document van Acrobat Reader niet de gevangen Titel van DoR. Standaard wordt de titel van het formulier niet weergegeven in plaats van de bestandsnaam. (FORMS-19263)
 * Wanneer een gebruiker een Interactieve Communicatie in Agent UI opent, kunnen de vooraf ingevulde gegevens niet volledig worden gewist; op verwijdering, vult het automatisch met de zelfde gegevens. (FORMS-19151)
 * Wanneer een gebruiker een datumgebied in de Agent UI previews, verandert de datum onverwacht. Dit probleem doet zich voor als gevolg van verschillen in tijdzone tussen de UTC-instelling van de VM en de interpretatie van de datum door het systeem. (FORMS-1915)
@@ -380,28 +383,28 @@ Probleem verholpen waarbij plaatsaanduidingen onjuist werden weergegeven als lab
 * Wanneer een gebruiker een HTML-bestand naar PDF converteert met de optie WebToPDF, ontbreekt de koptekstsectie in de uitvoer-PDF, inclusief metagegevens en titeltags. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 * Wanneer een gebruiker in AEM JEE Process Manager SDK de methode retryAction(long actionOid) aanroept, probeert het systeem ten onrechte de eerste actie in de tabel tb_action_instance. Deze workflow vindt zelfs plaats wanneer een specifieke actie-id wordt opgegeven of wanneer de id null is, wat onbedoeld gedrag tot gevolg heeft. (FORMS-18187)
 * Een gebruiker vindt problemen waar het opgeslagen concept en de verzendfuncties mislukken zonder een foutbericht weer te geven. (FORMS-18069)
-* De overgang van op XSD gebaseerde stichtingscomponenten aan kerncomponenten verhindert de implementatie van dwars-dossierverwijzingen in JSON- schema&#39;s, die de Adaptieve migratie van Forms beïnvloeden. (FORMS-18065)
+* De overgang van op XSD-Gebaseerde Componenten van de Stichting aan de Componenten van de Kern verhindert de implementatie van dwars-dossierverwijzingen in JSON- schema&#39;s, die de Adaptieve migratie van Forms beïnvloeden. (FORMS-18065)
 * Wanneer een gebruiker een brief in de Agent UI previews, toont het datumgebied een onjuiste waarde toe te schrijven aan de kwesties van de tijdomzetting van IC. Deze verschillen zijn het gevolg van verschillen in tijdzone tussen de VM-omgeving en de interpretatie van de tijd van het systeem (UTC versus lokale tijd). (FORMS-17988) (FORMS-17248)
 * Wanneer een gebruiker voorvertoningen van letters gebruikt gebruikend de malplaatjes van Notice IC in AEM Forms, variëren de generatietijden van PDF beduidend, van 1.5 seconden tot meer dan 10 seconden, zelfs op de zelfde server. Deze inconsistentie beïnvloedt bedrijfskritieke werkstromen. (FORMS-17951)
 * Wanneer een gebruiker een voorwerp van de Handtekening van de Krabbels in een AanpassingsVorm aan XDP gebruikend de optie &quot;Gegevensbronnen&quot;bindt, kunnen de veranderingen niet worden bewaard. De reden hiervoor is dat er validatiefouten zijn met betrekking tot de permanente hoogte-breedteverhouding, zelfs als geldige waarden worden gebruikt. (FORMS-17587)
-* Wanneer een gebruiker specifieke XDP met vele verborgen gebieden voor documentfragmenten gebruikt, leidt AEM tot de knopen van CRX met het cm :optional bezit dat aan vals wordt geplaatst, wat de Interactieve Communicatie (IC) voorlegging veroorzaakt om te ontbreken. (FORMS-17538)
+* Wanneer een gebruiker een specifieke XDP gebruikt met veel verborgen velden voor documentfragmenten, maakt AEM CRX-knooppunten met de eigenschap `cm:optional` ingesteld op false, wat ertoe leidt dat de IC-verzending (Interactive Communication) mislukt. (FORMS-17538)
 * Wanneer een klant een voorvertoning van een letter weergeeft, worden negatieve waarden in het veld van het numerieke vak niet correct verwerkt wanneer cijferlimieten voor lead en frame zijn gedefinieerd. Dit probleem treedt op als gevolg van het gebruik van parseFloat, dat het minteken als onderdeel van het getal behandelt. (FORMS-17451)
-* Wanneer een voorvertoning van een brief wordt weergegeven, wordt het gebruik van de jokerteken &quot;*&quot; in het bestand Adobe.json opgemerkt, wat aanleiding geeft tot bezorgdheid over het doel en de mogelijke wijziging ervan. (FORMS-17317)
+* Wanneer een voorvertoning van een brief wordt weergegeven, wordt het gebruik van de joker &quot;*&quot; in het bestand Adobe.json opgemerkt, wat bezorgdheid wekt over het doel en de mogelijke wijziging van de brief. (FORMS-17317)
 * Wanneer een gebruiker een schermlezer gebruikt op de gezamenlijke account Toepassen voor een Vaste snelheidsbesparingsserver, worden de koppen ten onrechte als klikbaar aangekondigd, wat toegankelijkheidsproblemen veroorzaakt. (FORMS-17038)
 * Wanneer een formulier wordt ingesloten, ontbreekt in het gegenereerde iframe een titelkenmerk, wat leidt tot een compatibiliteitsprobleem met betrekking tot de toegankelijkheid. (FORMS-17010)
 * Het downloaden van een formulier via de gebruikersinterface van Forms Manager omvat altijd de bijbehorende afhankelijkheden, zoals thema&#39;s en fragmenten. (FORMS-15811)
 * Wanneer een gebruiker het formulier opent op mobiele apparaten (iOS en Android™), worden de knoppen Volgende en Vorige op de eerste pagina uitgeschakeld. De schermlezer herkent deze echter niet als uitgeschakeld. (FORMS-15773)
 * Wanneer een gebruiker een groot formulier opslaat met fragmenten en het laden van de laadproblemen is ingeschakeld, worden concepten niet opgehaald, waardoor de workflow wordt verstoord. (FORMS-19890, FORMS-19808)
-* Gebruikers ondervonden problemen bij het opslaan van formuliereigenschappen voor adaptief formulier op basis van Core Components. Dit kwam voor omdat de overtollige manuscripten van de Adaptieve Vorm die op de redacteur van de Componenten van de Stichting wordt gebaseerd inbegrepen, veroorzakend conflicten in de Aangepaste Vorm die op de Componenten van de Kern wordt gebaseerd. editor. (FORMS-17474)
+* Gebruikers ondervonden problemen bij het opslaan van formuliereigenschappen voor adaptief formulier op basis van Core Components. Deze fout kwam voor omdat de overtollige manuscripten van de Adaptieve Vorm die op de redacteur van de Componenten van de Stichting wordt gebaseerd inbegrepen, veroorzakend conflicten in de Aangepaste Vorm die op de Componenten van de Kern wordt gebaseerd. editor. (FORMS-17474)
 * Gebruikers hebben problemen ondervonden met de pagina Handtekening voor GovCloud-handtekening van Adobe. Deze pagina wordt niet weergegeven in een iframe. (FORMS-16803)
-* Gebruikers ervaren fouten bij het selecteren van verwijzingen voor Forms-fragmenten (AF) die specifiek zijn voor de Core Component Adaptive. Het foutbericht &quot;Kan verwijzing niet renderen: geen absoluut pad&quot; verscheen ter voorkoming van correcte rendering van verwijzingen. (FORMS-19678)
+* Gebruikers hebben fouten ervaren bij het selecteren van verwijzingen voor Forms-fragmenten (AF) die geschikt zijn voor Core Component Adaptive. Het foutbericht &quot;Kan verwijzing niet renderen: geen absoluut pad&quot; verscheen ter voorkoming van correcte rendering van verwijzingen. (FORMS-19678)
 * Toegevoegde ondersteuning voor multi-threaded conversie met Acrobat DC, waardoor gebruikers Word-, Excel- en PowerPoint-documenten efficiënter kunnen converteren naar PDF-documenten. (FORMS-21310)
 * Toegevoegde opname van `com.adobe.granite.toggle.impl.dev` -bundel in AEM Service Pack 24, waardoor meer gestroomlijnde ontwikkelingsprocessen mogelijk worden gemaakt door deze uit de invoegtoepassing Forms te verwijderen. (FORMS-20139)
 * FeatureToggleRenderConditionServlet is verwijderd uit de form-foundation en com.adobe.granite.toggle.impl.dev-bundel uit de form add-on. Deze update zorgt ervoor dat na de installatie van de add-on formulieren de rendervoorwaarde correct wordt omgezet, waardoor de functionaliteit van de component voor klanten wordt verbeterd. (FORMS-20138)
-* Gebruikers ondervonden trage prestaties als gevolg van langdurige query&#39;s in Adaptive Forms. Deze update backports vraagveranderingen om efficiency te verbeteren. Klanten kunnen nu index met tagnamen aemformsAFReferences maken. (FORMS-21411)
-* Gebruikers ondervonden onjuist uitgelijnde koptekstposities tijdens het converteren van HTML naar Portable Document Format (PDF) met WebPDF. Dit probleem heeft invloed op de consistentie en leesbaarheid van de uitvoerindeling van documenten. (FORMS-21502, FORMS-21540)
+* Gebruikers ondervonden trage prestaties als gevolg van langdurige query&#39;s in Adaptive Forms. Deze update backports vraagveranderingen om efficiency te verbeteren. Klanten kunnen nu een index maken met de tagnaam aemformsAFReferences. (FORMS-21411)
+* Gebruikers ondervonden onjuist uitgelijnde koptekstposities tijdens het converteren van HTML naar Portable Document Format (PDF) met WebPDF. Dit probleem beïnvloedt de consistentie in de documentindeling en de leesbaarheid van de uitvoer. (FORMS-21502, FORMS-21540)
 * Gebruikers ondervonden validatiefouten bij PDF/A-1b ondanks geslaagde verificatie vóór de vlucht. Dit probleem betrof de controle op de naleving van documenten voor zakelijke klanten die PDF-validatieprogramma&#39;s gebruiken. (FORMS-20196)
-* De gebruikers ervoeren onvertaalde koorden op UI, veroorzakend verwarring en moeilijkheid in het begrijpen van de interface. (FORMS-6542)
+* De gebruikers ervoeren onvertaalde koorden in UI, veroorzakend verwarring en moeilijkheid in het begrijpen van de interface. (FORMS-6542)
 * Gebruikers hebben problemen ondervonden met e-mailmeldingen. De stap E-mailworkflow verzenden heeft geen invloed op geautomatiseerde communicatieprocessen. (FORMS-17961)
 * Gebruikers ondervonden mislukte tests voor formulierwerkstromen, die invloed hadden op hun vermogen om werkstroomprocessen efficiënt te voltooien. (FORMS-16231)
 * Gebruikers konden de tijdlijnfunctie van PDF-bestanden niet gebruiken in AEM-formulieren. Dit probleem heeft invloed op het vermogen van gebruikers om documentwijzigingen en revisies effectief bij te houden. Wanneer u een PDF uploadt onder de sectie &#39;Forms en Documenten&#39; in het gebied AEM-formulieren, werkt de tijdlijnweergave niet meer. (FORMS-19408)
@@ -410,12 +413,12 @@ Probleem verholpen waarbij plaatsaanduidingen onjuist werden weergegeven als lab
 
 ### Forms Captcha
 
-* Toegevoegde Hcaptcha- en Turnstile-ondersteuning voor adaptieve Forms op basis van Foundation Components. (FORMS-16562)
-* Gebruikers met een ervaren pictogram overlappen problemen in het dialoogvenster Captcha-configuratie maken. Bij het invullen van de vereiste velden overlapte het informatiepictogram het foutpictogram, wat verwarring veroorzaakt tijdens de configuratie-instelling. (FORMS-16916)
-* Gebruikers ondervonden een onjuiste configuratie die voor reCAPTCHA werd opgepakt in Adaptive Forms op basis van stichtingscomponenten. Wanneer de configuratiecontainer niet is geselecteerd voor een formulier, hebben meerdere configuraties in de map `conf/global` het probleem veroorzaakt. (FORMS-19237)
+* Extra `Hcaptcha` - en `Turnstile` -ondersteuning voor Adaptive Forms op basis van Foundation Components. (FORMS-16562)
+* Gebruikers die het pictogram hebben ervaren, overlappen problemen in het dialoogvenster `Create hCaptcha Configuration` . Bij het invullen van de vereiste velden overlapte het informatiepictogram het foutpictogram, wat verwarring veroorzaakt tijdens de configuratie-instelling. (FORMS-16916)
+* De gebruikers ervoeren onjuiste configuratie die voor reCAPTCHA in Aanpassings Forms wordt opgepikt die op de Componenten van de Stichting wordt gebaseerd. Wanneer de configuratiecontainer niet is geselecteerd voor een formulier, hebben meerdere configuraties in de map `conf/global` het probleem veroorzaakt. (FORMS-19237)
 * Gebruikers ondervonden problemen met het renderen van reCAPTCHA. Dit beïnvloedde formulierverzendingen en beveiligingsvalidatie voor zakelijke klanten. (FORMS-17136, FORMS-19596)
 * Gebruikers ervaren een probleem waarbij de grootte van de reCAPTCHA-onderneming niet wordt weerspiegeld in de gebruikersinterface (UI). (FORMS-16574)
-* Gebruikers hebben problemen ondervonden met de functionaliteit van ReCaptcha als gevolg van een niet-gesloten ResourceResolver in &#39;ReCaptchaConfigurationServiceImpl&#39;, die periodiek validatiefouten veroorzaken tijdens formulierverzendingen. (FORMS-19241)
+* Gebruikers ondervonden problemen met de functionaliteit van ReCaptcha als gevolg van een niet-gesloten ResourceResolver in `ReCaptchaConfigurationServiceImpl` , waardoor validatiefouten met tussenpozen werden gegenereerd tijdens het verzenden van formulieren. (FORMS-19241)
 * Gebruikers ondervonden problemen met de validatie van reCAPTCHA wanneer formulieren in sites worden gemaakt. AEM-formulieren herkennen de formuliernaam niet correct, waardoor validatiefouten zijn opgetreden. (FORMS-20486)
 * Gebruikers hebben formulieren ingediend, zelfs als de reCAPTCHA-score van de onderneming 1,0 was, wat tot potentiële beveiligingsrisico&#39;s leidde. (FORMS-16766) {{$include }}
 * Verbeterde reCAPTCHA-waarschuwingen in Adaptive Forms door het bijwerken van de verzendfoutcodes naar 400. Ook, verfijnde logboekalarm om tussen onderbrekingen, verlopen, en beide mislukkingen van de ontdekkingsopsporing te onderscheiden, die het verbeteren van het oplossen van problemennauwkeurigheid en systeemwaarneming verbeteren. (FORMS-19240)
@@ -424,7 +427,7 @@ Probleem verholpen waarbij plaatsaanduidingen onjuist werden weergegeven als lab
 
 ### Gebruikersinterface Forms Management
 
-* Gebruikers ondervonden niet-gelokaliseerde tekenreeksen in Forms > Controlemap maken > Maken van controlemap. Bij het maken van een gecontroleerde map zijn geen tekenreeksen gevonden, zoals &#39;Controlemap maken&#39; en &#39;Controlemap gemaakt&#39;. Dit heeft invloed op de gebruikersinterface. (FORMS-15234)
+* Gebruikers ondervonden ongelocaliseerde tekenreeksen tijdens het aanmaakproces `Forms` > `Create Watchfolder` > ` Watchfolder` . Bij het maken van een gecontroleerde map zijn geen tekenreeksen zoals `Watchfolder creation` en `Watchfolder created successfully` gevonden die van invloed zijn op de gebruikersinterfaceervaring. (FORMS-15234)
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -463,7 +466,7 @@ Voor gedetailleerde instructies, zie de [ verbeteringsdocumentatie ](/help/sites
 
 ## AEM Forms-invoegtoepassing installeren en bijwerken {#install-update-aem-forms-add-on}
 
-Voor gedetailleerde instructies, zie [ Uitvoerend een Verbetering op zijn plaats ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Voor gedetailleerde instructies, zie [ Uitvoerend een Verbetering op zijn plaats ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -530,24 +533,25 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
+<!-- REMOVED THIS SECTION AS PER CQDOC-23046
 ### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
 
-AEM 6.5.21, 6.5.22, 6.5.23 en AEM 6.5 LTS GA schip met de `org.apache.sling.scripting.jsp:2.6.0` bundel, die een bekende kwestie bevat. De kwestie komt typisch onder hoge lading voor wanneer de instantie van AEM vele gezamenlijke verzoeken behandelt.
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
 
-Wanneer dit probleem optreedt, kan een van de volgende uitzonderingen voorkomen in de foutenlogboeken naast verwijzingen naar `org.apache.sling.scripting.jsp:2.6.0` :
+When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
 
 * `java.io.IOException: classFile.delete() failed`
 * `java.io.IOException: tmpFile.renameTo(classFile) failed`
 * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
 * `java.io.FileNotFoundException`
 
-Een hotfix [ cq-6.5.lts.0-hotfix-NPR-42640 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is beschikbaar om dit probleem op te lossen.
+A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### Dispatcher-verbindingsfout met alleen-SSL-functie (opgelost in AEM 6.5 LTS SP1 en hoger){#ssl-only-feature}
 
 >[!NOTE]
 >
-> Dit probleem is alleen aanwezig in de AEM 6.5 LTS GA-release.
+> Dit probleem komt alleen voor in de AEM 6.5 LTS GA-release.
 
 Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is er een bekende kwestie die connectiviteit tussen de instanties van Dispatcher en van AEM beïnvloedt. Nadat u deze functie hebt ingeschakeld, kunnen de gezondheidscontroles mislukken en kan de communicatie tussen Dispatcher- en AEM-instanties worden verstoord. Dit probleem doet zich met name voor wanneer klanten `https + IP` proberen te doorlopen van de Dispatcher naar AEM-instanties. Het heeft betrekking op SNI (de Verwijzing van de Naam van de Server) bevestigingsproblemen.
 
@@ -580,5 +584,5 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
