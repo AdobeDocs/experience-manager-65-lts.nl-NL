@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 2773e1092e63479aa135918e48dd4b01e3dad310
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ Experience Hub introduceert een gecentraliseerd beginpunt voor het beheer van in
 
 Bekijk een snelle rondleiding door de opnieuw bedacht AEM Experience Hub-werkruimte (4 minuten, 9 seconden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471447?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -32,11 +32,12 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![ Adobe Experience Cloud homepage ](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. In de **Snelle toegang** groepering, klik [**Experience Manager** ](https://experience.adobe.com).
-1. De eerste keer u tot het toegang hebt, op **vertelt ons wat u** pagina wilt doen, klikt de optie u zodat Adobe uw ervaring kan maken.
+1. Bij eerste toegang, wijst het systeem u toe vooraf ingesteld de **Auteur van de Inhoud** (die dichtbij de hoger-juiste hoek van de pagina wordt gezien). Het bestuurt de widgets, navigatie-items en inhoud die u ziet.
 
-   U kunt deze voorkeur op elk ogenblik veranderen.
+   U kunt deze voorinstelling op elk gewenst moment wijzigen.
 
-   ![ vertelt ons wat u pagina ](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png) wilt doen
+   ![ de drop-down lijst die de vooraf ingestelde Schrijver toont van de Inhoud wordt geselecteerd ](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
+
 
 De Adobe Experience Manager-pagina is vernieuwd met verbeterde navigatie- en interactieve widgets. De vorige inzameling van oplossingskaarten verstrekte toegang tot hulpmiddelen als het volgende:
 
