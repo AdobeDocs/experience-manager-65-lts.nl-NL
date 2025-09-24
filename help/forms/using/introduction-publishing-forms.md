@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot het publiceren van formulieren op een portal{#introduction-to-publishing-forms-on-a-portal}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html).
 
 
 ## Overzicht van AEM Forms Portal-componenten {#aem-forms-portal-components-overview}
@@ -70,7 +71,7 @@ Met Forms Portal kunt u formulieren vanuit de formulieropslagplaats op uw portal
 1. **laat de Poortcomponenten van Forms** toe: Uit de doos, zijn de Poortcomponenten van Forms niet beschikbaar voor gebruik. [ laat de componenten van AEM toe sidekick ](/help/forms/using/enabling-forms-portal-components.md) voor een pagina van AEM Sites.
 1. **de vormen van de Lijst op een pagina (creeer Forms Portal pagina):** u kunt van vormen op zowel AEM Sites als niet-AEM de pagina&#39;s van de Plaats een lijst maken. De lijst bevat formulieren die beschikbaar zijn in de publicatie-instantie. Een gebruiker kan formulieren openen en invullen. Wanneer een gebruiker een formulier opent, wordt er een nieuw exemplaar van het formulier gemaakt:
 
-   1. **de vormen van de Lijst op een pagina van AEM Sites**: Voeg de **[Onderzoek &amp; van het Registreertoestel](../../forms/using/creating-form-portal-page.md)** component aan de pagina toe en vorm de **[Ruit van de Lijst](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** in het, om vormen op een pagina van een lijst te maken. Voeg en vorm de **component van de Ruit van het 0&rbrace; Onderzoek &lbrace;aan de** Onderzoek &amp; van het Registreertoestel **toe ook om onderzoeksfunctionaliteit aan de pagina toe te voegen.** De pagina met de Poortcomponent van Forms is gekend als [ Poortpagina van Forms ](../../forms/using/creating-form-portal-page.md).
+   1. **de vormen van de Lijst op een pagina van AEM Sites**: Voeg de **[Onderzoek &amp; van het Registreertoestel](../../forms/using/creating-form-portal-page.md)** component aan de pagina toe en vorm de **[Ruit van de Lijst](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** in het, om vormen op een pagina van een lijst te maken. Voeg en vorm de **component van de Ruit van het 0} Onderzoek {aan de** Onderzoek &amp; van het Registreertoestel **toe ook om onderzoeksfunctionaliteit aan de pagina toe te voegen.** De pagina met de Poortcomponent van Forms is gekend als [ Poortpagina van Forms ](../../forms/using/creating-form-portal-page.md).
 
    1. **de vormen van de Lijst op een niet-AEM Sites pagina:** Gebruik [ Poortonderzoek APIs van Forms ](/help/forms/using/listing-forms-webpage-using-apis.md) aan vraag, wint, en lijstvormen op niet-AEM Sites pagina&#39;s terug.
 

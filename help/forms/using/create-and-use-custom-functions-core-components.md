@@ -6,9 +6,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3377'
+source-wordcount: '3386'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,11 @@ In dit artikel wordt beschreven hoe u aangepaste functies maakt met de nieuwste 
 Zorg ervoor om de [ recentste vormversie ](https://github.com/adobe/aem-core-forms-components/tree/release/650) op uw milieu van de Component van de Kern van AEM Forms te plaatsen om de recentste eigenschappen in de Functies van de Douane te gebruiken. </span>
 
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM 6.5 | Dit artikel |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions).
 
 ## Inleiding
 
@@ -60,8 +61,8 @@ De **Naam** wordt gebruikt om de douanefunctie in de regelredacteur van een Adap
 
 >[!NOTE]
 >`[functionName]` is de naam van de functie. Spaties zijn niet toegestaan.
->`<Function Name>` is de weergavenaam van de functie in de regeleditor van Adaptive Forms.
->Als de functienaam identiek is aan de naam van de functie zelf, kunt u `[functionName]` weglaten uit de syntaxis.
+>>`<Function Name>` is de weergavenaam van de functie in de regeleditor van Adaptive Forms.
+>>Als de functienaam identiek is aan de naam van de functie zelf, kunt u `[functionName]` weglaten uit de syntaxis.
 
 #### Parameter
 
@@ -355,7 +356,7 @@ OF
 
 ### Een clientbibliotheek maken met het AEM Project Archetype{#create-client-library-archetype}
 
-U kunt douanefuncties toevoegen door een cliëntbibliotheek aan het gemaakte project toe te voegen [ gebruikend het Archetype van het Project van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+U kunt douanefuncties toevoegen door een cliëntbibliotheek aan het gemaakte project toe te voegen [ gebruikend het Archetype van het Project van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Als u een bestaand project <!--and have already the project structure as shown in the image below,--> hebt kunt u [ douanefuncties ](#create-add-custom-function) aan uw lokaal project direct toevoegen.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -444,7 +445,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
    `<filter root="/apps/experience-league" />`
 1. Sla het bestand op.
 
-   ![ de filter xml van de douanefunctie &lbrace;](assets/custom-function-filterxml.png)
+   ![ de filter xml van de douanefunctie {](assets/custom-function-filterxml.png)
 
 1. Bouw de pas gecreëerde omslag van de cliëntbibliotheek aan uw milieu van AEM door de stappen te volgen die in [ worden gegeven hoe te sectie ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build) bouwen.
 
@@ -572,7 +573,7 @@ Bekijk een voorbeeld van het formulier om te zien hoe de aangepaste functies wor
 
 >[!NOTE]
 >
-> U kunt naar de volgende [ omslag van douanefuncties ](/help/forms/using/assets/customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> U kunt naar de volgende [ omslag van douanefuncties ](/help/forms/using/assets/customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Ondersteuning voor asynchrone functies in aangepaste functies {#support-of-async-functions}
 
@@ -843,7 +844,7 @@ Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard cre
     }
 ```
 
-In dit voorbeeld wordt `NA` verzonden naar de server wanneer de gebruiker het tekstvak `comments` leeg laat.
+In dit voorbeeld wordt `comments` verzonden naar de server wanneer de gebruiker het tekstvak `NA` leeg laat.
 
 Maak nu een regel voor de knop `Submit` die gegevens verzendt:
 

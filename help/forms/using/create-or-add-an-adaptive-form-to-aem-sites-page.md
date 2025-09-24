@@ -6,21 +6,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2841'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM 6.5 | Dit artikel |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=nl-NL) |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html).
 
 Met AEM Forms kunt u naadloos adaptieve formulieren opnemen in uw webpagina&#39;s. Zo kunnen bezoekers formulieren op een gemakkelijke manier invullen en verzenden zonder de pagina waarop ze staan te verlaten. Op die manier kunnen ze moeiteloos betrokken blijven bij andere elementen van de website terwijl ze actief met het formulier communiceren.
 
@@ -35,7 +36,7 @@ AEM Forms biedt adaptieve formuliercontainer en adaptieve Forms - Embed-componen
 Met de adaptieve formuliercontainer in de AEM Page Editor kunt u naadloze ervaringen met het vastleggen van gegevens op een sitepagina creëren met behulp van de kracht van Adaptive Forms-componenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document voor registratie en bedrijfsprocesautomatisering. Met deze functie kunt u ook verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, doelgericht maken, vertalen en beheer op meerdere sites, waardoor het maken en beheren van formulieren in hun geheel wordt verbeterd. Hieronder volgen enkele voorbeelden:
 
 * **Versioning:** de pagina&#39;s van AEM Sites bieden [ robuuste versieringsmogelijkheden ](/help/sites-authoring/working-with-page-versions.md) aan, toestaand u om verschillende versies van uw vormen te volgen en te beheren. Op deze manier kunt u wijzigingen aanbrengen en formulieren verbeteren terwijl u de mogelijkheid behoudt om indien nodig terug te draaien naar vorige versies. Versioning zorgt voor een beheerste en georganiseerde benadering van formulierontwikkeling en -ontwikkeling.
-* **het richten (Integratie met Adobe Target):** met de pagina&#39;s van AEM Sites die mogelijkheden richten, kunt u de vormervaring voor verschillend publiek [&#128279;](/help/sites-administering/target.md) ook  personaliseren. Door gebruikerssegmenten en doelcriteria te gebruiken, kunt u de inhoud, het ontwerp of het gedrag van het formulier aanpassen aan specifieke groepen gebruikers. Hierdoor kunt u een gepersonaliseerde en relevante formulierervaring bieden, waardoor de betrokkenheid en conversiesnelheden toenemen.
+* **het richten (Integratie met Adobe Target):** met de pagina&#39;s van AEM Sites die mogelijkheden richten, kunt u de vormervaring voor verschillend publiek [ ook ](/help/sites-administering/target.md) personaliseren. Door gebruikerssegmenten en doelcriteria te gebruiken, kunt u de inhoud, het ontwerp of het gedrag van het formulier aanpassen aan specifieke groepen gebruikers. Hierdoor kunt u een gepersonaliseerde en relevante formulierervaring bieden, waardoor de betrokkenheid en conversiesnelheden toenemen.
 * **Vertaling:** AEM Sites [ naadloze integratie met de vertaaldiensten ](/help/sites-administering/translation.md), toestaand u om vormen in veelvoudige talen gemakkelijk te vertalen. Deze functie vereenvoudigt het lokalisatieproces, zodat uw formulieren toegankelijk zijn voor een wereldwijd publiek. U kunt vertalingen efficiënt beheren in AEM-vertaalprojecten, waardoor u minder tijd en moeite nodig hebt voor meertalige formulierondersteuning. Zie de sectie Overwegingen voor meer informatie over vertaling.
 * **Beheer van meerdere plaatsen en Levend Exemplaar:** AEM Sites verstrekt robuust [ Multisite Beheer en Levende mogelijkheden van het Exemplaar ](/help/sites-administering/msm.md), toelatend u om veelvoudige websites binnen één enkel milieu tot stand te brengen en te beheren. Met deze functie kunt u nu formulieren hergebruiken op verschillende sites, zodat u consistent bent en dubbel werk kunt voorkomen. Met gecentraliseerde controle en beheer kunt u formulieren efficiënt onderhouden en bijwerken op meerdere websites.
 * **Thema&#39;s:** de pagina&#39;s van AEM Sites verstrekken een kader voor het ontwerpen van en het handhaven van verenigbare visuele stijlen over veelvoudige Web-pagina&#39;s. Met deze opties definieert u kleuren, lettertypen, stijlpagina&#39;s en andere visuele elementen die een bijdrage leveren aan het algehele uiterlijk van de website. [ u kunt de thema&#39;s gebruiken die voor een pagina van AEM Sites voor een Aanpassings vorm worden ontworpen, die tijd en inspanning besparen ](/help/sites-authoring/style-system.md).
@@ -70,11 +71,11 @@ U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
 +++  Adaptieve Forms Core-componenten inschakelen voor uw omgeving
 
-Zorg ervoor dat de [ Aangepaste Componenten van de Kern van Forms voor uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=nl-NL) worden toegelaten.
+Zorg ervoor dat de [ Aangepaste Componenten van de Kern van Forms voor uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en) worden toegelaten.
 
-+++
++++ 
 
-+++  Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina en onderdelen van de Experience Fragment-pagina
++++  Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina en onderdelen van de Experience Fragment-pagina 
 
 Om volledige functionaliteit van de Adaptive Forms Container component toe te laten, voeg de Customheaderlibs en Customfooterlibs cliëntbibliotheken aan uw AEM Sites pagina toe gebruikend de plaatsingspijpleiding. De bibliotheken toevoegen:
 
@@ -118,7 +119,7 @@ Om volledige functionaliteit van de Adaptive Forms Container component toe te la
 
 1. Herhaal bovenstaande stappen voor alle instanties Auteur en Publiceren in uw omgeving.
 
-+++
++++ 
 
 +++ Adaptieve Forms-container inschakelen
 

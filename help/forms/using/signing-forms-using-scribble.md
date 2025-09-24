@@ -8,25 +8,26 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9d1a22da-2eb3-4c79-8c4d-4d0a3ed7fe3b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
 # Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html).
 
 
-U kunt de **component van de Handtekening van 0&rbrace; Krabbelen en** component van de Stap van de Handtekening **gebruiken om (Krabbelen) handtekening op een adaptieve vorm te trekken.** In de stap Handtekening wordt een PDF-versie van het adaptieve formulier weergegeven. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de component Handtekeningstap te kunnen gebruiken.
+U kunt de **component van de Handtekening van 0} Krabbelen en** component van de Stap van de Handtekening **gebruiken om (Krabbelen) handtekening op een adaptieve vorm te trekken.** In de stap Handtekening wordt een PDF-versie van het adaptieve formulier weergegeven. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de component Handtekeningstap te kunnen gebruiken.
 
 ![ Scripttekendialoog ](/help/forms/using/assets/scribble-signature.png)
 
@@ -55,7 +56,7 @@ U kunt **selecteren vormt** ![ ](assets/configure.png) pictogram om de aspectver
 ## Een adaptief formulier configureren voor het gebruik van de Krabbelhandtekening {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Maak een Document of Record-optie ingeschakeld of een adaptief formulier op basis van een formuliersjabloon. Voor geleidelijke informatie, zie [ Creërend een adaptieve vorm ](../../forms/using/creating-adaptive-form.md).
-1. De belemmering-en-daling de **component van de Handtekening van 0&rbrace; Krabbelen &lbrace;van componentenbrowser aan de adaptieve vorm.**
+1. De belemmering-en-daling de **component van de Handtekening van 0} Krabbelen {van componentenbrowser aan de adaptieve vorm.**
 1. Selecteer **vormen** ![ ](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de component Krabbelen handtekening worden weergegeven. Configureer eigenschappen van de component Krabbelhandtekening.
 1. Sleep de component Signature Step van de componentbrowser naar het aangepaste formulier.
 
@@ -64,7 +65,7 @@ U kunt **selecteren vormt** ![ ](assets/configure.png) pictogram om de aspectver
    >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
    >
 
-1. In browser van de Inhoud, de uitgezochte **Container van de Vorm**, en selecteert **&#x200B;**&#x200B;![ vormt ](/help/forms/using/assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeer aan **Aangepaste Container van de Vorm** > **Elektronische Ondertekening** en schrap **toelaten het Teken van Adobe** optie. Selecteer het Gedaan ![ a_6_3_forms_save ](assets/aem_6_3_forms_save.png) pictogram om de veranderingen te bewaren.
+1. In browser van de Inhoud, de uitgezochte **Container van de Vorm**, en selecteert **** ![ vormt ](/help/forms/using/assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeer aan **Aangepaste Container van de Vorm** > **Elektronische Ondertekening** en schrap **toelaten het Teken van Adobe** optie. Selecteer het Gedaan ![ a_6_3_forms_save ](assets/aem_6_3_forms_save.png) pictogram om de veranderingen te bewaren.
 
    >[!NOTE]
    >

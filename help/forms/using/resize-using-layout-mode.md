@@ -5,21 +5,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: d4d66576-98ec-4050-9368-c69f6767d31e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
 
 # Gebruik de modus Lay-out om het formaat van componenten te wijzigen {#use-layout-mode-to-resize-components}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?lang=nl-NL&) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?).
 
 
 Met de adaptieve interface voor formulierontwerp kunt u de grootte van componenten aanpassen in de modus Indeling. Sleep blauwe stippen in kolommen om de begin- en eindpunten voor de positiecomponenten te definiëren. De blauwe stippen worden weergegeven nadat u op de component in het responsieve raster hebt getikt. Het responsieve raster bestaat uit twaalf gelijke kolommen. Met de witte en blauwe kleurschaduw in alternatieve kolommen wordt de ene kolom onderscheiden van de andere.
@@ -28,11 +29,11 @@ U kunt de modus Lay-out gebruiken om het formaat van componenten te wijzigen voo
 
 ## Modus Toegang tot layout {#access-layout-mode}
 
-Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptieve vorm auteursinterface naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
+Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptieve vorm auteursinterface naast de **3} optie van de Voorproef {verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
 
 1. Login aan de auteursinstantie van AEM en navigeer aan **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
 1. Creeer een [ adaptieve vorm ](../../forms/using/creating-adaptive-form.md) of open bestaande.
-1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
+1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3} optie van de Voorproef {verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
 
    ![ wijze van de Lay-out ](assets/layout_mode_ic_new.png)
 
@@ -106,8 +107,8 @@ Schakel het nieuwe responsieve raster in voor formulieren die u maakt met AEM Fo
 
 Voer de volgende stappen uit om het nieuwe responsieve raster in te schakelen:
 
-1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
-1. Selecteer **ja** om de **3&rbrace; wijze van de Lay-out &lbrace;voor de vorm toe te laten.**
+1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3} optie van de Voorproef {verschijnt.** Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
+1. Selecteer **ja** om de **3} wijze van de Lay-out {voor de vorm toe te laten.**
 
 ### Een oud fragment insluiten in een adaptief formulier met nieuwe responsieve indeling {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -117,7 +118,7 @@ Met de nieuwe responsieve indeling voor het adaptieve formulier kunt u een adapt
 
 Als u een fragment met de nieuwe responsieve indeling insluit in een adaptief formulier met een oude responsieve indeling, wordt u gevraagd de modus Indeling in te schakelen voor het formulier en het fragment opnieuw in te sluiten.
 
-Om de wijze van de Lay-out toe te laten, uitgezochte **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt en selecteert** ja **om te bevestigen.** Selecteer **uitgeven** wijze om het fragment opnieuw in te bedden.
+Om de wijze van de Lay-out toe te laten, uitgezochte **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3} optie van de Voorproef {verschijnt en selecteert** ja **om te bevestigen.** Selecteer **uitgeven** wijze om het fragment opnieuw in te bedden.
 
 ## Lay-outmodus uitschakelen voor formulieren met oude responsieve indeling {#disable-layout-mode-for-forms-with-old-responsive-layout}
 

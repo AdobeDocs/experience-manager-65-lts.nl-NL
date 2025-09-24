@@ -9,21 +9,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6f68090f-4ded-42c3-a074-3a18b27e754d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6095'
 ht-degree: 0%
 
 ---
 
 # Thema&#39;s maken en gebruiken {#creating-and-using-themes}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html).
 
 ## Inleiding {#introduction}
 
@@ -305,7 +306,7 @@ Met de plusknop in de elementenbibliotheek kunt u de stijl permanent opslaan met
 
 Wanneer u een aangepaste naam voor een stijl opgeeft, is de stijl gekoppeld aan een thema en is deze niet meer beschikbaar voor andere thema&#39;s. Een opgeslagen stijl verwijderen:
 
-1. Op de toolbar CANVAS, klik **![ thema-opties ](assets/theme-options.png) >** leiden Stijlen **.**
+1. Op de toolbar CANVAS, klik **** thema-opties ![ > ](assets/theme-options.png) leiden Stijlen **.**
 1. In het Manage dialoog van Stijlen, selecteer een bewaarde stijl, klik **Schrapping**.
 
    ![ Schrap de bewaarde stijl ](assets/manage-styles.png)
@@ -324,9 +325,9 @@ Wanneer u een thema maakt, wordt dit gemaakt met een formulier dat wordt gelever
 
 Het huidige formulier of de interactieve communicatie in het Thema Editor Canvas vervangen:
 
-1. In het paneel van de EDITOR van het THEMA, klik **![ thema-opties ](assets/theme-options.png) >** vormen **van de Opties van het Thema.**
+1. In het paneel van de EDITOR van het THEMA, klik **** thema-opties ![ > ](assets/theme-options.png) vormen **van de Opties van het Thema.**
 
-1. Op het Algemene lusje, doorblader en selecteer een vorm of interactieve mededeling voor het **Aangepaste 1&rbrace; gebied van de Vorm/van het Document.**
+1. Op het Algemene lusje, doorblader en selecteer een vorm of interactieve mededeling voor het **Aangepaste 1} gebied van de Vorm/van het Document.**
 
 ### Opnieuw/Ongedaan maken {#redo-undo}
 
@@ -405,7 +406,7 @@ De opties voor het aanpassen van statusstijlen variëren voor verschillende comp
   </tr>
   <tr>
    <td><p>Afmetingen en positie</p> </td>
-   <td><p>Hiermee kunt u de uitlijning, grootte, positionering en plaatsing van componenten in het thema opmaken. </p> <p>De opties zijn weergave-instellingen, opvulling, marge, breedte, hoogte en Z-index.</p> <p>U kunt de modus Lay-out ook gebruiken om de breedte van componenten te definiëren met behulp van een eenvoudige interface voor slepen en neerzetten. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten </a> te resize.<a href="../../forms/using/resize-using-layout-mode.md"></p> </td>
+   <td><p>Hiermee kunt u de uitlijning, grootte, positionering en plaatsing van componenten in het thema opmaken. </p> <p>De opties zijn weergave-instellingen, opvulling, marge, breedte, hoogte en Z-index.</p> <p>U kunt de modus Lay-out ook gebruiken om de breedte van componenten te definiëren met behulp van een eenvoudige interface voor slepen en neerzetten. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten <a href="../../forms/using/resize-using-layout-mode.md"> te resize.</a></p> </td>
   </tr>
   <tr>
    <td><p>Tekst</p> </td>
@@ -500,7 +501,7 @@ U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een ad
 Voer de volgende stappen uit om Adobe Fonts in AEM te configureren:
 
 1. In de auteursinstantie, klik ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) Adobe Experience Manager > Hulpmiddelen ![ hamer ](assets/hammer.png) > Plaatsing > de Diensten van de Wolk.
-1. Op de **pagina van de Diensten van de Wolk 1&rbrace;, navigeer aan en open de** Adobe Fonts **optie.** Open de configuratiemap, en klik **creëren**.
+1. Op de **pagina van de Diensten van de Wolk 1}, navigeer aan en open de** Adobe Fonts **optie.** Open de configuratiemap, en klik **creëren**.
 1. Op **creeer de dialoog van de Configuratie**, specificeer een titel voor de configuratie en klik **creeer**.
 
    U wordt opnieuw gericht aan de configuratiepagina.
@@ -630,7 +631,7 @@ Wanneer u stijlen voor componenten opgeeft in de Thema-editor, wordt een CSS geg
 De gegenereerde CSS kunt u met de volgende opties zien:
 
 * **CSS van de Mening** optie in sidebar: Wanneer u een component in het Thema selecteert, kunt u de WEERGAVE CSS optie in sidebar zien. De gegenereerde CSS wordt weergegeven, inclusief CSS voor `::before` - en `::after` pseudo-elementen.
-* **optie van het Thema van 0&rbrace; Mening CSS &lbrace;in de canvastoolbar: In de Toolbar van het Canvas, klik ![ thema-opties ](assets/theme-options.png) >** het Thema CSS van de Mening **.** U kunt het volledige thema CSS zien die van de eigenschappen wordt geproduceerd u in de Redacteur van het Thema bepaalt.
+* **optie van het Thema van 0} Mening CSS {in de canvastoolbar: In de Toolbar van het Canvas, klik** thema-opties ![ > ](assets/theme-options.png) het Thema CSS van de Mening **.** U kunt het volledige thema CSS zien die van de eigenschappen wordt geproduceerd u in de Redacteur van het Thema bepaalt.
 
 ## Problemen oplossen, aanbevelingen en aanbevolen procedures {#troubleshooting-recommendations-and-best-practices}
 

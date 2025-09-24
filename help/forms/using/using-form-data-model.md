@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
 # Formuliergegevensmodel gebruiken{#use-form-data-model}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html).
 
 
 ![ held-beeld ](do-not-localize/data-integration.png)
@@ -97,7 +98,7 @@ Een voorvertoning weergeven van een interactieve communicatie met voorbeeldgegev
 
 1. Navigeer naar **[!UICONTROL Forms > Forms & Documents]** in een AEM-auteurinstantie.
 1. Selecteer een interactieve communicatie en selecteer **[!UICONTROL Preview]** in de werkbalk om **[!UICONTROL Web Channel]** , **[!UICONTROL Print Channel]** of **[!UICONTROL Both Channels]** te selecteren voor een voorvertoning van de interactieve communicatie.
-1. In de 2&rbrace; dialoog van de Voorproef [*kanaal*], zorg ervoor dat **[!UICONTROL Test Data of Form Data Model]** wordt geselecteerd en **[!UICONTROL Preview]** selecteert.
+1. In de 2} dialoog van de Voorproef [*kanaal*], zorg ervoor dat **[!UICONTROL Test Data of Form Data Model]** wordt geselecteerd en **[!UICONTROL Preview]** selecteert.
 
 De interactieve communicatie wordt geopend met vooraf ingevulde voorbeeldgegevens.
 

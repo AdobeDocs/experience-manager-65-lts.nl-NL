@@ -8,21 +8,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2565'
 ht-degree: 0%
 
 ---
 
 # De handeling Verzenden configureren {#configuring-the-submit-action}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html).
 
 
 ## Inleiding om acties in te dienen {#introduction-to-submit-actions}
@@ -53,11 +54,11 @@ De standaardverzendacties die beschikbaar zijn in aangepaste formulieren zijn:
 >[!NOTE]
 >
 >Zorg ervoor dat [ AEM_Installation_Directory ] \crx-quickstart\temp\datamanager\ASM omslag
->bestaat. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
+>>bestaat. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
 
 >[!CAUTION]
 >
->Als u [&#128279;](../../forms/using/prepopulate-adaptive-form-fields.md) een vormmalplaatje, model van vormgegevens, of schema gebaseerde adaptieve vorm met XML of JSON gegevensklacht aan een schema (het schema van XML, JSON schema, vormmalplaatje, of model van vormgegevens) vooraf instelt dat geen gegevens &lt;afData>, &lt;afBoundData>, en &lt;/afUnboundData> markeringen bevat, dan zijn de gegevens van onbegrensde gebieden De actieve vormgebieden zonder [ bindref ](../../forms/using/prepopulate-adaptive-form-fields.md) bezit) van de adaptieve vorm wordt verloren.
+>Als u [ ](../../forms/using/prepopulate-adaptive-form-fields.md) een vormmalplaatje, model van vormgegevens, of schema gebaseerde adaptieve vorm met XML of JSON gegevensklacht aan een schema (het schema van XML, JSON schema, vormmalplaatje, of model van vormgegevens) vooraf instelt dat geen gegevens &lt;afData>, &lt;afBoundData>, en &lt;/afUnboundData> markeringen bevat, dan zijn de gegevens van onbegrensde gebieden De actieve vormgebieden zonder [ bindref ](../../forms/using/prepopulate-adaptive-form-fields.md) bezit) van de adaptieve vorm wordt verloren.
 
 U kunt een aangepaste verzendactie schrijven voor aangepaste formulieren om aan uw gebruiksscenario te voldoen. Voor meer informatie, zie [ het Schrijven van douane verzendt actie voor adaptieve vormen ](../../forms/using/custom-submit-action-form.md).
 
@@ -173,7 +174,7 @@ Na een succesvolle configuratie, gebruik [ aanhaalt een Macht Microsoft® stroom
 
 >[!NOTE]
 >
->De functie Verzenden naar Microsoft® SharePoint List is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> De functie Verzenden naar Microsoft® SharePoint List is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 Met de handeling **[!UICONTROL Submit to SharePoint]** Verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
 
@@ -199,7 +200,7 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 
      >[!NOTE]
      >
-     >Het **cliënt geheime** gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
+     > Het **cliënt geheime** gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
 
 1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt het bericht `Connection Successful` weergegeven.
 1. Selecteer **[!UICONTROL SharePoint Site]** en **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst.
@@ -218,16 +219,16 @@ Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven 
 
 >[!NOTE]
 >
->In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
->* afbeeldingskolom
->* metagegevenskolom
->* persoonlijke kolom
->* kolom externe gegevens
+> In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
+> * afbeeldingskolom
+> * metagegevenskolom
+> * persoonlijke kolom
+> * kolom externe gegevens
 
 
 >[!NOTE]
 >
->Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL#deployment-process) aan uw instantie van Cloud Service op.
+> Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 

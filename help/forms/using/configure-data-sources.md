@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---
 
 # Gegevensbronnen configureren{#configure-data-sources}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html).
 
 
 ![ de Integratie van Gegevens ](do-not-localize/data-integeration.png)
@@ -102,16 +103,16 @@ Alle configuraties van cloudservices in AEM worden geconsolideerd in de map `/co
 De map configureren voor configuraties van cloudservices:
 
 1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
-   * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
+   * Zie Browser van de Configuratie [ documentatie 0} {voor meer informatie.](/help/sites-administering/configurations.md)
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer in **[!UICONTROL Configuration Browser]** de map `global` en selecteer **[!UICONTROL Properties]** .
 
-   1. Schakel **[!UICONTROL Cloud Configurations]** in het dialoogvenster **[!UICONTROL Configuration Properties]** in.
+   1. Schakel **[!UICONTROL Configuration Properties]** in het dialoogvenster **[!UICONTROL Cloud Configurations]** in.
 
    1. Selecteer **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
-1. Selecteer **[!UICONTROL Create]** in de **[!UICONTROL Configuration Browser]** .
+1. Selecteer **[!UICONTROL Configuration Browser]** in de **[!UICONTROL Create]** .
 1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een titel op voor de map en schakel **[!UICONTROL Cloud Configurations]** in.
 1. Selecteer **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor cloudserviceconfiguraties.
 
@@ -149,7 +150,7 @@ Doe het volgende de diensten RESTful vormen:
 [!DNL Experience Manager Forms] -formuliergegevensmodel wanneer integratie met RESTful-webservices als gegevensbron HTTP-clientconfiguraties bevat voor optimalisatie van prestaties.
 Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te configureren:
 
-1. Meld u aan bij [!DNL Experience Manager Forms] Instantie auteur als beheerder en ga naar [!DNL Experience Manager] -bundels voor webconsoles. Het gebrek URL is [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr).
+1. Meld u aan bij [!DNL Experience Manager Forms] Instantie auteur als beheerder en ga naar [!DNL Experience Manager] -bundels voor webconsoles. Het gebrek URL is [ https://localhost :4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr).
 
 1. Selecteer **[!UICONTROL Form Data Model Http Client Configuration for REST data source]** .
 
@@ -161,13 +162,13 @@ Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te
 
    * Geef in het veld **[!UICONTROL Keep alive]** de duur op waarvoor een permanente HTTP-verbinding in leven blijft. De standaardwaarde is 15 seconden.
 
-   * Geef in het veld **[!UICONTROL Connection timeout]** de tijdsduur op waarvoor de [!DNL Experience Manager Forms] -server wacht tot een verbinding tot stand is gebracht. De standaardwaarde is 10 seconden.
+   * Geef in het veld [!DNL Experience Manager Forms] de tijdsduur op waarvoor de **[!UICONTROL Connection timeout]** -server wacht tot een verbinding tot stand is gebracht. De standaardwaarde is 10 seconden.
 
    * Geef in het veld **[!UICONTROL Socket timeout]** de maximale periode voor inactiviteit op tussen twee gegevenspakketten. De standaardwaarde is 30 seconden.
 
 ## SOAP-webservices configureren {#configure-soap-web-services}
 
-Op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) [&#128279;](https://www.w3.org/TR/wsdl).  Als u SOAP-webservices wilt configureren in AEM-cloudservices, moet u beschikken over de WSDL-URL voor de webservice en moet u het volgende doen:
+Op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) [. ](https://www.w3.org/TR/wsdl) Als u SOAP-webservices wilt configureren in AEM-cloudservices, moet u beschikken over de WSDL-URL voor de webservice en moet u het volgende doen:
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -194,7 +195,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 >[!NOTE]
 >
 >Het gegevensmodel van de vorm steunt [ OData versie 4 ](https://www.odata.org/documentation/).
->Voor geleidelijke gids om Microsoft Dynamics 365, online of op-gebouw te vormen, zie {de Configuratie van 0} Microsoft Dynamics OData [&#128279;](/help/forms/using/ms-dynamics-odata-configuration.md).
+>>Voor geleidelijke gids om Microsoft Dynamics 365, online of op-gebouw te vormen, zie {de Configuratie van 0} Microsoft Dynamics OData [.](/help/forms/using/ms-dynamics-odata-configuration.md)
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 

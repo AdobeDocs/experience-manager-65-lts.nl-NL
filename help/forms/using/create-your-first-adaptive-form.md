@@ -5,19 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
 
 # Lesbestand: uw eerste adaptieve formulier maken {#tutorial-create-your-first-adaptive-form}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 
 ![ 01-creeer-eerste-adaptief-vorm-held-beeld ](assets/01-create-first-adaptive-form-hero-image.png)
@@ -43,7 +44,7 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM [!
 
 ### Vereiste {#prerequisite}
 
-* Opstelling een [ de auteursinstantie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=nl-NL#author-and-publish-installs)
+* Opstelling een [ de auteursinstantie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installeer [ toe:voegen-on van AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md) op auteursinstantie.
 * Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op [!DNL MySQL] gegevensbestand en gebruiken [!DNL Oracle's] [ MySQL JDBC gegevensbestandbestuurder ](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

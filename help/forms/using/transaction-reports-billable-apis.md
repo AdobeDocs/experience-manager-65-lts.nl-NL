@@ -8,19 +8,20 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: d9dc7630-a157-4202-8caf-7c55e348c06e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 1%
+source-wordcount: '1763'
+ht-degree: 0%
 
 ---
 
 # Transactierapporten Billable API&#39;s voor AEM Forms op OSGi {#transaction-reports-billable-apis}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis).
 
 AEM Forms biedt verschillende API&#39;s voor het verzenden van formulieren, procesdocumenten en het weergeven van documenten. Sommige API&#39;s worden beschouwd als transacties en andere kunnen gratis worden gebruikt. Dit document verstrekt een lijst van alle APIs die als transacties in een transactierapport worden rekenschap gegeven. Hier volgen enkele veelvoorkomende scenario&#39;s waarbij een factureerbare API wordt gebruikt:
 
@@ -56,55 +57,55 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td>
    <td>Maakt Adobe PDF van ondersteunde bestandstypen.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
    <td>Maakt Adobe PDF van ondersteunde bestandstypen.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
    <td>Converteert Adobe PDF naar ondersteunde bestandstypen. </td>
    <td>Verwerkte documenten <br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
    <td>Converteert Adobe PDF naar ondersteunde bestandstypen. </td>
    <td>Verwerkte documenten <br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
    <td>Converteert Adobe PDF naar ondersteunde bestandstypen. </td>
    <td>Verwerkte documenten <br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPDF</a></td>
    <td><p>Maakt PDF van HTML-pagina's.</p> </td>
    <td>Verwerkte documenten <br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPDF</a></td>
    <td>Maakt PDF van URL's die verwijzen naar een HTML-pagina.</td>
    <td>Verwerkte documenten <br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
    <td>Maakt PDF van URL's die verwijzen naar een HTML-pagina.</td>
    <td>Verwerkte documenten <br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
    <td>Hiermee optimaliseert u PDF om de bestandsgrootte te reduceren door overbodige metagegevens uit te knippen zonder dat dit van invloed is op de kwaliteit.</td>
    <td>Verwerkte documenten <br /> </td>
    <td> </td>
@@ -143,13 +144,13 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank"> createPDF </a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank"> createPDF </a><br /> </td>
    <td>Maakt Adobe PDF van ondersteunde bestandstypen.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
    <td>Maakt Adobe PDF van ondersteunde bestandstypen.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
@@ -168,7 +169,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">renderen</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">renderen</a></td>
    <td>Roept de opgegeven rendermethode aan om een document met een record te genereren met behulp van opgegeven parameters.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
@@ -187,40 +188,40 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
    <td>Hiermee voegt u gegevens en sjablonen samen om een PDF-document te maken.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
    <td>Hiermee voegt u gegevens en sjablonen samen om een PDF-document te maken.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Hiermee voegt u gegevens en sjablonen samen om een set PDF-documenten te maken.</td>
    <td>Verwerkte documenten</td>
-   <td> De generatePDFOutputBatch-API combineert een formuliersjabloon met een record en genereert een PDF. Wanneer u een batch records verwerkt, telt de service voor transactierapportering elke record als een aparte PDF-uitvoering. <br> u kunt de <a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"> getGenerateManyFiles </a> vlag gebruiken om veelvoudige vertoningen aan één enkel dossier van PDF te combineren. Ongeacht de status van de vlag telt de dienst elke record als een afzonderlijke PDF-uitvoering. </td>
+   <td> De generatePDFOutputBatch-API combineert een formuliersjabloon met een record en genereert een PDF. Wanneer u een batch records verwerkt, telt de service voor transactierapportering elke record als een aparte PDF-uitvoering. <br> u kunt de <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"> getGenerateManyFiles </a> vlag gebruiken om veelvoudige vertoningen aan één enkel dossier van PDF te combineren. Ongeacht de status van de vlag telt de dienst elke record als een afzonderlijke PDF-uitvoering. </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
    <td>XDP- en PDF-documenten worden omgezet in de bestandsindelingen PostScript (PS), Printer Command Language (PCL) en ZPL. </td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
    <td>XDP- en PDF-documenten worden omgezet in de bestandsindelingen PostScript (PS), Printer Command Language (PCL) en ZPL. </td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Hiermee converteert u een set XDP- en PDF-documenten naar een set PostScript- (PS), Printer Command Language- (PCL) en ZPL-bestandsindelingen. </td>
    <td>Verwerkte documenten</td>
-   <td> De generatePDFOutputBatch-API combineert een formuliersjabloon met een record en genereert een PDF. Wanneer u een batch records verwerkt, telt de service voor transactierapportering elke record als een aparte PDF-uitvoering. <br> u kunt de <a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"> getGenerateManyFiles </a> vlag gebruiken om veelvoudige vertoningen aan één enkel dossier van PDF te combineren. Ongeacht de status van de vlag telt de dienst elke record als een afzonderlijke PDF-uitvoering. </td>
+   <td> De generatePDFOutputBatch-API combineert een formuliersjabloon met een record en genereert een PDF. Wanneer u een batch records verwerkt, telt de service voor transactierapportering elke record als een aparte PDF-uitvoering. <br> u kunt de <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"> getGenerateManyFiles </a> vlag gebruiken om veelvoudige vertoningen aan één enkel dossier van PDF te combineren. Ongeacht de status van de vlag telt de dienst elke record als een afzonderlijke PDF-uitvoering. </td>
   </tr>
  </tbody>
 </table>
@@ -236,13 +237,13 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Hiermee maakt u PDF-formulier van XDP-sjablonen. De XP-sjablonen worden gemaakt in Forms Designer.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Hiermee worden gegevens opgehaald uit een PDF-formulier of XDP-sjablonen</td>
    <td>Verwerkte documenten</td>
    <td> </td>
@@ -261,13 +262,13 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
    <td>Hiermee wordt een PDF-document omgezet in een lijst met afbeeldingsdocumenten. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2K, PNG en TIFF.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">naarPS</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">naarPS</a></td>
    <td>Converteert een Flash PDF-bestand naar de PostScript-indeling met gebruik van de opties die zijn opgegeven in de optiespecc.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
@@ -286,7 +287,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decoderen</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decoderen</a></td>
    <td>Decodeert alle streepjescodes in een object Document en retourneert een object org.w3c.dom.Document dat gegevens bevat die uit de streepjescode zijn opgehaald.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
@@ -305,8 +306,8 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">oproepen</a></td>
-   <td>Voert het gespecificeerde document DDX uit en keert een <a href="https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult </a> voorwerp terug dat de resulterende documenten bevat. </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">oproepen</a></td>
+   <td>Voert het gespecificeerde document DDX uit en keert een <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult </a> voorwerp terug dat de resulterende documenten bevat. </td>
    <td>Verwerkte documenten</td>
    <td>De volgende transacties worden niet administratief verwerkt als transacties:
     <ul>
@@ -315,13 +316,13 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
     </ul> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">oproepen</a></td>
-   <td>Voert het gespecificeerde document DDX uit en keert een <a href="https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult </a> voorwerp terug dat de resulterende documenten bevat. </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">oproepen</a></td>
+   <td>Voert het gespecificeerde document DDX uit en keert een <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult </a> voorwerp terug dat de resulterende documenten bevat. </td>
    <td>Verwerkte documenten</td>
    <td>Alle invoerbestandsindelingen die door PDF Generator, Forms en Output Services worden ondersteund, worden door de Assembler-service ondersteund voor al die indelingen als uitvoerbestandsindelingen. </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
    <td>Zet een opgegeven document om in PDF/A met de opgegeven opties.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
@@ -350,7 +351,7 @@ Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u 
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
    <td>Converteert een PDF-document naar een XDP-bestand. Een PDF-document kan alleen succesvol worden geconverteerd naar een XDP-bestand als het PDF-document een XFA-stroom bevat in het AcroForm-woordenboek.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
@@ -463,7 +464,7 @@ Wijs taak en de stappen van de documentdiensten van de vorm-centric Workflows va
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank"> geef terug </a> (zet in PDF om)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank"> geef terug </a> (zet in PDF om)</td>
    <td>Genereert de PDF-versie van een interactieve communicatie.</td>
    <td>Gerenderde documenten</td>
    <td>

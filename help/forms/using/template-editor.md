@@ -9,21 +9,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2039'
 ht-degree: 0%
 
 ---
 
 # Aangepaste formuliersjablonen{#adaptive-form-templates}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html).
 
 
 
@@ -37,7 +38,7 @@ U wilt bijvoorbeeld dat alle formulierauteurs bepaalde tekstvakken, navigatiekno
 
 ## Werken met sjablonen {#working-with-templates}
 
-U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan **Adobe Experience Manager > Hulpmiddelen > Malplaatjes** te navigeren. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen. AEM biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [&#128279;](/help/sites-developing/page-templates-editable.md).
+U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan **Adobe Experience Manager > Hulpmiddelen > Malplaatjes** te navigeren. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen. AEM biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [.](/help/sites-developing/page-templates-editable.md)
 
 Nadat u hebt opgegeven dat u een map wilt openen, verschijnt er een knop Maken waarmee u een sjabloon voor adaptieve formulieren kunt maken.
 
@@ -45,7 +46,7 @@ Nadat u hebt opgegeven dat u een map wilt openen, verschijnt er een knop Maken w
 
 Nadat u een map hebt gemaakt, opent u de map en voert u de volgende stappen uit om een sjabloon te maken:
 
-1. In de console van het Malplaatje, creeer **&#x200B;**&#x200B;binnen de omslag u hebt gecreeerd.
+1. In de console van het Malplaatje, creeer **** binnen de omslag u hebt gecreeerd.
 1. In de Keuze een sectie van het Type van Malplaatje, selecteer **Aangepast Malplaatje van de Vorm** en selecteer **daarna**.
 
 1. In de sectie van de Details van het Malplaatje, verstrek een Titel van het Malplaatje en selecteer **creeer**.
@@ -64,7 +65,7 @@ Bevat de volgende opties:
    * **Informatie van de Pagina**: Laat u informatie zoals publiceren/unpublish tijd, duimnagels, cliënt-zijbibliotheken, paginabeleid, en cliënt-zijbibliotheek van het paginaontwerp specificeren.
    * **Mededinger**: Laat u simuleren en het blik voor verschillende apparaten aanpassen.
    * **selecteur van de Laag:** laat u de laag veranderen.
-U kunt **laag van de Structuur 1&rbrace; of** Aanvankelijke Inhoud **kiezen.** Met de structuurlaag kunt u de kop- en voettekst toevoegen en aanpassen. Met de eerste laag Inhoud kunt u de formulierinhoud aanpassen.
+U kunt **laag van de Structuur 1} of** Aanvankelijke Inhoud **kiezen.** Met de structuurlaag kunt u de kop- en voettekst toevoegen en aanpassen. Met de eerste laag Inhoud kunt u de formulierinhoud aanpassen.
 
    * **Voorproef:** laat u voorproef hoe het malplaatje kijkt wanneer u het publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
 
@@ -190,10 +191,10 @@ Voer de volgende stappen uit om sjablonen weer te geven en te verbergen:
    >
    >URL van de Webconsole van AEM is https://&#39;[ server ]:[ haven ]&#39;/system/console/configMgr
 
-1. Zoek en open de **montages van de Configuratie 0&rbrace; FormsManager:**
+1. Zoek en open de **montages van de Configuratie 0} FormsManager:**
 
    * Om uit de doos adaptieve vormenmalplaatje te tonen of te verbergen, controleer of uncheck **omvat uit de doos AF en de optie van de Malplaatjes van de ADVERTENTIE**.
-   * Om uit de doos adaptieve vormmalplaatjes te tonen of te verbergen die in AEM 6.0 Forms of AEM 6.1 Forms versies werden toegevoegd maar nu verouderd zijn, controleer of uncheck **omvat AEM 6.0 AF de Malplaatjes** optie. Als deze optie wordt gecontroleerd, om van kracht te worden, vereist het **omvat uit doos AF en de 1&rbrace; configuratie van de Malplaatjes van de ADVERTENTIE &lbrace;worden toegelaten.**
+   * Om uit de doos adaptieve vormmalplaatjes te tonen of te verbergen die in AEM 6.0 Forms of AEM 6.1 Forms versies werden toegevoegd maar nu verouderd zijn, controleer of uncheck **omvat AEM 6.0 AF de Malplaatjes** optie. Als deze optie wordt gecontroleerd, om van kracht te worden, vereist het **omvat uit doos AF en de 1} configuratie van de Malplaatjes van de ADVERTENTIE {worden toegelaten.**
 
 1. Klik **sparen**. De weergaveopties voor de out van de vaksjablonen worden gewijzigd.
 

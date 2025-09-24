@@ -9,21 +9,22 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6553'
+source-wordcount: '6561'
 ht-degree: 0%
 
 ---
 
 # Regeleditor voor adaptieve formulieren{#adaptive-forms-rule-editor}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-| Versie | Artikel link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
 
 ## Overzicht {#overview}
 
@@ -40,7 +41,7 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 * Invoke a form data model service and perform an operation
 * Set property of an object -->
 
-De regeleditor vervangt de scriptmogelijkheden in AEM 6.1 Forms en eerdere releases. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Voor meer informatie over het werken met bestaande manuscripten in de regelredacteur, zie [ Gevolgen van regelredacteur op bestaande manuscripten ](#impact-of-rule-editor-on-existing-scripts).
+De redacteur van de regel vervangt de scriptmogelijkheden in AEM 6.1 Forms en vroegere versies. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Voor meer informatie over het werken met bestaande manuscripten in de regelredacteur, zie [ Gevolgen van regelredacteur op bestaande manuscripten ](#impact-of-rule-editor-on-existing-scripts).
 
 Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de groep met gebruikers van formulieren kunnen de scripts gebruiken, maar kunnen geen scripts maken of bewerken.
 
@@ -105,11 +106,11 @@ De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebr
 
 ### Wanneer {#whenruletype}
 
-**wanneer** regeltype volgt de **voorwaarde-actie-afwisselende actie** regelconstructie, of soms, enkel de **voorwaarde-actie** constructie. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie, gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde wordt voldaan ( `True`). Wanneer u het regeltype When gebruikt, kunt u meerdere EN- en OF-operatoren gebruiken om geneste expressies te maken[&#128279;](#nestedexpressions).
+**wanneer** regeltype volgt de **voorwaarde-actie-afwisselende actie** regelconstructie, of soms, enkel de **voorwaarde-actie** constructie. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Terwijl het gebruiken van wanneer regeltype, kunt u veelvoudige EN en OF exploitanten gebruiken om [ genestelde uitdrukkingen ](#nestedexpressions) tot stand te brengen.
 
-Met het regeltype When kunt u een voorwaarde voor een formulierobject evalueren en acties uitvoeren op een of meer objecten.
+Met het regeltype &#39;Wanneer&#39; kunt u een voorwaarde op een formulierobject evalueren en acties op een of meer objecten uitvoeren.
 
-In gewone bewoordingen is een typische When-regel als volgt gestructureerd:
+In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `When on Object A:`
 
@@ -117,9 +118,9 @@ In gewone bewoordingen is een typische When-regel als volgt gestructureerd:
 
 `Then, do the following:`
 
-Actie 2 betreffende doel B;
+Actie 2 betreffende object B;
 EN
-Actie 3 betreffende doelstelling C;
+Actie 3 betreffende object C;
 
 _
 
@@ -129,7 +130,7 @@ Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens he
 
 ![ multivaluefcdisplaysoptions ](assets/multivaluefcdisplaysoptions.png)
 
-Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Waarde van actie wissen wist de waarde van het opgegeven object. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden.
+Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Met Waarde wissen wordt de waarde van het opgegeven object gewist. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden.
 
 ![ clearvalue van ](assets/clearvalueof.png)
 
@@ -202,25 +203,25 @@ In de volgende afbeelding ziet u een voorbeeld van het dynamisch toevoegen van s
 
 Met het **[!UICONTROL Set Value of]** -regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een formuliergegevensmodelservice. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
 
-De waarde van regeltype instellen is niet beschikbaar voor alle formulierobjecten, zoals deelvensters en werkbalkknoppen. Een standaardregel voor de ingestelde waarde van heeft de volgende structuur:
+De waarde van regeltype instellen is niet beschikbaar voor alle formulierobjecten, zoals deelvensters en werkbalkknoppen. Een standaardsetwaarde van regel heeft de volgende structuur:
 
 
 
-Stel de waarde van object A in op:
+Stel de waarde van Object A in op:
 
-(snaar ABC) OF
-(object eigenschap X van Object C) OF
-(waarde van een functie) OF
-(waarde van een wiskundige uitdrukking) OF
-(outputwaarde van een datamodelservice of webservice);
+(tekenreeks ABC) OR
+(objecteigenschap X van Object C) OR
+(waarde van een functie) OR
+(waarde van een wiskundige expressie) OF
+(uitvoerwaarde van een gegevensmodeldienst of webdienst);
 
-Wanneer (optioneel):
+Indien (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is WAAR;
 
 
 
-In het volgende voorbeeld wordt de waarde in `dependentid` het veld als invoer gebruikt en wordt de waarde van het `Relation` veld ingesteld op de uitvoer van het `Relation` argument van de `getDependent` formuliergegevensmodelservice.
+In het volgende voorbeeld wordt de waarde in het veld `dependentid` als invoer gebruikt en wordt de waarde van het veld `Relation` ingesteld op de uitvoer van het argument `Relation` van de service van het gegevensmodel van het formulier `getDependent` .
 
 ![ reeks-waarde-web-dienst ](assets/set-value-web-service.png)
 
@@ -372,11 +373,11 @@ Hiermee geeft u de titel weer van het adaptieve formulierobject waarmee u de reg
 
 Het deelvenster links in de gebruikersinterface van de regeleditor bevat twee tabbladen: **[!UICONTROL Forms Objects]** en **[!UICONTROL Functions]** .
 
-Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Bij het schrijven van een regel kunt u formulierobjecten naar de regeleditor slepen. Wanneer u een regel maakt of bewerkt wanneer u een object of functie naar een tijdelijke aanduiding sleept en neerzet, neemt de tijdelijke aanduiding automatisch het juiste waardetype aan.
+Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Bij het schrijven van een regel kunt u formulierobjecten naar de regeleditor slepen. Wanneer u een regel maakt of bewerkt en een object of functie naar een tijdelijke aanduiding sleept, neemt de tijdelijke aanduiding automatisch het juiste waardetype.
 
-De formulierobjecten waarop een of meer geldige regels zijn toegepast, zijn gemarkeerd met een groene stip. Als een van de regels die op een formulierobject zijn toegepast, ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
+De formulierobjecten waarop een of meer geldige regels zijn toegepast, worden gemarkeerd met een groene stip. Als een van de regels die op een formulierobject zijn toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
 
-Het tabblad Functies bevat een reeks ingebouwde functies, zoals Som van, Min van, Max van, Gemiddelde van, Aantal en Formulier valideren. U kunt deze functies gebruiken om waarden te berekenen in herhaalbare deelvensters en tabelrijen en deze te gebruiken in actie- en voorwaardeinstructies bij het schrijven van regels. U kunt echter ook aangepaste functies[&#128279;](#custom-functions) maken.
+Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of meer, max van, gemiddelde van, aantal en validerende vorm. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en deze tijdens het schrijven van regels te gebruiken in instructies voor handelingen en voorwaarden. U kunt, echter, [ douanefuncties ](#custom-functions) ook tot stand brengen.
 
 ![ het lusje van Functies ](assets/functions.png)
 
@@ -435,7 +436,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Eerst schrijft u de regel om de zichtbaarheid van het veld Sjabloon bij echtgeno(o)t(e) in te stellen op basis van de optie die de gebruiker selecteert voor het keuzerondje Genderstatus.
 
-   Open het aanvraagformulier voor de lening in de ontwerpmodus. Selecteer de **component van de Status van het 1&rbrace; Kernbedrijf** en uitgezocht ![ geef-regels ](assets/edit-rules.png) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
+   Open het aanvraagformulier voor de lening in de ontwerpmodus. Selecteer de **component van de Status van het 1} Kernbedrijf** en uitgezocht ![ geef-regels ](assets/edit-rules.png) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
    ![ schrijven-rules-visual-editor-1 ](assets/write-rules-visual-editor-1.png)
 
@@ -447,7 +448,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![ schrijven-rules-visual-editor-2 ](assets/write-rules-visual-editor-2.png)
 
-   In het radioknoop van de Digitale Status, **Gehuwd &lbrace;en** Enige **opties worden toegewezen** 0 **en** 1 **waarden, respectievelijk.** U kunt toegewezen waarden verifiëren op het tabblad Titel van het dialoogvenster Keuzerondje bewerken, zoals hieronder wordt weergegeven.
+   In het radioknoop van de Digitale Status, **Gehuwd {en** Enige **opties worden toegewezen** 0 **en** 1 **waarden, respectievelijk.** U kunt toegewezen waarden verifiëren op het tabblad Titel van het dialoogvenster Keuzerondje bewerken, zoals hieronder wordt weergegeven.
 
    ![ Keuzerondjes waarden van regelredacteur ](assets/radio-button-values.png)
 
@@ -461,7 +462,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![ schrijven-rules-visual-editor-5 ](assets/write-rules-visual-editor-5.png)
 
-1. Sleep-daling het **gebied van de Salaris van de Muis** van het lusje van de Objecten van de Vorm op het **voorwerp van de Daling of selecteer hier** gebied. Alternatief, selecteer het **voorwerp van de Daling of selecteer hier** gebied en selecteer het **3&rbrace; gebied van de Salaris van de Muis van het pop-up menu, dat van alle vormvoorwerpen in de vorm een lijst maakt.**
+1. Sleep-daling het **gebied van de Salaris van de Muis** van het lusje van de Objecten van de Vorm op het **voorwerp van de Daling of selecteer hier** gebied. Alternatief, selecteer het **voorwerp van de Daling of selecteer hier** gebied en selecteer het **3} gebied van de Salaris van de Muis van het pop-up menu, dat van alle vormvoorwerpen in de vorm een lijst maakt.**
 
    ![ schrijven-rules-visual-editor-6 ](assets/write-rules-visual-editor-6.png)
 
@@ -495,7 +496,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. In het expressieveld:
 
-   * Selecteer of belemmering-daling van het lusje van de Objecten van Forms het **&#x200B;**&#x200B;gebied van de Salaris op het eerste **voorwerp van de Daling of selecteer hier** gebied.
+   * Selecteer of belemmering-daling van het lusje van de Objecten van Forms het **** gebied van de Salaris op het eerste **voorwerp van de Daling of selecteer hier** gebied.
 
    * Selecteer **plus** van het **Uitgezochte gebied van de Exploitant**.
 
@@ -507,7 +508,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![ schrijven-regels-visueel-redacteur-13 ](assets/write-rules-visual-editor-13.png)
 
-   Op het uitgebreide uitdrukkingsgebied, uitgezochte **die door** van het **Uitgezochte 3&rbrace; gebied van de Exploitant {en** Aantal **van het** Uitgezochte 7} gebied van de Optie &lbrace;wordt verdeeld. **&#x200B;**&#x200B;Dan, specificeer **2** op het aantalgebied.
+   Op het uitgebreide uitdrukkingsgebied, uitgezochte **die door** van het **Uitgezochte 3} gebied van de Exploitant {en** Aantal **van het** Uitgezochte 7} gebied van de Optie {wordt verdeeld. **** Dan, specificeer **2** op het aantalgebied.
 
    ![ schrijven-regels-visueel-redacteur-14 ](assets/write-rules-visual-editor-14.png)
 
@@ -549,7 +550,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 Gebruikers die aan de gebruikers in formulieren worden toegevoegd, kunnen de code-editor gebruiken. De regelbewerker produceert automatisch de code van JavaScript voor om het even welke regel u gebruikend visuele redacteur creeert. U kunt van visuele redacteur aan de coderedacteur schakelen om de geproduceerde code te bekijken. Nochtans, als u de regelcode in de coderedacteur wijzigt, kunt u niet terug naar de visuele redacteur schakelen. Als u liever regels schrijft in code-editor dan in een visuele editor, kunt u regels opnieuw schrijven in de code-editor. Met de schakeloptie voor visuele-codeeditors kunt u schakelen tussen de twee modi.
 
-De code-editor JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van adaptieve vormklassen, gebeurtenissen, voorwerpen, en openbare APIs, zie [ API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
+De code-editor JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van adaptieve vormklassen, gebeurtenissen, voorwerpen, en openbare APIs, zie [ API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen ](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 Voor meer informatie over richtlijnen om regels in de coderedacteur te schrijven, zie [ Aangepaste Uitdrukkingen van de Vorm ](/help/forms/using/adaptive-form-expressions.md).
 
@@ -608,7 +609,7 @@ Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerd
 Syntaxis: `@return {type}`
 U kunt ook `@returns {type}` gebruiken.
 Voegt informatie over de functie toe, zoals zijn doel.
-{type} staat voor het retourneringstype van de functie. Toegestane retourtypen zijn:
+  {type} staat voor het retourneringstype van de functie. Toegestane retourtypen zijn:
 
    1. string
    1. getal

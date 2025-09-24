@@ -9,19 +9,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
 
 # Een pagina met een portal voor formulieren maken{#creating-a-forms-portal-page}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html).
 
 Met Forms Portal-componenten kunnen webontwikkelaars componenten gebruiken voor het maken en aanpassen van een formulierportal op websites die zijn ontworpen met Adobe Experience Manager (AEM). Voor een snel overzicht van vormenportaal, zie [ Inleiding aan het publiceren van vormen op een portaal ](../../forms/using/introduction-publishing-forms.md).
 
@@ -56,7 +57,7 @@ Component zoeken en labelen op een pagina met rasterlay-out
 
 Het deelvenster Lijst is een gebied waarin uw formulieren worden weergegeven. De component Zoeken en register bevat verschillende configuratieopties waarmee u de weergave van formulieren in het deelvenster Lijst kunt bepalen.
 
-Om de ruit van de Lijst te vormen, selecteer de component van het Onderzoek en van de Registratie en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster **[!UICONTROL &#x200B; Edit Component]** wordt geopend.
+Om de ruit van de Lijst te vormen, selecteer de component van het Onderzoek en van de Registratie en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster **[!UICONTROL  Edit Component]** wordt geopend.
 
 ![ ruit van de Lijst op geeft wijze uit ](assets/edit-list.png)
 

@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4045'
+source-wordcount: '4054'
 ht-degree: 0%
 
 ---
 
 # Werken met formuliergegevensmodel{#work-with-form-data-model}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![ gegeven-integratie ](do-not-localize/data-integeration.png)
 
@@ -341,7 +342,7 @@ Bijvoorbeeld, kunt u een gegevens verwerkt bezit **FullName** tot stand brengen 
 
 In de diensten van OData, navigatie worden de eigenschappen gebruikt om verenigingen tussen twee voorwerpen van het gegevensmodel te bepalen. Deze eigenschappen worden gedefinieerd op een entiteitstype of een complex type. Bijvoorbeeld, in het volgende uittreksel van het meta-gegevensdossier van de steekproef [ TripPin ](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData steekproefdiensten, bevat de persoonentiteit drie navigatie-eigenschappen - Vrienden, BestFriend, en Reizen.
 
-Voor meer informatie over navigatie eigenschappen, zie {documentatie 0} OData [&#128279;](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
+Voor meer informatie over navigatie eigenschappen, zie {documentatie 0} OData [.](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536)
 
 ```xml
 <edmx:Edmx xmlns:edmx="https://docs.oasis-open.org/odata/ns/edmx" Version="4.0">

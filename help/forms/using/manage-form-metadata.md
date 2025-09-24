@@ -9,19 +9,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
 
 # Metagegevens van formulieren beheren{#manage-form-metadata}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html).
 
 ## Overzicht  {#overview-nbsp}
 
@@ -192,7 +193,7 @@ Assets heeft bestaande eigenschapswaarden die kunnen worden weergegeven in de al
       >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
    1. Selecteer de vorm en klik het pictogram van de Eigenschappen van de Mening ![ e_reviewmode_properties_n ](assets/e_reviewmode_properties_n.png) dat in de toolbar verschijnt.
-   1. Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het {![&#128279;](assets/aem6forms_eye_viewon.png) oogpictogram 0} aem6forms_eye_viewon op het hogere recht, en klik dan Eigenschappen in de lijst onder het.
+   1. Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het {![ oogpictogram 0} aem6forms_eye_viewon op het hogere recht, en klik dan Eigenschappen in de lijst onder het.](assets/aem6forms_eye_viewon.png)
 
 1. De bezitspagina die opent toont een schema dat slechts die meta-gegevenseigenschappen bevat die één of andere waarde houden.
 
@@ -295,11 +296,11 @@ AEM Forms stelt de metagegevensschema&#39;s van de ondersteunde formuliertypen i
 1. Klik op een component die u net hebt gesleept. Vul op het tabblad Instellingen dat in het rechterdeelvenster wordt geopend de gegevens in voor de volgende velden:
 
    1. Geef een veldlabel op dat wordt gebruikt als een weergavenaam boven het veld dat in het schema wordt geplaatst (bijvoorbeeld: Department)
-   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&#39;./jcr:content/metadata/default&#39;**. Verander het &quot;**gebrek**&quot;in een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
+   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&#39;./jcr :content/metadata/default&#39;**. Verander het &quot;**gebrek**&quot;in een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Wijzig het voorvoegsel ‘ niet./jcr:content/metadata/’ as it define the path where the property is stored.
+      >Wijzig het voorvoegsel ‘ niet./jcr :content/metadata/&quot;aangezien het de weg bepaalt waar het bezit wordt opgeslagen.
       >
       >De eigenschapsnaam moet ook uniek zijn om te voorkomen dat waarden worden geschreven voor twee of meer eigenschappen op dezelfde locatie in de opslagplaats. Het wordt daarom aanbevolen de waarde &#39;default&#39; te wijzigen.
 

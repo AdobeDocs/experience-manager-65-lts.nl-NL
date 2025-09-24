@@ -9,19 +9,20 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
 
 # Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve formulieren{#supporting-new-locales-for-adaptive-forms-localization}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
 
 ## Over woordenboeken voor landinstellingen {#about-locale-dictionaries}
 
@@ -75,7 +76,7 @@ Ondersteuning voor een nieuwe landinstelling toevoegen bij runtime voor adaptiev
 ### Een landinstelling toevoegen aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ga naar `https://'[server]:[port]'/system/console/configMgr` .
-1. Klik om de **component van de Dienst van de Lokalisatie van de Gids uit te geven 0&rbrace;.**
+1. Klik om de **component van de Dienst van de Lokalisatie van de Gids uit te geven 0}.**
 1. Voeg de landinstelling toe die u wilt toevoegen aan de lijst met ondersteunde landinstellingen.
 
 ![ GuideLocalizationService ](assets/configservice.png)

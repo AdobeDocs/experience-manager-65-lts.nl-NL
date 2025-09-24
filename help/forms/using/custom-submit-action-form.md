@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
 
 # Aangepaste verzendactie schrijven voor adaptieve formulieren{#writing-custom-submit-action-for-adaptive-forms}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+## Van toepassing op {#applies-to}
+
+Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
+
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html).
 
 Voor adaptieve formulieren moeten handelingen worden verzonden om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) omvat [ uit-van-de-doos acties ](../../forms/using/configuring-submit-actions.md) voorleggen die douanetaken tonen u het gebruiken van de user-submitted gegevens kunt uitvoeren. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
 
@@ -89,7 +90,7 @@ Als de handeling geen voorwaarts pad biedt, leidt de verzendserver de browser om
 
 ## Handeling verzenden {#submit-action}
 
-Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
+Een verzendactie is een verkoop :Folder die het volgende omvat:
 
 * **addfields.jsp**: Dit manuscript verstrekt de actievelden die aan het dossier van HTML tijdens vertoning worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die vereist zijn tijdens verzending in het script post.POST.jsp.
 * **dialog.xml**: Dit manuscript is gelijkaardig aan de dialoog van de Component CQ. Het verstrekt configuratieinformatie die de auteur aanpast. De velden worden weergegeven op het tabblad Handelingen verzenden in het dialoogvenster Formulier bewerken Adaptief wanneer u de handeling Verzenden selecteert.
@@ -98,25 +99,25 @@ Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
    * **guideComponentType** van typeKoord en waarde **fd/af/components/guidesubmittype**
    * **guideDataModel** van typeKoord dat het type van adaptieve vorm specificeert waarvoor de Submit actie van toepassing is. **xfa** wordt gesteund voor op XFA-Gebaseerde adaptieve vormen terwijl **xsd** voor op XSD-Gebaseerde adaptieve vormen wordt gesteund. **basis** wordt gesteund voor adaptieve vormen die geen XDP of XSD gebruiken. Voeg de corresponderende tekenreeksen toe om de handeling weer te geven op meerdere typen adaptieve formulieren. Scheid elke tekenreeks door een komma. Bijvoorbeeld, om een actie op op XFA en op XSD-Gebaseerde adaptieve vormen zichtbaar te maken, specificeer de waarden **xfa** en **xsd** respectievelijk.
 
-   * **jcr:beschrijving** van typeKoord. De waarde van deze eigenschap wordt weergegeven in de actielijst Verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De acties buiten de box zijn aanwezig in de bewaarplaats van CRX bij de plaats **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:description** van typeKoord. De waarde van deze eigenschap wordt weergegeven in de actielijst Verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De acties buiten de box zijn aanwezig in de bewaarplaats van CRX bij de plaats **/libs/fd/af/components/guidesubmittype**.
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
-Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de handeling Verzenden uit de doos Winkelinhoud (afgekeurd) die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt CQ a [ Post ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) API die kan worden gebruikt om e-mails te verzenden. Alvorens de Post API te gebruiken, [ vorm ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL&wcmmode=disabled) de dienst van de Post van Dag CQ door de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
+Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de handeling Verzenden uit de doos Winkelinhoud (afgekeurd) die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt CQ a [ Post ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) API die kan worden gebruikt om e-mails te verzenden. Alvorens de Post API te gebruiken, [ vorm ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) de dienst van de Post van Dag CQ door de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
 
-1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
+1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Creeer een knoop met het bezit verbinden :Folder en naam store_and_mail in de /apps/custom_submit_action omslag. Maak de map custom_submit_action als deze nog niet bestaat.
 
-   ![ Scherenshot die de verwezenlijking van een knoop met het bezit toont:Omslag ](assets/step1.png)
+   ![ Scherenshot die de verwezenlijking van een knoop met het bezit toont - noem :Folder](assets/step1.png)
 
 1. **verstrek de verplichte configuratiegebieden.**
 
-   Voeg de configuratie toe die de winkelactie vereist. Kopieer **cq:dialoog** knoop van de actie van de Opslag van /libs/fd/af/components/guidesubmittype/store aan de actiemap bij /apps/custom_submit_action/store_and_email.
+   Voeg de configuratie toe die de winkelactie vereist. Kopieer de **cq:dialog** knoop van de actie van de Opslag van /libs/fd/af/components/guidesubmittype/store aan de actiemap bij /apps/custom_submit_action/store_and_email.
 
    ![ Schermafbeelding die het kopiëren van de dialoogknoop aan de actiemap tonen ](assets/step2.png)
 
 1. **verstrek configuratiegebieden om de auteur voor e-mailconfiguratie te veroorzaken.**
 
-   Het adaptieve formulier bevat ook een e-mailactie die e-mailberichten naar gebruikers verzendt. Pas deze actie aan op basis van uw vereisten. Ga naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knooppunten in het cq:dialog-knooppunt naar cq:dialog-knooppunt van de handeling Verzenden (/apps/custom_submit_action/store_and_email/dialog).
+   Het adaptieve formulier bevat ook een e-mailactie die e-mailberichten naar gebruikers verzendt. Pas deze actie aan op basis van uw vereisten. Ga naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knopen binnen cq :dialog knoop aan cq :dialog knoop van uw Voorlegging actie (/apps/custom_submit_action/store_and_email/dialog).
 
    ![ Aanpassen van de e-mailactie ](assets/step3.png)
 
@@ -128,7 +129,7 @@ Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gege
 
    * **guideDataModel** van type **Koord** en waarde **xfa, xsd, basis**
 
-   * **jcr:beschrijving** van type **Koord** en waarde **Slag en E-mailActie**
+   * **jcr:description** van type **Koord** en waarde **Actie van de Opslag en E-mail**
 
 1. Open een adaptief formulier. Klik **uitgeven** knoop naast **Begin** om de **te openen geef** dialoog van de adaptieve vormcontainer uit. De nieuwe actie wordt getoond in **legt Acties** Lusje voor. Het selecteren van de **Opslag en E-mailActie** toont de configuratie die in de dialoogdoos wordt toegevoegd.
 
