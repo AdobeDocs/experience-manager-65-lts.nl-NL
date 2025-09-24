@@ -54,11 +54,11 @@ De standaardverzendacties die beschikbaar zijn in aangepaste formulieren zijn:
 >[!NOTE]
 >
 >Zorg ervoor dat [ AEM_Installation_Directory ] \crx-quickstart\temp\datamanager\ASM omslag
->>bestaat. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
+>&#x200B;>bestaat. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
 
 >[!CAUTION]
 >
->Als u [ ](../../forms/using/prepopulate-adaptive-form-fields.md) een vormmalplaatje, model van vormgegevens, of schema gebaseerde adaptieve vorm met XML of JSON gegevensklacht aan een schema (het schema van XML, JSON schema, vormmalplaatje, of model van vormgegevens) vooraf instelt dat geen gegevens &lt;afData>, &lt;afBoundData>, en &lt;/afUnboundData> markeringen bevat, dan zijn de gegevens van onbegrensde gebieden De actieve vormgebieden zonder [ bindref ](../../forms/using/prepopulate-adaptive-form-fields.md) bezit) van de adaptieve vorm wordt verloren.
+>Als u [&#128279;](../../forms/using/prepopulate-adaptive-form-fields.md) een vormmalplaatje, model van vormgegevens, of schema gebaseerde adaptieve vorm met XML of JSON gegevensklacht aan een schema (het schema van XML, JSON schema, vormmalplaatje, of model van vormgegevens) vooraf instelt dat geen gegevens &lt;afData>, &lt;afBoundData>, en &lt;/afUnboundData> markeringen bevat, dan zijn de gegevens van onbegrensde gebieden De actieve vormgebieden zonder [ bindref ](../../forms/using/prepopulate-adaptive-form-fields.md) bezit) van de adaptieve vorm wordt verloren.
 
 U kunt een aangepaste verzendactie schrijven voor aangepaste formulieren om aan uw gebruiksscenario te voldoen. Voor meer informatie, zie [ het Schrijven van douane verzendt actie voor adaptieve vormen ](../../forms/using/custom-submit-action-form.md).
 

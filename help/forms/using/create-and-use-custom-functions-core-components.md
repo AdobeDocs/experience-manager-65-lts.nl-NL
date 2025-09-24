@@ -61,8 +61,8 @@ De **Naam** wordt gebruikt om de douanefunctie in de regelredacteur van een Adap
 
 >[!NOTE]
 >`[functionName]` is de naam van de functie. Spaties zijn niet toegestaan.
->>`<Function Name>` is de weergavenaam van de functie in de regeleditor van Adaptive Forms.
->>Als de functienaam identiek is aan de naam van de functie zelf, kunt u `[functionName]` weglaten uit de syntaxis.
+>&#x200B;>`<Function Name>` is de weergavenaam van de functie in de regeleditor van Adaptive Forms.
+>&#x200B;>Als de functienaam identiek is aan de naam van de functie zelf, kunt u `[functionName]` weglaten uit de syntaxis.
 
 #### Parameter
 
@@ -445,7 +445,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
    `<filter root="/apps/experience-league" />`
 1. Sla het bestand op.
 
-   ![ de filter xml van de douanefunctie {](assets/custom-function-filterxml.png)
+   ![ de filter xml van de douanefunctie &lbrace;](assets/custom-function-filterxml.png)
 
 1. Bouw de pas gecreëerde omslag van de cliëntbibliotheek aan uw milieu van AEM door de stappen te volgen die in [ worden gegeven hoe te sectie ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build) bouwen.
 

@@ -103,7 +103,7 @@ Alle configuraties van cloudservices in AEM worden geconsolideerd in de map `/co
 De map configureren voor configuraties van cloudservices:
 
 1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
-   * Zie Browser van de Configuratie [ documentatie 0} {voor meer informatie.](/help/sites-administering/configurations.md)
+   * Zie Browser van de Configuratie [ documentatie 0&rbrace; &lbrace;voor meer informatie.](/help/sites-administering/configurations.md)
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer in **[!UICONTROL Configuration Browser]** de map `global` en selecteer **[!UICONTROL Properties]** .
@@ -195,7 +195,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 >[!NOTE]
 >
 >Het gegevensmodel van de vorm steunt [ OData versie 4 ](https://www.odata.org/documentation/).
->>Voor geleidelijke gids om Microsoft Dynamics 365, online of op-gebouw te vormen, zie {de Configuratie van 0} Microsoft Dynamics OData [.](/help/forms/using/ms-dynamics-odata-configuration.md)
+>&#x200B;>Voor geleidelijke gids om Microsoft Dynamics 365, online of op-gebouw te vormen, zie {de Configuratie van 0} Microsoft Dynamics OData [.](/help/forms/using/ms-dynamics-odata-configuration.md)
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 

@@ -436,7 +436,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Eerst schrijft u de regel om de zichtbaarheid van het veld Sjabloon bij echtgeno(o)t(e) in te stellen op basis van de optie die de gebruiker selecteert voor het keuzerondje Genderstatus.
 
-   Open het aanvraagformulier voor de lening in de ontwerpmodus. Selecteer de **component van de Status van het 1} Kernbedrijf** en uitgezocht ![ geef-regels ](assets/edit-rules.png) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
+   Open het aanvraagformulier voor de lening in de ontwerpmodus. Selecteer de **component van de Status van het 1&rbrace; Kernbedrijf** en uitgezocht ![ geef-regels ](assets/edit-rules.png) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
    ![ schrijven-rules-visual-editor-1 ](assets/write-rules-visual-editor-1.png)
 
@@ -448,7 +448,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![ schrijven-rules-visual-editor-2 ](assets/write-rules-visual-editor-2.png)
 
-   In het radioknoop van de Digitale Status, **Gehuwd {en** Enige **opties worden toegewezen** 0 **en** 1 **waarden, respectievelijk.** U kunt toegewezen waarden verifiëren op het tabblad Titel van het dialoogvenster Keuzerondje bewerken, zoals hieronder wordt weergegeven.
+   In het radioknoop van de Digitale Status, **Gehuwd &lbrace;en** Enige **opties worden toegewezen** 0 **en** 1 **waarden, respectievelijk.** U kunt toegewezen waarden verifiëren op het tabblad Titel van het dialoogvenster Keuzerondje bewerken, zoals hieronder wordt weergegeven.
 
    ![ Keuzerondjes waarden van regelredacteur ](assets/radio-button-values.png)
 
@@ -462,7 +462,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![ schrijven-rules-visual-editor-5 ](assets/write-rules-visual-editor-5.png)
 
-1. Sleep-daling het **gebied van de Salaris van de Muis** van het lusje van de Objecten van de Vorm op het **voorwerp van de Daling of selecteer hier** gebied. Alternatief, selecteer het **voorwerp van de Daling of selecteer hier** gebied en selecteer het **3} gebied van de Salaris van de Muis van het pop-up menu, dat van alle vormvoorwerpen in de vorm een lijst maakt.**
+1. Sleep-daling het **gebied van de Salaris van de Muis** van het lusje van de Objecten van de Vorm op het **voorwerp van de Daling of selecteer hier** gebied. Alternatief, selecteer het **voorwerp van de Daling of selecteer hier** gebied en selecteer het **3&rbrace; gebied van de Salaris van de Muis van het pop-up menu, dat van alle vormvoorwerpen in de vorm een lijst maakt.**
 
    ![ schrijven-rules-visual-editor-6 ](assets/write-rules-visual-editor-6.png)
 
@@ -496,7 +496,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. In het expressieveld:
 
-   * Selecteer of belemmering-daling van het lusje van de Objecten van Forms het **** gebied van de Salaris op het eerste **voorwerp van de Daling of selecteer hier** gebied.
+   * Selecteer of belemmering-daling van het lusje van de Objecten van Forms het **&#x200B;**&#x200B;gebied van de Salaris op het eerste **voorwerp van de Daling of selecteer hier** gebied.
 
    * Selecteer **plus** van het **Uitgezochte gebied van de Exploitant**.
 
@@ -508,7 +508,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![ schrijven-regels-visueel-redacteur-13 ](assets/write-rules-visual-editor-13.png)
 
-   Op het uitgebreide uitdrukkingsgebied, uitgezochte **die door** van het **Uitgezochte 3} gebied van de Exploitant {en** Aantal **van het** Uitgezochte 7} gebied van de Optie {wordt verdeeld. **** Dan, specificeer **2** op het aantalgebied.
+   Op het uitgebreide uitdrukkingsgebied, uitgezochte **die door** van het **Uitgezochte 3&rbrace; gebied van de Exploitant {en** Aantal **van het** Uitgezochte 7} gebied van de Optie &lbrace;wordt verdeeld. **&#x200B;**&#x200B;Dan, specificeer **2** op het aantalgebied.
 
    ![ schrijven-regels-visueel-redacteur-14 ](assets/write-rules-visual-editor-14.png)
 

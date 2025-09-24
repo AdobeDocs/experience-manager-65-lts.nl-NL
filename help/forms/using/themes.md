@@ -306,7 +306,7 @@ Met de plusknop in de elementenbibliotheek kunt u de stijl permanent opslaan met
 
 Wanneer u een aangepaste naam voor een stijl opgeeft, is de stijl gekoppeld aan een thema en is deze niet meer beschikbaar voor andere thema&#39;s. Een opgeslagen stijl verwijderen:
 
-1. Op de toolbar CANVAS, klik **** thema-opties ![ > ](assets/theme-options.png) leiden Stijlen **.**
+1. Op de toolbar CANVAS, klik **&#x200B;**&#x200B;thema-opties ![ > ](assets/theme-options.png) leiden Stijlen **.**
 1. In het Manage dialoog van Stijlen, selecteer een bewaarde stijl, klik **Schrapping**.
 
    ![ Schrap de bewaarde stijl ](assets/manage-styles.png)
@@ -325,9 +325,9 @@ Wanneer u een thema maakt, wordt dit gemaakt met een formulier dat wordt gelever
 
 Het huidige formulier of de interactieve communicatie in het Thema Editor Canvas vervangen:
 
-1. In het paneel van de EDITOR van het THEMA, klik **** thema-opties ![ > ](assets/theme-options.png) vormen **van de Opties van het Thema.**
+1. In het paneel van de EDITOR van het THEMA, klik **&#x200B;**&#x200B;thema-opties ![ > ](assets/theme-options.png) vormen **van de Opties van het Thema.**
 
-1. Op het Algemene lusje, doorblader en selecteer een vorm of interactieve mededeling voor het **Aangepaste 1} gebied van de Vorm/van het Document.**
+1. Op het Algemene lusje, doorblader en selecteer een vorm of interactieve mededeling voor het **Aangepaste 1&rbrace; gebied van de Vorm/van het Document.**
 
 ### Opnieuw/Ongedaan maken {#redo-undo}
 
@@ -501,7 +501,7 @@ U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een ad
 Voer de volgende stappen uit om Adobe Fonts in AEM te configureren:
 
 1. In de auteursinstantie, klik ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) Adobe Experience Manager > Hulpmiddelen ![ hamer ](assets/hammer.png) > Plaatsing > de Diensten van de Wolk.
-1. Op de **pagina van de Diensten van de Wolk 1}, navigeer aan en open de** Adobe Fonts **optie.** Open de configuratiemap, en klik **creëren**.
+1. Op de **pagina van de Diensten van de Wolk 1&rbrace;, navigeer aan en open de** Adobe Fonts **optie.** Open de configuratiemap, en klik **creëren**.
 1. Op **creeer de dialoog van de Configuratie**, specificeer een titel voor de configuratie en klik **creeer**.
 
    U wordt opnieuw gericht aan de configuratiepagina.
@@ -631,7 +631,7 @@ Wanneer u stijlen voor componenten opgeeft in de Thema-editor, wordt een CSS geg
 De gegenereerde CSS kunt u met de volgende opties zien:
 
 * **CSS van de Mening** optie in sidebar: Wanneer u een component in het Thema selecteert, kunt u de WEERGAVE CSS optie in sidebar zien. De gegenereerde CSS wordt weergegeven, inclusief CSS voor `::before` - en `::after` pseudo-elementen.
-* **optie van het Thema van 0} Mening CSS {in de canvastoolbar: In de Toolbar van het Canvas, klik** thema-opties ![ > ](assets/theme-options.png) het Thema CSS van de Mening **.** U kunt het volledige thema CSS zien die van de eigenschappen wordt geproduceerd u in de Redacteur van het Thema bepaalt.
+* **optie van het Thema van 0&rbrace; Mening CSS &lbrace;in de canvastoolbar: In de Toolbar van het Canvas, klik** thema-opties ![ > ](assets/theme-options.png) het Thema CSS van de Mening **.** U kunt het volledige thema CSS zien die van de eigenschappen wordt geproduceerd u in de Redacteur van het Thema bepaalt.
 
 ## Problemen oplossen, aanbevelingen en aanbevolen procedures {#troubleshooting-recommendations-and-best-practices}
 
