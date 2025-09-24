@@ -142,11 +142,11 @@ Kopieer vervolgens de zojuist gemaakte checkpoint-id en valideer de levensduur m
 >
 >Dit controlepunt wordt verwijderd wanneer de index later wordt geïmporteerd.
 
-Voor meer details, raadpleeg [ de verwezenlijking van het controlepunt van 0} van de documentatie van Oak.](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint)
+Voor meer details, raadpleeg [ de verwezenlijking van het controlepunt van 0&rbrace; van de documentatie van Oak.](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint)
 
 **Voer off-line indexeren voor de geproduceerde indexdefinities uit**
 
-Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Dit proces leidt tot indexgegevens op schijf onder `indexing-result/indexes`. Het **** schrijft niet aan de bewaarplaats en vereist daarom niet het tegenhouden van de lopende instantie van AEM. Het gemaakte tekstarchief wordt in dit proces gebruikt:
+Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Dit proces leidt tot indexgegevens op schijf onder `indexing-result/indexes`. Het **&#x200B;**&#x200B;schrijft niet aan de bewaarplaats en vereist daarom niet het tegenhouden van de lopende instantie van AEM. Het gemaakte tekstarchief wordt in dit proces gebruikt:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
