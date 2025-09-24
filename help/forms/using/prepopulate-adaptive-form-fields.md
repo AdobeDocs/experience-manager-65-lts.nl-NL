@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Aangepaste formuliervelden vooraf invullen{#prefill-adaptive-form-fields}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Van toepassing op {#applies-to}
 
 Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
 
-Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html).
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=nl-NL).
 
 ## Inleiding {#introduction}
 
@@ -351,7 +351,7 @@ U kunt de douane vooraf ingevulde dienst voor de scenario&#39;s gebruiken, waar 
 
 De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U maakt de OSGi-bundel, uploadt en installeert deze naar AEM Forms-bundels. Voordat u begint met het maken van de bundel:
 
-* [ Download de Cliënt SDK van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [ Download de Cliënt SDK van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html)
 * Het tekstbouwsteenpakket downloaden
 
 * Plaats het gegevensbestand (vooraf ingevulde gegevens) in crx-bewaarplaats. U kunt het bestand op elke locatie in de map \contents van de crx-opslagplaats plaatsen.
@@ -397,4 +397,4 @@ U kunt de AEM Forms-server zo configureren dat de handeling voor het samenvoegen
    * Als u deze optie wilt uitschakelen, voert u de volgende opdracht cURL uit:
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-  Om volledig voordeel van prepopulate gegevens bij cliëntoptie te nemen, werk uw prefill dienst bij om [ FileAttachmentMap ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) en [ CustomContext ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) terug te keren
+  Om volledig voordeel van prepopulate gegevens bij cliëntoptie te nemen, werk uw prefill dienst bij om [ FileAttachmentMap ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) en [ CustomContext ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) terug te keren
