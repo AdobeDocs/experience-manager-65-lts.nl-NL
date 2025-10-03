@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
 workflow-type: tm+mt
-source-wordcount: '7103'
+source-wordcount: '7319'
 ht-degree: 0%
 
 ---
@@ -449,6 +449,43 @@ Eclipse Jetty 11.0.x wordt gebruikt als servletmotor voor QuickStart.
 
 * Voor details over de verbeteringsprocedure, zie de [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md).
 
+#### Aanbevolen procedures voor AEM 6.5 LTS Service Pack-upgrades
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**Milieu**
+Is van toepassing op: AEM 6.5 LTS (On-Premise) klanten die Service Pack 1 (SP1) installeren. SP1 wordt geleverd als QuickStart JAR.
+
+**waarom dit** van belang is
+SP1 voor AEM 6.5 LTS wordt geleverd als een QuickStart JAR in plaats van een ZIP om te installeren via Package Manager. Klanten op prem upgraden door de Quickstart JAR te vervangen, deze uit te pakken en opnieuw te starten. Deze methode is consistent met de upgradeprocedure voor Adobe op zijn plaats.
+
+**Geadviseerde verbeteringsstroom (Auteur of publiceer)**
+
+1. Controleer of uw AEM 6.5 LTS-exemplaar gezond en toegankelijk is.
+1. Download SP1 Quickstart JAR (bijvoorbeeld, `cq-quickstart-6.6.x.jar`) van de Distributie van de Software.
+1. Stop de actieve instantie.
+1. Vervang in de installatiemap van AEM (buiten `crx-quickstart/`) de vorige Quickstart JAR door de SP1 JAR.
+1. Pak de JAR uit:
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   (Pas de heapmarkeringen naar wens aan.)
+
+1. Wijzig de naam van de niet-verpakte JAR zodat deze overeenkomt met de rol en poort, bijvoorbeeld `cq-author-4502.jar` of `cq-publish-4503.jar` .
+1. Start AEM en bevestig de upgrade in de gebruikersinterface (Help > Info) en in de logboeken.
+
+**Goede hygiëne**
+
+* Voer de upgrade uit in een lagere testomgeving voordat u gaat produceren.
+* Maak volledige herstelbare back-ups (opslagruimte plus externe datastores) voordat u begint.
+* Raadpleeg de richtlijnen en technische vereisten voor Adobe on-site upgrades (Java 17/21 aanbevolen voor LTS).
+
+>[!NOTE]
+>
+>De hierboven getoonde bestandsnamen (bijvoorbeeld `cq-quickstart-6.6.x.jar`) weerspiegelen de naam van het SP1 Quickstart-artefact die is waargenomen voor deze LTS-versie. Gebruik altijd de exacte bestandsnaam die u downloadt van Softwaredistributie.
+
 ## Installeren en bijwerken {#install-update}
 
 Voor opstellingsvereisten, zie [ installatieinstructies ](/help/sites-deploying/custom-standalone-install.md).
@@ -466,7 +503,7 @@ Voor gedetailleerde instructies, zie de [ verbeteringsdocumentatie ](/help/sites
 
 ## AEM Forms-invoegtoepassing installeren en bijwerken {#install-update-aem-forms-add-on}
 
-Voor gedetailleerde instructies, zie [ Uitvoerend een Verbetering op zijn plaats ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Voor gedetailleerde instructies, zie [ Uitvoerend een Verbetering op zijn plaats ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -584,5 +621,5 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
