@@ -503,7 +503,7 @@ Voor gedetailleerde instructies, zie de [&#x200B; verbeteringsdocumentatie &#x20
 
 ## AEM Forms-invoegtoepassing installeren en bijwerken {#install-update-aem-forms-add-on}
 
-Voor gedetailleerde instructies, zie [&#x200B; Uitvoerend een Verbetering op zijn plaats &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Voor gedetailleerde instructies, zie [&#x200B; Uitvoerend een Verbetering op zijn plaats &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -621,5 +621,5 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [&#x200B; download van het Product bij licensing.adobe.com &#x200B;](https://licensing.adobe.com/)
-* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
 
