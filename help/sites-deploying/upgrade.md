@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Van een technisch perspectief, wordt het verbeteringsproces van AEM 6.5 LTS aan AEM 6.5 LTS de Pakken van de Dienst ontworpen om een naadloze [ op zijn plaats verbetering ](/help/sites-deploying/in-place-upgrade.md) te zijn. Dit proces vereist over het algemeen geen codeveranderingen van klanten, tenzij specifiek vermeld in de versienota&#39;s.
+>Van een technisch perspectief, wordt het verbeteringsproces van AEM 6.5 LTS aan AEM 6.5 LTS de Pakken van de Dienst ontworpen om een naadloze [&#x200B; op zijn plaats verbetering &#x200B;](/help/sites-deploying/in-place-upgrade.md) te zijn. Dit proces vereist over het algemeen geen codeveranderingen van klanten, tenzij specifiek vermeld in de versienota&#39;s.
 
 In dit gedeelte wordt de upgrade van een AEM-installatie naar AEM 6.5 LTS besproken:
 
@@ -55,6 +55,6 @@ Om gemakkelijker te kunnen verwijzen naar de AEM-instanties die bij deze procedu
 
 ### Updates {#updates}
 
-De laag van de stichting steunt nu Java 17 en Java 21, die recentste open-bronbundels van Apache Sling, Felix, en Jackrabbit Oak omvat. Bovendien is de verpakking van de AEM 6.5 LTS uber-jar veranderd. Bovendien zijn een aantal verouderde functies verwijderd uit AEM 6.5 LTS. Voor meer informatie, verwijs naar [ de nota&#39;s van de Versie ](/help/release-notes/release-notes.md#whats-new-what-s-new) en [ Lijst van de Verouderde Bundels die na de Verbetering ](/help/sites-deploying/obsolete-bundles.md) worden gedesinstalleerd
+De laag van de stichting steunt nu Java 17 en Java 21, die recentste open-bronbundels van Apache Sling, Felix, en Jackrabbit Oak omvat. Bovendien is de verpakking van de AEM 6.5 LTS uber-jar veranderd. Bovendien zijn een aantal verouderde functies verwijderd uit AEM 6.5 LTS. Voor meer informatie, verwijs naar [&#x200B; de nota&#39;s van de Versie &#x200B;](/help/release-notes/release-notes.md#whats-new-what-s-new) en [&#x200B; Lijst van de Verouderde Bundels die na de Verbetering &#x200B;](/help/sites-deploying/obsolete-bundles.md) worden gedesinstalleerd
 
-AEM 6.5 LTS richt zich sterk op achterwaartse compatibiliteit van functies en wordt geleverd met een analyseprogramma. Zie [ het Beoordelen van de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) voor beoordeling van ingewikkeldheid aangezien u [ planning voor de verbetering ](/help/sites-deploying/upgrade-planning.md) begint.
+AEM 6.5 LTS richt zich sterk op achterwaartse compatibiliteit van functies en wordt geleverd met een analyseprogramma. Zie [&#x200B; het Beoordelen van de Complexiteit van de Verbetering met de Analysator van AEM &#x200B;](/help/sites-deploying/aem-analyzer.md) voor beoordeling van ingewikkeldheid aangezien u [&#x200B; planning voor de verbetering &#x200B;](/help/sites-deploying/upgrade-planning.md) begint.

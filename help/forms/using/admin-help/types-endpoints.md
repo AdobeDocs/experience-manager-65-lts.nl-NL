@@ -38,7 +38,7 @@ De volgende soorten eindpunten kunnen aan de diensten worden toegevoegd. Niet al
 
 **SOAP:** laat een cliënttoepassing toe die gebruikend de vormen van AEM wordt ontwikkeld APIs programmeren om de dienst aan te halen gebruikend de wijze van SOAP. Een eindpunt van SOAP wordt automatisch gecreeerd voor elke geactiveerde dienst.
 
-**nota**: *de Veiligheid kan uit documenten van de documentveiligheid worden verwijderd wanneer het eindpunt van SOAP terwijl het bekijken van de documenten in Adobe Acrobat of de Lezer van Adobe wordt gebruikt. Voor details op hoe te om de punten van SOAP op uw documenten onbruikbaar te maken LCRM, zie [ SOAP endpoints voor documenten van de documentveiligheid onbruikbaar maken](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**nota**: *de Veiligheid kan uit documenten van de documentveiligheid worden verwijderd wanneer het eindpunt van SOAP terwijl het bekijken van de documenten in Adobe Acrobat of de Lezer van Adobe wordt gebruikt. Voor details op hoe te om de punten van SOAP op uw documenten onbruikbaar te maken LCRM, zie [&#x200B; SOAP endpoints voor documenten van de documentveiligheid onbruikbaar maken](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
 **EJB:** laat een cliënttoepassing toe die gebruikend de vormen van AEM wordt ontwikkeld APIs om de dienst aan te halen gebruikend de wijze van JavaBeans van de Onderneming (EJB). Een eindpunt EJB wordt automatisch gecreeerd voor elke geactiveerde dienst.
 

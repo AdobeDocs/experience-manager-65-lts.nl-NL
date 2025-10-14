@@ -15,24 +15,24 @@ ht-degree: 0%
 
 # Upgrade naar AEM 6.5 Forms LTS op OSGi {#upgrade-to-aem-forms-osgi}
 
-Aan [ verbetering van AEM 6.5 aan AEM 6.5 LTS ](/help/sites-deploying/upgrade.md), verbetering aan AEM 6.5.22.0 Forms of later. Een directe upgrade van AEM 6.5.22.0 naar AEM 6.5 Forms LTS wordt ondersteund.
+Aan [&#x200B; verbetering van AEM 6.5 aan AEM 6.5 LTS &#x200B;](/help/sites-deploying/upgrade.md), verbetering aan AEM 6.5.22.0 Forms of later. Een directe upgrade van AEM 6.5.22.0 naar AEM 6.5 Forms LTS wordt ondersteund.
 
-Als u AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms of AEM 6.5 Forms gebruikt, is een directe upgrade naar AEM 6.5 Forms LTS niet beschikbaar. Voor gedetailleerde verbeteringswegen, verwijs naar de [ documentatie van de Wegen van de Verbetering ](/help/forms/using/upgrade.md).
+Als u AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms of AEM 6.5 Forms gebruikt, is een directe upgrade naar AEM 6.5 Forms LTS niet beschikbaar. Voor gedetailleerde verbeteringswegen, verwijs naar de [&#x200B; documentatie van de Wegen van de Verbetering &#x200B;](/help/forms/using/upgrade.md).
 
 Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen uit om te upgraden naar AEM 6.5 LTS Forms:
 
 1. Installeer het AEM Forms-invoegtoepassingspakket. De stappen worden hieronder weergegeven:
 
-   1. Open [ Distributie van de Software ](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
+   1. Open [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
    1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
    1. In de sectie **[!UICONTROL Filters]** :
       1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
       1. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
    1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-   1. Open [ Manager van het Pakket ](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+   1. Open [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
    1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) artikel.
+      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [&#x200B; wordt vermeld versies van AEM Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) artikel.
 
       Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het bestand &lt;crx-repository>/error.log en het logbestand stabiel is. Houd er rekening mee dat een aantal pakketten in de installatiestatus kunnen blijven staan. U kunt de status van deze verpakkingen veilig negeren.
 
@@ -50,9 +50,9 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
    * **het Nut van de Migratie van de Looppas**
 
-     Het migratiehulpprogramma maakt de adaptieve formulieren en het beheer van correspondentie van eerdere versies compatibel met AEM 6.5-formulieren. U kunt het hulpprogramma downloaden van AEM Software Distribution. Voor geleidelijke informatie om het migratienut te vormen en te gebruiken, zie [ migratienut ](../../forms/using/migration-utility.md).
+     Het migratiehulpprogramma maakt de adaptieve formulieren en het beheer van correspondentie van eerdere versies compatibel met AEM 6.5-formulieren. U kunt het hulpprogramma downloaden van AEM Software Distribution. Voor geleidelijke informatie om het migratienut te vormen en te gebruiken, zie [&#x200B; migratienut &#x200B;](../../forms/using/migration-utility.md).
 
-     Als u [ Steekproef voor het integreren van concepten &amp; voorleggingscomponent ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
+     Als u [&#x200B; Steekproef voor het integreren van concepten &amp; voorleggingscomponent &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -68,18 +68,18 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
    * **(Als u een upgrade uitvoert van alleen AEM 6.2 Forms of eerdere versies) Adobe Sign opnieuw configureren**
 
-     Als Adobe Sign was geconfigureerd in de vorige versie van AEM Forms, configureert u Adobe Sign vervolgens opnieuw vanuit de AEM Cloud-services. Voor meer details, zie [ het Teken van Adobe met AEM Forms ](../../forms/using/adobe-sign-integration-adaptive-forms.md) integreren.
+     Als Adobe Sign was geconfigureerd in de vorige versie van AEM Forms, configureert u Adobe Sign vervolgens opnieuw vanuit de AEM Cloud-services. Voor meer details, zie [&#x200B; het Teken van Adobe met AEM Forms &#x200B;](../../forms/using/adobe-sign-integration-adaptive-forms.md) integreren.
 
    * **Steun voor jQuery**
 
      In AEM 6.5 Forms wordt de versie van jQuery bijgewerkt naar versie 3.2.1 en de versie van jQuery-gebruikersinterface naar versie 1.12.1. De Vorm van AEM gebruikt JQuery op **noConflict** wijze. Als u dus een andere jQuery-versie gebruikt, worden er geen problemen weergegeven tijdens het uitvoeren van een upgrade. Als u echter een upgrade uitvoert naar AEM 6.5 Forms:
 
       * Controleer of uw aangepaste componenten, indien aanwezig, compatibel zijn met ondersteunde jQuery-versies.
-      * Verwijder niet-ondersteunde API&#39;s uit de aangepaste componenten. Zie [ verbeteringsgids ](https://jquery.com/upgrade-guide/3.0/) voor de lijst van verwijderde APIs. Ondersteuning voor de API&#39;s load(), .unload() en .error() wordt bijvoorbeeld verwijderd. Gebruik de methode .on() in plaats van de eerder genoemde API&#39;s. Wijzig bijvoorbeeld $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
+      * Verwijder niet-ondersteunde API&#39;s uit de aangepaste componenten. Zie [&#x200B; verbeteringsgids &#x200B;](https://jquery.com/upgrade-guide/3.0/) voor de lijst van verwijderde APIs. Ondersteuning voor de API&#39;s load(), .unload() en .error() wordt bijvoorbeeld verwijderd. Gebruik de methode .on() in plaats van de eerder genoemde API&#39;s. Wijzig bijvoorbeeld $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
 
    * **(Als u een upgrade uitvoert van alleen AEM 6.2 Forms of eerdere versies) Analyses en rapporten opnieuw samenstellen**
 
-     In AEM 6.4 Forms is de verkeersvariabele voor de bron- en succesgebeurtenis voor de indruk niet beschikbaar. Als u dus een upgrade uitvoert van AEM 6.2 Forms of eerdere versies, stopt AEM Forms met het verzenden van gegevens naar de Adobe Analytics-server en zijn er geen analyserapporten voor adaptieve formulieren beschikbaar. Bovendien introduceert AEM 6.4 Forms een verkeersvariabele voor de versie van formulieranalyse en succesgebeurtenis voor de hoeveelheid tijd die aan een veld wordt doorgebracht. Configureer daarom analyses en rapporten voor uw AEM Forms-omgeving. Voor gedetailleerde stappen, zie [ het Vormen analyses en rapporten ](../../forms/using/configure-analytics-forms-documents.md).
+     In AEM 6.4 Forms is de verkeersvariabele voor de bron- en succesgebeurtenis voor de indruk niet beschikbaar. Als u dus een upgrade uitvoert van AEM 6.2 Forms of eerdere versies, stopt AEM Forms met het verzenden van gegevens naar de Adobe Analytics-server en zijn er geen analyserapporten voor adaptieve formulieren beschikbaar. Bovendien introduceert AEM 6.4 Forms een verkeersvariabele voor de versie van formulieranalyse en succesgebeurtenis voor de hoeveelheid tijd die aan een veld wordt doorgebracht. Configureer daarom analyses en rapporten voor uw AEM Forms-omgeving. Voor gedetailleerde stappen, zie [&#x200B; het Vormen analyses en rapporten &#x200B;](../../forms/using/configure-analytics-forms-documents.md).
 
 1. Controleer of de upgrade van de server is geslaagd, of alle gegevens zijn gemigreerd en of deze op de normale manier kunnen werken.
 
@@ -93,4 +93,4 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [ de Herstructurering van de Bewaarplaats van Forms in AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [&#x200B; de Herstructurering van de Bewaarplaats van Forms in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).

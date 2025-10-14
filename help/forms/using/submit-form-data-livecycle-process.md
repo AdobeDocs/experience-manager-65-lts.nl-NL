@@ -32,7 +32,7 @@ Voer de volgende stappen uit zodat u uw AEM Forms Server kunt inschakelen om geg
 1. Klik hierop om de URL van de configuratieserver, de gebruikersnaam en het wachtwoord voor de AEM Forms op de JEE-server te bewerken.
 1. Herzie de montages en klik **sparen**.
 
-![ Adobe LiveCycle Client SDK configuratie ](assets/clientsdkconfiguration.jpg)
+![&#x200B; Adobe LiveCycle Client SDK configuratie &#x200B;](assets/clientsdkconfiguration.jpg)
 
 ## Gegevens toewijzen aan procesvelden {#map-data-with-process-fields}
 
@@ -47,6 +47,6 @@ Nadat u AEM Forms hebt geconfigureerd, wijst u de XML-gegevens en bijlagen van h
 
 1. Herzie de montages en klik **sparen**.
 
-![ het Locator en de Invoker van het Proces van de Gids LiveCycle ](assets/test3.jpg)
+![&#x200B; het Locator en de Invoker van het Proces van de Gids LiveCycle &#x200B;](assets/test3.jpg)
 
 Als deze optie eenmaal is geconfigureerd, wordt bij Verzenden naar Forms Workflow de AEM Forms op JEE-serverprocessen weergegeven die de opgegeven XML-gegevensparameter bevatten.

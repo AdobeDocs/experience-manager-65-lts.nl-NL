@@ -21,15 +21,15 @@ Het vertaalintegratiekader integreert met vertaalservices van derden om de verta
 * Creeer een configuratie van het Kader van de Integratie van de Vertaling.
 * Koppel de cloudconfiguraties aan uw pagina&#39;s.
 
-Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md).
+Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](/help/sites-administering/translation.md).
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
 Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider.
 
-AEM omvat het vermogen om [ met Vertaler Microsoft® ](/help/sites-administering/tc-msconf.md) door gebrek te verbinden. Andere verkopers van vertaaltechnologie met de schakelaars van AEM die lid van het de partnerprogramma van Adobe Exchange zijn kunnen [ hier ](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE) worden gevonden.
+AEM omvat het vermogen om [&#x200B; met Vertaler Microsoft® &#x200B;](/help/sites-administering/tc-msconf.md) door gebrek te verbinden. Andere verkopers van vertaaltechnologie met de schakelaars van AEM die lid van het de partnerprogramma van Adobe Exchange zijn kunnen [&#x200B; hier &#x200B;](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE) worden gevonden.
 
-Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de Vertaalschakelaar van Microsoft, zie [ Integrerend met de Vertaler van Microsoft ](/help/sites-administering/tc-msconf.md).
+Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de Vertaalschakelaar van Microsoft, zie [&#x200B; Integrerend met de Vertaler van Microsoft &#x200B;](/help/sites-administering/tc-msconf.md).
 
 Indien nodig kunt u meerdere cloudconfiguraties voor dezelfde aansluiting maken. U kunt bijvoorbeeld één configuratie maken voor elk van de accounts of projecten die u bij dezelfde leverancier hebt.
 
@@ -47,12 +47,12 @@ Nadat u een kaderconfiguratie creeert, associeert u de wolkenconfiguratie met de
 
 Wanneer verschillende gedeelten van uw website verschillende vertaalvereisten hebben, kunt u overeenkomstig meerdere frameworkconfiguraties maken. Een meertalige website bevat bijvoorbeeld kopieën in de Engelse, Spaanse en Japanse taal. De eigenaar van de site gebruikt twee verschillende vertaalserviceproviders voor Spaanse en Japanse vertalingen. Daarom worden twee configuraties van het kader gevormd. Elke configuratie gebruikt een verschillende leverancier van vertaaldiensten.
 
-Nadat u een kader van de vertaalintegratie vormt, kunt u het [ associëren met de pagina&#39;s ](/help/sites-administering/tc-prep.md) die het gebruiken.
+Nadat u een kader van de vertaalintegratie vormt, kunt u het [&#x200B; associëren met de pagina&#39;s &#x200B;](/help/sites-administering/tc-prep.md) die het gebruiken.
 
-**Nota:** voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md).
+**Nota:** voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](/help/sites-administering/translation.md).
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen moeten worden omgezet.
-![ chlimage_1-386 ](assets/translation-config-65.jpg)
+![&#x200B; chlimage_1-386 &#x200B;](assets/translation-config-65.jpg)
 
 ### Eigenschappen van siteconfiguratie {#sites-configuration-properties}
 
@@ -107,7 +107,7 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
 
 ### Assets-configuratieeigenschappen {#assets-configuration-properties}
 
-Assets-eigenschappen bepalen hoe elementen moeten worden geconfigureerd. Voor meer informatie over het vertalen van activa, zie [ Creërend de Kopieën van de Taal voor Assets ](/help/assets/translation-projects.md).
+Assets-eigenschappen bepalen hoe elementen moeten worden geconfigureerd. Voor meer informatie over het vertalen van activa, zie [&#x200B; Creërend de Kopieën van de Taal voor Assets &#x200B;](/help/assets/translation-projects.md).
 
 <table>
  <tbody>

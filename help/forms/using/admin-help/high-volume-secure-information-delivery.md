@@ -30,4 +30,4 @@ Als er een maandelijkse factuurgeneratie voor een telecombedrijf is, creeert u e
 
 Het maken van een abstract beleid wordt alleen ondersteund door documentbeveiliging in Java SDK. U kunt echter wel het beleid beheren dat u maakt op basis van het abstracte beleid van de webpagina&#39;s voor documentbeveiliging. Beleid dat met deze methode wordt gemaakt, werkt hetzelfde als het beleid dat op basis van webpagina&#39;s voor documentbeveiliging wordt gemaakt.
 
-Zie [ Programmering met de vormen van AEM ](https://www.adobe.com/go/learn_aemforms_programming_63) voor meer informatie.
+Zie [&#x200B; Programmering met de vormen van AEM &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63) voor meer informatie.

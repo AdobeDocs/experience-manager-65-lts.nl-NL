@@ -32,11 +32,11 @@ Wanneer u uw AEM-omgevingen upgradet, moet u rekening houden met de verschillen 
 
 De veronderstelde topologie voor deze sectie bestaat uit een server van de Auteur die op TarMK met een Koude Reserve loopt. De replicatie komt van de server van de Auteur aan TarMK voor publiceert landbouwbedrijf. Hoewel hier niet geïllustreerd, kan deze benadering ook voor plaatsingen worden gebruikt die het ontladen gebruiken. Zorg ervoor om de het ontladen instantie op de nieuwe versie te bevorderen of te herbouwen na het onbruikbaar maken van replicatieagenten op de instantie van de Auteur en alvorens hen opnieuw toe te laten.
 
-![ tarmk_starting_topologie ](assets/tarmk_starting_topology.jpg)
+![&#x200B; tarmk_starting_topologie &#x200B;](assets/tarmk_starting_topology.jpg)
 
 ### Voorbereiding upgrade {#upgrade-preparation}
 
-![ verbetering-voorbereiding-auteur ](assets/upgrade-preparation-author.png)
+![&#x200B; verbetering-voorbereiding-auteur &#x200B;](assets/upgrade-preparation-author.png)
 
 1. Inhoud niet schrijven.
 
@@ -44,13 +44,13 @@ De veronderstelde topologie voor deze sectie bestaat uit een server van de Auteu
 
 1. Schakel replicatieagents op de auteur uit.
 
-1. Stel de [ preupgrade onderhoudstaken ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) in werking.
+1. Stel de [&#x200B; preupgrade onderhoudstaken &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) in werking.
 
 ### Uitvoering upgrade {#upgrade-execution}
 
-![ execute_upgrade ](assets/execute_upgrade.jpg)
+![&#x200B; execute_upgrade &#x200B;](assets/execute_upgrade.jpg)
 
-1. Voer de [ verbetering op zijn plaats ](/help/sites-deploying/in-place-upgrade.md) in werking.
+1. Voer de [&#x200B; verbetering op zijn plaats &#x200B;](/help/sites-deploying/in-place-upgrade.md) in werking.
 1. Werk de module van Dispatcher *indien nodig* bij.
 
 1. QA valideert de verbetering.
@@ -59,7 +59,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een server van de Auteu
 
 ### Indien gelukt {#if-successful}
 
-![ if_success ](assets/if_successful.jpg)
+![&#x200B; if_success &#x200B;](assets/if_successful.jpg)
 
 1. Kopieer de geüpgrade instantie om een koude stand-by te maken.
 
@@ -69,7 +69,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een server van de Auteu
 
 ### Indien mislukt (Terugdraaien) {#if-unsuccessful-rollback}
 
-![ terugschroeven van prijzen ](assets/rollback.jpg)
+![&#x200B; terugschroeven van prijzen &#x200B;](assets/rollback.jpg)
 
 1. Start de Cold Standby-instantie als de nieuwe primaire instantie.
 
@@ -81,11 +81,11 @@ De veronderstelde topologie voor deze sectie bestaat uit een server van de Auteu
 
 De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Auteur MongoMK met minstens twee instanties van de Auteur van AEM, gesteund door minstens twee gegevensbestanden MongoMK. Alle instanties van Auteurs delen een datastore. Deze stappen zouden op zowel S3 als de datastores van het Dossier moeten van toepassing zijn. De replicatie komt van de servers van de Auteur aan het TarMK voor publiceert landbouwbedrijf.
 
-![ mongo-topologie ](assets/mongo-topology.jpg)
+![&#x200B; mongo-topologie &#x200B;](assets/mongo-topology.jpg)
 
 ### Voorbereiding upgrade {#upgrade-preparation-1}
 
-![ mongo-upgrade_prep ](assets/mongo-upgrade_prep.jpg)
+![&#x200B; mongo-upgrade_prep &#x200B;](assets/mongo-upgrade_prep.jpg)
 
 1. Inhoud niet schrijven.
 1. Kloont de gegevensopslag voor back-up.
@@ -94,19 +94,19 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 1. Werk het `DocumentNodeStoreService.cfg` -bestand op de primaire auteur bij om de één lidreplicaset te weerspiegelen.
 1. Start de primaire auteur opnieuw om ervoor te zorgen dat deze opnieuw op de juiste wijze wordt opgestart.
 1. Schakel replicatieagents op de primaire auteur uit.
-1. Voer [ preupgrade onderhoudstaken ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) op de primaire instantie van de Auteur in werking.
+1. Voer [&#x200B; preupgrade onderhoudstaken &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) op de primaire instantie van de Auteur in werking.
 
 ### Uitvoering upgrade {#Upgrade-execution-1}
 
-![ mongo-uitvoering ](assets/mongo-execution.jpg)
+![&#x200B; mongo-uitvoering &#x200B;](assets/mongo-execution.jpg)
 
-1. Stel een [ verbetering ](/help/sites-deploying/in-place-upgrade.md) op plaats op de primaire Auteur in werking.
+1. Stel een [&#x200B; verbetering &#x200B;](/help/sites-deploying/in-place-upgrade.md) op plaats op de primaire Auteur in werking.
 1. Werk Dispatcher of Module van het Web *indien nodig* bij.
 1. QA valideert de verbetering.
 
 ### Indien gelukt {#if-successful-1}
 
-![ mongo-secundair ](assets/mongo-secondaries.jpg)
+![&#x200B; mongo-secundair &#x200B;](assets/mongo-secondaries.jpg)
 
 1. Maak nieuwe AEM 6.5 LTS-auteur-instanties die zijn verbonden met de geüpgrade Mongo-instantie.
 
@@ -120,7 +120,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 ### Indien mislukt (Terugdraaien)  {#if-unsuccessful-rollback-2}
 
-![ mongo-rollback ](assets/mongo-rollback.jpg)
+![&#x200B; mongo-rollback &#x200B;](assets/mongo-rollback.jpg)
 
 1. Wijzig de secundaire instanties van de Auteur om met de gekloonde gegevensopslag te verbinden.
 
@@ -142,15 +142,15 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 De veronderstelde topologie voor deze sectie bestaat uit twee te publiceren TarMK instanties, die door Dispatchers worden geleid die beurtelings door een taakverdelingsmechanisme worden voorafgegaan. De replicatie komt van de server van de Auteur aan het TarMK voor publiceert landbouwbedrijf.
 
-![ mar-pub-farmv5 ](assets/tarmk-pub-farmv5.png)
+![&#x200B; mar-pub-farmv5 &#x200B;](assets/tarmk-pub-farmv5.png)
 
 ### Uitvoering upgrade {#upgrade-execution-2}
 
-![ verbetering-publish2 ](assets/upgrade-publish2.png)
+![&#x200B; verbetering-publish2 &#x200B;](assets/upgrade-publish2.png)
 
 1. Stop het verkeer naar de instantie Publish 2 bij het taakverdelingsmechanisme.
-1. Voer [ pre-verbeteringsonderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) op Publish 2 in.
-1. Voer een [ op-plaats verbetering ](/help/sites-deploying/in-place-upgrade.md) op Publish 2 in werking.
+1. Voer [&#x200B; pre-verbeteringsonderhoud &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) op Publish 2 in.
+1. Voer een [&#x200B; op-plaats verbetering &#x200B;](/help/sites-deploying/in-place-upgrade.md) op Publish 2 in werking.
 1. Werk Dispatcher of Module van het Web *indien nodig* bij.
 1. Maak de Dispatcher cache leeg.
 1. QA valideert Publish 2 door de Dispatcher, achter de firewall.
@@ -160,7 +160,7 @@ De veronderstelde topologie voor deze sectie bestaat uit twee te publiceren TarM
 
 ### Indien gelukt {#if-successful-2}
 
-![ verbetering-publish1 ](assets/upgrade-publish1.png)
+![&#x200B; verbetering-publish1 &#x200B;](assets/upgrade-publish1.png)
 
 1. Laat verkeer toe om 2 te publiceren.
 1. Stop verkeer naar Publiceren 1.
@@ -173,7 +173,7 @@ De veronderstelde topologie voor deze sectie bestaat uit twee te publiceren TarM
 
 ### Indien mislukt (Terugdraaien) {#if-unsuccessful-rollback-1}
 
-![ pub_rollback ](assets/pub_rollback.jpg)
+![&#x200B; pub_rollback &#x200B;](assets/pub_rollback.jpg)
 
 1. Maak een kopie van Publiceren 1.
 1. Vervang de instantie Publish 2 door een kopie van Publish 1.
@@ -188,6 +188,6 @@ De veronderstelde topologie voor deze sectie bestaat uit twee te publiceren TarM
 1. QA voert definitieve bevestiging van een openbare URL uit.
 1. Schakel replicatieagents in de auteuromgeving.
 1. Inhoud opnieuw ontwerpen.
-1. Voer [ post-verbeteringscontroles ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) uit.
+1. Voer [&#x200B; post-verbeteringscontroles &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) uit.
 
-![ definitief ](assets/final.jpg)
+![&#x200B; definitief &#x200B;](assets/final.jpg)

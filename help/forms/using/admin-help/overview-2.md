@@ -22,8 +22,8 @@ ht-degree: 0%
 
 A *referentie* bevat uw privé zeer belangrijke informatie nodig voor het ondertekenen van of het identificeren van documenten. A *certificaat* is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM-formulieren gebruiken certificaten en gebruikersgegevens voor verschillende doeleinden:
 
-* Acrobat Reader DC-extensies gebruiken een referentie om gebruiksrechten voor Adobe Reader in PDF-documenten in te schakelen. (Zie [ Vormende geloofsbrieven voor gebruik met de uitbreidingen van gelijkstroom van de Lezer van de Acrobaat ](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* U kunt Rights Management zo configureren dat deze alleen aanmeldingsgegevens van vertrouwde uitgevers weergeeft voor gebruik in Acrobat. (Zie [ de vertoningsmontages van Rights Management ](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings) vormen.) De Gemeenschappelijke Naam (CN) moet in het certificaat aanwezig zijn.
+* Acrobat Reader DC-extensies gebruiken een referentie om gebruiksrechten voor Adobe Reader in PDF-documenten in te schakelen. (Zie [&#x200B; Vormende geloofsbrieven voor gebruik met de uitbreidingen van gelijkstroom van de Lezer van de Acrobaat &#x200B;](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* U kunt Rights Management zo configureren dat deze alleen aanmeldingsgegevens van vertrouwde uitgevers weergeeft voor gebruik in Acrobat. (Zie [&#x200B; de vertoningsmontages van Rights Management &#x200B;](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings) vormen.) De Gemeenschappelijke Naam (CN) moet in het certificaat aanwezig zijn.
 * De handtekeningservice heeft toegang tot certificaten en referenties. Voor details op de dienst van de Handtekening, zie {de Verwijzing van de Diensten 0} [.](https://www.adobe.com/go/learn_aemforms_services_65)
 
 **die een paarsleutel** produceren
@@ -32,9 +32,9 @@ AEM-formulieren gebruiken de vertrouwde opslag om certificaten, gegevens en cert
 
 AEM-formulieren bieden geen enkele optie om een sleutelpaar te genereren. U kunt het echter genereren met gereedschappen, zoals Java-trefgereedschappen, en het importeren in AEM Forms Trust Store. Raadpleeg de volgende secties voor meer informatie over Java-keytool:
 
-[ https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
+[&#x200B; https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 
-[ https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
+[&#x200B; https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
 
 De volgende handtekeningtypen worden ondersteund en kunnen worden geïmporteerd in AEM-formulieren:
 

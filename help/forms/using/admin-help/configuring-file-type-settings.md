@@ -28,7 +28,7 @@ In PDF Generator kunt u de toepassingsinstellingen voor ondersteunde bestandstyp
 Op de pagina Instellingen bestandstype kunt u de volgende taken uitvoeren:
 
 * [Een instelling voor bestandstypen maken of bewerken](#create-or-edit-file-type-settings)
-* Specificeer welke dossiertype montages aan gebruik door gebrek (zie [ het Importeren en het uitvoeren van de configuratiedossiers van PDF Generator ](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
+* Specificeer welke dossiertype montages aan gebruik door gebrek (zie [&#x200B; het Importeren en het uitvoeren van de configuratiedossiers van PDF Generator &#x200B;](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
 * [De standaardinstellingen wijzigen](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [PDF/A-ondersteuning inschakelen](/help/forms/using/admin-help/enable-pdf-a-support.md)
 * [Een instelling voor Bestandstypen verwijderen](/help/forms/using/admin-help/enable-pdf-a-support.md)
@@ -116,7 +116,7 @@ U kunt een bestandstype-instelling verwijderen die niet meer wordt gebruikt.
 
 ## Instellingen voor Afbeelding naar PDF {#image-to-pdf-settings}
 
-De volgende opties bepalen hoe afbeeldingsbestanden worden geconverteerd naar PDF. Voor instructies over de toegang tot van deze montages, zie [ creeer of geef dossiertype montages ](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+De volgende opties bepalen hoe afbeeldingsbestanden worden geconverteerd naar PDF. Voor instructies over de toegang tot van deze montages, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 **Bestandsnaamuitbreidingen:** komma-gescheiden lijst van filename uitbreidingen die kunnen worden omgezet.
 
@@ -146,11 +146,11 @@ De volgende opties bepalen hoe afbeeldingsbestanden worden geconverteerd naar PD
 
 De instelling Bestandstype exporteren in het gedeelte Adobe PDF-exportinstellingen wordt gebruikt voor het converteren van een PDF-bestand naar een andere indeling. De standaardwaarde is HTML 4.01 met CSS (Cascading Style Sheets) 1.0 (*.htm, *.html).
 
-Voor instructies over de toegang tot van dit plaatsen, zie [ creeer of geef dossiertype montages ](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+Voor instructies over de toegang tot van dit plaatsen, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 ## HTML naar PDF-instellingen {#html-to-pdf-settings}
 
-De volgende opties bepalen hoe HTML-bestanden worden geconverteerd naar PDF. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+De volgende opties bepalen hoe HTML-bestanden worden geconverteerd naar PDF. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 **probeert de Convertor van de Fallback:** PDF Generator kan of Java™ of Acrobat gebruiken om de dossiers van HTML in PDF om te zetten. Wanneer deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -222,7 +222,7 @@ Schakel deze opties in om de weergave van het venster op te geven:
 
 ## Flash-video&#39;s naar PDF-instellingen {#flash-videos-to-pdf-settings}
 
-PDF Generator ondersteunt de mogelijkheid om een video voor Adobe Flash (SWF- of FLV-bestand) te verzenden en een PDF-bestand te maken waarin een video voor Adobe Flash is ingesloten. Voor deze conversie hoeft Adobe Flash Player niet op de Forms Server te worden geïnstalleerd. Voor instructies over de toegang tot van deze optie, zie [ creeer of geef dossiertype montages ](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+PDF Generator ondersteunt de mogelijkheid om een video voor Adobe Flash (SWF- of FLV-bestand) te verzenden en een PDF-bestand te maken waarin een video voor Adobe Flash is ingesloten. Voor deze conversie hoeft Adobe Flash Player niet op de Forms Server te worden geïnstalleerd. Voor instructies over de toegang tot van deze optie, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 **Bestandsnaamuitbreidingen:** komma-gescheiden lijst van filename uitbreidingen die kunnen worden omgezet.
 
@@ -240,7 +240,7 @@ PDF Generator ondersteunt de mogelijkheid om PDF-bestanden kleiner te maken. Of 
 >
 >Als u een digitaal ondertekend document optimaliseert, worden de digitale handtekeningen verwijderd en ongeldig gemaakt.
 
-Voor instructies over de toegang tot van dit plaatsen, zie [ creeer of geef dossiertype montages ](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+Voor instructies over de toegang tot van dit plaatsen, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 **Versie van PDF van het Doel:** specificeert de versie van Acrobat die PDF met compatibel is.
 
@@ -412,7 +412,7 @@ Selecteer een van de volgende compressieopties voor Flate in het keuzemenu:
 
 ## Microsoft Excel-instellingen (alleen Windows) {#microsoft-excel-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft Excel-bestanden worden omgezet. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](#create-or-edit-file-type-settings) uit.
+Deze opties bepalen hoe Microsoft Excel-bestanden worden omgezet. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](#create-or-edit-file-type-settings) uit.
 
 **probeert OpenOffice als Convertor van de Fallback**: Wanneer deze optie wordt geselecteerd en een omzetting die Microsoft Excel gebruikt ontbreekt of de gespecificeerde onderbreking bereikt, probeert PDF Generator de omzetting door OpenOffice te gebruiken. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -442,7 +442,7 @@ Deze opties bepalen hoe Microsoft Excel-bestanden worden omgezet. Voor instructi
 
 ## Microsoft PowerPoint-instellingen (alleen Windows) {#microsoft-powerpoint-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden omgezet. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden omgezet. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 **[!UICONTROL Try OpenOffice As Fallback Converter]**: als deze optie is geselecteerd en een conversie met Microsoft PowerPoint mislukt of de opgegeven time-outlimiet bereikt, probeert PDF Generator de conversie uit met OpenOffice. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -476,7 +476,7 @@ Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden omgezet. Voor inst
 
 ## Microsoft-projectinstellingen (alleen Windows) {#microsoft-project-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft-projectbestanden worden geconverteerd. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](#create-or-edit-file-type-settings) uit.
+Deze opties bepalen hoe Microsoft-projectbestanden worden geconverteerd. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](#create-or-edit-file-type-settings) uit.
 
 1. **[!UICONTROL Filename Extensions:]** Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `mpp` . Neem geen punt voor of spatie op tussen de extensies.
 
@@ -487,7 +487,7 @@ Deze opties bepalen hoe Microsoft-projectbestanden worden geconverteerd. Voor in
 
 ## Microsoft Word-instellingen (alleen Windows) {#microsoft-word-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](#create-or-edit-file-type-settings) uit.
+Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](#create-or-edit-file-type-settings) uit.
 
 **[!UICONTROL Try OpenOffice As Fallback Converter]**: als deze optie is geselecteerd en een conversie met Microsoft Word mislukt of de opgegeven time-outlimiet bereikt, probeert PDF Generator de conversie uit te voeren met OpenOffice. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -551,13 +551,13 @@ Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) be
 
 ## Microsoft Publisher-instellingen (alleen Windows) {#microsoft-publisher-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft Publisher-bestanden worden geconverteerd. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](#create-or-edit-file-type-settings) uit.
+Deze opties bepalen hoe Microsoft Publisher-bestanden worden geconverteerd. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](#create-or-edit-file-type-settings) uit.
 
 **[!UICONTROL Filename Extensions]** - Geeft de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `pub` . Neem geen punt voor of spatie op tussen de extensies.
 
 ## AutoCAD-instellingen (alleen Windows) {#autocad-settings-windows-only}
 
-Deze opties bepalen hoe AutoCAD-bestanden worden omgezet. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+Deze opties bepalen hoe AutoCAD-bestanden worden omgezet. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 **[!UICONTROL Filename Extensions]** - Geeft de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `dwg` . Neem geen punt voor of spatie op tussen de extensies.
 
@@ -589,7 +589,7 @@ Deze opties bepalen hoe AutoCAD-bestanden worden omgezet. Voor instructies over 
 
 ## OpenOffice-instellingen {#openoffice-settings}
 
-Deze opties bepalen hoe de dossiers OpenOffice worden omgezet. Voor instructies over de toegang tot van deze opties, zie [ creeer of geef dossiertype montages ](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
+Deze opties bepalen hoe de dossiers OpenOffice worden omgezet. Voor instructies over de toegang tot van deze opties, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) uit.
 
 **probeert PDFMaker als Convertor van de Fallback**: Wanneer deze optie wordt geselecteerd en een omzetting die OpenOffice gebruikt ontbreekt of de gespecificeerde onderbrekingsgrens bereikt, probeert PDF Generator de omzetting door PDFMaker te gebruiken. Als de conversie met PDFMaker mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -622,13 +622,13 @@ U kunt ook opgeven hoe formulieren worden verzonden. De opties zijn XML, FDF, PD
 
 ## Overige toepassingsinstellingen (alleen Windows) {#other-applications-settings-windows-only}
 
-U kunt de instellingen voor andere toepassingen niet wijzigen via de beheerconsole, maar wel via de bestandsextensies voor de ondersteunde bestandstypen. Voor instructies over de toegang tot van deze montages, zie [ creeer of geef dossiertype montages ](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html) uit.
+U kunt de instellingen voor andere toepassingen niet wijzigen via de beheerconsole, maar wel via de bestandsextensies voor de ondersteunde bestandstypen. Voor instructies over de toegang tot van deze montages, zie [&#x200B; creeer of geef dossiertype montages &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html) uit.
 
 * Corel WordPerfect: `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Ondersteuning voor deze bestandstypen moet mogelijk worden aangepast. Voor meer informatie, zie &quot;Toevoegend Steun voor de Extra Inheemse Formaten van het Dossier&quot;in [ Programmering met de vormen van AEM ](https://www.adobe.com/go/learn_aemforms_programming_62).
+Ondersteuning voor deze bestandstypen moet mogelijk worden aangepast. Voor meer informatie, zie &quot;Toevoegend Steun voor de Extra Inheemse Formaten van het Dossier&quot;in [&#x200B; Programmering met de vormen van AEM &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_62).
 
-Voor hulp bij het vormen van een PDFG netwerkprinter, zie [ Opstelling een PDFG netwerkprinter (Vensters slechts) ](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).
+Voor hulp bij het vormen van een PDFG netwerkprinter, zie [&#x200B; Opstelling een PDFG netwerkprinter (Vensters slechts) &#x200B;](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).

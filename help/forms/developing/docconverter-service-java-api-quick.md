@@ -30,11 +30,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de API met sterk g
 
 >[!NOTE]
 >
->Snel aan de slag in Programming met de vormen van AEM zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss® en het werkende systeem van Microsoft® Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Snel aan de slag in Programming met de vormen van AEM zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss® en het werkende systeem van Microsoft® Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): een document converteren naar een PDF/A-document met de Java™ API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld zet een document van PDF genoemd *Loan.pdf* in een document PDF/A om dat als dossier van PDF genoemd *LoanArchive.pdf* wordt bewaard. (Zie [ Omzettend Documenten in Documenten PDF/A ](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+Het volgende Java™ codevoorbeeld zet een document van PDF genoemd *Loan.pdf* in een document PDF/A om dat als dossier van PDF genoemd *LoanArchive.pdf* wordt bewaard. (Zie [&#x200B; Omzettend Documenten in Documenten PDF/A &#x200B;](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
  /*
@@ -137,7 +137,7 @@ Het volgende Java™ codevoorbeeld zet een document van PDF genoemd *Loan.pdf* i
 
 ## Snel starten (SOAP-modus): PDF/A-compatibiliteit bepalen met de Java™ API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-In het volgende Java™-codevoorbeeld wordt bepaald of het invoer-PDF-document PDF/A-compatibel is. Het document van inputPDF dat tot de dienst DocConverter wordt overgegaan wordt genoemd *LoanArchive.pdf*. De resultaten van de bevestiging worden geschreven aan een dossier van XML genoemd *ValidationResults.xml*. (Zie [ programmatically het bepalen van de Complichtigheid PDF/A ](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+In het volgende Java™-codevoorbeeld wordt bepaald of het invoer-PDF-document PDF/A-compatibel is. Het document van inputPDF dat tot de dienst DocConverter wordt overgegaan wordt genoemd *LoanArchive.pdf*. De resultaten van de bevestiging worden geschreven aan een dossier van XML genoemd *ValidationResults.xml*. (Zie [&#x200B; programmatically het bepalen van de Complichtigheid PDF/A &#x200B;](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*

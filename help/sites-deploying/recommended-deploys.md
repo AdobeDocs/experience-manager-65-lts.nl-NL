@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze pagina verwijst naar geadviseerde topologieën voor AEM. Voor meer informatie bij het groeperen van mogelijkheden en hoe te om hen te vormen, zie de [ Apache Sling API documentatie van de Ontdekking ](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
+>Deze pagina verwijst naar geadviseerde topologieën voor AEM. Voor meer informatie bij het groeperen van mogelijkheden en hoe te om hen te vormen, zie de [&#x200B; Apache Sling API documentatie van de Ontdekking &#x200B;](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
 
 MicroKernels fungeren vanaf AEM 6.2 als persistentiemanagers. Het kiezen van één om uw behoeften te passen hangt van het doel van uw instantie en het plaatsingstype af u overweegt.
 
@@ -35,7 +35,7 @@ In dit scenario, loopt één enkele instantie TarMK op één enkele server.
 
 **dit is de standaardplaatsing voor auteursinstanties.**
 
-![ chlimage_1-15 ](assets/chlimage_1-15.png)
+![&#x200B; chlimage_1-15 &#x200B;](assets/chlimage_1-15.png)
 
 De voordelen:
 
@@ -54,7 +54,7 @@ Eén TarMK-instantie fungeert als de primaire instantie. De opslagplaats van de 
 
 Het koude reservemechanisme kan ook als steun worden gebruikt omdat de volledige bewaarplaats constant aan de failoverserver wordt herhaald. De failoverserver loopt op koude reservewijze, wat betekent dat slechts HttpReceiver van de instantie loopt.
 
-![ chlimage_1-16 ](assets/chlimage_1-16.png)
+![&#x200B; chlimage_1-16 &#x200B;](assets/chlimage_1-16.png)
 
 De voordelen:
 
@@ -71,21 +71,21 @@ De nadelen:
 
 >[!NOTE]
 >
->Voor meer informatie over hoe te om AEM met TarMK te vormen Koude Reserve, zie [ dit ](/help/sites-deploying/tarmk-cold-standby.md) artikel.
+>Voor meer informatie over hoe te om AEM met TarMK te vormen Koude Reserve, zie [&#x200B; dit &#x200B;](/help/sites-deploying/tarmk-cold-standby.md) artikel.
 
 >[!NOTE]
 >
->De plaatsing van de Reserve van de Koude in dit voorbeeld TarMK vereist dat zowel de primaire als reserve instanties afzonderlijk worden vergunning gegeven, aangezien er constante replicatie aan de failoverserver is. Voor meer informatie over vergunning verlenen, raadpleeg de [ Algemene het Vergunningstermijnen van Adobe ](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>De plaatsing van de Reserve van de Koude in dit voorbeeld TarMK vereist dat zowel de primaire als reserve instanties afzonderlijk worden vergunning gegeven, aangezien er constante replicatie aan de failoverserver is. Voor meer informatie over vergunning verlenen, raadpleeg de [&#x200B; Algemene het Vergunningstermijnen van Adobe &#x200B;](https://www.adobe.com/legal/terms/enterprise-licensing.html).
 
 ### TarMK Farm {#tarmk-farm}
 
 Meerdere Oak-instanties voeren elk uit met één TarMK-instantie. De TarMK-opslagplaatsen zijn onafhankelijk en moeten gesynchroniseerd blijven.
 
-Het houden van de bewaarplaatsen in synchronisatie wordt voorzien van het feit dat de auteurserver de zelfde inhoud aan elk landbouwbedrijflid publiceert. Voor meer informatie, zie [ Replicatie ](/help/sites-deploying/replication.md).
+Het houden van de bewaarplaatsen in synchronisatie wordt voorzien van het feit dat de auteurserver de zelfde inhoud aan elk landbouwbedrijflid publiceert. Voor meer informatie, zie [&#x200B; Replicatie &#x200B;](/help/sites-deploying/replication.md).
 
 **dit is de standaardplaatsing voor publiceer milieu&#39;s.**
 
-![ chlimage_1-17 ](assets/chlimage_1-17.png)
+![&#x200B; chlimage_1-17 &#x200B;](assets/chlimage_1-17.png)
 
 De voordelen:
 
@@ -101,7 +101,7 @@ De voordelen:
 
 Deze aanpak impliceert dat meerdere Oak-instanties toegang hebben tot een MongoDB-replica die is ingesteld binnen één datacenter. In feite wordt er een actief-actief cluster gemaakt voor de AEM-auteuromgeving. Replicasets in MongoDB worden gebruikt om hoge beschikbaarheid en redundantie te bieden in het geval van een hardware- of netwerkstoring.
 
-![ chlimage_1-18 ](assets/chlimage_1-18.png)
+![&#x200B; chlimage_1-18 &#x200B;](assets/chlimage_1-18.png)
 
 De voordelen:
 
@@ -116,7 +116,7 @@ De nadelen:
 
 Deze aanpak impliceert dat meerdere Oak-instanties toegang hebben tot een MongoDB-replica die in meerdere datacenters is ingesteld. In feite wordt er een actief-actief cluster voor de AEM-auteuromgeving gemaakt. Met meerdere datacenters biedt de replicatie van MongoDB dezelfde hoge beschikbaarheid en redundantie, maar nu ook de mogelijkheid om een storing in het datacenter te verwerken.
 
-![ oakclustermongofailover2datacenters ](assets/oakclustermongofailover2datacenters.png)
+![&#x200B; oakclustermongofailover2datacenters &#x200B;](assets/oakclustermongofailover2datacenters.png)
 
 De voordelen:
 
@@ -125,7 +125,7 @@ De voordelen:
 
 >[!NOTE]
 >
->In het diagram hierboven, wordt Server 3 van AEM en Server 4 van AEM voorgesteld met een inactieve status veronderstellend een netwerklatentie tussen de Servers van AEM in Centrum 2 van Gegevens en het primaire knooppunt MongoDB in Centrum 1 van Gegevens die hoger is dan het vereiste dat onder [ Adobe Experience Manager met MongoDB - Controlklists ](/help/sites-deploying/aem-with-mongodb.md#checklists) wordt gedocumenteerd. Als de maximale latentie compatibel is met de vereisten, bijvoorbeeld door het gebruik van beschikbaarheidszones, kunnen de AEM-servers in Data Center 2 ook actief zijn, waardoor een actief-actieve AEM-cluster in meerdere datacenters ontstaat.
+>In het diagram hierboven, wordt Server 3 van AEM en Server 4 van AEM voorgesteld met een inactieve status veronderstellend een netwerklatentie tussen de Servers van AEM in Centrum 2 van Gegevens en het primaire knooppunt MongoDB in Centrum 1 van Gegevens die hoger is dan het vereiste dat onder [&#x200B; Adobe Experience Manager met MongoDB - Controlklists &#x200B;](/help/sites-deploying/aem-with-mongodb.md#checklists) wordt gedocumenteerd. Als de maximale latentie compatibel is met de vereisten, bijvoorbeeld door het gebruik van beschikbaarheidszones, kunnen de AEM-servers in Data Center 2 ook actief zijn, waardoor een actief-actieve AEM-cluster in meerdere datacenters ontstaat.
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Het is bijna onmogelijk om te voorspellen wat het precieze gelijktijdige model z
 
 >[!NOTE]
 >
->[ Stevige Dag ](/help/sites-developing/tough-day.md) kan worden gebruikt om de prestaties van de toepassing van de klant in de context van de opgestelde hardwareconfiguratie te evalueren.
+>[&#x200B; Stevige Dag &#x200B;](/help/sites-developing/tough-day.md) kan worden gebruikt om de prestaties van de toepassing van de klant in de context van de opgestelde hardwareconfiguratie te evalueren.
 
 Een minimumplaatsing met MongoDB zal typisch de volgende topologie impliceren:
 
@@ -184,10 +184,10 @@ Er is een reeks voorwaarden en aanbevelingen beschikbaar als u een MongoMK-imple
 
 **Sterke aanbevelingen voor plaatsingen MongoDB:**
 
-* Raadpleeg het [ Overzicht van de Plaatsing MongoDB voor Adobe Experience Manager ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Herzie [ Checklist van de Verrichtingen MongoDB ](https://docs.mongodb.org/manual/administration/production-checklist/);
-* Woon a [ certificatieklasse op MongoDB - beschikbaar online ](https://university.mongodb.com/) bij.
+* Raadpleeg het [&#x200B; Overzicht van de Plaatsing MongoDB voor Adobe Experience Manager &#x200B;](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Herzie [&#x200B; Checklist van de Verrichtingen MongoDB &#x200B;](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Woon a [&#x200B; certificatieklasse op MongoDB - beschikbaar online &#x200B;](https://university.mongodb.com/) bij.
 
 >[!NOTE]
 >
->Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html).
+>Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html).

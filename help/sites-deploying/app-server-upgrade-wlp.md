@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Stappen voor upgrade {#pre-upgrade-steps}
 
-Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [ vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md) voldoet.
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [&#x200B; Bevorderend Code en Aanpassingen &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) en [&#x200B; pre-Verbeterde Taken van het Onderhoud &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [&#x200B; vereisten voor AEM 6.5 LTS &#x200B;](/help/sites-deploying/technical-requirements.md) voldoet.
 
-Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) en hoe de [ Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) u kan helpen de ingewikkeldheid rond de bevordering van AEM schatten.
+Controle [&#x200B; plannend Uw Verbetering &#x200B;](/help/sites-deploying/upgrade-planning.md) en hoe de [&#x200B; Analysator van AEM &#x200B;](/help/sites-deploying/aem-analyzer.md) u kan helpen de ingewikkeldheid rond de bevordering van AEM schatten.
 
 ### Migratievereisten {#migration-prerequisites}
 
@@ -30,10 +30,10 @@ Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) 
 
 ### De upgrade uitvoeren {#performing-the-upgrade}
 
-1. Zorg ervoor dat u de [ pre-verbeterings ](#pre-upgrade-steps) stappen als het steunen van AEM 6.5 server alvorens om het even welke verbeteringsactiviteit hebt voltooid
+1. Zorg ervoor dat u de [&#x200B; pre-verbeterings &#x200B;](#pre-upgrade-steps) stappen als het steunen van AEM 6.5 server alvorens om het even welke verbeteringsactiviteit hebt voltooid
 1. Kies afhankelijk van uw vereisten een van de volgende upgradepaden:
    1. **Verbetering op plaats**: Als uw huidige server WLP Server Servlet 6 steunt, kunt u een verbetering op zijn plaats uitvoeren en met stap 3 verdergaan.
-   1. **Sidegrade**: Als u verkiest een verse opstelling of als uw server WLP geen Servlet 6 steunt, opstelling een nieuwe instantie WLP met AEM 6.5 LTS en migrate de inhoud door [ AEM 6.5 aan AEM 6.5 LTS de Migratie van de Inhoud te volgen van Oak-upgrade ](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md) gids en overslaan aan [ Geüpgraded Codebase ](#deploy-upgraded-codebase) sectie op te stellen
+   1. **Sidegrade**: Als u verkiest een verse opstelling of als uw server WLP geen Servlet 6 steunt, opstelling een nieuwe instantie WLP met AEM 6.5 LTS en migrate de inhoud door [&#x200B; AEM 6.5 aan AEM 6.5 LTS de Migratie van de Inhoud te volgen van Oak-upgrade &#x200B;](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md) gids en overslaan aan [&#x200B; Geüpgraded Codebase &#x200B;](#deploy-upgraded-codebase) sectie op te stellen
 
 1. Stop de AEM-instantie. Dit kan normaal gesproken worden gedaan met deze opdracht:
 
@@ -82,7 +82,7 @@ Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) 
    java -version
    ```
 
-1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat de parameters aan uw vereisten voldoen. Zie [ Java 17/Java 21 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie.
+1. Controleer de beginparameters voor de AEM-server en zorg ervoor dat de parameters aan uw vereisten voldoen. Zie [&#x200B; Java 17/Java 21 Overwegingen &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie.
 1. Download de nieuwe 6.5 LTS-oorlog en kopieer deze naar de map dropins in: `/<path-to-aem-server>/dropins/`
 1. AEM-instantie starten: dit kan doorgaans gebeuren met de volgende opdracht:
 
@@ -98,8 +98,8 @@ Controle [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) 
 
 ## Bijgewerkte Codebase implementeren {#deploy-upgraded-codebase}
 
-Zodra het verbeteringsproces is voltooid, zou de bijgewerkte codebasis moeten worden opgesteld. De stappen voor het bijwerken van de codebasis om in de doelversie van AEM te werken kunnen in [ de Code en de pagina van Aanpassingen van de Verbetering ](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
+Zodra het verbeteringsproces is voltooid, zou de bijgewerkte codebasis moeten worden opgesteld. De stappen voor het bijwerken van de codebasis om in de doelversie van AEM te werken kunnen in [&#x200B; de Code en de pagina van Aanpassingen van de Verbetering &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
 
 ## Naupgrade-controles en probleemoplossing uitvoeren {#perform-post-upgrade-checks-and-troubleshooting}
 
-Zie [ Controle van de Verbetering van de Post en het Oplossen van problemen ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
+Zie [&#x200B; Controle van de Verbetering van de Post en het Oplossen van problemen &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).

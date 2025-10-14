@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Inleiding tot Process Reporting{#introduction-to-process-reporting}
 
-![ proces-rapportering ](assets/process-reporting.png)
+![&#x200B; proces-rapportering &#x200B;](assets/process-reporting.png)
 
 De Rapportering van het proces is een browser-gebaseerd hulpmiddel dat u gebruikt om rapporten over de processen en de taken van AEM Forms tot stand te brengen en te bekijken.
 
@@ -28,7 +28,7 @@ De Rapportering van het proces verstrekt een reeks out-of-the-box rapporten die 
 
 Bovendien verstrekt de Rapportering van het Proces een interface om ad hoc vragen in werking te stellen en de meningen van het douanerapport in het Proces te integreren Meldend gebruikersinterface.
 
-Voor de lijst van gesteunde browsers, zie [ Ondersteunde Platforms van AEM Forms ](/help/sites-deploying/technical-requirements.md)
+Voor de lijst van gesteunde browsers, zie [&#x200B; Ondersteunde Platforms van AEM Forms &#x200B;](/help/sites-deploying/technical-requirements.md)
 
 Procesrapportage is gebaseerd op modules die:
 
@@ -40,7 +40,7 @@ Procesrapportage is gebaseerd op modules die:
 
 ### Altijd melden {#always-on-reporting}
 
-![ plaats-beheer ](assets/site-management.png)
+![&#x200B; plaats-beheer &#x200B;](assets/site-management.png)
 
 Bekijk de lijst van langdurige processen, kaarten van de procesduur, en looppasvragen gebruikend filters.
 
@@ -48,7 +48,7 @@ De Rapportering van het proces verstrekt ook de optie om het rapport en vraaggeg
 
 ### Adhocrapporten {#adhoc-reports}
 
-![ druk-&amp;-kleur ](assets/print-&-colour.png)
+![&#x200B; druk-&amp;-kleur &#x200B;](assets/print-&-colour.png)
 
 Gebruik filters om een specifieke weergave van uw gegevens op te halen.
 
@@ -60,13 +60,13 @@ U kunt de rapportfilters dan opslaan om op een recentere datum of een tijd te lo
 
 ### Proces-/taakgeschiedenis {#process-task-history}
 
-![ dossier-beheer ](assets/file-management.png)
+![&#x200B; dossier-beheer &#x200B;](assets/file-management.png)
 
 AEM Forms-servers voeren een groot aantal processen parallel uit. Deze processen blijven bij de overgang van de ene naar de andere staat. Door Forms-gegevens regelmatig naar de Process Reporting repository te publiceren, behoudt Process Reporting de overgangsinformatie over de processen die in AEM Forms worden uitgevoerd.
 
 ### Toegangsbeheer {#access-control-br}
 
-![ naamloos ](assets/untitled.png)
+![&#x200B; naamloos &#x200B;](assets/untitled.png)
 
 Process Reporing biedt op toestemming gebaseerde toegang tot de gebruikersinterface.
 

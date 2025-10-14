@@ -33,7 +33,7 @@ U kunt deze taken uitvoeren met de service PDF converteren:
 
 >[!NOTE]
 >
->Voor meer informatie over de Omzetten dienst van PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Omzetten dienst van PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF-documenten converteren naar PostScript {#converting-pdf-documents-to-postscript}
 
@@ -41,7 +41,7 @@ In dit onderwerp wordt beschreven hoe u de Convert PDF Service API (Java en webs
 
 >[!NOTE]
 >
->Voor meer informatie over de Omzetten dienst van PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Omzetten dienst van PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -62,7 +62,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 Voordat u een servicebewerking PDF converteren via programmacode kunt uitvoeren, moet u een Convert PDF-serviceclient maken. Maak een `ConvertPdfServiceClient` -object als u de Java API gebruikt. Maak een `ConvertPDFServiceService` -object als u de webservice-API gebruikt.
 
-Deze sectie gebruikt webservicefunctionaliteit die in AEM Forms is geïntroduceerd. Als u toegang wilt tot nieuwe functionaliteit, moet u het proxyobject maken met het attribuut `lc_version` . (Zie &quot;Toegang tot nieuwe functionaliteit gebruikend de Webdiensten&quot;in [ het Aanhalen van AEM Forms gebruikend de Diensten van het Web ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+Deze sectie gebruikt webservicefunctionaliteit die in AEM Forms is geïntroduceerd. Als u toegang wilt tot nieuwe functionaliteit, moet u het proxyobject maken met het attribuut `lc_version` . (Zie &quot;Toegang tot nieuwe functionaliteit gebruikend de Webdiensten&quot;in [&#x200B; het Aanhalen van AEM Forms gebruikend de Diensten van het Web &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 **Verwijzing het document van PDF in een dossier van PostScript om te zetten**
 
@@ -78,7 +78,7 @@ Op dezelfde manier geldt dat als u de optie `ExpandToFit` selecteert (waarmee de
 
 >[!NOTE]
 >
->Voor informatie over de runtime waarden die u kunt plaatsen, zie de `ToPSOptionsSpec` klassenverwijzing in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Voor informatie over de runtime waarden die u kunt plaatsen, zie de `ToPSOptionsSpec` klassenverwijzing in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **zet het document van PDF in een dossier van PostScript** om
 
@@ -121,7 +121,7 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (Java
 1. Stel opties voor de uitvoering van de conversie in.
 
    * Maak een `ToPSOptionsSpec` -object door de constructor ervan aan te roepen.
-   * Stel uitvoeringsopties in door een geschikte methode aan te roepen die tot het `ToPSOptionsSpec` -object behoort. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u de methode `setPsLevel` van het object `ToPSOptionsSpec` aan en geeft u een opsommingswaarde `PSLevel` door die het PostScript-niveau opgeeft. Voor informatie over alle runtime waarden die u kunt plaatsen, zie de `ToPSOptionsSpec` klassenverwijzing in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel uitvoeringsopties in door een geschikte methode aan te roepen die tot het `ToPSOptionsSpec` -object behoort. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u de methode `setPsLevel` van het object `ToPSOptionsSpec` aan en geeft u een opsommingswaarde `PSLevel` door die het PostScript-niveau opgeeft. Voor informatie over alle runtime waarden die u kunt plaatsen, zie de `ToPSOptionsSpec` klassenverwijzing in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Converteer het PDF-document naar een PostScript-bestand.
 
@@ -217,7 +217,7 @@ Wanneer u een PDF-document omzet in een afbeelding, maakt de service PDF omzette
 
 >[!NOTE]
 >
->Voor meer informatie over de Omzetten dienst van PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Omzetten dienst van PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -240,11 +240,11 @@ Voordat u een servicebewerking PDF converteren via programmacode kunt uitvoeren,
 
 **wint het document van PDF terug om** om te zetten
 
-Haal het PDF-document op dat u wilt omzetten in een afbeelding. U kunt een interactief PDF-document niet converteren naar een afbeelding. Wanneer u dit probeert, wordt een uitzondering gegenereerd. Als u een interactief PDF-document wilt converteren naar een afbeeldingsbestand, moet u het PDF-document samenvoegen tot één laag voordat u het converteert. (Zie [ het Afvlakken de Documenten van PDF ](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Haal het PDF-document op dat u wilt omzetten in een afbeelding. U kunt een interactief PDF-document niet converteren naar een afbeelding. Wanneer u dit probeert, wordt een uitzondering gegenereerd. Als u een interactief PDF-document wilt converteren naar een afbeeldingsbestand, moet u het PDF-document samenvoegen tot één laag voordat u het converteert. (Zie [&#x200B; het Afvlakken de Documenten van PDF &#x200B;](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **vastgestelde runtime opties**
 
-Stel runtime-opties in, zoals de afbeeldingsindeling en de resolutiewaarden. Voor informatie over de runtime waarden, zie de `ToImageOptionsSpec` klassenverwijzing in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Stel runtime-opties in, zoals de afbeeldingsindeling en de resolutiewaarden. Voor informatie over de runtime waarden, zie de `ToImageOptionsSpec` klassenverwijzing in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **zet PDF in een beeld** om
 

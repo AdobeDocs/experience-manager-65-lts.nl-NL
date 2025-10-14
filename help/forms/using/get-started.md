@@ -20,14 +20,14 @@ ht-degree: 0%
 
 HTML5-formulieren bieden talrijke mogelijkheden die geschikt zijn voor mobiele apparaten. Het helpt u uw huidige oplossingen en workflows aan tablets of smartphones apparaten met browsers uit te breiden HTML5. Enkele mogelijkheden omvatten:
 
-* **op HTML5-Gebaseerde teruggeven van XFA vormmalplaatjes:** Naast regelmatige PDF forms, kunt u uw bestaande op XFA-Gebaseerde vormen in formaat nu teruggeven HTML5. Hiermee kunt u uw clientplatform uitbreiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML5 ondersteunen en Adobe Reader niet met XFA Forms ondersteunen. Voor meer informatie over op HTML5-Gebaseerd teruggevend vermogen, zie [ Inleiding aan HTML5 vormen ](/help/forms/using/introduction.md).
+* **op HTML5-Gebaseerde teruggeven van XFA vormmalplaatjes:** Naast regelmatige PDF forms, kunt u uw bestaande op XFA-Gebaseerde vormen in formaat nu teruggeven HTML5. Hiermee kunt u uw clientplatform uitbreiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML5 ondersteunen en Adobe Reader niet met XFA Forms ondersteunen. Voor meer informatie over op HTML5-Gebaseerd teruggevend vermogen, zie [&#x200B; Inleiding aan HTML5 vormen &#x200B;](/help/forms/using/introduction.md).
 
-* **Beherend Forms:** bovendien omvat AEM nieuwe mogelijkheden om het proces te vereenvoudigen om vormen te organiseren en te beheren. U kunt formulieren activeren, deactiveren, publiceren en hiervan een voorbeeld weergeven. Voor meer informatie, zie [ Inleiding aan het beheren van vormen ](/help/forms/using/introduction-managing-forms.md).
+* **Beherend Forms:** bovendien omvat AEM nieuwe mogelijkheden om het proces te vereenvoudigen om vormen te organiseren en te beheren. U kunt formulieren activeren, deactiveren, publiceren en hiervan een voorbeeld weergeven. Voor meer informatie, zie [&#x200B; Inleiding aan het beheren van vormen &#x200B;](/help/forms/using/introduction-managing-forms.md).
 
 ## HTML5-formulieren installeren {#installing-html-forms}
 
 Voer na de installatie van AEM de volgende stappen uit om Mobile Forms naar AEM te importeren:
 
-* **opstelling en stel het add-on pakket van AEM Forms op:** installeer het add-on pakket van AEM Forms om Mobiele Forms toe te laten. Voor informatie over het installeren van het toe:voegen-op pakket van AEM Forms, zie [ Installerend en het vormen AEM Forms ](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+* **opstelling en stel het add-on pakket van AEM Forms op:** installeer het add-on pakket van AEM Forms om Mobiele Forms toe te laten. Voor informatie over het installeren van het toe:voegen-op pakket van AEM Forms, zie [&#x200B; Installerend en het vormen AEM Forms &#x200B;](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-* **de Invoer Mobiele Forms:** Importeer uw vormen van uw lokaal dossiersysteem aan de bewaarplaats van CRX. Voor gedetailleerde informatie, zie [ Krijgend documenten XDP en PDF in AEM Forms ](/help/forms/using/get-xdp-pdf-documents-aem.md).
+* **de Invoer Mobiele Forms:** Importeer uw vormen van uw lokaal dossiersysteem aan de bewaarplaats van CRX. Voor gedetailleerde informatie, zie [&#x200B; Krijgend documenten XDP en PDF in AEM Forms &#x200B;](/help/forms/using/get-xdp-pdf-documents-aem.md).

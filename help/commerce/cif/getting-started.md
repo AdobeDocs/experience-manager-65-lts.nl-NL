@@ -28,7 +28,7 @@ Het instapproces voor AEM Content en Commerce bestaat uit twee stappen:
 
 ### De AEM Content and Commerce Add-on voor AEM 6.5 installeren {#install-add-on}
 
-De download en installeert AEM Commerce toe:voegen-On voor AEM 6.5 van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+De download en installeert AEM Commerce toe:voegen-On voor AEM 6.5 van het [&#x200B; portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
 Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren installerend het laatste beschikbare de dienstpak.
 
@@ -42,17 +42,17 @@ AEM kan worden aangesloten op elk handelssysteem dat een toegankelijk GraphQL-ei
 
 Optioneel kan de verificatieheader worden opgegeven als u extra CIF-functies wilt gebruiken waarvoor verificatie is vereist.
 
-De projecten die door het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) worden geproduceerd, en de [ Opslag van de Verwijzing van AEM Venia ](https://github.com/adobe/aem-cif-guides-venia) die reeds inbegrepen in [ gebrek config ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) is moeten worden aangepast.
+De projecten die door het [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) worden geproduceerd, en de [&#x200B; Opslag van de Verwijzing van AEM Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) die reeds inbegrepen in [&#x200B; gebrek config &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) is moeten worden aangepast.
 
 Vervang de waarde van `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` door het GraphQL-eindpunt van uw handelssysteem. Deze configuratie kan via de console worden gedaan OSGI of door de configuratie OSGI via het project op te stellen. Verschillende configuraties voor staging- en productiesystemen worden ondersteund in verschillende AEM-uitvoeringsmodi.
 
 De AEM Content- en Commerce Add-On- en CIF Core-componenten maken gebruik van zowel AEM server-side als client-side verbindingen. CIF Core Components aan de clientzijde en de ontwerpgereedschappen voor CIF Add-On maken standaard verbinding met `/api/graphql` . Dit kan zo nodig worden aangepast via de CIF Cloud Service config (zie hieronder).
 
-CIF toe:voegen-On verstrekt een de volmachtsservlet van GraphQL bij `/api/graphql` die naar keuze voor [ lokale ontwikkeling ](develop.md) kan worden gebruikt. Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het handelsGraphQL eindpunt via AEM Dispatcher of bij andere netwerklagen (zoals CDN) te plaatsen.
+CIF toe:voegen-On verstrekt een de volmachtsservlet van GraphQL bij `/api/graphql` die naar keuze voor [&#x200B; lokale ontwikkeling &#x200B;](develop.md) kan worden gebruikt. Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het handelsGraphQL eindpunt via AEM Dispatcher of bij andere netwerklagen (zoals CDN) te plaatsen.
 
 ## Opslag en catalogi configureren {#catalog}
 
-Toe:voegen-aan en de [ Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige de plaatsstructuren worden gebruikt van AEM die met verschillende handelsopslag (of opslagmeningen, etc. worden verbonden). Standaard wordt de invoegtoepassing CIF geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardwinkel en catalogus van Adobe Commerce.
+Toe:voegen-aan en de [&#x200B; Componenten van de Kern van CIF &#x200B;](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige de plaatsstructuren worden gebruikt van AEM die met verschillende handelsopslag (of opslagmeningen, etc. worden verbonden). Standaard wordt de invoegtoepassing CIF geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardwinkel en catalogus van Adobe Commerce.
 
 Deze configuratie kan voor het project via CIF Cloud Service config als volgt worden aangepast:
 
@@ -62,7 +62,7 @@ Deze configuratie kan voor het project via CIF Cloud Service config als volgt wo
 
 3. De configuratie-eigenschappen openen via de actiebalk
 
-![ Configuratie van de Diensten van de Wolk van CIF ](/help/commerce/cif/assets/cif-cloud-service-config.png)
+![&#x200B; Configuratie van de Diensten van de Wolk van CIF &#x200B;](/help/commerce/cif/assets/cif-cloud-service-config.png)
 
 De volgende eigenschappen kunnen worden geconfigureerd:
 
@@ -92,6 +92,6 @@ Voor complexere montages die veelvoudige de plaatsstructuren gebruiken van AEM d
 
 ## Aanvullende bronnen {#additional-resources}
 
-- [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype)
-- [ de Opslag van de Verwijzing van AEM Venia ](https://github.com/adobe/aem-cif-guides-venia)
+- [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype)
+- [&#x200B; de Opslag van de Verwijzing van AEM Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce Multi-Store Setup](configuring/multi-store-setup.md)

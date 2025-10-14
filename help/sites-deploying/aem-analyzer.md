@@ -37,7 +37,7 @@ Aanvullende informatie over de categorieën en mogelijke implicaties en oplossin
 
 ## Beschikbaarheid {#analyzer-availability}
 
-De Analysator van AEM kan als zip dossier van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) worden gedownload. U kunt het pakket via [ Manager van het Pakket ](/help/sites-administering/package-manager.md) op uw bronAEM instantie installeren.
+De Analysator van AEM kan als zip dossier van het [&#x200B; portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) worden gedownload. U kunt het pakket via [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md) op uw bronAEM instantie installeren.
 
 ## Belangrijke overwegingen voor het gebruik van AEM Analyzer {#important-considerations-for-using-aem-analyzer}
 
@@ -60,23 +60,23 @@ Voer de onderstaande stappen uit om het AEM Analyzer-rapport weer te geven:
 
 1. Selecteer Adobe Experience Manager en navigeer aan **Hulpmiddelen - Verrichtingen - 6.5 Modernizer LTS**
 
-   ![ Rapport 1 van de Analysator van de Mening ](/help/sites-deploying/assets/view-analyzer-report-1.png)
+   ![&#x200B; Rapport 1 van de Analysator van de Mening &#x200B;](/help/sites-deploying/assets/view-analyzer-report-1.png)
 
 1. Klik **AEM 6.5 LTS Analyzer** om het te openen
 
-   ![ Rapport 2 van de Analysator van de Mening ](/help/sites-deploying/assets/view-analyzer-report-2.png)
+   ![&#x200B; Rapport 2 van de Analysator van de Mening &#x200B;](/help/sites-deploying/assets/view-analyzer-report-2.png)
 
 1. Klik **produceren Rapport** om de Analysator van AEM uit te voeren
 
-   ![ Rapport 3 van de Analysator van de Mening ](/help/sites-deploying/assets/view-analyzer-report-3.png)
+   ![&#x200B; Rapport 3 van de Analysator van de Mening &#x200B;](/help/sites-deploying/assets/view-analyzer-report-3.png)
 
 1. Terwijl de AEM Analyzer het rapport genereert, kunt u de voortgang van het hulpprogramma op het scherm zien. Het toont de vooruitgang in termen van het voltooide percentage. Ook wordt het aantal geanalyseerde items en het aantal bevindingen weergegeven
 
-   ![ Rapport 4 van de Analysator van de Mening ](/help/sites-deploying/assets/view-analyzer-report-4.png)
+   ![&#x200B; Rapport 4 van de Analysator van de Mening &#x200B;](/help/sites-deploying/assets/view-analyzer-report-4.png)
 
 1. Nadat het 6.5 rapport van de Analysator van LTS wordt geproduceerd, toont het een samenvatting en het aantal bevindingen in een tabelvorm die door het type van het vinden en het belangrijkheidsniveau wordt georganiseerd. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel
 
-   ![ Rapport 5 van de Analysator van de Mening ](/help/sites-deploying/assets/view-analyzer-report-5.png)
+   ![&#x200B; Rapport 5 van de Analysator van de Mening &#x200B;](/help/sites-deploying/assets/view-analyzer-report-5.png)
 
 1. U hebt de optie om het rapport in een komma-gescheiden waarden (CSV) formaat te downloaden door op **Uitvoer naar CSV** te klikken. U kunt de Analysator dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door **te klikken verfrist Rapport**. Als het geheime voorgeheugen verloopt, moet u het rapport opnieuw produceren.
 
@@ -96,7 +96,7 @@ Het rapport is als volgt ingedeeld:
 * **Overzicht van het Systeem**: Informatie over het systeem van AEM waarop de Analyzer werd in werking gesteld
 * **Categorieën voor bevindingen**: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie worden behandeld. Elke sectie bevat de volgende items: categorienaam, subtypen, aantal en belang, samenvatting, koppeling naar categoriedocumentatie en individuele informatie over de bevindingen.
 
-  ![ Samenvatting van het Rapport van de Analysator ](/help/sites-deploying/assets/analyzer-report-summary.png)
+  ![&#x200B; Samenvatting van het Rapport van de Analysator &#x200B;](/help/sites-deploying/assets/analyzer-report-summary.png)
 
   Aan elke bevinding wordt een belangniveau toegewezen als ruwe prioriteit voor de benodigde actie.
 
@@ -187,40 +187,40 @@ Zie de sectie hieronder om de belangrijke overwegingen voor het gebruiken van de
 1. Login aan de bronAEM instantie als beheerder en ga naar de beginpagina in *https://host:port/aem/start.htm*
 1. Navigeer aan **Hulpmiddelen - Verrichtingen - 6.5 Modernizer LTS**
 
-   ![ het Openen Inhoud Transformer 1 ](/help/sites-deploying/assets/opening-content-transformer-1.png)
+   ![&#x200B; het Openen Inhoud Transformer 1 &#x200B;](/help/sites-deploying/assets/opening-content-transformer-1.png)
 
 1. Klik op de **Transformer van de Inhoud voor 6.5 LTS het rapport van de Analysator** kaart
 
-   ![ het Openen Inhoud Transformer 2 ](/help/sites-deploying/assets/opening-content-transformer-2.png)
+   ![&#x200B; het Openen Inhoud Transformer 2 &#x200B;](/help/sites-deploying/assets/opening-content-transformer-2.png)
 
 1. Als het rapport van de Analysator niet wordt geproduceerd, zal de **pagina van de Inhoud van de Transformatie** **Geen Rapport** tonen. Het zelfde **Geen bericht van het Rapport** zal ook verschijnen als alle op inhoud betrekking hebbende bevindingen zijn verwijderd
 
-   ![ het Openen Inhoud Transformer 3 ](/help/sites-deploying/assets/opening-content-transformer-3.png)
+   ![&#x200B; het Openen Inhoud Transformer 3 &#x200B;](/help/sites-deploying/assets/opening-content-transformer-3.png)
 
 1. Hieronder ziet u een voorbeeld van hoe de pagina Overzicht van Content Transformer eruit zal zien als het maken van het AEM Analyzer-rapport is gelukt en als er inhoudgerelateerde problemen zijn aangetroffen.
 
 De resterende tijd voor het AEM Analyzer-rapport is te zien op de zijspoor. Het wordt aanbevolen de Content Transformer uit te voeren met het meest recente AEM Analyzer-rapport om te voorkomen dat bevindingen met betrekking tot inhoud ontbreken
 
-![ het Openen Inhoud Transformer 4 ](/help/sites-deploying/assets/opening-content-transformer-4.png)
+![&#x200B; het Openen Inhoud Transformer 4 &#x200B;](/help/sites-deploying/assets/opening-content-transformer-4.png)
 
 1. U kunt de problemen filteren op basis van Patrooncode, Subtype, Importantie en Source
 
-   ![ het Openen Inhoud Transformer 5 ](/help/sites-deploying/assets/opening-content-transformer-5.png)
+   ![&#x200B; het Openen Inhoud Transformer 5 &#x200B;](/help/sites-deploying/assets/opening-content-transformer-5.png)
 
 ### Paden verwijderen {#removing-paths}
 
 1. U kunt alle of specifieke kwesties selecteren en **selecteren verwijdert** om hen op te lossen
 
-   ![ het Verwijderen van Wegen 1 ](/help/sites-deploying/assets/removing-paths-1.png)
+   ![&#x200B; het Verwijderen van Wegen 1 &#x200B;](/help/sites-deploying/assets/removing-paths-1.png)
 
    >[!NOTE]
    >Met de bewerking Verwijderen wordt standaard vóór de transformatie een back-uppakket gemaakt van de bronpaden onder `/etc/packages/modernizer-content-transformation` . Hoewel het dialoogvenster voor verwijderen een optie bevat om het maken van het back-uppakket uit te schakelen of in te schakelen, wordt het ten zeerste aanbevolen om het maken van het pakket altijd in te schakelen.
 
-   ![ het Verwijderen van Wegen 2 ](/help/sites-deploying/assets/removing-paths-2.png)
+   ![&#x200B; het Verwijderen van Wegen 2 &#x200B;](/help/sites-deploying/assets/removing-paths-2.png)
 
 1. Hieronder ziet u een voorbeeld van een back-uppakket dat is gemaakt voor het verwijderen van paden. U kunt **klikken installeert** om de bronwegen terug te brengen
 
-   ![ het Verwijderen van Wegen 3 ](/help/sites-deploying/assets/removing-paths-3.png)
+   ![&#x200B; het Verwijderen van Wegen 3 &#x200B;](/help/sites-deploying/assets/removing-paths-3.png)
 
    >[!CAUTION]
    >
@@ -228,7 +228,7 @@ De resterende tijd voor het AEM Analyzer-rapport is te zien op de zijspoor. Het 
 
 1. Desgewenst kunt u geselecteerde inhoud verpakken voor toekomstig gebruik. Om dit te doen, selecteer de bevindingen u, dan **Pakket** van bovenkant links wilt omvatten klikken. Ga een pakketnaam in, kies een pakketweg, en klik het **Pakket** knoop om het proces te voltooien.
 
-   ![ het Verwijderen van Wegen 3 ](/help/sites-deploying/assets/removing-paths-4.png)
+   ![&#x200B; het Verwijderen van Wegen 3 &#x200B;](/help/sites-deploying/assets/removing-paths-4.png)
 
 ### Bekende problemen {#known-issues}
 

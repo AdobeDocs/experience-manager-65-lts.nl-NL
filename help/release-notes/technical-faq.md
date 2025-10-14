@@ -24,11 +24,11 @@ De Felix System Ready-bundel, die is geconfigureerd om het `/systemalive` -eindp
 
 Het nieuwe eindpunt van de health check is beschikbaar bij `/system/health` en wordt geïmplementeerd met Apache Felix Health Checks.
 
-Voor gedetailleerde documentatie over het kader van de Controle van de Gezondheid van Felix, verwijs naar de [ felix documentatie ](https://github.com/apache/felix-dev/blob/master/healthcheck/README.md).
+Voor gedetailleerde documentatie over het kader van de Controle van de Gezondheid van Felix, verwijs naar de [&#x200B; felix documentatie &#x200B;](https://github.com/apache/felix-dev/blob/master/healthcheck/README.md).
 
 ### AEM Groovy-consolesupport
 
-De AEM Groovy-consoleversie die in AEM 6.5 werd gebruikt, werkt mogelijk niet in AEM 6.5 LTS vanwege ontbrekende guave-afhankelijkheden. De onlangs gesteunde versie van de console van AEM Groovy is [ 19.0.8 ](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip).
+De AEM Groovy-consoleversie die in AEM 6.5 werd gebruikt, werkt mogelijk niet in AEM 6.5 LTS vanwege ontbrekende guave-afhankelijkheden. De onlangs gesteunde versie van de console van AEM Groovy is [&#x200B; 19.0.8 &#x200B;](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip).
 
 ### Biedt AEM 6.5 LTS ondersteuning voor gebruikerssynchronisatie?
 
@@ -36,10 +36,10 @@ Ja, AEM 6.5 LTS ondersteunt gebruikerssynchronisatie. De functionaliteit van geb
 
 ### De Uber JAR op Maven Central lijkt beschadigd te zijn — wat is het probleem?
 
-Controleer of u de Uber JAR gebruikt met de classificator `apis` . De verpakkingsstructuur van de Uber JAR is veranderd in AEM 6.5 LTS. Voor meer informatie, zie [ Update de versie van AEM Uber Jar ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
+Controleer of u de Uber JAR gebruikt met de classificator `apis` . De verpakkingsstructuur van de Uber JAR is veranderd in AEM 6.5 LTS. Voor meer informatie, zie [&#x200B; Update de versie van AEM Uber Jar &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ## Aanvullende Help opvragen
 
 Als u problemen tegenkomt die hier niet worden behandeld:
-* Herzie de [ versienota&#39;s ](/help/release-notes/release-notes.md) voor bekende kwesties.
+* Herzie de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes.md) voor bekende kwesties.
 * Neem contact op met Adobe Support voor hulp.

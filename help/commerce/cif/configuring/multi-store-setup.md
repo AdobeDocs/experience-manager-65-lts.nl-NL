@@ -32,13 +32,13 @@ Voer de onderstaande stappen uit om een AEM-site en AEM CIF Core Components aan 
 
 ## Configuratie {#configuration}
 
-1. Vorm veelvoudige opslag &amp; opslagmeningen volgens het patroon dat in [ wordt beschreven Websites van Adobe Commerce, Opslag &amp; Weergaven ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL)
+1. Vorm veelvoudige opslag &amp; opslagmeningen volgens het patroon dat in [&#x200B; wordt beschreven Websites van Adobe Commerce, Opslag &amp; Weergaven &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL)
 
 2. Controleer of de verbinding tussen AEM en Adobe Commerce werkt.
 
 3. Creeer een kindconfiguratie van CIF Cloud Service config die deze stappen volgt:
 
-   * In AEM gaat naar Hulpmiddelen > Algemeen > [ Browser van de Configuratie ](/help/sites-administering/configurations.md#using-configuration-browser)
+   * In AEM gaat naar Hulpmiddelen > Algemeen > [&#x200B; Browser van de Configuratie &#x200B;](/help/sites-administering/configurations.md#using-configuration-browser)
    * Selecteer de basisconfiguratie die u hebt gemaakt
    * Een configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
@@ -58,7 +58,7 @@ Voer de onderstaande stappen uit om een AEM-site en AEM CIF Core Components aan 
 
 ## Aanvullende bronnen
 
-* [ Websites van Adobe Commerce, Opslag &amp; Mening ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL)
-* [ de Componenten van de Kern van AEM CIF - Multistore/plaatconfiguratie ](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [ Gebruikend Manager Van meerdere plaatsen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=nl-NL)
+* [&#x200B; Websites van Adobe Commerce, Opslag &amp; Mening &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL)
+* [&#x200B; de Componenten van de Kern van AEM CIF - Multistore/plaatconfiguratie &#x200B;](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [&#x200B; Gebruikend Manager Van meerdere plaatsen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=nl-NL)
 * [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](/help/sites-administering/msm.md)

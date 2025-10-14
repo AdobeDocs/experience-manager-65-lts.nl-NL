@@ -42,7 +42,7 @@ ${ myHtlVariable }
 -->
 ```
 
-Voor extra details over het registreren, zie [ het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Werken met de Verslagen van de Controle en de pagina&#39;s van de Dossiers van het Logboek ](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
+Voor extra details over het registreren, zie [&#x200B; het Registreren &#x200B;](/help/sites-deploying/configure-logging.md) en [&#x200B; het Werken met de Verslagen van de Controle en de pagina&#39;s van de Dossiers van het Logboek &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Problemen met analytische integratie {#analytics-integration-issues}
 
@@ -55,9 +55,9 @@ De rapportimportmodule veroorzaakt een hoog CPU/Geheugen-gebruik of veroorzaakt 
 U kunt het volgende proberen om dit probleem op te lossen:
 
 * Zorg ervoor dat er geen grote hoeveelheid geregistreerde PollingImporters is (zie de sectie &quot;Sluiting duurt lang toe te schrijven aan PollingImporter&quot; hieronder).
-* De Importeurs van het Rapport van de looppas op een bepaald tijdstip van de dag door CRON uitdrukkingen voor de `ManagedPollingImporter` configuraties in de [ console OSGi ](/help/sites-deploying/configuring-osgi.md) te gebruiken.
+* De Importeurs van het Rapport van de looppas op een bepaald tijdstip van de dag door CRON uitdrukkingen voor de `ManagedPollingImporter` configuraties in de [&#x200B; console OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) te gebruiken.
 
-Voor extra details over het creëren van de diensten van de douanegegevensimporteur in AEM, lees het volgende artikel [ https://helpx.adobe.com/experience-manager/using/polling.html ](https://helpx.adobe.com/experience-manager/using/polling.html).
+Voor extra details over het creëren van de diensten van de douanegegevensimporteur in AEM, lees het volgende artikel [&#x200B; https://helpx.adobe.com/experience-manager/using/polling.html &#x200B;](https://helpx.adobe.com/experience-manager/using/polling.html).
 
 ### Het afsluiten duurt lang vanwege de PollingImporter {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
@@ -68,7 +68,7 @@ Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk, la
 
 #### Oplossing {#solution-1}
 
-Ten eerste, zou het analyseren van [ error.log ](/help/sites-deploying/configure-logging.md) u wat inzicht over de hoeveelheid actieve of geregistreerde PollingImporters kunnen geven. Bijvoorbeeld:
+Ten eerste, zou het analyseren van [&#x200B; error.log &#x200B;](/help/sites-deploying/configure-logging.md) u wat inzicht over de hoeveelheid actieve of geregistreerde PollingImporters kunnen geven. Bijvoorbeeld:
 
 ```
 # Count PollingImporter entries
@@ -84,19 +84,19 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 
 Ten tweede, zorg ervoor dat slechts top-pagina&#39;s (hoog in de hiërarchie) een analytische configuratie hebben van verwijzingen voorzien.
 
-Voor extra details over het creëren van de diensten van de douanegegevensimporteur in AEM, lees het volgende artikel [ https://helpx.adobe.com/experience-manager/using/polling.html ](https://helpx.adobe.com/experience-manager/using/polling.html).
+Voor extra details over het creëren van de diensten van de douanegegevensimporteur in AEM, lees het volgende artikel [&#x200B; https://helpx.adobe.com/experience-manager/using/polling.html &#x200B;](https://helpx.adobe.com/experience-manager/using/polling.html).
 
 ## DTM-problemen (verouderd) {#dtm-legacy-issues}
 
 ### De DTM-scripttag wordt niet weergegeven in de paginabron {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-De [ DTM ](/help/sites-administering/dtm.md) manuscriptmarkering is niet behoorlijk inbegrepen in de pagina alhoewel de configuratie in de pagina eigenschappen [ de Diensten van de Wolk van de Pagina ](/help/sites-developing/extending-cloud-config.md) tabel van verwijzingen is voorzien.
+De [&#x200B; DTM &#x200B;](/help/sites-administering/dtm.md) manuscriptmarkering is niet behoorlijk inbegrepen in de pagina alhoewel de configuratie in de pagina eigenschappen [&#x200B; de Diensten van de Wolk van de Pagina &#x200B;](/help/sites-developing/extending-cloud-config.md) tabel van verwijzingen is voorzien.
 
 #### Oplossing {#solution-2}
 
 U kunt het volgende proberen om het probleem op te lossen:
 
-* Zorg ervoor dat gecodeerde eigenschappen kunnen worden gedecodeerd (gebruik een andere automatisch gegenereerde sleutel voor elke AEM-instantie). Voor extra details, lees ook [ Steun van de Encryptie voor de Eigenschappen van de Configuratie ](/help/sites-administering/encryption-support-for-configuration-properties.md).
+* Zorg ervoor dat gecodeerde eigenschappen kunnen worden gedecodeerd (gebruik een andere automatisch gegenereerde sleutel voor elke AEM-instantie). Voor extra details, lees ook [&#x200B; Steun van de Encryptie voor de Eigenschappen van de Configuratie &#x200B;](/help/sites-administering/encryption-support-for-configuration-properties.md).
 * De configuraties in `/etc/cloudservices/dynamictagmanagement` opnieuw publiceren
 * Controleer ACLs op `/etc/cloudservices`. ACLs zou moeten zijn:
 
@@ -106,7 +106,7 @@ U kunt het volgende proberen om het probleem op te lossen:
    * allow; jcr:read; all; `rep:glob:`&ast;`/public/`&ast;
    * allow; jcr:read; all; `rep:glob:`&ast;`/public`
 
-Voor meer informatie over het beheren van ACLs, lees het [ Beleid van de Gebruiker en de pagina van de Veiligheid ](/help/sites-administering/security.md#permissions-in-aem).
+Voor meer informatie over het beheren van ACLs, lees het [&#x200B; Beleid van de Gebruiker en de pagina van de Veiligheid &#x200B;](/help/sites-administering/security.md#permissions-in-aem).
 
 ## Problemen met doelintegratie {#target-integration-issues}
 
@@ -138,7 +138,7 @@ De set bibliotheken die worden geladen, is afhankelijk van het type doelclientbi
 
 Wanneer u DTM gebruikt voor levering `mbox.js` of `at.js` , moet u ervoor zorgen dat de bibliotheken zijn geladen voordat de inhoud wordt gerenderd. Het gebruik van Tag Management Systems dat deze bibliotheken asynchroon laadt, kan problemen veroorzaken bij het uitvoeren van de specifieke JavaScript-doelcode.
 
-Voor extra informatie, lees het [ Ontwikkelen voor de gerichte inhoud ](/help/sites-developing/target.md#understanding-the-target-component) pagina.
+Voor extra informatie, lees het [&#x200B; Ontwikkelen voor de gerichte inhoud &#x200B;](/help/sites-developing/target.md#understanding-the-target-component) pagina.
 
 ### De fout &quot;Ontbrekende ID van de Reeks van het Rapport in de initialisering van AppMeasurement&quot; wordt getoond in de browser console {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
@@ -165,8 +165,8 @@ Dit probleem kan meerdere oorzaken hebben:
 
 U kunt de volgende oplossingen uitproberen:
 
-* Zorg ervoor de klantencode die de DTM-als bibliotheken laadt (die beurtelings de bibliotheken van het Doel laden) synchroon in het [ paginakop ](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages) wordt uitgevoerd.
-* als de plaats wordt gevormd om DTM te gebruiken om de bibliotheken van het Doel te leveren ervoor zorgen dat de **Clientlib die door DTM** optie wordt geleverd in de [ configuratie van het Doel ](https://helpx.adobe.com/nl/experience-manager/6-3/sites/administering/using/target-configuring.html) voor de plaats wordt gecontroleerd.
+* Zorg ervoor de klantencode die de DTM-als bibliotheken laadt (die beurtelings de bibliotheken van het Doel laden) synchroon in het [&#x200B; paginakop &#x200B;](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages) wordt uitgevoerd.
+* als de plaats wordt gevormd om DTM te gebruiken om de bibliotheken van het Doel te leveren ervoor zorgen dat de **Clientlib die door DTM** optie wordt geleverd in de [&#x200B; configuratie van het Doel &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/sites/administering/using/target-configuring.html) voor de plaats wordt gecontroleerd.
 
 ### Een standaardaanbieding wordt altijd getoond in plaats van correcte aanbieding wanneer het gebruiken van AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -191,7 +191,7 @@ adobe.target.getOffer({
 
 ### De pagina van Doelstellingen &amp; van Montages toont niet de sectie van Rapporteringsbronnen {#the-goals-settings-page-does-not-show-the-reporting-sources-section}
 
-Deze kwestie is zeer waarschijnlijk een [ A4T Analytics Cloud 1&rbrace; leveringskwestie van de Configuratie van de Configuratie.](/help/sites-administering/target-configuring.md)
+Deze kwestie is zeer waarschijnlijk een [&#x200B; A4T Analytics Cloud 1&rbrace; leveringskwestie van de Configuratie van de Configuratie.](/help/sites-administering/target-configuring.md)
 
 #### Oplossing {#solution-7}
 
@@ -211,7 +211,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Als de reactie de lijn `a4tEnabled:false` bevat, raadpleeg [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/contact.html) om uw rekening te krijgen die correct wordt voorzien.
+Als de reactie de lijn `a4tEnabled:false` bevat, raadpleeg [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/contact.html) om uw rekening te krijgen die correct wordt voorzien.
 
 ### Nuttige doel-API&#39;s {#helpful-target-apis}
 

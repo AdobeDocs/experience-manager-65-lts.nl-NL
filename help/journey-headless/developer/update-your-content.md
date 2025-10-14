@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Uw inhoud bijwerken via AEM Assets API&#39;s {#update-your-content}
 
-In dit deel van de [ Hoofdloze Reis van de Ontwikkelaar van AEM, ](overview.md) leert hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken.
+In dit deel van de [&#x200B; Hoofdloze Reis van de Ontwikkelaar van AEM, &#x200B;](overview.md) leert hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de hoofdloze reis van AEM, [ hoe te om tot Uw Inhoud via de Levering APIs van AEM toegang te hebben ](access-your-content.md) leerde u hoe te om tot uw inhoud zonder kop in AEM via AEM GraphQL API toegang te hebben en u zou nu moeten:
+In het vorige document van de hoofdloze reis van AEM, [&#x200B; hoe te om tot Uw Inhoud via de Levering APIs van AEM toegang te hebben &#x200B;](access-your-content.md) leerde u hoe te om tot uw inhoud zonder kop in AEM via AEM GraphQL API toegang te hebben en u zou nu moeten:
 
 * Een goed begrip van GraphQL.
 * Begrijp hoe de AEM GraphQL API werkt.
@@ -257,7 +257,7 @@ Het gebruik kan verschillen, afhankelijk van het feit of u een AEM-auteur of -pu
 
 >[!NOTE]
 >
->Zie de API-naslaggids voor meer informatie. In het bijzonder, [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Zie de API-naslaggids voor meer informatie. In het bijzonder, [&#x200B; Adobe Experience Manager Assets API - de Fragmenten van de Inhoud &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Lezen/Levering {#read-delivery}
 
@@ -320,18 +320,18 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-U zou uw reis zonder kop van AEM door het document [ moeten voortzetten te herzien hoe te met Uw Zwaardeloze Toepassing ](go-live.md) gaan waar u eigenlijk uw project van AEM Zwaardeloos neemt levende!
+U zou uw reis zonder kop van AEM door het document [&#x200B; moeten voortzetten te herzien hoe te met Uw Zwaardeloze Toepassing &#x200B;](go-live.md) gaan waar u eigenlijk uw project van AEM Zwaardeloos neemt levende!
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [ASSETS HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/assets-api-content-fragments.md)
    * [API-naslag](/help/assets/assets-api-content-fragments.md#api-reference)
-* [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [&#x200B; Adobe Experience Manager Assets API - de Fragmenten van de Inhoud &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
-* [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ CORS/AEM verklaarde ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [ Video - het Ontwikkelen voor CORS met AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-* Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
-* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
+* [&#x200B; de Componenten van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; CORS/AEM verklaarde &#x200B;](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+* [&#x200B; Video - het Ontwikkelen voor CORS met AEM &#x200B;](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* Een [&#x200B; Inleiding aan AEM als Headless CMS &#x200B;](/help/sites-developing/headless/introduction.md)
+* Het [&#x200B; Portaal van de Ontwikkelaar van AEM &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)

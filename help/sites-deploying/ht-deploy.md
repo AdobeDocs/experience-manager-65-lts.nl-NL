@@ -20,7 +20,7 @@ In de volgende onderwerpen wordt beschreven hoe u specifieke AEM-implementatieta
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [ hoe te Werkschema&#39;s en het Logboek van de Controle zuiveren ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [&#x200B; hoe te Werkschema&#39;s en het Logboek van de Controle zuiveren &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Tips voor afstemmen van prestaties](/help/sites-deploying/configuring-performance.md)
 

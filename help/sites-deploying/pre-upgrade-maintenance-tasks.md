@@ -37,7 +37,7 @@ Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudst
 
 ## Indexdefinities {#index-definitions}
 
-Controleer of u de vereiste indexdefinities hebt geïnstalleerd die zijn vrijgegeven met de nieuwste AEM 6.5 Service Pack. (Verwijs naar [ AEM 6.5 de nota&#39;s van de servicepack versie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
+Controleer of u de vereiste indexdefinities hebt geïnstalleerd die zijn vrijgegeven met de nieuwste AEM 6.5 Service Pack. (Verwijs naar [&#x200B; AEM 6.5 de nota&#39;s van de servicepack versie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/release-notes) voor meer informatie).
 
 ## Zorgen voor voldoende schijfruimte {#ensure-sufficient-disk-space}
 
@@ -45,7 +45,7 @@ Zorg dat er voldoende schijfruimte is wanneer u de upgrade uitvoert.
 
 ## Volledige back-up van AEM maken {#fully-back-up-aem}
 
-Er moet een volledige back-up van AEM worden gemaakt voordat de upgrade wordt gestart. Maak indien van toepassing een back-up van de opslagplaats, de installatie van de toepassing, de datastore en de Mongo-exemplaren. Voor meer informatie bij het steunen van en het herstellen van een instantie van AEM, zie [ Steun en herstel ](/help/sites-administering/backup-and-restore.md).
+Er moet een volledige back-up van AEM worden gemaakt voordat de upgrade wordt gestart. Maak indien van toepassing een back-up van de opslagplaats, de installatie van de toepassing, de datastore en de Mongo-exemplaren. Voor meer informatie bij het steunen van en het herstellen van een instantie van AEM, zie [&#x200B; Steun en herstel &#x200B;](/help/sites-administering/backup-and-restore.md).
 
 ## Het bestand quickstart.properties genereren {#generate-quickstart-properties}
 
@@ -53,7 +53,7 @@ Wanneer u AEM start vanuit het jar-bestand, wordt een `quickstart.properties` -b
 
 ## Werkstroom- en controlelogbestanden leegmaken configureren {#configure-wf-audit-purging}
 
-De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` taken vereisen afzonderlijke configuraties OSGi en kunnen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. De documentatie voor het vormen werkschemazuiveringstaken kan bij [ het Beheer de Instanties van het Werkschema ](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kunnen bij [ het Onderhoud van het Logboek van de Controle in AEM 6 ](/help/sites-administering/operations-audit-log.md) worden gevonden.
+De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` taken vereisen afzonderlijke configuraties OSGi en kunnen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. De documentatie voor het vormen werkschemazuiveringstaken kan bij [&#x200B; het Beheer de Instanties van het Werkschema &#x200B;](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kunnen bij [&#x200B; het Onderhoud van het Logboek van de Controle in AEM 6 &#x200B;](/help/sites-administering/operations-audit-log.md) worden gevonden.
 
 
 ## De taken vóór de upgrade installeren, configureren en uitvoeren {#install-configure-run-pre-upgrade-tasks}
@@ -70,7 +70,7 @@ De `PreUpgradeTasksMBean` component OSGI wordt vooraf geconfigureerd met een lij
 
 1. Wijzig de lijst met onderhoudstaken die moet worden uitgevoerd zoals hieronder wordt weergegeven:
 
-   ![ 1487758925984 ](assets/1487758925984.png)
+   ![&#x200B; 1487758925984 &#x200B;](assets/1487758925984.png)
 
 Hieronder volgt een beschrijving van de uitvoeringsmodus waarvoor elke onderhoudstaak is ontworpen.
 
@@ -91,7 +91,7 @@ De `PreUpgradeTasksMBeanImpl` OSGI-component wordt vooraf geconfigureerd met een
 
 **MBean Methods**
 
-De beheerde boonfunctionaliteit kan worden betreden gebruikend de [ Console JMX ](/help/sites-administering/jmx-console.md).
+De beheerde boonfunctionaliteit kan worden betreden gebruikend de [&#x200B; Console JMX &#x200B;](/help/sites-administering/jmx-console.md).
 
 U kunt tot MBeans toegang hebben door:
 
@@ -142,11 +142,11 @@ Schakel geplande OSGi-taken uit die in uw toepassingscode zijn opgenomen.
 >
 >Deze stap is alleen nodig voor TarMK-installaties
 
-Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie bij het in werking stellen van de Opruiming van de Off-line Revisie, zie [ het Uitvoeren van de Opruiming van de Offline Revisie ](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup).
+Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie bij het in werking stellen van de Opruiming van de Off-line Revisie, zie [&#x200B; het Uitvoeren van de Opruiming van de Offline Revisie &#x200B;](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup).
 
 ## Verzameling van afval uit datastore uitvoeren {#execute-datastore-garbage-collection}
 
-Nadat u de revisie hebt opgeschoond op CRX3-instanties, moet u de afvalverzameling van de datastore uitvoeren om eventuele niet-gerefereerde balken in de gegevensopslag te verwijderen. Voor instructies, zie de documentatie op [ de Inzameling van het huisvuil van de Opslag van Gegevens ](/help/sites-administering/data-store-garbage-collection.md).
+Nadat u de revisie hebt opgeschoond op CRX3-instanties, moet u de afvalverzameling van de datastore uitvoeren om eventuele niet-gerefereerde balken in de gegevensopslag te verwijderen. Voor instructies, zie de documentatie op [&#x200B; de Inzameling van het huisvuil van de Opslag van Gegevens &#x200B;](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Logbestanden roteren {#rotate-log-files}
 

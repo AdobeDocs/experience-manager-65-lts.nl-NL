@@ -20,11 +20,11 @@ ht-degree: 0%
 * Een volmachtsarbeider om een specifieke taak te bepalen en te beheren.
 Deze kunnen een groot aantal taken bestrijken, bijvoorbeeld het gebruik van een [!DNL InDesign Server] voor het verwerken van bestanden.
 
-Voor het volledig uploaden van bestanden naar [!DNL Experience Manager Assets] die u met [!DNL Adobe InDesign] hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met [!DNL Adobe InDesign Server] te communiceren, waar [ manuscripten ](https://helpx.adobe.com/nl/indesign/using/scripting.html) in werking worden gesteld om meta-gegevens te halen en diverse vertoningen voor [!DNL Experience Manager Assets] te produceren. De proxyworker maakt de communicatie in twee richtingen mogelijk tussen de [!DNL InDesign Server] en de [!DNL Experience Manager] -instanties in een cloudconfiguratie.
+Voor het volledig uploaden van bestanden naar [!DNL Experience Manager Assets] die u met [!DNL Adobe InDesign] hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met [!DNL Adobe InDesign Server] te communiceren, waar [&#x200B; manuscripten &#x200B;](https://helpx.adobe.com/nl/indesign/using/scripting.html) in werking worden gesteld om meta-gegevens te halen en diverse vertoningen voor [!DNL Experience Manager Assets] te produceren. De proxyworker maakt de communicatie in twee richtingen mogelijk tussen de [!DNL InDesign Server] en de [!DNL Experience Manager] -instanties in een cloudconfiguratie.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] wordt aangeboden als twee aparte aanbiedingen. [ Adobe InDesign ](https://www.adobe.com/products/indesign.html) Desktop app die wordt gebruikt om paginalay-outs voor druk en digitale distributie te ontwerpen. [ Adobe InDesign Server ](https://www.adobe.com/products/indesignserver.html) laat u toe programmatically om geautomatiseerde documenten tot stand te brengen die op wat u met [!DNL InDesign] hebt gecreeerd worden gebaseerd. Het werkt als dienst die een interface aan zijn [ aanbieden ExtendScript ](https://helpx.adobe.com/nl/indesign/using/scripting.html) motor.De manuscripten worden geschreven in [!DNL ExtendScript], die aan [!DNL JavaScript] gelijkaardig is.
+>[!DNL Adobe InDesign] wordt aangeboden als twee aparte aanbiedingen. [&#x200B; Adobe InDesign &#x200B;](https://www.adobe.com/products/indesign.html) Desktop app die wordt gebruikt om paginalay-outs voor druk en digitale distributie te ontwerpen. [&#x200B; Adobe InDesign Server &#x200B;](https://www.adobe.com/products/indesignserver.html) laat u toe programmatically om geautomatiseerde documenten tot stand te brengen die op wat u met [!DNL InDesign] hebt gecreeerd worden gebaseerd. Het werkt als dienst die een interface aan zijn [&#x200B; aanbieden ExtendScript &#x200B;](https://helpx.adobe.com/nl/indesign/using/scripting.html) motor.De manuscripten worden geschreven in [!DNL ExtendScript], die aan [!DNL JavaScript] gelijkaardig is.
 
 ## Hoe de extractie werkt {#how-the-extraction-works}
 
@@ -49,7 +49,7 @@ Met dit opdrachtscript wordt:
 
    >[!NOTE]
    >
-   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] -bestand rendert. Het wordt opgeslagen als samengeperst pakket gebruikend [ ZIP ](https://www.techterms.com/definition/zip) compressie. Voor meer informatie, zie [ de Formaten INX en IDML van de Uitwisseling van InDesign ](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
+   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] -bestand rendert. Het wordt opgeslagen als samengeperst pakket gebruikend [&#x200B; ZIP &#x200B;](https://www.techterms.com/definition/zip) compressie. Voor meer informatie, zie [&#x200B; de Formaten INX en IDML van de Uitwisseling van InDesign &#x200B;](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >
@@ -65,10 +65,10 @@ Met dit opdrachtscript wordt:
 
 Als u [!DNL InDesign Server] wilt integreren voor gebruik met [!DNL Experience Manager Assets] en nadat u de proxy hebt geconfigureerd, moet u:
 
-1. [ installeer InDesign Server ](#installing-the-indesign-server).
-1. Indien noodzakelijk, [ vormen het Werkschema van Experience Manager Assets ](#configuring-the-aem-assets-workflow).
+1. [&#x200B; installeer InDesign Server &#x200B;](#installing-the-indesign-server).
+1. Indien noodzakelijk, [&#x200B; vormen het Werkschema van Experience Manager Assets &#x200B;](#configuring-the-aem-assets-workflow).
 Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
-1. Vorm a [ volmachtsarbeider voor InDesign Server ](#configuring-the-proxy-worker-for-indesign-server).
+1. Vorm a [&#x200B; volmachtsarbeider voor InDesign Server &#x200B;](#configuring-the-proxy-worker-for-indesign-server).
 
 ### De [!DNL InDesign Server] installeren {#installing-the-indesign-server}
 
@@ -96,7 +96,7 @@ Als u de [!DNL InDesign Server] voor gebruik met [!DNL Experience Manager] wilt 
 * [Media extraheren](#media-extraction)
 * [Pagina uitnemen](#page-extraction)
 
-Dit werkschema is opstelling met standaardwaarden die voor uw opstelling op de diverse auteursinstanties kunnen worden aangepast (dit is een standaardwerkschema, zodat is de verdere informatie beschikbaar onder [ het Uitgeven van een Werkschema ](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Als u de standaardwaarden gebruikt (inclusief de SOAP-poort), is geen configuratie nodig.
+Dit werkschema is opstelling met standaardwaarden die voor uw opstelling op de diverse auteursinstanties kunnen worden aangepast (dit is een standaardwerkschema, zodat is de verdere informatie beschikbaar onder [&#x200B; het Uitgeven van een Werkschema &#x200B;](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Als u de standaardwaarden gebruikt (inclusief de SOAP-poort), is geen configuratie nodig.
 
 Na het uploaden van [!DNL InDesign] bestanden naar [!DNL Experience Manager Assets] (volgens een van de gebruikelijke methoden) wordt de workflow geactiveerd om het element te verwerken en de verschillende uitvoeringen voor te bereiden. Test uw configuratie door een INDD-bestand te uploaden naar [!DNL Experience Manager Assets] om te bevestigen dat de verschillende uitvoeringen die door IDS zijn gemaakt, worden weergegeven onder `<*your_asset*>.indd/Renditions`
 
@@ -106,7 +106,7 @@ Deze stap bepaalt de extractie van media uit het INDD-bestand.
 
 U kunt het tabblad **[!UICONTROL Arguments]** van de stap **[!UICONTROL Media Extraction]** bewerken om het item aan te passen.
 
-![ de extractieargumenten van Media en manuscriptwegen ](assets/media_extraction_arguments_scripts.png)
+![&#x200B; de extractieargumenten van Media en manuscriptwegen &#x200B;](assets/media_extraction_arguments_scripts.png)
 
 Argumenten voor het uitnemen van media en scriptpaden
 
@@ -132,7 +132,7 @@ Hiermee maakt u een [!DNL Experience Manager] -pagina van de geëxtraheerde elem
 
 Als u aanpassingen wilt maken, kunt u het tabblad **[!UICONTROL Arguments]** van de stap **[!UICONTROL Page Extraction]** bewerken.
 
-![ chlimage_1-96 ](assets/chlimage_1-289.png)
+![&#x200B; chlimage_1-96 &#x200B;](assets/chlimage_1-289.png)
 
 * **Handler van de Uitwinning van de Pagina**: Van popup lijst, selecteer de manager die u wilt gebruiken. Een extractiemanager werkt op een specifieke uitvoering, die wordt gekozen door een verwante `RenditionPicker` (zie de `ExtractionHandler` API). In een standaardinstallatie van [!DNL Experience Manager] is het volgende beschikbaar:
    * IDML Handle voor Extractie van de Uitvoer: werkt op de `IDML` vertoning die in de stap MediaExtract wordt geproduceerd.
@@ -159,7 +159,7 @@ Als u aanpassingen wilt maken, kunt u het tabblad **[!UICONTROL Arguments]** van
 
 1. Klik op **[!UICONTROL Edit]** om het configuratiedialoogvenster te openen en de vereiste instellingen te definiëren:
 
-   ![ proxy_idsworkerconfig ](assets/proxy_idsworkerconfig.png)
+   ![&#x200B; proxy_idsworkerconfig &#x200B;](assets/proxy_idsworkerconfig.png)
 
    * **Pool IDS**
 Het SOAP-eindpunt dat/de-eindpunten die moeten worden gebruikt voor communicatie met de [!DNL InDesign Server] . U kunt items toevoegen, verwijderen en bestellen.
@@ -176,7 +176,7 @@ Als de [!DNL InDesign Server] en [!DNL Experience Manager] zich op verschillende
 
    Gebruik `localhost` in absolute URL&#39;s als hostnaam voor uw lokale (auteur)instantie en hostnaam of IP-adres voor de publicatie-instantie, zoals in de volgende afbeelding wordt getoond.
 
-   ![ Verbinding externalizer die ](assets/link-externalizer-config.png) plaatst
+   ![&#x200B; Verbinding externalizer die &#x200B;](assets/link-externalizer-config.png) plaatst
 
 ### Parallelle taakverwerking inschakelen voor [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
 
@@ -198,7 +198,7 @@ Om het aantal parallelle banen te vormen IDS:
 
 1. Sla deze wijzigingen op.
 1. Schakel het selectievakje `enable.multisession.name` in onder `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuratie als u ondersteuning voor meerdere sessies wilt inschakelen voor Adobe CS6 en hoger.
-1. Creeer a [ pool van `x` arbeiders IDS door SOAP eindpunten aan de configuratie van de Arbeider IDS ](#configuring-the-proxy-worker-for-indesign-server) toe te voegen.
+1. Creeer a [&#x200B; pool van `x` arbeiders IDS door SOAP eindpunten aan de configuratie van de Arbeider IDS &#x200B;](#configuring-the-proxy-worker-for-indesign-server) toe te voegen.
 
    Als er meerdere computers met [!DNL InDesign Server] werken, voegt u SOAP-eindpunten (aantal processors per computer -1) toe voor elke computer.
 
@@ -238,4 +238,4 @@ U kunt de standaardbeheerdersreferenties (gebruikersnaam en wachtwoord) wijzigen
 
 >[!MORELIKETHIS]
 >
->* [ Ongeveer Adobe InDesign Server ](https://www.adobe.com/products/indesignserver/faq.html)
+>* [&#x200B; Ongeveer Adobe InDesign Server &#x200B;](https://www.adobe.com/products/indesignserver/faq.html)

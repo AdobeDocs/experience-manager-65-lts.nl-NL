@@ -41,46 +41,46 @@ In dit onderwerp worden de volgende strategieën besproken om een back-up te mak
 
 ### Offline back-up met downtime {#offline-backup-with-downtime}
 
-1. Sluit de volledige cluster en de verwante diensten. (zie [ Beginnend en het tegenhouden van de diensten ](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [ Dossiers aan file en terugkrijgen ](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Sluit de volledige cluster en de verwante diensten. (zie [&#x200B; Beginnend en het tegenhouden van de diensten &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [&#x200B; Dossiers aan file en terugkrijgen &#x200B;](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Voer de volgende stappen uit om een back-up te maken van de AEM-opslagplaats offline:
 
    1. Maak voor elk clusterknooppunt een back-up van het bestand dat de id van het clusterknooppunt bevat.
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van de opslagplaats/systeem-id van elk clusterknooppunt afzonderlijk.
 
-   Voor gedetailleerde stappen, zie [ Steun en herstel ](/help/sites-administering/backup-and-restore.md).
+   Voor gedetailleerde stappen, zie [&#x200B; Steun en herstel &#x200B;](/help/sites-administering/backup-and-restore.md).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
 
 ### Offline back-up zonder downtime {#offline-backup-with-no-downtime}
 
-1. Ga de het rollen reservewijze in. (zie [ het ingaan van de reservewijzen ](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. Ga de het rollen reservewijze in. (zie [&#x200B; het ingaan van de reservewijzen &#x200B;](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Laat de modus voor rolback-ups na herstel staan.
 
-1. Sluit om het even welke secundaire knopen van de cluster betreffende AEM. (zie [ Beginnend en het tegenhouden van de diensten ](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [ Dossiers aan file en terugkrijgen ](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Sluit om het even welke secundaire knopen van de cluster betreffende AEM. (zie [&#x200B; Beginnend en het tegenhouden van de diensten &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [&#x200B; Dossiers aan file en terugkrijgen &#x200B;](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Voer de volgende stappen uit om een back-up te maken van de AEM-opslagplaats offline:
 
    1. Maak voor elk clusterknooppunt een back-up van het bestand dat de id van het clusterknooppunt bevat.
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van repository/system.id van elk clusterknooppunt afzonderlijk.
 
-   Voor gedetailleerde stappen, zie [ Steun en herstel ](/help/sites-administering/backup-and-restore.md).
+   Voor gedetailleerde stappen, zie [&#x200B; Steun en herstel &#x200B;](/help/sites-administering/backup-and-restore.md).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
 
 ### Onlineback-up zonder downtime maar vertraging in reactie {#online-backup-with-no-downtime-but-delay-in-response}
 
-1. Ga de het rollen reservewijze in. (zie [ het ingaan van de reservewijzen ](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. Ga de het rollen reservewijze in. (zie [&#x200B; het ingaan van de reservewijzen &#x200B;](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Laat de modus voor rolback-ups na herstel staan.
 
-1. Sluit om het even welke secundaire knopen van de cluster betreffende AEM. (zie [ Beginnend en het tegenhouden van de diensten ](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [ Dossiers aan file en terugkrijgen ](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Sluit om het even welke secundaire knopen van de cluster betreffende AEM. (zie [&#x200B; Beginnend en het tegenhouden van de diensten &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [&#x200B; Dossiers aan file en terugkrijgen &#x200B;](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Voer de volgende stappen uit om een back-up te maken van de AEM-opslagplaats online:
 
    1. Maak voor elk clusterknooppunt een back-up van het bestand dat het bestand cluster_node.id bevat.
@@ -174,15 +174,15 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
 
 ## Knooppunt voor het maken van back-ups en het herstellen van Correspondentenbeheeroplossingen {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-De uitgeversknoop heeft geen primair-secundaire verhouding in een gegroepeerde milieu. U kunt steun van om het even welke knoop van de Uitgever nemen door [ Steun te volgen en te herstellen ](/help/sites-administering/backup-and-restore.md).
+De uitgeversknoop heeft geen primair-secundaire verhouding in een gegroepeerde milieu. U kunt steun van om het even welke knoop van de Uitgever nemen door [&#x200B; Steun te volgen en te herstellen &#x200B;](/help/sites-administering/backup-and-restore.md).
 
 ### Eén uitgeversknooppunt herstellen {#recover-a-single-publisher-node}
 
 1. Sluit de knoop die moet worden teruggekregen en doe geen publicatieactiviteit tot de knoop opnieuw omhoog is.
-1. Herstel de Publish knoop gebruikend [ Herstellend de Steun ](/help/sites-administering/backup-and-restore.md).
+1. Herstel de Publish knoop gebruikend [&#x200B; Herstellend de Steun &#x200B;](/help/sites-administering/backup-and-restore.md).
 
 ### Een cluster herstellen {#recover-a-cluster}
 
 1. Sluit de cluster af.
-1. Herstel de Publish knoop gebruikend [ Herstellend de Steun ](/help/sites-administering/backup-and-restore.md).
+1. Herstel de Publish knoop gebruikend [&#x200B; Herstellend de Steun &#x200B;](/help/sites-administering/backup-and-restore.md).
 1. Start het primaire knooppunt gevolgd door het secundaire knooppunt van de auteurcluster.

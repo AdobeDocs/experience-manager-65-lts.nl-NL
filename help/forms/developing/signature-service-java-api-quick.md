@@ -46,11 +46,11 @@ AEM Forms JEE-bewerkingen kunnen worden uitgevoerd met de AEM Forms sterk getypt
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-Het volgende codevoorbeeld van Java voegt een handtekeningsgebied genoemd *SignatureField1* aan een document van PDF toe dat op een dossier van PDF genoemd *Loan.pdf* gebaseerd is. Het document van PDF dat het nieuwe handtekeningsgebied bevat wordt bewaard als dossier van PDF genoemd *LoanSig.pdf*. (Zie [ Toevoegend de Gebieden van de Handtekening ](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+Het volgende codevoorbeeld van Java voegt een handtekeningsgebied genoemd *SignatureField1* aan een document van PDF toe dat op een dossier van PDF genoemd *Loan.pdf* gebaseerd is. Het document van PDF dat het nieuwe handtekeningsgebied bevat wordt bewaard als dossier van PDF genoemd *LoanSig.pdf*. (Zie [&#x200B; Toevoegend de Gebieden van de Handtekening &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
 ```java
  /*
@@ -166,7 +166,7 @@ Het volgende codevoorbeeld van Java voegt een handtekeningsgebied genoemd *Signa
 
 ## Snel starten (SOAP-modus): namen van handtekeningvelden ophalen met de Java API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java wint de namen van handtekeningsgebieden in een document van PDF genoemd *LoanSig.pdf* terug. (Zie [ het Terugwinnen van de Namen van het Gebied van de Handtekening ](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+Het volgende de codevoorbeeld van Java wint de namen van handtekeningsgebieden in een document van PDF genoemd *LoanSig.pdf* terug. (Zie [&#x200B; het Terugwinnen van de Namen van het Gebied van de Handtekening &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
 ```java
  /*
@@ -272,7 +272,7 @@ Het volgende de codevoorbeeld van Java wint de namen van handtekeningsgebieden i
 
 ## Snel starten (SOAP-modus): een handtekeningveld wijzigen met de Java API {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam SignatureField1 gewijzigd door alle velden in het formulier te vergrendelen wanneer een handtekening wordt toegepast op het handtekeningveld en ervoor te zorgen dat geen wijzigingen zijn toegestaan. Nadat de handtekeningservice het PDF-document heeft geretourneerd dat het gewijzigde handtekeningveld bevat, wordt het PDF-document opgeslagen als een PDF-bestand met de naam LoanSig.pdf. (Dit voorbeeld beschrijft het dossier van PDF dat tot de dienst van de Handtekening. wordt overgegaan) (Zie [ het Wijzigen van de Gebieden van de Handtekening ](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
+In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam SignatureField1 gewijzigd door alle velden in het formulier te vergrendelen wanneer een handtekening wordt toegepast op het handtekeningveld en ervoor te zorgen dat geen wijzigingen zijn toegestaan. Nadat de handtekeningservice het PDF-document heeft geretourneerd dat het gewijzigde handtekeningveld bevat, wordt het PDF-document opgeslagen als een PDF-bestand met de naam LoanSig.pdf. (Dit voorbeeld beschrijft het dossier van PDF dat tot de dienst van de Handtekening. wordt overgegaan) (Zie [&#x200B; het Wijzigen van de Gebieden van de Handtekening &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*
@@ -400,7 +400,7 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam Signat
 
 ## Snel starten (SOAP-modus): een PDF-document digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-Het volgende codevoorbeeld van Java ondertekent digitaal een document van PDF dat op een dossier van PDF genoemd *LoanSig.pdf* gebaseerd is. De alias die voor de veiligheidsreferentie wordt gespecificeerd is veilig, en de herroepingscontrole wordt uitgevoerd. Omdat er geen CRL- of OCSP-serverinformatie is opgegeven, wordt de serverinformatie opgehaald uit het certificaat dat wordt gebruikt om het PDF-document digitaal te ondertekenen. Het ondertekende document wordt bewaard als dossier van PDF genoemd *LoanSigned.pdf*. (Zie [ digitaal het Ondertekenen van de Documenten van PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+Het volgende codevoorbeeld van Java ondertekent digitaal een document van PDF dat op een dossier van PDF genoemd *LoanSig.pdf* gebaseerd is. De alias die voor de veiligheidsreferentie wordt gespecificeerd is veilig, en de herroepingscontrole wordt uitgevoerd. Omdat er geen CRL- of OCSP-serverinformatie is opgegeven, wordt de serverinformatie opgehaald uit het certificaat dat wordt gebruikt om het PDF-document digitaal te ondertekenen. Het ondertekende document wordt bewaard als dossier van PDF genoemd *LoanSigned.pdf*. (Zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ```java
  /*
@@ -761,7 +761,7 @@ In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend d
 
 ## Snel starten (SOAP-modus): Een PDF-document certificeren met de Java API {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java certificeert een document van PDF dat op een dossier van PDF genoemd *LoanSig.pdf* gebaseerd is. De alias die voor de beveiligingsreferentie is opgegeven, is beveiligd en er wordt geen controle op de intrekking uitgevoerd. Het verklaarde document wordt bewaard als dossier van PDF genoemd *LoanCertified.pdf*. (Zie [ Certificerend PDF Documenten ](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+Het volgende de codevoorbeeld van Java certificeert een document van PDF dat op een dossier van PDF genoemd *LoanSig.pdf* gebaseerd is. De alias die voor de beveiligingsreferentie is opgegeven, is beveiligd en er wordt geen controle op de intrekking uitgevoerd. Het verklaarde document wordt bewaard als dossier van PDF genoemd *LoanCertified.pdf*. (Zie [&#x200B; Certificerend PDF Documenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
 ```java
  /*
@@ -910,7 +910,7 @@ Het volgende de codevoorbeeld van Java certificeert een document van PDF dat op 
 
 ## Snel starten (SOAP-modus): een digitale handtekening verifiëren met de Java API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd die zich in een ondertekend PDF-document bevindt dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [ Verifying Digital Signatures ](#verifying-digital-signatures).)
+In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd die zich in een ondertekend PDF-document bevindt dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [&#x200B; Verifying Digital Signatures &#x200B;](#verifying-digital-signatures).)
 
 ```java
  /*
@@ -1074,7 +1074,7 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd 
 
 ## Snel starten (SOAP-modus): meerdere digitale handtekeningen controleren met de Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecontroleerd die zich in een ondertekend PDF-document bevinden dat is gebaseerd op een PDF-bestand met de naam LoanAllSigs.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [ Verifying Multiple Digital Signatures ](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
+In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecontroleerd die zich in een ondertekend PDF-document bevinden dat is gebaseerd op een PDF-bestand met de naam LoanAllSigs.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [&#x200B; Verifying Multiple Digital Signatures &#x200B;](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
 ```java
  /*
@@ -1236,7 +1236,7 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
 
 ## Snel starten (SOAP-modus): een digitale handtekening verwijderen met de Java API {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java verwijdert een digitale handtekening uit een handtekeningsgebied genoemd *SignatureField1*. De naam van het dossier van PDF dat het handtekeningsgebied bevat is *LoanSigned.pdf*. (Zie [ het Verwijderen van Digitale Handtekeningen ](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
+Het volgende de codevoorbeeld van Java verwijdert een digitale handtekening uit een handtekeningsgebied genoemd *SignatureField1*. De naam van het dossier van PDF dat het handtekeningsgebied bevat is *LoanSigned.pdf*. (Zie [&#x200B; het Verwijderen van Digitale Handtekeningen &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 ```java
  /*

@@ -32,11 +32,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de API met sterk g
 
 >[!NOTE]
 >
->De snelle Begin in Programmering met AEM Forms is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Begin in Programmering met AEM Forms is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): een Microsoft Word-document converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
-Het volgende codevoorbeeld zet een dossier van Word genoemd *Loan.doc* in een document van PDF genoemd *Loan.pdf* om. (Zie [ Converterend de Documenten van Word in de Documenten van PDF ](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
+Het volgende codevoorbeeld zet een dossier van Word genoemd *Loan.doc* in een document van PDF genoemd *Loan.pdf* om. (Zie [&#x200B; Converterend de Documenten van Word in de Documenten van PDF &#x200B;](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -150,7 +150,7 @@ Het volgende codevoorbeeld zet een dossier van Word genoemd *Loan.doc* in een do
 
 ## Snel starten (SOAP-modus): HTML-inhoud converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java zet de inhoud van HTML in https://www.adobe.com in een document van PDF genoemd *AdobeHTML.pdf* om. (Zie [ Converterend de Documenten van HTML in de Documenten van PDF ](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
+Het volgende de codevoorbeeld van Java zet de inhoud van HTML in https://www.adobe.com in een document van PDF genoemd *AdobeHTML.pdf* om. (Zie [&#x200B; Converterend de Documenten van HTML in de Documenten van PDF &#x200B;](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -256,7 +256,7 @@ Het volgende de codevoorbeeld van Java zet de inhoud van HTML in https://www.ado
 
 ## Snel starten (SOAP-modus): een PDF-document converteren naar een RTF-bestand met de Java API (SOAP-modus) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
-Het volgende codevoorbeeld zet een document van PDF genoemd *Loan.pdf* in een RTF- document genoemd *Loan.rtf* om. (Zie [ Omzettend de Documenten van PDF in Niet-beeldformaten ](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
+Het volgende codevoorbeeld zet een document van PDF genoemd *Loan.pdf* in een RTF- document genoemd *Loan.rtf* om. (Zie [&#x200B; Omzettend de Documenten van PDF in Niet-beeldformaten &#x200B;](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
 
 ```java
  /*

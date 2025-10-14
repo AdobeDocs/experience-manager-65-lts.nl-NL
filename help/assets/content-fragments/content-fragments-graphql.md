@@ -26,8 +26,8 @@ Met Adobe Experience Manager (AEM) kunt u Content Fragments samen met de AEM Gra
 >
 >GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM):
 >
->* [ AEM Commerce verbruikt gegevens van een handelsplatform via GraphQL ](/help/commerce/cif/integrating/magento.md).
->* [ de Inhoudsfragmenten van AEM werken samen met AEM GraphQL API (een aangepaste implementatie, die op standaardGraphQL wordt gebaseerd), om gestructureerde inhoud voor gebruik in uw toepassingen ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) te leveren.
+>* [&#x200B; AEM Commerce verbruikt gegevens van een handelsplatform via GraphQL &#x200B;](/help/commerce/cif/integrating/magento.md).
+>* [&#x200B; de Inhoudsfragmenten van AEM werken samen met AEM GraphQL API (een aangepaste implementatie, die op standaardGraphQL wordt gebaseerd), om gestructureerde inhoud voor gebruik in uw toepassingen &#x200B;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) te leveren.
 
 ## Headless CMS {#headless-cms}
 
@@ -35,7 +35,7 @@ Een headless Content Management System (CMS) is:
 
 * &quot;*A headless inhoudsbeheersysteem, of headless CMS, is een back-end slechts inhoudsbeheersysteem (CMS) dat van de grond omhoog als inhoudsbewaarplaats wordt gebouwd die inhoud door middel van API voor vertoning op om het even welk apparaat toegankelijk maakt.*
 
-  Zie [ Wikipedia ](https://en.wikipedia.org/wiki/Headless_content_management_system).
+  Zie [&#x200B; Wikipedia &#x200B;](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
 Met betrekking tot het ontwerpen van inhoudsfragmenten in AEM betekent dit dat:
 
@@ -49,25 +49,25 @@ GraphQL is:
 
 * &quot;*...een vraagtaal voor APIs en runtime voor het vervullen van die vragen met uw bestaande gegevens.*&quot;.
 
-  Zie [ GraphQL.org ](https://graphql.org)
+  Zie [&#x200B; GraphQL.org &#x200B;](https://graphql.org)
 
-[ AEM GraphQL API ](#aem-graphql-api) laat u (complexe) vragen op uw [ Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) uitvoeren; met elke vraag die volgens een specifiek modeltype is. De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
+[&#x200B; AEM GraphQL API &#x200B;](#aem-graphql-api) laat u (complexe) vragen op uw [&#x200B; Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments.md) uitvoeren; met elke vraag die volgens een specifiek modeltype is. De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 
 ## AEM GRAPHQL API {#aem-graphql-api}
 
-Voor Adobe Experience is een aangepaste implementatie van de standaard GraphQL API ontwikkeld. Zie [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) voor details.
+Voor Adobe Experience is een aangepaste implementatie van de standaard GraphQL API ontwikkeld. Zie [&#x200B; AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud &#x200B;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) voor details.
 
-De implementatie van AEM GraphQL API is gebaseerd op de [ bibliotheken van GraphQL Java ](https://graphql.org/code/#java).
+De implementatie van AEM GraphQL API is gebaseerd op de [&#x200B; bibliotheken van GraphQL Java &#x200B;](https://graphql.org/code/#java).
 
 ## Inhoudsfragmenten voor gebruik met de AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
-[ de Fragmenten van de Inhoud ](#content-fragments) kunnen als basis voor GraphQL voor AEM vragen als worden gebruikt:
+[&#x200B; de Fragmenten van de Inhoud &#x200B;](#content-fragments) kunnen als basis voor GraphQL voor AEM vragen als worden gebruikt:
 
 * Hiermee kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren.
-* De [ Modellen van het Fragment van de Inhoud ](#content-fragments-models) verstrekken de vereiste structuur door middel van bepaalde gegevenstypes.
-* De [ Verwijzing van het Fragment ](#fragment-references), beschikbaar wanneer het bepalen van een model, kan worden gebruikt om extra lagen van structuur te bepalen.
+* De [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](#content-fragments-models) verstrekken de vereiste structuur door middel van bepaalde gegevenstypes.
+* De [&#x200B; Verwijzing van het Fragment &#x200B;](#fragment-references), beschikbaar wanneer het bepalen van een model, kan worden gebruikt om extra lagen van structuur te bepalen.
 
-![ de Fragmenten van de Inhoud voor gebruik met de Fragmenten van de Inhoud van GraphQL ](assets/cfm-nested-01.png " voor gebruik met GraphQL ")
+![&#x200B; de Fragmenten van de Inhoud voor gebruik met de Fragmenten van de Inhoud van GraphQL &#x200B;](assets/cfm-nested-01.png " voor gebruik met GraphQL ")
 
 ### Inhoudsfragmenten {#content-fragments}
 
@@ -75,13 +75,13 @@ Content Fragments:
 
 * Bevat gestructureerde inhoud.
 
-* Zij zijn gebaseerd op het Model van het Fragment van de a [ Inhoud ](#content-fragments-models), dat de structuur voor het resulterende fragment vooraf bepaalt.
+* Zij zijn gebaseerd op het Model van het Fragment van de a [&#x200B; Inhoud &#x200B;](#content-fragments-models), dat de structuur voor het resulterende fragment vooraf bepaalt.
 
 ### Modellen van inhoudsfragmenten {#content-fragments-models}
 
-Deze [ Modellen van het Fragment van Inhoud ](/help/assets/content-fragments/content-fragments-models.md):
+Deze [&#x200B; Modellen van het Fragment van Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-models.md):
 
-* Wordt gebruikt om de [ Schema&#39;s ](https://graphql.org/learn/schema/) te produceren, eens **Toegelaten**.
+* Wordt gebruikt om de [&#x200B; Schema&#39;s &#x200B;](https://graphql.org/learn/schema/) te produceren, eens **Toegelaten**.
 
 * Geef de gegevenstypen en velden op die vereist zijn voor GraphQL. Ze zorgen ervoor dat uw toepassing alleen vraagt wat mogelijk is en wat wordt verwacht ontvangt.
 
@@ -103,12 +103,12 @@ De **[Verwijzing van het Fragment](/help/assets/content-fragments/content-fragme
 
 ### JSON-voorvertoning {#json-preview}
 
-Om met het ontwerpen van en het ontwikkelen van uw Modellen van het Fragment van de Inhoud te helpen, kunt u voorproef [ output JSON ](/help/assets/content-fragments/content-fragments-json-preview.md).
+Om met het ontwerpen van en het ontwikkelen van uw Modellen van het Fragment van de Inhoud te helpen, kunt u voorproef [&#x200B; output JSON &#x200B;](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 ## GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
-Zie [ Lerend om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef ](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md) voor een inleiding aan het gebruiken van AEM GraphQL API.
+Zie [&#x200B; Lerend om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef &#x200B;](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md) voor een inleiding aan het gebruiken van AEM GraphQL API.
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL
 
-Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met de Hoofdloze AEM en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend GraphQL APIs van AEM en verbruikt door een externe app, in een headless scenario van CMS.
+Op zoek naar een praktische zelfstudie? Controle uit [&#x200B; Begonnen het Worden met de Hoofdloze AEM en GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend GraphQL APIs van AEM en verbruikt door een externe app, in een headless scenario van CMS.

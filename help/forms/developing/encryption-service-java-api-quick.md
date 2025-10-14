@@ -36,11 +36,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de API met sterk g
 
 >[!NOTE]
 >
->Snel aan de slag in Programming met de vormen van AEM zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss® en het werkende systeem van Microsoft® Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Snel aan de slag in Programming met de vormen van AEM zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss® en het werkende systeem van Microsoft® Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Een PDF-document coderen met de Java™ API {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld codeert een document van PDF genoemd *Loan.pdf* met een wachtwoordwaarde van `OpenPassword`. Het primaire wachtwoord is `PermissionPassword` . Het beveiligde document van PDF wordt bewaard als dossier van PDF genoemd *EncryptLoan.pdf*. (Zie [ Coderend de Documenten van PDF met een Wachtwoord ](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Het volgende Java™ codevoorbeeld codeert een document van PDF genoemd *Loan.pdf* met een wachtwoordwaarde van `OpenPassword`. Het primaire wachtwoord is `PermissionPassword` . Het beveiligde document van PDF wordt bewaard als dossier van PDF genoemd *EncryptLoan.pdf*. (Zie [&#x200B; Coderend de Documenten van PDF met een Wachtwoord &#x200B;](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 ```java
  /*
@@ -160,7 +160,7 @@ Het volgende Java™ codevoorbeeld codeert een document van PDF genoemd *Loan.pd
 
 ## Snel starten (SOAP-modus): codering op basis van wachtwoord verwijderen met de Java™ API {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld verwijdert op wachtwoord-gebaseerde encryptie uit een document van PDF genoemd *EncryptLoan.pdf*. De primaire wachtwoordwaarde die wordt gebruikt om op wachtwoord-gebaseerde encryptie te verwijderen is *PermissionPassword*. Het onbeveiligde document van PDF wordt bewaard als dossier van PDF genoemd *noEncryptionLoan.pdf*. (Zie [ het Verwijderen van de Encryptie van het Wachtwoord ](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
+Het volgende Java™ codevoorbeeld verwijdert op wachtwoord-gebaseerde encryptie uit een document van PDF genoemd *EncryptLoan.pdf*. De primaire wachtwoordwaarde die wordt gebruikt om op wachtwoord-gebaseerde encryptie te verwijderen is *PermissionPassword*. Het onbeveiligde document van PDF wordt bewaard als dossier van PDF genoemd *noEncryptionLoan.pdf*. (Zie [&#x200B; het Verwijderen van de Encryptie van het Wachtwoord &#x200B;](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
 ```java
  /*
@@ -257,7 +257,7 @@ Het volgende Java™ codevoorbeeld verwijdert op wachtwoord-gebaseerde encryptie
 
 ## Snel starten (SOAP-modus): Een PDF-document coderen met een certificaat met de Java™ API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld codeert een document van PDF genoemd *Loan.pdf* met een certificaat genoemd *Encryption.cer*. Het gecodeerde document van PDF wordt bewaard als dossier van PDF genoemd *EncryptLoanCert.pdf*. (Zie [ Coderend de Documenten van PDF met Certificaten ](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
+Het volgende Java™ codevoorbeeld codeert een document van PDF genoemd *Loan.pdf* met een certificaat genoemd *Encryption.cer*. Het gecodeerde document van PDF wordt bewaard als dossier van PDF genoemd *EncryptLoanCert.pdf*. (Zie [&#x200B; Coderend de Documenten van PDF met Certificaten &#x200B;](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
 ```java
  /*
@@ -386,7 +386,7 @@ Het volgende Java™ codevoorbeeld codeert een document van PDF genoemd *Loan.pd
 
 ## Snel starten (SOAP-modus): codering op basis van certificaten verwijderen met de Java™ API {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld verwijdert op certificaat-gebaseerde encryptie uit een document van PDF genoemd *EncryptLoanCert.pdf*. De alias van de openbare sleutel die wordt gebruikt om encryptie te verwijderen is `Encryption`. Het onbeveiligde document van PDF wordt bewaard als dossier van PDF genoemd *noEncryptionLoan.pdf*. (Zie [ het Verwijderen van Certificaat Gebaseerde Encryptie ](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
+Het volgende Java™ codevoorbeeld verwijdert op certificaat-gebaseerde encryptie uit een document van PDF genoemd *EncryptLoanCert.pdf*. De alias van de openbare sleutel die wordt gebruikt om encryptie te verwijderen is `Encryption`. Het onbeveiligde document van PDF wordt bewaard als dossier van PDF genoemd *noEncryptionLoan.pdf*. (Zie [&#x200B; het Verwijderen van Certificaat Gebaseerde Encryptie &#x200B;](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 
 ```java
  /*
@@ -483,7 +483,7 @@ Het volgende Java™ codevoorbeeld verwijdert op certificaat-gebaseerde encrypti
 
 ## Snel starten (SOAP-modus): Een gecodeerd PDF-document ontgrendelen met de Java™ API {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld ontgrendelt een wachtwoord-gecodeerd document van PDF genoemd *EncryptLoan.pdf*. (Zie [ Versleutelde documenten van PDF ontgrendelen ](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
+Het volgende Java™ codevoorbeeld ontgrendelt een wachtwoord-gecodeerd document van PDF genoemd *EncryptLoan.pdf*. (Zie [&#x200B; Versleutelde documenten van PDF ontgrendelen &#x200B;](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -579,7 +579,7 @@ Het volgende Java™ codevoorbeeld ontgrendelt een wachtwoord-gecodeerd document
 
 ## Snel starten (SOAP-modus): coderingstype bepalen met de Java™ API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld bepaalt het type van encryptie dat een document van PDF genoemd *EncryptLoan.pdf* beschermt. (Zie [ Bepalend Type van Encryptie ](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
+Het volgende Java™ codevoorbeeld bepaalt het type van encryptie dat een document van PDF genoemd *EncryptLoan.pdf* beschermt. (Zie [&#x200B; Bepalend Type van Encryptie &#x200B;](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
 ```java
  /*

@@ -30,7 +30,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de API met sterk g
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM forms is gebaseerd op de Forms Server die op JBoss® en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM forms is gebaseerd op de Forms Server die op JBoss® en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de API met sterk g
 
 ## Snel starten (SOAP-modus): referenties importeren met de Java™ API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-Het volgende codevoorbeeld voert een referentie in die op een dossier genoemd *wordt gebaseerd cred.p12*. De aliaswaarde die wordt gebruikt om de referentie te importeren, is `Secure` . (Zie [ het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken ](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+Het volgende codevoorbeeld voert een referentie in die op een dossier genoemd *wordt gebaseerd cred.p12*. De aliaswaarde die wordt gebruikt om de referentie te importeren, is `Secure` . (Zie [&#x200B; het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken &#x200B;](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -139,7 +139,7 @@ Het volgende codevoorbeeld voert een referentie in die op een dossier genoemd *w
 
 ## Snel starten (SOAP-modus): referenties verwijderen met de Java™ API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-Het volgende codevoorbeeld schrapt een referentie die op een aliaswaarde *wordt gebaseerd veilige*. (Zie [ Deleting Credentials door de Manager API van het Vertrouwen te gebruiken ](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+Het volgende codevoorbeeld schrapt een referentie die op een aliaswaarde *wordt gebaseerd veilige*. (Zie [&#x200B; Deleting Credentials door de Manager API van het Vertrouwen te gebruiken &#x200B;](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*

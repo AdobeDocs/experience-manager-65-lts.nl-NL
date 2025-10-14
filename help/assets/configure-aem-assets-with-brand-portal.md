@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 Met Adobe Experience Manager Assets Brand Portal kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets naar Brand Portal publiceren en deze aan de Brand Portal-gebruikers distribueren.
@@ -68,15 +68,15 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 Het wordt aanbevolen om AEM 6.5 LTS te hebben om een AEM Author-instantie in te stellen. Als AEM niet actief is, kunt u het downloaden van de volgende locaties:
 
-* Als u een bestaande klant van AEM bent, download AEM 6.5 LTS van de [ Adobe Vergunnende website ](https://licensing.adobe.com).
+* Als u een bestaande klant van AEM bent, download AEM 6.5 LTS van de [&#x200B; Adobe Vergunnende website &#x200B;](https://licensing.adobe.com).
 
-* Als u een partner van Adobe bent, gebruik het [ Programma van de Opleiding van de Partner van Adobe ](https://solutionpartners.adobe.com/) om AEM 6.5 te verzoeken.
+* Als u een partner van Adobe bent, gebruik het [&#x200B; Programma van de Opleiding van de Partner van Adobe &#x200B;](https://solutionpartners.adobe.com/) om AEM 6.5 te verzoeken.
 
-Nadat u AEM downloadt, voor instructies aan opstelling een instantie van de Auteur van AEM, zie [ het opstellen en het handhaven ](/help/sites-deploying/deploy.md#default-local-install).
+Nadat u AEM downloadt, voor instructies aan opstelling een instantie van de Auteur van AEM, zie [&#x200B; het opstellen en het handhaven &#x200B;](/help/sites-deploying/deploy.md#default-local-install).
 
 ### Download en installeer AEM latest Service Pack {#servicepack}
 
-Voor gedetailleerde instructies, zie huidige [ AEM 6.5 de Nota&#39;s van de Versie van het Pak van de Dienst van LTS ](/help/release-notes/release-notes.md).
+Voor gedetailleerde instructies, zie huidige [&#x200B; AEM 6.5 de Nota&#39;s van de Versie van het Pak van de Dienst van LTS &#x200B;](/help/release-notes/release-notes.md).
 
 **contacteer de Klantenondersteuning van Adobe** als u niet het recentste pakket van AEM of Service Pack kunt vinden.
 
@@ -118,11 +118,11 @@ Voer de volgende stappen in de opgegeven reeks uit om Experience Manager Assets 
 
 #### De OAuth-referenties configureren in de Adobe Developer Console {#config-oauth}
 
-[ vorm de geloofsbrieven OAuth in Adobe Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) en selecteer Brand Portal API.
+[&#x200B; vorm de geloofsbrieven OAuth in Adobe Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) en selecteer Brand Portal API.
 
 #### Nieuwe Adobe IMS-integratie maken met OAuth {#create-ims-account-configuration}
 
-[ creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth ](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) en selecteer Brand Portal van de drop down.
+[&#x200B; creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) en selecteer Brand Portal van de drop down.
 
 #### Cloudservice configureren {#configure-cloud-service}
 
@@ -310,17 +310,17 @@ To configure the IMS account:
 
 1. Meld u aan bij uw AEM Assets Author-exemplaar.
 
-1. Van **Hulpmiddelen** ![ ](assets/do-not-localize/tools.png) paneel van Hulpmiddelen, navigeer aan **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. Van **Hulpmiddelen** ![&#x200B; &#x200B;](assets/do-not-localize/tools.png) paneel van Hulpmiddelen, navigeer aan **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Klik op **[!UICONTROL Create]** op de pagina Brand Portal Configurations.
 
 1. Geef een **[!UICONTROL Title]** op voor de configuratie.
 
-   Selecteer de configuratie IMS die u terwijl [ het vormen van de rekening IMS ](#create-ims-account-configuration) hebt gecreeerd.
+   Selecteer de configuratie IMS die u terwijl [&#x200B; het vormen van de rekening IMS &#x200B;](#create-ims-account-configuration) hebt gecreeerd.
 
    Geef in het veld **[!UICONTROL Service URL]** de URL van de Brand Portal-huurder (organisatie) op.
 
-   ![ het venster van de Configuratie van Brand Portal ](assets/create-cloud-service.png)
+   ![&#x200B; het venster van de Configuratie van Brand Portal &#x200B;](assets/create-cloud-service.png)
 
 1. Klik op **[!UICONTROL Save & Close]**. De cloudconfiguratie wordt gemaakt.
 

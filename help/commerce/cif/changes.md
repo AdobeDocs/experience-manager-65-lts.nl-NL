@@ -36,7 +36,7 @@ Het eindpunt wordt gevormd via console OSGi.
 
 ## Invoering van het CIF-project van Venia
 
-Project beschikbaar op [ GitHub AEM Guides - CIF Venia Project ](https://github.com/adobe/aem-cif-guides-venia) en plaatsing die via de Manager van het Pakket van AEM wordt gedaan.
+Project beschikbaar op [&#x200B; GitHub AEM Guides - CIF Venia Project &#x200B;](https://github.com/adobe/aem-cif-guides-venia) en plaatsing die via de Manager van het Pakket van AEM wordt gedaan.
 
 **Vorige versies van CIF**
 
@@ -60,4 +60,4 @@ AEM geeft de ervaringen met productcatalogi direct weer met AEM-catalogussjablon
 
 >[!NOTE]
 >
->Voor extra documentatie op hoe te om CIF met AEM te gebruiken Beheerde Dienst of AEM op-Premise, zie [ Commerce integration framework ](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Voor extra documentatie op hoe te om CIF met AEM te gebruiken Beheerde Dienst of AEM op-Premise, zie [&#x200B; Commerce integration framework &#x200B;](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)

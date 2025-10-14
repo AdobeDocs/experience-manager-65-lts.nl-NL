@@ -27,14 +27,14 @@ AEM 6.5 LTS bevat belangrijke beveiligings- en stabiliteitsupdates, waaronder on
 ## Zullen mijn bestaande aanpassingen en integraties worden beïnvloed als ik aan AEM 6.5 LTS upgrade?
 
 Hoewel AEM 6.5 LTS de achterwaartse compatibiliteit beoogt te behouden, zijn sommige oudere kenmerken en artefacten verwijderd.
-Het is essentieel om de [ versienota&#39;s ](/help/release-notes/release-notes.md#deprecated-and-removed-features) te herzien en het [ hulpmiddel van de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) te gebruiken om het effect op uw aanpassingen en integratie te beoordelen.
+Het is essentieel om de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes.md#deprecated-and-removed-features) te herzien en het [&#x200B; hulpmiddel van de Analysator van AEM &#x200B;](/help/sites-deploying/aem-analyzer.md) te gebruiken om het effect op uw aanpassingen en integratie te beoordelen.
 
 ## Hoe kan ik zorgen voor een soepele overgang naar AEM 6.5 LTS?
 
 Om een vloeiende overgang te garanderen, wordt aanbevolen:
 
-* Herzie de [ versienota&#39;s ](/help/release-notes/release-notes.md) en documentatie grondig.
-* Gebruik het [ hulpmiddel van de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) om de ingewikkeldheid van de verbetering te beoordelen.
+* Herzie de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes.md) en documentatie grondig.
+* Gebruik het [&#x200B; hulpmiddel van de Analysator van AEM &#x200B;](/help/sites-deploying/aem-analyzer.md) om de ingewikkeldheid van de verbetering te beoordelen.
 * Plan en wijs voldoende tijd en middelen voor het verbeteringsproces toe.
 * Neem voor hulp en hulp contact op met Adobe-ondersteuning en -activering.
 
@@ -44,12 +44,12 @@ AEM 6.5 LTS-servicepacks zijn een cumulatieve update die alle correcties en verb
 
 ## Ik ben momenteel op AEM 6.5. Kan ik rechtstreeks upgraden naar AEM 6.5 LTS Service Pack zonder een upgrade naar AEM 6.5 LTS GA uit te voeren?
 
-Ja, u kunt rechtstreeks upgraden van AEM 6.5 naar een AEM 6.5 LTS Service Pack. Het wordt geadviseerd om de [ versienota&#39;s ](/help/release-notes/release-notes.md) en [ te herzien Bevorderend aan AEM 6.5 LTS ](/help/sites-deploying/upgrade.md) sectie.
+Ja, u kunt rechtstreeks upgraden van AEM 6.5 naar een AEM 6.5 LTS Service Pack. Het wordt geadviseerd om de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes.md) en [&#x200B; te herzien Bevorderend aan AEM 6.5 LTS &#x200B;](/help/sites-deploying/upgrade.md) sectie.
 
 ## Ik ben momenteel op AEM 6.5 LTS GA, moet ik om het even welke codeveranderingen aanbrengen om aan AEM 6.5 LTS de Packs van de Dienst te bevorderen?
 
-Nee, u hoeft geen code te wijzigen om een upgrade uit te voeren van AEM 6.5 LTS naar AEM 6.5 LTS Service Packs. Nochtans, wordt het altijd geadviseerd om de [ versienota&#39;s ](/help/release-notes/release-notes.md) te herzien en uw aanpassingen en integratie in een het opvoeren milieu te testen alvorens het de dienstpak op uw productieinstantie toe te passen.
+Nee, u hoeft geen code te wijzigen om een upgrade uit te voeren van AEM 6.5 LTS naar AEM 6.5 LTS Service Packs. Nochtans, wordt het altijd geadviseerd om de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes.md) te herzien en uw aanpassingen en integratie in een het opvoeren milieu te testen alvorens het de dienstpak op uw productieinstantie toe te passen.
 
 ## Ik wil vers beginnen met een nieuwe AEM 6.5 LTS setup. Kan ik direct beginnen met AEM 6.5 LTS Service Pack?
 
-Ja, u kunt rechtstreeks een nieuw AEM 6.5 LTS Service Pack instellen zonder de AEM 6.5 LTS GA-build in te stellen. Het wordt geadviseerd om de [ versienota&#39;s ](/help/release-notes/release-notes.md) te herzien en [ Standalone van de Douane installeert ](/help/sites-deploying/custom-standalone-install.md) sectie voor meer details.
+Ja, u kunt rechtstreeks een nieuw AEM 6.5 LTS Service Pack instellen zonder de AEM 6.5 LTS GA-build in te stellen. Het wordt geadviseerd om de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes.md) te herzien en [&#x200B; Standalone van de Douane installeert &#x200B;](/help/sites-deploying/custom-standalone-install.md) sectie voor meer details.

@@ -37,11 +37,11 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >
 >Voor informatie over:
 >
->* Deelnemend aan werkschema&#39;s, zie [ Gebruikend Werkschema&#39;s ](/help/sites-authoring/workflows.md).
->* Het beheren van werkschema&#39;s en werkschemainstanties, zie [ het Beheer Werkschema&#39;s ](/help/sites-administering/workflows.md).
->* Voor een Communautair artikel van begin tot eind, zie [ Wijzigend Digitale Assets gebruikend de Workflows van Adobe Experience Manager.](/help/assets/assets-workflow.md).
->* Zie [ vragen de Deskundigen van AEM Webinar op Werkschema&#39;s ](https://communities.adobeconnect.com/p5s33iburd54/).
->* De veranderingen in de plaatsen van informatie, zie [ Beste praktijken van het Werkschema - Punten ](/help/sites-developing/workflows-best-practices.md#locations).
+>* Deelnemend aan werkschema&#39;s, zie [&#x200B; Gebruikend Werkschema&#39;s &#x200B;](/help/sites-authoring/workflows.md).
+>* Het beheren van werkschema&#39;s en werkschemainstanties, zie [&#x200B; het Beheer Werkschema&#39;s &#x200B;](/help/sites-administering/workflows.md).
+>* Voor een Communautair artikel van begin tot eind, zie [&#x200B; Wijzigend Digitale Assets gebruikend de Workflows van Adobe Experience Manager.](/help/assets/assets-workflow.md).
+>* Zie [&#x200B; vragen de Deskundigen van AEM Webinar op Werkschema&#39;s &#x200B;](https://communities.adobeconnect.com/p5s33iburd54/).
+>* De veranderingen in de plaatsen van informatie, zie [&#x200B; Beste praktijken van het Werkschema - Punten &#x200B;](/help/sites-developing/workflows-best-practices.md#locations).
 
 ## Model {#model}
 
@@ -51,13 +51,13 @@ Een `WorkflowModel` vertegenwoordigt een definitie (model) van een workflow. Het
 
 Workflowmodellen hebben een versienummer. Wanneer u een werkstroominstantie uitvoert, wordt het runtimemodel van de werkstroom gebruikt en bewaard, zoals beschikbaar op het moment dat de werkstroom werd gestart.
 
-Een runtime model wordt [ geproduceerd wanneer **Synchronisatie** in de redacteur van het werkschemamodel ](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model) wordt teweeggebracht.
+Een runtime model wordt [&#x200B; geproduceerd wanneer **Synchronisatie** in de redacteur van het werkschemamodel &#x200B;](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model) wordt teweeggebracht.
 
 Bewerk aan het werkschemamodel dat voorkomt, of runtime modellen die, of allebei worden geproduceerd, *nadat* de specifieke instantie was begonnen niet op die instantie wordt toegepast.
 
 >[!CAUTION]
 >
->De uitgevoerde stappen worden bepaald door het [ runtime model ](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model), dat tegelijkertijd wordt geproduceerd de **actie van de Synchronisatie** in de werkschemamodeleditor wordt teweeggebracht.
+>De uitgevoerde stappen worden bepaald door het [&#x200B; runtime model &#x200B;](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model), dat tegelijkertijd wordt geproduceerd de **actie van de Synchronisatie** in de werkschemamodeleditor wordt teweeggebracht.
 >
 >Als het werkschemamodel na dit punt in tijd (zonder **Synchronisatie** wordt veranderd die) wordt teweeggebracht, dan wijst de runtime instantie niet op die veranderingen. Alleen runtimemodellen die na de update worden gegenereerd, weerspiegelen de wijzigingen. De uitzonderingen zijn de onderliggende ECMA-scripts, die slechts eenmaal worden bijgehouden zodat deze wijzigingen worden doorgevoerd.
 
@@ -118,7 +118,7 @@ Elke gebruikersaccount heeft zijn eigen workflow-inbox waarin de toegewezen `Wor
 
 Er zijn verschillende typen werkstromen die worden aangegeven in de console Workflowmodellen:
 
-![ wf-upgrade-03 ](assets/wf-upgraded-03.png)
+![&#x200B; wf-upgrade-03 &#x200B;](assets/wf-upgraded-03.png)
 
 * **Gebrek**
 
@@ -145,7 +145,7 @@ Er zijn tijdelijke workflows geïntroduceerd voor het laden van vele elementen, 
 
 >[!NOTE]
 >
->Zie [ Creërend een Voorbijgaande Werkschema ](/help/sites-developing/workflows-models.md#creating-a-transient-workflow) voor verdere details.
+>Zie [&#x200B; Creërend een Voorbijgaande Werkschema &#x200B;](/help/sites-developing/workflows-models.md#creating-a-transient-workflow) voor verdere details.
 
 >[!CAUTION]
 >
@@ -166,7 +166,7 @@ Er zijn tijdelijke workflows geïntroduceerd voor het laden van vele elementen, 
 
 >[!NOTE]
 >
->Zie [ Beste praktijken voor Assets ](/help/assets/performance-tuning-guidelines.md#transient-workflows) voor verdere informatie over hoe de Transiente Workflows de prestaties van Activa beïnvloeden.
+>Zie [&#x200B; Beste praktijken voor Assets &#x200B;](/help/assets/performance-tuning-guidelines.md#transient-workflows) voor verdere informatie over hoe de Transiente Workflows de prestaties van Activa beïnvloeden.
 
 ### Ondersteuning voor meerdere bronnen {#multi-resource-support}
 
@@ -176,7 +176,7 @@ Als **de MultiSteun van het Middel** niet voor uw werkschemamodel wordt geactive
 
 >[!NOTE]
 >
->Zie [ Vormend een Werkschema voor de Steun van het Meerdere Middel ](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) voor verdere details.
+>Zie [&#x200B; Vormend een Werkschema voor de Steun van het Meerdere Middel &#x200B;](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) voor verdere details.
 
 ### Werkstroomfasen {#workflow-stages}
 
@@ -186,7 +186,7 @@ Aangezien de namen van de afzonderlijke stappen specifiek en technisch kunnen zi
 
 Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
 
-1. U kunt [ de Staven van het Werkschema (die de Voortgang van het Werkschema tonen) vormen en dan het aangewezen stadium aan elke stap in uw werkschema toewijzen ](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
+1. U kunt [&#x200B; de Staven van het Werkschema (die de Voortgang van het Werkschema tonen) vormen en dan het aangewezen stadium aan elke stap in uw werkschema toewijzen &#x200B;](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
 
    * U kunt meerdere werkgebiednamen maken.
    * Vervolgens wordt aan elke stap een afzonderlijke werkgebiednaam toegewezen (een werkgebiednaam kan aan een of meer stappen worden toegewezen).
@@ -200,14 +200,14 @@ Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
    | Stap 5 | Voltooid |
    | Stap 6 | Voltooid |
 
-1. Wanneer de workflow wordt uitgevoerd, kan de gebruiker de voortgang bekijken op basis van de namen van het werkgebied (in plaats van de namen van de stappen). De werkschemavooruitgang wordt getoond in het [ lusje van de INFO van de WORKFLOW van het venster van taakdetails van het werkschemapunt ](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) dat in [ wordt vermeld Inbox ](/help/sites-authoring/inbox.md).
+1. Wanneer de workflow wordt uitgevoerd, kan de gebruiker de voortgang bekijken op basis van de namen van het werkgebied (in plaats van de namen van de stappen). De werkschemavooruitgang wordt getoond in het [&#x200B; lusje van de INFO van de WORKFLOW van het venster van taakdetails van het werkschemapunt &#x200B;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) dat in [&#x200B; wordt vermeld Inbox &#x200B;](/help/sites-authoring/inbox.md).
 
 ### Workflows en Forms {#workflows-and-forms}
 
-Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan met de [ kerncomponenten zijn componenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=nl-NL) beschikbaar in een standaardinstantie van AEM, of met de [ oplossing van AEM Forms ](/help/forms/using/aem-forms-workflow.md).
+Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan met de [&#x200B; kerncomponenten zijn componenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=nl-NL) beschikbaar in een standaardinstantie van AEM, of met de [&#x200B; oplossing van AEM Forms &#x200B;](/help/forms/using/aem-forms-workflow.md).
 
 Bij het maken van een formulier kan het verzenden van het formulier eenvoudig worden gekoppeld aan een workflowmodel. Bijvoorbeeld om de inhoud op een bepaalde locatie van de gegevensopslagruimte op te slaan of om een gebruiker op de hoogte te stellen van het verzenden van het formulier en de inhoud ervan.
 
 ### Workflows en vertaling {#workflows-and-translation}
 
-De werkschema&#39;s zijn ook een deel van het [ Vertaal ](/help/sites-administering/translation.md) proces.
+De werkschema&#39;s zijn ook een deel van het [&#x200B; Vertaal &#x200B;](/help/sites-administering/translation.md) proces.

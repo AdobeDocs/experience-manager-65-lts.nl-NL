@@ -20,13 +20,13 @@ ht-degree: 0%
 
 Voor het ontwikkelen van JCR-, Apache Sling- of Adobe Experience Manager-toepassingen (AEM) zijn de volgende gereedschapssets beschikbaar:
 
-* één reeks die uit [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md) en WebDAV bestaat. CRXDE Lite is ingesloten in CRX/AEM en biedt u de mogelijkheid om standaard ontwikkelingstaken uit te voeren in de browser. Met CRXDE Lite kunt u bestanden (zoals .jsp en .java), mappen, sjablonen, componenten, dialoogvensters, knooppunten, eigenschappen en bundels maken en bewerken terwijl u zich aanmeldt en integreert met SVN.
+* één reeks die uit [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md) en WebDAV bestaat. CRXDE Lite is ingesloten in CRX/AEM en biedt u de mogelijkheid om standaard ontwikkelingstaken uit te voeren in de browser. Met CRXDE Lite kunt u bestanden (zoals .jsp en .java), mappen, sjablonen, componenten, dialoogvensters, knooppunten, eigenschappen en bundels maken en bewerken terwijl u zich aanmeldt en integreert met SVN.
 
   CRXDE Lite wordt aanbevolen wanneer u geen directe toegang hebt tot de CRX/AEM-server, wanneer u een toepassing ontwikkelt door de componenten en Java™-bundels buiten de box uit te breiden of te wijzigen of wanneer u geen speciale foutopsporing, codevoltooiing en syntaxismarkering nodig hebt.
 
 * één stel bestaande uit:
-   * Een geïntegreerde ontwikkelomgeving. Bijvoorbeeld, [ Verduistering ](/help/sites-developing/howto-projects-eclipse.md) of [ IntelliJ ](/help/sites-developing/ht-intellij.md).
-   * Een bouwstijlhulpmiddel. Bijvoorbeeld, [ Apache Maven ](/help/sites-developing/ht-projects-maven.md).
+   * Een geïntegreerde ontwikkelomgeving. Bijvoorbeeld, [&#x200B; Verduistering &#x200B;](/help/sites-developing/howto-projects-eclipse.md) of [&#x200B; IntelliJ &#x200B;](/help/sites-developing/ht-intellij.md).
+   * Een bouwstijlhulpmiddel. Bijvoorbeeld, [&#x200B; Apache Maven &#x200B;](/help/sites-developing/ht-projects-maven.md).
    * FileVault die door Adobe is ontwikkeld om een opslagplaats toe te wijzen aan een bestandssysteem, een versiecontrolesysteem. Bijvoorbeeld Subversion.
    * Een systeem voor foutopsporing. Bijvoorbeeld Jira.
    * Een centraal systeem voor afhankelijkheidsbeheer. Bijvoorbeeld Apache Archiva.
@@ -58,10 +58,10 @@ AEM wordt geleverd met andere instrumenten die de ontwikkeling bevorderen:
 
 Instrumenten die het opzetten van nieuwe projecten vergemakkelijken:
 
-* [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype)
-* [ de Malplaatjes van AEM Lazybones ](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
+* [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype)
+* [&#x200B; de Malplaatjes van AEM Lazybones &#x200B;](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]
 >
 >De volgende zelfstudie kan van belang zijn voor het starten van een nieuw AEM-project:
->[Aan de slag met AEM Sites Deel 1 - de Opstelling van het Project ](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>[Aan de slag met AEM Sites Deel 1 - de Opstelling van het Project &#x200B;](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)

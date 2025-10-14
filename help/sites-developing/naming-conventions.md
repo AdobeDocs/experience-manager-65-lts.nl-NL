@@ -18,14 +18,14 @@ ht-degree: 0%
 
 # Naamgevingsconventies {#naming-conventions}
 
-De knopen in de bewaarplaats zijn onderworpen aan noemende overeenkomsten van de [ Bewaarplaats van de Inhoud van Java ](/help/sites-developing/the-basics.md#java-content-repository). AEM stelt echter andere conventies voor de naam van paginaknooppunten op.
+De knopen in de bewaarplaats zijn onderworpen aan noemende overeenkomsten van de [&#x200B; Bewaarplaats van de Inhoud van Java &#x200B;](/help/sites-developing/the-basics.md#java-content-repository). AEM stelt echter andere conventies voor de naam van paginaknooppunten op.
 
 ## Naamgevingsconventies voor pagina&#39;s {#naming-conventions-for-pages}
 
 Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
-* JcrUtil: de implementatie van AEM van de [ nut JCR ](#jcr-utilities).
-* PageManager: de [ Manager van de Pagina ](#page-manager) verstrekt methodes voor de verrichtingen van het paginaniveau.
+* JcrUtil: de implementatie van AEM van de [&#x200B; nut JCR &#x200B;](#jcr-utilities).
+* PageManager: de [&#x200B; Manager van de Pagina &#x200B;](#page-manager) verstrekt methodes voor de verrichtingen van het paginaniveau.
 * Volgens de interface die wordt gebruikt:
 
    * [Standaardinterface met aanraakbediening](#standard-ui)
@@ -33,7 +33,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### JCR-hulpprogramma&#39;s {#jcr-utilities}
 
-[ JcrUtil ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) is de implementatie van AEM van de nut JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
+[&#x200B; JcrUtil &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) is de implementatie van AEM van de nut JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
 
 * `isValidName`
 
@@ -47,7 +47,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### Paginabeheer {#page-manager}
 
-[ PageManager ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html) verstrekt methodes voor de verrichtingen van het paginaniveau, die op [ worden gebaseerd JCRUtil ](#jcr-utilities).
+[&#x200B; PageManager &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html) verstrekt methodes voor de verrichtingen van het paginaniveau, die op [&#x200B; worden gebaseerd JCRUtil &#x200B;](#jcr-utilities).
 
 ### Standaardinterface {#standard-ui}
 

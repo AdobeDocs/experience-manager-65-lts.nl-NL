@@ -31,11 +31,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de API met sterk g
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het Forms server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het Forms server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java past gebruiksrechten op een document van PDF toe genoemd *Loan.pdf*. Het recht-toegelaten document van PDF wordt bewaard als dossier van PDF genoemd *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn` en `enabledDigitalSignatures` . (Zie [ Toepassend de Rechten van het Gebruik op PDF Documenten ](/help/forms/developing/assigning-usage-rights.md).)
+Het volgende de codevoorbeeld van Java past gebruiksrechten op een document van PDF toe genoemd *Loan.pdf*. Het recht-toegelaten document van PDF wordt bewaard als dossier van PDF genoemd *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn` en `enabledDigitalSignatures` . (Zie [&#x200B; Toepassend de Rechten van het Gebruik op PDF Documenten &#x200B;](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
@@ -147,7 +147,7 @@ Het volgende de codevoorbeeld van Java past gebruiksrechten op een document van 
 
 ## Snel starten (SOAP-modus): gebruiksrechten verwijderen uit een PDF-document met de Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java verwijdert gebruiksrechten uit een recht-Toegelaten document van PDF genoemd *LoanUsageRights.pdf*. (Zie [ het Verwijderen van de Rechten van het Gebruik van de Documenten van PDF ](/help/forms/developing/assigning-usage-rights.md).)
+Het volgende de codevoorbeeld van Java verwijdert gebruiksrechten uit een recht-Toegelaten document van PDF genoemd *LoanUsageRights.pdf*. (Zie [&#x200B; het Verwijderen van de Rechten van het Gebruik van de Documenten van PDF &#x200B;](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -247,7 +247,7 @@ Het volgende de codevoorbeeld van Java verwijdert gebruiksrechten uit een recht-
 
 ## Snel starten (SOAP-modus): referentie-informatie ophalen met de Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java wint informatie over de referentie terug die wordt gebruikt om gebruik-rechten op een recht-toegelaten document van PDF toe te passen genoemd *LoanUsageRights.pdf*. (Zie [ het terugwinnen van ReferentieInformatie ](/help/forms/developing/assigning-usage-rights.md).)
+Het volgende de codevoorbeeld van Java wint informatie over de referentie terug die wordt gebruikt om gebruik-rechten op een recht-toegelaten document van PDF toe te passen genoemd *LoanUsageRights.pdf*. (Zie [&#x200B; het terugwinnen van ReferentieInformatie &#x200B;](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 

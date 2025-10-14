@@ -54,7 +54,7 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 
-Synchronisatiefouten en -problemen worden aangemeld `error.log` (Experience Manager-servermap `/crx-quickstart/logs/` ). Het voldoende registreren is beschikbaar om de worteloorzaak van de meeste kwesties te bepalen, nochtans kunt u het registreren aan DEBUG op het `com.adobe.cq.dam.ips` pakket door de Verschuivende Console ([ https://localhost:4502/system/console/slinglog ](https://localhost:4502/system/console/slinglog)) verhogen om meer informatie te verzamelen.
+Synchronisatiefouten en -problemen worden aangemeld `error.log` (Experience Manager-servermap `/crx-quickstart/logs/` ). Het voldoende registreren is beschikbaar om de worteloorzaak van de meeste kwesties te bepalen, nochtans kunt u het registreren aan DEBUG op het `com.adobe.cq.dam.ips` pakket door de Verschuivende Console ([&#x200B; https://localhost:4502/system/console/slinglog &#x200B;](https://localhost:4502/system/console/slinglog)) verhogen om meer informatie te verzamelen.
 
 ### Verplaatsen, kopiëren, verwijderen {#move-copy-delete}
 
@@ -275,4 +275,4 @@ Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CS
 1. Verwijder de map `viewer` .
 1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de CRXDE Lite-pagina.
 1. In de upper-left hoek van de pagina van CRXDE Lite, selecteer het **Terug Home** pictogram.
-1. Maak opnieuw a [ Dynamische Configuratie van Media in de Diensten van de Wolk ](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+1. Maak opnieuw a [&#x200B; Dynamische Configuratie van Media in de Diensten van de Wolk &#x200B;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

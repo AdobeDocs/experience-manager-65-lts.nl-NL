@@ -28,7 +28,7 @@ Het configuratiebestand bevat de conversiegegevens van PDF Generator, zoals de P
 
 >[!NOTE]
 >
->U kunt de time-out-instelling voor PDF Generator niet wijzigen door een aangepast native2pdfconfig.xml-bestand te importeren. De time-out-instelling in dat bestand is alleen ter informatie en geeft de huidige instelling weer in PDF Generator. Om onderbreking te veranderen die, zie &quot;het Plaatsen van de prestatieparameters van PDF Generator&quot;in [ plaatst die en de vormen van AEM opstelt ](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>U kunt de time-out-instelling voor PDF Generator niet wijzigen door een aangepast native2pdfconfig.xml-bestand te importeren. De time-out-instelling in dat bestand is alleen ter informatie en geeft de huidige instelling weer in PDF Generator. Om onderbreking te veranderen die, zie &quot;het Plaatsen van de prestatieparameters van PDF Generator&quot;in [&#x200B; plaatst die en de vormen van AEM opstelt &#x200B;](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Het huidige configuratiebestand exporteren {#export-your-current-configuration-file}
 

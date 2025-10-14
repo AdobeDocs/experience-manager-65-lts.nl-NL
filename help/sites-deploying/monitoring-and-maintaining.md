@@ -25,15 +25,15 @@ Een belangrijke factor in dit verband is dat als u potentiële problemen wilt he
 
 | Controleren | Overwegingen | Opmerkingen / Handelingen |
 |---|---|---|
-| Back-upplan. |  | Zie hoe te [ file uw Instantie ](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
+| Back-upplan. |  | Zie hoe te [&#x200B; file uw Instantie &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
 | Rampenherstelplan. | De richtlijnen voor noodherstel van uw bedrijf. |  |
-| Er is een systeem voor foutcontrole beschikbaar voor het melden van problemen. | Bijvoorbeeld, [ Bugzilla ](https://www.bugzilla.org/), [ Jira ](https://www.atlassian.com/software/jira), of één van vele anderen. |  |
+| Er is een systeem voor foutcontrole beschikbaar voor het melden van problemen. | Bijvoorbeeld, [&#x200B; Bugzilla &#x200B;](https://www.bugzilla.org/), [&#x200B; Jira &#x200B;](https://www.atlassian.com/software/jira), of één van vele anderen. |  |
 | Bestandssystemen worden gecontroleerd. | De CRX-opslagplaats &quot;bevriest&quot; als er onvoldoende vrije schijfruimte is. Het wordt hervat nadat ruimte beschikbaar wordt. | De &quot; `*ERROR* LowDiskSpaceBlocker`&quot;berichten kunnen in het logboekdossier worden gezien wanneer de vrije ruimte laag wordt. |
-| [ de dossiers van het Logboek ](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
+| [&#x200B; de dossiers van het Logboek &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
 | Systeembewaking wordt (voortdurend) op de achtergrond uitgevoerd. | Inclusief CPU, geheugen, schijf en netwerkgebruik. Gebruik bijvoorbeeld iostat / vmstat / perfmon. | De geregistreerde gegevens worden visualiseerd en kunnen voor het volgen van prestatiesproblemen worden gebruikt. Onbewerkte gegevens zijn ook toegankelijk. |
-| [ de prestaties van AEM worden gecontroleerd ](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Omvat [ Tellers van het Verzoek ](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
-| U controleert uw [ Agenten van de Replicatie ](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
-| Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [ Regelmatige het Schrappen van de Instanties van het Werkschema ](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
+| [&#x200B; de prestaties van AEM worden gecontroleerd &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Omvat [&#x200B; Tellers van het Verzoek &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
+| U controleert uw [&#x200B; Agenten van de Replicatie &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
+| Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [&#x200B; Regelmatige het Schrappen van de Instanties van het Werkschema &#x200B;](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Back-ups {#backups}
 
@@ -70,7 +70,7 @@ Om deze taak te volbrengen, [maakt u een back-up van uw hele opslagplaats](#back
 
 >[!CAUTION]
 >
->Als u een toepassingsserver van derden gebruikt, bevinden de extra mappen zich mogelijk op een andere locatie en moet er ook een back-up van worden gemaakt. Zie [ hoe te om AEM met een Server van de Toepassing ](/help/sites-deploying/application-server-install.md) voor informatie te installeren over het installeren van toepassingsservers.
+>Als u een toepassingsserver van derden gebruikt, bevinden de extra mappen zich mogelijk op een andere locatie en moet er ook een back-up van worden gemaakt. Zie [&#x200B; hoe te om AEM met een Server van de Toepassing &#x200B;](/help/sites-deploying/application-server-install.md) voor informatie te installeren over het installeren van toepassingsservers.
 
 >[!CAUTION]
 >
@@ -82,9 +82,9 @@ Om deze taak te volbrengen, [maakt u een back-up van uw hele opslagplaats](#back
 
 ### Back-up maken van uw opslagplaats {#backing-up-your-repository}
 
-De [ reserve en herstelt ](/help/sites-administering/backup-and-restore.md) sectie van de documentatie van CRX behandelt alle kwesties met betrekking tot steunen van de bewaarplaats van CRX.
+De [&#x200B; reserve en herstelt &#x200B;](/help/sites-administering/backup-and-restore.md) sectie van de documentatie van CRX behandelt alle kwesties met betrekking tot steunen van de bewaarplaats van CRX.
 
-Voor volledige details van het maken van online &quot;hete&quot;steun, zie [ Creërend een Online Steun ](/help/sites-administering/backup-and-restore.md#online-backup).
+Voor volledige details van het maken van online &quot;hete&quot;steun, zie [&#x200B; Creërend een Online Steun &#x200B;](/help/sites-administering/backup-and-restore.md#online-backup).
 
 ## Versie leegmaken {#version-purging}
 
@@ -104,22 +104,22 @@ Ga als volgt te werk om versies van een website te wissen:
 
 1. Selecteer **+ toevoegen** van de hoogste toolbar.
 
-   ![ voeg de Woorden van de Versie toe ](assets/version-purge-add.png)
+   ![&#x200B; voeg de Woorden van de Versie toe &#x200B;](assets/version-purge-add.png)
 
 1. Selecteer **Woorden van de Versie** van de drop-down lijst in **Nieuwe Taak** dialoog toevoegen. Dan **sparen**.
 
-   ![ voeg de Woorden van de Versie toe ](assets/version-purge-add-new-task.png)
+   ![&#x200B; voeg de Woorden van de Versie toe &#x200B;](assets/version-purge-add-new-task.png)
 
 1. De **taak van de Woorden van 0&rbrace; Versie wordt toegevoegd.** Met de kaartacties kunt u:
    * Selecteren - hiermee worden extra acties op de bovenste werkbalk weergegeven
    * Uitvoeren - om de gevormde zuivering onmiddellijk in werking te stellen
    * Configureren - voor het configureren van de wekelijkse zuiveringstaak
 
-   ![ de Handelingen van de Woordenaar van de Versie ](assets/version-purge-actions.png)
+   ![&#x200B; de Handelingen van de Woordenaar van de Versie &#x200B;](assets/version-purge-actions.png)
 
 1. Selecteer **vormen** actie om de Console van het Web voor **de Taak van de WCM van de WCM van de Versie van de Dag te openen WCM**, waar u kunt vormen:
 
-   ![ Configuratie van het Wissen van de Versie ](assets/version-purge-configuration.png)
+   ![&#x200B; Configuratie van het Wissen van de Versie &#x200B;](assets/version-purge-configuration.png)
 
    * **Wis wegen**
 Stel het beginpad in van de inhoud die moet worden gewist, bijvoorbeeld `/content/wknd` .
@@ -150,7 +150,7 @@ Stel de maximale versiepagina in dagen in (voor elk knooppunt) die u wilt behoud
 
 >[!CAUTION]
 >
->U kunt de Klassieke dialoog gebruiken UI om a [ Dry Looppas ](#analyzing-the-console) van uw configuratie uit te voeren:
+>U kunt de Klassieke dialoog gebruiken UI om a [&#x200B; Dry Looppas &#x200B;](#analyzing-the-console) van uw configuratie uit te voeren:
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
@@ -224,13 +224,13 @@ Moderatiehandelingen worden hier geregistreerd.
    * `error.log`
 Foutberichten (van verschillende ernst) worden hier geregistreerd.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=nl-NL)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log` &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=nl-NL)
 Dit logbestand wordt alleen gebruikt als [!DNL Dynamic Media] is ingeschakeld. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
 
    * `request.log`
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=nl-NL)
+   * [`s7access-<yyyy>-<mm>-<dd>.log` &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=nl-NL)
 Dit logbestand wordt alleen gebruikt als [!DNL Dynamic Media] is ingeschakeld. In het s7access-logboek wordt elke aanvraag vastgelegd die aan [!DNL Dynamic Media] tot en met `/is/image` en `/is/content` is gedaan.
 
    * `stderr.log`
@@ -253,9 +253,9 @@ Informatie over Revisie-journalistiek.
 
 ### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
 
-Het standaardlogboekniveau ([ Apache die het Registreren van de Configuratie van het Logboekregistratie ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) registreert is Informatie, zodat zuiver berichten niet worden geregistreerd.
+Het standaardlogboekniveau ([&#x200B; Apache die het Registreren van de Configuratie van het Logboekregistratie &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) registreert is Informatie, zodat zuiver berichten niet worden geregistreerd.
 
-Om het debug logboekniveau voor een Logger te activeren, plaats het bezit `org.apache.sling.commons.log.level` om in de bewaarplaats te zuiveren. Bijvoorbeeld, op `/libs/sling/config/org.apache.sling.commons.log.LogManager` om het [ globale Loggen van het Sling van Apache te vormen ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
+Om het debug logboekniveau voor een Logger te activeren, plaats het bezit `org.apache.sling.commons.log.level` om in de bewaarplaats te zuiveren. Bijvoorbeeld, op `/libs/sling/config/org.apache.sling.commons.log.LogManager` om het [&#x200B; globale Loggen van het Sling van Apache te vormen &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
 >
@@ -279,12 +279,12 @@ De logniveaus zijn als volgt:
 
 >[!NOTE]
 >
->Wanneer het werken met Adobe Experience Manager, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>Wanneer het werken met Adobe Experience Manager, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 In bepaalde omstandigheden, kunt u een dossier van het douanelogboek met een verschillend logboekniveau willen tot stand brengen. Ga als volgt te werk in de opslagplaats:
 
 1. Als deze niet bestaat, maakt u een configuratiemap ( `sling:Folder` ) voor uw project `/apps/<project-name>/config` .
-1. Onder `/apps/<project-name>/config`, creeer een knoop voor de nieuwe [ Apache die Logger van het Registreren van de Registratie ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration) sloopt:
+1. Onder `/apps/<project-name>/config`, creeer een knoop voor de nieuwe [&#x200B; Apache die Logger van het Registreren van de Registratie &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration) sloopt:
 
    * Naam: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
@@ -383,7 +383,7 @@ In bepaalde omstandigheden, kunt u een dossier van het douanelogboek met een ver
    >
    >Als geen expliciete Schrijver wordt gevormd, produceert het systeem automatisch een impliciete Schrijver die op het gebrek wordt gebaseerd.
 
-   Onder `/apps/<project-name>/config`, creeer een knoop voor de nieuwe [ Apache die het Registreren van de Schrijver Configuratie van het Logboekregistratie ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
+   Onder `/apps/<project-name>/config`, creeer een knoop voor de nieuwe [&#x200B; Apache die het Registreren van de Schrijver Configuratie van het Logboekregistratie &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
    * Naam: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (een schrijver)
 
@@ -467,7 +467,7 @@ Er worden auditrecords bijgehouden om een overzicht te geven van wie wat heeft g
 1. Van sidekick kunt u het lusje met het slotpictogram selecteren, dan **Logboek van de Controle tweemaal klikken..**
 1. Er wordt een nieuw venster geopend met de lijst met auditrecords voor de huidige pagina.
 
-   ![ screen_shot_2012-02-02at43601pm ](assets/screen_shot_2012-02-02at43601pm.png)
+   ![&#x200B; screen_shot_2012-02-02at43601pm &#x200B;](assets/screen_shot_2012-02-02at43601pm.png)
 
 1. Klik **O.K.** wanneer u het venster wilt sluiten.
 
@@ -481,11 +481,11 @@ Deze vermeldingen bevatten dezelfde gegevens als bij het bewerken van een pagina
 
 De gebeurtenissen OSGi produceren ook controleverslagen die van het **lusje van de Status van de Configuratie** kunnen worden gezien **de Dossiers van het Logboek** tabel in de Console van het Web van AEM:
 
-![ screen_shot_2012-02-13at50346pm ](assets/screen_shot_2012-02-13at50346pm.png)
+![&#x200B; screen_shot_2012-02-13at50346pm &#x200B;](assets/screen_shot_2012-02-13at50346pm.png)
 
 ## Uw replicatieagents controleren {#monitoring-your-replication-agents}
 
-U kunt uw [ replicatierijen ](/help/sites-deploying/replication.md) controleren om te ontdekken wanneer een rij of neer of geblokkeerd is - die op zijn beurt op een probleem met een het publiceren instantie of extern systeem zouden kunnen wijzen:
+U kunt uw [&#x200B; replicatierijen &#x200B;](/help/sites-deploying/replication.md) controleren om te ontdekken wanneer een rij of neer of geblokkeerd is - die op zijn beurt op een probleem met een het publiceren instantie of extern systeem zouden kunnen wijzen:
 
 * zijn alle vereiste rijen ingeschakeld?
 * zijn om het even welke gehandicapte rijen nog vereist?
@@ -503,7 +503,7 @@ Om een replicatieagent te controleren:
 
 1. Klik de aangewezen agentennaam (die een verbinding is) om gedetailleerde informatie over die agent te tonen:
 
-   ![ chlimage_1 ](assets/chlimage_1.jpeg)
+   ![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.jpeg)
 
    Hier kunt u:
 
@@ -530,7 +530,7 @@ Ook hier kunt u een oplossing ontwikkelen om alle replicatieagents (die zich ond
 
 ## Monitorprestaties {#monitoring-performance}
 
-[ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) is een interactief proces dat nadruk tijdens ontwikkeling ontvangt. Na plaatsing, wordt het herzien na specifieke intervallen of gebeurtenissen.
+[&#x200B; Optimalisering van Prestaties &#x200B;](/help/sites-deploying/configuring-performance.md) is een interactief proces dat nadruk tijdens ontwikkeling ontvangt. Na plaatsing, wordt het herzien na specifieke intervallen of gebeurtenissen.
 
 Methoden die worden gebruikt bij het verzamelen van informatie voor optimalisatie kunnen ook worden gebruikt voor doorlopende bewaking.
 
@@ -673,7 +673,7 @@ Sommige van deze gereedschappen zijn afhankelijk van uw besturingssysteem.
 
 In dit bestand wordt basisinformatie geregistreerd over elk verzoek dat aan AEM wordt gedaan. Hieruit kunnen waardevolle conclusies worden getrokken.
 
-De `request.log` biedt een ingebouwde manier om te zien hoe lang verzoeken duren. Voor ontwikkelingsdoeleinden is het handig om `tail -f` de `request.log` te  en te controleren op langzame responstijden. Om groter te analyseren `request.log`, adviseert Adobe het [ gebruik van `rlog.jar` dat u voor reactietijden ](#using-rlog-jar-to-find-requests-with-long-duration-times) laat sorteren en filtreren.
+De `request.log` biedt een ingebouwde manier om te zien hoe lang verzoeken duren. Voor ontwikkelingsdoeleinden is het handig om `tail -f` de `request.log` te  en te controleren op langzame responstijden. Om groter te analyseren `request.log`, adviseert Adobe het [&#x200B; gebruik van `rlog.jar` dat u voor reactietijden &#x200B;](#using-rlog-jar-to-find-requests-with-long-duration-times) laat sorteren en filtreren.
 
 Adobe raadt aan om de &#39;trage&#39; pagina&#39;s te isoleren van `request.log` en ze vervolgens individueel af te stemmen voor betere prestaties. Prestatiewaarden per component opnemen of een hulpprogramma voor het maken van prestatieprofielen gebruiken, zoals ` [yourkit](https://www.yourkit.com/)` .
 
@@ -805,7 +805,7 @@ Plaats de afzonderlijke `request.log` -bestanden als u deze bewerking moet uitvo
 
 ### Apache Bench {#apache-bench}
 
-Om het effect van speciale gevallen (zoals huisvuilinzameling) te minimaliseren, wordt het geadviseerd om een hulpmiddel zoals `apachebench` (bijvoorbeeld, [ ab ](https://httpd.apache.org/docs/2.4/programs/ab.html) voor verdere documentatie) te gebruiken helpen geheugenlekken identificeren en responstijd selectief te analyseren.
+Om het effect van speciale gevallen (zoals huisvuilinzameling) te minimaliseren, wordt het geadviseerd om een hulpmiddel zoals `apachebench` (bijvoorbeeld, [&#x200B; ab &#x200B;](https://httpd.apache.org/docs/2.4/programs/ab.html) voor verdere documentatie) te gebruiken helpen geheugenlekken identificeren en responstijd selectief te analyseren.
 
 Apache Bench kan als volgt worden gebruikt:
 
@@ -874,7 +874,7 @@ In `apachebench` wordt ook de tijd per aanvraag als het gemiddelde weergegeven v
 
 ### Aanvraagtellers {#request-counters}
 
-De informatie over verzoekverkeer (aantal verzoeken tijdens een specifieke tijdspanne) geeft u een aanwijzing van de lading op uw geval. Deze informatie kan uit [ request.log ](#interpreting-the-request-log) worden gehaald, hoewel het gebruiken van tellers gegevensinzameling automatiseert om u te laten zien:
+De informatie over verzoekverkeer (aantal verzoeken tijdens een specifieke tijdspanne) geeft u een aanwijzing van de lading op uw geval. Deze informatie kan uit [&#x200B; request.log &#x200B;](#interpreting-the-request-log) worden gehaald, hoewel het gebruiken van tellers gegevensinzameling automatiseert om u te laten zien:
 
 * significante verschillen in activiteit ( d.w.z. onderscheid maken tussen &quot; veel verzoeken &quot; en &quot; lage activiteit &quot; )
 * wanneer een instantie niet wordt gebruikt
@@ -910,7 +910,7 @@ De gereedschapsopdracht `jconsole` is beschikbaar in de JDK.
 
 1. Dubbelklik vanuit de `Local` -toepassing op `com.day.crx.quickstart.Main` . Het overzicht wordt standaard weergegeven:
 
-   ![ chlimage_1-1 ](assets/chlimage_1-1.png)
+   ![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.png)
 
    Nu kunt u andere opties selecteren.
 
@@ -1064,9 +1064,9 @@ Hieronder volgt een lijst met suggesties voor het controleren of er bepaalde pre
 >
 >Zie ook de volgende artikelen voor meer informatie:
 >
->* [ Dempingsdumps ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL)
->* [ analyseer geheugenproblemen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL)
->* [ analyseert gebruikend ingebouwde analyse ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=nl-NL)
+>* [&#x200B; Dempingsdumps &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL)
+>* [&#x200B; analyseer geheugenproblemen &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL)
+>* [&#x200B; analyseert gebruikend ingebouwde analyse &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=nl-NL)
 >
 
 ### CPU op 100% {#cpu-at}
@@ -1083,10 +1083,10 @@ Als er onvoldoende geheugen beschikbaar is voor uw systeem, kunt u dit probleem 
 
 Controleer in deze gevallen:
 
-* De montages JVM die aan [ worden gebruikt beginnen AEM ](/help/sites-deploying/deploy.md#getting-started)
+* De montages JVM die aan [&#x200B; worden gebruikt beginnen AEM &#x200B;](/help/sites-deploying/deploy.md#getting-started)
 * De Knowledge Base:
 
-   * [ Analyseer de Problemen van het Geheugen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL)
+   * [&#x200B; Analyseer de Problemen van het Geheugen &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL)
 
 ### I/O schijf {#disk-i-o}
 
@@ -1101,10 +1101,10 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem, of als u merkt dat
    * [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Logboeken](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Of en hoe u [ het Opschonen van de Versie ](/help/sites-deploying/version-purging.md) hebt gevormd
+* Of en hoe u [&#x200B; het Opschonen van de Versie &#x200B;](/help/sites-deploying/version-purging.md) hebt gevormd
 * De Knowledge Base:
 
-   * [ Te veel open Dossiers ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=nl-NL)
+   * [&#x200B; Te veel open Dossiers &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=nl-NL)
 
 ### Regelmatige afbraak van prestaties {#regular-performance-degradation}
 

@@ -23,7 +23,7 @@ De manier waarop u uw dynamische media-elementen - zowel video als afbeeldingen 
 Met Dynamische media hebt u verschillende opties:
 
 * Als uw website wordt gehost op Adobe Experience Manager, wilt u de Dynamic Media-elementen rechtstreeks aan uw pagina toevoegen.
-* Als uw website niet op Experience Manager is, dan zie [ Dynamische activa van Media leveren ](/help/assets/delivering-dynamic-media-assets.md) in het touch-Toegelaten gebruikersinterface.
+* Als uw website niet op Experience Manager is, dan zie [&#x200B; Dynamische activa van Media leveren &#x200B;](/help/assets/delivering-dynamic-media-assets.md) in het touch-Toegelaten gebruikersinterface.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 

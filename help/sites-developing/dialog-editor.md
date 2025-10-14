@@ -22,11 +22,11 @@ De dialoogeditor biedt een grafische interface voor het eenvoudig maken en bewer
 
 Ga naar CRXDE Lite om te zien hoe het werkt: open de verkenner-structuur voor `/libs/foundation/components/chart` en dubbelklik op het knooppunt `dialog` :
 
-![ chlimage_1-247 ](assets/chlimage_1-247.png)
+![&#x200B; chlimage_1-247 &#x200B;](assets/chlimage_1-247.png)
 
 De dialoogknoop opent in de **dialoogredacteur**:
 
-![ screen_shot_2012-02-01at25033pm ](assets/screen_shot_2012-02-01at25033pm.png)
+![&#x200B; screen_shot_2012-02-01at25033pm &#x200B;](assets/screen_shot_2012-02-01at25033pm.png)
 
 ## Overzicht van gebruikersinterface {#user-interface-overview}
 

@@ -21,17 +21,17 @@ ht-degree: 0%
 
 De agenten van de replicatie zijn centraal aan Adobe Experience Manager (AEM) als mechanisme dat wordt gebruikt om:
 
-* [ publiceer (activeer) ](/help/sites-authoring/publishing-pages.md#activatingcontent) inhoud van een Auteur aan een Publish milieu.
+* [&#x200B; publiceer (activeer) &#x200B;](/help/sites-authoring/publishing-pages.md#activatingcontent) inhoud van een Auteur aan een Publish milieu.
 * Inhoud expliciet uit de Dispatcher-cache verwijderen.
 * Hiermee wordt gebruikersinvoer (bijvoorbeeld formulierinvoer) vanuit de publicatieomgeving teruggestuurd naar de auteur-omgeving (onder controle van de auteur-omgeving).
 
-De verzoeken worden [ een rij gevormd ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) aan de aangewezen agent voor verwerking.
+De verzoeken worden [&#x200B; een rij gevormd &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) aan de aangewezen agent voor verwerking.
 
 >[!NOTE]
 >
 >Gebruikersgegevens (gebruikers, gebruikersgroepen en gebruikersprofielen) worden niet gerepliceerd tussen auteur- en publicatieinstanties.
 >
->Voor veelvoudige publiceer instanties, worden de gebruikersgegevens verspreid wanneer [ de Synchronisatie van de Gebruiker ](/help/sites-administering/sync.md) wordt toegelaten.
+>Voor veelvoudige publiceer instanties, worden de gebruikersgegevens verspreid wanneer [&#x200B; de Synchronisatie van de Gebruiker &#x200B;](/help/sites-administering/sync.md) wordt toegelaten.
 
 ## Repliceren van auteur naar publicatie {#replicating-from-author-to-publish}
 
@@ -40,13 +40,13 @@ De replicatie, aan een Publish instantie of Dispatcher, vindt in verscheidene st
 * De auteur vraagt dat bepaalde inhoud wordt gepubliceerd (geactiveerd). Dit kan worden geïnitieerd door een handmatig verzoek of door automatische triggers die vooraf zijn geconfigureerd.
 * het verzoek wordt overgegaan tot de aangewezen standaard replicatieagent; een milieu kan verscheidene standaardagenten hebben die altijd voor dergelijke acties worden geselecteerd.
 * de replicatieagent &quot;verpakt&quot;de inhoud en plaatst het in de replicatierij.
-* in het lusje van Websites wordt de [ gekleurde statusindicator ](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus) geplaatst voor de individuele pagina&#39;s.
+* in het lusje van Websites wordt de [&#x200B; gekleurde statusindicator &#x200B;](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus) geplaatst voor de individuele pagina&#39;s.
 * de inhoud wordt opgeheven van de rij en aan het Publish milieu gebruikend het gevormde protocol vervoerd; gewoonlijk is dit HTTP.
 * een servlet in de Publish milieu ontvangt het verzoek en publiceert de ontvangen inhoud; het standaardservlet is `https://localhost:4503/bin/receive`.
 
 * Er kunnen meerdere auteur- en publicatieomgevingen worden geconfigureerd.
 
-![ chlimage_1-21 ](assets/chlimage_1-21.png)
+![&#x200B; chlimage_1-21 &#x200B;](assets/chlimage_1-21.png)
 
 ### Repliceren van Publiceren naar Auteur {#replicating-from-publish-to-author}
 
@@ -58,9 +58,9 @@ De omgekeerde replicatie gebruikt een agent in het Publish milieu dat verwijzing
 
 ### Replicatie - uit de doos {#replication-out-of-the-box}
 
-Creeer een pagina door [ te volgen Creërend en Organiserend Pagina&#39;s ](/help/sites-authoring/managing-pages.md).
+Creeer een pagina door [&#x200B; te volgen Creërend en Organiserend Pagina&#39;s &#x200B;](/help/sites-authoring/managing-pages.md).
 
-Om dit voorbeeld te volgen, en de standaardreplicatieagenten te gebruiken, [ installeert AEM ](/help/sites-deploying/deploy.md) met:
+Om dit voorbeeld te volgen, en de standaardreplicatieagenten te gebruiken, [&#x200B; installeert AEM &#x200B;](/help/sites-deploying/deploy.md) met:
 
 
 * de omgeving Auteur op de poort `4502`
@@ -85,7 +85,7 @@ De details van dit (configuratie en logboeken) kunnen van de console van Hulpmid
 >* Medewerkers op Publiceren: Reverse Replication (outbox)
 >
 >Om het statuut van of de agent of de rij te controleren, gebruik de **console van Hulpmiddelen**.
->Zie [ Controle uw Agenten van de Replicatie ](#monitoring-your-replication-agents).
+>Zie [&#x200B; Controle uw Agenten van de Replicatie &#x200B;](#monitoring-your-replication-agents).
 
 #### Replicatie (te publiceren auteur) {#replication-author-to-publish}
 
@@ -102,13 +102,13 @@ De details van dit (configuratie en logboeken) kunnen van de console van Hulpmid
 
 De volgende agents zijn beschikbaar in een standaard AEM-installatie:
 
-* [ StandaardAgent ](#replication-author-to-publish)
+* [&#x200B; StandaardAgent &#x200B;](#replication-author-to-publish)
 Wordt gebruikt voor het repliceren van Auteur naar Publiceren.
 
 * Dispatcher Flush
-Dit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [ het Invalideren van het Geheime voorgeheugen van Dispatcher van het Authoring Milieu ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-the-authoring-environment) en [ het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie.
+Dit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [&#x200B; het Invalideren van het Geheime voorgeheugen van Dispatcher van het Authoring Milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-the-authoring-environment) en [&#x200B; het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie.
 
-* [ Omgekeerde Replicatie ](#configuring-reverse-replication)
+* [&#x200B; Omgekeerde Replicatie &#x200B;](#configuring-reverse-replication)
 Wordt gebruikt voor het repliceren van Publiceren naar Auteur. Reverse-replicatie wordt niet gebruikt voor functies van Gemeenschappen, zoals forums, blogs en opmerkingen. De optie is in feite uitgeschakeld omdat de Postvak UIT niet is ingeschakeld. Het gebruik van omgekeerde replicatie zou douaneconfiguratie vereisen.
 
 * Statische agent
@@ -190,7 +190,7 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
 * **Alias update**
 
-  Als u deze optie selecteert, worden aanvragen voor validatie van aliassen of ijdelingspaden naar Dispatcher ingeschakeld. Ook, zie [ Vormend een Uitlijnende Agent van Dispatcher ](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+  Als u deze optie selecteert, worden aanvragen voor validatie van aliassen of ijdelingspaden naar Dispatcher ingeschakeld. Ook, zie [&#x200B; Vormend een Uitlijnende Agent van Dispatcher &#x200B;](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 #### Vervoer {#transport}
 
@@ -352,7 +352,7 @@ Van het lusje van Hulpmiddelen in het milieu van de Auteur, kunt u replicatieage
 
 >[!NOTE]
 >
->Wanneer een Dispatcher HTTP-aanvragen voor auteur- of publicatieinstanties afhandelt, moet de HTTP-aanvraag van de replicatieagent de PATH-header bevatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de lijst van Dispatcher van cliëntkopballen toevoegen. Zie [/clientheaders (de Kopballen van de Cliënt) ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-http-headers-to-pass-through-clientheaders).
+>Wanneer een Dispatcher HTTP-aanvragen voor auteur- of publicatieinstanties afhandelt, moet de HTTP-aanvraag van de replicatieagent de PATH-header bevatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de lijst van Dispatcher van cliëntkopballen toevoegen. Zie [/clientheaders (de Kopballen van de Cliënt) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Heb toegang tot het **lusje van Hulpmiddelen** in AEM.
@@ -361,9 +361,9 @@ Van het lusje van Hulpmiddelen in het milieu van de Auteur, kunt u replicatieage
 1. Klik de aangewezen agentennaam (die een verbinding) is om gedetailleerde informatie over die agent te tonen.
 1. Klik **uitgeven** zodat wordt de doos van de configuratiedialoog geopend:
 
-   ![ chlimage_1-22 ](assets/chlimage_1-22.png)
+   ![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-22.png)
 
-1. De opgegeven waarden moeten voldoende zijn voor een standaardinstallatie. Als u veranderingen aanbrengt, klik O.K. **om hen (zie [ de Agenten van de Replicatie - de Parameters van de Configuratie ](#replication-agents-configuration-parameters) voor informatie over individuele parameters) te bewaren.**
+1. De opgegeven waarden moeten voldoende zijn voor een standaardinstallatie. Als u veranderingen aanbrengt, klik O.K. **om hen (zie [&#x200B; de Agenten van de Replicatie - de Parameters van de Configuratie &#x200B;](#replication-agents-configuration-parameters) voor informatie over individuele parameters) te bewaren.**
 
 >[!NOTE]
 >
@@ -388,11 +388,11 @@ Hiervoor hebt u het volgende nodig:
 
 Als u omgekeerde replicatie wilt gebruiken, zorg ervoor dat deze agent wordt geactiveerd.
 
-![ chlimage_1-23 ](assets/chlimage_1-23.png)
+![&#x200B; chlimage_1-23 &#x200B;](assets/chlimage_1-23.png)
 
 **een omgekeerde replicatieagent in het Publish milieu (een outbox)** - het passieve element aangezien het als &quot;outbox&quot;dienst doet. De input van de gebruiker wordt hier geplaatst, van waar het door de agent in het milieu van de Auteur wordt verzameld.
 
-![ chlimage_1-1 ](assets/chlimage_1-1.jpeg)
+![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.jpeg)
 
 ### Replicatie configureren voor meerdere publicatieinstanties {#configuring-replication-for-multiple-publish-instances}
 
@@ -400,7 +400,7 @@ Als u omgekeerde replicatie wilt gebruiken, zorg ervoor dat deze agent wordt gea
 >
 >Alleen inhoud wordt gerepliceerd. Gebruikersgegevens worden niet gekopieerd (gebruikers, gebruikersgroepen en gebruikersprofielen).
 >
->Om gebruikersgegevens over veelvoudige te synchroniseren publiceer instanties, laat [ Synchronisatie van de Gebruiker ](/help/sites-administering/sync.md) toe.
+>Om gebruikersgegevens over veelvoudige te synchroniseren publiceer instanties, laat [&#x200B; Synchronisatie van de Gebruiker &#x200B;](/help/sites-administering/sync.md) toe.
 
 Na installatie, wordt een standaardagent reeds gevormd voor replicatie van inhoud aan een Publish instantie die op haven 4503 van localhost loopt.
 
@@ -441,7 +441,7 @@ Als u problemen ondervindt, kunt u de logboekbestanden in de instantie Auteur co
 
 >[!NOTE]
 >
->Dit kan met gebruik van [ Gebruiker - identiteitskaart van de Agent ](#agentuserid) worden gecombineerd om verschillende inhoud voor het herhalen aan individuele te selecteren publiceert milieu&#39;s. Voor elke publicatie-omgeving:
+>Dit kan met gebruik van [&#x200B; Gebruiker - identiteitskaart van de Agent &#x200B;](#agentuserid) worden gecombineerd om verschillende inhoud voor het herhalen aan individuele te selecteren publiceert milieu&#39;s. Voor elke publicatie-omgeving:
 >
 >1. Vorm een replicatieagent voor het herhalen aan die Publish milieu.
 >1. Een gebruikersaccount configureren; met de toegangsrechten die zijn vereist voor het lezen van de inhoud die wordt gerepliceerd naar die specifieke publicatieomgeving.
@@ -479,7 +479,7 @@ De standaardagenten zijn inbegrepen met de installatie. Nochtans, is een bepaald
 
    >[!NOTE]
    >
-   >Als u AEM in een context buiten de geadviseerde standaardcontext hebt geïnstalleerd, vorm de [ Kopballen van HTTP ](#extended) in **Uitgebreide** tabel.
+   >Als u AEM in een context buiten de geadviseerde standaardcontext hebt geïnstalleerd, vorm de [&#x200B; Kopballen van HTTP &#x200B;](#extended) in **Uitgebreide** tabel.
 
 1. Klik **OK**.
 1. Terugkeer aan het **lusje van Hulpmiddelen**, van hier kunt u **&#x200B;**&#x200B;de **Vlek van Dispatcher** agent activeren (**Agenten op publiceren**).
@@ -510,7 +510,7 @@ Als u naar `/etc/replication` navigeert, ziet u de volgende drie knooppunten:
 
 De twee `agents` bevatten configuratiegegevens over de juiste omgeving en zijn alleen actief wanneer die omgeving wordt uitgevoerd. `agents.publish` wordt bijvoorbeeld alleen gebruikt in de publicatieomgeving. In de volgende screenshot ziet u de publicatieagent in de auteuromgeving, zoals opgenomen in AEM WCM:
 
-![ chlimage_1-24 ](assets/chlimage_1-24.png)
+![&#x200B; chlimage_1-24 &#x200B;](assets/chlimage_1-24.png)
 
 ## Uw replicatieagents controleren {#monitoring-your-replication-agents}
 
@@ -524,7 +524,7 @@ Om een replicatieagent te controleren:
 
 1. Klik de aangewezen agentennaam (die een verbinding is) om gedetailleerde informatie over die agent te tonen:
 
-   ![ chlimage_1-2 ](assets/chlimage_1-2.jpeg)
+   ![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2.jpeg)
 
    Hier kunt u het volgende doen:
 
@@ -567,7 +567,7 @@ De uitgever pak alle punten, sparen hen en rapporteert terug naar de Auteur.
    * U kunt ook de standaardpublicatiereplicatieagent bereiken door rechtstreeks naar `http://serveraddress:serverport/etc/replication/agents.author/publish.html` te gaan
 1. Druk op de knop **[!UICONTROL Edit]** boven de replicatiewachtrij.
 1. Ga in het volgende venster naar de tab **[!UICONTROL Batch]** :
-   ![ batchreplication ](assets/batchreplication.png)
+   ![&#x200B; batchreplication &#x200B;](assets/batchreplication.png)
 1. Vorm de agent.
 
 ### Parameters {#parameters}
@@ -578,4 +578,4 @@ De uitgever pak alle punten, sparen hen en rapporteert terug naar de Auteur.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Voor details over het oplossen van problemen, kunt u de [ pagina van de Replicatie van het Oplossen van problemen ](/help/sites-deploying/troubleshoot-rep.md) lezen.
+Voor details over het oplossen van problemen, kunt u de [&#x200B; pagina van de Replicatie van het Oplossen van problemen &#x200B;](/help/sites-deploying/troubleshoot-rep.md) lezen.

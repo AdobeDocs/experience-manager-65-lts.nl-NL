@@ -24,13 +24,13 @@ Met het interne redexeringsproces van AEM worden gegevens in de opslagplaats ver
 
 Het is belangrijk om onderscheid te maken tussen opnieuw indexeren die een onredelijk lange hoeveelheid tijd vergt, en opnieuw indexeren die een lange hoeveelheid tijd vergt omdat het enorme hoeveelheden inhoud indexeert. De tijd die nodig is om de inhoud te indexeren, wordt bijvoorbeeld geschaald met de hoeveelheid inhoud. Het duurt dus langer om grote productieopslagplaatsen opnieuw te indexeren dan kleine opslagplaatsen.
 
-Zie [ Beste praktijken op Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md) voor extra informatie over wanneer en hoe te om inhoud opnieuw te indexeren.
+Zie [&#x200B; Beste praktijken op Vragen en het Indexeren &#x200B;](/help/sites-deploying/best-practices-for-queries-and-indexing.md) voor extra informatie over wanneer en hoe te om inhoud opnieuw te indexeren.
 
 ## Aanvankelijke detectie {#initial-detection}
 
 Voor een trage indexering van de eerste detectie moet de `IndexStats` JMX MBans worden gecontroleerd. Ga als volgt te werk voor de betreffende AEM-instantie:
 
-1. Open de Console van het Web en klik het lusje JMX of ga naar https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld, [ http://localhost:4502/system/console/jmx ](http://localhost:4502/system/console/jmx)).
+1. Open de Console van het Web en klik het lusje JMX of ga naar https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld, [&#x200B; http://localhost:4502/system/console/jmx &#x200B;](http://localhost:4502/system/console/jmx)).
 1. Navigeer naar de `IndexStats` mbeans.
 1. Open de `IndexStats` MBans voor &quot; `async`&quot; en &quot; `fulltext-async`&quot;.
 
@@ -40,11 +40,11 @@ Voor een trage indexering van de eerste detectie moet de `IndexStats` JMX MBans 
 
 ## De indexering wordt gepauzeerd na een gedwongen sluiting {#indexing-is-paused-after-a-forced-shutdown}
 
-Als u gedwongen afsluit, wordt de asynchrone indexering maximaal 30 minuten na het opnieuw opstarten opgeschort. En, vereist het typisch een andere 15 minuten om de eerste het opnieuw indexeren pas te voltooien, voor een totaal van ongeveer 45 minuten (het binden terug naar [ Begeleidende Chronologie van de Opsporing ](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) van 45 minuten). Als indexeren wordt gepauzeerd na een gedwongen sluiting:
+Als u gedwongen afsluit, wordt de asynchrone indexering maximaal 30 minuten na het opnieuw opstarten opgeschort. En, vereist het typisch een andere 15 minuten om de eerste het opnieuw indexeren pas te voltooien, voor een totaal van ongeveer 45 minuten (het binden terug naar [&#x200B; Begeleidende Chronologie van de Opsporing &#x200B;](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) van 45 minuten). Als indexeren wordt gepauzeerd na een gedwongen sluiting:
 
 1. Bepaal eerst of de AEM-instantie geforceerd is afgesloten (het AEM-proces is met kracht gedood of er is een stroomstoring opgetreden) en begin later opnieuw.
 
-   * [ het registreren van AEM ](/help/sites-deploying/configure-logging.md) kan voor dit doel worden herzien.
+   * [&#x200B; het registreren van AEM &#x200B;](/help/sites-deploying/configure-logging.md) kan voor dit doel worden herzien.
 
 1. Als de geforceerde afsluitprocedure werd uitgevoerd, onderbreekt AEM automatisch het opnieuw indexeren gedurende maximaal 30 minuten.
 1. Wacht ongeveer 45 minuten totdat AEM normale asynchrone indexeringsbewerkingen hervat.
@@ -55,27 +55,27 @@ In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asynchr
 
 1. Definieer een nieuwe, geïsoleerde draadpool voor de Apache Sling Scheduler voor asynchrone indexering:
 
-   * Op de betrokken instantie van AEM, navigeer aan AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler of ga naar https://&lt;host>:&lt;port>/system/console/configMgr (bijvoorbeeld, [ http://localhost:4502/system/console/configMgr ](http://localhost:4502/system/console/configMgr))
+   * Op de betrokken instantie van AEM, navigeer aan AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler of ga naar https://&lt;host>:&lt;port>/system/console/configMgr (bijvoorbeeld, [&#x200B; http://localhost:4502/system/console/configMgr &#x200B;](http://localhost:4502/system/console/configMgr))
    * Voeg een item aan het veld &quot;Toegestane threads&quot; toe met de waarde &quot;eikel&quot;.
    * Om de veranderingen te bewaren, klik **sparen** in het bodem-recht.
 
-   ![ chlimage_1-119 ](assets/chlimage_1-119.png)
+   ![&#x200B; chlimage_1-119 &#x200B;](assets/chlimage_1-119.png)
 
 1. Controleer of de nieuwe Apache Sling Scheduler-thread-pool is geregistreerd en wordt weergegeven in de webconsole van Apache Sling Scheduler-status.
 
-   * Navigeer aan de AEM OSGi Webconsole>Status>Sling Planner of ga naar https://&lt;host>:&lt;port>/system/console/status-slingplanner (bijvoorbeeld, [ http://localhost:4502/system/console/status-slingscheduler ](http://localhost:4502/system/console/status-slingscheduler))
+   * Navigeer aan de AEM OSGi Webconsole>Status>Sling Planner of ga naar https://&lt;host>:&lt;port>/system/console/status-slingplanner (bijvoorbeeld, [&#x200B; http://localhost:4502/system/console/status-slingscheduler &#x200B;](http://localhost:4502/system/console/status-slingscheduler))
    * Controleer of de volgende poolitems aanwezig zijn:
 
       * ApacheSlingoak
       * ApacheSlingdefault
 
-   ![ chlimage_1-120 ](assets/chlimage_1-120.png)
+   ![&#x200B; chlimage_1-120 &#x200B;](assets/chlimage_1-120.png)
 
 ## De waarnemingswachtrij is vol {#observation-queue-is-full}
 
 Als er te veel veranderingen en verplichtingen in korte tijd aan de gegevensopslagplaats worden aangebracht, kan de indexering worden vertraagd vanwege een volledige waarnemingswachtrij. Bepaal eerst of de waarnemingswachtrij vol is:
 
-1. Ga naar de Console van het Web en klik het JMX lusje of ga naar https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld, [ http://localhost:4502/system/console/jmx ](http://localhost:4502/system/console/jmx))
+1. Ga naar de Console van het Web en klik het JMX lusje of ga naar https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld, [&#x200B; http://localhost:4502/system/console/jmx &#x200B;](http://localhost:4502/system/console/jmx))
 1. Open Oak Repository Statistics MBean en bepaal of een `ObservationQueueMaxLength` -waarde groter is dan 10.000.
 
    * Bij normale bewerkingen moet deze maximumwaarde uiteindelijk altijd tot nul worden gereduceerd (vooral in de sectie `per second` ), zodat wordt gecontroleerd of de waarden voor seconden van `ObservationQueueMaxLength` 0 zijn.
@@ -86,7 +86,7 @@ Als er te veel veranderingen en verplichtingen in korte tijd aan de gegevensopsl
 1. Om te voorkomen dat de limieten van de waarnemingswachtrij worden overschreden, wordt aanbevolen:
 
    * Verlaag de constante snelheid van komma&#39;s. Korte pieken in vastleggingen zijn aanvaardbaar, maar de constante snelheid moet worden verlaagd.
-   * Verhoog de grootte van `DiffCache` zoals die in [ Prestaties het stemmen uiteinden > Mongo Opslag het Tunnen > de geheim voorgeheugengrootte van het Document ](/help/sites-deploying/configuring-performance.md) wordt beschreven.
+   * Verhoog de grootte van `DiffCache` zoals die in [&#x200B; Prestaties het stemmen uiteinden > Mongo Opslag het Tunnen > de geheim voorgeheugengrootte van het Document &#x200B;](/help/sites-deploying/configuring-performance.md) wordt beschreven.
 
 ## Een vast herindexeringsproces identificeren en corrigeren {#identifying-and-remediating-a-stuck-re-indexing-process}
 
@@ -103,7 +103,7 @@ Ga als volgt te werk om een vast opnieuw indexeringsproces te identificeren en t
 1. Om de oorzaak van het vastlopen van indexering te identificeren, moet de volgende informatie worden verzameld:
 
    * Verzamel 5 notulen van draadstortplaats, één draadstortplaats om de 2 seconden.
-   * [ plaats FOUTOPSPORINGSniveau en logboeken voor de toevoegers ](/help/sites-deploying/configure-logging.md).
+   * [&#x200B; plaats FOUTOPSPORINGSniveau en logboeken voor de toevoegers &#x200B;](/help/sites-deploying/configure-logging.md).
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
@@ -112,23 +112,23 @@ Ga als volgt te werk om een vast opnieuw indexeringsproces te identificeren en t
 
       * Ga naar AEM OSGi Web Console>Main>JMX>IndexState>async
 
-        of ga naar [ http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats ](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+        of ga naar [&#x200B; http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats &#x200B;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
-   * De consolemodus van het gebruik [ eak-run.jar ](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) om de details van te verzamelen wat onder de * `/:async`* knoop bestaat.
+   * De consolemodus van het gebruik [&#x200B; eak-run.jar &#x200B;](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) om de details van te verzamelen wat onder de * `/:async`* knoop bestaat.
    * Verzamel een lijst met controlepunten in de opslagplaats met behulp van `CheckpointManager` MBean:
 
       * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
 
-        of ga naar [ http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager ](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+        of ga naar [&#x200B; http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager &#x200B;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Start AEM opnieuw nadat u alle informatie hebt verzameld die in Stap 1 is beschreven.
 
    * Het opnieuw opstarten van AEM kan het probleem oplossen als er een hoge gelijktijdige belasting is (overloop van de waarnemingswachtrij of iets dergelijks).
-   * Als een nieuw begin het probleem niet oplost, open een kwestie met [ de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support) en verstrek alle informatie die in Stap 1 wordt verzameld.
+   * Als een nieuw begin het probleem niet oplost, open een kwestie met [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support) en verstrek alle informatie die in Stap 1 wordt verzameld.
 
 ## Asynchrone herindexering veilig afbreken {#safely-aborting-asynchronous-re-indexing}
 
-Opnieuw indexeren kan veilig worden afgebroken (gestopt voordat het wordt voltooid) via de `async, async-reindex` - en f `ulltext-async` -indexbanen ( `IndexStats` -boon). Voor meer informatie, zie ook de documentatie van Apache Oak op [ hoe te Reindexing ](https://jackrabbit.apache.org/oak/docs/query/indexing.html#abort-reindex) afbreken. Overweeg ook het volgende:
+Opnieuw indexeren kan veilig worden afgebroken (gestopt voordat het wordt voltooid) via de `async, async-reindex` - en f `ulltext-async` -indexbanen ( `IndexStats` -boon). Voor meer informatie, zie ook de documentatie van Apache Oak op [&#x200B; hoe te Reindexing &#x200B;](https://jackrabbit.apache.org/oak/docs/query/indexing.html#abort-reindex) afbreken. Overweeg ook het volgende:
 
 * Het opnieuw indexeren van de indexen van het Bezit van Lucene en van Lucene kan worden geaborteerd aangezien zij van nature asynchroon zijn.
 * Het opnieuw indexeren van Oak-eigenschappenindexen kan alleen worden afgebroken als opnieuw indexeren is gestart via de `PropertyIndexAsyncReindexMBean` .
@@ -137,13 +137,13 @@ Voer de volgende stappen uit om opnieuw indexeren veilig af te breken:
 
 1. Identificeer de IndexStats MBean die de het opnieuw indexeren weg controleert die moet worden tegengehouden.
 
-   * Navigeer aan aangewezen IndexStats MBean via de console JMX door of AEM te gaan OSGi Web Console>Main>JMX of https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld, [ http://localhost:4502/system/console/jmx ](http://localhost:4502/system/console/jmx))
+   * Navigeer aan aangewezen IndexStats MBean via de console JMX door of AEM te gaan OSGi Web Console>Main>JMX of https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld, [&#x200B; http://localhost:4502/system/console/jmx &#x200B;](http://localhost:4502/system/console/jmx))
    * Open de IndexStats MBean op basis van de opnieuw indexerende weg die u wilt tegenhouden ( `async`, `async-reindex`, of `fulltext-async`)
 
       * Om de aangewezen weg en zo de IndexStats MBean instantie te identificeren, bekijk het &quot;async&quot;bezit van de Indexen van Oak. De eigenschap &quot;async&quot; bevat de naam van het pad: `async`, `async-reindex` of `fulltext-async` .
       * Het pad is ook beschikbaar via AEM Index Manager in de kolom &quot;Async&quot;. Navigeer naar Operations>Diagnosis>Indexbeheer om Indexbeheer te openen.
 
-   ![ chlimage_1-121 ](assets/chlimage_1-121.png)
+   ![&#x200B; chlimage_1-121 &#x200B;](assets/chlimage_1-121.png)
 
 1. Roep de opdracht `abortAndPause()` aan op de juiste `IndexStats` MBean.
 1. Markeer de Oak-indexdefinitie op de juiste wijze om te voorkomen dat het indexeren van de rijstrook wordt hervat.

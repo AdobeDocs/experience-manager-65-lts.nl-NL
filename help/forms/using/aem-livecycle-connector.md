@@ -21,7 +21,7 @@ De Adobe Experience Manager (AEM) LiveCycle-aansluiting maakt het naadloos oproe
 
 ## AEM-server verbinden met Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
-De Schakelaar van AEM LiveCycle maakt deel uit van het [ toe:voegen-op pakket van AEM Forms ](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het AEM Forms-invoegpakket hebt geïnstalleerd, voert u de volgende stappen uit, zodat u details van de LiveCycle-server kunt toevoegen aan de AEM-webconsole.
+De Schakelaar van AEM LiveCycle maakt deel uit van het [&#x200B; toe:voegen-op pakket van AEM Forms &#x200B;](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het AEM Forms-invoegpakket hebt geïnstalleerd, voert u de volgende stappen uit, zodat u details van de LiveCycle-server kunt toevoegen aan de AEM-webconsole.
 
 1. Zoek in AEM Web Console Configuration Manager de Adobe LiveCycle Client SDK configuratiecomponent.
 1. Klik op de component zodat u de URL van de configuratieserver, de gebruikersnaam en het wachtwoord kunt bewerken.
@@ -52,7 +52,7 @@ Clienttoepassingen kunnen LiveCycle-services programmatisch starten met een Java
 
 AEM LiveCycle Connector vereenvoudigt de stroom door deze cliëntinstanties als diensten bloot te stellen OSGi die kunnen worden betreden gebruikend standaardOSGi middelen. De LiveCycle-aansluiting biedt de volgende functies:
 
-* De instanties van de cliënt als Dienst OSGi: De cliënten die als bundels worden verpakt OSGI zijn vermeld in de [ de lijst van de Diensten van Acrobat ](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sectie. Elke cliëntjar registreert de cliëntinstantie als dienst OSGi met de Registratie van de Dienst OSGi.
+* De instanties van de cliënt als Dienst OSGi: De cliënten die als bundels worden verpakt OSGI zijn vermeld in de [&#x200B; de lijst van de Diensten van Acrobat &#x200B;](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sectie. Elke cliëntjar registreert de cliëntinstantie als dienst OSGi met de Registratie van de Dienst OSGi.
 * Doorgave gebruikersreferenties: de verbindingsgegevens die nodig zijn om verbinding te maken met de LiveCycle-server worden centraal beheerd.
 * ServiceClientFactory Service: om de processen te starten, heeft de clienttoepassing toegang tot de ServiceClientFactory-instantie.
 
@@ -80,7 +80,7 @@ Voer de volgende stappen uit om een blootgestelde service te starten vanuit AEM:
    </dependency>
    ```
 
-   Om de dienst te beginnen, voeg een overeenkomstige Geweven gebiedsdeel voor de dienst toe. Voor de lijst van gebiedsdelen, zie [ Lijst van de Diensten van Acrobat ](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Voeg voor de service PDF genereren bijvoorbeeld de volgende afhankelijkheid toe:
+   Om de dienst te beginnen, voeg een overeenkomstige Geweven gebiedsdeel voor de dienst toe. Voor de lijst van gebiedsdelen, zie [&#x200B; Lijst van de Diensten van Acrobat &#x200B;](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Voeg voor de service PDF genereren bijvoorbeeld de volgende afhankelijkheid toe:
 
    ```xml
    <dependency>

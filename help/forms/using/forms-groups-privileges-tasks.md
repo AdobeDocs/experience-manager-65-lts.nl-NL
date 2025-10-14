@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
 
-Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=nl-NL).
+Voor de documentatie van AEM as a Cloud Service, zie [&#x200B; AEM Forms op Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=nl-NL).
 
-U kunt [ groepen ](/help/sites-administering/user-group-ac-admin.md#group-administration) tot stand brengen en beleid en [ gebruikers ](/help/sites-administering/user-group-ac-admin.md#user-administration) toewijzen aan de groepen in Adobe Experience Manager (AEM). Dit beleid controleert de voorrechten van de gebruikers die deel van de groep uitmaken.
+U kunt [&#x200B; groepen &#x200B;](/help/sites-administering/user-group-ac-admin.md#group-administration) tot stand brengen en beleid en [&#x200B; gebruikers &#x200B;](/help/sites-administering/user-group-ac-admin.md#user-administration) toewijzen aan de groepen in Adobe Experience Manager (AEM). Dit beleid controleert de voorrechten van de gebruikers die deel van de groep uitmaken.
 
-Nadat u het [ toe:voegen-op pakket van AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md) installeert, zijn de groepen die in dit artikel, zoals vorm-gebruikers en vorm-macht-gebruiker worden vermeld, automatisch beschikbaar voor taak. De volgende lijst maakt een lijst van de taken die een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
+Nadat u het [&#x200B; toe:voegen-op pakket van AEM Forms &#x200B;](../../forms/using/installing-configuring-aem-forms-osgi.md) installeert, zijn de groepen die in dit artikel, zoals vorm-gebruikers en vorm-macht-gebruiker worden vermeld, automatisch beschikbaar voor taak. De volgende lijst maakt een lijst van de taken die een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
 
 <table>
  <tbody>

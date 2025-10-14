@@ -17,5 +17,5 @@ De documentatie voor Adobe Experience Manager 6.6 is een werk in uitvoering. AEM
 >
 >De redacteur van het KUUROORD is afgekeurd voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 >
->* [ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor visueel het uitgeven van hoofdloze inhoud.
->* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor visueel het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.

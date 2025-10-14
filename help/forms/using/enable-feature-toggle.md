@@ -23,10 +23,10 @@ De Toggles van de eigenschap voor vroege adopters of nieuwe eigenschappen kunnen
 1. Meld u aan bij uw AEM Forms-exemplaar.
 2. Navigeer naar `http://<author-instance-url>:portnumber/system/console/configMgr` .
 3. Onderzoek naar **de Dynamische Leverancier van de Knevel van Adobe Granite** in de Manager van de Configuratie.
-4. Klik het pictogram ![ potlood-pictogram ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. In de [!UICONTROL Enabled Toggles] sectie, klik ![ potlood-pictogram ](assets/aem6forms_add.png).
+4. Klik het pictogram ![&#x200B; potlood-pictogram &#x200B;](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. In de [!UICONTROL Enabled Toggles] sectie, klik ![&#x200B; potlood-pictogram &#x200B;](assets/aem6forms_add.png).
 6. Voeg de functie-schakelings-id toe voor de functie, zoals in de onderstaande afbeelding wordt getoond.
-   ![ voeg knevel ](assets/add_toggle_number_forms.png) toe
+   ![&#x200B; voeg knevel &#x200B;](assets/add_toggle_number_forms.png) toe
 
    >[!NOTE]
    >
@@ -41,10 +41,10 @@ Voer de onderstaande stappen uit om de functieschakeloptie(s) uit te schakelen v
 1. Meld u aan bij uw AEM Forms-exemplaar.
 2. Navigeer naar `http://<author-instance-url>:portnumber/system/console/configMgr` .
 3. Onderzoek naar **de Dynamische Leverancier van de Knevel van Adobe Granite** in de Manager van de Configuratie.
-4. Klik het pictogram ![ potlood-pictogram ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. In de [!UICONTROL Disabled Toggles] sectie, klik ![ potlood-pictogram ](assets/aem6forms_add.png).
+4. Klik het pictogram ![&#x200B; potlood-pictogram &#x200B;](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. In de [!UICONTROL Disabled Toggles] sectie, klik ![&#x200B; potlood-pictogram &#x200B;](assets/aem6forms_add.png).
 6. Voeg het wisselnummer toe voor de functie die moet worden uitgeschakeld.
-   ![ verwijdert knevel ](assets/remove_toggle_feature_forms.png)
+   ![&#x200B; verwijdert knevel &#x200B;](assets/remove_toggle_feature_forms.png)
 7. Klik op Opslaan.
 
 ## Technische overweging

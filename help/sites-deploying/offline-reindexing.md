@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Voor AEM Assets-projecten, die doorgaans grote gegevensopslagruimten en een hoog niveau van uploads van bedrijfsmiddelen hebben, kan het opnieuw indexeren van Oak-indexen veel tijd in beslag nemen.
 
-In deze sectie wordt beschreven hoe u het gereedschap Oak kunt gebruiken om offline opnieuw te indexeren. De voorgestelde stappen kunnen op [ worden toegepast Lucene ](https://jackrabbit.apache.org/oak/docs/query/lucene.html) indexen voor versies AEM 6.4 en hoger.
+In deze sectie wordt beschreven hoe u het gereedschap Oak kunt gebruiken om offline opnieuw te indexeren. De voorgestelde stappen kunnen op [&#x200B; worden toegepast Lucene &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html) indexen voor versies AEM 6.4 en hoger.
 
 ## Overzicht {#overview}
 
@@ -25,9 +25,9 @@ AEM-opslagruimten moeten vaak opnieuw worden gecomprimeerd om verschillende rede
 
 ## Benadering {#approach}
 
-![ off-line-redexing-verbetering-tekst-extractie ](assets/offline-reindexing-upgrade-process.png)
+![&#x200B; off-line-redexing-verbetering-tekst-extractie &#x200B;](assets/offline-reindexing-upgrade-process.png)
 
-Het idee moet offline indexen creëren gebruikend het [ Oak-in werking gestelde ](/help/sites-deploying/indexing-via-the-oak-run-jar.md) hulpmiddel, dan hen invoeren in de lopende instantie van AEM. In het bovenstaande diagram wordt de methode voor het offline opnieuw indexeren weergegeven.
+Het idee moet offline indexen creëren gebruikend het [&#x200B; Oak-in werking gestelde &#x200B;](/help/sites-deploying/indexing-via-the-oak-run-jar.md) hulpmiddel, dan hen invoeren in de lopende instantie van AEM. In het bovenstaande diagram wordt de methode voor het offline opnieuw indexeren weergegeven.
 
 Bovendien is dit de orde van de stappen zoals die in de benadering worden beschreven:
 
@@ -40,7 +40,7 @@ Bovendien is dit de orde van de stappen zoals die in de benadering worden beschr
 
 Om volledige indexering in AEM mogelijk te maken, wordt tekst uit binaire getallen zoals PDF geëxtraheerd en aan de index toegevoegd. Dit is meestal een kostbare stap in het indexeringsproces. Tekstomloop is een optimaliseringsstap die vooral wordt aanbevolen voor het opnieuw indexeren van opslagruimten voor elementen, aangezien er grote aantallen binaire getallen worden opgeslagen.
 
-![ off-line-redexing-verbetering-tekst-extractie ](assets/offline-reindexing-upgrade-text-extraction.png)
+![&#x200B; off-line-redexing-verbetering-tekst-extractie &#x200B;](assets/offline-reindexing-upgrade-text-extraction.png)
 
 Tekst van binaire bestanden die in het systeem zijn opgeslagen, kan worden geëxtraheerd met behulp van het gereedschap voor het uitvoeren van een eikel met behulp van de tikabibliotheek. Voor dit tekstextractieproces kan een kloon van het productiesysteem worden genomen en gebruikt. Dit proces leidt dan tot de tekstopslag, door de volgende stappen te gaan:
 
@@ -92,11 +92,11 @@ Waar `datastore path` het pad naar de binaire gegevensopslag is.
 
 De gemaakte tekstopslag kan worden bijgewerkt en opnieuw worden gebruikt voor toekomstige omschakelingsscenario&#39;s.
 
-Voor meer details rond het proces van de tekstextractie, zie de [ Oak-in werking gestelde documentatie ](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html).
+Voor meer details rond het proces van de tekstextractie, zie de [&#x200B; Oak-in werking gestelde documentatie &#x200B;](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html).
 
 ### Offline opnieuw indexeren {#offline-reindexing}
 
-![ off-line-redexing-verbetering-off-line-redexing ](assets/offline-reindexing-upgrade-offline-reindexing.png)
+![&#x200B; off-line-redexing-verbetering-off-line-redexing &#x200B;](assets/offline-reindexing-upgrade-offline-reindexing.png)
 
 Maak de index van Lucene offline. Als het gebruiken van MongoMK, wordt het geadviseerd om het op één van de knopen in werking te stellen MongoMK, aangezien dit netwerkoverheadkosten vermijdt.
 
@@ -110,7 +110,7 @@ Als u de indexdefinitie van de AEM-instantie wilt dumpen, voert u deze opdracht 
 
 >[!NOTE]
 >
->Voor meer details over het dumpen van indexdefinities, raadpleeg de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#async-index-data).
+>Voor meer details over het dumpen van indexdefinities, raadpleeg de [&#x200B; documentatie van Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#async-index-data).
 
 ```
 java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index-definitions
@@ -142,7 +142,7 @@ Kopieer vervolgens de zojuist gemaakte checkpoint-id en valideer de levensduur m
 >
 >Dit controlepunt wordt verwijderd wanneer de index later wordt geïmporteerd.
 
-Voor meer details, raadpleeg [ de verwezenlijking van het controlepunt van 0&rbrace; van de documentatie van Oak.](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint)
+Voor meer details, raadpleeg [&#x200B; de verwezenlijking van het controlepunt van 0&rbrace; van de documentatie van Oak.](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint)
 
 **Voer off-line indexeren voor de geproduceerde indexdefinities uit**
 
@@ -161,7 +161,7 @@ Het gebruik van de parameter `--doc-traversal-mode` is handig bij MongoMK-instal
 
 Als er MongoMK is, kan dit proces worden versneld als deze stap in een instantie dichter bij de instantie MongoDB wordt uitgevoerd. Als de looppas op de zelfde machine, netwerkoverheadkosten kan worden vermeden.
 
-De extra technische details kunnen in de [ eiken-looppas documentatie voor het indexeren ](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html) worden gevonden.
+De extra technische details kunnen in de [&#x200B; eiken-looppas documentatie voor het indexeren &#x200B;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html) worden gevonden.
 
 ### Indexen importeren {#importing-indexes}
 

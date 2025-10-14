@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Met de AEM-bureaubladtoepassing kunt u de binaire bestanden Adobe Experience Manager (AEM) Assets en AEM Forms toewijzen aan een netwerkmap op uw systeem. U kunt de gesynchroniseerde elementen en binaire bestanden weergeven in een bestandsverkenner en verschillende apps gebruiken om de bestanden naar wens te bewerken. Behalve het bekijken van de bestanden kunt u ook binaire bestanden maken, uploaden en verwijderen. U kunt bestanden ook rechtstreeks vanuit de software openen, bewerken en opslaan. U kunt bijvoorbeeld een XDP-bestand rechtstreeks vanuit Designer openen en bewerken. De wijzigingen die u lokaal aanbrengt in de elementen worden weerspiegeld in de AEM Assets-opslagplaats en de AEM Forms-gebruikersinterface.
 
-U kunt de app downloaden van een AEM-exemplaar. Voor gedetailleerde informatie over het downloaden van app, zie [ de Nota&#39;s van de Versie van de Desktopapp van AEM ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL).
+U kunt de app downloaden van een AEM-exemplaar. Voor gedetailleerde informatie over het downloaden van app, zie [&#x200B; de Nota&#39;s van de Versie van de Desktopapp van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL).
 
 ## AEM Forms-middelen die worden ondersteund in de AEM-bureaubladtoepassing {#aem-forms-assets-supported-in-aem-desktop-app}
 
@@ -35,7 +35,7 @@ Met de app kunt u binaire bestanden van het type AEM Forms synchroniseren met de
 AEM desktop app gebruikt WebDAV-protocol op Microsoft® Windows en SMB1 op macOS X om verbinding te maken met een AEM Forms Server. De AEM Forms-server is niet in staat om binaire bestanden en andere elementen te synchroniseren met een WebDAV- of SMB-client. Voer de volgende stappen uit zodat u AEM Forms for AEM desktop app kunt inschakelen:
 
 1. Meld u als beheerder aan bij AEM Forms.
-1. In de auteursinstantie, klik ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![ hammer ](assets/hammer.png) **[!UICONTROL > Deployment > Operations > Web Console]**. De webconsole wordt in een nieuw venster geopend.
+1. In de auteursinstantie, klik ![&#x200B; adobeexperienceManager &#x200B;](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![&#x200B; hammer &#x200B;](assets/hammer.png) **[!UICONTROL > Deployment > Operations > Web Console]**. De webconsole wordt in een nieuw venster geopend.
 1. Zoek en open de optie **[!UICONTROL FormsManager AddOn Configuration]** in het venster Webconsole.
 1. Schakel in het dialoogvenster FormsManager AddOn-configuratie het selectievakje **[!UICONTROL Asynchronously Sync Resources]** uit en klik op **[!UICONTROL Save]** .
 1. Start de AEM Forms-server opnieuw. Nadat u de computer opnieuw hebt opgestart, kan de AEM Forms-server inhoud accepteren en delen met de AEM-bureaubladtoepassing.

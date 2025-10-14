@@ -24,7 +24,7 @@ Standaard gebruikt AEM de Token Authentication Handler om elke aanvraag te verif
 
 Dit is van bijzonder belang voor horizontale schaalbaarheid. In een multi-instance opstelling zoals hieronder afgebeeld publiceert landbouwbedrijf, lading het in evenwicht brengen kan niet op een optimale manier worden bereikt. Met stateful authentificatie, zal de persisted authentificatiestatus slechts op de instantie beschikbaar zijn waar de gebruiker eerst voor authentiek wordt verklaard.
 
-![ chlimage_1-33 ](assets/chlimage_1-33a.png)
+![&#x200B; chlimage_1-33 &#x200B;](assets/chlimage_1-33a.png)
 
 Neem het volgende scenario als voorbeeld:
 
@@ -42,7 +42,7 @@ Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze ver
 
 U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met MongoMK-auteurs en TarMK-publicatie-instanties hieronder:
 
-![ chlimage_1-34 ](assets/chlimage_1-34a.png)
+![&#x200B; chlimage_1-34 &#x200B;](assets/chlimage_1-34a.png)
 
 >[!NOTE]
 >

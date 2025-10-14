@@ -25,7 +25,7 @@ ht-degree: 0%
 
 U kunt de API van de Dienst van de Assembler gebruiken om veelvoudige documenten van PDF in één enkel document van PDF samen te stellen. In de volgende afbeelding ziet u drie PDF-documenten die in één PDF-document worden samengevoegd.
 
-![ pa_pa_document_assembly ](assets/pa_pa_document_assembly.png)
+![&#x200B; pa_pa_document_assembly &#x200B;](assets/pa_pa_document_assembly.png)
 
 Als u twee of meer PDF-documenten wilt samenvoegen tot één PDF-document, hebt u een DDX-document nodig. In een DDX-document wordt het PDF-document beschreven dat de Assembler-service produceert. Namelijk draagt het DDX- document de dienst van de Assembler op welke acties om uit te voeren.
 
@@ -45,15 +45,15 @@ Dit DX- document voegt twee documenten van PDF genoemd *map.pdf* en *richtingen.
 
 >[!NOTE]
 >
->Om een Dx- document te zien dat een document van PDF demonteert, zie [ Programmaticaal het demonteren van de Documenten van PDF ](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+>Om een Dx- document te zien dat een document van PDF demonteert, zie [&#x200B; Programmaticaal het demonteren van de Documenten van PDF &#x200B;](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een document DDX, zie [&#x200B; de Dienst van de Assembler en de Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overwegingen bij het aanroepen van de Assembler-service met behulp van webservices {#considerations-when-invoking-assembler-service-using-web-services}
 
@@ -105,11 +105,11 @@ Zowel het bestand map.pdf als het bestand direction.pdf moeten in een verzamelin
 
 >[!NOTE]
 >
->Een `AssemblerResult` -object dat een verzamelingsobject bevat, wordt geretourneerd wanneer u de `invokeDDX` -bewerking aanroept. Deze bewerking wordt gebruikt wanneer u twee of meer invoer-PDF-documenten doorgeeft aan de Assembler-service. Als u echter slechts één invoer-PDF doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de bewerking `invokeOneDocument` aan. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Voor informatie over het gebruiken van deze verrichting, zie [ Assemblbling de Documenten van PDF ](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
+>Een `AssemblerResult` -object dat een verzamelingsobject bevat, wordt geretourneerd wanneer u de `invokeDDX` -bewerking aanroept. Deze bewerking wordt gebruikt wanneer u twee of meer invoer-PDF-documenten doorgeeft aan de Assembler-service. Als u echter slechts één invoer-PDF doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de bewerking `invokeOneDocument` aan. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Voor informatie over het gebruiken van deze verrichting, zie [&#x200B; Assemblbling de Documenten van PDF &#x200B;](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **vastgestelde runtime opties**
 
-U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Voor informatie over de runtime opties die u kunt plaatsen, zie de `AssemblerOptionSpec` klassenverwijzing in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Voor informatie over de runtime opties die u kunt plaatsen, zie de `AssemblerOptionSpec` klassenverwijzing in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **assembleer de documenten van inputPDF**
 

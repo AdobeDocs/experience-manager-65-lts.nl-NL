@@ -36,7 +36,7 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
 
 ## Oak {#oak}
 
-[ Oak ](/help/sites-deploying/platform.md) is een scalable en krachtige hiërarchische inhoudsbewaarplaats die de stichting van AEM is.
+[&#x200B; Oak &#x200B;](/help/sites-deploying/platform.md) is een scalable en krachtige hiërarchische inhoudsbewaarplaats die de stichting van AEM is.
 
 <table>
  <tbody>

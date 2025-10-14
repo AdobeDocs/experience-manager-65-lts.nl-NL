@@ -37,7 +37,7 @@ Uitzonderingen op deze regel zijn van toepassing op de opmerkingen bij de releas
 
 Alle ideeën die u eventueel nodig hebt om de documentatie van AEM te verbeteren, zijn welkom als bijdragen. Nochtans zijn de commentaren, de kwesties, en trekkingsverzoeken voorgenomen voor *bijdragen* slechts. Ze zijn niet bedoeld om je vragen te beantwoorden over hoe je AEM kunt gebruiken, je AEM-project kunt implementeren of technische problemen kunt oplossen.
 
-Om het even welke vragen over het gebruik van AEM of technische fouten u door het normale steunproces via het [ portaal van de Steun van Experience Manager ](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#home) zou kunnen moeten worden gemeld of in de [ gemeenschap van Experience Manager ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) besproken.
+Om het even welke vragen over het gebruik van AEM of technische fouten u door het normale steunproces via het [&#x200B; portaal van de Steun van Experience Manager &#x200B;](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#home) zou kunnen moeten worden gemeld of in de [&#x200B; gemeenschap van Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) besproken.
 
 ***de documentatiebijdragen van AEM zijn geen vervanging voor de Steun van de Klant van Adobe*** en om het even welke dergelijke bijdragen die antwoorden op steun-verwante vragen zoeken worden verworpen.
 
@@ -65,7 +65,7 @@ Alle lezers van AEM-documentatie zijn over de hele wereld beschikbaar en kunnen 
 
 #### Handleiding Microsoft® volgen
 
-[ het Handboek Microsoft® van Stijl ](https://learn.microsoft.com/en-us/style-guide/welcome/) is een vrij beschikbare gids van de documentatiestijl die zich op softwaredocumentatie concentreert en de documentatie van AEM volgt deze gids waar mogelijk.
+[&#x200B; het Handboek Microsoft® van Stijl &#x200B;](https://learn.microsoft.com/en-us/style-guide/welcome/) is een vrij beschikbare gids van de documentatiestijl die zich op softwaredocumentatie concentreert en de documentatie van AEM volgt deze gids waar mogelijk.
 
 ### Opmaak
 

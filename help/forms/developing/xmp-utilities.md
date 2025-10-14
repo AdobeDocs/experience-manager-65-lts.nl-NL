@@ -30,20 +30,20 @@ De XMP-hulpprogramma&#39;s kunnen XMP-metagegevens ophalen en opslaan vanuit PDF
 
 U kunt deze taken uitvoeren met de XMP Utilities-service:
 
-* Metagegevens importeren in PDF-documenten. (Zie [ het Invoeren Meta-gegevens in de Documenten van PDF ](xmp-utilities.md#importing-metadata-into-pdf-documents).)
-* Metagegevens exporteren uit PDF-documenten. (Zie [ het Uitvoeren Meta-gegevens van de Documenten van PDF ](xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+* Metagegevens importeren in PDF-documenten. (Zie [&#x200B; het Invoeren Meta-gegevens in de Documenten van PDF &#x200B;](xmp-utilities.md#importing-metadata-into-pdf-documents).)
+* Metagegevens exporteren uit PDF-documenten. (Zie [&#x200B; het Uitvoeren Meta-gegevens van de Documenten van PDF &#x200B;](xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van XMP, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van XMP, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Metagegevens importeren in PDF-documenten {#importing-metadata-into-pdf-documents}
 
 Met de XMP Utilities Java en de webservice-API&#39;s kunt u XMP-metagegevens programmatisch importeren in een PDF-document. Metagegevens bevatten informatie over een PDF-document, zoals de auteur van het document en trefwoorden die betrekking hebben op het document. Metagegevens kunnen worden weergegeven in het dialoogvenster Documenteigenschappen van het document, zoals in de volgende afbeelding wordt getoond.
 
-![ ww_ww_metadatadialog ](assets/ww_ww_metadatadialog.png)
+![&#x200B; ww_ww_metadatadialog &#x200B;](assets/ww_ww_metadatadialog.png)
 
-Als u metagegevens programmatisch wilt importeren in een PDF-document, kunt u een bestaand XML-document gebruiken dat de metagegevenswaarden opgeeft of een object van het type `XMPUtilityMetadata` gebruiken. (Zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+Als u metagegevens programmatisch wilt importeren in een PDF-document, kunt u een bestaand XML-document gebruiken dat de metagegevenswaarden opgeeft of een object van het type `XMPUtilityMetadata` gebruiken. (Zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ De volgende XML-code bevat metagegevenswaarden die overeenkomen met de vorige il
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van XMP, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van XMP, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -194,8 +194,8 @@ Voer de volgende taken uit om XMP-metagegevens programmatisch te importeren met 
 
 1. Projectbestanden opnemen
 
-   * Creeer een Microsoft .NET cliëntassemblage die het dossier van WSDL van de dienst van XMP gebruikt. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie [ Creërend een .NET cliëntassemblage die het coderen Base64 ](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
+   * Creeer een Microsoft .NET cliëntassemblage die het dossier van WSDL van de dienst van XMP gebruikt. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie [&#x200B; Creërend een .NET cliëntassemblage die het coderen Base64 &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
 
 1. Een XMPUtilityService-client maken
 
@@ -233,7 +233,7 @@ Met de XMP Utilities Java en de webservice-API&#39;s kunt u XMP-metagegevens pro
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van XMP, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van XMP, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze pagina schetst de op zijn plaats verbeteringsprocedure voor AEM 6.5 LTS. Als u een installatie hebt die aan een toepassingsserver wordt opgesteld, zie [ de Stappen van de Verbetering voor de Installaties van de Server van de Toepassing ](/help/sites-deploying/app-server-upgrade.md).
+>Deze pagina schetst de op zijn plaats verbeteringsprocedure voor AEM 6.5 LTS. Als u een installatie hebt die aan een toepassingsserver wordt opgesteld, zie [&#x200B; de Stappen van de Verbetering voor de Installaties van de Server van de Toepassing &#x200B;](/help/sites-deploying/app-server-upgrade.md).
 
 ## Stappen voor upgrade {#pre-upgrade-steps}
 
-Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [ vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md) voldoet en [ verbetering planningsoverwegingen ](/help/sites-deploying/upgrade-planning.md) ziet en hoe [ Analysator ](/help/sites-deploying/pattern-detector.md) u kan helpen de ingewikkeldheid schatten.
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [&#x200B; Bevorderend Code en Aanpassingen &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) en [&#x200B; pre-Verbeterde Taken van het Onderhoud &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [&#x200B; vereisten voor AEM 6.5 LTS &#x200B;](/help/sites-deploying/technical-requirements.md) voldoet en [&#x200B; verbetering planningsoverwegingen &#x200B;](/help/sites-deploying/upgrade-planning.md) ziet en hoe [&#x200B; Analysator &#x200B;](/help/sites-deploying/pattern-detector.md) u kan helpen de ingewikkeldheid schatten.
 
 ## Migratievereisten {#migration-prerequisites}
 
@@ -165,20 +165,20 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. Verwijder eventuele potten onder `crx-quickstart/install` die zijn gekoppeld aan een eerdere versie van de S3-connector.
 
-1. Download de recentste versie van 1.60.2 S3 schakelaar van [ https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/ ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now -->
+1. Download de recentste versie van 1.60.2 S3 schakelaar van [&#x200B; https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/ &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now -->
 
 1. Pak de S3-connector (versie 1.60.2) uit en kopieer de inhoud van de volgende mappen onder `crx-quickstart/install` als volgt:
 
    1. Kopiëren `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` onder `crx-quickstart/install/1`
    1. Kopiëren `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` onder `crx-quickstart/install/15`
 
-Nu, begin de instantie van AEM gebruikend het nieuwe die bevel wordt bepaald gebruikend de informatie onder [ het correcte bevel van het verbeteringsbegin ](#determining-the-correct-upgrade-start-command) sectie bepaalt.
+Nu, begin de instantie van AEM gebruikend het nieuwe die bevel wordt bepaald gebruikend de informatie onder [&#x200B; het correcte bevel van het verbeteringsbegin &#x200B;](#determining-the-correct-upgrade-start-command) sectie bepaalt.
 
 ### Bepaal het correcte bevel van het verbeteringsbegin {#determining-the-correct-upgrade-start-command}
 
 >[!NOTE]
 >
->De steun voor sommige van Java 8/11 argumenten is verwijderd in Java 17/21, zie [ Oracle Java™ 17 documenten ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [ Oracle Java™ 21 documenten ](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) en [ Java&amp;trade argumenten overwegingen voor AEM 6.5 LTS ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>De steun voor sommige van Java 8/11 argumenten is verwijderd in Java 17/21, zie [&#x200B; Oracle Java™ 17 documenten &#x200B;](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [&#x200B; Oracle Java™ 21 documenten &#x200B;](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) en [&#x200B; Java&amp;trade argumenten overwegingen voor AEM 6.5 LTS &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM start met het jar-bestand om het exemplaar te tonen.
 
@@ -206,8 +206,8 @@ De upgrade wordt niet gestart wanneer u AEM start vanaf het startscript. De mees
 
 ## Bijgewerkte Codebase implementeren {#deploy-upgraded-codebase}
 
-Zodra het op zijn plaats verbeteringsproces is voltooid, zou de bijgewerkte codebasis moeten worden opgesteld. De stappen voor het bijwerken van de codebasis om in de doelversie van AEM te werken kunnen in [ de Code en de pagina van Aanpassingen van de Verbetering ](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
+Zodra het op zijn plaats verbeteringsproces is voltooid, zou de bijgewerkte codebasis moeten worden opgesteld. De stappen voor het bijwerken van de codebasis om in de doelversie van AEM te werken kunnen in [&#x200B; de Code en de pagina van Aanpassingen van de Verbetering &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
 
 ## Controles achteraf en probleemoplossing uitvoeren {#perform-post-upgrade-check-troubleshooting}
 
-Zie [ Controle van de Verbetering van de Post en het Oplossen van problemen ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
+Zie [&#x200B; Controle van de Verbetering van de Post en het Oplossen van problemen &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).

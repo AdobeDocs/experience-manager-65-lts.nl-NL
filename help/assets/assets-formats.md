@@ -42,7 +42,7 @@ De ondersteunde rasterafbeeldingsindelingen in [!DNL Assets] zijn:
 | PBM | ✓ | ✓ | - | - | - | - | ✓ |
 | PPM | ✓ | ✓ | - | - | - | - | ✓ |
 | PSD ‡ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
-| [ EPS ](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
+| [&#x200B; EPS &#x200B;](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
 | PICT | - | - | - | - | - | - | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
 
@@ -50,7 +50,7 @@ De ondersteunde rasterafbeeldingsindelingen in [!DNL Assets] zijn:
 
 Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
-* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor vectorafbeeldingen van EPS wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [ vorm ImageMagick ](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie [ lijn Gebaseerde van Media Handler ](media-handlers.md#command-line-based-media-handler).
+* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor vectorafbeeldingen van EPS wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [&#x200B; vorm ImageMagick &#x200B;](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie [&#x200B; lijn Gebaseerde van Media Handler &#x200B;](media-handlers.md#command-line-based-media-handler).
 
 * Metagegevensterugkoppeling werkt voor de PSB-bestandsindeling wanneer deze wordt toegevoegd aan de `NComm` -handler.
 
@@ -60,7 +60,7 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
 De volgende lijst met 3D-indelingen wordt ondersteund.
 
-Zie ook [ Werkend met 3D activa in Dynamische Media.](/help/assets/assets-3d.md)
+Zie ook [&#x200B; Werkend met 3D activa in Dynamische Media.](/help/assets/assets-3d.md)
 
 | Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamische media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -79,7 +79,7 @@ De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van 
 * AI/PDF-bestanden waarvoor standaard geen miniaturen worden gegenereerd.
 * AI-bestanden met PMS-kleuren (Pantone Matching System).
 
-Zie [ Gebruikend de Rasterizer van PDF ](aem-pdf-rasterizer.md).
+Zie [&#x200B; Gebruikend de Rasterizer van PDF &#x200B;](aem-pdf-rasterizer.md).
 
 ## Ondersteunde bibliotheek voor afbeeldingstranscodering {#supported-image-transcoding-library}
 
@@ -87,23 +87,23 @@ De Adobe Imaging Transcoding-bibliotheek is een oplossing voor beeldverwerking d
 
 De bibliotheek voor grafische transformatie ondersteunt JPG/JPEG, PNG (8-bits en 16-bits), GIF, BMP, TIFF/Compressed TIFF (behalve 32-bits TIFF-bestanden en PTIFF-bestanden), ICO en ICN MIME-typen.
 
-Zie [ Beeldend Transcoding Bibliotheek ](imaging-transcoding-library.md).
+Zie [&#x200B; Beeldend Transcoding Bibliotheek &#x200B;](imaging-transcoding-library.md).
 
 ## Ondersteunde Camera Raw {#supported-camera-raw}
 
-Met de [!DNL Adobe Camera Raw] -bibliotheek kan [!DNL Assets] Raw-afbeeldingen opnemen. Zie [ de steun van Camera Raw ](camera-raw.md).
+Met de [!DNL Adobe Camera Raw] -bibliotheek kan [!DNL Assets] Raw-afbeeldingen opnemen. Zie [&#x200B; de steun van Camera Raw &#x200B;](camera-raw.md).
 
 ## Ondersteunde [!DNL Assets] documentindelingen {#supported-document-formats}
 
 Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
 
-| Indeling | Opslag | [ het beheer van meta-gegevens ](metadata.md) | Volledige tekst <br> extractie | [ de extractie van meta-gegevens ](metadata.md) | Miniatuur <br> genereren | [ subasset extractie ](managing-linked-subassets.md) | [ Meta-gegevensschrijver ](xmp-writeback.md) | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+| Indeling | Opslag | [&#x200B; het beheer van meta-gegevens &#x200B;](metadata.md) | Volledige tekst <br> extractie | [&#x200B; de extractie van meta-gegevens &#x200B;](metadata.md) | Miniatuur <br> genereren | [&#x200B; subasset extractie &#x200B;](managing-linked-subassets.md) | [&#x200B; Meta-gegevensschrijver &#x200B;](xmp-writeback.md) | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [ AI ](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| [&#x200B; AI &#x200B;](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
 | DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
 | ODT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| [ PDF ](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [&#x200B; PDF &#x200B;](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
 | RTF | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
 | TXT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
@@ -113,7 +113,7 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 | PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | ODP | ✓ | ✓ | ✓ | - | - | - | - | - |
-| [ INDD ](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| [&#x200B; INDD &#x200B;](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
 | PS | ✓ | ✓ | - | - | - | - | - | - |
 | QXP | ✓ | ✓ | - | - | - | - | - | - |
 | EPUB | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
@@ -177,21 +177,21 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 
 | Bestandsextensie | MIME-type/internet-mediatype | Standaardwaarde voor jobParam | Waarde van jobParam toegestaan |
 |---|---|---|---|
-| Afbeelding | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | Het standaard jobParam is van toepassing op alle MIME-elementen van het afbeeldingstype.<ul><li>[ knockoutBackgroundOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html?lang=nl-NL)</li><li>[ manualCropOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html?lang=nl-NL)</li><li>[ autoColorCropOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html?lang=nl-NL)</li><li>[ autoTransparentCropOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html?lang=nl-NL)</li><li>[ colorManagementOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html?lang=nl-NL)</li><li>[ autoSetCreationOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html?lang=nl-NL)</li><li>[ emailSetting ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html?lang=nl-NL)</li><li>[ xmpKeywords ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html?lang=nl-NL)</li><li>[ unsharpMaskOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html?lang=nl-NL)</li></ul> |
-| 3G2 | video/3gpp2 | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
-| 3GP | video/3gpp | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| Afbeelding | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | Het standaard jobParam is van toepassing op alle MIME-elementen van het afbeeldingstype.<ul><li>[&#x200B; knockoutBackgroundOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html?lang=nl-NL)</li><li>[&#x200B; manualCropOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html?lang=nl-NL)</li><li>[&#x200B; autoColorCropOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html?lang=nl-NL)</li><li>[&#x200B; autoTransparentCropOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html?lang=nl-NL)</li><li>[&#x200B; colorManagementOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html?lang=nl-NL)</li><li>[&#x200B; autoSetCreationOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html?lang=nl-NL)</li><li>[&#x200B; emailSetting &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html?lang=nl-NL)</li><li>[&#x200B; xmpKeywords &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html?lang=nl-NL)</li><li>[&#x200B; unsharpMaskOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html?lang=nl-NL)</li></ul> |
+| 3G2 | video/3gpp2 | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| 3GP | video/3gpp | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | AAC | audio/x-aac | | |
 | AFM | application/x-font-type1 | | |
-| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[ postScriptOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=nl-NL)</li><li> [ illustratorOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=nl-NL)</li></ul> |
+| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[&#x200B; postScriptOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=nl-NL)</li><li> [&#x200B; illustratorOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=nl-NL)</li></ul> |
 | AIFF | audio/x-aiff | | |
-| AVI | video/x-msvideo | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| AVI | video/x-msvideo | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | BMP | image/bmp | | |
 | CSS | text/css | | |
 | DOC | application/msword | | |
 | EPS | <ul><li>application/postscript</li><li>applicatie/eps</li><li>application/x-eps</li><li>afbeelding/eps</li><li>image/x-eps</li></ul> | | |
 | F4V | video/x-f4v | | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash | | |
-| FLV | video/x-flv | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| FLV | video/x-flv | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | FPX | image/vnd.fpx | | |
 | GIF | image/gif | | |
 | ICC | application/vnd.iccprofile | | |
@@ -199,24 +199,24 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 | INDD | application/x-indesign | | |
 | JPEG | image/jpeg | | |
 | JPG | image/jpeg | | |
-| M2V | video/mpeg | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
-| M4V | video/x-m4v | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
-| MOV | video/quicktime | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| M2V | video/mpeg | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| M4V | video/x-m4v | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| MOV | video/quicktime | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | MP3 | audio/mpeg | | |
-| MP4 | video/mp4 | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
-| MPEG | video/mpeg | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
-| MPG | video/mpeg | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| MP4 | video/mp4 | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| MPEG | video/mpeg | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| MPG | video/mpeg | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | MTS | model/vnd.mts | | |
-| OGV | video/ogg | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| OGV | video/ogg | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | OTF | application/x-font-otf | | |
-| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [ pdfOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html?lang=nl-NL) |
+| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [&#x200B; pdfOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html?lang=nl-NL) |
 | PFB | application/x-font-type1 | | |
 | PFM | application/x-font-type1 | | |
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[ postScriptOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=nl-NL)</li><li>[ illustratorOptions ] (https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=nl-NL</li></ul> |
-| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[ photoshopOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html?lang=nl-NL)</li><li>[ photoshopLayerOptions ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html?lang=nl-NL)</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[&#x200B; postScriptOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=nl-NL)</li><li>[ illustratorOptions ] (https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=nl-NL</li></ul> |
+| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[&#x200B; photoshopOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html?lang=nl-NL)</li><li>[&#x200B; photoshopLayerOptions &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html?lang=nl-NL)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |
 | SWF | application/x-shockwave-flash | | |
@@ -224,12 +224,12 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 | TIF/TIFF | image/tiff | | |
 | TTC | application/x-font-ttf | | |
 | TTF | application/x-font-ttf | | |
-| VOB | video/dvd | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| VOB | video/dvd | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | VTT | text/vtt | | |
 | WAV | audio/x-wav | | |
-| WEBM | video/web | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| WEBM | video/web | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | WMA | audio/x-ms-wma | | |
-| WMV | video/x-ms-wmv | | [ ExcludeMasterVideoFromAVS ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
+| WMV | video/x-ms-wmv | | [&#x200B; ExcludeMasterVideoFromAVS &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=nl-NL) |
 | XLS | application/vnd.ms-Excel | | |
 | ZIP | application/zip | | |
 
@@ -255,9 +255,9 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 
 | Indeling | Upload <br> (Invoerindeling) | Creeer <br> beeld <br> vooraf ingesteld <br> (het formaat van de Output) | Voorvertoning <br> dynamische <br> uitvoering | Levert <br> dynamische <br> vertoning | <br> dynamische <br> uitvoering downloaden |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [ AI ](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
-| [ INDD ](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
-| [ PDF ](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Zie Nota hieronder) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [&#x200B; AI &#x200B;](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
+| [&#x200B; INDD &#x200B;](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
+| [&#x200B; PDF &#x200B;](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Zie Nota hieronder) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
@@ -265,35 +265,35 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 
 Overweeg het volgende naast de bovenstaande functionaliteit:
 
-* Om Dynamische Media te gebruiken om dynamische vertoningen voor de dossiers van PDF te produceren, zie [ Adobe Illustrator (AI), Postscript (EPS), en het dossierformaten van PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Om Dynamische Media te gebruiken om dynamische vertoningen voor de dossiers van PDF te produceren, zie [&#x200B; Adobe Illustrator (AI), Postscript (EPS), en het dossierformaten van PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Om Dynamische Media te gebruiken om dynamische vertoningen voor AI dossiers voor te vertonen en te produceren, zie [ Adobe Illustrator (AI), Postscript (EPS), en het dossierformaten van PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Om Dynamische Media te gebruiken om dynamische vertoningen voor AI dossiers voor te vertonen en te produceren, zie [&#x200B; Adobe Illustrator (AI), Postscript (EPS), en het dossierformaten van PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Om Dynamische Media te gebruiken om dynamische vertoningen voor INDD dossiers te produceren, zie [ InDesign (INDD) dossierformaat ](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Om Dynamische Media te gebruiken om dynamische vertoningen voor INDD dossiers te produceren, zie [&#x200B; InDesign (INDD) dossierformaat &#x200B;](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## Dynamische media - Ondersteunde rasterafbeeldingsindelingen {#supported-raster-image-formats-dynamic-media}
 
 | Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden | Typen instellen die deze indeling ondersteunen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | - | - | - | ✓ | - | - |
-| BMP | ✓ | - | - | - | - | [ Beeld ](/help/assets/image-sets.md), [ Gemengde Media ](/help/assets/mixed-media-sets.md), en [ Spin ](/help/assets/spin-sets.md) |
-| [ EPS ](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| BMP | ✓ | - | - | - | - | [&#x200B; Beeld &#x200B;](/help/assets/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/spin-sets.md) |
+| [&#x200B; EPS &#x200B;](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | HEIC | - | - | - | ✓ | - | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/image-sets.md), [ Gemengde Media ](/help/assets/mixed-media-sets.md), en [ Spin ](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [&#x200B; Beeld &#x200B;](/help/assets/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/image-sets.md), [ Gemengde Media ](/help/assets/mixed-media-sets.md), en [ Spin ](/help/assets/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [&#x200B; Beeld &#x200B;](/help/assets/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/image-sets.md), [ Gemengde Media ](/help/assets/mixed-media-sets.md), en [ Spin ](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [&#x200B; Beeld &#x200B;](/help/assets/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/spin-sets.md) |
 | WEBP | - | - | - | ✓ | - | - |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
-* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor vectorafbeeldingen van EPS wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [ vorm ImageMagick ](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie [ lijn Gebaseerde van Media Handler ](media-handlers.md#command-line-based-media-handler).
+* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor vectorafbeeldingen van EPS wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [&#x200B; vorm ImageMagick &#x200B;](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie [&#x200B; lijn Gebaseerde van Media Handler &#x200B;](media-handlers.md#command-line-based-media-handler).
 
-* Om [!DNL Dynamic Media] aan voorproef te gebruiken en dynamische vertoningen voor de dossiers van EPS te produceren, zie [ Adobe Illustrator (AI), Postscript (EPS), en het dossierformaten van PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Om [!DNL Dynamic Media] aan voorproef te gebruiken en dynamische vertoningen voor de dossiers van EPS te produceren, zie [&#x200B; Adobe Illustrator (AI), Postscript (EPS), en het dossierformaten van PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in PostScript Document Structuring Convention (PS-Adobe) versie 3.0 of hoger.
 
@@ -330,7 +330,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 Dynamische media ondersteunt de volgende 3D-indelingen.
 
-Zie ook [ Werkend met 3D activa in Dynamische Media ](/help/assets/assets-3d.md).
+Zie ook [&#x200B; Werkend met 3D activa in Dynamische Media &#x200B;](/help/assets/assets-3d.md).
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
@@ -341,5 +341,5 @@ Zie ook [ Werkend met 3D activa in Dynamische Media ](/help/assets/assets-3d.md)
 
 >[!MORELIKETHIS]
 >
->* [ laat MIME op type-gebaseerde Assets en Dynamic Media Classic toe uploadt baanparametersteun ](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
->* [ vorm MIME type-gebaseerd voor uploadbaanparameters steun ](config-dynamic.md).
+>* [&#x200B; laat MIME op type-gebaseerde Assets en Dynamic Media Classic toe uploadt baanparametersteun &#x200B;](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [&#x200B; vorm MIME type-gebaseerd voor uploadbaanparameters steun &#x200B;](config-dynamic.md).

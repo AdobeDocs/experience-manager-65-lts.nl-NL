@@ -31,4 +31,4 @@ Vanaf LiveCycle ES 8.0 en hoger is ondersteuning voor PDF-pakketten beschikbaar 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).

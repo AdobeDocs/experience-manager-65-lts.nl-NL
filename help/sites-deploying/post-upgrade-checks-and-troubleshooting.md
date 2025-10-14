@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Controles na upgrade {#post-upgrade-checks}
 
-Na de [ Verbetering op plaats ](/help/sites-deploying/in-place-upgrade.md) de volgende activiteiten zouden moeten worden uitgevoerd om de verbetering te voltooien. Er wordt aangenomen dat AEM is gestart met de AEM 6.5 LTS-jar en dat de geüpgraded code base is geïmplementeerd.
+Na de [&#x200B; Verbetering op plaats &#x200B;](/help/sites-deploying/in-place-upgrade.md) de volgende activiteiten zouden moeten worden uitgevoerd om de verbetering te voltooien. Er wordt aangenomen dat AEM is gestart met de AEM 6.5 LTS-jar en dat de geüpgraded code base is geïmplementeerd.
 
 * [Logbestanden controleren voor een upgrade](#verify-logs-for-upgrade-success)
 
@@ -57,7 +57,7 @@ Hiervoor zijn wijzigingen aangebracht in de manier waarop logbestanden worden ge
 
 **error.log**
 
-error.log zou zorgvuldig tijdens en na het opstarten van AEM moeten worden herzien gebruikend de jar van de doelversie. Alle waarschuwingen of fouten moeten worden herzien. In het algemeen, is het best om kwesties aan het begin van het logboek te zoeken. Fouten die zich later in het logbestand voordoen, kunnen in feite bijwerkingen zijn van een hoofdoorzaak die vroeg in het bestand wordt aangeroepen. Als de herhaalde fouten en de waarschuwingen hieronder voor [ het Analyseren van Kwesties met de Verbetering ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade) voorkomen.
+error.log zou zorgvuldig tijdens en na het opstarten van AEM moeten worden herzien gebruikend de jar van de doelversie. Alle waarschuwingen of fouten moeten worden herzien. In het algemeen, is het best om kwesties aan het begin van het logboek te zoeken. Fouten die zich later in het logbestand voordoen, kunnen in feite bijwerkingen zijn van een hoofdoorzaak die vroeg in het bestand wordt aangeroepen. Als de herhaalde fouten en de waarschuwingen hieronder voor [&#x200B; het Analyseren van Kwesties met de Verbetering &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade) voorkomen.
 
 ### OSGi-bundels verifiëren {#verify-osgi-bundles}
 
@@ -75,7 +75,7 @@ Voer een eerste validatie uit op meerdere pagina&#39;s in AEM. Als u een upgrade
 
 #### Opruiming van gegevensopslag inschakelen {#enable-data-store-garbage-collection}
 
-Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. De instructies worden geschetst onder [ Opruiming van de Revisie ](/help/sites-administering/data-store-garbage-collection.md).
+Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. De instructies worden geschetst onder [&#x200B; Opruiming van de Revisie &#x200B;](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -83,11 +83,11 @@ Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor da
 
 #### Onlinerevisie-opruiming inschakelen {#enable-online-revision-cleanup}
 
-Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, dient u ervoor te zorgen dat de Revision Clean Up-taak is ingeschakeld en toegevoegd aan de lijst Dagelijks onderhoud. De instructies worden geschetst onder [ Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md).
+Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, dient u ervoor te zorgen dat de Revision Clean Up-taak is ingeschakeld en toegevoegd aan de lijst Dagelijks onderhoud. De instructies worden geschetst onder [&#x200B; Opruiming van de Revisie &#x200B;](/help/sites-deploying/revision-cleanup.md).
 
 ### Replication-agents inschakelen {#enable-replication-agents}
 
-Zodra publicatiemilieu volledig is bevorderd en bevestigd, laat replicatieagenten op het Milieu van de Auteur toe. Verifieer dat de agenten met respectieve Publish instanties kunnen verbinden. Zie [ Procedure van de Verbetering ](/help/sites-deploying/upgrade-procedure.md) voor meer details op orde van gebeurtenissen.
+Zodra publicatiemilieu volledig is bevorderd en bevestigd, laat replicatieagenten op het Milieu van de Auteur toe. Verifieer dat de agenten met respectieve Publish instanties kunnen verbinden. Zie [&#x200B; Procedure van de Verbetering &#x200B;](/help/sites-deploying/upgrade-procedure.md) voor meer details op orde van gebeurtenissen.
 
 ### Aangepaste geplande taken inschakelen {#enable-custom-scheduled-jobs}
 
@@ -95,7 +95,7 @@ Om het even welke geplande banen als deel van de codebasis kunnen op dit punt wo
 
 ### Testplan uitvoeren {#execute-test-plan}
 
-Voer gedetailleerd testplan uit zoals die in [ wordt bepaald Bevorderend Code en Aanpassingen onder de **Testende Procedure** sectie ](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
+Voer gedetailleerd testplan uit zoals die in [&#x200B; wordt bepaald Bevorderend Code en Aanpassingen onder de **Testende Procedure** sectie &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
 
 ## Problemen analyseren met de upgrade {#analyzing-issues-with-the-upgrade}
 

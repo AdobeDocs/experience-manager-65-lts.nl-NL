@@ -29,6 +29,6 @@ De volgende informatie is beschikbaar over de integratie van AEM met andere Adob
 >
 >Als u samen met uw integratie een aangepaste proxyconfiguratie gebruikt, moet u zowel de proxyconfiguraties van de HTTP-client configureren, aangezien sommige functies van AEM de 3.x-API&#39;s en sommige andere de 4.x-API&#39;s gebruiken:
 >
->* 3.x wordt gevormd met [ http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x wordt gevormd met [ http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x wordt gevormd met [&#x200B; http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x wordt gevormd met [&#x200B; http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

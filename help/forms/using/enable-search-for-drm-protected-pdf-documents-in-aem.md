@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # AEM toestaan te zoeken naar met documentbeveiliging beveiligde PDF-documenten{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op verschillende veelgebruikte documentindelingen, zoals bestanden met normale tekst, Microsoft Office-documenten en PDF-documenten. U kunt het inheemse onderzoek ook uitbreiden om full-text onderzoek op [ documenten uit te voeren PDF die met de veiligheid van het Document van AEM ](../../forms/using/admin-help/document-security.md) worden beschermd. Voer de volgende stappen uit om AEM in staat te stellen full-text zoekopdrachten uit te voeren voor dergelijke documenten:
+Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op verschillende veelgebruikte documentindelingen, zoals bestanden met normale tekst, Microsoft Office-documenten en PDF-documenten. U kunt het inheemse onderzoek ook uitbreiden om full-text onderzoek op [&#x200B; documenten uit te voeren PDF die met de veiligheid van het Document van AEM &#x200B;](../../forms/using/admin-help/document-security.md) worden beschermd. Voer de volgende stappen uit om AEM in staat te stellen full-text zoekopdrachten uit te voeren voor dergelijke documenten:
 
 1. Een veilige verbinding tot stand brengen
 1. Een PDF-document indexeren dat met een voorbeeldbeleid is beveiligd
@@ -23,7 +23,7 @@ Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op versc
 
 * Als u AEM Forms gebruikt op OSGi:
 
-   * Installeer [ het pakket van de Indexer van de Veiligheid van het Document van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
+   * Installeer [&#x200B; het pakket van de Indexer van de Veiligheid van het Document van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
 
    * Controleer of een AEM Forms op de JEE-server actief is en of documentbeveiliging op de overeenkomstige AEM Forms op de JEE-server is geïnstalleerd. Het AEM-formulier op de JEE-server is vereist om het beveiligde document te indexeren.
 
