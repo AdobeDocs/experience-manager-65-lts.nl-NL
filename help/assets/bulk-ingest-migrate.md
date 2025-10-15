@@ -21,13 +21,13 @@ ht-degree: 0%
 
 De installatie van eigenschappak 18912 is facultatief **.
 
-Met Feature Pack 18912 kunt u opgenomen elementen via FTP rechtstreeks in Dynamic Media - Scene7-modus op Adobe Experience Manager bulken. Het laat u ook activa van Dynamic Media Classic in Dynamische Media - wijze Scene7 op Experience Manager migreren. Het eigenschappak is beschikbaar bij [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/customers/consulting-services/main.html).
+Met Feature Pack 18912 kunt u opgenomen elementen via FTP rechtstreeks in Dynamic Media - Scene7-modus op Adobe Experience Manager bulken. Het laat u ook activa van Dynamic Media Classic in Dynamische Media - wijze Scene7 op Experience Manager migreren. Het eigenschappak is beschikbaar bij [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/nl/customers/consulting-services/main.html).
 
 >[!IMPORTANT]
 >
 >Het is mogelijk voor u om het eigenschappak aan massa te gebruiken migrate activa op zich van Dynamic Media Classic aan Dynamische Media - wijze Scene7 in Experience Manager. Het is ook mogelijk om migratieactiva in bulk te migreren gebruikend de eigenschap van FTP in Dynamic Media Classic. Nochtans, adviseert Adobe *niet* dat u één van beiden van deze methodes toe te schrijven aan de betrokken ingewikkeldheid gebruikt.
 >
->Als dusdanig, wordt dit pak van de migratieeigenschap *slechts* gesteund als deel van een migratieproject wanneer gedaan door [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/customers/consulting-services/main.html).
+>Als dusdanig, wordt dit pak van de migratieeigenschap *slechts* gesteund als deel van een migratieproject wanneer gedaan door [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/nl/customers/consulting-services/main.html).
 
 Voordat u het functiepakket installeert, moet u een servicegebruiker maken en die informatie doorgeven aan de ondersteuning van Adobe.
 

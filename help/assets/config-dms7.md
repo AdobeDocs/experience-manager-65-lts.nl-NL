@@ -43,7 +43,7 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor de primai
 
 ## Dynamische media in Scene7-modus inschakelen {#enabling-dynamic-media-in-scene-mode}
 
-[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u deze inschakelen.
+[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u deze inschakelen.
 
 >[!WARNING]
 >
@@ -75,7 +75,7 @@ Als u aangepaste viewervoorinstellingen en -configuraties die u van `/etc` hebt 
 
 De installatie van eigenschappak 18912 is facultatief **.
 
-Met Feature Pack 18912 kunt u opgenomen elementen bulksgewijs via FTP importeren of elementen migreren van Dynamic Media - Hybride modus of Dynamic Media Classic naar Dynamic Media - Scene7-modus op Experience Manager. Het is beschikbaar bij [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/customers/consulting-services/main.html).
+Met Feature Pack 18912 kunt u opgenomen elementen bulksgewijs via FTP importeren of elementen migreren van Dynamic Media - Hybride modus of Dynamic Media Classic naar Dynamic Media - Scene7-modus op Experience Manager. Het is beschikbaar bij [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/nl/customers/consulting-services/main.html).
 
 Zie [&#x200B; eigenschappak 18912 voor bulkactiva migratie &#x200B;](/help/assets/bulk-ingest-migrate.md) voor meer informatie installeren.
 
@@ -247,7 +247,7 @@ In Dynamische Media - wijze Scene7, is de standaard grootte van het element uplo
 Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebruiken:
 
 * U moet Experience Manager 6.5 LTS in Dynamische Media - wijze Scene7 in werking stellen.
-* Deze grote upload eigenschap wordt slechts gesteund voor [*Managed Services* &#x200B;](https://business.adobe.com/products/experience-manager/managed-services.html) klanten.
+* Deze grote upload eigenschap wordt slechts gesteund voor [*Managed Services* &#x200B;](https://business.adobe.com/nl/products/experience-manager/managed-services.html) klanten.
 * Zorg ervoor dat uw Experience Manager-instantie is geconfigureerd met Amazon S3 of Microsoft® Azure Blob-opslag.
 
   >[!NOTE]
