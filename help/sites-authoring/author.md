@@ -81,4 +81,4 @@ Meestal bevindt de publicatieomgeving zich in de gedemilitariseerde zone, met an
 
 #### Dispatcher {#dispatcher}
 
-Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.
+Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.

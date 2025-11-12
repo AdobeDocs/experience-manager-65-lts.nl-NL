@@ -52,12 +52,12 @@ Zie [&#x200B; het slimme gewas of slim monster van één enkel beeld &#x200B;](/
 
 Alle out-of-the-box [!DNL Dynamic Media] viewercomponenten ondersteunen toetsenbordtoegankelijkheid voor uw klanten.
 
-Zie [&#x200B; de toegankelijkheid van het Toetsenbord en navigatie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
+Zie [&#x200B; de toegankelijkheid van het Toetsenbord en navigatie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=nl-NL) in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
 
 ## Ondersteuning voor hulpprogramma&#39;s in [!DNL Dynamic Media] -viewers {#assistive-technology-support-for-dm-viewers}
 
 Alle [!DNL Dynamic Media] -viewercomponenten ondersteunen de rollen en kenmerken van ARIA (Accessible Rich Internet Applications) om de integratie met ondersteunende hulpmiddelen, zoals schermlezers, te verbeteren.
-Zie het **onderwerp van de Hulp van de technologiesteun 0&rbrace; {in om het even welk het aanpassen kijkersonderwerp in de Dynamische Gids van de Verwijzing van de Kijkers van Media.** Bijvoorbeeld, zie [&#x200B; de technologiesteun van 0} Hulpmiddelen &lbrace;voor de Videokijker, of &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) de technologiesteun van de Hulp [&#x200B; voor de Interactieve kijker van het Beeld.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)
+Zie het **onderwerp van de Hulp van de technologiesteun 0&rbrace; {in om het even welk het aanpassen kijkersonderwerp in de Dynamische Gids van de Verwijzing van de Kijkers van Media.** Bijvoorbeeld, zie [&#x200B; de technologiesteun van 0} Hulpmiddelen &lbrace;voor de Videokijker, of &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=nl-NL) de technologiesteun van de Hulp [&#x200B; voor de Interactieve kijker van het Beeld.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=nl-NL#viewers-for-aem-assets-only)
 
 ## Ondersteuning voor Closed Caption in Dynamic Media {#closed-caption-support}
 

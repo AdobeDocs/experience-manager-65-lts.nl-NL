@@ -82,7 +82,7 @@ Bij het maken van accounts biedt Adobe Dynamic Media automatisch de toegewezen s
 
   Hiermee regelt u het behoud van bestaande handmatige snijddefinities.
 
-  Zie ook `preserveCrop` in [&#x200B; UploadPostJob &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) en [&#x200B; ReprocessAssetsJob &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
+  Zie ook `preserveCrop` in [&#x200B; UploadPostJob &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=nl-NL) en [&#x200B; ReprocessAssetsJob &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=nl-NL), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
 
 ## Standaardopties voor uploaden {#default-upload-options}
 
