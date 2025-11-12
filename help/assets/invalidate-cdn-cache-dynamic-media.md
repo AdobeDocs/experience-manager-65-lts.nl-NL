@@ -23,7 +23,7 @@ De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]** .
 
-   ![ eigenschap van de Bevestiging CDN ](/help/assets/assets-dm/cdn-invalidation-template2.png)
+   ![&#x200B; eigenschap van de Bevestiging CDN &#x200B;](/help/assets/assets-dm/cdn-invalidation-template2.png)
 
 1. Voer op de pagina **[!UICONTROL CDN Invalidation template]** op basis van uw scenario een van de volgende opties uit:
 
@@ -32,7 +32,7 @@ De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN
    | Ik heb in het verleden al een CDN-validatiesjabloon gemaakt met Dynamic Media Classic. | Het tekstveld **[!UICONTROL Create Template]** wordt vooraf gevuld met uw sjabloongegevens. In dat geval kunt u de sjabloon bewerken of doorgaan met de volgende stap. |
    | Ik moet een sjabloon maken. Wat ga ik binnen? | Op het **[!UICONTROL Create Template]** tekstgebied, ga een beeld URL (met inbegrip van beeldvoorinstellingen of bepalingen) die `<ID>` van verwijzingen voorzien, in plaats van een specifieke beeldidentiteitskaart zoals in het volgende voorbeeld:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br> als het malplaatje enkel `<ID>` bevat, dan vult de Dynamische Media `https://<publishserver_name>/is/image/<company_name>/<ID>` in waar `<publishserver_name>` de naam van uw Publish Server is die in Algemene Montages in Dynamic Media Classic wordt bepaald. `<company_name>` is de naam van de hoofdmap van uw bedrijf die aan deze Experience Manager-instantie is gekoppeld. `<ID>` is de geselecteerde elementen via de elementenkiezer die ongeldig moeten worden gemaakt.<br> Om het even welke vooraf instelt/modifiers post `<ID>` wordt gekopieerd aangezien-is in de definitie URL.<br> slechts beelden - dat wil zeggen, `/is/image` - kunnen worden auto gevormd gebaseerd op het malplaatje.<br> Voor `/is/content/`, produceert het toevoegen van activa zoals video&#39;s of PDFs gebruikend de activa plukker geen automatisch URLs. In plaats daarvan, moet u dergelijke activa of in het malplaatje van de Invalidatie CDN specificeren, of u kunt URL aan dergelijke activa in *Deel 2 van 2 manueel toevoegen: Het plaatsen van CDN de opties van de Invalidatie*.<br>**Voorbeelden:**<br> In dit eerste voorbeeld, bevat het ongeldigingsmalplaatje `<ID>` samen met activa URL die `/is/content` hebben. Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>` . Dynamische media vormen de URL op basis van dit pad, waarbij `<ID>` de elementen is die zijn geselecteerd via de elementenkiezer die u ongeldig wilt maken.<br> In dit tweede voorbeeld, bevat het validatiesjabloon de volledige URL van het element dat in uw wegeigenschappen met `/is/content` wordt gebruikt (niet afhankelijk van de elementenkiezer). Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` , waarbij rugzak de element-id is.<br> formaten van Activa die in Dynamische Media worden gesteund zijn geschikt voor ongeldigverklaring. De dossiertypes van activa die *niet* voor CDN ongeldig worden gesteund omvatten PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word, en Rich Text Format.<br><br>・ Wanneer u de sjabloon maakt, maar zorg ervoor dat u de syntaxis en typos goed in de gaten houdt. Dynamische media voert geen sjabloonvalidatie uit.<br>・ Met de CDN-validatiesjabloon kunt u maximaal 2500 tekens opslaan.<br>・ Specificeer URLs voor beeld slimme gewassen of in dit malplaatje van de Invalidatie CDN, of in het **[!UICONTROL Add URL]** tekstgebied in *Deel 2: Plaatsende opties van de Invalidatie CDN.*<br>・ Elk item in een CDN-validatiesjabloon moet op een aparte regel staan.<br>・ Het volgende voorbeeld van de CDN-validatiesjabloon is alleen bedoeld als demonstratie. |
 
-   ![ CDN Sjabloon voor validatie - creeer ](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
+   ![&#x200B; CDN Sjabloon voor validatie - creeer &#x200B;](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
    >[!NOTE]
    >
@@ -44,11 +44,11 @@ De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN
 
 1. Selecteer in Experience Manager as a Cloud Service **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]** .
 
-   ![ eigenschap van de Bevestiging CDN ](/help/assets/assets-dm/cdn-invalidation-path2.png)
+   ![&#x200B; eigenschap van de Bevestiging CDN &#x200B;](/help/assets/assets-dm/cdn-invalidation-path2.png)
 
 1. Selecteer op de pagina **[!UICONTROL CDN Invalidation - Add Details]** de elementen voor CDN-validatie.
 
-   ![ CDN ongeldig - voeg Details ](/help/assets/assets-dm/cdn-invalidation-add-details-2.png) toe
+   ![&#x200B; CDN ongeldig - voeg Details &#x200B;](/help/assets/assets-dm/cdn-invalidation-add-details-2.png) toe
 
    >[!NOTE]
    >
@@ -67,7 +67,7 @@ De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN
 
    Als u bijvoorbeeld het voorbeeld voor de CDN-validatiesjabloon gebruikt dat eerder in de stappen werd weergegeven, kunt u een enkel element met de naam `spinset` toevoegen. Wanneer u naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]** navigeert, resulteert dit in de volgende vijf gegenereerde URL&#39;s in de gebruikersinterface van **[!UICONTROL CDN Invalidation - Confirm]** :
 
-   ![ CDN ongeldig - bevestigt ](/help/assets/assets-dm/cdn-invalidation-confirm-2.png)
+   ![&#x200B; CDN ongeldig - bevestigt &#x200B;](/help/assets/assets-dm/cdn-invalidation-confirm-2.png)
 
    Indien nodig, uitgezochte **X** rechts van een URL om het van het invalidatieproces te schrappen.
 
