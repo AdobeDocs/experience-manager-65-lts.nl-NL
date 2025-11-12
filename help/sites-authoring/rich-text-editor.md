@@ -1,13 +1,13 @@
 ---
 title: De Rich Text Editor gebruiken om inhoud te ontwerpen
-description: De Rich Text Editor gebruiken om inhoud te ontwerpen in Adobe Experience Manager 6.5.
+description: De Rich Text Editor gebruiken om inhoud te ontwerpen in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,18 @@ ht-degree: 0%
 
 De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele inhoud in AEM. Het vormt de basis van verschillende componenten, waaronder:
 
-* [&#x200B; Tekst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/text)
-* [&#x200B; Lijst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [ Tekst ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [ Lijst ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Plaatselijk bewerken {#in-place-editing}
 
-Het selecteren van een op tekst-gebaseerde component met één enkele klik zal de [&#x200B; componententoolbar &#x200B;](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) zoals met om het even welke component openbaren.
+Het selecteren van een op tekst-gebaseerde component met één enkele klik zal de [ componententoolbar ](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) zoals met om het even welke component openbaren.
 
-![&#x200B; screen_shot_2018-03-21at163054 &#x200B;](assets/screen_shot_2018-03-21at163054.png)
+![ screen_shot_2018-03-21at163054 ](assets/screen_shot_2018-03-21at163054.png)
 
 Als u nogmaals tikt of erop klikt, of de component aanvankelijk selecteert met een langzaam dubbelklikken, wordt ter plekke bewerken geopend met een eigen werkbalk. Hier kunt u de inhoud bewerken en basisopmaakwijzigingen aanbrengen.
 
-![&#x200B; screen_shot_2018-03-21at163214 &#x200B;](assets/screen_shot_2018-03-21at163214.png)
+![ screen_shot_2018-03-21at163214 ](assets/screen_shot_2018-03-21at163214.png)
 
 Deze werkbalk bevat de volgende opties:
 
@@ -41,11 +41,11 @@ Deze werkbalk bevat de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Voor op tekst-gebaseerde componenten, die de het volledig-schermwijze van de toolbar ![&#x200B; Volledige het uitgeven van het scherm wijze &#x200B;](do-not-localize/screen_shot_2018-03-21at163236.png) tikken opent de rijke tekstredacteur en verbergt de rest pagina inhoud.
+Voor op tekst-gebaseerde componenten, die de het volledig-schermwijze van de toolbar ![ Volledige het uitgeven van het scherm wijze ](do-not-localize/screen_shot_2018-03-21at163236.png) tikken opent de rijke tekstredacteur en verbergt de rest pagina inhoud.
 
-In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [&#x200B; hangt van de configuratie &#x200B;](/help/sites-administering/rich-text-editor.md) af.
+In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [ hangt van de configuratie ](/help/sites-administering/rich-text-editor.md) af.
 
-![&#x200B; screen_shot_2018-03-21at163248 &#x200B;](assets/screen_shot_2018-03-21at163248.png)
+![ screen_shot_2018-03-21at163248 ](assets/screen_shot_2018-03-21at163248.png)
 
 Extra opties voor teksteditors met tekstopmaak zijn:
 
@@ -56,7 +56,7 @@ Extra opties voor teksteditors met tekstopmaak zijn:
 
 Sluit de modus Volledig scherm door op het pictogram Minimaliseren te klikken.
 
-![&#x200B; screen_shot_2018-03-21at163323 &#x200B;](assets/screen_shot_2018-03-21at163323.png)
+![ screen_shot_2018-03-21at163323 ](assets/screen_shot_2018-03-21at163323.png)
 
 >[!NOTE]
 >

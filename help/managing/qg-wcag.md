@@ -1,11 +1,11 @@
 ---
 title: Snelgids voor WCAG 2.1
 description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) versie 2.1.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 57afd8bf-c6d6-47ab-9a30-c5830bc5ea51
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 5aafd5e1ba5e2202f941975d292a3e242363601a
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 87%
@@ -24,9 +24,9 @@ De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/T
 
 >[!NOTE]
 >
->Aangezien deze documenten de [&#x200B; bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 &#x200B;](https://www.w3.org/TR/) werd ter beschikking gesteld in oktober 2023.
+>Aangezien deze documenten de [ bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 ](https://www.w3.org/TR/) werd ter beschikking gesteld in oktober 2023.
 >
->Zie [&#x200B; Vergelijking met WCAG 2.1 &#x200B;](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [&#x200B; Nieuwe Eigenschappen in WCAG 2.2 &#x200B;](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
+>Zie [ Vergelijking met WCAG 2.1 ](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [ Nieuwe Eigenschappen in WCAG 2.2 ](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webinhoud om ervoor te zorgen dat de middelen die zij produceren zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap; bijvoorbeeld visuele stoornissen, gehoorverlies, leermoeilijkheden, leeftijdsgerelateerde beperkingen, enz.
 

@@ -1,13 +1,13 @@
 ---
 title: Authoring
-description: Concepten van ontwerpen en publiceren in Adobe Experience Manager 6.5.
+description: Concepten van ontwerpen en publiceren in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 71ea867e240d76a2a881f6e7d65b83979b558f46
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De auteursomgeving verstrekt de mechanismen om, deze inhoud tot stand te brengen
 * Een auteur maakt en beoordeelt de inhoud (dit kan van verschillende typen zijn, bijvoorbeeld pagina&#39;s, middelen, publicaties, enzovoort)
 * die op een gegeven moment op uw website worden gepubliceerd.
 
-![&#x200B; Overzicht van Milieu&#39;s &#x200B;](assets/chlimage_1-132.png)
+![ Overzicht van Milieu&#39;s ](assets/chlimage_1-132.png)
 
 Voor de auteursomgeving, wordt de functionaliteit van AEM beschikbaar gemaakt door twee UIs. Voor het publicatiemilieu, ontwerpt u het volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
 
@@ -57,7 +57,7 @@ Bovendien zijn er beheertaken die u helpen uw inhoud te beheren:
 
 >[!NOTE]
 >
->AEM wordt ook [&#x200B; beheerd &#x200B;](/help/sites-administering/home.md) (voor de meeste taken) van het auteursmilieu.
+>AEM wordt ook [ beheerd ](/help/sites-administering/home.md) (voor de meeste taken) van het auteursmilieu.
 
 #### Publicatie-omgeving {#publish-environment}
 
@@ -81,4 +81,4 @@ Meestal bevindt de publicatieomgeving zich in de gedemilitariseerde zone, met an
 
 #### Dispatcher {#dispatcher}
 
-Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.
+Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.

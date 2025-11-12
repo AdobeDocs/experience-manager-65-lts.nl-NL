@@ -1,14 +1,13 @@
 ---
 title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de Adobe Imaging Transcoding Library configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
-contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -76,7 +75,7 @@ Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werksche
 
 Om de bibliotheek te vormen, creeer een CONF dossier om op de bibliotheken te wijzen gebruikend de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
 
-1. Download het [&#x200B; Uitbeeldende Transcoding pakket van de Bibliotheek van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het gebruikend de Manager van het Pakket. Het pakket is compatibel met [!DNL Experience Manager] 6.5.
+1. Download het [ Uitbeeldende Transcoding pakket van de Bibliotheek van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het gebruikend de Manager van het Pakket. Het pakket is compatibel met [!DNL Experience Manager] 6.5 LTS.
 
 1. Als u een bundle-id voor `com.day.cq.dam.cq-dam-switchengine` wilt weten, meldt u zich aan bij de webconsole en klikt u op **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]** . Als u de bundelconsole wilt openen, opent u ook de URL van `https://[aem_server:[port]/system/console/bundles/` . Zoek `com.day.cq.dam.cq-dam-switchengine` -bundel en de bijbehorende id.
 
@@ -94,14 +93,14 @@ Om de bibliotheek te vormen, creeer een CONF dossier om op de bibliotheken te wi
 
 1. Voer de opdracht `ldconfig` uit om de benodigde koppelingen en cache te maken.
 
-1. Bewerk het `.bash_profile` -bestand in de account die wordt gebruikt om [!DNL Experience Manager] te starten. Voeg `LD_LIBRARY_PATH` toe door het volgende toe te voegen.
+1. Bewerk het [!DNL Experience Manager] -bestand in de account die wordt gebruikt om `.bash_profile` te starten. Voeg `LD_LIBRARY_PATH` toe door het volgende toe te voegen.
 
    ```shell
    LD_LIBRARY_PATH=.
    export LD_LIBRARY_PATH
    ```
 
-1. Gebruik de opdracht `echo $LD_LIBRARY_PATH` om ervoor te zorgen dat de waarde van het pad is ingesteld op `.` . De uitvoer moet gewoon `.` zijn. Start de sessie opnieuw als de waarde niet is ingesteld op `.` .
+1. Gebruik de opdracht `.` om ervoor te zorgen dat de waarde van het pad is ingesteld op `echo $LD_LIBRARY_PATH` . De uitvoer moet gewoon `.` zijn. Start de sessie opnieuw als de waarde niet is ingesteld op `.` .
 
 ### Workflow [!UICONTROL DAM Update Asset] configureren {#configure-dam-asset-update-workflow}
 
@@ -129,11 +128,11 @@ Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
 
-   ![&#x200B; verandering &#x200B;](assets/chlimage_1-199.png)
+   ![ verandering ](assets/chlimage_1-199.png)
 
 1. (Optioneel) Genereer miniaturen van een tussentijdse uitvoering met één opdracht. De tussenliggende vertoning fungeert als bron voor het genereren van statische weergaven en webuitvoeringen. Deze methode is sneller dan de eerdere methode. Met deze methode kunt u echter geen aangepaste parameters op miniaturen toepassen.
 
-   ![&#x200B; verandering &#x200B;](assets/chlimage_1-200.png)
+   ![ verandering ](assets/chlimage_1-200.png)
 
 1. Als u webuitvoeringen wilt genereren, configureert u parameters op het tabblad **[!UICONTROL Web-Enabled Image]** .
 
@@ -143,4 +142,4 @@ Upload een TIFF-afbeelding en controleer het bestand error.log om de configurati
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Gesteund MIME typeartikel &#x200B;](assets-formats.md#supported-image-transcoding-library)
+>* [ Gesteund MIME typeartikel ](assets-formats.md#supported-image-transcoding-library)

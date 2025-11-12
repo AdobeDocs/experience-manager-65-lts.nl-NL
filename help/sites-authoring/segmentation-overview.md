@@ -1,15 +1,11 @@
 ---
 title: Segmentering begrijpen tijdens het maken van een campagne
 description: Segmentering is een belangrijke overweging bij het maken van een campagne.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 7167c672-8d24-4493-aff6-b5b453074bff
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 36022b939d598a43ee7f5339ed04122e476205b7
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -32,7 +28,7 @@ De inhoud kan vervolgens worden afgestemd op de behoeften en belangen van de bez
 
 ## Segmentatie gebruiken {#using-segmentation}
 
-De segmenten worden bepaald in [&#x200B; het Vormen Segmentatie &#x200B;](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
+De segmenten worden bepaald in [ het Vormen Segmentatie ](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
 
 ## Gesegmenteerde terminologie {#segmentation-terminology}
 
@@ -64,7 +60,7 @@ Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
 
 **Afgeleide Beetjes** - sommige demografische eigenschappen zijn moeilijk te bepalen zonder registratie, maar kunnen worden afgeleid door gedrag en demografische eigenschappen te combineren.
 
-Bijvoorbeeld, die verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [&#x200B; worden verkregen Google Ad Planner &#x200B;](https://www.google.com/adplanner/)) combineren staan plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
+Bijvoorbeeld, die verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [ worden verkregen Google Ad Planner ](https://www.google.com/adplanner/)) combineren staan plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
 
 **Subsegment** - een segment kan in verscheidene subsegmenten worden onderverdeeld. Dit wordt gedaan door extra eigenschappen te bepalen.
 
@@ -78,4 +74,4 @@ Bijvoorbeeld, die verwijzende URL (als gedragseigenschap) met demografische gege
 
 >[!NOTE]
 >
->Zie [&#x200B; Segmentatie &#x200B;](/help/sites-administering/campaign-segmentation.md) voor verdere informatie over segmenten in Adobe Experience Manager.
+>Zie [ Segmentatie ](/help/sites-administering/campaign-segmentation.md) voor verdere informatie over segmenten in Adobe Experience Manager.

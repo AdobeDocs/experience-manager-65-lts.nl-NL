@@ -1,13 +1,13 @@
 ---
 title: Inhoudspagina's ontwerpen in AEM
-description: De taken die bij het ontwerpen van een inhoudspagina in Adobe Experience Manager 6.5 betrokken zijn.
+description: De taken die bij het ontwerpen van een inhoudspagina in Adobe Experience Manager 6.5 LTS betrokken zijn.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: fafe6322-1dc3-4637-8a8a-33143af04c30
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d95f583bab511c923453a7bb4bcbb726355987b0
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 Het volgende biedt twee typen overzicht voor het ontwerpen met AEM:
 
-* [&#x200B; Eerste Stappen voor Auteurs &#x200B;](/help/sites-authoring/first-steps.md) - een inleiding voor nieuwe auteurs
+* [ Eerste Stappen voor Auteurs ](/help/sites-authoring/first-steps.md) - een inleiding voor nieuwe auteurs
 
-* [&#x200B; Snelle Gids aan de Authoring Pagina&#39;s &#x200B;](/help/sites-authoring/qg-page-authoring.md) - een snelle gids (hoog niveau) aan de belangrijkste acties
+* [ Snelle Gids aan de Authoring Pagina&#39;s ](/help/sites-authoring/qg-page-authoring.md) - een snelle gids (hoog niveau) aan de belangrijkste acties
 
 >[!NOTE]
 >
->In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn vele extra eigenschappen nauw verwant met pagina creatie, die in andere secties van de [&#x200B; Authoring Gids &#x200B;](/help/sites-authoring/first-steps.md) wordt behandeld.
+>In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn vele extra eigenschappen nauw verwant met pagina creatie, die in andere secties van de [ Authoring Gids ](/help/sites-authoring/first-steps.md) wordt behandeld.
 
 ## Snel overzicht van de functies die worden gebruikt voor het ontwerpen van pagina&#39;s {#quick-overview-of-features-used-for-authoring-pages}
 

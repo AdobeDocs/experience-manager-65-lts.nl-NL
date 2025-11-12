@@ -1,18 +1,14 @@
 ---
 title: Algemene instellingen voor dynamische media configureren
 description: Leer hoe u Algemene instellingen in dynamische media beheert. U kunt hier de naam van de publicatieserver en de naam van de oorspronkelijke server instellen en een optie voor het overschrijven van afbeeldingen instellen. Er zijn ook standaard uploadopties voor onscherpe maskers van afbeeldingen en uploadopties voor de manier waarop u PostScript-, Adobe Photoshop-, PDF- en Adobe Illustrator-bestanden wilt verwerken.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2307'
 ht-degree: 0%
 
 ---
@@ -21,8 +17,8 @@ ht-degree: 0%
 
 Het configureren van **[!UICONTROL Dynamic Media General Settings]** is alleen beschikbaar als:
 
-* U stelt Dynamische Media op wijze Scene7 in werking. Zie [&#x200B; Dynamische Media op wijze Scene7 &#x200B;](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode) toelaten.
-* U hebt *bestaand* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 of hierboven. Zie [&#x200B; een Dynamische Configuratie van Media in de Diensten van de Wolk &#x200B;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) creëren.
+* U stelt Dynamische Media op wijze Scene7 in werking. Zie [ Dynamische Media op wijze Scene7 ](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode) toelaten.
+* U hebt *bestaand* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**). Zie [ een Dynamische Configuratie van Media in de Diensten van de Wolk ](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) creëren.
 * U bent een Experience Manager-systeembeheerder met beheerdersrechten.
 
 Dynamische media algemene instellingen zijn bedoeld voor gebruik door ervaren websiteontwikkelaars en -programmeurs. Adobe Dynamic Media raadt gebruikers die deze publicatie-instellingen wijzigen aan op de hoogte te zijn van Dynamic Media op Adobe Experience Manager en de basistechnologie voor beeldbewerking.
@@ -31,11 +27,11 @@ Bij het maken van accounts biedt Adobe Dynamic Media automatisch de toegewezen s
 
 Op de pagina Dynamische media publiceren stelt u standaardinstellingen in die bepalen hoe elementen van Adobe Dynamic Media-servers worden geleverd aan websites of toepassingen. Als er geen instelling is opgegeven, levert de Adobe Dynamic Media-server een element op basis van een standaardinstelling die is geconfigureerd op de pagina Dynamische media publiceren-instelling.
 
-Zie ook [&#x200B; Facultatief - Opstelling en configuratie van Dynamische Media - Scene7 wijzemontages &#x200B;](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) voor meer facultatieve configuratietaken.
+Zie ook [ Facultatief - Opstelling en configuratie van Dynamische Media - Scene7 wijzemontages ](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) voor meer facultatieve configuratietaken.
 
 >[!NOTE]
 >
->Dynamic Media Classic uitbreiden naar Dynamic Media op Adobe Experience Manager? De Algemene pagina van Montages en [&#x200B; publiceren de pagina van de Opstelling &#x200B;](/help/assets/dm-publish-settings.md) in Dynamische Media wordt pre-bevolkt met de waarden die van uw rekening van Dynamic Media Classic worden genomen. De uitzonderingen zijn alle waarden die worden vermeld onder **[!UICONTROL Default upload options]** gebied van de Algemene pagina van Montages. Deze waarden staan al in Experience Manager. Alle wijzigingen die u onder **[!UICONTROL Default upload options]** aanbrengt in een van de vijf tabbladen via de Experience Manager-gebruikersinterface, worden daarom weerspiegeld in Dynamic Media, niet in Dynamic Media Classic. Alle andere montages en waarden in de Algemene pagina van Montages en [&#x200B; publiceren de pagina van de Opstelling &#x200B;](/help/assets/dm-publish-settings.md) wordt gehandhaafd tussen Dynamic Media Classic en Dynamische Media op Experience Manager.
+>Dynamic Media Classic uitbreiden naar Dynamic Media op Adobe Experience Manager? De Algemene pagina van Montages en [ publiceren de pagina van de Opstelling ](/help/assets/dm-publish-settings.md) in Dynamische Media wordt pre-bevolkt met de waarden die van uw rekening van Dynamic Media Classic worden genomen. De uitzonderingen zijn alle waarden die worden vermeld onder **[!UICONTROL Default upload options]** gebied van de Algemene pagina van Montages. Deze waarden staan al in Experience Manager. Alle wijzigingen die u onder **[!UICONTROL Default upload options]** aanbrengt in een van de vijf tabbladen via de Experience Manager-gebruikersinterface, worden daarom weerspiegeld in Dynamic Media, niet in Dynamic Media Classic. Alle andere montages en waarden in de Algemene pagina van Montages en [ publiceren de pagina van de Opstelling ](/help/assets/dm-publish-settings.md) wordt gehandhaafd tussen Dynamic Media Classic en Dynamische Media op Experience Manager.
 
 **om Dynamische Media Algemene Montages te vormen:**
 
@@ -45,14 +41,14 @@ Zie ook [&#x200B; Facultatief - Opstelling en configuratie van Dynamische Media 
 
    * [Server](#server-general-setting)
    * [Uploaden naar toepassing](#upload-to-application)
-   * [&#x200B; Beeld die &#x200B;](#image-editing-tab) tabel uitgeeft
-   * [&#x200B; PostScript &#x200B;](#postscript-tab) lusje
-   * [&#x200B; Photoshop &#x200B;](#photoshop-tab) lusje
-   * [&#x200B; PDF &#x200B;](#pdf-tab) lusje
-   * [&#x200B; Illustrator &#x200B;](#illustrator-tab) lusje
+   * [ Beeld die ](#image-editing-tab) tabel uitgeeft
+   * [ PostScript ](#postscript-tab) lusje
+   * [ Photoshop ](#photoshop-tab) lusje
+   * [ PDF ](#pdf-tab) lusje
+   * [ Illustrator ](#illustrator-tab) lusje
 
-   ![&#x200B; Dynamische pagina van de Montages van Media Algemene &#x200B;](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamische pagina van de Montages van Media Algemene, met het **[!UICONTROL Image Editing]**&#x200B;geselecteerde lusje.*<br><br>
+   ![ Dynamische pagina van de Montages van Media Algemene ](/help/assets/assets-dm/dm-general-settings.png)
+   *Dynamische pagina van de Montages van Media Algemene, met het **[!UICONTROL Image Editing]**geselecteerde lusje.*<br><br>
 
 1. Wanneer u klaar bent, selecteert u **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 
@@ -86,7 +82,7 @@ Bij het maken van accounts biedt Adobe Dynamic Media automatisch de toegewezen s
 
   Hiermee regelt u het behoud van bestaande handmatige snijddefinities.
 
-  Zie ook `preserveCrop` in [&#x200B; UploadPostJob &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=nl-NL) en [&#x200B; ReprocessAssetsJob &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=nl-NL), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
+  Zie ook `preserveCrop` in [ UploadPostJob ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) en [ ReprocessAssetsJob ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
 
 ## Standaardopties voor uploaden {#default-upload-options}
 
@@ -103,7 +99,7 @@ Voor het effect Onscherp masker worden dezelfde opties gebruikt als voor het fil
 | **[!UICONTROL Threshold]** | Vereist.<br> de Drempel is een waaier van contrast die wordt genegeerd wanneer de filter Onscherp Masker wordt toegepast. Dit effect is belangrijk, zodat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is `0` - `255` . Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. `0`=zwart, `128`=50% grijs en `255`=wit.<br> de drempelwaarde van A van `12` negeert lichte variaties is de helderheid van de huidskleur om het toevoegen van lawaai te vermijden, maar nog toevoegt randcontrast aan contrasterende gebieden zoals waar de wimpers huid ontmoeten.<br> als u een foto van iemands gezicht hebt, beïnvloedt het Onscherp Masker de contrasterende delen van het beeld. Bijvoorbeeld, waar wimpers en huid samenkomen om een duidelijk gebied van contrast tot stand te brengen, en de vlotte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele wijzigingen in de pixels van de skin. Er wordt op zijn beurt een lawaai en ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> om deze kwestie te vermijden, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixel te negeren die contrast, zoals vlotte huid niet dramatisch veranderen.<br> in zipper grafisch vroeger getoond, merk de textuur naast de ritppers op. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
 | **[!UICONTROL Monochrome]** | Selecteer deze optie om de helderheid (intensiteit) van een afbeelding zonder scherp masker te wijzigen.<br> schrap aan unshark-masker elke kleurencomponent afzonderlijk. |
 
-Zie ook [&#x200B; scherp beelden in de Dynamische Media van Adobe en op de Server van het Beeld &#x200B;](/help/assets/assets/sharpening_images.pdf).
+Zie ook [ scherp beelden in de Dynamische Media van Adobe en op de Server van het Beeld ](/help/assets/assets/sharpening_images.pdf).
 
 ### Het tabblad PostScript {#postscript-tab}
 

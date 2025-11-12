@@ -1,16 +1,11 @@
 ---
 title: Tags gebruiken
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 73fe62f4-a3a6-4cfa-9b31-517653c05269
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aba5065cf209caf085efe85ca7e0ca9ff1b5d9a2
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -21,8 +16,8 @@ ht-degree: 0%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [&#x200B; het Beheer Markeringen &#x200B;](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
-* Zie [&#x200B; Tags voor Ontwikkelaars &#x200B;](/help/sites-developing/tags.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [ het Beheer Markeringen ](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* Zie [ Tags voor Ontwikkelaars ](/help/sites-developing/tags.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
@@ -43,9 +38,9 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Markeringen/Trefwoorden** gebied in te gaan.
 
-Om [&#x200B; vooraf bepaalde markeringen &#x200B;](/help/sites-administering/tags.md) toe te passen, in het **3&rbrace; venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
+Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3} venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
 
-![&#x200B; Uitgezochte het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen &#x200B;](assets/chlimage_1-41.png) te schrappen
+![ Uitgezochte het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen ](assets/chlimage_1-41.png) te schrappen
 
 ### Codes publiceren {#publishing-tags}
 

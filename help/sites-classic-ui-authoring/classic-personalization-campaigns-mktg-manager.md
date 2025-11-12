@@ -1,16 +1,11 @@
 ---
 title: Werken met de manager van de Campagne van de Marketing
 description: MCM (Marketing Campaign Manager) is een console waarmee u campagnes met meerdere kanalen kunt beheren. Met deze software voor marketingautomatisering kunt u al uw merken, campagnes en ervaringen beheren, samen met de verwante segmenten, lijsten, leads en rapporten.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
@@ -29,35 +24,35 @@ Bijvoorbeeld:
 
 `https://localhost:4502/libs/mcm/content/admin.html`
 
-![&#x200B; screen_shot_2012-02-21at114636am &#x200B;](assets/screen_shot_2012-02-21at114636am.png)
+![ screen_shot_2012-02-21at114636am ](assets/screen_shot_2012-02-21at114636am.png)
 
 Via de MCM hebt u toegang tot:
 
 * **[Dashboard](#dashboard)**
 Dit bestaat uit vier deelvensters:
 
-   * [&#x200B; Lijsten &#x200B;](#lists)
+   * [ Lijsten ](#lists)
 In dit deelvenster worden de lijsten weergegeven die u al hebt gemaakt, samen met het aantal leads in die lijst. In dit deelvenster kunt u rechtstreeks een lijst maken of een lijst maken door een lijst te importeren.
-Het selecteren van een specifieke lijst zal u aan de [&#x200B; sectie van Lijsten &#x200B;](#lists) nemen die details voor uw lijst tonen.
+Het selecteren van een specifieke lijst zal u aan de [ sectie van Lijsten ](#lists) nemen die details voor uw lijst tonen.
 
-   * [&#x200B; Segmenten &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
+   * [ Segmenten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 In dit deelvenster ziet u de segmenten die u hebt gedefinieerd. Met segmenten kunt u een verzameling bezoekers karakteriseren die bepaalde kenmerken delen.
 Als u een specifiek segment selecteert, wordt de pagina voor segmentdefinitie geopend.
 
-   * [&#x200B; Rapporten &#x200B;](/help/sites-administering/reporting.md)
+   * [ Rapporten ](/help/sites-administering/reporting.md)
 AEM biedt verschillende rapporten die u helpen de status van uw instantie te analyseren en te controleren. In dit deelvenster MCM worden de rapporten weergegeven.
 Als u een rapport selecteert, wordt de rapportpagina geopend.
 
-   * [&#x200B; Campagnes &#x200B;](#campaigns)
-Deze ruit maakt een lijst van uw campagneervaringen zoals [&#x200B; nieuwsbrieven &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) en [&#x200B; tellers &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+   * [ Campagnes ](#campaigns)
+Deze ruit maakt een lijst van uw campagneervaringen zoals [ nieuwsbrieven ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) en [ tellers ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Leads](#leads)**
 Hier kun je je leads beheren. U kunt leads maken of importeren, specifieke details voor afzonderlijke leads bewerken of verwijderen wanneer u deze niet meer nodig hebt. U kunt ook leads in verschillende groepen plaatsen, genaamd Lijsten. **Nota:** Adobe is niet van plan om dit vermogen verder te verbeteren.
-De aanbeveling moet [&#x200B; Adobe Campaign en de integratie aan AEM &#x200B;](/help/sites-administering/campaign.md) gebruiken.
+De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 * **[Lijsten](#lists)**
 Hier kunt u uw lijsten (van leads) beheren.**Nota:** Adobe is niet van plan om dit vermogen verder te verbeteren.
-De aanbeveling moet [&#x200B; Adobe Campaign en de integratie aan AEM &#x200B;](/help/sites-administering/campaign.md) gebruiken.
+De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 * **[Campagnes](#campaigns)**
 Hier kunt u uw merken, campagnes en ervaringen beheren.
@@ -66,14 +61,14 @@ Hier kunt u uw merken, campagnes en ervaringen beheren.
 
 Het dashboard bevat vier deelvensters die u een overzicht bieden van uw lijsten (van leads), segmenten, rapporten en campagnes. Hier is ook toegang tot de basisfuncties beschikbaar.
 
-![&#x200B; mcm_dashboard &#x200B;](assets/mcm_dashboard.png)
+![ mcm_dashboard ](assets/mcm_dashboard.png)
 
 ### Leads {#leads}
 
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads beheren).
->De aanbeveling moet [&#x200B; Adobe Campaign en de integratie aan AEM &#x200B;](/help/sites-administering/campaign.md) gebruiken.
+>De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 In AEM MCM kunt u leads ordenen en toevoegen door deze handmatig in te voeren of door een lijst met door komma&#39;s gescheiden waarden te importeren, bijvoorbeeld een mailinglijst. Aanvullende manieren om leads te genereren zijn afkomstig van aanmeldingspogingen in een nieuwsbrief of aanmeldingspogingen van de gebruikersgemeenschap (als deze zijn geconfigureerd, kunnen ze een workflow activeren die leads vult). Leads worden gewoonlijk gecategoriseerd en in een lijst geplaatst zodat u later handelingen kunt uitvoeren op de hele lijst, bijvoorbeeld door een aangepaste e-mail naar een bepaalde lijst te verzenden.
 
@@ -81,16 +76,16 @@ Onder **Leads** in de linkerruit u kunt tot stand brengen, invoeren, uitgeven en
 
 >[!NOTE]
 >
->Zie [&#x200B; Werkend met Leads &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) voor gedetailleerde informatie over specifieke taken.
+>Zie [ Werkend met Leads ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) voor gedetailleerde informatie over specifieke taken.
 
-![&#x200B; screen_shot_2012-02-21at114748am-1 &#x200B;](assets/screen_shot_2012-02-21at114748am-1.png)
+![ screen_shot_2012-02-21at114748am-1 ](assets/screen_shot_2012-02-21at114748am-1.png)
 
 ### Lijsten {#lists}
 
 >[!NOTE]
 >
 >Adobe is niet van plan om deze mogelijkheid verder te verbeteren (lijsten beheren).
->De aanbeveling moet [&#x200B; Adobe Campaign en de integratie aan AEM &#x200B;](/help/sites-administering/campaign.md) gebruiken.
+>De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 Met lijsten kunt u uw leads ordenen in groepen. Met lijsten kunt u uw marketingcampagnes richten op een bepaalde groep personen. U kunt bijvoorbeeld een doelnieuwsbrief naar een lijst sturen.
 
@@ -98,19 +93,19 @@ Onder **Lijsten**, kunt u uw lijsten beheren door te creëren, het invoeren, het
 
 >[!NOTE]
 >
->Zie [&#x200B; Werkend met Lijsten &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) voor gedetailleerde informatie over specifieke taken.
+>Zie [ Werkend met Lijsten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) voor gedetailleerde informatie over specifieke taken.
 
-![&#x200B; screen_shot_2012-02-21at124828pm-1 &#x200B;](assets/screen_shot_2012-02-21at124828pm-1.png)
+![ screen_shot_2012-02-21at124828pm-1 ](assets/screen_shot_2012-02-21at124828pm-1.png)
 
 ### Campagnes {#campaigns}
 
 >[!NOTE]
 >
->Zie [&#x200B; Teasers en Strategieën &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [&#x200B; Vestiging uw Campagne &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) en [&#x200B; Nieuwsbrieven &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) voor gedetailleerde informatie over specifieke taken.
+>Zie [ Teasers en Strategieën ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [ Vestiging uw Campagne ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) en [ Nieuwsbrieven ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) voor gedetailleerde informatie over specifieke taken.
 
 Om tot bestaande campagnes toegang te hebben, in MCM klik **Campagnes**.
 
-![&#x200B; screen_shot_2012-02-21at11106pm &#x200B;](assets/screen_shot_2012-02-21at11106pm.png)
+![ screen_shot_2012-02-21at11106pm ](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **in de linkerruit**:
 Er is een lijst van alle merken en campagnes.
@@ -122,7 +117,7 @@ Dubbelklik op deze opties om het overzicht van het merk te openen.
 
 #### Merk - overzicht {#brand-overview}
 
-![&#x200B; mcm_brandoverview &#x200B;](assets/mcm_brandoverview.png)
+![ mcm_brandoverview ](assets/mcm_brandoverview.png)
 
 Vanaf hier kunt u:
 
@@ -146,11 +141,11 @@ Voor de afzonderlijke campagnes zijn twee weergaven beschikbaar:
 
    Gebruik het pictogram:
 
-   ![&#x200B; de mening van de Kalender &#x200B;](do-not-localize/mcm_iconcalendarview.png)
+   ![ de mening van de Kalender ](do-not-localize/mcm_iconcalendarview.png)
 
    Hierin wordt een lijst weergegeven van alle (grijze) aanraakpunten met een horizontaal tijdkader van de (groene) ervaringen die met dat aanraakpunt zijn verbonden:
 
-   ![&#x200B; mcm_banner_calendarview &#x200B;](assets/mcm_banner_calendarview.png)
+   ![ mcm_banner_calendarview ](assets/mcm_banner_calendarview.png)
 
    Vanaf hier kunt u:
 
@@ -164,11 +159,11 @@ Voor de afzonderlijke campagnes zijn twee weergaven beschikbaar:
 
    Gebruik het pictogram:
 
-   ![&#x200B; mening van de Lijst &#x200B;](do-not-localize/mcm_icon_listview.png)
+   ![ mening van de Lijst ](do-not-localize/mcm_icon_listview.png)
 
    Hier worden alle ervaringen (bijvoorbeeld theaters en nieuwsbrieven) voor de geselecteerde campagne weergegeven:
 
-   ![&#x200B; mcm_banner_listview &#x200B;](assets/mcm_banner_listview.png)
+   ![ mcm_banner_listview ](assets/mcm_banner_listview.png)
 
    Vanaf hier kunt u:
 
@@ -188,7 +183,7 @@ Wanneer de gesimuleerde pagina is geopend, kunt u het hulpprogramma openen om ov
 
 In MCM, klik **Campagnes**. Zorg ervoor dat de lijstmening actief is, dan selecteer de vereiste campagneervaring en klik **simuleren**. Het aanraakpunt (teaser- of nieuwsbrief) wordt geopend om de ervaring te tonen die u hebt geselecteerd, zoals de bezoeker het ziet.
 
-![&#x200B; mcm_simulateexperience &#x200B;](assets/mcm_simulateexperience.png)
+![ mcm_simulateexperience ](assets/mcm_simulateexperience.png)
 
 Van hieruit kunt u ook het hulpslot openen (klik op de kleine pijl-omlaag) om de bewerkingsmodus voor het bijwerken van de pagina te wijzigen.
 
@@ -196,4 +191,4 @@ Van hieruit kunt u ook het hulpslot openen (klik op de kleine pijl-omlaag) om de
 
 In MCM, klik **Campagnes**. Zorg ervoor dat de lijstmening actief is, dan selecteer de vereiste campagneervaring en selecteer **analyseren...**. Er wordt een grafiek met de paginamonpressies weergegeven.
 
-![&#x200B; mcm_campagne analyseert &#x200B;](assets/mcm_campaignanalyze.png)
+![ mcm_campagne analyseert ](assets/mcm_campaignanalyze.png)

@@ -10,9 +10,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 Met de Cold Standby-capaciteit van de Tar Micro Kernel kunnen een of meer stand-by Adobe Experience Manager-instanties (AEM) verbinding maken met een primaire instantie. Het synchronisatieproces is slechts één manier, wat betekent dat het alleen wordt uitgevoerd van de primaire naar de stand-byinstanties.
 
-Het doel van de stand-by-instanties is een live gegevenskopie van de hoofdgegevensopslagruimte te garanderen en een snelle omschakeling zonder gegevensverlies te garanderen als de master om welke reden dan ook niet beschikbaar is.
+Het doel van de stand-by-instanties is een live gegevenskopie van de hoofdopslagplaats te garanderen en een snelle omschakeling zonder gegevensverlies te garanderen als de primaire instantie om welke reden dan ook niet beschikbaar is.
 
 Inhoud wordt lineair gesynchroniseerd tussen de primaire instantie en de stand-by instanties zonder integriteitscontroles op beschadiging van het bestand of de opslagplaats. Vanwege dit ontwerp zijn stand-by-instanties exacte kopieën van de primaire instantie en kunnen ze inconsistenties op primaire instanties niet verminderen.
 
 >[!NOTE]
 >
->De eigenschap van de Reserve van de Koude wordt bedoeld om scenario&#39;s te beveiligen waar de hoge beschikbaarheid op **&#x200B;**&#x200B;instanties van de Auteur wordt vereist. Voor situaties waar de hoge beschikbaarheid op **wordt vereist publiceer** instanties gebruikend Tar Micro Kernel, adviseert Adobe gebruikend publiceer landbouwbedrijf.
+>De eigenschap van de Reserve van de Koude wordt bedoeld om scenario&#39;s te beveiligen waar de hoge beschikbaarheid op **** instanties van de Auteur wordt vereist. Voor situaties waar de hoge beschikbaarheid op **wordt vereist publiceer** instanties gebruikend Tar Micro Kernel, adviseert Adobe gebruikend publiceer landbouwbedrijf.
 >
->Voor info over meer beschikbare plaatsingen, zie de [&#x200B; Geadviseerde pagina van Inzet &#x200B;](/help/sites-deploying/recommended-deploys.md).
+>Voor info over meer beschikbare plaatsingen, zie de [ Geadviseerde pagina van Inzet ](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Inhoud wordt lineair gesynchroniseerd tussen de primaire instantie en de stand-b
 
 ## Hoe werkt het {#how-it-works}
 
-Voor de primaire instantie van AEM, wordt een haven van TCP geopend en luistert aan inkomende berichten. Momenteel zijn er twee typen berichten die de slaven naar de master verzenden:
+Voor de primaire instantie van AEM, wordt een haven van TCP geopend en luistert aan inkomende berichten. Momenteel, zijn er twee types van berichten die reserve naar primair verzenden:
 
 * een bericht om segmentidentiteitskaart van het huidige hoofd te verzoeken
 * een bericht om segmentgegevens met een opgegeven id aan te vragen
@@ -56,7 +56,7 @@ De reserve vraagt periodiek om segmentidentiteitskaart van de huidige hoofd van 
 
 Een gebruikelijke TarMK-standaardinstelling voor koude stand-by:
 
-![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.png)
+![ chlimage_1 ](assets/chlimage_1.png)
 
 ## Andere kenmerken {#other-characteristics}
 
@@ -72,7 +72,7 @@ Op stand-by kunt u een hoog CPU-verbruik verwachten tijdens het synchronisatiepr
 
 #### Beveiliging {#security}
 
-Ervan uitgaande dat alle instanties in dezelfde intranetbeveiligingszone worden uitgevoerd, wordt het risico van een inbreuk op de beveiliging sterk verminderd. Desalniettemin kunt u een extra beveiligingslaag toevoegen door SSL-verbindingen tussen de slaven en het stramien in te schakelen. Dit vermindert de mogelijkheid dat de gegevens door een man-in-de-middelste mens in gevaar worden gebracht.
+Ervan uitgaande dat alle instanties in dezelfde intranetbeveiligingszone worden uitgevoerd, wordt het risico van een inbreuk op de beveiliging sterk verminderd. Desalniettemin kunt u een extra beveiligingslaag toevoegen door SSL-verbindingen tussen de stand-by en de primaire instanties in te schakelen. Dit vermindert de mogelijkheid dat de gegevens door een man-in-de-middelste mens in gevaar worden gebracht.
 
 Bovendien kunt u de reserveinstanties specificeren die worden toegestaan om te verbinden door het IP adres van inkomende verzoeken te beperken. Dit zou moeten helpen waarborgen dat niemand in het Intranet de bewaarplaats kan kopiëren.
 
@@ -93,7 +93,7 @@ Bovendien kunt u de reserveinstanties specificeren die worden toegestaan om te v
 
 Als u een TarMK koude stand-byopstelling wilt maken, maakt u eerst de stand-byinstanties door een kopie van het bestandssysteem van de volledige installatiemap van de primaire map naar een nieuwe locatie uit te voeren. Vervolgens kunt u elke instantie starten met een uitvoeringsmodus die de rol ervan opgeeft ( `primary` of `standby` ).
 
-Hieronder volgt de procedure die moet worden gevolgd om een opstelling met één hoofd en één reserve instantie tot stand te brengen:
+Hieronder volgt de procedure die moet worden gevolgd om een opstelling met één primaire en één reserve instantie tot stand te brengen:
 
 1. AEM installeren.
 
@@ -105,7 +105,7 @@ Hieronder volgt de procedure die moet worden gevolgd om een opstelling met één
    1. Een map maken met de naam `install.primary` onder `aem-primary/crx-quickstart/install`
 
    1. Maak de vereiste configuraties voor de voorkeurenarchivering van knooppunten en de gegevensopslag onder `aem-primary/crx-quickstart/install/install.primary`
-   1. Maak een bestand met de naam `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` op dezelfde locatie en configureer het bestand op basis van deze locatie. Voor meer informatie over de configuratieopties, zie [&#x200B; Configuratie &#x200B;](/help/sites-deploying/tarmk-cold-standby.md#configuration).
+   1. Maak een bestand met de naam `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` op dezelfde locatie en configureer het bestand op basis van deze locatie. Voor meer informatie over de configuratieopties, zie [ Configuratie ](/help/sites-deploying/tarmk-cold-standby.md#configuration).
 
    1. Als u een AEM TarMK-instantie gebruikt met een externe gegevensopslag, maakt u een map met de naam `crx3` onder `aem-primary/crx-quickstart/install` named `crx3` .
 
@@ -149,7 +149,7 @@ Hieronder volgt de procedure die moet worden gevolgd om een opstelling met één
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Creeer een Logboekprogramma van het Logboekregistratie van Apache Sling voor het {**pakket 0} org.apache.jackrabbit.oak.segment.** Plaats het logboekniveau aan &quot;zuivert&quot;en richt zijn logboekoutput aan een afzonderlijk logfile, als */logs/tarmk-coldstandby.log*. Voor meer informatie, zie [&#x200B; het Registreren &#x200B;](/help/sites-deploying/configure-logging.md).
+1. Creeer een Logboekprogramma van het Logboekregistratie van Apache Sling voor het {**pakket 0} org.apache.jackrabbit.oak.segment.** Plaats het logboekniveau aan &quot;zuivert&quot;en richt zijn logboekoutput aan een afzonderlijk logfile, als */logs/tarmk-coldstandby.log*. Voor meer informatie, zie [ het Registreren ](/help/sites-deploying/configure-logging.md).
 1. Ga naar de plaats van de **reserve** instantie en begin het door de pot in werking te stellen.
 1. Creeer de zelfde registrerenconfiguratie zoals voor primaire. Stop vervolgens de instantie.
 1. Bereid vervolgens de stand-byinstantie voor. U kunt dit doen door de zelfde stappen uit te voeren zoals voor de primaire instantie:
@@ -210,7 +210,7 @@ Hieronder volgt de procedure die moet worden gevolgd om een opstelling met één
 
 De dienst kan ook als Console van het Web, door worden gevormd:
 
-1. Ga naar de Console van het Web bij: *https://serveraddress:serverport/system/console/configMgr*
+1. Ga naar de Console van het Web bij: *https://serveraddress :serverport/system/console/configMgr*
 1. Het zoeken naar de dienst genoemd **Apache de Tar Cold Standby van de Segment van Jackrabbit Oak van de Segment** en het tweemaal klikken om de montages uit te geven.
 1. De instellingen opslaan en de instanties opnieuw starten zodat de nieuwe instellingen van kracht kunnen worden.
 
@@ -218,7 +218,7 @@ De dienst kan ook als Console van het Web, door worden gevormd:
 >
 >U kunt de rol van een instantie op elk ogenblik controleren door de aanwezigheid van **primaire** of **reserve** looppaswijzen in de het Verdelen Console van het Web van Montages te controleren.
 >
->Dit kan worden gedaan door naar *https://localhost:4502/system/console/status-slingsettings* te gaan en **te controleren &quot;Wijzen van de Looppas&quot;** lijn.
+>Dit kan worden gedaan door *https://localhost :4502 te gaan/system/console/status-slingsettings* en de **&quot;Wijzen van de Looppas&quot;** lijn te controleren.
 
 ## Eerste synchronisatie {#first-time-synchronization}
 
@@ -317,7 +317,7 @@ Als de primaire instantie om welke reden dan ook mislukt, kunt u een van de stan
    ```
 
 1. Voeg de nieuwe primaire code toe aan het taakverdelingsmechanisme.
-1. Maak een nieuwe stand-by-instantie en start deze. Voor meer info, zie de procedure hierboven op [&#x200B; Creërend een Cold Standby Opstelling van AEM TarMK &#x200B;](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Maak een nieuwe stand-by-instantie en start deze. Voor meer info, zie de procedure hierboven op [ Creërend een Cold Standby Opstelling van AEM TarMK ](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
 ## Hotfixes toepassen op een Koude ReserveOpstelling {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -325,18 +325,18 @@ De geadviseerde manier om hotfixes op een koude stand-by opstelling toe te passe
 
 U kunt dit doen door de hieronder beschreven stappen te volgen:
 
-1. Stop het synchronisatieproces op de koude stand-by instantie door naar de JMX Console te gaan en de status **org.apache.jackrabbit.oak: (&quot;Standby&quot;)**&#x200B;bean te gebruiken. Voor meer informatie over hoe te om dit te doen, zie de sectie over [&#x200B; Controle &#x200B;](#monitoring).
+1. Stop het synchronisatieproces op de koude stand-by instantie door naar de JMX Console te gaan en de status **org.apache.jackrabbit.oak: (&quot;Standby&quot;)**bean te gebruiken. Voor meer informatie over hoe te om dit te doen, zie de sectie over [ Controle ](#monitoring).
 1. Stop de koude stand-by instantie.
-1. Installeer de hotfix op de primaire instantie. Voor meer details op hoe te om hotfix te installeren, zie [&#x200B; hoe te met Pakketten &#x200B;](/help/sites-administering/package-manager.md) werken.
+1. Installeer de hotfix op de primaire instantie. Voor meer details op hoe te om hotfix te installeren, zie [ hoe te met Pakketten ](/help/sites-administering/package-manager.md) werken.
 1. Test de instantie op problemen na de installatie.
 1. Verwijder de koude stand-by instantie door de installatiemap te verwijderen.
 1. Stop de primaire instantie en kloon het door een exemplaar van het dossiersysteem van zijn volledige installatiemap aan de plaats van koude reserve uit te voeren.
-1. Pas de gemaakte kloon aan zodat deze als een koude stand-byinstantie werkt. Zie [&#x200B; Creërend AEM TarMK Koude ReserveOpstelling.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. Pas de gemaakte kloon aan zodat deze als een koude stand-byinstantie werkt. Zie [ Creërend AEM TarMK Koude ReserveOpstelling.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
 1. Begin zowel de primaire als de koude stand-by instanties.
 
 ## Bewaking {#monitoring}
 
-De functie maakt informatie beschikbaar met behulp van JMX of MBans. Het doen zodat kunt u de huidige staat van reserve en de meester inspecteren gebruikend de [&#x200B; console JMX &#x200B;](/help/sites-administering/jmx-console.md). De informatie kan in een MBean van `type org.apache.jackrabbit.oak:type="Standby"` worden gevonden genoemd `Status`.
+De functie maakt informatie beschikbaar met behulp van JMX of MBans. Het doen zodat kunt u de huidige staat van reserve en primair inspecteren gebruikend de [ console JMX ](/help/sites-administering/jmx-console.md). De informatie kan in een MBean van `type org.apache.jackrabbit.oak:type="Standby"` worden gevonden genoemd `Status`.
 
 **Reserve**
 
@@ -365,7 +365,7 @@ Het observeren van primair stelt wat algemene informatie door als een MBean bloo
 
 * `Mode:` geeft altijd de waarde `primary` weer.
 
-Daarnaast kan informatie worden opgehaald voor maximaal tien clients (stand-by-instanties) die met de master zijn verbonden. De MBean-id is de UUID van de instantie. Er zijn geen aanroepbare methodes voor deze MBans maar sommige nuttige read-only attributen:
+Daarnaast kan informatie worden opgehaald voor maximaal tien klanten (stand-by-instanties) die met de primaire client zijn verbonden. De MBean-id is de UUID van de instantie. Er zijn geen aanroepbare methodes voor deze MBans maar sommige nuttige read-only attributen:
 
 * `Name:` De id van de client.
 * `LastSeenTimestamp:` de tijdstempel van de laatste aanvraag in een tekstuele weergave.
@@ -381,7 +381,7 @@ Daarnaast kan informatie worden opgehaald voor maximaal tien clients (stand-by-i
 
 >[!NOTE]
 >
->Als u [&#x200B; Online Opruiming van de Revisie &#x200B;](/help/sites-deploying/revision-cleanup.md) op de primaire instantie in werking stelt, is de hieronder getoonde handprocedure niet nodig. Als u Onlinerevisie opschonen gebruikt, wordt de bewerking `cleanup ()` in de stand-byinstantie ook automatisch uitgevoerd.
+>Als u [ Online Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md) op de primaire instantie in werking stelt, is de hieronder getoonde handprocedure niet nodig. Als u Onlinerevisie opschonen gebruikt, wordt de bewerking `cleanup ()` in de stand-byinstantie ook automatisch uitgevoerd.
 
 >[!NOTE]
 >
@@ -389,10 +389,10 @@ Daarnaast kan informatie worden opgehaald voor maximaal tien clients (stand-by-i
 
 Adobe raadt aan regelmatig onderhoud uit te voeren om te voorkomen dat de opslagplaats in de loop der tijd te sterk groeit. Voer de onderstaande stappen uit om handmatig onderhoud in de koelstand-byopslagruimte uit te voeren:
 
-1. Stop het reserveproces op de reserve instantie door naar de Console te gaan JMX en **org.apache.jackrabbit.oak te gebruiken: Status (&quot;Reserve&quot;)** boon. Voor meer informatie over hoe te om dit te doen, zie de bovengenoemde sectie over [&#x200B; Controle &#x200B;](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
+1. Stop het reserveproces op de reserve instantie door naar de Console te gaan JMX en **org.apache.jackrabbit.oak te gebruiken: Status (&quot;Reserve&quot;)** boon. Voor meer informatie over hoe te om dit te doen, zie de bovengenoemde sectie over [ Controle ](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
 1. Stop de primaire AEM-instantie.
-1. Voer het Oak-compressieprogramma op de primaire instantie uit. Voor meer details, zie [&#x200B; het Onderhouden van de Bewaarplaats &#x200B;](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+1. Voer het Oak-compressieprogramma op de primaire instantie uit. Voor meer details, zie [ het Onderhouden van de Bewaarplaats ](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 1. Start de primaire instantie.
 1. Start het stand-byproces op de stand-byinstantie met dezelfde JMX-boon als beschreven in de eerste stap.
 1. Bekijk de logboeken en wacht tot de synchronisatie is voltooid. Het is mogelijk dat de stand-bygegevensbank momenteel aanzienlijk groeit.
@@ -406,10 +406,10 @@ Als alternatief, kan de primaire bewaarplaats manueel over aan stand-by worden g
 
 Het is belangrijk om afvalophaling op de instanties van de dossierdatastore van tijd tot tijd in werking te stellen aangezien anders, schrapte binaire getallen op het filesystem blijven, uiteindelijk vult de aandrijving. Volg de onderstaande procedure om de afvalophaling uit te voeren:
 
-1. Het koude reservebewaarplaatsonderhoud van de looppas zoals die in de sectie [&#x200B; hierboven &#x200B;](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance) wordt beschreven.
+1. Het koude reservebewaarplaatsonderhoud van de looppas zoals die in de sectie [ hierboven ](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance) wordt beschreven.
 1. Nadat het onderhoudsproces is voltooid en de instanties opnieuw zijn gestart:
 
-   * Op primair, stel de inzameling van het huisvuil van de gegevensopslag als relevante boon JMX zoals die in [&#x200B; wordt beschreven Lopende Inzameling van het huisvuil van de Opslag van Gegevens via de Console JMX &#x200B;](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console) in werking.
+   * Op primair, stel de inzameling van het huisvuil van de gegevensopslag als relevante boon JMX zoals die in [ wordt beschreven Lopende Inzameling van het huisvuil van de Opslag van Gegevens via de Console JMX ](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console) in werking.
    * Op reserve, is de inzameling van het huisvuil van de gegevensopslag beschikbaar slechts als **BlobGarbageCollection** MBean - `startBlobGC()`. **RepositoryManagement** MBean is niet beschikbaar op reserve.
 
    >[!NOTE]

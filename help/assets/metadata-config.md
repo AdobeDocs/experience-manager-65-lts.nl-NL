@@ -7,9 +7,9 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1823'
 ht-degree: 3%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=nl-NL) |
-| AEM 6.5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM 6.5 LTS | Dit artikel |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ## Metagegevensschema bewerken {#metadata-schema}
 
-Voor details, zie [&#x200B; de vormen van het meta-gegevensschema &#x200B;](metadata-schemas.md#edit-metadata-schema-forms) uitgeven.
+Voor details, zie [ de vormen van het meta-gegevensschema ](metadata-schemas.md#edit-metadata-schema-forms) uitgeven.
 
 ## Een aangepaste naamruimte registreren binnen [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
@@ -59,11 +59,11 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** en klik op **[!UICONTROL Create]** .
 1. Voer bijvoorbeeld een titel in voor het profiel `Sample Metadata` en klik op **[!UICONTROL Create]** . De [!UICONTROL Edit Form] voor het metagegevensprofiel wordt weergegeven.
 
-   ![&#x200B; geef een meta-gegevensvorm &#x200B;](assets/metadata-edit-form.png) uit
+   ![ geef een meta-gegevensvorm ](assets/metadata-edit-form.png) uit
 
 1. Klik op een component en configureer de eigenschappen ervan op het tabblad **[!UICONTROL Settings]** . Klik bijvoorbeeld op de component **[!UICONTROL Description]** en bewerk de eigenschappen ervan.
 
-   ![&#x200B; Vestiging van een component in meta-gegevensprofiel &#x200B;](assets/metadata-profile-component-setting.png)
+   ![ Vestiging van een component in meta-gegevensprofiel ](assets/metadata-profile-component-setting.png)
 
    Bewerk de volgende eigenschappen voor de component **[!UICONTROL Description]** :
 
@@ -71,13 +71,13 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
    * **[!UICONTROL Map to Property]**: De waarde van deze eigenschap geeft het relatieve pad of de naam naar het knooppunt met middelen waar het in de opslagplaats is opgeslagen. De waarde moet altijd beginnen met `./` omdat dit aangeeft dat het pad zich onder het knooppunt van het element bevindt.
 
-   ![&#x200B; Kaart aan bezit dat in meta-gegevensprofiel &#x200B;](assets/metadata-profile-setting-map-property.png) plaatst
+   ![ Kaart aan bezit dat in meta-gegevensprofiel ](assets/metadata-profile-setting-map-property.png) plaatst
 
    De waarde die u opgeeft voor **[!UICONTROL Map to property]** , wordt opgeslagen als een eigenschap onder het metagegevensknooppunt van het element. Als u bijvoorbeeld `./jcr:content/metadata/dc:desc` opgeeft als de naam van **[!UICONTROL Map to property]** , slaat [!DNL Assets] de waarde `dc:desc` op in het metagegevensknooppunt van het element. Adobe raadt u aan slechts één veld toe te wijzen aan een bepaalde eigenschap in het metagegevensschema. Anders wordt het laatst toegevoegde veld dat aan de eigenschap is toegewezen, door het systeem gekozen.
 
    * **[!UICONTROL Default Value]**: Gebruik deze eigenschap om een standaardwaarde voor de metagegevenscomponent toe te voegen. Als u bijvoorbeeld &quot;Mijn beschrijving&quot; opgeeft, wordt deze waarde toegewezen aan de eigenschap `dc:desc` bij het metagegevensknooppunt van het element.
 
-   ![&#x200B; plaats standaardbeschrijving in meta-gegevensprofiel &#x200B;](assets/metadata-profile-setting-default-value.png)
+   ![ plaats standaardbeschrijving in meta-gegevensprofiel ](assets/metadata-profile-setting-default-value.png)
 
    >[!NOTE]
    >
@@ -96,19 +96,19 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
 1. Klik op **[!UICONTROL Done]**. Het metagegevensprofiel wordt toegevoegd aan de lijst met profielen op de pagina **[!UICONTROL Metadata Profiles]** . <br>
 
-   ![&#x200B; profiel van Meta-gegevens dat in de pagina van Profielen van Meta-gegevens wordt toegevoegd &#x200B;](assets/MetadataProfiles-page.png)
+   ![ profiel van Meta-gegevens dat in de pagina van Profielen van Meta-gegevens wordt toegevoegd ](assets/MetadataProfiles-page.png)
 
 ### Een metagegevensprofiel kopiëren {#copying-a-metadata-profile}
 
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** een metagegevensprofiel om er een kopie van te maken.
 
-   ![&#x200B; Kopieer een meta-gegevensprofiel &#x200B;](assets/metadata-profile-edit-copy-option.png)
+   ![ Kopieer een meta-gegevensprofiel ](assets/metadata-profile-edit-copy-option.png)
 
 1. Klik op **[!UICONTROL Copy]** op de werkbalk.
 1. Voer in het dialoogvenster **[!UICONTROL Copy Metadata Profile]** een titel in voor de nieuwe kopie van het metagegevensprofiel.
 1. Klik op **[!UICONTROL Copy]**. De kopie van het metadataprofiel wordt weergegeven in de lijst met profielen op de pagina **[!UICONTROL Metadata Profiles]**.
 
-   ![&#x200B; een exemplaar van meta-gegevensprofiel dat in de pagina van Profielen van Meta-gegevens wordt toegevoegd &#x200B;](assets/copy-metadata-profile.png)
+   ![ een exemplaar van meta-gegevensprofiel dat in de pagina van Profielen van Meta-gegevens wordt toegevoegd ](assets/copy-metadata-profile.png)
 
 ### Een metagegevensprofiel verwijderen {#deleting-a-metadata-profile}
 
@@ -118,7 +118,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 1. Klik in het dialoogvenster op **[!UICONTROL Delete]** om de verwijderbewerking te bevestigen. Het metagegevensprofiel wordt uit de lijst verwijderd.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/nl/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -161,13 +161,13 @@ U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metage
 1. Selecteer op de pagina Schema Forms het formulier dat u hebt gemaakt en selecteer vervolgens de optie **[!UICONTROL Edit]** op de werkbalk.
 1. Klik op `+` in de pagina Editor van het metagegevensschema van de map om een tabblad aan het formulier toe te voegen. Als u de naam van het tabblad wilt wijzigen, klikt u op de standaardnaam en geeft u de nieuwe naam op onder **[!UICONTROL Settings]** .
 
-   ![&#x200B; custom_tab &#x200B;](assets/custom_tab.png)
+   ![ custom_tab ](assets/custom_tab.png)
 
    Klik op `+` als u meer tabbladen wilt toevoegen. Klik op `X` op een tab om het te verwijderen.
 
 1. Voeg op het actieve tabblad een of meer componenten toe vanaf het tabblad **[!UICONTROL Build Form]** .
 
-   ![&#x200B; adding_components &#x200B;](assets/adding_components.png)
+   ![ adding_components ](assets/adding_components.png)
 
    Als u meerdere tabbladen maakt, klikt u op een bepaald tabblad om componenten toe te voegen.
 
@@ -175,7 +175,7 @@ U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metage
 
    Verwijder zo nodig een component van het tabblad **[!UICONTROL Settings]** .
 
-   ![&#x200B; configure_properties &#x200B;](assets/configure_properties.png)
+   ![ configure_properties ](assets/configure_properties.png)
 
 1. Als u de wijzigingen wilt opslaan, selecteert u **[!UICONTROL Save]** op de werkbalk.
 
@@ -224,7 +224,7 @@ Neem geen spatie op in het eigenschapspad om ervoor te zorgen dat de component c
 
 U kunt de schemaformulieren van de omslagmeta-gegevens van het Schema Forms van de Meta-gegevens van de Omslag schrappen pagina. Als u een formulier wilt verwijderen, selecteert u het formulier en klikt u op de werkbalk op de optie Verwijderen.
 
-![&#x200B; delete_form &#x200B;](assets/delete_form.png)
+![ delete_form ](assets/delete_form.png)
 
 ### Een schema voor metagegevens van mappen toewijzen {#assign-a-folder-metadata-schema}
 
@@ -241,11 +241,11 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 1. Selecteer de map waarop u het schema wilt toepassen en klik op **[!UICONTROL Apply]** . Als er al een metagegevensschema op de map is toegepast, verschijnt er een waarschuwingsbericht dat u het bestaande metagegevensschema wilt overschrijven. Klik op **[!UICONTROL Overwrite]**.
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
 
-   ![&#x200B; folder_properties &#x200B;](assets/folder_properties.png)
+   ![ folder_properties ](assets/folder_properties.png)
 
    Klik op de tab **[!UICONTROL Folder Metadata]** om de velden met metagegevens van de map weer te geven.
 
-   ![&#x200B; folder_metadata_properties &#x200B;](assets/folder_metadata_properties.png)
+   ![ folder_metadata_properties ](assets/folder_metadata_properties.png)
 
 #### Een schema toewijzen bij het maken van een map {#assign-a-schema-when-creating-a-folder}
 
@@ -255,7 +255,7 @@ U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een
 1. Geef een titel en naam voor de map op.
 1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Klik vervolgens op **[!UICONTROL Create]** .
 
-   ![&#x200B; select_schema &#x200B;](assets/select_schema.png)
+   ![ select_schema ](assets/select_schema.png)
 
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
 1. Klik op de tab **[!UICONTROL Folder Metadata]** om de velden met metagegevens van de map weer te geven.
@@ -266,19 +266,19 @@ Open de eigenschappen voor een map die met een mapmetadataschema is geconfiguree
 
 Voer waarden voor metagegevens in de verschillende velden in en klik op **[!UICONTROL Save]** om de waarden op te slaan. De waarden die u opgeeft, worden opgeslagen in het mapknooppunt in de CRX-opslagplaats.
 
-![&#x200B; folder_metadata_properties-1 &#x200B;](assets/folder_metadata_properties-1.png)
+![ folder_metadata_properties-1 ](assets/folder_metadata_properties-1.png)
 
 ## Tips en beperkingen {#best-practices-limitations}
 
 * Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
 * De eigenschappenkiezer geeft eigenschappen weer die in schema-editors en zoekformulieren worden gebruikt. Eigenschapkiezer kiest geen eigenschappen voor metagegevens uit een element.
-* U kunt al bestaande metagegevensprofielen hebben sinds de upgrade naar [!DNL Experience Manager] 6.5. Als u na de upgrade een dergelijk profiel toepast in de map [!UICONTROL Properties] op het tabblad [!UICONTROL Metadata Profiles] , worden de formuliervelden voor metagegevens niet weergegeven. Als u echter een nieuw metagegevensprofiel toepast, worden de formuliervelden weergegeven, maar niet beschikbaar zoals u had verwacht. Er gaat geen functionaliteit verloren, maar als u de (niet-beschikbare) formuliervelden wilt zien, bewerkt en slaat u de bestaande metagegevensprofielen op.
+* U kunt al bestaande metagegevensprofielen hebben sinds de upgrade naar [!DNL Experience Manager] 6.5 LTS. Als u na de upgrade een dergelijk profiel toepast in de map [!UICONTROL Properties] op het tabblad [!UICONTROL Metadata Profiles] , worden de formuliervelden voor metagegevens niet weergegeven. Als u echter een nieuw metagegevensprofiel toepast, worden de formuliervelden weergegeven, maar niet beschikbaar zoals u had verwacht. Er gaat geen functionaliteit verloren, maar als u de (niet-beschikbare) formuliervelden wilt zien, bewerkt en slaat u de bestaande metagegevensprofielen op.
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; concepten van Meta-gegevens en begrip &#x200B;](metadata-concepts.md).
->* [&#x200B; geeft meta-gegevenseigenschappen van veelvoudige inzamelingen &#x200B;](manage-collections.md#editing-collection-metadata-in-bulk) uit.
->* [&#x200B; de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=nl-NL).
->* [&#x200B; Profielen om meta-gegevens, beelden, en video&#39;s &#x200B;](processing-profiles.md) te verwerken.
->* [&#x200B; Beste praktijken om uw digitale activa te organiseren om verwerkingsprofielen &#x200B;](/help/assets/organize-assets.md) te gebruiken.
->* [&#x200B; schrijven van XMP &#x200B;](/help/assets/xmp-writeback.md).
+>* [ concepten van Meta-gegevens en begrip ](metadata-concepts.md).
+>* [ geeft meta-gegevenseigenschappen van veelvoudige inzamelingen ](manage-collections.md#editing-collection-metadata-in-bulk) uit.
+>* [ de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
+>* [ Profielen om meta-gegevens, beelden, en video&#39;s ](processing-profiles.md) te verwerken.
+>* [ Beste praktijken om uw digitale activa te organiseren om verwerkingsprofielen ](/help/assets/organize-assets.md) te gebruiken.
+>* [ schrijven van XMP ](/help/assets/xmp-writeback.md).
