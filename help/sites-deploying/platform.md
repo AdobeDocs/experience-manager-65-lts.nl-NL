@@ -22,7 +22,7 @@ Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als de standaar
 
 ## Ontwerpbeginselen en -doelstellingen {#design-principles-and-goals}
 
-Oak voert [&#x200B; JSR-283 &#x200B;](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) specificatie uit. De belangrijkste ontwerpdoelstellingen zijn:
+Oak voert [ JSR-283 ](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) specificatie uit. De belangrijkste ontwerpdoelstellingen zijn:
 
 * Betere ondersteuning voor grote opslagplaatsen
 * Meerdere gedistribueerde clusterknooppunten voor hoge beschikbaarheid
@@ -31,7 +31,7 @@ Oak voert [&#x200B; JSR-283 &#x200B;](https://jcp.org/en/jsr/detail?id=283) (JCR
 
 ## Architectuurconcept {#architecture-concept}
 
-![&#x200B; chlimage_1-84 &#x200B;](assets/chlimage_1-84.png)
+![ chlimage_1-84 ](assets/chlimage_1-84.png)
 
 ### Opslag {#storage}
 
@@ -112,7 +112,7 @@ Gegevens over actieve en inactieve clusterknooppunten worden in de database bewa
 
 Een standaard AEM-clusterinstallatie met MongoDB-opslag:
 
-![&#x200B; chlimage_1-85 &#x200B;](assets/chlimage_1-85.png)
+![ chlimage_1-85 ](assets/chlimage_1-85.png)
 
 ## Wat is er anders dan Jackrabbit 2? {#what-is-different-from-jackrabbit}
 

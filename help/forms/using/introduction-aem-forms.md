@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
 
-Voor de documentatie van AEM as a Cloud Service, zie [&#x200B; AEM Forms op Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=nl-NL).
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html).
 
 ## Informatie over AEM Forms {#about-aem-forms}
 
@@ -28,13 +28,13 @@ AEM Forms combineert mogelijkheden voor formulierontwerp, -beheer en -publicatie
 
 In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen.
 
-AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Voor meer informatie, zie [&#x200B; Inleiding aan het beheren van vormen &#x200B;](../../forms/using/introduction-managing-forms.md).
+AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Voor meer informatie, zie [ Inleiding aan het beheren van vormen ](../../forms/using/introduction-managing-forms.md).
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](/help/sites-deploying/deploy.md), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](/help/sites-deploying/deploy.md), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
-![&#x200B; de vormenmogelijkheden van AEM &#x200B;](do-not-localize/4th-draft-updated.gif)
+![ de vormenmogelijkheden van AEM ](do-not-localize/4th-draft-updated.gif)
 
 ### Belangrijkste mogelijkheden {#key-capabilities}
 
@@ -98,7 +98,7 @@ Met name voor mensen in het veld is het handig om gegevens offline vast te legge
 * Aanpasbare dashboards voor real-time insight voor zakelijke activiteiten
 * API voor verbinding met rapportagehulpprogramma&#39;s van derden
 
-![&#x200B; Derde ontwerp &#x200B;](do-not-localize/3rd-draft.gif)
+![ Derde ontwerp ](do-not-localize/3rd-draft.gif)
 
 ## Persoonlijke communicatie {#personalized-communication}
 
@@ -117,6 +117,6 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 * Ondersteuning voor digitale handtekeningen om de integriteit van de inhoud en de identiteit van de ondertekenaar te valideren
 * Invoegtoepassing voor documentbeveiliging voor AEM Forms, inclusief codering, gebruiksbeleid, bijhouden en controleren
 
-![&#x200B; Lay-out twee &#x200B;](do-not-localize/layout-02.png)
+![ Lay-out twee ](do-not-localize/layout-02.png)
 
 Gestroomlijnde workflow voor persoonlijke communicatie
