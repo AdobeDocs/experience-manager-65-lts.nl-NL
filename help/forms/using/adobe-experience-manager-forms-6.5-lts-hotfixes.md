@@ -5,13 +5,12 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: bb270a983d9d3f7d116a179886daf763e7e2341e
+source-git-commit: fbe90ee89a2c20496800b545ec5637e829e7c7d7
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Experience Manager Forms 6.5 LTS-hotfixes{#aem-form-hotfix}
 
@@ -37,7 +36,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <ul>
     <li>Vensters - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip"> Hotfix2 voor AEM Service Pack 6.5 LTS op Vensters </a></li>
     <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]hotfix-on-add-on/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip"> Hotfix2 voor AEM Service Pack 6.5 LTS op Linux </a></li>
-     <li>OSX - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip"> Hotfix2 voor AEM Service Pack 6.5 LTS op OSX </a></li>
+     <li>MacOS - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip"> Hotfix2 voor AEM Service Pack 6.5 LTS op MacOS </a></li>
     <td>
     <ul>
     <li>Verbeterde betrouwbaarheid voor het verzenden van formulieren door een probleem op te lossen waarbij verzending kan mislukken als Server-Side Validation (SSV) is ingeschakeld. Neem contact op met de [Adobe Experience Manager Forms Support] (https://business.adobe.com/in/support/main.html)
@@ -55,7 +54,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
 
 Voer de volgende stappen uit om de hotfix te downloaden en installeren:
 
-1. Download [&#x200B; Hotfix &#x200B;](#hotfix-for-adaptive-forms) van de verbinding van de Distributie van de Software.
+1. Download [ Hotfix ](#hotfix-for-adaptive-forms) van de verbinding van de Distributie van de Software.
 1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.
-1. Upload en installeer het pakket (.zip) via de [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Upload en installeer het pakket (.zip) via de [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. Open de bundels voor configuratiebeheer `https://server:host/system/console/bundles`, upload en installeer de bundel (.jar). De hotfix is geïnstalleerd.
