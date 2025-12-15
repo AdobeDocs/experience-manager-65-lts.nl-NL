@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Aangepaste standalone installatie{#custom-standalone-install}
 
-In deze sectie worden de beschikbare opties beschreven voor het installeren van een zelfstandige AEM-instantie. U kunt ook [&#x200B; Elementen van de Opslag &#x200B;](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie lezen bij het kiezen van het type van de achterste opslagplaats na nieuw het installeren van AEM 6.
+In deze sectie worden de beschikbare opties beschreven voor het installeren van een zelfstandige AEM-instantie. U kunt ook [ Elementen van de Opslag ](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie lezen bij het kiezen van het type van de achterste opslagplaats na nieuw het installeren van AEM 6.
 
 ## Het veranderen van het Aantal van de Haven door het Dossier anders te noemen {#changing-the-port-number-by-renaming-the-file}
 
@@ -57,7 +57,7 @@ Als u Oracle Java 17 of Java 21 gebruikt, moeten extra switches aan uw opdrachtr
 * [ Forms slechts ] hieronder is een steekproef om AEM Forms te verzekeren werkt met Java 17/Java21, omvat de volgende extra parameters JVM:
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Modi uitvoeren {#run-modes}
@@ -108,15 +108,15 @@ AEM installeren en starten als Windows-service:
 
    * Klik in het configuratiescherm Services op cq5 en klik op Start.
 
-   ![&#x200B; chlimage_1-11 &#x200B;](assets/chlimage_1-11.png)
+   ![ chlimage_1-11 ](assets/chlimage_1-11.png)
 
    * Typ in de opdrachtregel het begin cq5 van het net.
 
-   ![&#x200B; chlimage_1-12 &#x200B;](assets/chlimage_1-12.png)
+   ![ chlimage_1-12 ](assets/chlimage_1-12.png)
 
 1. De vensters wijst erop dat de dienst loopt. AEM wordt gestart en het uitvoerbare bestand van de prunsrv wordt weergegeven in Taakbeheer. Navigeer in uw webbrowser naar AEM, bijvoorbeeld `https://localhost:4502` , om AEM te gaan gebruiken.
 
-   ![&#x200B; chlimage_1-13 &#x200B;](assets/chlimage_1-13.png)
+   ![ chlimage_1-13 ](assets/chlimage_1-13.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ AEM installeren en starten als Windows-service:
 >
 >Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** &lbrace;of van de lijst in de bevellijn wanneer u `net start` typt.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -260,7 +260,7 @@ Log files
 
 ## AEM installeren in de Amazon EC2-omgeving {#installing-aem-in-the-amazon-ec-environment}
 
-Wanneer het installeren van AEM op een Elastic Compute Cloud (EC2) instantie van Amazon, als u zowel auteur installeert als op de instantie EC2 publiceert, wordt de instantie van de Auteur geïnstalleerd correct door de procedure op [&#x200B; te volgen die Instanties van de Manager van AEM &#x200B;](#installinginstancesofaemmanager) installeert; nochtans, wordt de Publish instantie Auteur.
+Wanneer het installeren van AEM op een Elastic Compute Cloud (EC2) instantie van Amazon, als u zowel auteur installeert als op de instantie EC2 publiceert, wordt de instantie van de Auteur geïnstalleerd correct door de procedure op [ te volgen die Instanties van de Manager van AEM ](#installinginstancesofaemmanager) installeert; nochtans, wordt de Publish instantie Auteur.
 
 Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installeert:
 
@@ -318,19 +318,19 @@ De webconsole.
 
 Hoewel er vele mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties moeten worden ondernomen, of minstens onmiddellijk na installatie herzien:
 
-* Raadpleeg [&#x200B; Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md) voor taken die worden vereist om ervoor te zorgen dat uw systeem veilig blijft.
-* Controleer de lijst met standaardgebruikers en -groepen die bij AEM WCM zijn geïnstalleerd. Controle of u actie op een andere rekeningen wilt ondernemen - zie [&#x200B; Veiligheid en het Beleid van de Gebruiker &#x200B;](/help/sites-administering/security.md) voor verdere details.
+* Raadpleeg [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) voor taken die worden vereist om ervoor te zorgen dat uw systeem veilig blijft.
+* Controleer de lijst met standaardgebruikers en -groepen die bij AEM WCM zijn geïnstalleerd. Controle of u actie op een andere rekeningen wilt ondernemen - zie [ Veiligheid en het Beleid van de Gebruiker ](/help/sites-administering/security.md) voor verdere details.
 
 >[!NOTE]
 >
-> Voor nieuwe AEM 6.5 LTS-installaties moeten indexdefinities afzonderlijk worden geïnstalleerd. Voor meer informatie, verwijs [&#x200B; dit &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+> Voor nieuwe AEM 6.5 LTS-installaties moeten indexdefinities afzonderlijk worden geïnstalleerd. Voor meer informatie, verwijs [ dit ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Toegang tot CRXDE Lite en de webconsole {#accessing-crxde-lite-and-the-web-console}
 
 Nadat u AEM WCM hebt gestart, hebt u ook toegang tot:
 
-* [&#x200B; CRXDE Lite &#x200B;](#accessing-crxde-lite) - gebruikt om tot de bewaarplaats toegang te hebben en te leiden
-* [&#x200B; Console van het Web &#x200B;](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
+* [ CRXDE Lite ](#accessing-crxde-lite) - gebruikt om tot de bewaarplaats toegang te hebben en te leiden
+* [ Console van het Web ](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
 
 ### CRXDE Lite openen {#accessing-crxde-lite}
 
@@ -343,7 +343,7 @@ Om CRXDE Lite te openen kunt u **CRXDE Lite** van het welkome scherm selecteren 
 Bijvoorbeeld:
 `https://localhost:4502/crx/de/index.jsp`
 
-![&#x200B; installcq_crxdelite &#x200B;](assets/installcq_crxdelite.png)
+![ installcq_crxdelite ](assets/installcq_crxdelite.png)
 
 #### Toegang tot de webconsole {#accessing-the-web-console}
 
@@ -358,9 +358,9 @@ Bijvoorbeeld:
 of voor de pagina Bundles
 `https://localhost:4502/system/console/bundles`
 
-![&#x200B; chlimage_1-14 &#x200B;](assets/chlimage_1-14.png)
+![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
-Zie {Configuratie 0} OSGi met de Console van het Web [&#x200B; voor verdere details.](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)
+Zie {Configuratie 0} OSGi met de Console van het Web [ voor verdere details.](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 
