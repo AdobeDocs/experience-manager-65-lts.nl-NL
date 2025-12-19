@@ -5,7 +5,7 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 7ea96536f3047e31f4d2122a61def2b068757d6a
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
@@ -50,12 +50,11 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
   <tbody>
 </table>
 
-
 ## Een OSGi Hotfix downloaden en installeren {#download-install-hotfix}
 
 Voer de volgende stappen uit om de hotfix te downloaden en installeren:
 
-1. Download [&#x200B; Hotfix &#x200B;](#hotfix-for-adaptive-forms) van de verbinding van de Distributie van de Software.
+1. Download [ Hotfix ](#hotfix-for-adaptive-forms) van de verbinding van de Distributie van de Software.
 1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.
-1. Upload en installeer het pakket (.zip) via de [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Upload en installeer het pakket (.zip) via de [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. Open de bundels voor configuratiebeheer `https://server:host/system/console/bundles`, upload en installeer de bundel (.jar). De hotfix is geïnstalleerd.
