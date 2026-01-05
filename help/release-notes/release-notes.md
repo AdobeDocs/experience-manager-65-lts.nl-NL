@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ### Forms
 
-AEM 6.5 Forms LTS op JEE is nu beschikbaar. Voor details over gesteunde milieu&#39;s, zie het [&#x200B; Ondersteunde document van de Combinaties van het Platform &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md). De verbindingen van de installateur zijn beschikbaar op de [&#x200B; versies van AEM Forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pagina.
+AEM 6.5 Forms LTS op JEE is nu beschikbaar. Voor details over gesteunde milieu&#39;s, zie het [&#x200B; Ondersteunde document van de Combinaties van het Platform &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md). De verbindingen van de installateur zijn beschikbaar op de [&#x200B; versies van AEM Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pagina.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -503,7 +503,7 @@ Voor gedetailleerde instructies, zie de [&#x200B; verbeteringsdocumentatie &#x20
 
 ## AEM Forms-invoegtoepassing installeren en bijwerken {#install-update-aem-forms-add-on}
 
-Voor gedetailleerde instructies, zie [&#x200B; Uitvoerend een Verbetering op zijn plaats &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Voor gedetailleerde instructies, zie [&#x200B; Uitvoerend een Verbetering op zijn plaats &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
