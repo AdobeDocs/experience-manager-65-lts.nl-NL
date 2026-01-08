@@ -26,7 +26,7 @@ In dit document worden de ondersteunde client- en serverplatforms voor AEM Forms
 
 >[!NOTE]
 >
->- Voor een volledige lijst van uitzonderingen aan gesteunde serverplatforms, zie [ Uitzonderingen aan gesteunde serverplatforms ](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
+>- Voor een volledige lijst van uitzonderingen aan gesteunde serverplatforms, zie [&#x200B; Uitzonderingen aan gesteunde serverplatforms &#x200B;](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE biedt alleen ondersteuning voor Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
 
 ### Beleid voor upgrades en ondersteuning
@@ -160,9 +160,9 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
  </tbody>
 </table>
 
-- MongoDB is software van derden en is niet opgenomen in het AEM-licentiepakket. Voor meer informatie, zie [ MongoDB het verlenen van vergunningen beleid ](https://www.mongodb.org/about/licensing/).
+- MongoDB is software van derden en is niet opgenomen in het AEM-licentiepakket. Voor meer informatie, zie [&#x200B; MongoDB het verlenen van vergunningen beleid &#x200B;](https://www.mongodb.org/about/licensing/).
 - Om optimaal gebruik te kunnen maken van uw AEM-implementatie, raadt Adobe aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat deze profiteert van professionele ondersteuning.
-- De klantenservice van Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM. Voor meer informatie, zie [ MongoDB voor de pagina van Adobe Experience Manager ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- De klantenservice van Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM. Voor meer informatie, zie [&#x200B; MongoDB voor de pagina van Adobe Experience Manager &#x200B;](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - &#39;Bestandssysteem&#39; omvat blokopslag die voldoet aan POSIX. Dit omvat netwerkopslagtechnologie. Houd er rekening mee dat de prestaties van het bestandssysteem kunnen variëren en van invloed zijn op de algehele prestaties. Het wordt aanbevolen om test AEM te laden met het netwerk/externe bestandssysteem.
 - Alleen MongoDB Storage Engine WiredTiger wordt ondersteund.
 - Delen via MongoDB wordt niet ondersteund in AEM.
@@ -286,8 +286,8 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM Forms bij JEE-implementaties:
 
 - AEM Forms on JEE ondersteunt updates, patches en repareert pakketten boven op de opgegeven primaire en secundaire versie van ondersteunde software. Bijwerken naar de volgende hoofd- of subversie wordt echter alleen ondersteund als dit is opgegeven.
-- Clustergebaseerde installaties ondersteunen TarMK-persistentie niet. Voor informatie over gesteunde persistentie, zie [ het Kiezen van een persistentietype voor een installatie van AEM Forms ](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms op JEE steunt diverse derdesoftware zoals per Adobe [ het Beleid van de de softwaresteun van de Derde ](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
+- Clustergebaseerde installaties ondersteunen TarMK-persistentie niet. Voor informatie over gesteunde persistentie, zie [&#x200B; het Kiezen van een persistentietype voor een installatie van AEM Forms &#x200B;](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+- AEM Forms op JEE steunt diverse derdesoftware zoals per Adobe [&#x200B; het Beleid van de de softwaresteun van de Derde &#x200B;](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
 - AEM Forms on JEE biedt ondersteuning voor platforms die overeenkomen met de ondersteuning van externe leveranciers. Sommige combinaties zijn mogelijk niet toegestaan door externe leveranciers. Veel leveranciers hebben hun toepassingsservers bijvoorbeeld niet gecertificeerd met Oracle. Als gevolg hiervan biedt AEM Forms op JEE ook geen ondersteuning voor deze combinaties. Om ervoor te zorgen dat u de gesteunde softwareversies kiest, controleer de steunmatrijs ook voor de derdeverkopers.
 - AEM Forms op JEE ondersteunt TarMK Cold Standby niet.
 - AEM Forms op JEE biedt geen ondersteuning voor verticale clustering.
@@ -406,7 +406,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 
 ### Uitzonderingen op toegankelijkheidsondersteuning {#exceptions-to-accessibility-support}
 
-De volgende subsystemen van AEM Forms zijn niet [ 508 ](https://www.section508.gov/) volgzaam:
+De volgende subsystemen van AEM Forms zijn niet [&#x200B; 508 &#x200B;](https://www.section508.gov/) volgzaam:
 
 - Aangepaste Forms Authoring UI
 - Gebruikersinterface voor Forms Manager
@@ -448,8 +448,8 @@ De volgende subsystemen van AEM Forms zijn niet [ 508 ](https://www.section508.g
 
 Zie voor aanvullende vereisten:
 
-- [ vereisten van het Systeem voor enig-server AEM Forms op plaatsing JEE ](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
-- [ vereisten van het Systeem voor gegroepeerde AEM Forms op plaatsing JEE ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
+- [&#x200B; vereisten van het Systeem voor enig-server AEM Forms op plaatsing JEE &#x200B;](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [&#x200B; vereisten van het Systeem voor gegroepeerde AEM Forms op plaatsing JEE &#x200B;](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat en Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -469,7 +469,7 @@ Zie voor aanvullende vereisten:
 
 >[!NOTE]
 >
->De productfamilie van Acrobat DC introduceert twee tracks voor zowel Acrobat als Reader die verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Voor details en een vergelijking van de twee sporen, zie [ https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>De productfamilie van Acrobat DC introduceert twee tracks voor zowel Acrobat als Reader die verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Voor details en een vergelijking van de twee sporen, zie [&#x200B; https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html &#x200B;](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ## Ondersteunde clients voor AEM Forms op JEE {#supported-clients-for-aem-forms-on-jee}
 
@@ -558,7 +558,7 @@ Zie voor aanvullende vereisten:
 >Bepaalde browsergerelateerde uitzonderingen voor desktops zijn als volgt:
 >
 >- Safari wordt alleen ondersteund op Macintosh OS X.
->- Workspace biedt ondersteuning voor Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of hoger. Voor meer informatie over de verenigbaarheid van Safari 5.1 met de Lezer van Adobe, Acrobat, zie [ https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html ](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Workspace biedt ondersteuning voor Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of hoger. Voor meer informatie over de verenigbaarheid van Safari 5.1 met de Lezer van Adobe, Acrobat, zie [&#x200B; https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html &#x200B;](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 >- Beheerconsole wordt niet ondersteund in Safari.
 >- Correspondence Management ondersteunt geen Windows® Internet Explorer 9.0 voor AEM 6.1-formulieren.
 >- Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
@@ -608,7 +608,7 @@ De AEM Forms-app is beschikbaar op de volgende platforms:
 
 ### Adobe Document Security Extension for Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
 
-Klik [ hier ](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor de Uitbreiding van de Veiligheid van het Document van Adobe voor Microsoft® Office te zien.
+Klik [&#x200B; hier &#x200B;](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor de Uitbreiding van de Veiligheid van het Document van Adobe voor Microsoft® Office te zien.
 
 ### Uitzonderingen op clientondersteuning {#exceptions-to-client-support}
 
@@ -616,13 +616,13 @@ AEM Forms on JEE ondersteunt updates, patches en repareert pakketten boven op de
 
 ## Flardondersteuningsbeleid van derden {#third-party-patch-support-policy}
 
-De softwarevereisten van derden voor AEM Forms op JEE worden beschreven in het gedeelte &quot;Systeemvereisten&quot; van hun respectieve productdocumenten. Heb toegang tot alle documentatie van [ https://adobe.com/go/learn_aemforms_documentation_65 ](https://adobe.com/go/learn_aemforms_documentation_65).
+De softwarevereisten van derden voor AEM Forms op JEE worden beschreven in het gedeelte &quot;Systeemvereisten&quot; van hun respectieve productdocumenten. Heb toegang tot alle documentatie van [&#x200B; https://adobe.com/go/learn_aemforms_documentation_65 &#x200B;](https://adobe.com/go/learn_aemforms_documentation_65).
 
 AEM Forms op de referentieplatforms van derden van JEE vermeldt het specifieke patchniveau van de infrastructuur van derden dat tijdens de ontwikkeling en release van AEM Forms op JEE actueel was, en van het minimale patchniveau/servicepack van de infrastructuur die door die versie van AEM Forms op JEE wordt ondersteund.
 
 Adobe biedt bij de release ondersteuning voor urgente of aanbevolen patches die door externe leveranciers worden uitgegeven, ervan uitgaande dat externe leveranciers achterwaartse compatibiliteit met de versies garanderen die AEM Forms op JEE ondersteunt. Adobe biedt alleen ondersteuning voor patches die worden vrijgegeven na het minimale patchniveau dat in de AEM Forms in JEE-documentatie is vermeld.
 
-Soms biedt Adobe geen ondersteuning voor updates van derden die belangrijke functionaliteit wijzigen en dus geen ondersteuning bieden voor volledige achterwaartse compatibiliteit. Voor details op de gesteunde updates, zie [ Gesteunde flarddefinities ](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) voor specifieke verkopersproducten en de flardtypes Adobe steunen.
+Soms biedt Adobe geen ondersteuning voor updates van derden die belangrijke functionaliteit wijzigen en dus geen ondersteuning bieden voor volledige achterwaartse compatibiliteit. Voor details op de gesteunde updates, zie [&#x200B; Gesteunde flarddefinities &#x200B;](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) voor specifieke verkopersproducten en de flardtypes Adobe steunen.
 
 Onder omstandigheden buiten de controle van Adobe, kunnen de derdepatches die achterwaartse verenigbaarheid eisen negatieve gevolgen voor de producten van Adobe of klantenmilieu&#39;s hebben. In dergelijke gevallen raadt Adobe klanten aan de gevolgen van een noodpatch van een derde te beoordelen voordat ze deze op kritieke systemen toepassen. Adobe werkt met derden samen door redelijke zakelijke inspanningen te leveren om dergelijke problemen op te lossen, hetzij via normale Adobe-ondersteuningsprogramma&#39;s, hetzij door derden die het probleem in hun patch verhelpen. Dit garandeert niet dat een nieuw vrijgegeven patch van derden die door Adobe wordt ondersteund, werkt zoals wordt beschreven door de leverancier of met AEM Forms op JEE.
 
@@ -630,7 +630,7 @@ Adobe behoudt zich het recht voor om de referentieplatforms van derden die worde
 
 Aanvullende informatie voor patches van derden vindt u ook op de website van Adobe Enterprise Support op de website van knowledgebase-artikelen over uw product.
 
-Voor om het even welke vraag met betrekking tot gesteunde formaten of platformversies, de steun van AEM Forms van het contact [ ](https://business.adobe.com/in/support/main.html)
+Voor om het even welke vraag met betrekking tot gesteunde formaten of platformversies, de steun van AEM Forms van het contact [&#x200B; &#x200B;](https://business.adobe.com/in/support/main.html)
 
 <!--
 
