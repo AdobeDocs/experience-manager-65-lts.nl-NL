@@ -17,13 +17,13 @@ ht-degree: 13%
 Voordat u met het labelen van uw middelen begint met Smart Content Services, moet u [!DNL Experience Manager Assets] integreren met Adobe Developer Console om de slimme service van [!DNL Adobe AI] te gebruiken. Als de service eenmaal is geconfigureerd, kunt u de service trainen met enkele afbeeldingen en een tag.
 Controleer het volgende voordat u de Smart Content Service gebruikt:
 
-* [ integreer met Adobe Developer Console ](#integrate-adobe-io).
-* [ Lijn de Slimme Dienst van de Inhoud ](#training-the-smart-content-service).
-* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* [&#x200B; integreer met Adobe Developer Console &#x200B;](#integrate-adobe-io).
+* [&#x200B; Lijn de Slimme Dienst van de Inhoud &#x200B;](#training-the-smart-content-service).
+* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 >[!IMPORTANT]
 >
->Verwijs naar [ Assets voor slimme het etiketteren ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/config-smart-tagging) voor de configuratie van slimme markeringen in AEM 6.5 voorbereiden.
+>Verwijs naar [&#x200B; Assets voor slimme het etiketteren &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/config-smart-tagging) voor de configuratie van slimme markeringen in AEM 6.5 voorbereiden.
 
 **Nieuwe Gebruikers**
 
@@ -39,11 +39,11 @@ Wanneer u met Adobe Developer Console integreert, verifieert de [!DNL Experience
 
 Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
-1. Creeer een integratie in [ Adobe Developer Console ](#create-adobe-io-integration).
+1. Creeer een integratie in [&#x200B; Adobe Developer Console &#x200B;](#create-adobe-io-integration).
 
-1. Creeer [ IMS technische rekeningsconfiguratie ](#create-ims-account-config) gebruikend de API sleutel en andere geloofsbrieven van Adobe Developer Console.
+1. Creeer [&#x200B; IMS technische rekeningsconfiguratie &#x200B;](#create-ims-account-config) gebruikend de API sleutel en andere geloofsbrieven van Adobe Developer Console.
 
-1. [ vorm de Slimme Dienst van de Inhoud ](#configure-smart-content-service).
+1. [&#x200B; vorm de Slimme Dienst van de Inhoud &#x200B;](#configure-smart-content-service).
 
 1. [Test de configuratie](#validate-the-configuration).
 
@@ -51,7 +51,7 @@ Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
 Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integratie in Adobe Developer Console om [!UICONTROL API Key] (gegenereerd in [!UICONTROL CLIENT ID] field of Adobe Developer Console integration), [!UICONTROL ORGANIZATION ID] en [!UICONTROL CLIENT SECRET] for [!UICONTROL Assets Smart Tagging Service Settings] van de cloudconfiguratie te verkrijgen in [!DNL Experience Manager] .
 
-1. Toegang [ https://developer.adobe.com ](https://developer.adobe.com/) in browser. Selecteer de aangewezen rekening en verifieer dat de bijbehorende organisatorische rol systeem **beheerder** is.
+1. Toegang [&#x200B; https://developer.adobe.com &#x200B;](https://developer.adobe.com/) in browser. Selecteer de aangewezen rekening en verifieer dat de bijbehorende organisatorische rol systeem **beheerder** is.
 
 1. Maak een project een geef het de gewenste naam. Klik op **[!UICONTROL Add API]**.
 
@@ -61,20 +61,20 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 Raadpleeg de documentatie bij Developer Console voor meer informatie over het uitvoeren van deze configuratie, afhankelijk van uw vereisten:
 
    * Overzicht:
-      * [ Server aan de authentificatie van de Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+      * [&#x200B; Server aan de authentificatie van de Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * Een nieuwe OAuth-referentie maken:
-      * [ OAuth Server-aan-Server de gids van de credentieimplementatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+      * [&#x200B; OAuth Server-aan-Server de gids van de credentieimplementatie &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * Een bestaande JWT-referentie migreren naar een OAuth-referentie:
-      * [ migrerend van de Rekening van de Dienst (JWT) credential aan OAuth Server-aan-Server credential ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+      * [&#x200B; migrerend van de Rekening van de Dienst (JWT) credential aan OAuth Server-aan-Server credential &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
 1. Selecteer **[!UICONTROL Select product profiles]** op de pagina **[!UICONTROL Smart Content Services]** . Klik op **[!UICONTROL Save configured API]**.
 
    De pagina die verschijnt biedt meer informatie over de configuratie. Zorg dat deze pagina geopend blijft en kopieer deze waarden in [!UICONTROL Assets Smart Tagging Service Settings] van de cloudconfiguratie in [!DNL Experience Manager] om slimme tags te configureren.
 
-   ![ Referentie OAuth in Developer Console ](assets/ims-configuration-developer-console.png)
+   ![&#x200B; Referentie OAuth in Developer Console &#x200B;](assets/ims-configuration-developer-console.png)
 
 ### Configuratie van technische IMS-account maken {#create-ims-account-config}
 
@@ -86,17 +86,17 @@ U moet de configuratie van de technische IMS-account maken met de onderstaande s
 
 1. Gebruik de volgende waarden in het dialoogvenster Configuratie technische account van IMS:
 
-   ![ het venster van de Configuratie van Adobe IMS ](assets/adobe-ims-config.png)
+   ![&#x200B; het venster van de Configuratie van Adobe IMS &#x200B;](assets/adobe-ims-config.png)
 
    | Veld | Beschrijving |
    | -------- | ---------------------------- |
    | Cloudoplossing | Kies **[!UICONTROL Smart Tags]** in de vervolgkeuzelijst. |
    | Titel | Voeg een titel toe van de configurerende IMS-account. |
    | Autorisatieserver | Toevoegen `https://ims-na1.adobelogin.com` |
-   | Client-id | Te verstrekken door [ console van Adobe Developer ](https://developer.adobe.com/console/). |
-   | Clientgeheim | Te verstrekken door [ console van Adobe Developer ](https://developer.adobe.com/console/). |
-   | Scope | Te verstrekken door [ console van Adobe Developer ](https://developer.adobe.com/console/). |
-   | Org-id | Te verstrekken door [ console van Adobe Developer ](https://developer.adobe.com/console/). |
+   | Client-id | Te verstrekken door [&#x200B; console van Adobe Developer &#x200B;](https://developer.adobe.com/console/). |
+   | Clientgeheim | Te verstrekken door [&#x200B; console van Adobe Developer &#x200B;](https://developer.adobe.com/console/). |
+   | Scope | Te verstrekken door [&#x200B; console van Adobe Developer &#x200B;](https://developer.adobe.com/console/). |
+   | Org-id | Te verstrekken door [&#x200B; console van Adobe Developer &#x200B;](https://developer.adobe.com/console/). |
 
 1. Selecteer de configuratie die u hebt gemaakt en klik op **[!UICONTROL Check Health]** .
 
@@ -112,7 +112,7 @@ Als u de integratie wilt configureren, gebruikt u de waarden van de velden [!UIC
 
 1. Vul de volgende velden in:
 
-   ![ Slimme Configuratie van Markeringen ](assets/smart-tags-config.png)
+   ![&#x200B; Slimme Configuratie van Markeringen &#x200B;](assets/smart-tags-config.png)
 
    | Veld | Beschrijving |
    | -------- | ---------------------------- |
@@ -140,7 +140,7 @@ Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de conf
 
 1. Klik op `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
 
-   ![ het venster van het Boon ](assets/mbean.png)
+   ![&#x200B; het venster van het Boon &#x200B;](assets/mbean.png)
 
 1. Klik op `validateConfigs()`. Klik in het dialoogvenster **[!UICONTROL Validate Configurations]** op **[!UICONTROL Invoke]** .
 
@@ -160,15 +160,15 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
 1. Open de eigenschappen van de stap om de details te wijzigen. Ga naar **[!UICONTROL Advanced Settings]** en controleer of de optie **[!UICONTROL Handler Advance]** is ingeschakeld.
 
-   ![ vorm het werkschema van de Activa van de Update DAM en voeg slimme markeringsstap ](assets/smart-tag-step-properties-workflow1.png) toe
+   ![&#x200B; vorm het werkschema van de Activa van de Update DAM en voeg slimme markeringsstap &#x200B;](assets/smart-tag-step-properties-workflow1.png) toe
 
 1. Selecteer op het tabblad **[!UICONTROL Arguments]** de optie **[!UICONTROL Ignore Errors]** als u de workflow wilt voltooien, zelfs als de stap Automatisch labelen is mislukt.
 
    Als u bovendien elementen wilt labelen terwijl ze worden geüpload, ongeacht of slimme tags zijn ingeschakeld voor mappen, selecteert u **[!UICONTROL Ignore Smart Tag Flag]** .
 
-   ![ vorm het werkschema van de Activa van de Update DAM om slimme markeringsstap toe te voegen en manager vooruit te selecteren ](assets/smart-tag-step-properties-workflow2.png)
+   ![&#x200B; vorm het werkschema van de Activa van de Update DAM om slimme markeringsstap toe te voegen en manager vooruit te selecteren &#x200B;](assets/smart-tag-step-properties-workflow2.png)
 
-1. Klik gedaan ![ gereed pictogram ](assets/do-not-localize/check-ok-done-icon.png) om de processtap te sluiten.
+1. Klik gedaan ![&#x200B; gereed pictogram &#x200B;](assets/do-not-localize/check-ok-done-icon.png) om de processtap te sluiten.
 
 1. Klik op **[!UICONTROL Sync]** om de workflow op te slaan.
 
@@ -194,23 +194,23 @@ Voor de beste resultaten voldoen de afbeeldingen in de trainingsset aan de volge
 
 Het is bijvoorbeeld geen goed idee om al deze afbeeldingen als `my-party` te labelen (voor training) omdat ze er anders uitzien.
 
-![ Illustratieve beelden om de richtlijnen voor opleiding ](/help/assets/assets/do-not-localize/coherence.png) te illustreren
+![&#x200B; Illustratieve beelden om de richtlijnen voor opleiding &#x200B;](/help/assets/assets/do-not-localize/coherence.png) te illustreren
 
 **Dekking**: Gebruik voldoende verscheidenheid in de beelden in de opleiding. Het is de bedoeling om een paar maar redelijk verschillende voorbeelden te geven, zodat Experience Manager leert zich te richten op de juiste zaken. Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen.
 
 Bijvoorbeeld, voor de markering *model-onderstel*, omvat meer opleidingsbeelden gelijkend op het benadrukte beeld hieronder voor de dienst om gelijkaardige beelden nauwkeuriger tijdens het etiketteren te identificeren.
 
-![ Illustratieve beelden om de richtlijnen voor opleiding ](/help/assets/assets/do-not-localize/coverage_1.png) te illustreren
+![&#x200B; Illustratieve beelden om de richtlijnen voor opleiding &#x200B;](/help/assets/assets/do-not-localize/coverage_1.png) te illustreren
 
 **Vervorming/belemmering**: De de diensttreinen beter op beelden die minder afleiding (duidelijke achtergronden, niet verwante accompanimenten, zoals voorwerpen/personen met het belangrijkste onderwerp) hebben.
 
 Bijvoorbeeld, voor de markering *casual-shoe*, is het tweede beeld geen goede opleidingskandidaat.
 
-![ Illustratieve beelden om de richtlijnen voor opleiding ](/help/assets/assets/do-not-localize/distraction.png) te illustreren
+![&#x200B; Illustratieve beelden om de richtlijnen voor opleiding &#x200B;](/help/assets/assets/do-not-localize/distraction.png) te illustreren
 
 **Volledigheid:** Als een afbeelding in aanmerking komt voor meer dan één tag, voegt u alle relevante tags toe voordat u de afbeelding opneemt voor training. Voeg bijvoorbeeld voor tags, zoals `raincoat` en `model-side-view`, beide tags toe aan het in aanmerking komende element voordat u dit opneemt voor training.
 
-![ Illustratieve beelden om de richtlijnen voor opleiding ](/help/assets/assets/do-not-localize/completeness.png) te illustreren
+![&#x200B; Illustratieve beelden om de richtlijnen voor opleiding &#x200B;](/help/assets/assets/do-not-localize/completeness.png) te illustreren
 
 >[!NOTE]
 >
@@ -220,7 +220,7 @@ Bijvoorbeeld, voor de markering *casual-shoe*, is het tweede beeld geen goede op
 
 U kunt de Slimme Dienst van de Inhoud toelaten om periodiek op de activa en bijbehorende markeringen binnen een omslag te trainen. Open de pagina [!UICONTROL Properties] van de elementmap, selecteer **[!UICONTROL Enable Smart Tags]** onder het tabblad **[!UICONTROL Details]** en sla de wijzigingen op.
 
-![ enable_smart_tags ](assets/enable_smart_tags.png)
+![&#x200B; enable_smart_tags &#x200B;](assets/enable_smart_tags.png)
 
 Als deze optie voor een map is geselecteerd, voert [!DNL Experience Manager] automatisch een trainingsworkflow uit om de Smart Content Service op te leiden voor de mappenelementen en hun tags. Door gebrek, de looppas van het opleidingswerkschema op een wekelijkse basis bij 12 :30 AM op Verzadigingsdagen.
 
@@ -233,7 +233,7 @@ U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Wer
 1. Blader in het dialoogvenster **[!UICONTROL Run Workflow]** naar de payload-map met de gecodeerde elementen voor training voor de service.
 1. Geef een titel op voor de workflow en voeg een opmerking toe. Klik vervolgens op **[!UICONTROL Run]** . De elementen en tags worden ter training aangeboden.
 
-   ![ workflow_dialog ](assets/workflow_dialog.png)
+   ![&#x200B; workflow_dialog &#x200B;](assets/workflow_dialog.png)
 
 >[!NOTE]
 >
@@ -268,6 +268,6 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 
 >[!MORELIKETHIS]
 >
->* [ Overzicht en hoe te om Slimme Markeringen ](enhanced-smart-tags.md) te trainen
->* [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md)
->* [ Videozelfstudie over slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [&#x200B; Overzicht en hoe te om Slimme Markeringen &#x200B;](enhanced-smart-tags.md) te trainen
+>* [&#x200B; het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth &#x200B;](config-oauth.md)
+>* [&#x200B; Videozelfstudie over slimme markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
