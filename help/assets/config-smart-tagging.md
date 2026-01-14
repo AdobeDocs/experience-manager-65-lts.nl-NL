@@ -19,11 +19,11 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
 
 * [&#x200B; integreer met Adobe Developer Console &#x200B;](#integrate-adobe-io).
 * [&#x200B; Lijn de Slimme Dienst van de Inhoud &#x200B;](#training-the-smart-content-service).
-* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL).
 
 >[!IMPORTANT]
 >
->Verwijs naar [&#x200B; Assets voor slimme het etiketteren &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/config-smart-tagging) voor de configuratie van slimme markeringen in AEM 6.5 voorbereiden.
+>Verwijs naar [&#x200B; Assets voor slimme het etiketteren &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/administer/config-smart-tagging) voor de configuratie van slimme markeringen in AEM 6.5 voorbereiden.
 
 **Nieuwe Gebruikers**
 
@@ -270,4 +270,4 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 >
 >* [&#x200B; Overzicht en hoe te om Slimme Markeringen &#x200B;](enhanced-smart-tags.md) te trainen
 >* [&#x200B; het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth &#x200B;](config-oauth.md)
->* [&#x200B; Videozelfstudie over slimme markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [&#x200B; Videozelfstudie over slimme markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=nl-NL)
