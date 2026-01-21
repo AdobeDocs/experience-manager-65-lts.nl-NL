@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -29,9 +29,9 @@ Het AEM Upgradeproces vereist zorgvuldig afgehandelde planning, analyse, en uitv
 
 >[!NOTE]
 >
->De upgrade naar AEM 6.5 LTS wordt ondersteund door de laatste 6 servicepacks
+>De upgrade naar AEM 6.5 LTS is beschikbaar voor alle ondersteunde 6.5 Service Packs.
 
-Het is belangrijk dat u een ondersteund besturingssysteem, Java™-runtime, httpd en Dispatcher-versie gebruikt. Voor meer informatie, verwijs de [&#x200B; technische vereisten voor AEM 6.5 LTS &#x200B;](/help/sites-deploying/technical-requirements.md). Het upgraden van deze onderdelen moet in uw upgradeplan worden opgenomen en moet plaatsvinden voordat u AEM upgradet.
+Het is belangrijk dat u een ondersteund besturingssysteem, Java™-runtime, httpd en Dispatcher-versie gebruikt. Voor meer informatie, verwijs de [ technische vereisten voor AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md). Het upgraden van deze onderdelen moet in uw upgradeplan worden opgenomen en moet plaatsvinden voordat u AEM upgradet.
 
 <!-- Alexandru: drafting for now
 
@@ -113,9 +113,9 @@ De exacte productieomgeving moet worden gedupliceerd en na de upgrade moeten er 
 
 ### Complexiteit van upgrade beoordelen {#assessing-upgrade-complexity}
 
-Vanwege de grote verscheidenheid aan aanpassingen die Adobe-klanten op hun AEM-omgevingen toepassen, is het belangrijk dat u enige tijd van tevoren doorbrengt om het totale inspanningsniveau te bepalen dat in uw upgrade moet worden verwacht. [&#x200B; de Analysator van AEM voor AEM 6.5 LTS &#x200B;](/help/sites-deploying/aem-analyzer.md) kan u helpen in het beoordelen van de ingewikkeldheid van de verbetering.
+Vanwege de grote verscheidenheid aan aanpassingen die Adobe-klanten op hun AEM-omgevingen toepassen, is het belangrijk dat u enige tijd van tevoren doorbrengt om het totale inspanningsniveau te bepalen dat in uw upgrade moet worden verwacht. [ de Analysator van AEM voor AEM 6.5 LTS ](/help/sites-deploying/aem-analyzer.md) kan u helpen in het beoordelen van de ingewikkeldheid van de verbetering.
 
-De [&#x200B; Analyseer van AEM voor AEM 6.5 LTS &#x200B;](/help/sites-deploying/pattern-detector.md) zou u een vrij nauwkeurige schatting van moeten geven wat tijdens een verbetering voor de meeste gevallen te verwachten. Nochtans, voor complexere aanpassingen en plaatsingen waar u onverenigbare veranderingen hebt, kunt u een ontwikkelingsinstantie aan AEM 6.5 LTS volgens de instructies in [&#x200B; bevorderen Uitvoerend een Verbetering op zijn plaats &#x200B;](/help/sites-deploying/in-place-upgrade.md). Na voltooiing, voer wat hoge rooktests op dit milieu uit. Het doel van deze exercitie is niet om de inventarisatie van de testgevallen volledig te voltooien en een formele inventarisatie van de gebreken te maken, maar om ons een ruwe schatting te geven van de hoeveelheid werk die nodig is om de code voor AEM 6.5 LTS-compatibiliteit te upgraden. Wanneer gecombineerd met de [&#x200B; Analysator van AEM &#x200B;](/help/sites-deploying/aem-analyzer.md) en de architecturale veranderingen die in de vorige sectie werden bepaald, kan een ruwe schatting aan het team van het projectbeheer voor de planning van de verbetering worden verstrekt.
+De [ Analyseer van AEM voor AEM 6.5 LTS ](/help/sites-deploying/pattern-detector.md) zou u een vrij nauwkeurige schatting van moeten geven wat tijdens een verbetering voor de meeste gevallen te verwachten. Nochtans, voor complexere aanpassingen en plaatsingen waar u onverenigbare veranderingen hebt, kunt u een ontwikkelingsinstantie aan AEM 6.5 LTS volgens de instructies in [ bevorderen Uitvoerend een Verbetering op zijn plaats ](/help/sites-deploying/in-place-upgrade.md). Na voltooiing, voer wat hoge rooktests op dit milieu uit. Het doel van deze exercitie is niet om de inventarisatie van de testgevallen volledig te voltooien en een formele inventarisatie van de gebreken te maken, maar om ons een ruwe schatting te geven van de hoeveelheid werk die nodig is om de code voor AEM 6.5 LTS-compatibiliteit te upgraden. Wanneer gecombineerd met de [ Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) en de architecturale veranderingen die in de vorige sectie werden bepaald, kan een ruwe schatting aan het team van het projectbeheer voor de planning van de verbetering worden verstrekt.
 
 ### De upgrade- en terugdraaiversie van Runbook samenstellen {#building-the-upgrade-and-rollback-runbook}
 
@@ -125,7 +125,7 @@ Hoewel Adobe het proces voor de bevordering van een instantie van AEM heeft gedo
 
 ![runbook-diagram](assets/runbook-diagram.png) -->
 
-Adobe heeft verbetering en terugschroeven van prijzenprocedures in [&#x200B; Procedure van de Verbetering &#x200B;](/help/sites-deploying/upgrade-procedure.md) en geleidelijke instructies voor het toepassen van de verbetering in het Uitvoeren van een [&#x200B; Verbetering Op plaats &#x200B;](/help/sites-deploying/in-place-upgrade.md) verstrekt. Deze instructies zouden met uw systeemarchitectuur, aanpassingen, en downtime tolerantie moeten worden herzien en overwogen om de aangewezen schakelaar-over en terugschroeven van prijzenprocedures te bepalen die u tijdens de verbetering zult uitvoeren. Wijzigingen in architectuur of serverformaten moeten worden opgenomen wanneer u uw aangepaste runbook gaat maken.
+Adobe heeft verbetering en terugschroeven van prijzenprocedures in [ Procedure van de Verbetering ](/help/sites-deploying/upgrade-procedure.md) en geleidelijke instructies voor het toepassen van de verbetering in het Uitvoeren van een [ Verbetering Op plaats ](/help/sites-deploying/in-place-upgrade.md) verstrekt. Deze instructies zouden met uw systeemarchitectuur, aanpassingen, en downtime tolerantie moeten worden herzien en overwogen om de aangewezen schakelaar-over en terugschroeven van prijzenprocedures te bepalen die u tijdens de verbetering zult uitvoeren. Wijzigingen in architectuur of serverformaten moeten worden opgenomen wanneer u uw aangepaste runbook gaat maken.
 
 ### Een upgradeplan ontwikkelen {#developing-an-upgrade-plan}
 
@@ -148,7 +148,7 @@ Een alomvattend projectplan moet het volgende omvatten:
 
 ### Ontwikkeling en kwaliteitscontrole {#performing-development-and-qa}
 
-Adobe heeft procedures voor [&#x200B; Bevorderend Code en Aanpassingen &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) verstrekt om met AEM 6.5 LTS compatibel te zijn. Wanneer dit iteratieve proces wordt uitgevoerd, moeten wijzigingen worden aangebracht in de runbook.
+Adobe heeft procedures voor [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) verstrekt om met AEM 6.5 LTS compatibel te zijn. Wanneer dit iteratieve proces wordt uitgevoerd, moeten wijzigingen worden aangebracht in de runbook.
 
 <!--Alexandru: drafting for now
 
@@ -168,8 +168,8 @@ Deze stap is essentieel aangezien het de enige tijd is dat u de stappen in runbo
 
 ### De upgrade uitvoeren {#performing-the-upgrade}
 
-Zodra de definitieve aftekening van alle belanghebbenden is ontvangen, is het tijd om de gedefinieerde runbook-procedures uit te voeren. Adobe heeft stappen voor verbetering en het terugschroeven van prijzen in [&#x200B; de Procedure van de Verbetering &#x200B;](/help/sites-deploying/upgrade-procedure.md) en installatiestappen in het Uitvoeren van een [&#x200B; Verbetering op zijn plaats &#x200B;](/help/sites-deploying/in-place-upgrade.md) als verwijzingspunt verstrekt.
+Zodra de definitieve aftekening van alle belanghebbenden is ontvangen, is het tijd om de gedefinieerde runbook-procedures uit te voeren. Adobe heeft stappen voor verbetering en het terugschroeven van prijzen in [ de Procedure van de Verbetering ](/help/sites-deploying/upgrade-procedure.md) en installatiestappen in het Uitvoeren van een [ Verbetering op zijn plaats ](/help/sites-deploying/in-place-upgrade.md) als verwijzingspunt verstrekt.
 
-![&#x200B; prepress &#x200B;](assets/perform-upgrade.png)
+![ prepress ](assets/perform-upgrade.png)
 
 Adobe heeft enkele stappen opgegeven in de instructies voor het valideren van de omgeving. Deze omvatten basiscontroles zoals het aftasten van de verbeteringslogboeken en het verifiëren dat alle bundels OSGi behoorlijk zijn begonnen, maar Adobe adviseert ook het bevestigen met uw eigen testgevallen die op uw bedrijfsprocessen worden gebaseerd. Adobe raadt ook aan het schema van AEM Online Revision Cleanup en verwante routines te controleren om ervoor te zorgen dat deze routines tijdens een rustige tijd voor uw bedrijf worden uitgevoerd. Deze routines zijn essentieel voor de prestaties op lange termijn van AEM.
