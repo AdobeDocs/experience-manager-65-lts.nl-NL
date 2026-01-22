@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 0%
@@ -101,7 +101,7 @@ In de volgende secties worden beide scenario&#39;s beschreven:
 
 ### Op locatie {#on-premise}
 
-U kunt AEM installeren op servers in uw bedrijfsomgeving. Voorbeelden van gebruikelijke installatieprogramma&#39;s zijn: ontwikkelings-, test- en publicatieomgevingen. Zie [&#x200B; Begonnen het Worden &#x200B;](#getting-started) voor basisdetails op hoe te om de software van AEM te krijgen om het plaatselijk te installeren.
+U kunt AEM installeren op servers in uw bedrijfsomgeving. Voorbeelden van gebruikelijke installatieprogramma&#39;s zijn: ontwikkelings-, test- en publicatieomgevingen. Zie [ Begonnen het Worden ](#getting-started) voor basisdetails op hoe te om de software van AEM te krijgen om het plaatselijk te installeren.
 
 <!-- To learn more about the typical on-premises deployments, see [Recommended Deployments](/help/sites-deploying/recommended-deploys.md). -->
 
@@ -113,15 +113,15 @@ U kunt AEM installeren op servers in uw bedrijfsomgeving. Voorbeelden van gebrui
 
 ### Vereisten {#prerequisites}
 
-Terwijl de productieinstanties in werking worden gesteld op specifieke machines die officieel gesteund OS in werking stellen (zie [&#x200B; Technische Vereisten &#x200B;](/help/sites-deploying/technical-requirements.md)), zal de server van Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 17 Java™** &#x200B;](https://www.oracle.com/java/technologies/downloads/#java17) steunt.
+Terwijl de productieinstanties in werking worden gesteld op specifieke machines die officieel gesteund OS in werking stellen (zie [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md)), zal de server van Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 17 Java™** ](https://www.oracle.com/java/technologies/downloads/#java17) steunt.
 
 Om vertrouwd te raken en zich op AEM te ontwikkelen, is het gebruikelijk om een instantie te gebruiken die op uw lokale computer wordt geïnstalleerd die OS X of Desktopversies van Microsoft® Windows of Linux® in werking stelt.
 
-Op cliënt-kant, werkt AEM met alle moderne browsers (**Microsoft® Edge**, **Chrome 51+**, **Firefox 47+**, **Safari 8+**) op zowel Desktop als tablet werkende systemen. Zie [&#x200B; Ondersteunde Platforms van de Cliënt &#x200B;](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
+Op cliënt-kant, werkt AEM met alle moderne browsers (**Microsoft® Edge**, **Chrome 51+**, **Firefox 47+**, **Safari 8+**) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
 
 ### De software ophalen {#getting-the-software}
 
-De klanten met een geldig onderhoud en steuncontract zouden een postbericht met een code moeten hebben ontvangen en AEM van de [**Adobe Vergunnende Website** kunnen downloaden &#x200B;](https://licensing.adobe.com/). De bedrijfspartners kunnen downloadtoegang van [**verzoeken spphelp@adobe.com**](mailto:spphelp@adobe.com).
+De klanten met een geldig onderhoud en steuncontract zouden een postbericht met een code moeten hebben ontvangen en AEM van de [**Adobe Vergunnende Website** kunnen downloaden ](https://licensing.adobe.com/). De bedrijfspartners kunnen downloadtoegang van [**verzoeken spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 Het AEM-softwarepakket is beschikbaar in twee vormen:
 
@@ -129,7 +129,7 @@ Het AEM-softwarepakket is beschikbaar in twee vormen:
 
 * **CQ AEM 6.5 LTS oorlog:** A *oorlog* dossier voor plaatsing in een server van de derdetoepassing.
 
-In de volgende sectie beschrijven wij de **standalone installatie**. Voor details bij het installeren van AEM in een toepassingsserver zie [&#x200B; de Server van de Toepassing installeren &#x200B;](/help/sites-deploying/application-server-install.md).
+In de volgende sectie beschrijven wij de **standalone installatie**. Voor details bij het installeren van AEM in een toepassingsserver zie [ de Server van de Toepassing installeren ](/help/sites-deploying/application-server-install.md).
 
 ### Standaard lokale installatie {#default-local-install}
 
@@ -137,7 +137,7 @@ In de volgende sectie beschrijven wij de **standalone installatie**. Voor detail
 
    Installatielocatie UNIX®: **/opt/aem**
 
-   Installatielocatie voor Windows: **`C:\Program Files\aem`**
+   Installatielocatie voor Windows: **`C:\aem`**
 
    Het is ook gebruikelijk om voorbeeldexemplaren in een map rechts op het bureaublad te installeren. In elk geval wordt deze locatie door Adobe algemeen aangeduid als:
 
@@ -232,7 +232,7 @@ Wanneer de snelstartjar voor het eerst wordt gestart, wordt deze zichzelf in dez
 
 Als de instantie is geïnstalleerd via de gebruikersinterface, wordt automatisch een browservenster geopend en wordt ook een venster van de bureaubladtoepassing geopend met daarin de host en poort van de instantie en een aan/uit-schakelaar:
 
-![&#x200B; begin op scherm &#x200B;](assets/screen_shot_.png)
+![ begin op scherm ](assets/screen_shot_.png)
 
 ### Starten en stoppen {#starting-and-stopping}
 
@@ -259,7 +259,7 @@ AEM start en leidt uw webbrowser automatisch om naar de juiste pagina, meestal d
 
 `https://localhost:4502/`
 
-![&#x200B; teken binnen het scherm &#x200B;](assets/screen_shot_2019-04-08at83533am.png)
+![ teken binnen het scherm ](assets/screen_shot_2019-04-08at83533am.png)
 
 
 Nadat u bent aangemeld, hebt u toegang tot AEM. Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw rol:
