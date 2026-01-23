@@ -108,7 +108,7 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 >[!TIP]
 >
->Het effect van Personalization op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden besproken verder in het document [ Optimalisering van Prestaties.](/help/sites-deploying/configuring-performance.md)
+>Het effect van Personalization op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden besproken verder in het document [&#x200B; Optimalisering van Prestaties.](/help/sites-deploying/configuring-performance.md)
 
 #### Nauwkeurigheid van de regels {#accuracy}
 
