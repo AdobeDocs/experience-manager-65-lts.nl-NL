@@ -28,16 +28,16 @@ Met de coderingsservice kunt u documenten versleutelen en decoderen. Wanneer een
 
 U kunt deze taken uitvoeren met behulp van de coderingsservice:
 
-* Codeer een PDF-document met een wachtwoord. (Zie [ Coderend de Documenten van PDF met een Wachtwoord ](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
-* Codeer een PDF-document met een certificaat. (Zie [ Coderend de Documenten van PDF met Certificaten ](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
-* Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document. (Zie [ het Verwijderen van de Encryptie van het Wachtwoord ](encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
-* Op een certificaat gebaseerde versleuteling verwijderen uit een PDF-document. (Zie [ het Verwijderen van Certificaat Gebaseerde Encryptie ](encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
-* Ontgrendel het PDF-document zodat andere servicebewerkingen kunnen worden uitgevoerd. Nadat bijvoorbeeld een met wachtwoord gecodeerd PDF-document is ontgrendeld, kunt u er een digitale handtekening op toepassen. (Zie [ Versleutelde documenten van PDF ontgrendelen ](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
-* Bepaal het versleutelingstype van een beveiligd PDF-document. (Zie [ Bepalend Type van Encryptie ](encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
+* Codeer een PDF-document met een wachtwoord. (Zie [&#x200B; Coderend de Documenten van PDF met een Wachtwoord &#x200B;](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+* Codeer een PDF-document met een certificaat. (Zie [&#x200B; Coderend de Documenten van PDF met Certificaten &#x200B;](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
+* Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document. (Zie [&#x200B; het Verwijderen van de Encryptie van het Wachtwoord &#x200B;](encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
+* Op een certificaat gebaseerde versleuteling verwijderen uit een PDF-document. (Zie [&#x200B; het Verwijderen van Certificaat Gebaseerde Encryptie &#x200B;](encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
+* Ontgrendel het PDF-document zodat andere servicebewerkingen kunnen worden uitgevoerd. Nadat bijvoorbeeld een met wachtwoord gecodeerd PDF-document is ontgrendeld, kunt u er een digitale handtekening op toepassen. (Zie [&#x200B; Versleutelde documenten van PDF ontgrendelen &#x200B;](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
+* Bepaal het versleutelingstype van een beveiligd PDF-document. (Zie [&#x200B; Bepalend Type van Encryptie &#x200B;](encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Encryptie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Encryptie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF-documenten versleutelen met een wachtwoord {#encrypting-pdf-documents-with-a-password}
 
@@ -45,11 +45,11 @@ Wanneer u een PDF-document versleutelt met een wachtwoord, moet een gebruiker he
 
 >[!NOTE]
 >
->Als u een gecodeerd PDF-document uploadt naar de AEM Forms-opslagplaats, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de AEM Forms-opslagplaats. (Zie [ schrijvend Middelen ](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Als u een gecodeerd PDF-document uploadt naar de AEM Forms-opslagplaats, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de AEM Forms-opslagplaats. (Zie [&#x200B; schrijvend Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Encryptie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Encryptie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -250,15 +250,15 @@ Een certificaat met een openbare sleutel bevat de openbare sleutel van een gebru
 
 >[!NOTE]
 >
->Als u een gecodeerd PDF-document uploadt naar de AEM Forms-opslagplaats, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de AEM Forms-opslagplaats. (Zie [ schrijvend Middelen ](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Als u een gecodeerd PDF-document uploadt naar de AEM Forms-opslagplaats, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de AEM Forms-opslagplaats. (Zie [&#x200B; schrijvend Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
->Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM Forms. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [ het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken ](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM Forms. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [&#x200B; het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken &#x200B;](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Encryptie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Encryptie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -430,7 +430,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
    * Vul het `BLOB` -object door de inhoud van de bytearray toe te wijzen aan het gegevenslid van het `BLOB` object `MTOM` .
    * Wijs het `BLOB` -object toe dat het certificaat opslaat naar het gegevenslid van het `Recipient` object `x509Cert` .
    * Maak een `CertificateEncryptionIdentity` -object dat certificaatinformatie opslaat met behulp van de constructor.
-   * Wijs het `Recipient` voorwerp toe dat het certificaat aan het `CertificateEncryptionIdentity` ontvankelijke gegevenslid van objecten {opslaat.
+   * Wijs het `Recipient` voorwerp toe dat het certificaat aan het `CertificateEncryptionIdentity` ontvankelijke gegevenslid van objecten &lbrace;opslaat.
    * Maak een array `Object` en wijs het object `CertificateEncryptionIdentity` toe aan het eerste element van de array `Object` . Deze `Object` -array wordt als een parameter aan de `encryptPDFUsingCertificates` -methode doorgegeven.
 
 1. Stel opties voor codering tijdens runtime in.
@@ -470,7 +470,7 @@ Op certificaten gebaseerde versleuteling kan uit een PDF-document worden verwijd
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Encryptie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Encryptie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -504,7 +504,7 @@ Vraag een gecodeerd PDF-document aan om versleuteling op basis van certificaten 
 
 **verwijdert encryptie**
 
-Als u op een certificaat gebaseerde versleuteling wilt verwijderen uit een gecodeerd PDF-document, hebt u zowel een gecodeerd PDF-document als de persoonlijke sleutel nodig die overeenkomt met de sleutel waarmee het PDF-document is versleuteld. De aliaswaarde van de persoonlijke sleutel wordt opgegeven wanneer op een certificaat gebaseerde versleuteling uit een gecodeerd PDF-document wordt verwijderd. Voor informatie over de openbare sleutel, zie [ Coderend de Documenten van PDF met Certificaten ](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).
+Als u op een certificaat gebaseerde versleuteling wilt verwijderen uit een gecodeerd PDF-document, hebt u zowel een gecodeerd PDF-document als de persoonlijke sleutel nodig die overeenkomt met de sleutel waarmee het PDF-document is versleuteld. De aliaswaarde van de persoonlijke sleutel wordt opgegeven wanneer op een certificaat gebaseerde versleuteling uit een gecodeerd PDF-document wordt verwijderd. Voor informatie over de openbare sleutel, zie [&#x200B; Coderend de Documenten van PDF met Certificaten &#x200B;](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).
 
 >[!NOTE]
 >
@@ -631,7 +631,7 @@ Op wachtwoorden gebaseerde versleuteling kan uit een PDF-document worden verwijd
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Encryptie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Encryptie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -665,7 +665,7 @@ Vraag een gecodeerd PDF-document aan om op wachtwoord gebaseerde versleuteling t
 
 **verwijder het wachtwoord**
 
-Als u op een wachtwoord gebaseerde versleuteling uit een gecodeerd PDF-document wilt verwijderen, hebt u zowel een gecodeerd PDF-document als een hoofdwachtwoord nodig waarmee de codering uit het PDF-document wordt verwijderd. Het wachtwoord waarmee een PDF-document met een wachtwoord wordt geopend, kan niet worden gebruikt om versleuteling te verwijderen. Er wordt een hoofdwachtwoord opgegeven wanneer het PDF-document met een wachtwoord is versleuteld. (Zie [ Coderend de Documenten van PDF met een Wachtwoord ](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Als u op een wachtwoord gebaseerde versleuteling uit een gecodeerd PDF-document wilt verwijderen, hebt u zowel een gecodeerd PDF-document als een hoofdwachtwoord nodig waarmee de codering uit het PDF-document wordt verwijderd. Het wachtwoord waarmee een PDF-document met een wachtwoord wordt geopend, kan niet worden gebruikt om versleuteling te verwijderen. Er wordt een hoofdwachtwoord opgegeven wanneer het PDF-document met een wachtwoord is versleuteld. (Zie [&#x200B; Coderend de Documenten van PDF met een Wachtwoord &#x200B;](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 **sparen het document van PDF**
 
@@ -778,7 +778,7 @@ Een PDF-document dat met een wachtwoord of certificaat is gecodeerd, moet worden
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Encryptie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Encryptie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -812,7 +812,7 @@ Vraag een gecodeerd PDF-document aan om dit te ontgrendelen. Als u probeert een 
 
 **ontgrendel het document**
 
-Als u een PDF-document met wachtwoordversleuteling wilt ontgrendelen, hebt u zowel een gecodeerd PDF-document als een wachtwoordwaarde nodig waarmee een PDF-document met wachtwoordcodering wordt geopend. Deze waarde wordt opgegeven wanneer het PDF-document met een wachtwoord wordt gecodeerd. (Zie [ Coderend de Documenten van PDF met een Wachtwoord ](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Als u een PDF-document met wachtwoordversleuteling wilt ontgrendelen, hebt u zowel een gecodeerd PDF-document als een wachtwoordwaarde nodig waarmee een PDF-document met wachtwoordcodering wordt geopend. Deze waarde wordt opgegeven wanneer het PDF-document met een wachtwoord wordt gecodeerd. (Zie [&#x200B; Coderend de Documenten van PDF met een Wachtwoord &#x200B;](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 Als u een met een certificaat gecodeerd PDF-document wilt ontgrendelen, hebt u zowel een gecodeerd PDF-document als de aliaswaarde van de openbare sleutel nodig die overeenkomt met de persoonlijke sleutel waarmee het PDF-document is versleuteld.
 
@@ -874,7 +874,7 @@ Een gecodeerd PDF-document ontgrendelen met de API voor versleuteling (Java):
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[ Snel Begin (de wijze van SOAP): Het ontgrendelen van een gecodeerd document van PDF gebruikend Java API ](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (de wijze van SOAP)
+[&#x200B; Snel Begin (de wijze van SOAP): Het ontgrendelen van een gecodeerd document van PDF gebruikend Java API &#x200B;](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (de wijze van SOAP)
 
 [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
@@ -956,7 +956,7 @@ Een PDF-document kan worden beveiligd door de volgende coderingstypen:
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Encryptie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Encryptie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 

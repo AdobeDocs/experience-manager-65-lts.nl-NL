@@ -22,19 +22,19 @@ Leer hoe u de container van de lay-out en de lay-outmodus configureert.
 >
 >Dit document biedt een overzicht van responsieve ontwerpen voor sitebeheerders en -ontwikkelaars waarin wordt beschreven hoe functies in AEM worden uitgevoerd.
 >
->Voor inhoudsauteurs, zijn de details van hoe te om ontvankelijke ontwerpeigenschappen op een inhoudspagina te gebruiken beschikbaar in het document [ Responsieve lay-out voor uw inhoudspagina&#39;s.](/help/sites-authoring/responsive-layout.md)
+>Voor inhoudsauteurs, zijn de details van hoe te om ontvankelijke ontwerpeigenschappen op een inhoudspagina te gebruiken beschikbaar in het document [&#x200B; Responsieve lay-out voor uw inhoudspagina&#39;s.](/help/sites-authoring/responsive-layout.md)
 
 ## Overzicht {#overview}
 
-[ Responsieve Lay-out ](/help/sites-authoring/responsive-layout.md) is een mechanisme om [ ontvankelijk Webontwerp ](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de gebruiker webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
+[&#x200B; Responsieve Lay-out &#x200B;](/help/sites-authoring/responsive-layout.md) is een mechanisme om [&#x200B; ontvankelijk Webontwerp &#x200B;](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de gebruiker webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
 
 AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
 
-* [**component van de Container van 0} Lay-out**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
+* [**component van de Container van 0&rbrace; Lay-out**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
   Deze component verstrekt een net-paragraaf systeem om u toe te voegen en componenten binnen een ontvankelijk net te plaatsen. Het kan als standaardparsys voor uw pagina worden gebruikt en/of ter beschikking gesteld aan auteurs in componentenbrowser.
 
-   * De standaard **component van de Container van 0} Lay-out wordt bepaald onder:**
+   * De standaard **component van de Container van 0&rbrace; Lay-out wordt bepaald onder:**
 
      /libs/wcm/foundation/components/responsivegrid
 
@@ -47,7 +47,7 @@ AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een 
         U kunt de lay-outcontainer als standaard voor de pagina hebben, terwijl het toestaan van de gebruiker om verdere lay-outcontainers binnen dit toe te voegen; bijvoorbeeld, om kolomcontrole te bereiken.
 
 * **[Wijze van de Lay-out](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Zodra de lay-outcontainer op uw pagina wordt geplaatst kunt u de **3} wijze van de Lay-out {gebruiken om inhoud binnen het ontvankelijke net te plaatsen.**
+Zodra de lay-outcontainer op uw pagina wordt geplaatst kunt u de **3&rbrace; wijze van de Lay-out &lbrace;gebruiken om inhoud binnen het ontvankelijke net te plaatsen.**
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
@@ -61,11 +61,11 @@ Met deze responsieve rastermechanismen kunt u:
 
 >[!TIP]
 >
->Adobe verstrekt [ documentatie GitHub ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het net van AEM buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische modellen van HTML voor een toekomstige plaats van AEM.
+>Adobe verstrekt [&#x200B; documentatie GitHub &#x200B;](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het net van AEM buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische modellen van HTML voor een toekomstige plaats van AEM.
 
 >[!NOTE]
 >
->In een uit-van-de-doos installatie, is de ontvankelijke lay-out gevormd voor de [ Wij.Retail verwijzingsplaats ](/help/sites-developing/we-retail.md). [ activeer de component van de Container van de Lay-out ](#enable-the-layout-container-component-for-page) voor andere pagina&#39;s.
+>In een uit-van-de-doos installatie, is de ontvankelijke lay-out gevormd voor de [&#x200B; Wij.Retail verwijzingsplaats &#x200B;](/help/sites-developing/we-retail.md). [&#x200B; activeer de component van de Container van de Lay-out &#x200B;](#enable-the-layout-container-component-for-page) voor andere pagina&#39;s.
 
 >[!CAUTION]
 >
@@ -77,7 +77,7 @@ Deze procedures worden gebruikt om de **wijze van de Lay-out** op uw plaats toe 
 
 ### De onderbrekingspunten configureren {#configure-the-breakpoints}
 
-[ Onderbrekingspunten ](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate):
+[&#x200B; Onderbrekingspunten &#x200B;](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate):
 
 * Wordt gebruikt in responsief ontwerp.
 * Kan worden gedefinieerd:
@@ -193,7 +193,7 @@ De volgende twee voorbeelden illustreren de definitie:
 
 AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, deze moeten voor uw projecten worden omvat.
 
-U zult ook a [ cliëntbibliotheek ](https://experienceleague.adobe.com/docs/) moeten creëren om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
+U zult ook a [&#x200B; cliëntbibliotheek &#x200B;](https://experienceleague.adobe.com/docs/) moeten creëren om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -271,7 +271,7 @@ Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als
 
 * **Milieu van de Auteur**
 
-  De wijze van het Ontwerp van het gebruik [ om de ](/help/sites-authoring/default-components-designmode.md) Container van de Laag **component voor een pagina te activeren.**
+  De wijze van het Ontwerp van het gebruik [&#x200B; om de &#x200B;](/help/sites-authoring/default-components-designmode.md) Container van de Laag **component voor een pagina te activeren.**
 
 * **de Definitie van de Component**
 
@@ -285,7 +285,7 @@ U kunt het aantal beschikbare kolommen voor elke specifieke instantie van lay-ou
 
    U kunt het aantal kolommen vormen beschikbaar voor elke specifieke instantie van lay-outcontainer.
 
-   Om dit te doen, gebruik {de wijze van het 0} Ontwerp [, dan open de ontwerpdialoog voor de vereiste container. ](/help/sites-authoring/default-components-designmode.md) Hier kunt u opgeven hoeveel kolommen beschikbaar zijn voor positionering en grootte. De standaardwaarde is 12.
+   Om dit te doen, gebruik {de wijze van het 0} Ontwerp [, dan open de ontwerpdialoog voor de vereiste container. &#x200B;](/help/sites-authoring/default-components-designmode.md) Hier kunt u opgeven hoeveel kolommen beschikbaar zijn voor positionering en grootte. De standaardwaarde is 12.
 
 1. **XML**
 
