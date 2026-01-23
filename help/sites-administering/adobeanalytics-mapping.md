@@ -10,26 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
 
 # Componentgegevens toewijzen aan Adobe Analytics-eigenschappen{#mapping-component-data-with-adobe-analytics-properties}
 
-Voeg componenten toe aan het framework die de gegevens verzamelen die naar Adobe Analytics moeten worden verzonden. De componenten die worden ontworpen om analysegegevens te verzamelen slaan de gegevens in de aangewezen **variabele CQ** op. Wanneer u zulk een component aan een kader toevoegt, toont het kader de lijst van CQ variabelen zodat u aan de aangewezen **variabele van Analytics** kunt elk.
+Voeg componenten toe aan het framework die de gegevens verzamelen die naar Adobe Analytics moeten worden verzonden. De componenten die worden ontworpen om analysegegevens te verzamelen slaan de gegevens in de aangewezen **variabele CQ** op. Wanneer u zulk een component aan een kader toevoegt, toont het kader de lijst van CQ variabelen zodat u elk aan de aangewezen **variabele van Analytics** kunt in kaart brengen.
 
-![&#x200B; a-11 &#x200B;](assets/aa-11.png)
+![ a-11 ](assets/aa-11.png)
 
 Wanneer de **mening van AEM** open is verschijnen de variabelen van de Analyse in de inhoudszoeker.
 
-![&#x200B; a-12 &#x200B;](assets/aa-12.png)
+![ a-12 ](assets/aa-12.png)
 
 U kunt veelvoudige variabelen van de Analyse met de zelfde **variabele CQ in kaart brengen**.
 
-![&#x200B; chlimage_1-68 &#x200B;](assets/chlimage_1-68.png)
+![ chlimage_1-68 ](assets/chlimage_1-68.png)
 
 De toegewezen gegevens worden naar Adobe Analytics verzonden wanneer de pagina wordt geladen en aan de volgende voorwaarden wordt voldaan:
 
@@ -40,13 +40,13 @@ Gebruik de volgende procedure om CQ-componentvariabelen toe te wijzen aan Adobe 
 
 1. In de **mening van AEM**, sleep een het volgen component van sidekick op het kader. Bijvoorbeeld, sleep de **component van de Pagina** van de **Algemene** categorie.
 
-   ![&#x200B; a-13 &#x200B;](assets/aa-13.png)
+   ![ a-13 ](assets/aa-13.png)
 
    Er zijn verscheidene standaardcomponentengroepen: **Algemeen**, **Commerce**, **Gemeenschappen**, en **Andere**. Uw AEM-instantie kan zo zijn geconfigureerd dat verschillende groepen en componenten worden weergegeven.
 
 1. Om de variabelen van Adobe Analytics met variabelen in kaart te brengen die in de component worden bepaald, sleep een **variabele van de Analyse** van de inhoudszoeker op een gebied op de volgende component. Sleep bijvoorbeeld `Page Name (pageName)` naar `pagedata.title` .
 
-   ![&#x200B; a-14 &#x200B;](assets/aa-14.png)
+   ![ a-14 ](assets/aa-14.png)
 
    >[!NOTE]
    >
@@ -90,7 +90,7 @@ Verschillende AEM Commerce-componenten gebruiken deze variabelenamen.
 
 1. Meld u aan bij de Adobe Analytics-website met dezelfde gegevens die ook aan AEM zijn verstrekt.
 1. Zorg ervoor RSID wordt geselecteerd die in de vorige stappen wordt gebruikt.
-1. In **Rapporten** (op de linkerkant van de pagina) uitgezochte **Omzetting van de Douane**, toen **Omzetting van de Douane 1-10** en selecteer de variabele die aan `eVar7` beantwoordt
+1. In **Rapporten** (op de linkerkant van de pagina) uitgezochte **Omzetting van de Douane**, toen **Omzetting 1-10 van de Douane** en selecteer de variabele die aan `eVar7` beantwoordt
 
 1. Afhankelijk van de versie van Adobe Analytics die u gebruikt, moet u gemiddeld 45 minuten wachten op het rapport dat met de gebruikte zoekterm moet worden bijgewerkt; bijvoorbeeld, aubergine in het voorbeeld
 
@@ -129,7 +129,7 @@ De lijst kan op de volgende manieren worden gemanipuleerd:
 
    * Bijvoorbeeld, voor het geval dat de **component van de Download** *slechts één gesleept* in CQ mening (die twee in kaart gebrachte variabelen *eventData.downloadLink* en *eventData.events.startDownload* heeft), zal de Vinder van de Inhoud als dit kijken wanneer het schakelen naar de mening van Adobe Analytics:
 
-   ![&#x200B; a-22 &#x200B;](assets/aa-22.png)
+   ![ a-22 ](assets/aa-22.png)
 
    * De variabelen kunnen worden gesleept&amp;gelaten vallen op om het even welke variabele van Adobe Analytics die tot één van beide drie veranderlijke secties (**Verkeer**, **Omzetting** en **Gebeurtenissen**) behoren.
 
@@ -145,7 +145,7 @@ Op elk gewenst moment kunnen gebruikers schakelen tussen twee manieren om de Ado
 
 ### AEM View {#aem-view}
 
-![&#x200B; a-23 &#x200B;](assets/aa-23.png)
+![ a-23 ](assets/aa-23.png)
 
 Het nemen van het bovengenoemde beeld als voorbeeld, heeft de **mening van AEM** de volgende eigenschappen:
 
@@ -170,9 +170,9 @@ Het nemen van het bovengenoemde beeld als voorbeeld, heeft de **mening van AEM**
 
 ### Analyseweergave {#analytics-view}
 
-![&#x200B; a-24 &#x200B;](assets/aa-24.png)
+![ a-24 ](assets/aa-24.png)
 
-1. Deze mening kan worden betreden door aan het **&#x200B;**&#x200B;lusje van de mening van Analytics op het kader te schakelen.
+1. Deze mening kan worden betreden door aan het **** lusje van de mening van Analytics op het kader te schakelen.
 1. Linkerkant: Inhoudszoeker (cf#) gevuld met CQ-variabelen op basis van de componenten die in de CQ-weergave naar het framework zijn gesleept.
 1. De kopballen van het lusje (**de mening van AEM** en **mening van Analytics**): gebruik deze om tussen de twee meningen te schakelen.
 

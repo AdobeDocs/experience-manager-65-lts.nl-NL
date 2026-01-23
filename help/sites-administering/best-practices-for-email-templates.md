@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Dit artikel is op de afgekeurde componenten van de Stichting van toepassing die AEM e-mailcomponenten baseren.
 >
->De gebruikers worden aangemoedigd om de moderne [&#x200B; Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL)
+>De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 In dit document worden enkele van de aanbevolen procedures beschreven voor het ontwerpen van e-mailberichten. Dit resulteert in een goed ontwikkelde sjabloon voor e-mailcampagnes.
 
@@ -60,7 +60,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
    <td><strong>Implementatie</strong></td>
   </tr>
   <tr>
-   <td><p>Geef het documenttype op zodat u een consistente rendering garandeert.</p> <p>DOCTYPE aan het begin toevoegen (HTML of XHTML)</p> </td>
+   <td><p>Geef het documenttype op, zodat u een consistente rendering garandeert.</p> <p>DOCTYPE aan het begin toevoegen (HTML of XHTML)</p> </td>
    <td><p>Is configureerbaar door ontwerp veranderend <i> cq:doctype </i> bezit in <i>"/etc/designs/default/jcr:content/campagne_newsletterpage"</i></p> <p>De standaardwaarde is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kan worden gewijzigd in "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
@@ -144,11 +144,11 @@ Om een stevige basis aan te bieden en de verscheidenheid van de mogelijkheden va
 
 Al hebben a **kopbal**, a **footer**, en a **lichaam** sectie. Onder de lichaamssectie, verschilt elk malplaatje in **kolomontwerp** (één, twee, of drie kolommen).
 
-![&#x200B; Varianten van mogelijke nieuwsbrieven &#x200B;](assets/chlimage_1-69.png)
+![ Varianten van mogelijke nieuwsbrieven ](assets/chlimage_1-69.png)
 
 ### Onderdelen {#components}
 
-Er zijn momenteel [&#x200B; zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes &#x200B;](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allen gebaseerd op de prijsverhogingstaal van Adobe **HTML**.
+Er zijn momenteel [ zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes ](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allen gebaseerd op de prijsverhogingstaal van Adobe **HTML**.
 
 | **de naam van de Component** | **de weg van de Component** |
 |---|---|
@@ -164,4 +164,4 @@ Er zijn momenteel [&#x200B; zeven componenten beschikbaar voor gebruik binnen ca
 >
 >Deze componenten zijn geoptimaliseerd voor e-mailinhoud, dat wil zeggen dat ze de beste werkwijzen volgen die in dit document worden beschreven. Het gebruiken van andere uit-van-de-doos componenten schendt gewoonlijk deze regels.
 
-Deze componenten worden beschreven in detail in [&#x200B; de componenten van Adobe Campaign &#x200B;](/help/sites-authoring/adobe-campaign-components.md).
+Deze componenten worden beschreven in detail in [ de componenten van Adobe Campaign ](/help/sites-authoring/adobe-campaign-components.md).

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 0%
@@ -108,7 +108,7 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 >[!TIP]
 >
->Het effect van Personalization op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden besproken verder in het document [&#x200B; Optimalisering van Prestaties.](/help/sites-deploying/configuring-performance.md)
+>Het effect van Personalization op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden besproken verder in het document [ Optimalisering van Prestaties.](/help/sites-deploying/configuring-performance.md)
 
 #### Nauwkeurigheid van de regels {#accuracy}
 
