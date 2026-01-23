@@ -9,9 +9,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
       /libs/fd/cm/config/defaultApp/
 
-      ![&#x200B; knoop van de Bedekking &#x200B;](assets/1_defaultapp.png)
+      ![ knoop van de Bedekking ](assets/1_defaultapp.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -58,7 +58,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
       **de Types van Knoop van de Gelijke:** Gecontroleerd
 
-      ![&#x200B; knoop van de Bedekking &#x200B;](assets/2_defaultappoverlaynode.png)
+      ![ knoop van de Bedekking ](assets/2_defaultappoverlaynode.png)
 
    1. Klik **OK**.
    1. Klik **sparen allen**.
@@ -69,7 +69,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
    1. Klik het acmExtensionsConfig.xml- dossier met de rechtermuisknop aan en selecteer **Exemplaar**.
 
-      ![&#x200B; ExtensionsConfig.xml van het Exemplaar &lbrace;](assets/3_acmextensionsconfig_xml_copy.png)
+      ![ ExtensionsConfig.xml van het Exemplaar {](assets/3_acmextensionsconfig_xml_copy.png)
 
    1. Klik met de rechtermuisknop op de **defaultApp** omslag bij &quot;/apps/fd/cm/config/defaultApp/,&quot;en selecteer **Deeg**.
    1. Klik **sparen allen**.
@@ -99,7 +99,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
        </customAction>
    ```
 
-   ![&#x200B; customAction markering &#x200B;](assets/5_acmextensionsconfig_xml.png)
+   ![ customAction markering ](assets/5_acmextensionsconfig_xml.png)
 
    De tag modelExtension heeft een set onderliggende tags van customAction die de handeling, machtigingen en weergave van de actieknop configureren. Hieronder volgt een lijst met aangepasteAction-configuratietags:
 
@@ -172,7 +172,7 @@ Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de Adobe Ass
 
 1. Zoek de Adobe Asset Composer Building Block-bundel. Start de bundel opnieuw: klik op Stoppen en klik vervolgens op Start.
 
-   ![&#x200B; het Blok van de Bouw van de Bouw van Activa van Adobe &#x200B;](assets/6_assetcomposerbuildingblockbundle.png)
+   ![ het Blok van de Bouw van de Bouw van Activa van Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
 
 Nadat u de Adobe Asset Composer Building Block-bundel opnieuw hebt gestart, verschijnt de aangepaste knop in de Create Correspondence User Interface. U kunt een letter openen in de gebruikersinterface Correspondentie maken om een voorvertoning van de aangepaste knop weer te geven.
 
@@ -264,7 +264,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
           };
           /**
            * Should the action be enabled in toolbar
-           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @param extraParams additional arguments that may be passed to handler (For future use)
            * @return flag indicating whether the action should be enabled
            */
          CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){
@@ -329,7 +329,7 @@ In dit scenario schakelt u de volgende componenten in, die deel uitmaken van het
 * Letter verzenden voor revisieproces LCA (SendLetterForReview.lca)
 
 Download en decomprimeer het bestand components.zip om de bestanden DSCSample.jar en SendLetterForReview.lca op te halen. Gebruik deze bestanden volgens de onderstaande procedures.
-[&#x200B; krijgt Dossier &#x200B;](assets/components.zip)
+[ krijgt Dossier ](assets/components.zip)
 
 #### LiveCycle Server configureren om het LCA-proces uit te voeren {#configure-the-livecycle-server-to-run-the-lca-process}
 
@@ -348,7 +348,7 @@ Het LCA-proces wordt uitgevoerd op de LiveCycle-server en vereist het serveradre
    * **Gebruikersnaam**: Admin gebruikersnaam van de server LC
    * **Wachtwoord**: Wachtwoord van Admin gebruikersnaam
 
-   ![&#x200B; Adobe LiveCycle de Configuratie van SDK van de Cliënt &#x200B;](assets/3_clientsdkconfiguration.png)
+   ![ Adobe LiveCycle de Configuratie van SDK van de Cliënt ](assets/3_clientsdkconfiguration.png)
 
 #### LiveCycle Archive (LCA) installeren {#install-livecycle-archive-lca}
 
@@ -364,13 +364,13 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 1. Als de toepassing SendLetterForReview al aanwezig is, sla de resterende stappen in deze procedure over, anders ga aan de volgende stappen verder.
 
-   ![&#x200B; SendLetterForReview toepassing in UI &#x200B;](assets/12_applicationmanagementlc.png)
+   ![ SendLetterForReview toepassing in UI ](assets/12_applicationmanagementlc.png)
 
 1. Klik **Invoer**.
 
 1. Klik **kiezen Dossier** en selecteren SendLetterForReview.lca.
 
-   ![&#x200B; Uitgezochte SendLetterForReview.lca- dossier &#x200B;](assets/14_sendletterforreview_lca.png)
+   ![ Uitgezochte SendLetterForReview.lca- dossier ](assets/14_sendletterforreview_lca.png)
 
 1. Klik **Voorproef**.
 
@@ -407,7 +407,7 @@ In dit scenario configureert u de e-mailservice in de LiveCycle-server, zodat Co
 
 Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de LiveCycle-server. Nadat het bestand DSCSample.jar naar de LiveCycle-server is geüpload, gebruikt de Experience Manager-server het bestand DSCSample.jar voor toegang tot de renderLetter-API.
 
-Voor meer informatie, zie [&#x200B; Verbindend AEM Forms met Adobe LiveCycle &#x200B;](/help/forms/using/aem-livecycle-connector.md).
+Voor meer informatie, zie [ Verbindend AEM Forms met Adobe LiveCycle ](/help/forms/using/aem-livecycle-connector.md).
 
 1. Werk de URL van de Experience Manager-server in cmsa.properties bij in DSCSample.jar, die zich op de volgende locatie bevindt:
 
@@ -415,7 +415,7 @@ Voor meer informatie, zie [&#x200B; Verbindend AEM Forms met Adobe LiveCycle &#x
 
 1. Geef de volgende parameters op in het configuratiebestand:
 
-   * **crx.serverUrl**=https:/host:port/ [ contextweg ]/[ AEM URL ]
+   * **crx.serverUrl**=https:/host :port/[ contextweg ]/[ AEM URL ]
    * **crx.username**= Experience Manager gebruikersnaam
    * **crx.password**= het wachtwoord van Experience Manager
    * **crx.appRoot**=/content/apps/cm
@@ -424,11 +424,11 @@ Voor meer informatie, zie [&#x200B; Verbindend AEM Forms met Adobe LiveCycle &#x
    >
    >Start de LiveCycle Server telkens opnieuw wanneer u wijzigingen aanbrengt aan de serverzijde.
 
-   Het bestand DSCSample.jar gebruikt de renderLetter-API. Voor meer Informatie over renderLetter API, zie [&#x200B; Interface LetterRenderService &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   Het bestand DSCSample.jar gebruikt de renderLetter-API. Voor meer Informatie over renderLetter API, zie [ Interface LetterRenderService ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### DSC importeren in LiveCyle {#import-dsc-to-livecyle}
 
-Het bestand DSCSample.jar gebruikt de renderLetter-API om letters te renderen als PDF-bytes van XML-gegevens die door DSC als invoer worden gegeven. Voor meer Informatie over renderLetter en andere APIs, zie [&#x200B; de Brief geeft Dienst &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html) terug.
+Het bestand DSCSample.jar gebruikt de renderLetter-API om letters te renderen als PDF-bytes van XML-gegevens die door DSC als invoer worden gegeven. Voor meer Informatie over renderLetter en andere APIs, zie [ de Brief geeft Dienst ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html) terug.
 
 1. Start Workbench en meld u aan.
 1. Selecteer **Venster > toont Weergaven > Componenten**. De weergave Componenten wordt toegevoegd aan Workbench ES2.
@@ -448,6 +448,6 @@ Nadat u de actie en de knoop voor het verzenden van de brief voor overzicht hebt
 
 1. Klik **voorleggen**.
 
-![&#x200B; sendReview &#x200B;](assets/sendreview.png)
+![ sendReview ](assets/sendreview.png)
 
 De controleur ontvangt een e-mail van het systeem met de brief als bijlage van PDF.

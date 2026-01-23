@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
 
-Voor de documentatie van AEM as a Cloud Service, zie [&#x200B; AEM Forms op Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=nl-NL).
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
 
 ## Over woordenboeken voor landinstellingen {#about-locale-dictionaries}
 
@@ -76,10 +76,10 @@ Ondersteuning voor een nieuwe landinstelling toevoegen bij runtime voor adaptiev
 ### Een landinstelling toevoegen aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ga naar `https://'[server]:[port]'/system/console/configMgr` .
-1. Klik om de **component van de Dienst van de Lokalisatie van de Gids uit te geven 0&rbrace;.**
+1. Klik om de **component van de Dienst van de Lokalisatie van de Gids uit te geven 0}.**
 1. Voeg de landinstelling toe die u wilt toevoegen aan de lijst met ondersteunde landinstellingen.
 
-![&#x200B; GuideLocalizationService &#x200B;](assets/configservice.png)
+![ GuideLocalizationService ](assets/configservice.png)
 
 ### XFA-clientbibliotheek toevoegen voor een landinstelling {#add-xfa-client-library-for-a-locale-br}
 
@@ -101,7 +101,7 @@ Maak een knooppunt van het type `cq:ClientLibraryFolder` onder `etc/<folderHiera
 
 Voeg de volgende bestanden toe aan de clientbibliotheek:
 
-* **i18n.js** het bepalen `guidelib.i18n`, die patronen van &quot;agendaSymbols&quot;hebben, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` voor `<locale>` volgens de XFA specificaties in [&#x200B; Vastgestelde Specificatie van de Landinstelling &#x200B;](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf) worden beschreven. U kunt ook zien hoe deze is gedefinieerd voor andere ondersteunde landinstellingen in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js` .
+* **i18n.js** het bepalen `guidelib.i18n`, die patronen van &quot;agendaSymbols&quot;hebben, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` voor `<locale>` volgens de XFA specificaties in [ Vastgestelde Specificatie van de Landinstelling ](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf) worden beschreven. U kunt ook zien hoe deze is gedefinieerd voor andere ondersteunde landinstellingen in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js` .
 * **LogMessages.js** definiërend `guidelib.i18n.strings` en `guidelib.i18n.LogMessages` voor `<locale>` zoals die in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js` wordt bepaald.
 * **js.txt** die het volgende bevatten:
 

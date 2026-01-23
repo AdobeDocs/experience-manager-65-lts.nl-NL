@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: e36be2da-af72-485f-87a6-cef6172037c6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # API om de service voor formuliergegevensmodellen aan te roepen vanuit adaptieve formulieren {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
-Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld zijn geconfigureerd in een formuliergegevensmodel. Om de dienst van het gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van de [&#x200B; regelredacteur &#x200B;](/help/forms/using/rule-editor.md).
+Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld zijn geconfigureerd in een formuliergegevensmodel. Om de dienst van het gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van de [ regelredacteur ](/help/forms/using/rule-editor.md).
 
 Dit document is gericht op het schrijven van een JavaScript met de API `guidelib.dataIntegrationUtils.executeOperation` om een service aan te roepen.
 
@@ -126,7 +126,7 @@ De callback-functie kan `success` - en `failure` callback-functies hebben.
 
 In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeOperation` API gebruikt om de `GETOrder` -servicebewerking aan te roepen die in het `employeeOrder` -formuliergegevensmodel is geconfigureerd.
 
-De bewerking `GETOrder` neemt de waarde in het `Order ID` formulierveld als invoer voor het argument `orderId` en retourneert de waarde voor het aantal orders in de callback-functie `success` .  Wanneer de callback-functie `success` niet het aantal orders retourneert, geeft de callback-functie `failure` het `Error occured` -bericht weer.
+De bewerking `GETOrder` neemt de waarde in het `Order ID` formulierveld als invoer voor het argument `orderId` en retourneert de waarde voor het aantal orders in de callback-functie `success` .  Wanneer de callback-functie `success` niet het aantal orders retourneert, geeft de callback-functie `failure` het `Error occurred` -bericht weer.
 
 >[!NOTE]
 >
