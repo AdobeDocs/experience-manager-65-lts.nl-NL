@@ -68,7 +68,7 @@ Voor meer informatie, zie **Migratie van javax aan jakarta Namespace**.
 
 ## Upgrade
 
-Voor gedetailleerde verbeteringsinstructies, zie de [ Gids van de Verbetering voor AEM Forms 6.5 LTS SP1 op JEE ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+Voor gedetailleerde verbeteringsinstructies, zie de [&#x200B; Gids van de Verbetering voor AEM Forms 6.5 LTS SP1 op JEE &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Installatie
 
