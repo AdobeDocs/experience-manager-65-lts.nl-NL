@@ -4,7 +4,8 @@ description: Vind versieinformatie, wat nieuw is, installeer hoe-te, en een gede
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 27ec3c516b0746fd7e0d82f86750fbb4ef410711
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: c13c6c3d5511a5355570e999e378e4bdf0d7a88f
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%
@@ -67,7 +68,7 @@ Voor meer informatie, zie **Migratie van javax aan jakarta Namespace**.
 
 ## Upgrade
 
-Voor gedetailleerde verbeteringsinstructies, zie de [&#x200B; Gids van de Verbetering voor AEM Forms 6.5 LTS SP1 op JEE &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+Voor gedetailleerde verbeteringsinstructies, zie de [ Gids van de Verbetering voor AEM Forms 6.5 LTS SP1 op JEE ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Installatie
 
