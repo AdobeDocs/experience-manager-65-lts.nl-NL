@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '7355'
+source-wordcount: '7751'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 | Versie | Service Pack 1 (SP1), Hotfix voor GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
 | Datum | 9 september 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL downloaden | [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fcq-6.5.lts.1-hotfix-GRANITE-61551-1.2.zip) |
+| URL downloaden | [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fcq-6.5.lts.1-hotfix-GRANITE-61551-1.2.zip) |
 
 <!-- OLD URL TO JAR
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.1.jar) | -->
@@ -33,13 +33,97 @@ ht-degree: 0%
 
 <!-- UPDATE EACH RELEASE -->
 
-[!DNL Experience Manager] 6.5 LTS, SP1 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en insectenmoeilijke situaties. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 LTS in Maart 2025 worden vrijgegeven. [&#x200B; installeer dit Pak van de Dienst &#x200B;](#install-update) op 6.5 LTS.
+[!DNL Experience Manager] 6.5 LTS, SP1 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en insectenmoeilijke situaties. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 LTS in Maart 2025 worden vrijgegeven. [ installeer dit Pak van de Dienst ](#install-update) op 6.5 LTS.
 
 ## Belangrijke functies en verbeteringen
 
 ### Forms
 
-AEM 6.5 Forms LTS op JEE is nu beschikbaar. Voor details over gesteunde milieu&#39;s, zie het [&#x200B; Ondersteunde document van de Combinaties van het Platform &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md). De verbindingen van de installateur zijn beschikbaar op de [&#x200B; versies van AEM Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pagina.
+AEM 6.5 Forms LTS op JEE is nu beschikbaar. Voor details over gesteunde milieu&#39;s, zie het [ Ondersteunde document van de Combinaties van het Platform ](/help/forms/using/aem-forms-jee-supported-platforms.md). De verbindingen van de installateur zijn beschikbaar op de [ versies van AEM Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pagina.
+
+#### Wat is inbegrepen in AEM Forms 6.5 LTS SP1
+
+**Updates van de Steun van Java**
+
+Er is ondersteuning voor nieuwere Java-versies geïntroduceerd:
+
+* Java™ 17
+* Java™ 21
+
+**Updates van de Steun van de Server van de Toepassing**
+
+* Ondersteuning voor JBoss EAP 8 is toegevoegd.
+* Het oude PicketBox-beveiligingsframework is verwijderd.
+* Op Elytron gebaseerde credentiewinkels worden nu ondersteund voor veilig credentiebeheer.
+
+**Configuratie: Credentiële Opslag (op Elytron-Gebaseerd)**
+
+AEM Forms op JBoss EAP 8 gebruikt Elytron voor het beheren van beveiligde referenties. Klanten moeten een op Elytron gebaseerde Credential Store configureren om ervoor te zorgen dat de server correct wordt gestart en dat de database wordt beveiligd.
+
+Voor configuratiedetails, verwijs naar de installatie en configuratiegids.
+
+**Platform en de Veranderingen van de Verenigbaarheid**
+
+* Ondersteuning voor Servlet Specification 5+
+* Gebaseerd op Jakarta EE 9-compatibiliteit
+
+**Vereiste van de Migratie Namespace**
+
+* Jakarta EE 9 introduceert een naamruimtewijziging van `javax.*` in `jakarta.*`
+* Alle **douane DSCs** moet aan `jakarta.*` namespace worden gemigreerd
+* AEM Forms 6.5 LTS SP1 steunt **slechts Jakarta EE 9+-Gebaseerde toepassingsservers**
+
+Voor meer informatie, zie **Migratie van javax aan jakarta Namespace**.
+
+**Migratie van javax aan jakarta Namespace**
+
+#### Migratie van `javax` naar `jakarta` naamruimte
+
+Beginnend met **AEM Forms 6.5 LTS SP1**, slechts toepassingsservers die **Servlet API 5/6 van Jakarta uitvoeren** worden gesteund. Met **Jakarta EE 9 en recenter**, overgangen alle APIs van `javax.{}` namespace aan `jakarta.`.
+
+Dientengevolge, **alle douaneDSCs moet `jakarta` gebruiken namespace**. De componenten van de douane die gebruikend `javax.{}` worden gebouwd APIs zijn **niet compatibel** met de gesteunde toepassingsservers.
+
+**de Opties van de Migratie voor Aangepaste DSCs**
+
+U kunt bestaande aangepaste DSC&#39;s migreren op een van de volgende manieren:
+
+**Optie 1: De Migratie van de Code van Source (geadviseerd)**
+
+* Alle instructies voor importeren van `javax.{}` naar `jakarta.` bijwerken
+* De aangepaste DSC-projecten opnieuw samenstellen en opnieuw compileren
+* Implementeer de bijgewerkte componenten opnieuw op de toepassingsserver
+
+**Voordelen:**
+
+* Zorgt voor compatibiliteit op lange termijn met Jakarta EE 9+
+* Het meest geschikt voor actief onderhouden projecten
+
+**Optie 2: Binaire Migratie die de Transformator van de Verduistering gebruikt**
+
+* Gebruik het **hulpmiddel van de Transformator van de Verduistering** om gecompileerde binaire getallen (`.jar`, `.war`) van `javax` in `jakarta` om te zetten
+* Er zijn geen wijzigingen in de broncode of opnieuw compileren vereist
+* Implementeer de getransformeerde binaire bestanden opnieuw op de toepassingsserver
+
+>[!NOTE]
+>
+> De binaire transformatie wordt uitgevoerd op het **bytecodeniveau**.
+
+Hieronder volgen algemene voorbeelden van naamruimtewijzigingen die tijdens de migratie zijn vereist:
+
+Voor (javax)    Na (jakarta)
+javax.servlet. **jakarta.servlet**
+javax.servlet.http. **jakarta.servlet.http.**
+
+**De Toewijzingen van de Invoer van de Steekproef**
+
+In de volgende tabel worden de algemene naamruimtewijzigingen weergegeven die zijn vereist voor het migreren van `javax` naar `jakarta` :
+
+| Voor (`javax`) | Na (`jakarta`) |
+| ---------------------- | ------------------------ |
+| `javax.servlet.*` | `jakarta.servlet.*` |
+| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
+
+Gebruik deze toewijzingen als referentie bij het bijwerken van aangepaste DSC-broncode of het valideren van getransformeerde binaire bestanden.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -438,16 +522,17 @@ Eclipse Jetty 11.0.x wordt gebruikt als servletmotor voor QuickStart.
 ### Java™-ondersteuning  {#java-support}
 
 * Ondersteuning voor Java™ 17 en Java™ 21.
-* Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Voor meer informatie, zie [&#x200B; installeer en werk &#x200B;](/help/sites-deploying/custom-standalone-install.md) sectie bij.
+* Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Voor meer informatie, zie [ installeer en werk ](/help/sites-deploying/custom-standalone-install.md) sectie bij.
 * Adobe verspreidt updates voor Java™ 17- en Java™ 21-onderhoud voor gebruik door klanten in AEM-gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
 
 ### Uberjar-verpakking {#uber-jar-packaging}
 
-* Er is een klein verschil tussen de Uberjar-verpakking en de AEM 6,5 LTS. Voor meer informatie, zie [&#x200B; Update de versie van AEM Uber Jar &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
+* Er is een klein verschil tussen de Uberjar-verpakking en de AEM 6,5 LTS. Voor meer informatie, zie [ Update de versie van AEM Uber Jar ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ### Upgrade {#upgrade}
 
-* Voor details over de verbeteringsprocedure, zie de [&#x200B; verbeteringsdocumentatie &#x200B;](/help/sites-deploying/upgrade.md).
+* Voor details over de verbeteringsprocedure, zie de [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md).
+* Voor gedetailleerde verbeteringsinstructies, zie de [ Gids van de Verbetering voor AEM Forms 6.5 LTS SP1 op JEE ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Aanbevolen procedures voor AEM 6.5 LTS Service Pack-upgrades
 
@@ -488,28 +573,28 @@ SP1 voor AEM 6.5 LTS wordt geleverd als een QuickStart JAR in plaats van een ZIP
 
 ## Installeren en bijwerken {#install-update}
 
-Voor opstellingsvereisten, zie [&#x200B; installatieinstructies &#x200B;](/help/sites-deploying/custom-standalone-install.md).
+Voor opstellingsvereisten, zie [ installatieinstructies ](/help/sites-deploying/custom-standalone-install.md).
 
 >[!NOTE]
 >
-> Als u rechtstreeks aan LTS SP1 van oude 6.5 SPs bevordert, gelieve de instructies te volgen die voor 6.5 tot 6.5 LTS GA [&#x200B; verbetering &#x200B;](/help/sites-deploying/upgrade.md) worden gegeven.
+> Als u rechtstreeks aan LTS SP1 van oude 6.5 SPs bevordert, gelieve de instructies te volgen die voor 6.5 tot 6.5 LTS GA [ verbetering ](/help/sites-deploying/upgrade.md) worden gegeven.
 
 
-Voor gedetailleerde instructies, zie de [&#x200B; verbeteringsdocumentatie &#x200B;](/help/sites-deploying/upgrade.md).
+Voor gedetailleerde instructies, zie de [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md).
 
 >[!NOTE]
 >
-> Voor nieuwe AEM 6.5 LTS-installaties moeten indexdefinities afzonderlijk worden geïnstalleerd. Voor meer informatie, zie [&#x200B; dit artikel &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+> Voor nieuwe AEM 6.5 LTS-installaties moeten indexdefinities afzonderlijk worden geïnstalleerd. Voor meer informatie, zie [ dit artikel ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## AEM Forms-invoegtoepassing installeren en bijwerken {#install-update-aem-forms-add-on}
 
-Voor gedetailleerde instructies, zie [&#x200B; Uitvoerend een Verbetering op zijn plaats &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Voor gedetailleerde instructies, zie [ Uitvoerend een Verbetering op zijn plaats ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
 ## Ondersteunde platforms {#supported-platforms}
 
-Vind de volledige matrijs van gesteunde platforms met inbegrip van steun-niveau op [&#x200B; AEM 6.5 LTS technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md).
+Vind de volledige matrijs van gesteunde platforms met inbegrip van steun-niveau op [ AEM 6.5 LTS technische vereisten ](/help/sites-deploying/technical-requirements.md).
 
 >[!NOTE]
 >
@@ -520,14 +605,15 @@ Vind de volledige matrijs van gesteunde platforms met inbegrip van steun-niveau 
 
 <!-- CARRY OVER EACH RELEASE -->
 
-Adobe controleert voortdurend de productmogelijkheden om de waarde van klanten te verbeteren door oudere functies te moderniseren of te vervangen. Deze veranderingen worden gemaakt met zorgvuldige aandacht aan achterwaartse verenigbaarheid.
+Adobe evalueert en ontwikkelt voortdurend productmogelijkheden om klanten meer waarde te bieden door oudere functies te moderniseren of te vervangen. Deze veranderingen worden uitgevoerd met zorgvuldige overweging voor achterwaartse verenigbaarheid.
 
-Om de aanstaande verwijdering of vervanging van Adobe Experience Manager (AEM) mogelijkheden mee te delen, zijn de volgende regels van toepassing:
+Adobe volgt dit afkeuringsproces voor Adobe Experience Manager (AEM) om transparantie te garanderen en adequate planning mogelijk te maken:
 
-1. Aankondiging van afkeuring komt voorop. Hoewel afgekeurd, zijn de mogelijkheden nog beschikbaar maar niet verder verbeterd.
-1. Het verwijderen van verouderde mogelijkheden komt in de volgende belangrijkste versie op zijn vroegst voor. De daadwerkelijke streefdatum voor verwijdering is gepland voor bekendmaking later.
+* Afschrijving wordt eerst aangekondigd. Verouderde mogelijkheden blijven beschikbaar maar worden niet meer uitgebreid.
 
-Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan een nieuwe versie of opvolger van een vervangen capaciteit aan te passen, alvorens daadwerkelijke verwijdering.
+* Verwijderen vindt niet eerder plaats dan de volgende grote release. De geplande verwijderingstijdlijn wordt afzonderlijk meegedeeld.
+
+* Klanten kunnen minimaal één releasecyclus gebruiken om over te schakelen naar ondersteunde alternatieven voordat een mogelijkheid wordt verwijderd.
 
 ### Verouderde functies {#deprecated-features}
 
@@ -538,15 +624,19 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 
 | Gebied | Functie | Vervanging | Versie (SP) |
 | --- | --- | --- | --- |
-| Sites | [&#x200B; Redacteur van het KUUROORD &#x200B;](/help/sites-developing/spa-overview.md) | De aangewezen redacteurs voor het beheren van hoofdloze inhoud in AEM zijn:<br> - [&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.<br> - [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven. | 6,5 LTS GA |
+| Sites | [ Redacteur van het KUUROORD ](/help/sites-developing/spa-overview.md) | De aangewezen redacteurs voor het beheren van hoofdloze inhoud in AEM zijn:<br> - [ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.<br> - [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven. | 6,5 LTS GA |
 
 ### Verwijderde functies {#removed-features}
 
 Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit AEM 6.5 LTS. In eerdere versies waren deze mogelijkheden gemarkeerd als afgekeurd.
 
+* Ondersteuning voor RDBMK voor CRX-opslagpersistentie is verwijderd.
+
+* In geclusterde omgevingen is MongoMK nu de enige ondersteunde optie voor de persistentie van de opslagplaats.
+
 | Gebied | Functie | Vervanging | Versie (SP) |
 | --- | --- | --- | --- |
-| Commerce | AEM CIF Classic wordt niet ondersteund. | Migreer aan [&#x200B; AEM CIF &#x200B;](/help/commerce/cif/migration.md). | 6,5 LTS GA |
+| Commerce | AEM CIF Classic wordt niet ondersteund. | Migreer aan [ AEM CIF ](/help/commerce/cif/migration.md). | 6,5 LTS GA |
 | Oplossingen | Sociaal/Gemeenschappen worden niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Screens | Screens wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Assets | `dam-pim` en `dam-rating` worden niet ondersteund omdat bundels afhankelijk zijn van sociale componenten. | Geen vervanging beschikbaar. | 6,5 LTS GA |
@@ -554,7 +644,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Portal | AEM Portal Director wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | Bundel `com.adobe.granite.socketio` wordt verwijderd. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Graniet | `com.adobe.granite.crx-explorer` wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
-| Graniet | `crx2oak` wordt niet ondersteund. | Kies de relevante versie van [&#x200B; Oak-upgrade &#x200B;](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
+| Graniet | `crx2oak` wordt niet ondersteund. | Kies de relevante versie van [ Oak-upgrade ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
 | Adobe | `com.adobe.cq.cq-searchpromote-integration` wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
 | Guava | Alle guave-afhankelijkheden worden nu verwijderd in AEM en daarom maakt de `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` -bundel geen deel uit van AEM. | Klanten kunnen alleen guave toevoegen als ze afhankelijk zijn van guave of de guave-code indien mogelijk vervangen door Java-verzamelingen of andere alternatieven. | 6,5 LTS GA |
 | `We.Retail` | `We-retail` -voorbeeldsite wordt niet ondersteund. | Geen vervanging beschikbaar. | 6,5 LTS GA |
@@ -563,7 +653,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Source openen | `org.apache.commons.io` -pakketten worden nu geëxporteerd uit `org.apache.commons.commons-io` . | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `javax.mail` -pakketten worden geëxporteerd uit de `com.sun.javax.mail` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
 | Source openen | `org.apache.jackrabbit.api` -pakketten worden nu geëxporteerd uit de `org.apache.jackrabbit.oak-jackrabbit-api` -bundel. | Geen wijziging vereist. | 6,5 LTS GA |
-| Source openen | `com.github.jknack.handlebars` wordt niet ondersteund | Kies de relevante [&#x200B; versie &#x200B;](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
+| Source openen | `com.github.jknack.handlebars` wordt niet ondersteund | Kies de relevante [ versie ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
 
 
 ## Bekende problemen {#known-issues}
@@ -607,19 +697,19 @@ Wanneer het toelaten van de SSL-enige eigenschap in de plaatsingen van AEM, is e
 * Dispatcher-configuraties die gebruikmaken van de methode `https + IP` connection to AEM instances
 
 **Oplossing:**
-Neem contact op met Customer Support van Adobe als dit probleem zich voordoet. Een hotfix [&#x200B; cq-6.5.lts.0-hotfix-CQ-4359803 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) is beschikbaar om dit probleem op te lossen. Probeer alleen SSL-functies in te schakelen voordat u de vereiste hotfix toepast.
+Neem contact op met Customer Support van Adobe als dit probleem zich voordoet. Een hotfix [ cq-6.5.lts.0-hotfix-CQ-4359803 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) is beschikbaar om dit probleem op te lossen. Probeer alleen SSL-functies in te schakelen voordat u de vereiste hotfix toepast.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 
 De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten van de Inhoud inbegrepen in [!DNL Experience Manager] 6.5 LTS, Service Pack 1 versie:
 
-* [&#x200B; Lijst van bundels OSGi inbegrepen in Experience Manager 6.5 LTS, Service Pack 1 &#x200B;](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [&#x200B; Lijst van Inhoudspakketten inbegrepen in Experience Manager 6.5 LTS, Service Pack 1 &#x200B;](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Lijst van bundels OSGi inbegrepen in Experience Manager 6.5 LTS, Service Pack 1 ](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Lijst van Inhoudspakketten inbegrepen in Experience Manager 6.5 LTS, Service Pack 1 ](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Beperkte websites{#restricted-sites}
 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
-* [&#x200B; download van het Product bij licensing.adobe.com &#x200B;](https://licensing.adobe.com/)
-* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
