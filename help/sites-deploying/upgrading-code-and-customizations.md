@@ -27,7 +27,7 @@ Bij het plannen van een upgrade moeten de volgende onderdelen van een implementa
 
 ## Overzicht {#overview}
 
-1. **de Analysator van AEM** - stel de Analysator van AEM in werking zoals die in verbeterings planning wordt beschreven, en die in detail op [ wordt beschreven die de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) pagina beoordelen. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het AEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS bestaat, is uw implementatie al compatibel met 6,5 LTS. U kunt er nog steeds voor kiezen om nieuwe ontwikkelingen uit te voeren voor het gebruik van de 6.5 LTS-functionaliteit, maar dit is niet nodig voor het behoud van compatibiliteit.
+1. **de Analysator van AEM** - stel de Analysator van AEM in werking zoals die in verbeterings planning wordt beschreven, en die in detail op [&#x200B; wordt beschreven die de Complexiteit van de Verbetering met de Analysator van AEM &#x200B;](/help/sites-deploying/aem-analyzer.md) pagina beoordelen. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het AEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS bestaat, is uw implementatie al compatibel met 6,5 LTS. U kunt er nog steeds voor kiezen om nieuwe ontwikkelingen uit te voeren voor het gebruik van de 6.5 LTS-functionaliteit, maar dit is niet nodig voor het behoud van compatibiliteit.
 1. **ontwikkelt de Basis van de Code voor 6.5 LTS** - creeer een specifieke tak of een bewaarplaats voor de codebasis voor de versie van het Doel. Gebruik info van Compatibiliteit vóór upgrade om gebieden met code te plannen die moeten worden bijgewerkt.
 1. **compileert met 6.5 LTS Uber jar** - de basis POMs van de Update codebasis aan punt aan 6.5 LTS uber jar en compileert code tegen het.
 1. **stelt aan 6.5 LTS Milieu** op - een schoon geval van AEM 6.5 LTS (Auteur + publiceer) zou omhoog in een milieu moeten worden gestaan Dev/QA. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
@@ -100,7 +100,7 @@ Er moet een uitgebreid testplan worden opgesteld voor het testen van upgrades. H
 
 ### De upgradeprocedure testen {#testing-upgrade-procedure}
 
-De verbeteringsprocedure zoals die hier wordt geschetst zou op Dev en milieu&#39;s QA zoals die in uw aangepast in werking gesteld boek worden gedocumenteerd (zie [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md)). De verbeteringsprocedure zou moeten worden herhaald tot alle stappen in het verbeteringsloopboek worden gedocumenteerd en het verbeteringsproces is vlot.
+De verbeteringsprocedure zoals die hier wordt geschetst zou op Dev en milieu&#39;s QA zoals die in uw aangepast in werking gesteld boek worden gedocumenteerd (zie [&#x200B; plannend Uw Verbetering &#x200B;](/help/sites-deploying/upgrade-planning.md)). De verbeteringsprocedure zou moeten worden herhaald tot alle stappen in het verbeteringsloopboek worden gedocumenteerd en het verbeteringsproces is vlot.
 
 ### Testgebieden voor de implementatie  {#implementation-test-areas-}
 
