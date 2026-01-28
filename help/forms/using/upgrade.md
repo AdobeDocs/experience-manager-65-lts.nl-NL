@@ -9,9 +9,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 2cab77b98b35ff1cb6cbfb615d82166ca123c198
+source-git-commit: e2c8f98fbf31680782c7f0cf190d894d819d7219
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -22,24 +22,34 @@ ht-degree: 0%
 
 Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
 
-Voor de documentatie van AEM as a Cloud Service, zie [&#x200B; AEM Forms op Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=nl-NL).
+Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html).
 
 
-AEM 6.5 LTS Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 LTS te leren, zie [&#x200B; Nieuw document van de eigenschapsamenvatting &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/release-notes/release-notes).
+AEM 6.5 LTS Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 LTS te leren, zie [ Nieuw document van de eigenschapsamenvatting ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/release-notes/release-notes).
 
 U kunt uw bestaande installatie van LiveCycle of AEM Forms upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 LTS Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
+### AEM Forms LTS op OSGi
+
 Het volgende diagram toont de beschikbare verbeteringspaden voor AEM Forms LTS op OSGi:
 
-![&#x200B; OSGi verbeteringsstroom &#x200B;](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
+![ OSGi verbeteringsstroom ](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
 * AEM 6.5.17.0 naar AEM Forms 6.5 LTS
+* AEM 6.5.18.0 naar AEM Forms 6.5 LTS
+* AEM 6.5.19.0 naar AEM Forms 6.5 LTS
+* AEM 6.5.20.0 naar AEM Forms 6.5 LTS
+* AEM 6.5.21.0 naar AEM Forms 6.5 LTS
+* AEM 6.5.22.0 naar AEM Forms 6.5 LTS
+* AEM 6.5.23.0 naar AEM Forms 6.5 LTS
+
+### AEM Forms LTS op JEE
 
 In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms LTS op JEE weergegeven:
 
-![&#x200B; JEE verbetering 6.5 &#x200B;](do-not-localize/jee-upgrade-6-5.png)
+![ JEE verbetering 6.5 ](do-not-localize/jee-upgrade-6-5.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
@@ -47,7 +57,7 @@ U kunt een directe upgrade uitvoeren vanaf:
 
 
 <!--
-AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL).
+AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 **Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 
