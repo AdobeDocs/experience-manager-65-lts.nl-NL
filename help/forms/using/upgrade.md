@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
 
-Voor de documentatie van AEM as a Cloud Service, zie [ AEM Forms op Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html).
+Voor de documentatie van AEM as a Cloud Service, zie [&#x200B; AEM Forms op Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html).
 
 
-AEM 6.5 LTS Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 LTS te leren, zie [ Nieuw document van de eigenschapsamenvatting ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/release-notes/release-notes).
+AEM 6.5 LTS Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 LTS te leren, zie [&#x200B; Nieuw document van de eigenschapsamenvatting &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/release-notes/release-notes).
 
 U kunt uw bestaande installatie van LiveCycle of AEM Forms upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 LTS Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
@@ -33,7 +33,7 @@ U kunt uw bestaande installatie van LiveCycle of AEM Forms upgraden om nieuwe mo
 
 Het volgende diagram toont de beschikbare verbeteringspaden voor AEM Forms LTS op OSGi:
 
-![ OSGi verbeteringsstroom ](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
+![&#x200B; OSGi verbeteringsstroom &#x200B;](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
@@ -49,7 +49,7 @@ U kunt een directe upgrade uitvoeren vanaf:
 
 In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms LTS op JEE weergegeven:
 
-![ JEE verbetering 6.5 ](do-not-localize/jee-upgrade-6-5.png)
+![&#x200B; JEE verbetering 6.5 &#x200B;](do-not-localize/jee-upgrade-6-5.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
