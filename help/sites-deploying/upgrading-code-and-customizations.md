@@ -11,9 +11,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Bij het plannen van een upgrade moeten de volgende onderdelen van een implementa
 
 ## Overzicht {#overview}
 
-1. **de Analysator van AEM** - stel de Analysator van AEM in werking zoals die in verbeterings planning wordt beschreven, en die in detail op [&#x200B; wordt beschreven die de Complexiteit van de Verbetering met de Analysator van AEM &#x200B;](/help/sites-deploying/aem-analyzer.md) pagina beoordelen. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het AEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS bestaat, is uw implementatie al compatibel met 6,5 LTS. U kunt er nog steeds voor kiezen om nieuwe ontwikkelingen uit te voeren voor het gebruik van de 6.5 LTS-functionaliteit, maar dit is niet nodig voor het behoud van compatibiliteit.
+1. **de Analysator van AEM** - stel de Analysator van AEM in werking zoals die in verbeterings planning wordt beschreven, en die in detail op [ wordt beschreven die de Complexiteit van de Verbetering met de Analysator van AEM ](/help/sites-deploying/aem-analyzer.md) pagina beoordelen. Er verschijnt een AEM Analyzer-rapport met meer informatie over gebieden die moeten worden opgelost naast de niet-beschikbare API&#39;s/bundels in de doelversie van AEM. Het AEM Analyzer-rapport geeft een indicatie van incompatibiliteiten in uw code. Als er geen LTS bestaat, is uw implementatie al compatibel met 6,5 LTS. U kunt er nog steeds voor kiezen om nieuwe ontwikkelingen uit te voeren voor het gebruik van de 6.5 LTS-functionaliteit, maar dit is niet nodig voor het behoud van compatibiliteit.
 1. **ontwikkelt de Basis van de Code voor 6.5 LTS** - creeer een specifieke tak of een bewaarplaats voor de codebasis voor de versie van het Doel. Gebruik info van Compatibiliteit vóór upgrade om gebieden met code te plannen die moeten worden bijgewerkt.
 1. **compileert met 6.5 LTS Uber jar** - de basis POMs van de Update codebasis aan punt aan 6.5 LTS uber jar en compileert code tegen het.
 1. **stelt aan 6.5 LTS Milieu** op - een schoon geval van AEM 6.5 LTS (Auteur + publiceer) zou omhoog in een milieu moeten worden gestaan Dev/QA. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
@@ -92,6 +92,7 @@ Voor AEM 6.5 LTS zijn er weer twee soorten Uber Jars:
 
 * AEM 6.5 LTS bevat geen Google guava-bibliotheek buiten de box, de vereiste versie kan naar behoefte worden geïnstalleerd.
 * Sling XSS-bundel gebruikt nu de Java HTML Sanitizer-bibliotheek en het gebruik van de `XSSAPI#filterHTML()` -methode moet worden gebruikt voor het veilig renderen van HTML-inhoud en niet voor het doorgeven van gegevens naar andere API&#39;s.
+* Update naar Apache Felix HTTP SSL Filter Configuration: in AEM 6.5 LTS is de `org.apache.felix.http.sslfilter` -bundel bijgewerkt van versie 1.2.6 naar 2.0.2. Als onderdeel van deze upgrade is de PID voor OSGi-configuratie `org.apache.felix.http.sslfilter.SslFilter` vervangen door een nieuwe PID: `org.apache.felix.http.sslfilter.Configuration` . Als het SSL Filter in de plaatsing wordt gebruikt, moeten de bestaande configuraties manueel aan nieuwe PID worden gemigreerd gebruikend de Manager van de Configuratie OSGi (`/system/console/configMgr`). Als u de configuratie niet migreert, wordt het SSL-filter mogelijk niet toegepast zoals u had verwacht na de upgrade.
 
 ## Testprocedure {#testing-procedure}
 
@@ -99,7 +100,7 @@ Er moet een uitgebreid testplan worden opgesteld voor het testen van upgrades. H
 
 ### De upgradeprocedure testen {#testing-upgrade-procedure}
 
-De verbeteringsprocedure zoals die hier wordt geschetst zou op Dev en milieu&#39;s QA zoals die in uw aangepast in werking gesteld boek worden gedocumenteerd (zie [&#x200B; plannend Uw Verbetering &#x200B;](/help/sites-deploying/upgrade-planning.md)). De verbeteringsprocedure zou moeten worden herhaald tot alle stappen in het verbeteringsloopboek worden gedocumenteerd en het verbeteringsproces is vlot.
+De verbeteringsprocedure zoals die hier wordt geschetst zou op Dev en milieu&#39;s QA zoals die in uw aangepast in werking gesteld boek worden gedocumenteerd (zie [ plannend Uw Verbetering ](/help/sites-deploying/upgrade-planning.md)). De verbeteringsprocedure zou moeten worden herhaald tot alle stappen in het verbeteringsloopboek worden gedocumenteerd en het verbeteringsproces is vlot.
 
 ### Testgebieden voor de implementatie  {#implementation-test-areas-}
 
