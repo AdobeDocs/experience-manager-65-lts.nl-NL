@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Deze documentatie is op **AEM 6.5 LTS Forms** van toepassing.
 
-Voor de documentatie van AEM as a Cloud Service, zie [&#x200B; AEM Forms op Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html).
+Voor de documentatie van AEM as a Cloud Service, zie [&#x200B; AEM Forms op Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=nl-NL).
 
 
-AEM 6.5 LTS Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 LTS te leren, zie [&#x200B; Nieuw document van de eigenschapsamenvatting &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/release-notes/release-notes).
+AEM 6.5 LTS Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 LTS te leren, zie [&#x200B; Nieuw document van de eigenschapsamenvatting &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/release-notes/release-notes).
 
 U kunt uw bestaande installatie van LiveCycle of AEM Forms upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 LTS Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
@@ -47,7 +47,7 @@ U kunt een directe upgrade uitvoeren vanaf:
 
 
 <!--
-AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL).
 
 **Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 
