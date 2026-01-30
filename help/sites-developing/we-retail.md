@@ -32,34 +32,34 @@ Als standaardimplementatie van de verwijzing van AEM, toont `We.Retail` enkele v
 
 | **Eigenschap** | **Beschrijving** | **Geïnteresseerd?** |
 |---|---|---|
-| [ Globalized plaatsstructuur ](/help/sites-administering/tc-bp.md) | `We.Retail` bevat pagina&#39;s voor de primaire taal die live worden gekopieerd naar landspecifieke sites. | [ probeer het!](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [ Responsieve lay-out ](/help/sites-authoring/responsive-layout.md) | Alle pagina&#39;s hebben een responsieve indeling die dynamisch kan worden aangepast aan de grootte van het scherm en het apparaat. | [ probeer het!](/help/sites-developing/we-retail-responsive-layout.md) |
-| [ Bewerkbare malplaatjes ](/help/sites-developing/page-templates-editable.md) | Alle pagina&#39;s zijn gebaseerd op bewerkbare sjablonen, waarmee niet-ontwikkelaars de sjablonen kunnen aanpassen en aanpassen. | [ probeer het!](/help/sites-developing/we-retail-editable-templates.md) |
-| [ Taal van het Malplaatje van HTML ](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | Alle componenten zijn gebaseerd op HTML |  |
-| [ Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | Alle componenten zijn gebaseerd op de nieuwe kerncomponenten en zijn bruikbaarder en gebruiker-configureerbaar uit-van-de-doos | [ probeer het!](/help/sites-developing/we-retail-core-components.md) |
-| [Contentfragmenten](/help/assets/content-fragments/content-fragments.md) | In de sectie `We.Retail` Ervaring wordt de kracht getoond van het opnieuw gebruiken van inhoud door middel van inhoudsfragmenten. | [ probeer hen!](/help/sites-developing/we-retail-content-fragments.md) |
-| [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md) | Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. | [ probeer hen!](/help/sites-developing/we-retail-experience-fragments.md) |
+| [&#x200B; Globalized plaatsstructuur &#x200B;](/help/sites-administering/tc-bp.md) | `We.Retail` bevat pagina&#39;s voor de primaire taal die live worden gekopieerd naar landspecifieke sites. | [&#x200B; probeer het!](/help/sites-developing/we-retail-globalized-site-structure.md) |
+| [&#x200B; Responsieve lay-out &#x200B;](/help/sites-authoring/responsive-layout.md) | Alle pagina&#39;s hebben een responsieve indeling die dynamisch kan worden aangepast aan de grootte van het scherm en het apparaat. | [&#x200B; probeer het!](/help/sites-developing/we-retail-responsive-layout.md) |
+| [&#x200B; Bewerkbare malplaatjes &#x200B;](/help/sites-developing/page-templates-editable.md) | Alle pagina&#39;s zijn gebaseerd op bewerkbare sjablonen, waarmee niet-ontwikkelaars de sjablonen kunnen aanpassen en aanpassen. | [&#x200B; probeer het!](/help/sites-developing/we-retail-editable-templates.md) |
+| [&#x200B; Taal van het Malplaatje van HTML &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | Alle componenten zijn gebaseerd op HTML |  |
+| [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | Alle componenten zijn gebaseerd op de nieuwe kerncomponenten en zijn bruikbaarder en gebruiker-configureerbaar uit-van-de-doos | [&#x200B; probeer het!](/help/sites-developing/we-retail-core-components.md) |
+| [Contentfragmenten](/help/assets/content-fragments/content-fragments.md) | In de sectie `We.Retail` Ervaring wordt de kracht getoond van het opnieuw gebruiken van inhoud door middel van inhoudsfragmenten. | [&#x200B; probeer hen!](/help/sites-developing/we-retail-content-fragments.md) |
+| [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md) | Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. | [&#x200B; probeer hen!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Aan de slag {#getting-started}
 
-De `We.Retail` -site wordt geleverd als voorbeeldinhoud voor AEM. Om te gebruiken, eenvoudig [ begin AEM zoals u normaal ](/help/sites-deploying/deploy.md#getting-started) zou doen, ervoor zorgend dat de steekproefinhoud niet gehandicapt is.
+De `We.Retail` -site wordt geleverd als voorbeeldinhoud voor AEM. Om te gebruiken, eenvoudig [&#x200B; begin AEM zoals u normaal &#x200B;](/help/sites-deploying/deploy.md#getting-started) zou doen, ervoor zorgend dat de steekproefinhoud niet gehandicapt is.
 
 >[!CAUTION]
 >
->Installeer `We.Retail` niet op productieexemplaren. De instanties van de productie zouden op `nosamplecontent` [ looppaswijze ](/help/sites-deploying/configure-runmodes.md) moeten zijn begonnen.
+>Installeer `We.Retail` niet op productieexemplaren. De instanties van de productie zouden op `nosamplecontent` [&#x200B; looppaswijze &#x200B;](/help/sites-deploying/configure-runmodes.md) moeten zijn begonnen.
 
 >[!CAUTION]
 >
->De `We.Retail` plaats is gebaseerd op de recentste technologie van AEM en steunt daarom niet [ klassieke UI creatie ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
+>De `We.Retail` plaats is gebaseerd op de recentste technologie van AEM en steunt daarom niet [&#x200B; klassieke UI creatie &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Laatste versie {#latest-version}
 
-Hoewel `We.Retail` samen met de AEM-versie wordt gedistribueerd, kunnen updates voor de inhoud en de functies ervan na de release worden uitgevoerd. Daarom is het mogelijk om [ de recentste versie van GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) te downloaden en dan [ ](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) te uploaden en [ te installeren ](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw instantie van AEM.
+Hoewel `We.Retail` samen met de AEM-versie wordt gedistribueerd, kunnen updates voor de inhoud en de functies ervan na de release worden uitgevoerd. Daarom is het mogelijk om [&#x200B; de recentste versie van GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) te downloaden en dan [&#x200B; &#x200B;](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) te uploaden en [&#x200B; te installeren &#x200B;](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw instantie van AEM.
 
 ### Eerste stappen {#first-steps}
 
-1. Zodra AEM is begonnen (en/of `We.Retail` geïnstalleerd), is de plaats **`We.Retail`** beschikbaar in de [ console van Plaatsen ](/help/sites-authoring/basic-handling.md#global-navigation).
-1. Bijvoorbeeld, kan de volgende pagina worden geopend en het zou moeten kijken zoals getoond in [ bijlage ](#appendix) hieronder:
+1. Zodra AEM is begonnen (en/of `We.Retail` geïnstalleerd), is de plaats **`We.Retail`** beschikbaar in de [&#x200B; console van Plaatsen &#x200B;](/help/sites-authoring/basic-handling.md#global-navigation).
+1. Bijvoorbeeld, kan de volgende pagina worden geopend en het zou moeten kijken zoals getoond in [&#x200B; bijlage &#x200B;](#appendix) hieronder:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
@@ -104,17 +104,17 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden.
 
-* [ open a-sample-wij-kleinhandelsproject op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Download het project als [ een dossier van het PIT ](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
+* [&#x200B; open a-sample-wij-kleinhandelsproject op GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* Download het project als [&#x200B; een dossier van het PIT &#x200B;](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
-De recentste versie kan ook [ direct ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) als installable pakket worden gedownload.
+De recentste versie kan ook [&#x200B; direct &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) als installable pakket worden gedownload.
 
-Als u problemen ontmoet, dossier a [ GitHub kwestie ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Als u problemen ontmoet, dossier a [&#x200B; GitHub kwestie &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
-Voel vrij om met [ trekkingsverzoeken ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls) bij te dragen.
+Voel vrij om met [&#x200B; trekkingsverzoeken &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls) bij te dragen.
 
 ## Voorvertoning {#preview}
 
 Voorbeeld van de welkomstpagina van `We.Retail` :
 
-![ screencapture-localhost-4502-editor-html-content-we-retail-us-nl-html-2018-08-17-14_33_32 ](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
+![&#x200B; screencapture-localhost-4502-editor-html-content-we-retail-us-nl-html-2018-08-17-14_33_32 &#x200B;](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)

@@ -41,7 +41,7 @@ Gloria registreert in de instantie van AEM, klikt **Auto Verzekering Vernieuwen,
 
 Sarah ontvangt een e-mail met het onderwerp &quot;Uw automatische Verzekering Verlenging.&quot;
 
-![ Agent UI ](assets/agent_ui_email_new.png)
+![&#x200B; Agent UI &#x200B;](assets/agent_ui_email_new.png)
 
 #### Zie het zelf {#see-it-yourself}
 
@@ -55,7 +55,7 @@ Sarah ontvangt een e-mail met een bijlage van `We.Finance` en herinnert Sarah er
 
 Sarah klikt de optie **nu Verlengen** en wordt gericht aan de Webversie van haar Auto brief van de Verzekering. Naast deze brief, vindt Sarah de hoeveelheid tijd in het beleid alvorens het verloopt. De pagina geeft een overzicht van de verzekeringspolis. Het detailleert het Aantal van het Beleid, het Verschuldigde Bedrag, kortingsaanbiedingen, en loyaliteitsbeloningen. **vernieuw nu** wordt geklikt bij de bodem van het beleid.
 
-![ ref1 ](assets/ref1.png)
+![&#x200B; ref1 &#x200B;](assets/ref1.png)
 
 #### Hoe werkt het {#how-it-works}
 
