@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2291'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 >De informatie op deze pagina is niet volledig.
 >
 >Voor volledige informatie, zie de lijst onder **Beschikbare predikaten** op de Debugger van de Bouwer van de Vraag console; bijvoorbeeld, bij:
->* [&#x200B; http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>* [ http://localhost:4502 /libs/cq/search/content/querydebug.html ](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
 >Zie bijvoorbeeld:
 >
->* [&#x200B; http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [ http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29 ](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## Algemeen {#general}
 
@@ -60,13 +60,13 @@ ht-degree: 0%
 * [tagzoeken](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
 * [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
-### boolproperty {#boolproperty}
+### `boolproperty` {#boolproperty}
 
-Komt overeen met de JCR BOOLEAN-eigenschappen. Accepteert alleen de waarden &quot; `true`&quot; en &quot; `false`&quot;. Als &quot; `false`&quot;, komt dit overeen als de eigenschap de waarde &quot; `false`&quot; heeft of als deze helemaal niet bestaat. Dit kan handig zijn om te controleren op Booleaanse markeringen die alleen zijn ingesteld wanneer deze zijn ingeschakeld.
+Komt overeen met de JCR BOOLEAN-eigenschappen. Accepteert alleen de waarden &quot; `true`&quot; en &quot; `false`&quot;. Indien ingesteld op &quot; `false`&quot;, komt deze overeen met de waarde &quot; `false`&quot; of als de eigenschap helemaal niet bestaat. Nuttig voor het controleren op booleaanse markeringen die alleen zijn ingesteld wanneer deze zijn ingeschakeld.
 
 De overgeërfde parameter &quot; `operation`&quot; heeft geen betekenis.
 
-Ondersteunt facetextractie. Verstrekt emmers voor elke `true` of `false` waarde, maar slechts voor bestaande eigenschappen.
+Het ondersteunt facetextractie. Verstrekt emmers voor elke `true` of `false` waarde, maar slechts voor bestaande eigenschappen.
 
 #### Eigenschappen {#properties}
 
@@ -76,24 +76,24 @@ Relatief pad naar eigenschap, bijvoorbeeld `myFeatureEnabled` of `jcr:content/my
 * **waarde**
 Waarde waarvoor de eigenschap moet worden gecontroleerd: &quot; `true`&quot; of &quot; `false`&quot;.
 
-### contentfragment {#contentfragment}
+### `contentfragment` {#contentfragment}
 
 Hiermee beperkt u het resultaat tot inhoudsfragmenten.
 
 Filteren wordt niet ondersteund.
 
-Biedt geen ondersteuning voor facetextractie.
+Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-1}
 
 * **contentfragment**
 Deze kan met elke waarde worden gebruikt om te controleren op inhoudsfragmenten.
 
-### dateComparison {#datecomparison}
+### `dateComparison` {#datecomparison}
 
 Vergelijkt twee JCR DATE-eigenschappen met elkaar. U kunt testen of ze gelijk, ongelijk, groter dan of groter dan of gelijk zijn.
 
-Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
+Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken.
 
 #### Eigenschappen {#properties-2}
 
@@ -109,14 +109,14 @@ Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex
 
   &quot; `equals`&quot; voor exacte overeenkomst, &quot; `!=`&quot; voor ongelijkheidsvergelijking, &quot; `greater`&quot; voor eigenschap1 groter dan eigenschap2, &quot; `>=`&quot; voor eigenschap1 groter dan of gelijk aan eigenschap2. De standaardwaarde is &quot; `equals`&quot;.
 
-### daterange {#daterange}
+### `daterange` {#daterange}
 
-Hiermee worden de JCR-DATE-eigenschappen vergeleken met een datum-/tijdinterval. Dit gebruikt ISO8601
+Hiermee worden de JCR-DATE-eigenschappen vergeleken met een datum- en tijdinterval. Gebruikt ISO8601
 notatie voor datums en tijden ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) en staat ook gedeeltelijke representaties toe, zoals `YYYY-MM-DD` . U kunt de tijdstempel ook opgeven als het aantal milliseconden dat is verstreken sinds 1970 in de UTC-tijdzone, de UNIX®-tijdnotatie.
 
 U kunt zoeken naar iets tussen twee tijdstempels, alles wat nieuwer of ouder is dan een bepaalde datum, en u kunt ook kiezen tussen inclusieve en open intervallen.
 
-Ondersteunt facetextractie. Verstrekt emmers &quot;vandaag&quot;, &quot;deze week&quot;, &quot;deze maand&quot;, &quot;laatste drie maanden&quot;, &quot;dit jaar&quot;, &quot;vorig jaar&quot; en &quot;vroeger dan vorig jaar&quot;.
+Het ondersteunt facetextractie. Verstrekt emmers &quot;vandaag,&quot;deze week,&quot;deze maand,&quot;laatste 3 maanden,&quot;dit jaar,&quot;vorig jaar&quot;en &quot;vroeger dan vorig jaar&quot;.
 
 Filteren wordt niet ondersteund.
 
@@ -146,13 +146,13 @@ Filteren wordt niet ondersteund.
 
   Id van tijdzone die moet worden gebruikt wanneer deze niet wordt gegeven als een ISO-8601-datumtekenreeks. De standaardwaarde is de standaardtijdzone van het systeem.
 
-### exclusief paden {#excludepaths}
+### `excludepaths` {#excludepaths}
 
 Hiermee sluit u knooppunten uit van het resultaat wanneer het pad ervan overeenkomt met een reguliere expressie.
 
-Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
+Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken.
 
-Biedt geen ondersteuning voor facetextractie.
+Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-4}
 
@@ -160,13 +160,13 @@ Biedt geen ondersteuning voor facetextractie.
 
   Gewone expressie die overeenkomt met resultaatpaden, exclusief overeenkomende paden uit het resultaat.
 
-### fulltext {#fulltext}
+### `fulltext` {#fulltext}
 
 Zoekt naar termen in de fullText-index.
 
 Filteren wordt niet ondersteund.
 
-Biedt geen ondersteuning voor facetextractie.
+Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-5}
 
@@ -178,9 +178,9 @@ Biedt geen ondersteuning voor facetextractie.
 
   Het relatieve pad naar de eigenschap of het subknooppunt. Deze eigenschap is optioneel.
 
-### groep {#group}
+### `group` {#group}
 
-Hiermee kunnen geneste voorwaarden worden gemaakt. Groepen kunnen geneste groepen bevatten. Alles in een query builder-query bevindt zich impliciet in een hoofdgroep, die ook `p.or` - en `p.not` -parameters kan hebben.
+Hiermee kunt u geneste voorwaarden maken. Groepen kunnen geneste groepen bevatten. Alles in een query builder-query bevindt zich impliciet in een hoofdgroep, die ook `p.or` - en `p.not` -parameters kan hebben.
 
 Voorbeeld voor het afstemmen van een van de twee eigenschappen op een waarde:
 
@@ -192,7 +192,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-Dit is conceptueel `(1_property` OR `2_property)` .
+Conceptueel `(1_property` OF `2_property)` .
 
 Voorbeeld voor geneste groepen:
 
@@ -205,15 +205,15 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-Dit zoekt naar de termijn &quot;**Beheer**&quot;binnen pagina&#39;s in `/content/geometrixx/en` of in activa in `/content/dam/geometrixx`.
+Zoekt naar de termijn &quot;**Beheer**&quot;binnen pagina&#39;s in `/content/geometrixx/en` of in activa in `/content/dam/geometrixx`.
 
-Dit is conceptueel `fulltext AND ( (path AND type) OR (path AND type) )` . Zulke OF verbindingen hebben goede indexen voor prestaties nodig.
+Conceptueel `fulltext AND ( (path AND type) OR (path AND type) )` . Zulke OF verbindingen hebben goede indexen voor prestaties nodig.
 
 #### Eigenschappen {#properties-6}
 
 * **p.or**
 
-  Indien ingesteld op &quot; `true`&quot;, mag slechts één voorspelling in de groep overeenkomen. Dit is standaard &quot; `false`&quot;, wat betekent dat alles moet overeenkomen
+  Indien ingesteld op &quot; `true`&quot;, mag slechts één voorspelling in de groep overeenkomen. Heeft als standaardwaarde &quot; `false`&quot;, wat betekent dat alles moet overeenkomen
 
 * **p.not**
 
@@ -229,9 +229,9 @@ Dit is conceptueel `fulltext AND ( (path AND type) OR (path AND type) )` . Zulke
 
 ### hasPermission {#haspermission}
 
-Beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [&#x200B; voorrechten JCR heeft.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [ voorrechten JCR heeft.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt. Het ondersteunt geen facetextractie.
+Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-7}
 
@@ -239,27 +239,27 @@ Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex
 
   JCR-bevoegdheden die door komma&#39;s worden gescheiden en die ALLES voor de huidige gebruikerssessie moet hebben. Bijvoorbeeld `jcr:write` , `jcr:modifyAccessControl` .
 
-### taal {#language}
+### `language` {#language}
 
 Hiermee zoekt u CQ-pagina&#39;s in een specifieke taal. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken, dat vaak de taal of landinstelling in een site-structuur op hoofdniveau bevat.
 
-Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
+Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken.
 
-Ondersteunt facetextractie. Verstrekt emmers voor elke unieke taalcode.
+Het ondersteunt facetextractie. Verstrekt emmers voor elke unieke taalcode.
 
 #### Eigenschappen {#properties-8}
 
 * **taal**
 
-  ISO taalcode, bijvoorbeeld, &quot;`de`&quot;
+  ISO taalcode, bijvoorbeeld, &quot;`de`&quot;.
 
-### hoofdmiddel {#mainasset}
+### `mainasset` {#mainasset}
 
-Controleert of een knooppunt een DAM-hoofdelement is en geen subelement. Dit is eigenlijk elk knooppunt dat zich niet binnen een &#39;subassets&#39;-knooppunt bevindt. Dit controleert niet op het knooppunttype `dam:Asset`. Als u deze voorspelling wilt gebruiken en &quot; `mainasset=true`&quot; of &quot; `mainasset=false`&quot; wilt instellen, zijn er geen eigenschappen meer.
+Controleert of een knooppunt een DAM-hoofdelement is en geen subelement. In principe is elk knooppunt niet binnen een knooppunt &quot;subassets&quot;. Hiermee wordt niet gecontroleerd op het knooppunttype `dam:Asset` . Als u deze voorspelling wilt gebruiken, stelt u &quot; `mainasset=true`&quot; of &quot; `mainasset=false`&quot; in en hebt u geen eigenschappen meer.
 
-Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
+Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken.
 
-Steunt facetextractie en verstrekt twee emmers voor hoofd en subassets.
+Het ondersteunt facetextractie en biedt twee emmers voor hoofd- en subactiva.
 
 #### Eigenschappen {#properties-9}
 
@@ -269,9 +269,9 @@ Steunt facetextractie en verstrekt twee emmers voor hoofd en subassets.
 
 ### lidOf {#memberof}
 
-Vindt punten die lid van een specifieke [&#x200B; sling middelinzameling &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
+Vindt punten die lid van een specifieke [ sling middelinzameling ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
 
-Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt. Biedt geen ondersteuning voor facetextractie.
+Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-10}
 
@@ -279,11 +279,11 @@ Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex
 
   Pad van Sling-bronverzameling.
 
-### nodenaam {#nodename}
+### `nodename` {#nodename}
 
 Komt overeen met namen van JCR-knooppunten.
 
-Ondersteunt facetextractie. Verstrekt emmers voor elke unieke knoopnaam (filename).
+Het ondersteunt facetextractie. Verstrekt emmers voor elke unieke knoopnaam (filename).
 
 #### Eigenschappen {#properties-11}
 
@@ -291,13 +291,13 @@ Ondersteunt facetextractie. Verstrekt emmers voor elke unieke knoopnaam (filenam
 
   Naamnotatiepatroon waarbij jokertekens zijn toegestaan: `*` = willekeurig of geen teken, `?` = willekeurig teken, `[abc]` = alleen tekens tussen haakjes.
 
-### notexpired {#notexpired}
+### `notexpired` {#notexpired}
 
-Komt overeen met items door te controleren of een JCR DATE-eigenschap groter of gelijk is aan de huidige servertijd. Dit kan worden gebruikt om een &quot; `expiresAt`&quot;-achtige datumeigenschap in te schakelen en alleen de eigenschappen die nog niet zijn verlopen ( `notexpired=true` ) of die al zijn verlopen ( `notexpired=false` ).
+Komt overeen met items door te controleren of een JCR DATE-eigenschap groter of gelijk is aan de huidige servertijd. Kan worden gebruikt om een &quot; `expiresAt`&quot;-achtige datumeigenschap in te checken en alleen de eigenschappen die nog niet zijn verlopen ( `notexpired=true` ) of die al zijn verlopen ( `notexpired=false` ).
 
 Filteren wordt niet ondersteund.
 
-Ondersteunt facetextractie op dezelfde manier als de daterange predikaat.
+Het steunt facetextractie op de zelfde manier als daterange predikaat.
 
 #### Eigenschappen {#properties-12}
 
@@ -309,7 +309,7 @@ Ondersteunt facetextractie op dezelfde manier als de daterange predikaat.
 
   Relatief pad naar de eigenschap `DATE` die moet worden gecontroleerd (vereist).
 
-### ordonneren {#orderby}
+### `orderby` {#orderby}
 
 Hiermee kunt u de resultaten sorteren. Als de volgorde door meerdere eigenschappen vereist is, moet deze voorspelling meerdere keren worden toegevoegd met behulp van het voorvoegsel number, zoals `1_orderby=first`, `2_oderby=second` .
 
@@ -327,35 +327,36 @@ Hiermee kunt u de resultaten sorteren. Als de volgorde door meerdere eigenschapp
 
   Indien ingesteld op `ignore` , wordt het sorteren van hoofdletters en kleine letters ongevoelig, wat betekent dat &quot;a&quot; komt vóór &quot;B&quot;; als het sorteren leeg is of wordt weggelaten, is het sorteren hoofdlettergevoelig, wat betekent dat &quot;B&quot; komt vóór &quot;a&quot;
 
-### pad {#path}
+### `path` {#path}
 
 Hiermee zoekt u in een bepaald pad.
 
-Biedt geen ondersteuning voor facetextractie.
+Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-14}
 
 * **weg**
 
-  Padpatroon. Afhankelijk van het exacte aantal komt ofwel de volledige subboomstructuur overeen (zoals `//*` wordt toegevoegd in xpath, maar dit omvat niet het basispad) (exact=false, standaard), ofwel alleen een exacte padovereenkomst, die jokertekens kan bevatten ( `*` ); als self is ingesteld, wordt de volledige substructuur, inclusief het basisknooppunt, doorzocht.
+  Padpatroon. Bij `exact=false` (standaardwaarde) komt de zoekopdracht overeen met de gehele substructuur onder het opgegeven pad. Deze substructuur komt overeen met `//*` in XPath, maar bevat niet het basispad zelf. Als `exact=true` , komt de zoekopdracht alleen overeen met het exacte pad, dat ook `*` -jokertekens kan bevatten. Als `self` is ingesteld, bevat de zoekopdracht het basisknooppunt en de volledige substructuur ervan.
+
 
 * **nauwkeurig**
 
-  Als `exact` true/on is, moet het exacte pad overeenkomen, maar het kan eenvoudige jokertekens ( `*` ) bevatten, die identieke namen, maar niet &quot; `/` &quot;. Als het pad false is (standaard), worden alle afstammingen opgenomen (optioneel).
+  Wanneer `exact` true (on) is, moet het exacte pad overeenkomen, maar het kan eenvoudige jokertekens ( `*` ) bevatten, die identieke namen, maar niet &quot; `/` &quot;. Wanneer het pad false (standaard) is, worden alle afstammingen opgenomen (optioneel).
 
 * **vlak**
 
-  Hiermee zoekt u alleen de directe onderliggende elementen (zoals &quot; `/*`&quot; toevoegen in xpath) (alleen gebruikt als &#39; `exact`&#39; niet true is, optioneel).
+  Hiermee doorzoekt u alleen de directe onderliggende elementen (zoals &quot; `/*`&quot; in `xpath` toevoegen) (wordt alleen gebruikt als &#39; `exact`&#39; niet true is, optioneel).
 
 * **zelf**
 
   Doorzoekt de substructuur maar neemt het basisknooppunt op dat als pad wordt opgegeven (geen jokertekens).
 
-### eigenschap {#property}
+### `property` {#property}
 
 Komt overeen met de JCR-eigenschappen en hun waarden.
 
-Ondersteunt facetextractie. Verstrekt emmers voor elke unieke bezitswaarde in de resultaten.
+Het ondersteunt facetextractie. Verstrekt emmers voor elke unieke bezitswaarde in de resultaten.
 
 #### Eigenschappen {#properties-15}
 
@@ -377,19 +378,19 @@ Ondersteunt facetextractie. Verstrekt emmers voor elke unieke bezitswaarde in de
 
 * **verrichting**
 
-  &quot;`equals`&quot; voor exacte overeenkomst (standaardwaarde), &quot; `unequals`&quot; voor ongelijkheidsvergelijking, &quot; `like`&quot; voor het gebruik van de `jcr:like` xpath-functie (optioneel), &quot; `not` &quot; voor geen overeenkomst (bijvoorbeeld &quot;`not(@prop)`&quot; in xpath, value param wordt genegeerd) of &quot; `exists`&quot; voor controle op bestaan (waarde kan waar zijn - eigenschap moet bestaan, de standaardwaarde - of false - hetzelfde als &quot; `not`&quot;).
+  Gebruik `equals` voor een exacte overeenkomst (standaard) en `unequals` voor een ongelijkheidsvergelijking. Gebruik `like` om de optionele functie `jcr:like` XPath toe te passen. Gebruik `not` voor geen overeenkomst (bijvoorbeeld `not(@prop)` in XPath); in dit geval wordt de parameter `value` genegeerd. Gebruik `exists` om te controleren of een eigenschap bestaat: `true` (standaardwaarde) vereist de eigenschap en `false` is gelijk aan `not` .
 
 * **diepte**
 
-  Aantal jokertekenniveaus waaronder de eigenschap/het relatieve pad kan bestaan (bijvoorbeeld `property=size depth=2` controleert knooppunt/grootte, knooppunt/&ast;/size en knooppunt/&ast;/&ast;/&ast;/size).
+  Een aantal jokertekenniveaus waaronder de eigenschap en het relatieve pad kunnen bestaan. `property=size depth=2` controleert bijvoorbeeld het knooppunt en de grootte, het knooppunt/&amp;ast;/size en het knooppunt/&amp;ast;/&amp;ast;/size.
 
-### rangeproperty {#rangeproperty}
+### `rangeproperty` {#rangeproperty}
 
-Hiermee wordt een JCR-eigenschap vergeleken met een interval. Dit geldt voor eigenschappen met lineaire typen, zoals `LONG` , `DOUBLE` en `DECIMAL` . Zie voor `DATE` de daterange-voorspelling die geoptimaliseerde invoer voor de datumnotatie heeft.
+Hiermee wordt een JCR-eigenschap vergeleken met een interval. Is van toepassing op eigenschappen met lineaire typen, zoals `LONG`, `DOUBLE` en `DECIMAL` . Zie voor `DATE` de daterange-voorspelling die geoptimaliseerde invoer voor de datumnotatie heeft.
 
 U kunt een ondergrens en een bovengrens of slechts één van hen bepalen. De bewerking (bijvoorbeeld &quot;kleiner dan&quot; of &quot;kleiner of gelijk aan&quot;) kan ook afzonderlijk worden opgegeven voor de onderste en bovenste binding.
 
-Biedt geen ondersteuning voor facetextractie.
+Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-16}
 
@@ -403,7 +404,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 * **lowerOperation**
 
-  &quot; `>`&quot; (standaardwaarde) of &quot; `>=`&quot;, is van toepassing op `lowerValue`
+  &quot; `>`&quot; (standaardwaarde) of &quot; `>=`&quot; is van toepassing op het `lowerValue`
 
 * **upperBound**
 
@@ -411,15 +412,15 @@ Biedt geen ondersteuning voor facetextractie.
 
 * **upperOperation**
 
-  &quot; `<`&quot; (standaardwaarde) of &quot; `<=`&quot;, is van toepassing op `lowerValue`
+  &quot; `<`&quot; (standaardwaarde) of &quot; `<=`&quot; is van toepassing op het `lowerValue`
 
 * **decimaal**
 
   &quot; `true`&quot; als de gecontroleerde eigenschap van het type Decimaal is
 
-### relativedaterange {#relativedaterange}
+### `relativedaterange` {#relativedaterange}
 
-Vergelijkt `JCR DATE` eigenschappen met een datum-/tijdinterval met tijdverschuivingen ten opzichte van de huidige servertijd. U kunt `lowerBound` en `upperBound` opgeven met een millisecondenwaarde of de bugzilla-syntaxis `1s 2m 3h 4d 5w 6M 7y` (één seconde, twee minuten, drie uur, vier dagen, vijf weken, zes maanden, zeven jaar). Voorvoegsel met &quot; `-`&quot; om een negatieve verschuiving vóór de huidige tijd aan te geven. Als u alleen `lowerBound` of `upperBound` opgeeft, wordt de andere standaard ingesteld op 0, wat de huidige tijd betekent.
+Vergelijkt `JCR DATE` -eigenschappen met een datum- en tijdinterval door tijdverschuivingen te gebruiken ten opzichte van de huidige servertijd. U kunt `lowerBound` en `upperBound` opgeven met een milliseconde-waarde of de bugzilla-syntaxis `1s 2m 3h 4d 5w 6M 7y` . Voorvoegsel met &quot; `-`&quot; om een negatieve verschuiving vóór de huidige tijd aan te geven. Als u alleen `lowerBound` of `upperBound` opgeeft, wordt de andere standaard ingesteld op 0, wat de huidige tijd betekent.
 
 Bijvoorbeeld:
 
@@ -433,7 +434,7 @@ Het neemt schrikkeljaren niet in overweging en alle maanden zijn 30 dagen.
 
 Filteren wordt niet ondersteund.
 
-Ondersteunt facetextractie op dezelfde manier als de daterange predikaat.
+Het steunt facetextractie op de zelfde manier als daterange predikaat.
 
 #### Eigenschappen {#properties-17}
 
@@ -445,9 +446,9 @@ Ondersteunt facetextractie op dezelfde manier als de daterange predikaat.
 
   Lagere datum gebonden in milliseconden of `1s 2m 3h 4d 5w 6M 7y` (één seconde, twee minuten, drie uren, vier dagen, vijf weken, zes maanden, zeven jaar) met betrekking tot huidige servertijd, gebruik &quot;-&quot;voor negatieve compensatie.
 
-### basis {#root}
+### `root` {#root}
 
-Hoofdvoorspelbare groep. Steunt alle eigenschappen van een groep en laat u globale vraagparameters plaatsen.
+Hoofdvoorspelbare groep. Het steunt alle eigenschappen van een groep en laat u globale vraagparameters plaatsen.
 
 De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 
@@ -463,7 +464,8 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 
 * **p.radenTotal**
 
-  Aanbevolen: vermijd het berekenen van het volledige resultaattotaal, wat kostbaar kan zijn. Ofwel een getal dat het maximale totaal aangeeft dat moet worden geteld tot (bijvoorbeeld 1000, een getal dat gebruikers voldoende feedback geeft op de ruwe grootte en exacte getallen voor kleinere resultaten), ofwel &quot; `true`&quot; om alleen te tellen tot het minimaal noodzakelijke `p.offset` + `p.limit` .
+  Om de kosten te vermijden om een volledig resultaattotaal te berekenen, tel niet alle gelijken. Stel in plaats daarvan een maximumtotaal in om tot (bijvoorbeeld `1000` ) te tellen, zodat gebruikers een ruwe grootte en exacte totalen krijgen voor kleinere resultaten. Of stel het in op `true` om alleen tot het vereiste minimum te tellen: `p.offset + p.limit` .
+
 
 * **p.excerpt**
 
@@ -479,21 +481,23 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 
    * **volledig**:
 
-     JSON-rendering van het knooppunt splitsen, met `jcr:path` die het pad van de hit aangeeft: standaard worden alleen de directe eigenschappen van het knooppunt weergegeven, inclusief een diepere structuur met `p.nodedepth=N` , die 0 staat voor de gehele, oneindige substructuur; voeg `p.acls=true` toe om de JCR-machtigingen van de huidige sessie voor het opgegeven resultaatitem op te nemen (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove` = &rbrace;).
+     De resultaten worden weergegeven als Sling JSON voor elk knooppunt, waarbij `jcr:path` het raakpad weergeeft. Standaard bevat de reactie alleen de directe eigenschappen van het knooppunt; gebruik `p.nodedepth=N` om dieper liggende inhoud op te nemen, waarbij `0` de volledige substructuur retourneert. Stel `p.acls=true` in om de JCR-machtigingen van de huidige sessie voor elk item (`create` = `add_node` , `modify` = `set_property` , `delete` = `remove`) op te nemen.
+
 
    * **selectief**:
 
-     Alleen de eigenschappen die zijn opgegeven in `p.properties` , dat een spatie is die is gescheiden (gebruik &quot;+&quot; in URL&#39;s) in de lijst met relatieve paden; als het relatieve pad een diepte heeft > 1, worden deze vertegenwoordigd als onderliggende objecten; de speciale eigenschap jcr:path bevat het pad van de hit
+     De reactie bevat alleen de eigenschappen die worden vermeld in `p.properties` . Dit is een lijst met relatieve paden met spaties (gebruik `+` in URL&#39;s). Als een relatief pad een diepte groter dan 1 heeft, nest de uitvoer het als onderliggende objecten. De speciale eigenschap `jcr:path` bevat altijd het raakpad.
 
-### opgeslagen query {#savedquery}
 
-Omvat alle predikaten van een persisted vraag van de vraagbouwer in de huidige vraag als subgroup predikaat.
+### `savedquery` {#savedquery}
 
-Hiermee wordt geen extra query uitgevoerd, maar wordt de huidige query uitgebreid.
+Het omvat alle predikaten van een voortgezette vraag van de vraagbouwer in de huidige vraag als subgroup predikaat.
+
+Er wordt geen extra query uitgevoerd, maar de huidige query wordt uitgebreid.
 
 Query&#39;s kunnen met programmacode worden voortgezet met `QueryBuilder#storeQuery()` . De indeling kan een eigenschap van een tekenreeks met meerdere regels zijn of een knooppunt `nt:file` dat de query als een tekstbestand in de Java™-eigenschappenindeling bevat.
 
-Biedt geen ondersteuning voor facetextractie voor de voorspelling van de opgeslagen query.
+Het steunt facetextractie voor de predikaten van de bewaarde vraag niet.
 
 #### Eigenschappen {#properties-19}
 
@@ -501,11 +505,11 @@ Biedt geen ondersteuning voor facetextractie voor de voorspelling van de opgesla
 
   Pad naar de opgeslagen query (eigenschap String of knooppunt `nt:file` ).
 
-### gelijkaardig {#similar}
+### `similar` {#similar}
 
 Gelijksoortige zoekopdracht met JCR XPath `rep:similar()`.
 
-Filteren wordt niet ondersteund. Biedt geen ondersteuning voor facetextractie.
+Filteren wordt niet ondersteund. Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-20}
 
@@ -515,11 +519,11 @@ Absoluut pad naar het knooppunt waarvoor vergelijkbare knooppunten moeten worden
 * **lokaal**
 Een relatief pad naar een afstammend knooppunt of `.` voor het huidige knooppunt (optioneel, standaard is &quot; `.`&quot;).
 
-### tag {#tag}
+### `tag` {#tag}
 
 Hiermee zoekt u naar inhoud die is gelabeld met een of meer tags door titelpaden voor tags op te geven.
 
-Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag, waarbij het huidige pad voor de tagtitel wordt gebruikt.
+Het ondersteunt facetextractie. Verschaft emmers voor elke unieke tag, waarbij het huidige pad voor de tagtitel wordt gebruikt.
 
 #### Eigenschappen {#properties-21}
 
@@ -535,11 +539,11 @@ Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag, waarbij het h
 
   Eigenschap (of relatief pad naar eigenschap) die moet worden bekeken (standaard &quot; `cq:tags`&quot;)
 
-### gelabeld {#tagid}
+### `tagid` {#tagid}
 
 Hiermee zoekt u naar inhoud die is gelabeld met een of meer tags, door tag-id&#39;s op te geven.
 
-Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag met behulp van de huidige tag-id.
+Het ondersteunt facetextractie. Verschaft emmers voor elke unieke tag met behulp van de huidige tag-id.
 
 #### Eigenschappen {#properties-22}
 
@@ -549,17 +553,17 @@ Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag met behulp van
 
 * **N_value**
 
-  Gebruik `1_value`, `2_value` , ... om te controleren op meerdere tags (standaard gecombineerd met `OR` , met `AND` if en=true) (sinds 5.6).
+  Gebruik `1_value`, `2_value` , ... om te controleren op meerdere `tagids` (standaard gecombineerd met `OR` , met `AND` if en=true) (sinds 5.6).
 
 * **bezit**
 
   Eigenschap (of relatief pad naar eigenschap) om naar te kijken (standaard &quot; `cq:tags`&quot;).
 
-### tagzoeken {#tagsearch}
+### `tagsearch` {#tagsearch}
 
-Zoekt naar inhoud gelabeld met een of meer tags door trefwoorden op te geven. Hiermee wordt eerst gezocht naar tags die deze trefwoorden in hun titels bevatten, en vervolgens wordt het resultaat beperkt tot alleen items die met deze trefwoorden zijn getagd.
+Zoekt naar inhoud gelabeld met een of meer tags door trefwoorden op te geven. Hiermee zoekt u eerst naar tags die deze trefwoorden in hun titels bevatten en beperkt u het resultaat vervolgens tot alleen getagde items.
 
-Biedt geen ondersteuning voor facetextractie.
+Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#Properties-1}
 
@@ -579,11 +583,11 @@ Biedt geen ondersteuning voor facetextractie.
 
   (bool) Zoek volledige labeltekst, dat wil zeggen alle titels, beschrijving enzovoort. Heeft voorrang op &quot;l `ang`&quot;.
 
-### type {#type}
+### `type` {#type}
 
-Hiermee beperkt u de resultaten tot een specifiek JCR-knooppunttype, zowel het primaire knooppunttype als het mixintype. Dit vindt ook subtypes van dat knooptype. In de zoekindexen van de opslagplaats moeten de knooppunttypen worden opgenomen voor een efficiënte uitvoering.
+Beperkt resultaten tot een specifiek JCR knooptype, zowel primair knooptype als mixintype en vindt subtypes van dat knooptype. In de zoekindexen van de opslagplaats moeten de knooppunttypen worden opgenomen voor een efficiënte uitvoering.
 
-Ondersteunt facetextractie. Verstrekt emmers voor elk uniek type in de resultaten.
+Het ondersteunt facetextractie. Verstrekt emmers voor elk uniek type in de resultaten.
 
 #### Eigenschappen {#Properties-2}
 
