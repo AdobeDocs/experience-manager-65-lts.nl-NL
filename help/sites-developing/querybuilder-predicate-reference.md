@@ -23,11 +23,11 @@ ht-degree: 0%
 >De informatie op deze pagina is niet volledig.
 >
 >Voor volledige informatie, zie de lijst onder **Beschikbare predikaten** op de Debugger van de Bouwer van de Vraag console; bijvoorbeeld, bij:
->* [ http://localhost:4502 /libs/cq/search/content/querydebug.html ](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>* [&#x200B; http://localhost:4502 /libs/cq/search/content/querydebug.html &#x200B;](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
 >Zie bijvoorbeeld:
 >
->* [ http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29 ](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [&#x200B; http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29 &#x200B;](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## Algemeen {#general}
 
@@ -229,7 +229,7 @@ Conceptueel `fulltext AND ( (path AND type) OR (path AND type) )` . Zulke OF ver
 
 ### hasPermission {#haspermission}
 
-Beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [ voorrechten JCR heeft.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [&#x200B; voorrechten JCR heeft.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 
@@ -269,7 +269,7 @@ Het ondersteunt facetextractie en biedt twee emmers voor hoofd- en subactiva.
 
 ### lidOf {#memberof}
 
-Vindt punten die lid van een specifieke [ sling middelinzameling ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
+Vindt punten die lid van een specifieke [&#x200B; sling middelinzameling &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
 
 Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 
@@ -382,7 +382,7 @@ Het ondersteunt facetextractie. Verstrekt emmers voor elke unieke bezitswaarde i
 
 * **diepte**
 
-  Een aantal jokertekenniveaus waaronder de eigenschap en het relatieve pad kunnen bestaan. `property=size depth=2` controleert bijvoorbeeld het knooppunt en de grootte, het knooppunt/&amp;ast;/size en het knooppunt/&amp;ast;/&amp;ast;/size.
+  Een aantal jokertekenniveaus waaronder de eigenschap en het relatieve pad kunnen bestaan. `property=size depth=2` controleert bijvoorbeeld het knooppunt en de grootte, het knooppunt/&ast;/size en het knooppunt/&ast;/&ast;/size.
 
 ### `rangeproperty` {#rangeproperty}
 

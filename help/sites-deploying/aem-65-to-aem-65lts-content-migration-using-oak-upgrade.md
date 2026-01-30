@@ -22,7 +22,7 @@ Voordat u de migratie start, moet u controleren of aan de volgende vereisten is 
 
 1. Java-compatibiliteit: AEM 6.5 LTS moet zijn geïnstalleerd en geconfigureerd voor uitvoering met Java™ 17. Start de AEM-instantie nadat u deze hebt ingesteld en controleer of alle bundels actief en actief zijn zonder problemen
 1. Systeembronnen: zorg ervoor dat er voldoende schijfruimte en geheugen beschikbaar zijn om beide opslagruimten tijdens het migratieproces te verwerken
-1. Oak-upgrade Tool: Download de `oak-upgrade` pot van de [ officiële Gemaakt bewaarplaats ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade). Zorg ervoor dat de versie overeenkomt met de Oak-kernversie die wordt gebruikt in AEM 6.5 LTS. Oak-upgradeprogramma wordt uitgevoerd op Oracle® Java™ 11 of hoger
+1. Oak-upgrade Tool: Download de `oak-upgrade` pot van de [&#x200B; officiële Gemaakt bewaarplaats &#x200B;](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade). Zorg ervoor dat de versie overeenkomt met de Oak-kernversie die wordt gebruikt in AEM 6.5 LTS. Oak-upgradeprogramma wordt uitgevoerd op Oracle® Java™ 11 of hoger
 
 ## Migratieproces {#step-by-step-migration-process}
 
@@ -86,6 +86,6 @@ De eenvoudigste manier om dit probleem op te lossen is het opgeven van de bronda
 
 De waarschuwing kan ook worden genegeerd, maar in dit geval wordt de repository volledig opnieuw gedesgroepeerd bij het eerste opstarten. Het kan een lang proces zijn, vooral voor de grote instantie. De repository is pas bruikbaar als het herindexeringsproces is voltooid. Gebruik de optie `--skip-checkpoints` om de waarschuwing te onderdrukken.
 
-U kunt de bewaarplaats ook off-line opnieuw indexeren alvorens AEM te beginnen die [ off-line opnieuw indexeren ](/help/sites-deploying/offline-reindexing.md) gebruiken om volledige herindexering op het eerste opstarten te vermijden.
+U kunt de bewaarplaats ook off-line opnieuw indexeren alvorens AEM te beginnen die [&#x200B; off-line opnieuw indexeren &#x200B;](/help/sites-deploying/offline-reindexing.md) gebruiken om volledige herindexering op het eerste opstarten te vermijden.
 
-Voor meer informatie over het Oak-upgrade hulpmiddel en het geavanceerde gebruik, verwijs naar de [ officiële documentatie ](https://jackrabbit.apache.org/oak/docs/migration.html).
+Voor meer informatie over het Oak-upgrade hulpmiddel en het geavanceerde gebruik, verwijs naar de [&#x200B; officiële documentatie &#x200B;](https://jackrabbit.apache.org/oak/docs/migration.html).
