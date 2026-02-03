@@ -20,7 +20,7 @@ Leer hoe u een gebruiker of groep selecteert voor een AEM Forms-workflow bij de 
 
 In grote organisaties, zijn er vereisten om gebruikers dynamisch voor een proces te selecteren. Bijvoorbeeld, die een gebiedsagent selecteren om een klant te dienen die op de nabijheid van de agent aan de klant wordt gebaseerd. In zulk een scenario, wordt de agent dynamisch geselecteerd.
 
-Wijs taak en de stappen van het Teken van Adobe van [ Forms-centric werkschema&#39;s op OSGi ](/help/forms/using/aem-forms-workflow.md) toe verstrekken opties om een gebruiker dynamisch te selecteren. U kunt ECMAScript of OSGi bundels gebruiken om een toegewezen dynamisch voor de Assign stap van de Taak te selecteren of ondertekenaars voor de stap van het Document van het Ondertekenen te selecteren.
+Wijs taak en de stappen van het Teken van Adobe van [&#x200B; Forms-centric werkschema&#39;s op OSGi &#x200B;](/help/forms/using/aem-forms-workflow.md) toe verstrekken opties om een gebruiker dynamisch te selecteren. U kunt ECMAScript of OSGi bundels gebruiken om een toegewezen dynamisch voor de Assign stap van de Taak te selecteren of ondertekenaars voor de stap van het Document van het Ondertekenen te selecteren.
 
 ## ECMAScript gebruiken om een gebruiker of groep dynamisch te selecteren {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -34,7 +34,7 @@ ECMAScript is een scripttaal. Het wordt gebruikt voor client-side scripting en s
 
 1. Voeg ECMAScript toe dat de logica heeft om een gebruiker dynamisch aan het `.ecma` dossier te selecteren. Klik op **[!UICONTROL Save All]**.
 
-   Voor steekproefmanuscripten, zie [ Steekproef ECMAScripts voor dynamisch het selecteren van een gebruiker of een groep ](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
+   Voor steekproefmanuscripten, zie [&#x200B; Steekproef ECMAScripts voor dynamisch het selecteren van een gebruiker of een groep &#x200B;](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
 1. Voeg weergavenaam van het script toe. Deze naam wordt weergegeven in workflowstappen. De naam opgeven:
 
@@ -48,7 +48,7 @@ ECMAScript is een scripttaal. Het wordt gebruikt voor client-side scripting en s
 
    1. Klik **sparen allen**. Het script kan worden geselecteerd in de componenten van de AEM Workflow.
 
-      ![ manuscript ](assets/script.png)
+      ![&#x200B; manuscript &#x200B;](assets/script.png)
 
 ### Voorbeeld van ECMAScripts om een gebruiker of een groep dynamisch te kiezen {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
@@ -115,9 +115,9 @@ function getAdobeSignRecipients() {
 
 ## Java-interface gebruiken om dynamisch een gebruiker of groep te kiezen {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-U kunt de [ interface van Java gebruiken RecipientInfoSpecifier ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) om een gebruiker of een groep dynamisch voor het Ondertekenen van Adobe te kiezen en de stappen van de Taak toe te wijzen. U kunt een bundel tot stand brengen OSGi die de [ interface van Java 0} RecipientInfoSpecifier {gebruikt en het aan de Server van AEM Forms opstellen. ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Hiermee maakt u de optie beschikbaar voor selectie in de `Assign Task` - en Adobe-ondertekeningscomponenten van de AEM-workflow.
+U kunt de [&#x200B; interface van Java gebruiken RecipientInfoSpecifier &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) om een gebruiker of een groep dynamisch voor het Ondertekenen van Adobe te kiezen en de stappen van de Taak toe te wijzen. U kunt een bundel tot stand brengen OSGi die de [&#x200B; interface van Java 0&rbrace; RecipientInfoSpecifier &lbrace;gebruikt en het aan de Server van AEM Forms opstellen. &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Hiermee maakt u de optie beschikbaar voor selectie in de `Assign Task` - en Adobe-ondertekeningscomponenten van de AEM-workflow.
 
-U vereist [ jar van SDK van de Cliënt 0} AEM Forms en ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) granite jar [ dossiers om de hieronder vermelde codesteekproef te compileren. ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+U vereist [&#x200B; jar van SDK van de Cliënt 0&rbrace; AEM Forms en &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) granite jar [&#x200B; dossiers om de hieronder vermelde codesteekproef te compileren. &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Navigeer naar **[!UICONTROL File]** > **[!UICONTROL New Project]** .
 1. Selecteer **[!UICONTROL Maven Project]** in het scherm Selecteer een wizard en klik op **[!UICONTROL Next]** .
@@ -224,7 +224,7 @@ U vereist [ jar van SDK van de Cliënt 0} AEM Forms en ](https://experienceleagu
    </project>
    ```
 
-1. Voeg broncode toe die [ RecipientInfoSpecifier ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) interface van Java gebruikt om een gebruiker of een groep dynamisch voor de Assign stap van de Taak te kiezen. Voor steekproefcode, zie [ Steekproef voor dynamisch het kiezen van een gebruiker of een groep gebruikend een interface van Java ](#-sample-scripts-for).
+1. Voeg broncode toe die [&#x200B; RecipientInfoSpecifier &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) interface van Java gebruikt om een gebruiker of een groep dynamisch voor de Assign stap van de Taak te kiezen. Voor steekproefcode, zie [&#x200B; Steekproef voor dynamisch het kiezen van een gebruiker of een groep gebruikend een interface van Java &#x200B;](#-sample-scripts-for).
 1. Open een bevelherinnering en navigeer aan de folder die het OSGi bundelproject bevat. Gebruik het volgende bevel om de bundel te creëren OSGi:
 
    `mvn clean install`

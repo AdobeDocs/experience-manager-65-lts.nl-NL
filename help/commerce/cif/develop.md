@@ -31,24 +31,24 @@ Een lokale ontwikkelomgeving wordt aanbevolen voor het werken met CIF-projecten.
 
 >[!NOTE]
 >
->De volgende instructies helpen u bij het instellen van een lokale AEM-ontwikkelomgeving voor AEM Commerce met CIF (met focus voor AEM 6.5 LTS). Als u AEM as a Cloud Service gebruikt, zie de [ documentatie van 0} AEM Commerce as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#)
+>De volgende instructies helpen u bij het instellen van een lokale AEM-ontwikkelomgeving voor AEM Commerce met CIF (met focus voor AEM 6.5 LTS). Als u AEM as a Cloud Service gebruikt, zie de [&#x200B; documentatie van 0&rbrace; AEM Commerce as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#)
 
-De invoegtoepassing AEM Commerce voor AEM, de zogenaamde CIF Add-on, is ook beschikbaar voor lokale ontwikkeling en wordt geleverd als een AEM-pakket. Het kan van het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als eigenschappak worden gedownload.
+De invoegtoepassing AEM Commerce voor AEM, de zogenaamde CIF Add-on, is ook beschikbaar voor lokale ontwikkeling en wordt geleverd als een AEM-pakket. Het kan van het [&#x200B; Portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als eigenschappak worden gedownload.
 
 ### Vereiste software
 
 Het volgende moet lokaal worden geïnstalleerd:
 
 - Lokale AEM 6.5 LTS
-- [ Java 17/Java 21 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
-- [ Knoop LTS ](https://nodejs.org/en/)
-- [ npm 6+ ](https://www.npmjs.com/)
-- [ Git ](https://git-scm.com/)
+- [&#x200B; Java 17/Java 21 &#x200B;](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- [&#x200B; Apache Maven &#x200B;](https://maven.apache.org/) (3.3.9 of nieuwer)
+- [&#x200B; Knoop LTS &#x200B;](https://nodejs.org/en/)
+- [&#x200B; npm 6+ &#x200B;](https://www.npmjs.com/)
+- [&#x200B; Git &#x200B;](https://git-scm.com/)
 
 ### De CIF-invoegtoepassing openen
 
-CIF toe:voegen-op kan van het [ portaal van de Distributie van de Software worden gedownload ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), onderzoek naar `AEM Commerce add-on`.
+CIF toe:voegen-op kan van het [&#x200B; portaal van de Distributie van de Software worden gedownload &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), onderzoek naar `AEM Commerce add-on`.
 
 >[!TIP]
 >
@@ -82,13 +82,13 @@ Er zijn twee manieren om uw AEM Commerce-project met CIF te starten.
 
 ### AEM Project Archetype gebruiken
 
-Het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) is het belangrijkste hulpmiddel aan Bootstrap een vooraf gevormd project om met CIF te beginnen. CIF Core Components en alle vereiste configuraties kunnen met één extra optie in een gegenereerd project worden opgenomen.
+Het [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) is het belangrijkste hulpmiddel aan Bootstrap een vooraf gevormd project om met CIF te beginnen. CIF Core Components en alle vereiste configuraties kunnen met één extra optie in een gegenereerd project worden opgenomen.
 
 >[!TIP]
 >
->Gebruik [ Archetype 25 van het Project van AEM of later ](https://github.com/adobe/aem-project-archetype/releases) om het project te produceren.
+>Gebruik [&#x200B; Archetype 25 van het Project van AEM of later &#x200B;](https://github.com/adobe/aem-project-archetype/releases) om het project te produceren.
 
-Zie het Archieftype van het Project van AEM [ gebruiksinstructies ](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een project van AEM te produceren. Als u CIF in het project wilt opnemen, gebruikt u de optie `includeCommerce` .
+Zie het Archieftype van het Project van AEM [&#x200B; gebruiksinstructies &#x200B;](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een project van AEM te produceren. Als u CIF in het project wilt opnemen, gebruikt u de optie `includeCommerce` .
 
 Bijvoorbeeld:
 
@@ -139,19 +139,19 @@ U kunt CIF Core-componenten in elk project gebruiken. Neem alleen het meegelever
 
 ### AEM Venia-referentiearchief gebruiken
 
-Een tweede optie om een project van CIF te beginnen is de [ Opslag van de Verwijzing van AEM te klonen en te gebruiken Venia ](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden van best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
+Een tweede optie om een project van CIF te beginnen is de [&#x200B; Opslag van de Verwijzing van AEM te klonen en te gebruiken Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden van best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
 
-Krijg begonnen met de Opslag van de Verwijzing van Venia door de [ bewaarplaats van het Git ](https://github.com/adobe/aem-cif-guides-venia) te klonen en begin het project overeenkomstig uw behoeften aan te passen.
+Krijg begonnen met de Opslag van de Verwijzing van Venia door de [&#x200B; bewaarplaats van het Git &#x200B;](https://github.com/adobe/aem-cif-guides-venia) te klonen en begin het project overeenkomstig uw behoeften aan te passen.
 
 >[!NOTE]
 >
->Het Venia Reference Store-project bevat twee buildprofielen voor AEM as a Cloud Service en AEM 6.5. Controleer [ project readme.md ](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) om te zien hoe zij worden gebruikt. Gebruik voor AEM 6.5 het profiel `classic` .
+>Het Venia Reference Store-project bevat twee buildprofielen voor AEM as a Cloud Service en AEM 6.5. Controleer [&#x200B; project readme.md &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) om te zien hoe zij worden gebruikt. Gebruik voor AEM 6.5 het profiel `classic` .
 
 ### AEM verbinden met het Commerce-systeem
 
 Om uw project met het handelssysteem te verbinden, moet AEM met het eindpunt van GraphQL van uw handelssysteem worden gevormd.
 
-Zowel, omvat een project dat door het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) of de [ Opslag van de Verwijzing van AEM Venia ](https://github.com/adobe/aem-cif-guides-venia) wordt geproduceerd, reeds een standaardconfiguratie die moet worden aangepast.
+Zowel, omvat een project dat door het [&#x200B; Archieftype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) of de [&#x200B; Opslag van de Verwijzing van AEM Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) wordt geproduceerd, reeds een standaardconfiguratie die moet worden aangepast.
 
 Vervang de waarde van `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` met het eindpunt van GraphQL van uw handelsysteem dat door het project wordt gebruikt.
 
@@ -163,5 +163,5 @@ Navigeer naar http://localhost:4502/system/console/configMgr en maak een OSGI-co
 
 ## Aanvullende bronnen
 
-- [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype)
-- [ de Opslag van de Verwijzing van AEM Venia ](https://github.com/adobe/aem-cif-guides-venia)
+- [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype)
+- [&#x200B; de Opslag van de Verwijzing van AEM Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia)
