@@ -60,7 +60,7 @@ U kunt specifieke kenmerken invoeren om een gedetailleerde zoekopdracht uit te v
 1. Als u rijen wilt toevoegen of verwijderen, klikt u op Meer filters of Minder filters. U kunt een tot vier rijen hebben.
 1. Klik **Onderzoek**. De pagina Procesinstantie wordt weergegeven met een overzicht van de gevonden instanties.
 
-Zie ook [ Ongeveer de statussen van de procesinstantie ](/help/forms/using/admin-help/processes.md#about-process-instance-statuses).
+Zie ook [&#x200B; Ongeveer de statussen van de procesinstantie &#x200B;](/help/forms/using/admin-help/processes.md#about-process-instance-statuses).
 
 ## Een gecombineerde zoekopdracht naar een proces uitvoeren {#perform-a-combined-search-for-a-process}
 
