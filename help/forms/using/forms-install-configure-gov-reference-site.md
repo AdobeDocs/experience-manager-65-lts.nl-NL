@@ -228,7 +228,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 **Verwijzingen:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [&#x200B; het Vormen Dynamica Microsoft® voor AEM Forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [&#x200B; het Vormen Dynamica Microsoft® voor AEM Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData cloudservice {#ms-dynamics-odata-cloud-service}
 
@@ -483,7 +483,7 @@ Gebruikers van het gereedschap Conversie moeten het volgende hebben om AEM Forms
 
 Lees het volgende voordat u verdere instructies leest:
 
-* [&#x200B; vorm de Geautomatiseerde Dienst van de Omzetting van Vormen &#x200B;](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [&#x200B; vorm de Geautomatiseerde Dienst van de Omzetting van Vormen &#x200B;](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Een IMS-configuratie maken - Deel 1 {#creating-ims-config}
 
@@ -582,7 +582,7 @@ Nadat de IMS-configuratie is voltooid, kunt u doorgaan met het controleren van d
 
 1. Voor deze configuratie, werden de twee checkbox waarden verlaten leeg.
 
-   Meer over deze opties leren, zie [&#x200B; de wolkendienst &#x200B;](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service) vormen.
+   Meer over deze opties leren, zie [&#x200B; de wolkendienst &#x200B;](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service) vormen.
 
 #### Cloudconfiguratie configureren (`We.Finance` AFC-productie) {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ Nadat de IMS-configuratie is voltooid, kunt u doorgaan met het maken van de clou
 
 1. Voor deze configuratie, werden de twee checkbox waarden verlaten leeg.
 
-   * Om meer over deze opties te begrijpen, zie [&#x200B; de wolkendienst &#x200B;](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service) vormen.
+   * Om meer over deze opties te begrijpen, zie [&#x200B; de wolkendienst &#x200B;](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service) vormen.
 
 #### De formulierconversie testen (Web.Gov-inschrijvingstoepassing) {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ Zodra de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF-d
 
 #### Bekende problemen en opmerkingen {#known-issues-notes}
 
-De Geautomatiseerde dienst van de Omzetting van Vormen omvat bepaalde [&#x200B; beste praktijken, bekende complexe patronen &#x200B;](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#), en [&#x200B; bekende kwesties &#x200B;](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#). Controleer deze gegevens voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken.
+De Geautomatiseerde dienst van de Omzetting van Vormen omvat bepaalde [&#x200B; beste praktijken, bekende complexe patronen &#x200B;](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#), en [&#x200B; bekende kwesties &#x200B;](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/known-issues#). Controleer deze gegevens voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken.
 
 1. Maak het formulier met Aangepaste formulieren genereren zonder gegevensbindingen ingeschakeld als u het formulier na conversie aan een FDM wilt binden.
 
