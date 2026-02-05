@@ -86,10 +86,10 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 ## Zie ook {#further-information}
 
-Voor details over kerncomponenten, zie de auteursgids [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) voor een overzicht van mogelijkheden. Zie de gids [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) voor een technisch overzicht.
+Voor details over kerncomponenten, zie de auteursgids [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/introduction) voor een overzicht van mogelijkheden. Zie de gids [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/overview) voor een technisch overzicht.
 
 
 
-Voor meer informatie over de kerncomponenten, zie het auteursdocument [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) voor een overzicht van kerncomponentenmogelijkheden, en het ontwikkelaarsdocument [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) voor technische details.
+Voor meer informatie over de kerncomponenten, zie het auteursdocument [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/introduction) voor een overzicht van kerncomponentenmogelijkheden, en het ontwikkelaarsdocument [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/overview) voor technische details.
 
 U kunt ook [&#x200B; editable malplaatjes &#x200B;](/help/sites-developing/we-retail-editable-templates.md) willen onderzoeken. Zie het auteursdocument [&#x200B; Creërend de Malplaatjes van de Pagina &#x200B;](/help/sites-authoring/templates.md) of de Pagina van het ontwikkelaarsdocument [&#x200B; Malplaatjes - editable &#x200B;](/help/sites-developing/page-templates-editable.md) voor volledige details op editable malplaatjes.
