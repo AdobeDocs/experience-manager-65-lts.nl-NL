@@ -4,7 +4,7 @@ description: JBoss EAP 8 gebruikt Elytron om veilige communicatie en registratie
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -19,6 +19,7 @@ ht-degree: 0%
 JBoss EAP 8 gebruikt **Elytron** om mededeling tussen **primaire en secundaire knopen** in een gegroepeerde plaatsing voor authentiek te verklaren. Deze configuratie verzekert veilige registratie en mededeling van secundaire knopen met het primaire Controlemechanisme van het Domein.
 
 Er zijn twee instellingsopties beschikbaar, afhankelijk van de omgeving en de beveiligingsvereisten.
+
 
 ## Vereisten
 

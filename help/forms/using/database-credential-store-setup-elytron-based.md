@@ -4,7 +4,7 @@ description: JBoss EAP 8 biedt ondersteuning voor Elytron-credentiewinkels voor 
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## Database Credential Store configureren met Elytron
 
 JBoss EAP 8 gebruikt **de credentieopslag van Elytron** om gegevensbestandwachtwoorden voor de plaatsingen van AEM Forms veilig te beheren. Adobe verstrekt **geautomatiseerde manuscripten** om de verwezenlijking en de configuratie van de op Elytron-Gebaseerde credentieopslag op domeinwijze te vereenvoudigen.
+
 
 Deze opstelling moet **worden voltooid alvorens het Controlemechanisme van het Domein JBoss** te beginnen.
 

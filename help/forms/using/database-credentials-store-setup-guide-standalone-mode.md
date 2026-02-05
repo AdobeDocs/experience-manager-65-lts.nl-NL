@@ -4,7 +4,7 @@ description: Zoek de database-credentiële store-setup voor AEM Forms JEE op JBo
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## Overzicht
 
 Deze gids behandelt de **opstelling van de gegevensbestandcredentieopslag** voor AEM Forms JEE op JBoss/Red Hat EAP op **standalone wijze**. Dit is vereist wanneer u handmatige installatie uitvoert.
+
 
 **Deze gids behandelt:**
 
