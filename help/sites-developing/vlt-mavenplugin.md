@@ -22,8 +22,8 @@ Met de Adobe Content Package Maven-plug-in worden de geconstrueerde pakketten ge
 >
 >Zie ook het volgende:
 >
->* Het [ artikel van de Insteekmodule van de Inhoud van 0} Adobe Geweven {in de documentatie van AEM as a Cloud Service voor hoe te om de toepassingen van AEM op te stellen.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools)
->* Het [ artikel van de Structuur van het Project van 0} AEM {in de documentatie van AEM as a Cloud Service voor hoe te om moderne Projecten van AEM te structureren.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)
->* De [ documentatie van de Archetype van het Project van 0} AEM {voor hoe te om een nieuw project van AEM te beginnen gebruikend archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+>* Het [&#x200B; artikel van de Insteekmodule van de Inhoud van 0&rbrace; Adobe Geweven &lbrace;in de documentatie van AEM as a Cloud Service voor hoe te om de toepassingen van AEM op te stellen.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools)
+>* Het [&#x200B; artikel van de Structuur van het Project van 0&rbrace; AEM &lbrace;in de documentatie van AEM as a Cloud Service voor hoe te om moderne Projecten van AEM te structureren.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)
+>* De [&#x200B; documentatie van de Archetype van het Project van 0&rbrace; AEM &lbrace;voor hoe te om een nieuw project van AEM te beginnen gebruikend archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
 >
 >Alle drie documenten zijn van toepassing op AEM 6.5.
