@@ -1,6 +1,6 @@
 ---
-title: Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies
-description: Leer meer over de certificaattypen die worden gebruikt door Acrobat Reader DC-extensies.
+title: Certificaattypen die worden gebruikt door Acrobat Reader DC Extensions
+description: Leer meer over de certificaattypen die worden gebruikt door Acrobat Reader DC Extensions.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
@@ -11,25 +11,25 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
-# Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies {#certificate-types-used-by-acrobat-reader-dc-extensions}
+# Certificaattypen die worden gebruikt door Acrobat Reader DC Extensions {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 De Certificate Viewer biedt de volgende informatie over het certificaat:
 
 * Naam van certificaat &quot;vriendelijk&quot;
 * Certificaatprofielen
 * Geldigheidsperiode
-* Gebruiksrechten voor Acrobat Reader DC-extensies
+* Gebruiksrechten voor Acrobat Reader DC Extensions
 
 ## Naam van certificaat &quot;vriendelijk&quot; {#certificate-friendly-name}
 
-De &quot;vriendelijke&quot; naam van een Acrobat Reader DC-extensiecertificaat is een tekenreeks die de eigenschappen van het certificaat beschrijft, zoals in het volgende voorbeeld:
+De &quot;vriendelijke&quot; naam van een Acrobat Reader DC Extensions-certificaat is een tekenreeks die de eigenschappen van het certificaat beschrijft, zoals in het volgende voorbeeld:
 
 2D-streepjescode volledige productie V6.1 P8 0002054
 
@@ -39,7 +39,7 @@ De tekenreeks bevat de volgende elementen:
 
 **Type van Plaatsing:** wijst op het voorgenomen gebruik van het certificaat, zoals Productie. De waarde kan Evaluatie of Productie zijn. Voor een lijst van plaatsingstypes verbonden aan elk certificaattype, zie de kolom van het type van Plaatsing in de lijst in de sectie van de Profielen van het Certificaat.
 
-**versie van de rechten van het Gebruik:** beschrijft de versie van het algoritme van gebruiksrechten dat het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat of Acrobat Reader DC-extensies.
+**versie van de rechten van het Gebruik:** beschrijft de versie van het algoritme van gebruiksrechten dat het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat of Acrobat Reader DC Extensions.
 
 **code van het Profiel:** de profielcode is een korte beschrijving van volledige certificaateigenschappen, zoals voorbeeld, P8. Zie de kolom Profielcode in de tabel in de sectie Certificaatprofielen voor een lijst met profielcodes die aan elk bestandstype zijn gekoppeld.
 
@@ -47,7 +47,7 @@ De tekenreeks bevat de volgende elementen:
 
 ## Certificaatprofielen {#certificate-profiles}
 
-In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegenkomen bij het analyseren van certificaten voor Acrobat Reader DC-extensies.
+In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegenkomen bij het analyseren van certificaten van Acrobat Reader DC Extensions.
 
 <table>
  <thead>
@@ -79,7 +79,7 @@ In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegen
   </tr>
   <tr>
    <td><p>P4</p></td>
-   <td><p>Acrobat Reader DC-extensies, Intern Adobe-gebruik</p></td>
+   <td><p>Acrobat Reader DC-extensies, intern Adobe-gebruik</p></td>
    <td><p>2 jaar</p></td>
    <td><p>Productie</p></td>
   </tr>
@@ -91,7 +91,7 @@ In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegen
   </tr>
   <tr>
    <td><p>P6</p></td>
-   <td><p>Acrobat Reader DC-extensies, evaluatie</p></td>
+   <td><p>Acrobat Reader DC-uitbreidingen, evaluatie</p></td>
    <td><p>60 dagen</p></td>
    <td><p>Evaluatie</p></td>
   </tr>
@@ -109,37 +109,37 @@ In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegen
   </tr>
   <tr>
    <td><p>I10</p></td>
-   <td><p>Forms; kan door OEM's worden gebruikt</p></td>
+   <td><p>Forms; OEM's kunnen Forms gebruiken</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
-   <td><p>Forms; kan door OEM's worden gebruikt</p></td>
+   <td><p>Forms; OEM's kunnen Forms gebruiken.</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>Alleen handtekening; mag door OEM's worden gebruikt</p></td>
+   <td><p>Alleen handtekening; OEM's mogen alleen handtekening gebruiken</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>Offline opmerkingen alleen; kan door OEM's worden gebruikt</p></td>
+   <td><p>Alleen offlineopmerkingen; OEM's kunnen offline opmerkingen gebruiken</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>Alleen opmerkingen; kan door OEM's worden gebruikt</p></td>
+   <td><p>Alleen opmerkingen; OEM's mogen alleen opmerkingen gebruiken</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>Volledige machtigingen; kunnen worden gebruikt door OEM's</p></td>
+   <td><p>Volledige machtigingen; OEM's kunnen volledige machtigingen gebruiken</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
@@ -148,21 +148,21 @@ In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegen
 
 ## Geldigheidsperiode {#validity-period}
 
-De certificaten van de evaluatie worden uitgegeven aan klanten en ontwikkelaars zodat zij steekproeftoepassingen voor producten kunnen evalueren en ontwikkelen. De geldigheidsduur van deze certificaten ligt tussen 60 en 90 dagen. Zij verstrijken aan het einde van de tweede maand volgende op de uitgiftegegevens.
+De certificaten van de evaluatie worden uitgegeven aan klanten en ontwikkelaars zodat zij steekproeftoepassingen voor producten kunnen evalueren en ontwikkelen. De geldigheidsduur van deze certificaten ligt tussen 60 en 90 dagen. Ze verlopen aan het einde van de tweede maand na de uitgiftegegevens.
 
 De certificaten van de Integratie van de partner worden uitgegeven aan de bedrijfspartners van Adobe om softwareontwikkeling, integratie, prototyping, en demonstratie te steunen. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
 
-Adobe Internal Use-certificaten worden in Adobe gebruikt ter ondersteuning van softwareontwikkeling, -integratie, -prototypen en -demonstratie. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
+Adobe-certificaten voor intern gebruik worden in Adobe gebruikt ter ondersteuning van softwareontwikkeling, -integratie, -prototypen en -demonstratie. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
 
-Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig voor de maximumperiode die door het certificaatgezag (CA) wordt toegelaten, die als *Max* in de lijst van Profielen van het Certificaat wordt getoond.
+Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC Extensions hebben aangeschaft. Deze certificaten zijn geldig voor de maximumperiode die door het certificaatgezag (CA) wordt toegelaten, die als *Max* in de lijst van Profielen van het Certificaat wordt getoond.
 
-## Gebruiksrechten voor Acrobat Reader DC-extensies {#acrobat-reader-dc-extensions-usage-rights}
+## Gebruiksrechten voor Acrobat Reader DC Extensions {#acrobat-reader-dc-extensions-usage-rights}
 
-Wanneer u het certificaat voor Acrobat Reader DC-extensies in de certificaatviewer bekijkt, kunt u de optie met gebruiksrechten selecteren op het tabblad Details (indien geconfigureerd) om een gedetailleerde lijst weer te geven van de gebruiksrechten van Adobe Reader die het certificaat kan inschakelen. De gebruiksrechten die op een bepaald document zijn ingeschakeld, kunnen een subset zijn van de gebruiksrechten die door het certificaat worden ingeschakeld.
+Wanneer u het certificaat van de Uitbreidingen van Acrobat Reader DC in de Kijker van het Certificaat onderzoekt, kunt u het punt van gebruiksrechten van het lusje van Details (als gevormd) selecteren. U ziet een gedetailleerde lijst met de gebruiksrechten van Adobe Reader die het certificaat kan inschakelen. De gebruiksrechten die op een bepaald document zijn ingeschakeld, kunnen een subset zijn van deze rechten die door het certificaat worden ingeschakeld.
 
 Als online opmerkingen vereist zijn in een omgeving zonder samenwerkingsverband, neemt u contact op met Adobe Support voor meer informatie. Het bezit van de Wijze past het plaatsingstype aan en is of *productie* of *evaluatie*.
 
-De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een of meer specifieke elementen. Deze elementen worden in verschillende combinaties gebruikt om verschillende productfuncties met een licentie te verkrijgen.
+De toegestane gebruiksrechten voor Acrobat Reader DC Extensions bestaan uit een of meer specifieke elementen. Deze elementen worden in verschillende combinaties gebruikt om verschillende productfuncties met een licentie te verkrijgen.
 
 <table>
  <thead>
@@ -174,7 +174,7 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
  <tbody>
   <tr>
    <td><p>FormFillInAndSave</p></td>
-   <td><p>Formuliervelden invullen en bestanden lokaal opslaan.</p></td>
+   <td><p>Vul de formuliervelden in en sla de bestanden lokaal op.</p></td>
   </tr>
   <tr>
    <td><p>FormImportExport</p></td>
@@ -225,4 +225,4 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
 
 >[!NOTE]
 >
->Acrobat Reader DC-extensierechten kunnen alleen in licentie worden gegeven door Adobe in bepaalde combinaties die samenwerken. Het is niet mogelijk om deze mogelijkheden onafhankelijk te verlenen. Neem voor informatie over de beschikbare combinaties van gebruiksrechten contact op met een accountvertegenwoordiger van AEM-formulieren.
+>De gebruiksrechten van Acrobat Reader DC Extensions kunnen alleen in bepaalde combinaties die samenwerken in licentie worden gegeven door Adobe. Het is niet mogelijk om deze mogelijkheden onafhankelijk te verlenen. Neem voor informatie over de beschikbare combinaties van gebruiksrechten contact op met een accountvertegenwoordiger van AEM-formulieren.
