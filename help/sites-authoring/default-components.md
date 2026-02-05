@@ -52,7 +52,7 @@ De [&#x200B; Console van Componenten &#x200B;](/help/sites-authoring/default-com
 
 De volgende pagina&#39;s bevatten koppelingen naar enkele aanvullende, belangrijke informatie over componenten:
 
-* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) - de kerncomponenten bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan, die essentiële inhoudstypes verstrekt om pagina&#39;s tot stand te brengen.
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/introduction) - de kerncomponenten bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan, die essentiële inhoudstypes verstrekt om pagina&#39;s tot stand te brengen.
 
 ### Componenten configureren {#configuring-components}
 
