@@ -1,6 +1,6 @@
 ---
-title: API's voor het werken met verzonden formulieren op het formulierportaal
-description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de formulierportal.
+title: API's voor het werken met verzonden formulieren op de Forms Portal
+description: AEM Forms biedt API's waarmee u query's kunt uitvoeren en acties kunt uitvoeren op verzonden formuliergegevens in de Forms Portal.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
 
-# API&#39;s voor het werken met verzonden formulieren op het formulierportaal {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API&#39;s voor het werken met verzonden formulieren op Forms Portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
+AEM Forms biedt API&#39;s die u kunt gebruiken om query&#39;s uit te voeren op formuliergegevens die via de Forms Portal worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
 
 >[!NOTE]
 >
->De gebruikers die APIs zullen aanhalen moeten aan de recensentengroep worden toegevoegd zoals die in [&#x200B; wordt beschreven Associerend voorleggingsrecensenten aan een vorm &#x200B;](/help/forms/using/adding-reviewers-form.md).
+>Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de groep met revisoren. Zie [ Associerend voorleggingsrecensenten aan een vorm ](/help/forms/using/adding-reviewers-form.md).
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Retourneert een lijst met alle in aanmerking komende formulieren.
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Retourneert details van alle verzonden formulieren. U kunt URL-parameters echter gebruiken om de resultaten te beperken.
 
@@ -85,11 +85,11 @@ Geef de volgende parameters op in de aanvraag-URL:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (optioneel)</td>
-   <td>Specifies the property for sorting results. De standaardwaarde is <strong> jcr:lastModified </strong>, die resultaten sorteert die op de laatste gewijzigde tijd worden gebaseerd.</td>
+   <td>Specifies the property for sorting results. De standaardwaarde is <code>jcr:lastModified</code> . Hiermee sorteert u resultaten op basis van de laatste gewijzigde tijd.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (optioneel)</td>
-   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is desc </strong>, die resultaten in dalende orde sorteert. <strong> U kunt <code>asc</code> opgeven om de resultaten in oplopende volgorde te sorteren.</td>
+   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is <code>desc</code> , waardoor het resultaat aflopend wordt gesorteerd. U kunt <code>asc</code> opgeven om de resultaten in oplopende volgorde te sorteren.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (optioneel)</td>
@@ -97,7 +97,7 @@ Geef de volgende parameters op in de aanvraag-URL:
   </tr>
   <tr>
    <td><code>search</code> <br /> (optioneel)</td>
-   <td>Zoekt de opgegeven waarde in formuliereigenschappen en retourneert formulieren met overeenkomende waarden. De standaardwaarde is <strong> ""</strong>.</td>
+   <td>Zoekt de opgegeven waarde in formuliereigenschappen en retourneert formulieren met overeenkomende waarden. De standaardwaarde is <code>""</code> .</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## POST `/content/forms/portal/submission.review.json?func=addComment` {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 Voegt een opmerking toe aan de opgegeven verzendinstantie.
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Retourneert alle opmerkingen die op het opgegeven verzendexemplaar zijn geplaatst.
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## POST `/content/forms/portal/submission.review.json?func=updateSubmission` {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Hiermee wordt de waarde van de opgegeven eigenschap van de opgegeven ingediende formulierinstantie bijgewerkt.
 
@@ -212,7 +212,7 @@ Geef de volgende parameters op in de aanvraag-URL:
 
 ### Antwoord {#response-4}
 
-Retourneert een JSON-object met informatie over de geposte update.
+Er wordt een JSON-object geretourneerd met informatie over de geposte update.
 
 ### Voorbeeld {#example-4}
 

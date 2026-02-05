@@ -1,5 +1,5 @@
 ---
-title: De interface Correspondentie maken integreren met uw aangepaste portal
+title: Integratie van de Create Oplossing van de Correspondentie met uw Portaal van de Douane
 description: Leer hoe u het maken van correspondentie-UI kunt integreren met uw aangepaste portal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
-# De interface Correspondentie maken integreren met uw aangepaste portal{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integratie van de `Create Correspondence` -oplossing met uw aangepaste portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Overzicht {#overview}
 
-In dit artikel wordt beschreven hoe u de Correspondentieoplossing maken kunt integreren met uw omgeving.
+In dit artikel wordt beschreven hoe u de `Create Correspondence` -oplossing kunt integreren met uw omgeving.
 
 ## Oproepen op basis van URL {#url-based-invocation}
 
-U kunt de toepassing Correspondentie maken aanroepen vanuit een aangepast portaal door de URL voor te bereiden met de volgende aanvraagparameters:
+U kunt de toepassing `Create Correspondence` aanroepen vanuit een aangepast portaal door de URL voor te bereiden met de volgende aanvraagparameters:
 
 * de id voor de lettersjabloon (met de parameter cmLetterId).
 
@@ -39,16 +39,16 @@ Het aangepaste portaal bereidt bijvoorbeeld de URL voor als\
 
 >[!NOTE]
 >
->Voordat u de toepassing Correspondentie maken aanroept, slaat u de gegevens op en uploadt u deze om de interface Correspondentie maken op de opgegeven dataURL aan te roepen. Dit zou of van het douaneportaal zelf of door een ander achtereindeproces kunnen worden gedaan.
+>Voordat u de `Create Correspondence` -toepassing aanroept, slaat u de gegevens op en uploadt u deze om de `Create Correspondence` -gebruikersinterface op de opgegeven dataURL aan te roepen. Dit proces kan of van het douaneportaal zelf of door een ander achtereindeproces worden gedaan.
 
 ## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
 
-Een andere (en een veiligere) manier om de Create toepassing van de Correspondentie te roepen zou kunnen zijn om URL in https://&#39; [ server ] eenvoudig te raken:[ haven ] &#39;/[ contextPath ] /aem/forms/createcorrespondence.html, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST verzoek te roepen (het verbergen van hen van het eind - gebruiker). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere, veiliger, manier om de `Create Correspondence` toepassing te roepen moet naar URL in https://&#39; [ server ] gaan:[ haven ]&#39;/[ contextPath ] /aem/forms/createcorrespondence.html. Voer deze URL uit terwijl u de parameters en gegevens verzendt om de `Create Correspondence` -toepassing als een POST-aanvraag aan te roepen en deze voor de eindgebruiker verbergt. Deze workflow betekent ook dat u nu de XML-gegevens voor de `Create Correspondence` -toepassing inline kunt doorgeven (als onderdeel van dezelfde aanvraag, met de parameter `cmData` ). Deze workflow was niet mogelijk of ideaal in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 
 | **Naam** | **Type** | **Beschrijving** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | String | De id voor de letter-instantie. |
 | cmLetterId | String | De naam van de Letter-sjabloon. |
 
@@ -66,17 +66,17 @@ De volgorde van parameters in de tabel geeft de voorkeur aan parameters die word
   <tr>
    <td>cmDataUrl <br /> </td> 
    <td>URL</td> 
-   <td>De gegevens van XML van een brondossier gebruikend basisprotocollen zoals cq, ftp, http, of dossier.<br /> </td> 
+   <td>De gegevens van XML van een brondossier gebruikend basisprotocollen, zoals cq, ftp, http, of dossier.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>String</td> 
-   <td>XML-gegevens gebruiken die beschikbaar zijn in Letter Instance.</td> 
+   <td>XML-gegevens gebruiken die beschikbaar zijn in letter-instantie.</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
    <td>Boolean</td> 
-   <td>De testgegevens in het gegevenswoordenboek opnieuw gebruiken.</td> 
+   <td>De testgegevens in een gegevenswoordenboek opnieuw gebruiken.</td> 
   </tr>
  </tbody>
 </table>
@@ -105,4 +105,4 @@ De volgorde van parameters in de tabel geeft de voorkeur aan parameters die word
  </tbody>
 </table>
 
-Als u het http- of cq-protocol voor cmDataURL gebruikt, moet de URL van http/cq anoniem toegankelijk zijn.
+Als u het http- of cq-protocol gebruikt voor `cmDataURL` , moet de URL van `http/cq` anoniem toegankelijk zijn.
