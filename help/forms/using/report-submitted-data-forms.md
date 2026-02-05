@@ -21,7 +21,7 @@ AEM Forms biedt API&#39;s die u kunt gebruiken om query&#39;s uit te voeren op f
 
 >[!NOTE]
 >
->Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de groep met revisoren. Zie [ Associerend voorleggingsrecensenten aan een vorm ](/help/forms/using/adding-reviewers-form.md).
+>Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de groep met revisoren. Zie [&#x200B; Associerend voorleggingsrecensenten aan een vorm &#x200B;](/help/forms/using/adding-reviewers-form.md).
 
 ## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
