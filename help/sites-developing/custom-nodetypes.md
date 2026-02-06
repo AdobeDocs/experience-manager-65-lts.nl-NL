@@ -9,25 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
 
 # Aangepaste knooppunttypen{#custom-node-types}
 
-Omdat Adobe Experience Manager (AEM) is gebaseerd op Sling en een JCR-opslagplaats gebruikt, zijn de knooppunttypen die door beide worden aangeboden, beschikbaar voor gebruik:
+Omdat Adobe Experience Manager (AEM) is gebaseerd op Sling en een JCR-opslagplaats gebruikt, zijn de knooppunttypen die door beide worden aangeboden, beschikbaar voor gebruik met het volgende:
 
-* [&#x200B; de Types van Knoop JCR &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [&#x200B; Sling de Types van Knoop &#x200B;](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [ de Types van Knoop JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [ Sling de Types van Knoop ](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Naast deze knooppunttypen biedt AEM een reeks aangepaste knooppunttypen.
 
 ## Audit {#audit}
 
-### cq:AuditEvent {#cq-auditevent}
+### `cq:AuditEvent` {#cq-auditevent}
 
 **Beschrijving**
 
@@ -55,7 +55,7 @@ Bepaalt het knooptype van een knoop van de controlegebeurtenis.
 
 ## Opmerking {#comment}
 
-### cq:opmerking {#cq-comment}
+### `cq:Comment` {#cq-comment}
 
 **Beschrijving**
 
@@ -74,7 +74,7 @@ Definieert het notatietype van een opmerkingsknooppunt.
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:CommentAttachment {#cq-commentattachment}
+### `cq:CommentAttachment` {#cq-commentattachment}
 
 **Beschrijving**
 
@@ -86,7 +86,7 @@ Definieert het notatietype van een node `commentattachment`
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:CommentContent {#cq-commentcontent}
+### `cq:CommentContent` {#cq-commentcontent}
 
 **Beschrijving**
 
@@ -103,7 +103,7 @@ Definieert het notatietype van een commentaarinhoudsknooppunt
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:GeoLocation {#cq-geolocation}
+### `cq:GeoLocation` {#cq-geolocation}
 
 **Beschrijving**
 
@@ -118,7 +118,7 @@ Een mix die een geografische locatie in decimale graden (DD) definieert
 * `- latitude (double)`
 * `- longitude (double)`
 
-### cq:Trackback {#cq-trackback}
+### `cq:Trackback` {#cq-trackback}
 
 **Beschrijving**
 
@@ -130,7 +130,7 @@ Definieert het knooptype van een trackback-knooppunt.
 
 ## Kern {#core}
 
-### cq:pagina {#cq-page}
+### `cq:Page` {#cq-page}
 
 **Beschrijving**
 
@@ -144,17 +144,17 @@ Definieert de standaard CQ-pagina.
    * `+ jcr:content (nt:base) = nt:unstructured copy primary`
    * `+ * (nt:base) = nt:base version`
 
-### cq:PseudoPage {#cq-pseudopage}
+### `cq:PseudoPage` {#cq-pseudopage}
 
 **Beschrijving**
 
-Definieert een mixinetype dat knooppunten markeert als pseudopagina&#39;s. Met andere woorden, het betekent dat ze kunnen worden aangepast voor ondersteuning voor pagina- en WCM-bewerking.
+Dit mixintype markeert knooppunten als pseudopagina&#39;s. Met andere woorden, het betekent dat ze kunnen worden aangepast voor ondersteuning voor pagina- en WCM-bewerking.
 
 **Definitie**
 
 * `[cq:PseudoPage] mixin`
 
-### cq:PageContent {#cq-pagecontent}
+### `cq:PageContent` {#cq-pagecontent}
 
 **Beschrijving**
 
@@ -166,7 +166,7 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 * `@prop cq:allowedTemplates` - Lijst met reguliere expressies die worden gebruikt om de paden naar de toegestane sjabloon te bepalen.
 * `@prop pageTitle` - Titel weergegeven in de tag `<title>` .
 * `@prop navTitle` - Titel gebruikt in navigatie.
-* `@prop hideInNav` - Geeft op of de pagina in de navigatie moet worden verborgen.
+* `@prop hideInNav` - Geeft op of de pagina in de navigatie verborgen is.
 * `@prop onTime` - Tijd waarop deze pagina geldig wordt.
 * `@prop offTime` - Tijd waarop deze pagina ongeldig wordt.
 * `@prop cq:lastModified` - Datum waarop de pagina (of de alinea&#39;s) voor het laatst is gewijzigd.
@@ -178,6 +178,7 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 >Het is niet verplicht voor pagina-inhoud om dit type te gebruiken.
 
 **Definitie**
+
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
    * `- cq:template (string)`
    * `- cq:allowedTemplates (string) multiple`
@@ -191,7 +192,7 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
    * `- cq:designPath (string)`
    * `- jcr:language (string)`
 
-### cq:sjabloon {#cq-template}
+### `cq:Template` {#cq-template}
 
 **Beschrijving**
 
@@ -223,7 +224,7 @@ Definieert een CQ-sjabloon.
    * `- allowedChildren (string) multiple`
    * `- ranking (long)`
 
-### cq:Component {#cq-component}
+### `cq:Component` {#cq-component}
 
 **Beschrijving**
 
@@ -238,7 +239,7 @@ Definieert een CQ-component.
 * `@prop cq:isContainer` - Geeft aan of het een containercomponent is. Hiermee worden de celnamen van onderliggende componenten gedwongen in plaats van padnamen te worden gebruikt. De `parsys` is bijvoorbeeld een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig` .
 * `@prop cq:noDecoration` - Indien waar (true), worden er geen decoratie `div` -tags getekend wanneer deze component wordt opgenomen.
 * `@node cq:editConfig` - De configuratie die de parameters voor de bewerkbalk definieert.
-* `@node cq:childEditConfig` - De bewerkingsconfiguratie die wordt overgeërfd door onderliggende componenten.
+* `@node cq:childEditConfig` - De bewerkingsconfiguratie die door onderliggende componenten wordt overgeërfd.
 * `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die worden toegevoegd aan de tag &quot;around&quot; `div` wanneer de component wordt opgenomen.
 * `@node icon.png` - Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
@@ -271,27 +272,27 @@ Definieert een CQ-component.
    * `- componentGroup (string)`
    * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
-### cq:ComponentMixin {#cq-componentmixin}
+### `cq:ComponentMixin` {#cq-componentmixin}
 
 **Beschrijving**
 
-Definieert een CQ-component als mixinetype.
+Definieert een CQ-component als een mixinetype.
 
 **Definitie**
 
 `[cq:ComponentMixin] > cq:Component mixin`
 
-### cq:EditConfig {#cq-editconfig}
+### `cq:EditConfig` {#cq-editconfig}
 
 **Beschrijving**
 
-Definieert de configuratie voor de &quot;editbar&quot;.
+Definieert de configuratie voor de `editbar` .
 
 * `@prop cq:dialogMode` - Modus van het dialoogvenster:
    * `floating` - voor een normaal zwevend dialoogvenster
    * `inline` - inline bewerken
    * `auto` - automatische detectie (afhankelijk van beschikbare ruimte)
-* `@node cq:inplaceEditing` - Voer de bewerkingsconfiguratie voor deze component in.
+* `@node cq:inplaceEditing` - Op plaats bewerkingsconfiguratie voor deze component.
 * `@prop cq:layout` - Lay-out van de bewerkbalk:
    * `editbar` - bewerkbalk
    * `rollover` - verticaal schuiven
@@ -313,7 +314,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
    * `+ cq:dropTargets (nt:base) = nt:unstructured`
    * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
-### cq:DropTargetConfig {#cq-droptargetconfig}
+### `cq:DropTargetConfig` {#cq-droptargetconfig}
 
 **Beschrijving**
 
@@ -331,7 +332,7 @@ Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebru
    * `- propertyName (string)`
    * `+ parameters (nt:base) = nt:unstructured`
 
-### cq:VirtualComponent {#cq-virtualcomponent}
+### `cq:VirtualComponent` {#cq-virtualcomponent}
 
 **Beschrijving**
 
@@ -340,7 +341,7 @@ Definieert een virtuele CQ-component. Wordt momenteel alleen gebruikt voor de ni
 * `@prop jcr:title` - Titel van deze component.
 * `@prop jcr:description` - Beschrijving van deze component.
 * `@node cq:editConfig` - Bewerk de configuratie die de parameters voor de bewerkbalk definieert.
-* `@node cq:childEditConfig` - Bewerk de configuratie die door onderliggende componenten wordt overgeërfd.
+* `@node cq:childEditConfig` - Configuratie bewerken die door onderliggende componenten wordt overgeërfd.
 * `@node icon.png` - Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
 * `@prop allowedParents` - Reguliere-expressiepatronen om paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
@@ -360,7 +361,7 @@ Definieert een virtuele CQ-component. Wordt momenteel alleen gebruikt voor de ni
 `- allowedChildren (string) multiple`
 `- componentGroup (string)`
 
-### cq:EditListenersConfig {#cq-editlistenersconfig}
+### `cq:EditListenersConfig` {#cq-editlistenersconfig}
 
 **Beschrijving**
 
@@ -392,7 +393,7 @@ Definieert de (client)listeners die moeten worden uitgevoerd op een bewerkingsge
 
 ## DAM {#dam}
 
-### dam:AssetContent {#dam-assetcontent}
+### `dam:AssetContent` {#dam-assetcontent}
 
 **Beschrijving**
 
@@ -404,7 +405,7 @@ Inhoud van een DAM-element.
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Asset {#dam-asset}
+### `dam:Asset` {#dam-asset}
 
 **Beschrijving**
 
@@ -416,7 +417,7 @@ DAM-middelen.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Miniatuur {#dam-thumbnail}
+### `dam:Thumbnail` {#dam-thumbnail}
 
 **Beschrijving**
 
@@ -430,7 +431,7 @@ Miniatuur die een DAM-element vertegenwoordigt.
 
 ## Containerlijst voor levering {#delivery-container-list}
 
-### cq:containerList {#cq-containerlist}
+### `cq:containerList` {#cq-containerlist}
 
 **Beschrijving**
 
@@ -443,14 +444,14 @@ Containerlijst.
 
 ## Afleveringspagina {#delivery-page}
 
-### cq:Cq4PageAttributes {#cq-cq-pageattributes}
+### `cq:Cq4PageAttributes` {#cq-cq-pageattributes}
 
 **Beschrijving**
 
-Het knooppunttype `cq:attributes` is voor de ContentBus-versietags. Dit knooppunt heeft alleen een reeks eigenschappen, waarvan er drie vooraf zijn gedefinieerd: &quot;created&quot;, &quot;csd&quot; en &quot;timestamp&quot;.
+Het knooppunttype `cq:attributes` is voor de ContentBus-versietags. Dit knooppunt heeft alleen een reeks eigenschappen waarvan er drie vooraf zijn gedefinieerd: `created` , `csd` en `timestamp` .
 
 * `@prop created (long) mandatory copy` - Tijdstempel voor het maken van de versiegegevens, meestal de tijd van controle van de vorige versie of het tijdstip van het maken van de pagina.
-* `@prop csd (string) mandatory copy` - csd, standaardkenmerk, kopie van de eigenschap cq:csd van het paginaknooppunt
+* `@prop csd (string) mandatory copy` - Het kenmerk `csd` standard, kopie van de eigenschap `cq:csd` van het knooppunt page
 * `@prop timestamp (long) mandatory copy` - Tijdstempel van laatste versiewijziging, meestal controletijd.
 * `@prop * (string) copy` - Aanvullende kenmerken, versieingesteld met het bovenliggende knooppunt.
 
@@ -462,7 +463,7 @@ Het knooppunttype `cq:attributes` is voor de ContentBus-versietags. Dit knooppun
    * `- timestamp (long) mandatory copy`
    * `- &ast; (string) copy`
 
-### cq:Cq4ContentPage {#cq-cq-contentpage}
+### `cq:Cq4ContentPage` {#cq-cq-contentpage}
 
 **Beschrijving**
 
@@ -472,7 +473,7 @@ De items in een `cq:Cq4ContentPage` zijn:
 
 * `@prop cq:csd` - De ContentBus-CSD van de pagina.
 * `@node cq:content` - De inhoud van de pagina. Dit onderliggende knooppunt bestaat niet als het paginaknooppunt de status &quot;Bestaande zonder inhoud&quot; of &quot;Verwijderd&quot; heeft.
-* `@node cq:attributes` - De lijst met paginakenmerken, voorheen versietags genoemd. Dit knooppunt is verplicht voor het type cq:contentPage. Het attributenknooppunt is versioned, wanneer het paginaknooppunt is versioned.
+* `@node cq:attributes` - De lijst met paginakenmerken, voorheen versietags genoemd. Dit knooppunt is verplicht voor het type `cq:contentPage` . Het attributenknooppunt wordt versioned wanneer het paginaknooppunt wordt versioned.
 
 **Definitie**
 
@@ -482,16 +483,16 @@ De items in een `cq:Cq4ContentPage` zijn:
 
 ## Importeur {#importer}
 
-### cq:PollConfig {#cq-pollconfig}
+### `cq:PollConfig` {#cq-pollconfig}
 
 **Beschrijving**
 
 Opiniepeilingconfiguratie.
 
 * `@prop source (String) mandatory` - Data source URI. Vereist en mag niet leeg zijn.
-* `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Optioneel en standaard ingesteld op het knooppunt cq:PollConfig.
+* `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Facultatief en blijft aan de knoop cq :PollConfig in gebreke.
 * `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gepoll. Optioneel en standaard ingesteld op 30 minuten (1800 seconden).
-* [&#x200B; Creërend de Diensten van de Importeur van Gegevens van de Douane voor Adobe Experience Manager &#x200B;](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [ Creërend de Diensten van de Importeur van Gegevens van de Douane voor Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **Definitie**
 
@@ -501,11 +502,11 @@ Opiniepeilingconfiguratie.
    * `- target (String)`
    * `- interval (Long)`
 
-### cq:PollConfigFolder {#cq-pollconfigfolder}
+### `cq:PollConfigFolder` {#cq-pollconfigfolder}
 
 **Beschrijving**
 
-Het primaire knooppunttype van gemak om opiniepeilingsknopen gemakkelijk tot stand te brengen.
+Het primaire knooppunttype van gemak om de knopen van de opinieconfiguratie gemakkelijk tot stand te brengen.
 
 **Definitie**
 
@@ -513,7 +514,7 @@ Het primaire knooppunttype van gemak om opiniepeilingsknopen gemakkelijk tot sta
 
 ## Locatie {#location}
 
-### cq:GeoLocation {#cq-geolocation-1}
+### `cq:GeoLocation` {#cq-geolocation-1}
 
 **Beschrijving**
 
@@ -531,7 +532,7 @@ Een mix die een geografische locatie in decimale graden (DD) definieert.
 
 ## Mailer {#mailer}
 
-### cq:mailerMessage {#cq-mailermessage}
+### `cq:mailerMessage` {#cq-mailermessage}
 
 **Beschrijving**
 
@@ -547,7 +548,7 @@ MailerService nodetypes. De mailer gebruikt knopen die deze mixin als wortelknop
 
 ## MSM {#msm}
 
-### cq:LiveRelationship {#cq-liverelationship}
+### `cq:LiveRelationship` {#cq-liverelationship}
 
 **Beschrijving**
 
@@ -560,7 +561,7 @@ Definieert een LiveRelationship-mix. Een primair bronknooppunt (Besturingselemen
    * `- cq:lastRolledoutBy (string)`
    * `- cq:sourceUUID (string)`
 
-### cq:LiveSync {#cq-livesync}
+### `cq:LiveSync` {#cq-livesync}
 
 **Beschrijving**
 
@@ -577,7 +578,7 @@ Definieert een LiveSync-mix. Als een knooppunt betrokken is bij een LiveRelation
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCanceled {#cq-livesynccancelled}
+### `cq:LiveSyncCancelled` {#cq-livesynccancelled}
 
 **Beschrijving**
 
@@ -590,7 +591,7 @@ Definieert een LiveSyncCanceled-mix. Annuleer het gedrag LiveSync van een live c
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
    * `- cq:isCancelledForChildren (boolean)`
 
-### cq:LiveSyncAction {#cq-livesyncaction}
+### `cq:LiveSyncAction` {#cq-livesyncaction}
 
 **Beschrijving**
 
@@ -603,7 +604,7 @@ Definieert een LiveSyncAction die aan een LiveSync is gekoppeld.
 
 * `[cq:LiveSyncAction] > nt:unstructured`
 
-### cq:LiveSyncConfig {#cq-livesyncconfig}
+### `cq:LiveSyncConfig` {#cq-livesyncconfig}
 
 **Beschrijving**
 
@@ -616,11 +617,11 @@ Configuratie van live synchronisatie.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Voeg voor AEM 5.4 aan het einde van de lijst toe:
+Voeg voor AEM 5.4 aan het einde van de lijst het volgende toe:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq:BluepintAction {#cq-blueprintaction}
+### `cq:BlueprintAction` {#cq-blueprintaction}
 
 **Beschrijving**
 
@@ -632,7 +633,7 @@ Blauwdruk, actie
 
 ## Platform {#platform}
 
-### cq:Console {#cq-console}
+### `cq:Console` {#cq-console}
 
 **Beschrijving**
 
@@ -645,7 +646,7 @@ Definieert het knooptype van een consoleknooppunt.
 
 ## Replicatie {#replication}
 
-### cq:ReplicationStatus {#cq-replicationstatus}
+### `cq:ReplicationStatus` {#cq-replicationstatus}
 
 **Beschrijving**
 
@@ -671,21 +672,21 @@ Bepaalt de informatie van de replicatiestatus mixin.
 
 ## Beveiliging {#security}
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege}
 
 **Beschrijving**
 
-Definieert een toepassingsbevoegdheid.
+Er wordt een toepassingsbevoegdheid gedefinieerd.
 
 **Definitie**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl}
+### `cq:PrivilegeAcl` {#cq-privilegeacl}
 
 **Beschrijving**
 
-Bepaalt toepassingsvoorrecht ACL.
+Het bepaalt toepassingsvoorrecht ACL.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -696,11 +697,11 @@ Bepaalt toepassingsvoorrecht ACL.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace}
+### `cq:PrivilegeAce` {#cq-privilegeace}
 
 **Beschrijving**
 
-Bepaalt een toepassingsvoorrecht ACE.
+Het bepaalt ACE voor een toepassingsvoorrecht.
 
 * `@prop path`
 * `@prop deny`
@@ -711,21 +712,21 @@ Bepaalt een toepassingsvoorrecht ACE.
    * `- path mandatory`
    * `- deny (boolean)`
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege-1}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege-1}
 
 **Beschrijving**
 
-Definieert een toepassingsbevoegdheid.
+Er wordt een toepassingsbevoegdheid gedefinieerd.
 
 **Definitie**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl-1}
+### `cq:PrivilegeAcl` {#cq-privilegeacl-1}
 
 **Beschrijving**
 
-Bepaalt toepassingsvoorrecht ACL.
+Het bepaalt toepassingsvoorrecht ACL.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -736,11 +737,11 @@ Bepaalt toepassingsvoorrecht ACL.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace-1}
+### `cq:PrivilegeAce` {#cq-privilegeace-1}
 
 **Beschrijving**
 
-Bepaalt een toepassingsvoorrecht ACE.
+Het bepaalt ACE voor een toepassingsvoorrecht.
 
 * `@prop path`
 * `@prop deny`
@@ -753,11 +754,11 @@ Bepaalt een toepassingsvoorrecht ACE.
 
 ## Site-importmodule {#site-importer}
 
-### cq:ComponentExtractorSource {#cq-componentextractorsource}
+### `cq:ComponentExtractorSource` {#cq-componentextractorsource}
 
 **Beschrijving**
 
-Definieert een mixinetype dat bestanden markeert die kunnen worden geopend met de componentextractor.
+Definieert een mixinetype dat bestanden markeert die met een componentextractor kunnen worden geopend.
 
 **Definitie**
 
@@ -765,7 +766,7 @@ Definieert een mixinetype dat bestanden markeert die kunnen worden geopend met d
 
 ## Tags {#tagging}
 
-### cq:Tag {#cq-tag}
+### `cq:Tag` {#cq-tag}
 
 **Beschrijving**
 
@@ -779,7 +780,7 @@ Definieert één tag, maar kan ook tags bevatten, waardoor een taxonomie ontstaa
    * `- * (undefined)`
    * `+ * (nt:base) = cq:Tag version`
 
-### cq:Tagable {#cq-taggable}
+### `cq:Taggable` {#cq-taggable}
 
 **Beschrijving**
 
@@ -792,7 +793,7 @@ Abstract basismengsel voor controleerbare inhoud.
 * `[cq:Taggable]`
    * `- cq:tags (string) multiple`
 
-### cq:OwnerTaggable {#cq-ownertaggable}
+### `cq:OwnerTaggable` {#cq-ownertaggable}
 
 **Beschrijving**
 
@@ -802,22 +803,22 @@ Alleen auteurs/eigenaars mogen de inhoud labelen (gemodereerd/beheerd coderen).
 
 * `[cq:OwnerTaggable] > cq:Taggable`
 
-### cq:UserTaggable {#cq-usertaggable}
+### `cq:UserTaggable` {#cq-usertaggable}
 
 **Beschrijving**
 
-Elke gebruiker/openbare website kan de inhoud (Web2.0-stijl) labelen die wordt gebruikt in cq:userContent.
+Elke gebruiker of openbare website kan de inhoud (Web2.0-stijl) labelen die binnen `cq:userContent` wordt gebruikt.
 
 **Definitie**
 
 * `[cq:UserTaggable] > cq:Taggable`
    * `mixin`
 
-### cq:AllowsUserContent {#cq-allowsusercontent}
+### `cq:AllowsUserContent` {#cq-allowsusercontent}
 
 **Beschrijving**
 
-Hiermee wordt een subknooppunt `cq:userContent` toegevoegd dat door gebruikers kan worden gewijzigd. Elke gebruiker heeft zijn eigen `cq:userContent/<userid>` subnode, die doorgaans de mixin `cq:UserTaggable` heeft.
+Voegt een subknooppunt `cq:userContent` toe dat gebruikers kunnen bewerken. Elke gebruiker heeft zijn eigen `cq:userContent/<userid>` subnode, die doorgaans de mixin `cq:UserTaggable` heeft.
 
 **Definitie**
 
@@ -831,11 +832,11 @@ Uitgebreide variant, die de `cq:userContent` boom explicieter bepaalt
    * `mixin`
    * `+ cq:userContent (cq:UserContent)`
 
-### cq:UserContent {#cq-usercontent}
+### `cq:UserContent` {#cq-usercontent}
 
 **Beschrijving**
 
-Kan door gebruikers worden gewijzigd.
+Gebruikers kunnen het bestand bewerken.
 
 **Definitie**
 
@@ -845,7 +846,7 @@ Kan door gebruikers worden gewijzigd.
    * `// other content`
    * `+ * (nt:base)`
 
-### cq:UserData {#cq-userdata}
+### `cq:UserData` {#cq-userdata}
 
 **Beschrijving**
 
@@ -857,7 +858,7 @@ Gebruikersgegevens
 
 ## Widgets {#widgets}
 
-### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
+### `cq:ClientLibraryFolder` {#cq-clientlibraryfolder}
 
 **Beschrijving**
 
@@ -869,7 +870,7 @@ Map voor clientbibliotheek
    * `- categories (string) multiple`
    * `- dependencies (string) multiple`
 
-### cq:Widget {#cq-widget}
+### `cq:Widget` {#cq-widget}
 
 **Beschrijving**
 
@@ -883,7 +884,7 @@ Widget
    * `- title (string)`
    * `+ items (nt:base) = cq:WidgetCollection copy`
 
-### cq:WidgetCollection {#cq-widgetcollection}
+### `cq:WidgetCollection` {#cq-widgetcollection}
 
 **Beschrijving**
 
@@ -895,7 +896,7 @@ Widget-verzameling
    * `orderable`
    * `+ * (cq:Widget) = cq:Widget copy`
 
-### cq:Dialoogvenster {#cq-dialog}
+### `cq:Dialog` {#cq-dialog}
 
 **Beschrijving**
 
@@ -905,7 +906,7 @@ Dialoog
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq:Panel {#cq-panel}
+### `cq:Panel` {#cq-panel}
 
 **Beschrijving**
 
@@ -915,7 +916,7 @@ Deelvenster
 
 `[cq:Panel] > cq:Widget orderable`
 
-### cq:TabPanel {#cq-tabpanel}
+### `cq:TabPanel` {#cq-tabpanel}
 
 **Beschrijving**
 
@@ -926,7 +927,7 @@ Deelvenster Tab
 * `[cq:TabPanel]` > `cq:Panel orderable`
    * `- activeTab (long)`
 
-### cq:Field {#cq-field}
+### `cq:Field` {#cq-field}
 
 **Beschrijving**
 
@@ -941,7 +942,7 @@ Veld
 
 ## Wiki {#wiki}
 
-### wiki:onderwerp {#wiki-topic}
+### `wiki:Topic` {#wiki-topic}
 
 **Beschrijving**
 
@@ -962,7 +963,7 @@ Wiki-onderwerp
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:gebruiker {#wiki-user}
+### `wiki:User` {#wiki-user}
 
 **Beschrijving**
 
@@ -973,7 +974,7 @@ Wiki-gebruiker
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:eigenschappen {#wiki-properties}
+### `wiki:Properties` {#wiki-properties}
 
 **Beschrijving**
 
@@ -987,7 +988,7 @@ Wiki-eigenschappen
 
 ## Workflow {#workflow}
 
-### cq:Workflow {#cq-workflow}
+### `cq:Workflow` {#cq-workflow}
 
 **Beschrijving**
 
@@ -1012,7 +1013,7 @@ Vertegenwoordigt een werkstroominstantie.
    * `+ metaData (nt:unstructured)`
    * `+ workItems (nt:unstructured)`
 
-### cq:WorkItem {#cq-workitem}
+### `cq:WorkItem` {#cq-workitem}
 
 **Beschrijving**
 
@@ -1030,7 +1031,7 @@ Werkitem.
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:Payload {#cq-payload}
+### `cq:Payload` {#cq-payload}
 
 **Beschrijving**
 
@@ -1047,7 +1048,7 @@ Payload
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:WorkflowData {#cq-workflowdata}
+### `cq:WorkflowData` {#cq-workflowdata}
 
 **Beschrijving**
 
@@ -1061,11 +1062,12 @@ Werkstroomgegevens
    * `+ payload (cq:Payload)`
    * `+ metaData (nt:unstructured) copy`
 
-### cq:WorkflowModel {#cq-workflowmodel}
+### `cq:WorkflowModel` {#cq-workflowmodel}
 
 **Beschrijving**
 
 Workflowconfiguratie automatisch toewijzen. De configuratie volgt onderstaande structuur:
+
 * `workflows`
    * `+ name1`
       * `- cq:path`
@@ -1086,7 +1088,7 @@ Workflowconfiguratie automatisch toewijzen. De configuratie volgt onderstaande s
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowNode {#cq-workflownode}
+### `cq:WorkflowNode` {#cq-workflownode}
 
 **Beschrijving**
 
@@ -1106,7 +1108,7 @@ Workflowknooppunt
    * `+ timeoutConfiguration (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowTransition {#cq-workflowtransition}
+### `cq:WorkflowTransition` {#cq-workflowtransition}
 
 **Beschrijving**
 
@@ -1121,7 +1123,7 @@ Workflowovergang
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:OrTab {#cq-ortab}
+### `cq:OrTab` {#cq-ortab}
 
 **Beschrijving**
 
@@ -1130,10 +1132,10 @@ Of tabblad
 **Definitie**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq:wachten {#cq-wait}
+### `cq:Wait` {#cq-wait}
 
 **Beschrijving**
 
@@ -1142,11 +1144,11 @@ Wachten
 **Definitie**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- destNodeId (String)`
    * `- fromNodeId (String)`
 
-### cq:WorkflowStack {#cq-workflowstack}
+### `cq:WorkflowStack` {#cq-workflowstack}
 
 **Beschrijving**
 
@@ -1159,7 +1161,7 @@ Workflowstack
    * `- parentInstanceId (String)`
    * `- nodeId (String)`
 
-### cq:ProcessStack {#cq-processstack}
+### `cq:ProcessStack` {#cq-processstack}
 
 **Beschrijving**
 
@@ -1168,12 +1170,12 @@ Processtapel
 **Definitie**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- containerWorkflowModelId (String)`
    * `- containerWorkflowNodeId`
    * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
-### cq:WorkflowLauncher {#cq-workflowlauncher}
+### `cq:WorkflowLauncher` {#cq-workflowlauncher}
 
 **Beschrijving**
 
