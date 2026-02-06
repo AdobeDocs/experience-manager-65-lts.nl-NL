@@ -492,7 +492,7 @@ Opiniepeilingconfiguratie.
 * `@prop source (String) mandatory` - Data source URI. Vereist en mag niet leeg zijn.
 * `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Facultatief en blijft aan de knoop cq :PollConfig in gebreke.
 * `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gepoll. Optioneel en standaard ingesteld op 30 minuten (1800 seconden).
-* [&#x200B; Creërend de Diensten van de Importeur van Gegevens van de Douane voor Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+* [&#x200B; Creërend de Diensten van de Importeur van Gegevens van de Douane voor Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **Definitie**
 
