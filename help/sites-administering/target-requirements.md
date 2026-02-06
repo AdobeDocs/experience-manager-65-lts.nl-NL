@@ -31,7 +31,7 @@ De clientcode identificeert de Adobe Target-klantenaccount wanneer de Adobe Targ
 >
 >Het team van Doel moet uw account inschakelen om de integratie te kunnen gebruiken.
 >
->Als het niet het geval is, contacteer [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information).
+>Als het niet het geval is, contacteer [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/cmp-resources-and-contact-information).
 
 ## Enable the Target Replication Agent {#enabling-the-target-replication-agent}
 

@@ -22,7 +22,7 @@ De Universal Editor is een veelzijdige visuele editor die deel uitmaakt van Adob
 * Auteurs profiteren van de flexibiliteit van de Universal Editor. Deze functie ondersteunt dezelfde consistente visuele bewerking voor alle vormen van AEM-inhoud zonder kop.
 * Ontwikkelaars profiteren van de veelzijdigheid van de Universal Editor, omdat deze ook werkelijke ontkoppeling van de implementatie ondersteunt. Het laat ontwikkelaars vrijwel om het even welk kader of architectuur van hun keus gebruiken, zonder enige SDK of technologiebeperkingen op te leggen.
 
-Gelieve te zien de [&#x200B; documentatie van AEM as a Cloud Service op de Universele Redacteur &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) voor meer detail.
+Gelieve te zien de [&#x200B; documentatie van AEM as a Cloud Service op de Universele Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) voor meer detail.
 
 ## Architectuur {#architecture}
 
@@ -40,9 +40,9 @@ Het volgende biedt ondersteuning voor de Universal Editor:
 
 * AEM 6,5 LTS GA
    * Zowel on-premise als Adobe Managed Services (AMS)-hosting worden ondersteund.
-* [&#x200B; AEM 6.5 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* [&#x200B; AEM 6.5 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * Zowel on-premise als AMS-hosting worden ondersteund.
-* [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versie `2023.8.13099` of hoger)
+* [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versie `2023.8.13099` of hoger)
 
 Dit document is gericht op AEM 6.5 LTS-ondersteuning van de Universal Editor. Als u de Universal Editor wilt gebruiken met AEM 6.5 LTS, hebt u het volgende nodig:
 
@@ -136,15 +136,15 @@ Voorbeeldtoewijzingen:
 Met AEM bijgewerkt en geconfigureerd kunt u een lokale Universal Editor-service instellen voor uw eigen lokale ontwikkeling en tests.
 
 1. Installeer Node.js versie >=20.
-1. De download en unpack de recentste Universele Dienst van de Redacteur van [&#x200B; Distributie van de Software &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home)
+1. De download en unpack de recentste Universele Dienst van de Redacteur van [&#x200B; Distributie van de Software &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud/software-distribution/home)
 1. Configureer de Universal Editor Service in de vorm van omgevingsvariabelen of `.env` -bestand.
-   * [&#x200B; zie de Universele documentatie van de Redacteur van AEM as a Cloud Service voor details.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [&#x200B; zie de Universele documentatie van de Redacteur van AEM as a Cloud Service voor details.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Mogelijk moet u de optie `UES_MAPPING` gebruiken als interne IP-herschrijving vereist is.
 1. Uitvoeren `universal-editor-service.cjs`
 
 ### Dispatcher bijwerken {#update-dispatcher}
 
-Met gevormde AEM en een lokale Universele dienst die van de Redacteur, u moet een omgekeerde volmacht voor de nieuwe dienst [&#x200B; in Dispatcher toestaan.](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
+Met gevormde AEM en een lokale Universele dienst die van de Redacteur, u moet een omgekeerde volmacht voor de nieuwe dienst [&#x200B; in Dispatcher toestaan.](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Pas het hostbestand van de auteurinstantie aan om een reverse-proxy op te nemen.
 
@@ -157,7 +157,7 @@ Met gevormde AEM en een lokale Universele dienst die van de Redacteur, u moet ee
 
    >[!NOTE]
    >
-   >8080 is de standaardpoort. Als u dit gebruikend de `UES_PORT` parameter in [&#x200B; uw `.env` dossier veranderde, &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) u moet de havenwaarde hier dienovereenkomstig aanpassen.
+   >8080 is de standaardpoort. Als u dit gebruikend de `UES_PORT` parameter in [&#x200B; uw `.env` dossier veranderde, &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) u moet de havenwaarde hier dienovereenkomstig aanpassen.
 
 1. Start Apache opnieuw.
 
@@ -165,7 +165,7 @@ Met gevormde AEM en een lokale Universele dienst die van de Redacteur, u moet ee
 
 Als AEM is bijgewerkt en een lokale Universal Editor-service wordt uitgevoerd, kunt u inhoud zonder kop gaan bewerken met de Universal Editor.
 
-Uw app moet echter van instrumenten zijn voorzien om te kunnen profiteren van de Universal Editor. Het omvat het opnemen van metatags om de editor op te geven hoe en waar de inhoud moet blijven bestaan. De details van deze instrumentatie zijn beschikbaar in de [&#x200B; Universele documentatie van de Redacteur voor AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+Uw app moet echter van instrumenten zijn voorzien om te kunnen profiteren van de Universal Editor. Het omvat het opnemen van metatags om de editor op te geven hoe en waar de inhoud moet blijven bestaan. De details van deze instrumentatie zijn beschikbaar in de [&#x200B; Universele documentatie van de Redacteur voor AEM as a Cloud Service.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
 Let op: wanneer u documentatie voor de Universal Editor met AEM as a Cloud Service volgt, gelden de volgende wijzigingen wanneer u deze gebruikt met AEM 6.5 LTS.
 
@@ -185,7 +185,7 @@ Let op: wanneer u documentatie voor de Universal Editor met AEM as a Cloud Servi
 
 >[!TIP]
 >
->Voor een uitvoerige ontwikkelaarsgids aan de Universele Redacteur, zie [&#x200B; Universeel Overzicht van de Redacteur voor de Ontwikkelaars van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) in de documentatie van AEM as a Cloud Service. Let op de AEM 6.5 LTS veranderingen die in deze sectie worden beschreven.
+>Voor een uitvoerige ontwikkelaarsgids aan de Universele Redacteur, zie [&#x200B; Universeel Overzicht van de Redacteur voor de Ontwikkelaars van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) in de documentatie van AEM as a Cloud Service. Let op de AEM 6.5 LTS veranderingen die in deze sectie worden beschreven.
 
 ## Verschillen tussen AEM 6.5 LTS en AEM as a Cloud Service {#differences}
 
