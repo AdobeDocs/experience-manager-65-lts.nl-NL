@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aanvaarding en afmelding{#acceptance-and-sign-off}
 
-Zoals vermeld, [ de Tests van de Aanvaarding ](/help/sites-developing/planning.md) zijn een speciale categorie van test die wordt gebruikt om het volgende te verifiëren:
+Zoals vermeld, [&#x200B; de Tests van de Aanvaarding &#x200B;](/help/sites-developing/planning.md) zijn een speciale categorie van test die wordt gebruikt om het volgende te verifiëren:
 
 * Het project voldoet aan de vereisten van de klant.
 * De klant accepteert het project.
