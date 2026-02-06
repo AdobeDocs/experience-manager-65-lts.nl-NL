@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en samen te voegen. Het verstrekt afdiff (differentiërende) mechanismen voor allebei:
 
-* **[Bedekkingen](/help/sites-developing/overlays.md)** van middelen die [ gevormde onderzoekspaden ](/help/sites-developing/overlays.md#configuring-the-search-paths) gebruiken.
+* **[Bedekkingen](/help/sites-developing/overlays.md)** van middelen die [&#x200B; gevormde onderzoekspaden &#x200B;](/help/sites-developing/overlays.md#configuring-the-search-paths) gebruiken.
 
 * **treedt** van componentendialogen voor aanraking-toegelaten UI (`cq:dialog`) met voeten, gebruikend de hiërarchie van het middeltype (door middel van het bezit `sling:resourceSuperType`).
 
@@ -30,11 +30,11 @@ Sling Resource Merger combineert zowel overlay als override resources (en hun ei
 
 * De inhoud van de aangepaste definitie heeft een hogere prioriteit dan het origineel. Namelijk het *overlays* of *treedt* het met voeten.
 
-* Waar noodzakelijk, [ eigenschappen ](#properties) die in de aanpassing worden bepaald, wijzen erop hoe de inhoud die van origineel wordt samengevoegd moet worden gebruikt.
+* Waar noodzakelijk, [&#x200B; eigenschappen &#x200B;](#properties) die in de aanpassing worden bepaald, wijzen erop hoe de inhoud die van origineel wordt samengevoegd moet worden gebruikt.
 
 >[!CAUTION]
 >
->De het Verdelen Fusie van het Middel en verwante methodes kunnen slechts met [ Graniet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html) worden gebruikt. Deze situatie betekent ook dat deze alleen geschikt is voor de standaardinterface met aanraakbediening. Met name overschrijvingen die op deze manier worden gedefinieerd, zijn alleen van toepassing voor het aanraakdialoogvenster van een component.
+>De het Verdelen Fusie van het Middel en verwante methodes kunnen slechts met [&#x200B; Graniet &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html) worden gebruikt. Deze situatie betekent ook dat deze alleen geschikt is voor de standaardinterface met aanraakbediening. Met name overschrijvingen die op deze manier worden gedefinieerd, zijn alleen van toepassing voor het aanraakdialoogvenster van een component.
 >
 >Als u andere gebieden wilt bedekken of overschrijven (inclusief andere onderdelen van een component met aanraakbediening of de klassieke UI), kopieert u het desbetreffende knooppunt en de structuur van het origineel. Plaats de kopie op de plaats waar u de aanpassing definieert.
 
@@ -212,7 +212,7 @@ Met de standaardfunctionaliteit kunt u met deze gebruiksgevallen het volgende do
       * type: `String[]`
       * waarde: een lijst met onderliggende knooppunten (zoals gedefinieerd in `/libs`) die moeten worden verborgen/genegeerd
 
-      Jokerteken&amp;ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen of te negeren.
+      Jokerteken&ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen of te negeren.
 
 * **opnieuw ordenen knopen**
 
