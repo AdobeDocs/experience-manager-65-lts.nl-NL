@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 >`JAR` en `WAR` zijn de bestandstypen waarin Adobe Experience Manager (AEM) wordt vrijgegeven. Deze formaten worden kwaliteitsborgd om aan de steunniveaus tegemoet te komen die Adobe heeft toegezegd.
 >
 
-In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [&#x200B; Gesteunde sectie van Platforms &#x200B;](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) om over de specifieke steunniveaus te lezen die voor de individuele toepassingsservers worden verstrekt.
+In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [ Gesteunde sectie van Platforms ](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) om over de specifieke steunniveaus te lezen die voor de individuele toepassingsservers worden verstrekt.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -95,7 +95,7 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om zowel auteur te installer
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-Voor de plaatsing, gelieve te lezen de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
+Voor de plaatsing, gelieve te lezen de [ Algemene Beschrijving ](#general-description) hierboven.
 
 **Voorbereiding van de Server**
 
@@ -109,7 +109,7 @@ Voor de plaatsing, gelieve te lezen de [&#x200B; Algemene Beschrijving &#x200B;]
 **stel de Toepassing van het Web van AEM** op
 
 * AEM-oorlogsbestand downloaden
-* Maak indien nodig uw configuraties in het `web.xml` -bestand. Voor meer info, zie [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
+* Maak indien nodig uw configuraties in het `web.xml` -bestand. Voor meer info, zie [ Algemene Beschrijving ](#general-description) hierboven.
 
    * Het `WEB-INF/web.xml` -bestand uitpakken
    * De parameter `sling.run.modes` wijzigen in `publish`
@@ -124,7 +124,7 @@ Voor de plaatsing, gelieve te lezen de [&#x200B; Algemene Beschrijving &#x200B;]
 
 #### Tomcat 10.0.x/10.1.x {#tomcat}
 
-Alvorens een plaatsing leest de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
+Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
 
 * **bereidt de Server van Tomcat voor**
 
@@ -143,15 +143,15 @@ Alvorens een plaatsing leest de [&#x200B; Algemene Beschrijving &#x200B;](#gener
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
         <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
+          <role rolename="manager"/>
+          <role rolename="tomcat"/>
+          <role rolename="admin"/>
+          <role rolename="role1"/>
+          <role rolename="manager-gui"/>
+          <user username="both" password="tomcat" roles="tomcat,role1"/>
+          <user username="tomcat" password="tomcat" roles="tomcat"/>
+          <user username="admin" password="admin" roles="admin,manager-gui"/>
+          <user username="role1" password="tomcat" roles="role1"/>
         </tomcat-users>
         ```
 
