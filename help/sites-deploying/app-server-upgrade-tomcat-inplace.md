@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze pagina schetst de verbeteringsprocedure (de verbetering van de Plaats) van AEM 6.5 LTS aan AEM 6.5 LTS Servicepack op Tomcat. Voor bevordering van AEM 6.5 aan 6.5 LTS, [ verwijs hier ](/help/sites-deploying/app-server-upgrade-tomcat.md).
+>Deze pagina schetst de verbeteringsprocedure (de verbetering van de Plaats) van AEM 6.5 LTS aan AEM 6.5 LTS Servicepack op Tomcat. Voor bevordering van AEM 6.5 aan 6.5 LTS, [&#x200B; verwijs hier &#x200B;](/help/sites-deploying/app-server-upgrade-tomcat.md).
 
 ## Stappen voor upgrade {#pre-upgrade-steps}
 
-Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [ vereisten voor AEM 6.5 LTS Servicepack ](/help/sites-deploying/technical-requirements.md) voldoet en [ verbetering planningsoverwegingen ](/help/sites-deploying/upgrade-planning.md) ziet.
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [&#x200B; pre-Verbeterde Taken van het Onderhoud &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de [&#x200B; vereisten voor AEM 6.5 LTS Servicepack &#x200B;](/help/sites-deploying/technical-requirements.md) voldoet en [&#x200B; verbetering planningsoverwegingen &#x200B;](/help/sites-deploying/upgrade-planning.md) ziet.
 
 
 ### Migratievereisten {#migration-prerequisites}
@@ -33,7 +33,7 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 
 1. Als AEM 6.5 LTS al is geïmplementeerd, controleert u of de bundels correct werken door toegang te krijgen tot: *`https://<serveraddress:port>/system/console/bundles`*
 1. Stop vervolgens AEM 6.5 LTS. Dit kan worden gedaan vanuit Tomcat App Manager op: *`https://<serveraddress:port>/manager/html`*
-1. Zorg ervoor dat u [ pre-verbeterings ](#pre-upgrade-steps) activiteiten zoals steun van de server van AEM 6.5 LTS alvorens om het even welke verbeteringsactiviteit hebt voltooid
+1. Zorg ervoor dat u [&#x200B; pre-verbeterings &#x200B;](#pre-upgrade-steps) activiteiten zoals steun van de server van AEM 6.5 LTS alvorens om het even welke verbeteringsactiviteit hebt voltooid
 1. Stop de AEM 6.5 LTS Tomcat-server. In de meeste gevallen kunt u dit doen door het script `./catalina.sh` uit te voeren, door deze opdracht uit te voeren vanaf de terminal:
 
    ```
@@ -86,4 +86,4 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 
 ## Naupgrade-controles en probleemoplossing uitvoeren {#perform-post-upgrade-checks-and-troubleshooting}
 
-Zie [ Controle van de Verbetering van het Post en het Oplossen van problemen ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) voor meer informatie.
+Zie [&#x200B; Controle van de Verbetering van het Post en het Oplossen van problemen &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) voor meer informatie.
