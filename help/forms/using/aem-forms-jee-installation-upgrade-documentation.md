@@ -28,7 +28,7 @@ Gebruik de volgende workflow en tabellen om de juiste hulplijnen voor uw scenari
 
 ## Workflow voor installatie en upgrade {#installation-upgrade-workflow}
 
-1. Het overzicht [ Ondersteunde platforms voor AEM Forms op JEE ](/help/forms/using/aem-forms-jee-supported-platforms.md) en verzekert uw systeem de vereiste software/hardwarecombinaties ontmoet.
+1. Het overzicht [&#x200B; Ondersteunde platforms voor AEM Forms op JEE &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) en verzekert uw systeem de vereiste software/hardwarecombinaties ontmoet.
 2. Beslis of u a **verse installatie** of een **verbetering** uitvoert.
 3. Voor het gekozen pad volgt u de hieronder beschreven volgorde (voor sommige scenario&#39;s zijn meer dan één hulplijn vereist).
 
@@ -36,9 +36,9 @@ Gebruik de volgende workflow en tabellen om de juiste hulplijnen voor uw scenari
 
 | Hulplijn | Beschrijving |
 | --- | --- |
-| [ Ondersteunde platforms voor AEM Forms op JEE ](/help/forms/using/aem-forms-jee-supported-platforms.md) | Geeft ondersteunde software- en hardwarecombinaties voor AEM Forms op JEE weer. Gebruik dit om vereisten te bevestigen alvorens u met een installatie of een verbetering begint. |
-| [ Architectuur en plaatsingstopologieën voor AEM Forms ](/help/forms/using/aem-forms-architecture-deployment.md) | Verklaart geadviseerde architecturen en plaatsingstopologieën zodat kunt u een benadering kiezen die uw milieu (bijvoorbeeld, enige server versus cluster) aanpast. |
-| [ Kiekend een persistentietype voor een installatie van AEM Forms ](/help/forms/using/choosing-persistence-type-for-aem-forms.md) | Helpt u een aangewezen persistentietype voor uw installatietopologie selecteren alvorens u begint. |
+| [&#x200B; Ondersteunde platforms voor AEM Forms op JEE &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) | Geeft ondersteunde software- en hardwarecombinaties voor AEM Forms op JEE weer. Gebruik dit om vereisten te bevestigen alvorens u met een installatie of een verbetering begint. |
+| [&#x200B; Architectuur en plaatsingstopologieën voor AEM Forms &#x200B;](/help/forms/using/aem-forms-architecture-deployment.md) | Verklaart geadviseerde architecturen en plaatsingstopologieën zodat kunt u een benadering kiezen die uw milieu (bijvoorbeeld, enige server versus cluster) aanpast. |
+| [&#x200B; Kiekend een persistentietype voor een installatie van AEM Forms &#x200B;](/help/forms/using/choosing-persistence-type-for-aem-forms.md) | Helpt u een aangewezen persistentietype voor uw installatietopologie selecteren alvorens u begint. |
 
 ## Hoe installeer ik Adobe Experience Manager Forms (AEM Forms) op JEE op JBoss? {#installing-aem-forms-jee-jboss}
 
@@ -46,14 +46,14 @@ Gebruik de volgende workflow en tabellen om de juiste hulplijnen voor uw scenari
 
 | Hulplijn | Beschrijving |
 | --- | --- |
-| [ het Installeren van en het Opstellen van AEM Forms 6.5 LTS op JEE Gebruikend Turnkey JBoss (PDF) ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf) | Gebruik voor a **verse turnkey installatie** op JBoss. Dit document bevat instructies voor het installeren en implementeren van AEM Forms op JEE met behulp van de JBoss-distributie. |
+| [&#x200B; het Installeren van en het Opstellen van AEM Forms 6.5 LTS op JEE Gebruikend Turnkey JBoss (PDF) &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf) | Gebruik voor a **verse turnkey installatie** op JBoss. Dit document bevat instructies voor het installeren en implementeren van AEM Forms op JEE met behulp van de JBoss-distributie. |
 
 ### Eén server (niet-turnkey) {#install-jee-jboss-single-server}
 
 | Hulplijn | Beschrijving |
 | --- | --- |
-| [ voorbereidend om AEM Forms (Enige Server) (PDF) te installeren ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf) | Het gebruik **vóór** a **verse enig-server (niet-runtime) installatie**. Dit document maakt een lijst van eerste vereisten en milieu voorbereidingsstappen voor het installeren van AEM Forms op JEE in een enig-servertopologie. |
-| [ het Installeren van en het Opstellen van AEM Forms op JEE voor JBoss (PDF) ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf) | Gebruik voor de **geleidelijke installatie en plaatsing** van AEM Forms op JEE op JBoss (**niet-turnkey**). Voor enig-serverinstallaties, volg deze gids **na** de voltooiing *voorbereidend om AEM Forms (Enige Server) te installeren*. |
+| [&#x200B; voorbereidend om AEM Forms (Enige Server) (PDF) te installeren &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf) | Het gebruik **vóór** a **verse enig-server (niet-runtime) installatie**. Dit document maakt een lijst van eerste vereisten en milieu voorbereidingsstappen voor het installeren van AEM Forms op JEE in een enig-servertopologie. |
+| [&#x200B; het Installeren van en het Opstellen van AEM Forms op JEE voor JBoss (PDF) &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf) | Gebruik voor de **geleidelijke installatie en plaatsing** van AEM Forms op JEE op JBoss (**niet-turnkey**). Voor enig-serverinstallaties, volg deze gids **na** de voltooiing *voorbereidend om AEM Forms (Enige Server) te installeren*. |
 
 <!--
 | Preparing to Install AEM Forms (Server Cluster) (PDF) (**TBD**) | Use **before** a **fresh cluster installation**. Describes prerequisites and environment preparation steps for installing AEM Forms on JEE in a server cluster topology. *(Link will be added once the PDF is available.)* |
@@ -66,14 +66,14 @@ Gebruik de volgende workflow en tabellen om de juiste hulplijnen voor uw scenari
 
 | Hulplijn | Beschrijving |
 | --- | --- |
-| [ Bevorderend aan AEM Forms 6.5 LTS op JEE voor JBoss Turnkey (PDF) ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf) | Gebruik voor a **runtime verbetering**. Dit document bevat instructies voor het upgraden van een bestaande AEM Forms bij JEE JBoss-installatie. |
+| [&#x200B; Bevorderend aan AEM Forms 6.5 LTS op JEE voor JBoss Turnkey (PDF) &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf) | Gebruik voor a **runtime verbetering**. Dit document bevat instructies voor het upgraden van een bestaande AEM Forms bij JEE JBoss-installatie. |
 
 ### Eén server {#upgrade-jee-jboss-single-server}
 
 | Hulplijn | Beschrijving |
 | --- | --- |
-| [ voorbereidend om AEM Forms (PDF) te bevorderen ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf) | Gebruik **vóór** a **enig-serververbetering**. Beschrijft hoe te om het milieu voor te bereiden alvorens aan AEM 6.5 LTS Forms te bevorderen. Dit is van toepassing op omgevingen waarin AEM Forms op JEE wordt uitgevoerd in de installatiemodus Eén server. |
-| [ Bevorderend aan AEM Forms op JEE voor JBoss (PDF) ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf) | Gebruik voor de **geleidelijke verbeteringsprocedure** op JBoss op a **enig-server** installatiemodus. Volg deze gids **na** voltooiing *voorbereidend om AEM Forms* te bevorderen. |
+| [&#x200B; voorbereidend om AEM Forms (PDF) te bevorderen &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf) | Gebruik **vóór** a **enig-serververbetering**. Beschrijft hoe te om het milieu voor te bereiden alvorens aan AEM 6.5 LTS Forms te bevorderen. Dit is van toepassing op omgevingen waarin AEM Forms op JEE wordt uitgevoerd in de installatiemodus Eén server. |
+| [&#x200B; Bevorderend aan AEM Forms op JEE voor JBoss (PDF) &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf) | Gebruik voor de **geleidelijke verbeteringsprocedure** op JBoss op a **enig-server** installatiemodus. Volg deze gids **na** voltooiing *voorbereidend om AEM Forms* te bevorderen. |
 
 <!--
 | Preparing to Install AEM Forms (Server Cluster) (PDF) (**TBD**) | Use **before** a **cluster upgrade**. Describes how to prepare the environment for a server cluster before upgrading to AEM 6.5 LTS Forms. It applies to environments running AEM Forms on JEE in a server cluster installation mode. *(Link will be added once the PDF is available.)* |

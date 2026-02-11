@@ -23,7 +23,7 @@ ht-degree: 0%
 >`JAR` en `WAR` zijn de bestandstypen waarin Adobe Experience Manager (AEM) wordt vrijgegeven. Deze formaten worden kwaliteitsborgd om aan de steunniveaus tegemoet te komen die Adobe heeft toegezegd.
 >
 
-In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [ Gesteunde sectie van Platforms ](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) om over de specifieke steunniveaus te lezen die voor de individuele toepassingsservers worden verstrekt.
+In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [&#x200B; Gesteunde sectie van Platforms &#x200B;](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) om over de specifieke steunniveaus te lezen die voor de individuele toepassingsservers worden verstrekt.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -96,7 +96,7 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om zowel auteur te installer
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-Voor de plaatsing, gelieve te lezen de [ Algemene Beschrijving ](#general-description) hierboven.
+Voor de plaatsing, gelieve te lezen de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
 
 **Voorbereiding van de Server**
 
@@ -110,7 +110,7 @@ Voor de plaatsing, gelieve te lezen de [ Algemene Beschrijving ](#general-descri
 **stel de Toepassing van het Web van AEM** op
 
 * AEM-oorlogsbestand downloaden
-* Maak indien nodig uw configuraties in het `web.xml` -bestand. Voor meer info, zie [ Algemene Beschrijving ](#general-description) hierboven.
+* Maak indien nodig uw configuraties in het `web.xml` -bestand. Voor meer info, zie [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
 
    * Het `WEB-INF/web.xml` -bestand uitpakken
    * De parameter `sling.run.modes` wijzigen in `publish`
@@ -125,7 +125,7 @@ Voor de plaatsing, gelieve te lezen de [ Algemene Beschrijving ](#general-descri
 
 #### Tomcat 10.0.x/10.1.x {#tomcat}
 
-Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
+Alvorens een plaatsing leest de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
 
 * **bereidt de Server van Tomcat voor**
 
