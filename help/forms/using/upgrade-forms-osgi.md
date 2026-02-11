@@ -32,7 +32,7 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
    1. Open [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
    1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [&#x200B; wordt vermeld versies van AEM Forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) artikel.
+      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [&#x200B; wordt vermeld versies van AEM Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) artikel.
 
       Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het bestand &lt;crx-repository>/error.log en het logbestand stabiel is. Houd er rekening mee dat een aantal pakketten in de installatiestatus kunnen blijven staan. U kunt de status van deze verpakkingen veilig negeren.
 
@@ -52,7 +52,7 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
      Het migratiehulpprogramma maakt de adaptieve formulieren en het beheer van correspondentie van eerdere versies compatibel met AEM 6.5-formulieren. U kunt het hulpprogramma downloaden van AEM Software Distribution. Voor geleidelijke informatie om het migratienut te vormen en te gebruiken, zie [&#x200B; migratienut &#x200B;](../../forms/using/migration-utility.md).
 
-     Als u [&#x200B; Steekproef voor het integreren van concepten &amp; voorleggingscomponent &#x200B;](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
+     Als u [&#x200B; Steekproef voor het integreren van concepten &amp; voorleggingscomponent &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,7 +93,7 @@ Na upgrade naar het servicepack AEM Forms 6.5.22.0 voert u de volgende stappen u
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [&#x200B; de Herstructurering van de Bewaarplaats van Forms in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [&#x200B; de Herstructurering van de Bewaarplaats van Forms in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
 
 
 ## AEM implementeren op JBoss EAP 8 (Windows)
@@ -395,8 +395,8 @@ Voor productieomgevingen:
 ### Verwante documentatie
 
 * [&#x200B; JBoss EAP 8 Documentatie &#x200B;](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
-* [&#x200B; Documentatie van Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65.html)
-* [&#x200B; de Gids van de Installatie en van de Plaatsing van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
+* [&#x200B; Documentatie van Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL)
+* [&#x200B; de Gids van de Installatie en van de Plaatsing van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=nl-NL)
 
 ### Documentgegevens
 
